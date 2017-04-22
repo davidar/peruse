@@ -1,6 +1,14 @@
 {
+  "name": "peruse",
+  "version": "0.1.0",
+  "description": "Pandoc + Readability",
   "dependencies": {
     "jsdom": "^7.0",
     "readability": "github:mozilla/readability"
-  }
+  },
+  "bin": {
+    "peruse": "index.js"
+  },
+  "author": "David A Roberts",
+  "license": "MIT"
 }
