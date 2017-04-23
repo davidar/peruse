@@ -11,5 +11,19 @@
     "peruse": "index.js"
   },
   "author": "David A Roberts",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidar/peruse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidar/peruse/issues"
+  },
+  "homepage": "https://github.com/davidar/peruse#readme"
 }
