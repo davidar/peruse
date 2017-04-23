@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+deploy:
+  provider: npm
+  email: d@vidr.cc
+  api_key:
+    secure: AmZWAdu/iAacT3i7WTJt1cf9e4Oo/907WwQ4HwFoVq+fJ7GVN3x/Ub7SkL2WogUnu5ROksn4Z94agi0crweDmzOnQ89ZW4kCCeqQXNShFGwrg1OQjxyo1dDhyAMYuhbEtQ3H701t8hG1V2zgf6gNglwAhwtpvR7TQjpLe6ZAcHKK4ccKAuOdZBJK5VRkNXRKvPLqXlmc8Nq8wJB+/QGjWCgMAypzbCHKCdZuVHjnEwkamvDKsUOSuMnvXQHXEDfmgE5SFC/fozBQwifGVWX+kXVe23qZTSheT8wKyQIqHHuuwS+cRJixCWwx0qpARM3SLl5Agk03YVentUJYGpUQy0Rh+Q5XX1iLAx/4B3Ati0knHvODUIoWqkwpGgpAee/PmeBTvfw4HmshcBnv9wCoO6pI030gEubNgcCrZQjNoicSFd25yOpCGafCvUC5ay3ieyLZdspBdmT3HtiDCQ9i6LGeEw7VdYzrsR7ZT4t4DUIvOSHo23PQmsObee3sq0RvGxM8EKxzTtO3ZMBYRoY3X8ZN2YPc+P5ws+gi+mBWlTLGo8fCVCsuA127DHjNU/FL970FMX38bBoIIUvTEhaUqILzaKpX7RVsIT4962Bd172BWS5NodlsDPL/BI/xwKet21UOMdhLaEfluXi6mOZp0X7QtzuvPkDDAoBdpMd9a8g=
+  on:
+    tags: true
+    repo: davidar/peruse
+before_install:
+  - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+  - sudo dpkg -i pandoc-*.deb
