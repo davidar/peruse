@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var escapeHTML = require("escape-html");
 var jsdom = require("jsdom").jsdom;
 var Readability = require("readability/index").Readability;
 var spawn = require("child_process").spawn;
@@ -7,6 +8,21 @@ var spawn = require("child_process").spawn;
 jsdom.env(process.argv[2], [], function(err, window) {
   if(err) return console.error(err);
   var document = window.document;
+
+  var links = document.getElementsByTagName("a");
+  for(var i = links.length - 1; i >= 0; i--) {
+    if(links[i].textContent.trim() === "")
+      links[i].parentNode.removeChild(links[i]);
+  }
+
+  var waybackToolbar = document.getElementById("wm-ipp");
+  if(waybackToolbar) waybackToolbar.parentNode.removeChild(waybackToolbar);
+
+  var mwEdits = document.getElementsByClassName("mw-editsection");
+  for(var i = mwEdits.length - 1; i >= 0; i--)
+    mwEdits[i].parentNode.removeChild(mwEdits[i]);
+
+  var content = document.documentElement.outerHTML;
 
   var loc = document.location;
   var uri = {
@@ -18,15 +34,26 @@ jsdom.env(process.argv[2], [], function(err, window) {
   };
   var article = new Readability(uri, document).parse();
 
-  if(!article) article = {
-    title: document.title,
-    content: document.documentElement.outerHTML
-  };
+  if(article)
+    content = "<h1>" + escapeHTML(article.title) + "</h1>" + article.content;
 
-  console.log("#", article.title.replace(/\s+/g, " ").trim());
-  console.log("");
-
-  spawn("pandoc", ["-f","html","-t","commonmark"], {
+  spawn("pandoc", [
+    "-f", "html",
+    "-t", [
+      "markdown",
+      "-bracketed_spans",
+      "-fenced_code_attributes",
+      "-header_attributes",
+      "-link_attributes",
+      "-native_divs",
+      "-native_spans",
+      "-raw_html"
+    ].join(""),
+    "--atx-headers",
+    "--reference-links",
+    "--smart",
+    "--wrap=none"
+  ], {
     stdio: ["pipe", process.stdout]
-  }).stdin.end(article.content);
+  }).stdin.end(content);
 });

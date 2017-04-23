@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Pandoc + Readability",
   "dependencies": {
+    "escape-html": "^1.0",
     "jsdom": "^7.0",
     "readability": "github:mozilla/readability"
   },
