@@ -11,8 +11,12 @@ jsdom.env(process.argv[2], [], function(err, window) {
 
   var links = document.getElementsByTagName("a");
   for(var i = links.length - 1; i >= 0; i--) {
-    if(links[i].textContent.trim() === "")
-      links[i].parentNode.removeChild(links[i]);
+    var link = links[i];
+    var href = link.getAttribute("href");
+    if(link.textContent.trim() === "")
+      link.parentNode.removeChild(link);
+    if(href && href[0] === "#")
+      link.removeAttribute("href");
   }
 
   var waybackToolbar = document.getElementById("wm-ipp");
