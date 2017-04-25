@@ -177,10 +177,7 @@ When joining the program, a Mozilla Rep agrees to take on the following responsi
 
 #### Mozilla Festival
 
-Speakers from the
-
-[Knight Foundation]
-discuss the future of news at the 2011 Mozilla Festival in London.
+Speakers from the [Knight Foundation] discuss the future of news at the 2011 Mozilla Festival in London.
 
 The Mozilla Festival is an annual event where hundreds of passionate people explore the Web, learn together and make things that can change the world. With the emphasis on *making*—the mantra of the Festival is “less yack, more hack.” Journalists, coders, filmmakers, designers, educators, gamers, makers, youth and anyone else, from all over the world, are encouraged to attend, with attendees from more than 40 countries, working together at the intersection between freedom, the Web, and that years theme.
 

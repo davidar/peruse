@@ -1,20 +1,10 @@
 # Open Verilog flow for Silego GreenPak4 programmable logic devices
 
-I’ve written a couple of posts in the past few months but they were all for
-
-[the blog at work]
-so I figured I’m long overdue for one on Silicon Exposed.
+I’ve written a couple of posts in the past few months but they were all for [the blog at work] so I figured I’m long overdue for one on Silicon Exposed.
 
 ## So what’s a GreenPak?
 
-Silego Technology is a fabless semiconductor company located in the SF Bay area, which makes (among other things) a line of programmable logic devices known as GreenPak. Their
-
-[5th generation parts]
-were just announced, but I started this project before that happened so I’m still targeting the
-
-[4th generation]
-.
-
+Silego Technology is a fabless semiconductor company located in the SF Bay area, which makes (among other things) a line of programmable logic devices known as GreenPak. Their [5th generation parts] were just announced, but I started this project before that happened so I’m still targeting the [4th generation].
 GreenPak devices are kind of like itty bitty [PSoCs] - they have a mixed signal fabric with an ADC, DACs, comparators, voltage references, plus a digital LUT/FF fabric and some typical digital MCU peripherals like counters and oscillators (but no CPU).
 
 It’s actually an interesting architecture - FPGAs (including some devices marketed as CPLDs) are a 2D array of LUTs connected via wires to adjacent cells, and true (product term) CPLDs are a star topology of AND-OR arrays connected by a crossbar. GreenPak, on the other hand, is a star topology of LUTs, flipflops, and analog/digital hard IP connected to a crossbar.
@@ -42,11 +32,7 @@ This isn’t going to be a post on the quirks of Silego’s software, though - t
 
 ## Great! How does it work?
 
-Rather than wasting time writing a synthesizer, I decided to write a GreenPak technology library for Clifford Wolf’s excellent open source synthesis tool,
-
-[Yosys]
-, and then make a place-and-route tool to turn that into a final netlist. The post-PAR netlist can then be loaded into GreenPak Designer in order to program the device.
-
+Rather than wasting time writing a synthesizer, I decided to write a GreenPak technology library for Clifford Wolf’s excellent open source synthesis tool, [Yosys], and then make a place-and-route tool to turn that into a final netlist. The post-PAR netlist can then be loaded into GreenPak Designer in order to program the device.
 The first step of the process is to run the “synth\_greenpak4” Yosys flow on the Verilog source. This runs a generic RTL synthesis pass, then some coarse-grained extraction passes to infer shift register and counter cells from behavioral logic, and finally maps the remaining logic to LUT/FF cells and outputs a JSON-formatted netlist.
 
 Once the design has been synthesized, my tool (named, surprisingly, gp4par) is then launched on the netlist. It begins by parsing the JSON and constructing a directed graph of cell objects in memory. A second graph, containing all of the primitives in the device and the legal connections between them, is then created based on the device specified on the command line. (As of now only the SLG46620V is supported; the SLG46621V can be added fairly easily but the SLG46140V has a slightly different microarchitecture which will require a bit more work to support.)
@@ -62,9 +48,7 @@ The labeled nodes now need to be placed. The initial placement uses a simple gre
 1.  Loop over the cells in the netlist. If any cell has a LOC constraint, which locks the cell to a specific physical site, attempt to assign the node to the specified site. If the specified node is the wrong type, doesn’t exist, or is already used by another constrained node, the constraint is invalid so fail with an error.
 2.  Loop over all of the unconstrained cells in the netlist and assign them to the first unused site with the right label. If none are available, the design is too big for the device so fail with an error.
 
-Once the design is placed, the placement optimizer then loops over the design and attempts to improve it. A simulated annealing algorithm is used, where changes to the design are accepted unconditionally if they make the placement better, and with a random, gradually decreasing probability if they make it worse. The optimizer terminates when the design receives a perfect score (indicating an optimal placement) or if it stops making progress for several iterations. Each iteration does the following:
-
-\
+Once the design is placed, the placement optimizer then loops over the design and attempts to improve it. A simulated annealing algorithm is used, where changes to the design are accepted unconditionally if they make the placement better, and with a random, gradually decreasing probability if they make it worse. The optimizer terminates when the design receives a perfect score (indicating an optimal placement) or if it stops making progress for several iterations. Each iteration does the following:\
 Compute a score for the current design based on the number of unroutable nets, the amount of routing congestion (number of nets crossing between halves of the device), and static timing analysis (not yet implemented, always zero).
 Make a list of nodes that contributed to this score in some way (having some attached nets unroutable, crossing to the other half of the device, or failing timing).
 Remove nodes from the list that are LOC’d to a specific location since we’re not allowed to move them.
@@ -79,7 +63,6 @@ Pick one of the candidates at random and move the pivot to that location. If ano
 Re-compute the score for the design. If it’s better, accept this change and start the next iteration.
 If the score is worse, accept it with a random probability which decreases as the iteration number goes up. If the change is not accepted, restore the previous placement.
 After optimization, the design is checked for routability. If any edges in the netlist graph don’t correspond to edges in the device graph, the user probably asked for something impossible (for example, trying to hook a flipflop’s output to a comparator’s reference voltage input) so fail with an error.
-
 The design is then routed. This is quite simple due to the crossbar structure of the device. For each edge in the netlist:
 
 \
@@ -89,15 +72,12 @@ The design is then routed. This is quite simple due to the crossbar structure of
 4.  Check if we have any cross-connections left going in this direction. If they’re all used, the design is unroutable due to congestion so fail with an error.
 5.  Pick the next unused cross-connection and configure it to route from the source. Configure the destination to route from the cross-connection and stop.
 
-Once routing is finished, run a series of post-PAR design rule checks. These currently include the following:
-
-\
+Once routing is finished, run a series of post-PAR design rule checks. These currently include the following:\
 -   If any node has no loads, generate a warning
 -   If an I/O buffer is connected to analog hard IP, fail with an error if it’s not configured in analog mode.
 -   Some signals (such as comparator inputs and oscillator power-down controls) are generated by a shared mux and fed to many loads. If different loads require conflicting settings for the shared mux, fail with an error.
 
 If DRC passes with no errors, configure all of the individual cells in the netlist based on the HDL parameters. Fail with an error if an invalid configuration was requested.
-
 Finally, generate the bitstream from all of the per-cell configuration and write it to a file.
 
 ## Great, let’s get started!
@@ -127,7 +107,6 @@ They’ve even [offered me free hardware] to help me add support for their lates
 ## So what’s next?
 
 Better testing, for starters. I have to verify functionality by hand with a DMM and oscilloscope, which is time consuming.
-
 My contact at Silego says they’re going to be giving me documentation on the SRAM emulation interface soon, so I’m going to make a hardware-in-loop test platform that connects to my desktop and the Silego ZIF socket, and lets me load new bitstreams via a scriptable interface. It’ll have FPGA-based digital I/O as well as an ADC and DAC on every device pin, plus an adjustable voltage regulator for power, so I can feed in arbitrary mixed-signal test waveforms and write PC-based unit tests to verify correct behavior.
 
 Other than that, I want to finish support for the SLG46620V in the next month or two. The SLG46621V will be an easy addition since only one pin and the relevant configuration bits have changed from the 46620 (I suspect they’re the same die, just bonded out differently).

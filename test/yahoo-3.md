@@ -25,11 +25,7 @@ View photo
 ![Vanessa Hicks]
 Vanessa Hicks
 
-The Federal Flag Code has guidelines for the proper treatment of the U.S. Flag but there are no rules for punishment related to violations. In the past, the
-
-[Supreme Court]
-has found that people are protected from punishment under the First Amendment for manipulating or even burning the flag.
-
+The Federal Flag Code has guidelines for the proper treatment of the U.S. Flag but there are no rules for punishment related to violations. In the past, the [Supreme Court] has found that people are protected from punishment under the First Amendment for manipulating or even burning the flag.
 Hicks said she was surprised when messages suddenly started to pop up on her Facebook page and even her own website criticizing her photos.
 
 She said she stayed up until 4 a.m. recently to take down comments from her business and company page, even on shoots that had nothing to do with the flag.

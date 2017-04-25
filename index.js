@@ -38,8 +38,11 @@ jsdom.env(process.argv[2], [], function(err, window) {
   };
   var article = new Readability(uri, document).parse();
 
-  if(article)
-    content = "<h1>" + escapeHTML(article.title) + "</h1>" + article.content;
+  if(article) {
+    content = "<h1>" + escapeHTML(article.title) + "</h1>";
+    content += article.content.replace(
+      /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, "$1");
+  }
 
   spawn("pandoc", [
     "-f", "html",

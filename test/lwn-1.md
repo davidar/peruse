@@ -92,14 +92,7 @@ QGIS is one of those rare free-software applications that is both powerful enoug
 By **Jonathan Corbet**\
 March 25, 2015
 
-The LibreOffice project was
-
-[announced]
-with great fanfare in September 2010. Nearly one year later, the OpenOffice.org project (from which LibreOffice was forked)
-
-[was cut loose from Oracle]
-and found a new home as an Apache project. It is fair to say that the rivalry between the two projects in the time since then has been strong. Predictions that one project or the other would fail have not been borne out, but that does not mean that the two projects are equally successful. A look at the two projects’ development communities reveals some interesting differences.
-
+The LibreOffice project was [announced] with great fanfare in September 2010. Nearly one year later, the OpenOffice.org project (from which LibreOffice was forked) [was cut loose from Oracle] and found a new home as an Apache project. It is fair to say that the rivalry between the two projects in the time since then has been strong. Predictions that one project or the other would fail have not been borne out, but that does not mean that the two projects are equally successful. A look at the two projects’ development communities reveals some interesting differences.
 #### Release histories
 
 Apache OpenOffice has made two releases in the past year: [4.1] in April 2014 and [4.1.1] (described as “a micro update” in the release announcement) in August. The main feature added during that time would appear to be significantly improved accessibility support.
@@ -401,10 +394,7 @@ Anything can happen in the free-software development world; it is entirely possi
 -   [Development]: A look at GlusterFS; LibreOffice Online; Open sourcing existing code; Secure Boot in Windows 10; …
 -   [Announcements]: A Turing award for Michael Stonebraker, Sébastien Jodogne, ReGlue are Free Software Award winners, Kat Walsh joins FSF board of directors, Cyanogen, …
 
-**Next page**
-:
-
-[Security&gt;&gt;][Security]\
+**Next page**: [Security&gt;&gt;][Security]\
 
   [A trademark battle in the Arduino community]: file:///Articles/637755/
   [Arduino]: https://en.wikipedia.org/wiki/Arduino
