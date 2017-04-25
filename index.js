@@ -19,6 +19,13 @@ jsdom.env(process.argv[2], [], function(err, window) {
       link.removeAttribute("href");
   }
 
+  var tables = document.getElementsByTagName("table");
+  for(var i = tables.length - 1; i >= 0; i--) {
+    var table = tables[i];
+    if(table.rows.length === 1 && table.rows[0].cells.length === 1)
+      table.outerHTML = table.rows[0].cells[0].innerHTML;
+  }
+
   var waybackToolbar = document.getElementById("wm-ipp");
   if(waybackToolbar) waybackToolbar.parentNode.removeChild(waybackToolbar);
 

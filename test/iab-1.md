@@ -34,10 +34,7 @@ Finally, we must do this in an increasingly fragmented market, across screens. W
 
 That is user experience.
 
-  -----------------------------------------------------------------------------------------------------------------------------------
-  IAB Tech Lab Members can join the IAB Tech Lab Ad Blocking Working Group, please email <adblocking@iab.com> for more information.
-  -----------------------------------------------------------------------------------------------------------------------------------
-
+IAB Tech Lab Members can join the IAB Tech Lab Ad Blocking Working Group, please email <adblocking@iab.com> for more information.
 Read [more about ad blocking here].
 
 ![Auto Draft 14]
