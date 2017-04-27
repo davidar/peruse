@@ -17,21 +17,11 @@ That, readers, is “The Big Lie”. It is a lie so big that if one ponders the 
 
 Samantha’s points (I assume you read it, for you are smart people who know the importance of such things) are fairly clear:
 
-1.  
-
-    With the release of Overcast 2.0, a product Samantha actually likes, Marco Arment moved to a [patronage model] that will probably be successful for him.
-2.  
-
-    Arment’s insistence that “[anyone can do this]” while technically true, (anyone can in fact, implement this pricing model), also implies that “anyone” can have the kind of success that a developer with Marco’s history, financial status, and deep ties to the Apple News Web is expected to have. This is silly.
-3.  
-
-    Marco Arment occupies a fairly unique position in the Apple universe, (gained by hard work and no small talent), and because of that, benefits from a set of privileges that a new developer or even one that has been around for a long time, but isn’t, well, *Marco*, not only don’t have, but have little chance of attaining anytime soon.
-4.  
-
-    Marco has earned his success and is entitled to the benefits and privileges it brings, but he seems rather blind to all of that, and seems to still imagine himself as “two guys in a garage”. This is just not correct.
-5.  
-
-    In addition, the benefits and privileges of the above ensure that by releasing Overcast 2 as a free app, with patronage pricing, he has, if not gutted, severely hurt the ability of folks actually selling their apps for an up-front price of not free to continue doing so. This has the effect of accelerating the “race to the bottom” in the podcast listening app segment, which hurts devs who cannot afford to work on a “I don’t really need this money, so whatever you feel like sending is okay” model.
+1.  With the release of Overcast 2.0, a product Samantha actually likes, Marco Arment moved to a [patronage model] that will probably be successful for him.
+2.  Arment’s insistence that “[anyone can do this]” while technically true, (anyone can in fact, implement this pricing model), also implies that “anyone” can have the kind of success that a developer with Marco’s history, financial status, and deep ties to the Apple News Web is expected to have. This is silly.
+3.  Marco Arment occupies a fairly unique position in the Apple universe, (gained by hard work and no small talent), and because of that, benefits from a set of privileges that a new developer or even one that has been around for a long time, but isn’t, well, *Marco*, not only don’t have, but have little chance of attaining anytime soon.
+4.  Marco has earned his success and is entitled to the benefits and privileges it brings, but he seems rather blind to all of that, and seems to still imagine himself as “two guys in a garage”. This is just not correct.
+5.  In addition, the benefits and privileges of the above ensure that by releasing Overcast 2 as a free app, with patronage pricing, he has, if not gutted, severely hurt the ability of folks actually selling their apps for an up-front price of not free to continue doing so. This has the effect of accelerating the “race to the bottom” in the podcast listening app segment, which hurts devs who cannot afford to work on a “I don’t really need this money, so whatever you feel like sending is okay” model.
 
 None of this is incorrect. None of this is an ad hominem attack in any way. It is just pointing out that a developer of Arment’s stature and status lives in a very different world than someone in East Frog Balls, Arkansas trying to make a living off of App sales. Our dev in EFB doesn’t have the main sites on the Apple web falling all over themselves to review their app the way that Arment does. They’re not friends with the people being The Loop, Daring Fireball, SixColors, iMore, The Mac Observer, etc., yadda.
 

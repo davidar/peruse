@@ -200,222 +200,78 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 
 ## References
 
-1.  
-
-    **\^** For exceptions, see “Values” section below
-2.  
-
-    **\^** [“About the Mozilla Corporation”]. Mozilla Foundation. 
-3.  
-
-    **\^** [“Freeing the Source: The Story of Mozilla”]. *Open Sources: Voices from the Open Source Revolution*. Retrieved 2016-05-01. 
-4.  
-
-    **\^** [“Mozilla.org WHOIS, DNS, & Domain Info”]. *DomainTools*. Retrieved 1 May 2016. 
-5.  
-
-    **\^** Payment, S. (2007). [*Marc Andreessen and Jim Clark: The Founders of Netscape*]. Rosen Publishing Group. [ISBN] [9781404207196]. 
-6.  
-
-    **\^** [“Netscape Announces mozilla.org, a Dedicated Team and Web Site Supporting Development of Free Client Source Code”]. Netscape. Archived from the original on October 4, 2002. Retrieved 2012-08-21. 
-7.  
-
-    **\^** [“Mac vendors ponder Netscape gambit.”]. *Macworld*. 1 May 1998. Retrieved 2012-08-19. 
-8.  
-
-    **\^** Zawinski, Jamie (1996). [“nscp dorm”]. Retrieved 2007-10-12. 
-9.  
-
-    **\^** Dave Titus with assistance from Andrew Wong. [“How was Mozilla born”]. 
-10. 
-
-    **\^** [“Introduction to Mozilla Source Code”]. Mozilla. Retrieved 2012-08-18. “However, mozilla.org wants to emphasize that these milestones are being produced for testing purposes only.” 
-11. 
-
-    **\^** [“mozilla.org Announces Launch of the Mozilla Foundation to Lead Open-Source Browser Efforts”]. Retrieved 2012-08-18. 
-12. 
-
-    **\^** [Eich, Brendan][Brendan Eich]; [David Hyatt][Dave Hyatt] (April 2, 2003). [“mozilla development roadmap”]. Mozilla. Retrieved 2009-08-02. 
-13. 
-
-    **\^** [“Better Browsing on Your Android Smartphone”]. AllThingsD. Retrieved 2012-08-18. 
-14. 
-
-    **\^** [“Mozilla Releases Test Version of Firefox OS”]. PC Magazine. Retrieved 2012-08-18. 
-15. 
-
-    **\^** [“Mozilla Marketplace is live, lets you run web apps like desktop programs”]. Engadget. Retrieved 2012-08-18. 
-16. 
-
-    **\^** Lardinois, Frederic (November 15, 2012). [“Mozilla Releases Annual Report For 2011: Revenue Up 33% To \$163M, Majority From Google”]. *techcrunch.com*. 
-17. 
-
-    **\^** [“cisco/openh264 · GitHub”]. github.com. Retrieved 2014-04-05. 
-18. 
-
-    **\^** [“Mozilla will add H.264 to Firefox as Cisco makes eleventh-hour push for WebRTC’s future — Tech News and Analysis”]. gigaom.com. Retrieved 2014-04-05. 
-19. 
-
-    **\^** [“Cisco to release open-source H.264 codec, Mozilla makes tactical retreat - TechRepublic”]. techrepublic.com. Retrieved 2014-04-05. 
-20. 
-
-    **\^** [“Video Interoperability on the Web Gets a Boost From Cisco’s H.264 Codec”]. “Of course, this is not a not a complete solution. In a perfect world, codecs, like other basic Internet technologies such as TCP/IP, HTTP, and HTML, would be fully open and free” 
-21. 
-
-    **\^** [“Comments on Cisco, Mozilla, and H.264”]. “By endorsing Cisco’s plan, there’s no getting around the fact that we’ve caved on our principles. That said, principles can’t replace being in a practical position to make a difference in the future.”  - Christopher Montgomery wrote in a personal capacity but works for Mozilla in their codecs team
-22. 
-
-    **\^** [“Game Creator Challenge -Contest Terms and Conditions”].  - submissions to the “amateur” category have to be released as free software, but not for the other two categories
-23. 
-
-    **\^** [“Los Angeles Times - Brendan Eich contribution to Proposition 8”]. latimes.com. Retrieved 2014-07-01. 
-24. 
-
-    **\^** [“Gay Firefox developers boycott Mozilla to protest CEO hire \[Updated\] | Ars Technica”]. arstechnica.com. Retrieved 2014-04-05. 
-25. 
-
-    **\^** Kelly Faircloth (9 April 2012). [“Tech Celeb Makes Prop-8 Donation; Internet Goes Berserk”]. *BetaBeat*. BetaBeat. Retrieved 2014-04-28. 
-26. 
-
-    **\^** [“Screenshot of OkCupid’s statement towards Firefox users”]. huffingtonpost.com. Retrieved 2014-07-01. 
-27. 
-
-    **\^** [“FAQ on CEO Resignation”]. *The Mozilla Blog*. Retrieved 2015-04-20. 
-28. 
-
-    **\^** Baker, Mitchell (3 April 2014). [“Brendan Eich Steps Down as Mozilla CEO”]. *mozilla blog*. Mozilla. Retrieved 2014-04-04. 
-29. 
-
-    **\^** [“opensecrets.org listing of Sam Yagan’s contributions to political candidates”]. opensecrets.org. Retrieved 2014-07-01. 
-30. 
-
-    **\^** [“ontheissues.org listing of votes cast by Chris Cannon”]. ontheissues.org. Retrieved 2014-07-01. 
-31. 
-
-    **\^** [“ontheissues.org listing of votes cast on the permanency of the Patriot Act”]. ontheissues.org. Retrieved 2014-07-01. 
-32. 
-
-    **\^** [“ontheissues.org: Chris Cannon on Homeland Security”]. ontheissues.org. Retrieved 2014-07-01. 
-33. 
-
-    **\^** [“ontheissues.org: Chris Cannon on Abortion”]. ontheissues.org. Retrieved 2014-07-01. 
-34. 
-
-    **\^** Levintova, Hannah (7 April 2014). [“OkCupid’s CEO Donated to an Anti-Gay Campaign Once, Too”]. *Hanna Levintova article on motherjones.com*. motherjones.com. Retrieved 2014-07-01. 
-35. 
-
-    **\^** Lee, Stephanie M. (8 April 2014). [“OKCupid CEO once donated to anti-gay politician”]. *Stephanie M. Lee’s blog on sfgate.com*. sfgate.com. Retrieved 2014-07-01. 
-36. 
-
-    \^ ^***a***^ ^***b***^ [“The Hypocrisy Of Sam Yagan & OkCupid”]. *uncrunched.com blog*. uncrunched.com. 6 April 2014. Retrieved 2014-07-01. 
-37. 
-
-    **\^** Bellware, Kim (31 March 2014). ["OKCupid Publicly Rips Mozilla: ’We Wish Them Nothing But Failure’"]. *Kim Bellware article on huffingtonpost.com*. huffingtonpost.com. Retrieved 2014-07-01. 
-38. 
-
-    **\^** [“Mozilla’s Appointment Of Brendan Eich As CEO Sparks Controversy After Prop 8 Donation News Re-Emerges”]. *huffingtonpost.com article*. huffingtonpost.com. 27 March 2014. Retrieved 2014-07-01. 
-39. 
-
-    **\^** Eidelson, Josh (4 April 2014). [“OkCupid’s gay rights stunt has its limits: Taking a deeper look at the savvy ploy”]. *Josh Eidelson article on salon.com*. salon.com. Retrieved 2014-07-01. 
-40. 
-
-    \^ ^***a***^ ^***b***^ [“Mozilla Manifesto”]. Mozilla.org. Retrieved 2012-03-21. 
-41. 
-
-    **\^** [“The Mozilla Manifesto”]. Retrieved 24 July 2015. 
-42. 
-
-    **\^** [“Gecko Layout Engine”]. download-firefox.org. July 17, 2008. Archived from [the original] on 2010-11-28. Retrieved 2012-05-10. 
-43. 
-
-    **\^** [“Web Browser Market Share Trends”]. *W3Counter*. Awio Web Services LLC. Retrieved 2012-05-10. 
-44. 
-
-    **\^** [“Top 5 Browsers”]. *StatCounter Global Stats*. StatCounter. Retrieved 2012-05-10. 
-45. 
-
-    **\^** [“Web browsers (Global marketshare)”]. *Clicky*. Roxr Software Ltd. Retrieved 2012-05-10. 
-46. 
-
-    **\^** [Goodger, Ben] (February 6, 2006). [“Where Did Firefox Come From?”]. Inside Firefox. Archived from [the original][7] on 2011-06-23. Retrieved 2012-01-07. 
-47. 
-
-    **\^** [“Mozilla browser becomes Firebird”]. IBPhoenix. Archived from [the original][8] on 2007-09-14. Retrieved 2013-06-10. “We at IBPhoenix think that having a browser and a database with the same name in the same space will confuse the market, especially as browsers and databases are often used in the same applications” 
-48. 
-
-    **\^** Festa, Paul (May 6, 2003). [“Mozilla’s Firebird gets wings clipped”]. [CNET]. Retrieved 2007-01-30. 
-49. 
-
-    **\^** Festa, Paul (February 9, 2004). [“Mozilla holds ‘fire’ in naming fight”]. CNET News. Retrieved 2007-01-24. 
-50. 
-
-    **\^** [“Mobile features”]. Mozilla. Retrieved 2012-06-26. 
-51. 
-
-    **\^** [“Mobile System Requirements”]. 
-52. 
-
-    **\^** [“Firefox Mobile supported devices”]. 
-53. 
-
-    **\^** [“Mozilla rules out Firefox for iPhone and BlackBerry”]. 
-54. 
-
-    **\^** [“Boot to Gecko Project”]. Mozilla. March 2012. Retrieved 2012-03-30. 
-55. 
-
-    **\^** [“Firefox OS - Devices & Availability”]. *Mozilla*. Retrieved 2015-12-30. 
-56. 
-
-    **\^** [“Thunderbird: Stability and Community Innovation | Mitchell’s Blog”]. *blog.lizardwrangler.com*. Retrieved 2015-04-20. 
-57. 
-
-    **\^** [“Two discontinued browsers”]. LWN.net. 21 December 2005. Retrieved 2012-08-19. 
-58. 
-
-    **\^** [“SeaMonkey trademarks registered!”]. kairo.at. 2007-05-22. Retrieved 2013-06-10. 
-59. 
-
-    **\^** [“Bugzilla Installation List”]. Retrieved 2014-09-18. 
-60. 
-
-    \^ ^***a***^ ^***b***^ [Eich, Brendan][Brendan Eich] (21 June 2011). [“New JavaScript Engine Module Owner”]. BrendanEich.com. 
-61. 
-
-    **\^** [“Bug 759422 - Remove use of e4x in account creation”]. Bugzilla@Mozilla. 2012-08-17. Retrieved 2012-08-18. 
-62. 
-
-    **\^** [“SpiderMonkey”]. Mozilla Developer Network. 2012-08-15. Retrieved 2012-08-18. 
-63. 
-
-    **\^** [“Rhino History”]. [Mozilla Foundation]. Retrieved 2008-03-20. 
-64. 
-
-    **\^** [“Roadmap”]. Retrieved 10 May 2016. 
-65. 
-
-    **\^** Larabel, Michael. [“Servo Continues Making Progress For Shipping Components In Gecko, Browser.html”]. *Phoronix.com*. Retrieved 10 May 2016. 
-66. 
-
-    **\^** [“Mozilla VR”]. *Mozilla VR*. Retrieved 2016-10-27. 
-67. 
-
-    **\^** [*Persona*], Mozilla 
-68. 
-
-    **\^** [“Persona”]. *Mozilla Developer Network*. Retrieved 2016-10-27. 
-69. 
-
-    **\^** [*About Mozilla Webmaker*], Mozilla 
-70. 
-
-    \^ ^***a***^ ^***b***^ Alan Henry. [“Mozilla Webmaker Teaches You to Build Web Sites, Apps, and More”]. *Lifehacker*. Gawker Media. 
-71. 
-
-    **\^** [“Air Mozilla”]. Mozilla Wiki. 
-72. 
-
-    **\^** [“Air Mozilla Reboot, Phase I”]. 
+1.  **\^** For exceptions, see “Values” section below
+2.  **\^** [“About the Mozilla Corporation”]. Mozilla Foundation. 
+3.  **\^** [“Freeing the Source: The Story of Mozilla”]. *Open Sources: Voices from the Open Source Revolution*. Retrieved 2016-05-01. 
+4.  **\^** [“Mozilla.org WHOIS, DNS, & Domain Info”]. *DomainTools*. Retrieved 1 May 2016. 
+5.  **\^** Payment, S. (2007). [*Marc Andreessen and Jim Clark: The Founders of Netscape*]. Rosen Publishing Group. [ISBN] [9781404207196]. 
+6.  **\^** [“Netscape Announces mozilla.org, a Dedicated Team and Web Site Supporting Development of Free Client Source Code”]. Netscape. Archived from the original on October 4, 2002. Retrieved 2012-08-21. 
+7.  **\^** [“Mac vendors ponder Netscape gambit.”]. *Macworld*. 1 May 1998. Retrieved 2012-08-19. 
+8.  **\^** Zawinski, Jamie (1996). [“nscp dorm”]. Retrieved 2007-10-12. 
+9.  **\^** Dave Titus with assistance from Andrew Wong. [“How was Mozilla born”]. 
+10. **\^** [“Introduction to Mozilla Source Code”]. Mozilla. Retrieved 2012-08-18. “However, mozilla.org wants to emphasize that these milestones are being produced for testing purposes only.” 
+11. **\^** [“mozilla.org Announces Launch of the Mozilla Foundation to Lead Open-Source Browser Efforts”]. Retrieved 2012-08-18. 
+12. **\^** [Eich, Brendan][Brendan Eich]; [David Hyatt][Dave Hyatt] (April 2, 2003). [“mozilla development roadmap”]. Mozilla. Retrieved 2009-08-02. 
+13. **\^** [“Better Browsing on Your Android Smartphone”]. AllThingsD. Retrieved 2012-08-18. 
+14. **\^** [“Mozilla Releases Test Version of Firefox OS”]. PC Magazine. Retrieved 2012-08-18. 
+15. **\^** [“Mozilla Marketplace is live, lets you run web apps like desktop programs”]. Engadget. Retrieved 2012-08-18. 
+16. **\^** Lardinois, Frederic (November 15, 2012). [“Mozilla Releases Annual Report For 2011: Revenue Up 33% To \$163M, Majority From Google”]. *techcrunch.com*. 
+17. **\^** [“cisco/openh264 · GitHub”]. github.com. Retrieved 2014-04-05. 
+18. **\^** [“Mozilla will add H.264 to Firefox as Cisco makes eleventh-hour push for WebRTC’s future — Tech News and Analysis”]. gigaom.com. Retrieved 2014-04-05. 
+19. **\^** [“Cisco to release open-source H.264 codec, Mozilla makes tactical retreat - TechRepublic”]. techrepublic.com. Retrieved 2014-04-05. 
+20. **\^** [“Video Interoperability on the Web Gets a Boost From Cisco’s H.264 Codec”]. “Of course, this is not a not a complete solution. In a perfect world, codecs, like other basic Internet technologies such as TCP/IP, HTTP, and HTML, would be fully open and free” 
+21. **\^** [“Comments on Cisco, Mozilla, and H.264”]. “By endorsing Cisco’s plan, there’s no getting around the fact that we’ve caved on our principles. That said, principles can’t replace being in a practical position to make a difference in the future.”  - Christopher Montgomery wrote in a personal capacity but works for Mozilla in their codecs team
+22. **\^** [“Game Creator Challenge -Contest Terms and Conditions”].  - submissions to the “amateur” category have to be released as free software, but not for the other two categories
+23. **\^** [“Los Angeles Times - Brendan Eich contribution to Proposition 8”]. latimes.com. Retrieved 2014-07-01. 
+24. **\^** [“Gay Firefox developers boycott Mozilla to protest CEO hire \[Updated\] | Ars Technica”]. arstechnica.com. Retrieved 2014-04-05. 
+25. **\^** Kelly Faircloth (9 April 2012). [“Tech Celeb Makes Prop-8 Donation; Internet Goes Berserk”]. *BetaBeat*. BetaBeat. Retrieved 2014-04-28. 
+26. **\^** [“Screenshot of OkCupid’s statement towards Firefox users”]. huffingtonpost.com. Retrieved 2014-07-01. 
+27. **\^** [“FAQ on CEO Resignation”]. *The Mozilla Blog*. Retrieved 2015-04-20. 
+28. **\^** Baker, Mitchell (3 April 2014). [“Brendan Eich Steps Down as Mozilla CEO”]. *mozilla blog*. Mozilla. Retrieved 2014-04-04. 
+29. **\^** [“opensecrets.org listing of Sam Yagan’s contributions to political candidates”]. opensecrets.org. Retrieved 2014-07-01. 
+30. **\^** [“ontheissues.org listing of votes cast by Chris Cannon”]. ontheissues.org. Retrieved 2014-07-01. 
+31. **\^** [“ontheissues.org listing of votes cast on the permanency of the Patriot Act”]. ontheissues.org. Retrieved 2014-07-01. 
+32. **\^** [“ontheissues.org: Chris Cannon on Homeland Security”]. ontheissues.org. Retrieved 2014-07-01. 
+33. **\^** [“ontheissues.org: Chris Cannon on Abortion”]. ontheissues.org. Retrieved 2014-07-01. 
+34. **\^** Levintova, Hannah (7 April 2014). [“OkCupid’s CEO Donated to an Anti-Gay Campaign Once, Too”]. *Hanna Levintova article on motherjones.com*. motherjones.com. Retrieved 2014-07-01. 
+35. **\^** Lee, Stephanie M. (8 April 2014). [“OKCupid CEO once donated to anti-gay politician”]. *Stephanie M. Lee’s blog on sfgate.com*. sfgate.com. Retrieved 2014-07-01. 
+36. \^ ^***a***^ ^***b***^ [“The Hypocrisy Of Sam Yagan & OkCupid”]. *uncrunched.com blog*. uncrunched.com. 6 April 2014. Retrieved 2014-07-01. 
+37. **\^** Bellware, Kim (31 March 2014). ["OKCupid Publicly Rips Mozilla: ’We Wish Them Nothing But Failure’"]. *Kim Bellware article on huffingtonpost.com*. huffingtonpost.com. Retrieved 2014-07-01. 
+38. **\^** [“Mozilla’s Appointment Of Brendan Eich As CEO Sparks Controversy After Prop 8 Donation News Re-Emerges”]. *huffingtonpost.com article*. huffingtonpost.com. 27 March 2014. Retrieved 2014-07-01. 
+39. **\^** Eidelson, Josh (4 April 2014). [“OkCupid’s gay rights stunt has its limits: Taking a deeper look at the savvy ploy”]. *Josh Eidelson article on salon.com*. salon.com. Retrieved 2014-07-01. 
+40. \^ ^***a***^ ^***b***^ [“Mozilla Manifesto”]. Mozilla.org. Retrieved 2012-03-21. 
+41. **\^** [“The Mozilla Manifesto”]. Retrieved 24 July 2015. 
+42. **\^** [“Gecko Layout Engine”]. download-firefox.org. July 17, 2008. Archived from [the original] on 2010-11-28. Retrieved 2012-05-10. 
+43. **\^** [“Web Browser Market Share Trends”]. *W3Counter*. Awio Web Services LLC. Retrieved 2012-05-10. 
+44. **\^** [“Top 5 Browsers”]. *StatCounter Global Stats*. StatCounter. Retrieved 2012-05-10. 
+45. **\^** [“Web browsers (Global marketshare)”]. *Clicky*. Roxr Software Ltd. Retrieved 2012-05-10. 
+46. **\^** [Goodger, Ben] (February 6, 2006). [“Where Did Firefox Come From?”]. Inside Firefox. Archived from [the original][7] on 2011-06-23. Retrieved 2012-01-07. 
+47. **\^** [“Mozilla browser becomes Firebird”]. IBPhoenix. Archived from [the original][8] on 2007-09-14. Retrieved 2013-06-10. “We at IBPhoenix think that having a browser and a database with the same name in the same space will confuse the market, especially as browsers and databases are often used in the same applications” 
+48. **\^** Festa, Paul (May 6, 2003). [“Mozilla’s Firebird gets wings clipped”]. [CNET]. Retrieved 2007-01-30. 
+49. **\^** Festa, Paul (February 9, 2004). [“Mozilla holds ‘fire’ in naming fight”]. CNET News. Retrieved 2007-01-24. 
+50. **\^** [“Mobile features”]. Mozilla. Retrieved 2012-06-26. 
+51. **\^** [“Mobile System Requirements”]. 
+52. **\^** [“Firefox Mobile supported devices”]. 
+53. **\^** [“Mozilla rules out Firefox for iPhone and BlackBerry”]. 
+54. **\^** [“Boot to Gecko Project”]. Mozilla. March 2012. Retrieved 2012-03-30. 
+55. **\^** [“Firefox OS - Devices & Availability”]. *Mozilla*. Retrieved 2015-12-30. 
+56. **\^** [“Thunderbird: Stability and Community Innovation | Mitchell’s Blog”]. *blog.lizardwrangler.com*. Retrieved 2015-04-20. 
+57. **\^** [“Two discontinued browsers”]. LWN.net. 21 December 2005. Retrieved 2012-08-19. 
+58. **\^** [“SeaMonkey trademarks registered!”]. kairo.at. 2007-05-22. Retrieved 2013-06-10. 
+59. **\^** [“Bugzilla Installation List”]. Retrieved 2014-09-18. 
+60. \^ ^***a***^ ^***b***^ [Eich, Brendan][Brendan Eich] (21 June 2011). [“New JavaScript Engine Module Owner”]. BrendanEich.com. 
+61. **\^** [“Bug 759422 - Remove use of e4x in account creation”]. Bugzilla@Mozilla. 2012-08-17. Retrieved 2012-08-18. 
+62. **\^** [“SpiderMonkey”]. Mozilla Developer Network. 2012-08-15. Retrieved 2012-08-18. 
+63. **\^** [“Rhino History”]. [Mozilla Foundation]. Retrieved 2008-03-20. 
+64. **\^** [“Roadmap”]. Retrieved 10 May 2016. 
+65. **\^** Larabel, Michael. [“Servo Continues Making Progress For Shipping Components In Gecko, Browser.html”]. *Phoronix.com*. Retrieved 10 May 2016. 
+66. **\^** [“Mozilla VR”]. *Mozilla VR*. Retrieved 2016-10-27. 
+67. **\^** [*Persona*], Mozilla 
+68. **\^** [“Persona”]. *Mozilla Developer Network*. Retrieved 2016-10-27. 
+69. **\^** [*About Mozilla Webmaker*], Mozilla 
+70. \^ ^***a***^ ^***b***^ Alan Henry. [“Mozilla Webmaker Teaches You to Build Web Sites, Apps, and More”]. *Lifehacker*. Gawker Media. 
+71. **\^** [“Air Mozilla”]. Mozilla Wiki. 
+72. **\^** [“Air Mozilla Reboot, Phase I”]. 
 
 [Constant downloads failure in firefox]
 

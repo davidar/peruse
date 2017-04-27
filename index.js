@@ -26,6 +26,10 @@ jsdom.env(process.argv[2], [], function(err, window) {
       table.outerHTML = table.rows[0].cells[0].innerHTML;
   }
 
+  var items = document.getElementsByTagName("li");
+  for(var i = items.length - 1; i >= 0; i--)
+    items[i].removeAttribute("id");
+
   var waybackToolbar = document.getElementById("wm-ipp");
   if(waybackToolbar) waybackToolbar.parentNode.removeChild(waybackToolbar);
 
