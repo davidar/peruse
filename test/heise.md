@@ -13,7 +13,7 @@ Zur TOTP-Nutzung muss zunächst ein Startwert an 1Password übergeben werden. Da
 
 Update 5.3 des Passwortmanagers liefert auch noch weitere Verbesserungen. So gibt es die Möglichkeit, FaceTime-Audio- oder Skype-Anrufe aus 1Password zu starten, die Zahl der Zusatzfelder in der Datenbank wurde erweitert und der Umgang mit unterschiedlichen Zeitzonen klappt besser. Die Engine zur Passworteingabe im Browser soll beschleunigt worden sein.
 
-1Password kostet aktuell knapp 50 Euro im Mac App Store und setzt in seiner aktuellen Version mindestens OS X 10.10 voraus. ([bsc])\
+1Password kostet aktuell knapp 50 Euro im Mac App Store und setzt in seiner aktuellen Version mindestens OS X 10.10 voraus. ([bsc])  
 
   []: file://3.f.ix.de/scale/geometry/600/q75/imgs/18/1/4/6/2/3/5/1/Barcode-Scanner-With-Border-fc08c913da5cea5d.jpeg
   [AgileBits hat Version 5.3 seines bekannten Passwortmanagers 1Password für OS X freigegeben.]: https://itunes.apple.com/de/app/1password-password-manager/id443987910

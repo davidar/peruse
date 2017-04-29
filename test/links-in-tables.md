@@ -52,7 +52,7 @@ Here are examples of app updates already using File-by-File Patching:
   [Netflix]                  16.2 MB         7.7 MB (-52%)                  1.2 MB (-92%)
   -------------------------- --------------- ------------------------------ -----------------------------------------
 
-\
+  
 
 *Disclaimer: if you see different patch sizes when you press “update” manually, that is because we are not currently using File-by-file for interactive updates, only those done in the background.*
 **Saving data and making our users (& developers!) happy**

@@ -2,7 +2,7 @@
 
 Daring Fireball is written and produced by John Gruber.
 
-\
+  
 *Portrait by [George Del Barrio]*
 
 ## Mac Apps

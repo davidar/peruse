@@ -2,7 +2,7 @@
 
 How to get shanked doing what people say they want
 
-> don’t preach to me\
+> don’t preach to me  
 > Mr. integrity
 
 (EDIT: removed the link to Samantha’s post, because the arments and the grubers and the rest of The Deck Clique got what they wanted: a non-proper person driven off the internet lightly capped with a dusting of transphobia along the way, all totally okay because the ends justify the means, and it’s okay when “good” people do it.)

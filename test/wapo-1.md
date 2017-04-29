@@ -56,7 +56,7 @@ Security officials are particularly concerned by the collapse of Libya, where va
 
 In January, Libyan militants loyal to the Islamic State [beheaded 21 Christians] — 20 of them Egyptian Copts — along the country’s coast. They later seized the Libyan city of Sirte.
 
-![]\
+![]  
 
 Officials are worried about the number of Tunisian militants who may have joined the jihadists in Libya — with the goal of returning home to fight the Tunis government.
 

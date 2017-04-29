@@ -28,7 +28,7 @@ It also pays to be weary of competing suitors for your startup, Zuckerberg said,
 
 It wasn’t clear why these strategies didn’t work on Snapchat CEO Evan Spiegel, who [famously rebuffed] a \$3 billion takeover offer from Facebook in 2013.
 
-***Tech Enabled:** CNET chronicles tech’s role in providing new kinds of accessibility. Check it out [here].**\
+***Tech Enabled:** CNET chronicles tech’s role in providing new kinds of accessibility. Check it out [here].**  
 ***
 
 ***Technically Literate:** Original works of short fiction with unique perspectives on tech, exclusively on CNET. [Here].*

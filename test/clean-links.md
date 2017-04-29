@@ -2,7 +2,7 @@
 
 ### Study Webtext
 
-## “Bartleby the Scrivener: A Story of Wall-Street ” (1853) \
+## “Bartleby the Scrivener: A Story of Wall-Street ” (1853)   
 Herman Melville
 
 ### Prepared by [Ann Woodlief,] Virginia Commonwealth University

@@ -40,7 +40,7 @@ But, perhaps, once a project becomes profitable, there is simply no way to predi
 
 ## [Mapping and data mining with QGIS 2.8]
 
-By **Nathan Willis**\
+By **Nathan Willis**  
 March 25, 2015
 
 [QGIS] is a free-software geographic information system (GIS) tool; it provides a unified interface in which users can import, edit, and analyze geographic-oriented information, and it can produce output as varied as printable maps or map-based web services. The project recently made its first update to be designated a long-term release (LTR), and that release is both poised for high-end usage and friendly to newcomers alike.
@@ -89,7 +89,7 @@ QGIS is one of those rare free-software applications that is both powerful enoug
 
 ## [Development activity in LibreOffice and OpenOffice]
 
-By **Jonathan Corbet**\
+By **Jonathan Corbet**  
 March 25, 2015
 
 The LibreOffice project was [announced] with great fanfare in September 2010. Nearly one year later, the OpenOffice.org project (from which LibreOffice was forked) [was cut loose from Oracle] and found a new home as an Apache project. It is fair to say that the rivalry between the two projects in the time since then has been strong. Predictions that one project or the other would fail have not been borne out, but that does not mean that the two projects are equally successful. A look at the two projects’ development communities reveals some interesting differences.
@@ -384,7 +384,7 @@ Anything can happen in the free-software development world; it is entirely possi
 
 [Comments (74 posted)]
 
-**Page editor**: Jonathan Corbet\
+**Page editor**: Jonathan Corbet  
 
 ## Inside this week’s LWN.net Weekly Edition
 
@@ -394,7 +394,7 @@ Anything can happen in the free-software development world; it is entirely possi
 -   [Development]: A look at GlusterFS; LibreOffice Online; Open sourcing existing code; Secure Boot in Windows 10; …
 -   [Announcements]: A Turing award for Michael Stonebraker, Sébastien Jodogne, ReGlue are Free Software Award winners, Kat Walsh joins FSF board of directors, Cyanogen, …
 
-**Next page**: [Security&gt;&gt;][Security]\
+**Next page**: [Security&gt;&gt;][Security]  
 
   [A trademark battle in the Arduino community]: file:///Articles/637755/
   [Arduino]: https://en.wikipedia.org/wiki/Arduino

@@ -8,7 +8,7 @@ L’appareil, mis à disposition par Airbus, était arrivé à Katmandou mercred
 
 Le séisme a fait près de 5 500 morts et touche huit des 28 millions d’habitants du Népal. Des dizaines de milliers de personnes sont sans abri.
 
-\
+  
 **
 
   [a déclaré jeudi le ministre des Affaires étrangères]: http://www.liberation.fr/video/2015/04/30/laurent-fabius-plus-de-200-francais-n-ont-pas-ete-retrouves_1278687

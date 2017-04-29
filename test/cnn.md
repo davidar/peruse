@@ -1,7 +1,5 @@
 # The ‘birth lottery’ and economic mobility
 
-![]
-
 ## The U.S. has long been heralded as a land of opportunity – a place where anyone can succeed regardless of the economic class they were born into.
 
 But a new report released on Monday by [Stanford University’s Center on Poverty and Inequality] calls that into question.
@@ -10,7 +8,7 @@ The report assessed poverty levels, income and wealth inequality, economic mobil
 
 Powered by SmartAsset.com
 
-![][1]
+![]
 
 Among its key findings: the class you’re born into matters much more in the U.S. than many of the other countries.
 
@@ -24,16 +22,16 @@ The report also suggested the U.S. might not be the “jobs machine” it thinks
 
 It ranked near the bottom of the pack based on the levels of unemployment among men and women of prime working age. The study determined this by taking the ratio of employed men and women between the ages of 25 and 54 compared to the total population of each country.
 
-The overall rankings of the countries were as follows:\
-1. Finland \
-2. Norway\
-3. Australia \
-4. Canada\
-5. Germany\
-6. France\
-7. United Kingdom \
-8. Italy\
-9. Spain\
+The overall rankings of the countries were as follows:  
+1. Finland   
+2. Norway  
+3. Australia   
+4. Canada  
+5. Germany  
+6. France  
+7. United Kingdom   
+8. Italy  
+9. Spain  
 10. United States
 
 The low ranking the U.S. received was due to its extreme levels of wealth and income inequality and the ineffectiveness of its “safety net” – social programs aimed at reducing poverty.
@@ -44,9 +42,8 @@ The report concluded that the American safety net was ineffective because it pro
 
  CNNMoney (New York) First published February 1, 2016: 1:28 AM ET
 
-  []: 
   [Stanford University’s Center on Poverty and Inequality]: http://web.stanford.edu/group/scspi-dev/cgi-bin/
-  [1]: https://smrt.as/ck
+  []: https://smrt.as/ck
   [report states]: http://web.stanford.edu/group/scspi-dev/cgi-bin/publications/state-union-report
   [Related: Rich are paying more in taxes but not as much as they used to]: http://money.cnn.com/2016/01/11/news/economy/rich-taxes/index.html?iid=EL
   [Related: Chicago is America’s most segregated city]: http://money.cnn.com/2016/01/05/news/economy/chicago-segregated/index.html?iid=EL

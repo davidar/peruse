@@ -19,6 +19,13 @@ jsdom.env(process.argv[2], [], function(err, window) {
       link.removeAttribute("href");
   }
 
+  var images = document.getElementsByTagName("img");
+  for(var i = images.length - 1; i >= 0; i--) {
+    var image = images[i];
+    if(image.getAttribute("src") === "")
+      image.parentNode.removeChild(image);
+  }
+
   var tables = document.getElementsByTagName("table");
   for(var i = tables.length - 1; i >= 0; i--) {
     var table = tables[i];
@@ -60,6 +67,7 @@ jsdom.env(process.argv[2], [], function(err, window) {
     "-t", [
       "markdown",
       "-bracketed_spans",
+      "-escaped_line_breaks",
       "-fenced_code_attributes",
       "-header_attributes",
       "-link_attributes",
