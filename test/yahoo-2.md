@@ -29,5 +29,3 @@ This version corrects the spelling of the region to Tuva, not Tyva.
 \_\_
 
 Aerospace Writer Marcia Dunn in Cape Canaveral, Florida, and Vladimir Isachenkov in Moscow contributed to this report.
-
-

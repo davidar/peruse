@@ -17,7 +17,8 @@ Photography was my lucky way of experiencing the many types of people my generat
 ![]
 
 topleftpixel.com
-I started discovering beautiful things the [web could do with images]: things not possible with print. Just as every generation revolts against walking in the previous generations shoes, I found myself questioning the expectations that I came up against as a photo editor. In our newsroom the expectations were built from an outdated information world. We were expected to fill old shoes.
+
+I started discovering beautiful things the [web could do with images][]: things not possible with print. Just as every generation revolts against walking in the previous generations shoes, I found myself questioning the expectations that I came up against as a photo editor. In our newsroom the expectations were built from an outdated information world. We were expected to fill old shoes.
 
 So we sat in our student newsroom—not very happy with what we were doing. Our weekly newspaper had remained essentially unchanged for 40+ years. Each editorial position had the same requirement every year. The *big* change happened in the 80s when the paper started using colour. We’d also stumbled into having a website, but it was updated just once a week with the release of the newspaper.
 
@@ -51,6 +52,7 @@ Our questioning of other student journalists in 15 student newsrooms brought up 
 ![][2]
 
 From our 2011 research
+
 ### Common problems in student newsrooms (2013)
 
 Two years later, we went back and looked at what had changed. We talked to a dozen more newsrooms and weren’t surprised by our findings.
@@ -81,6 +83,7 @@ In our 2013 research we found that almost 50% of student newsrooms had created r
 ![][3]
 
 **We designed many of these slides to help explain to ourselves what we were doing**
+
 When a newsroom decides to create a position for the web, it’s often with the intent of having content flow steadily from writers onto the web. This is a big improvement from just uploading stories to the web whenever there is a print issue. *However…*
 
 1.  **The handoff**  
@@ -99,6 +102,7 @@ We’re OK with this problem, if we see newsrooms continue to take small steps t
 ![][4]
 
 The current Open Journalism site was a few years in the making. This was an original launch page we use in 2012
+
 ### What we know
 
 -   **New process**  
@@ -131,6 +135,7 @@ We’re also asking professional newsrooms to be more open about their process o
 ![][5]
 
 2012
+
 ### This is a start
 
 We going to continue slowly growing the content on [Open Journalism][Open Journalism site]. We still consider this the beta version, but expect to polish it, and beef up the content for a real launch at the beginning of the summer.

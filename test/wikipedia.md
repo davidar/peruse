@@ -6,7 +6,7 @@
 
 ## History
 
-On January 23, 1998, Netscape made two announcements: first, that [Netscape Communicator] will be free; second, that the source code will also be free.^\[3\]^ One day later, [Jamie Zawinski] from Netscape registered mozilla.org.^\[4\]^ The project was named Mozilla after the original code name of the [Netscape Navigator] browser which is a blending of "[Mosaic] and [Godzilla]"^\[5\]^ and used to co-ordinate the development of the [Mozilla Application Suite], the [open source] version of Netscape’s internet software, [Netscape Communicator].^\[6\]\[7\]^ Jamie Zawinski says he came up with the name “Mozilla” at a Netscape staff meeting.^\[8\]\[9\]^ A small group of Netscape employees were tasked with coordination of the new community.
+On January 23, 1998, Netscape made two announcements: first, that [Netscape Communicator] will be free; second, that the source code will also be free.^\[3\]^ One day later, [Jamie Zawinski] from Netscape registered mozilla.org.^\[4\]^ The project was named Mozilla after the original code name of the [Netscape Navigator] browser which is a blending of “[Mosaic] and [Godzilla]”^\[5\]^ and used to co-ordinate the development of the [Mozilla Application Suite], the [open source] version of Netscape’s internet software, [Netscape Communicator].^\[6\]\[7\]^ Jamie Zawinski says he came up with the name “Mozilla” at a Netscape staff meeting.^\[8\]\[9\]^ A small group of Netscape employees were tasked with coordination of the new community.
 
 Originally, Mozilla aimed to be a technology provider for companies, such as Netscape, who would commercialize their open source code.^\[10\]^ When [AOL] (Netscape’s parent company) greatly reduced its involvement with Mozilla in July 2003, the [Mozilla Foundation] was designated the legal steward of the project.^\[11\]^ Soon after, Mozilla deprecated the Mozilla Suite in favor of creating independent applications for each function, primarily the [Firefox] web browser and the [Thunderbird] email client, and moved to supply them directly to the public.^\[12\]^
 
@@ -24,7 +24,7 @@ On March 24, 2014, Mozilla promoted [Brendan Eich] to the role of CEO. This led 
 
 Protests also emerged in 2014 following the announcement of Eich’s appointment as CEO of Mozilla. U.S. companies [OkCupid] and [CREDO Mobile] received media coverage for their objections, with the former asking its users to boycott the browser,^\[26\]^ while Credo amassed 50,000 signatures for a petition that called for Eich’s resignation
 
-Due to the controversy, Eich voluntarily stepped down on April 3, 2014^\[27\]^ and [Mitchell Baker], executive chairwoman of Mozilla Corporation, posted a statement on the Mozilla blog: “We didn’t move fast enough to engage with people once the controversy started. Mozilla believes both in equality and freedom of speech. Equality is necessary for meaningful speech. And you need free speech to fight for equality.”^\[28\]^ Eich’s resignation promoted a larger backlash from conservatives who felt he had been forced out of the company internally.^\[*[citation\ needed]*\]^
+Due to the controversy, Eich voluntarily stepped down on April 3, 2014^\[27\]^ and [Mitchell Baker], executive chairwoman of Mozilla Corporation, posted a statement on the Mozilla blog: “We didn’t move fast enough to engage with people once the controversy started. Mozilla believes both in equality and freedom of speech. Equality is necessary for meaningful speech. And you need free speech to fight for equality.”^\[28\]^ Eich’s resignation promoted a larger backlash from conservatives who felt he had been forced out of the company internally.^\[*[citation needed]*\]^
 
 OkCupid co-founder and CEO [Sam Yagan] had also donated \$500^\[29\]^ to Republican candidate [Chris Cannon] who proceeded to vote for multiple measures viewed as “anti-gay”, including the banning of same-sex marriage.^\[30\]\[31\]\[32\]\[33\]^ Yagan claims he did not know about Cannon’s stance on gay rights and that his contribution was due to the candidate being the ranking Republican participating in the House subcommittee that oversaw Internet and Intellectual Property matters.^\[34\]\[35\]\[36\]\[37\]\[38\]^
 
@@ -68,7 +68,7 @@ Firefox Mobile is currently available for [Android] 2.2 and above devices with a
 
 ### Firefox OS
 
-Firefox OS (project name: *Boot to Gecko* also known as *B2G*) is an [open source][] [operating system] in development by Mozilla that aims to support [HTML5] apps written using "[open Web]" technologies rather than platform-specific native [APIs]. The concept behind Firefox OS is that all user-accessible software will be HTML5 applications, that use Open Web APIs to access the phone’s hardware directly via [JavaScript][2].^\[54\]^
+Firefox OS (project name: *Boot to Gecko* also known as *B2G*) is an [open source][] [operating system] in development by Mozilla that aims to support [HTML5] apps written using “[open Web]” technologies rather than platform-specific native [APIs]. The concept behind Firefox OS is that all user-accessible software will be HTML5 applications, that use Open Web APIs to access the phone’s hardware directly via [JavaScript][2].^\[54\]^
 
 Some devices using this OS include^\[55\]^ Alcatel One Touch Fire, ZTE Open, LG Fireweb.
 
@@ -158,7 +158,7 @@ Mozilla maintains a comprehensive developer documentation website called the [Mo
 
 ## 
 
-The Mozilla Community consists of over 40,000 active contributors from across the globe^\[*[citation\ needed][citation\ needed]*\]^. It includes both paid employees and volunteers who work towards the goals set forth^\[40\]^ in the Mozilla Manifesto. Many of the sub-communities in Mozilla have formed around localization efforts for Mozilla Firefox, and the Mozilla web properties.
+The Mozilla Community consists of over 40,000 active contributors from across the globe^\[*[citation needed]*\]^. It includes both paid employees and volunteers who work towards the goals set forth^\[40\]^ in the Mozilla Manifesto. Many of the sub-communities in Mozilla have formed around localization efforts for Mozilla Firefox, and the Mozilla web properties.
 
 ### Local communities
 
@@ -188,6 +188,7 @@ When joining the program, a Mozilla Rep agrees to take on the following responsi
 #### Mozilla Festival
 
 [![][11]]
+
 Speakers from the [Knight Foundation] discuss the future of news at the 2011 Mozilla Festival in London.
 
 The Mozilla Festival is an annual event where hundreds of passionate people explore the Web, learn together and make things that can change the world. With the emphasis on *making*—the mantra of the Festival is “less yack, more hack.” Journalists, coders, filmmakers, designers, educators, gamers, makers, youth and anyone else, from all over the world, are encouraged to attend, with attendees from more than 40 countries, working together at the intersection between freedom, the Web, and that years theme.
@@ -247,7 +248,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 34. **\^** Levintova, Hannah (7 April 2014). [“OkCupid’s CEO Donated to an Anti-Gay Campaign Once, Too”]. *Hanna Levintova article on motherjones.com*. motherjones.com. Retrieved 2014-07-01. 
 35. **\^** Lee, Stephanie M. (8 April 2014). [“OKCupid CEO once donated to anti-gay politician”]. *Stephanie M. Lee’s blog on sfgate.com*. sfgate.com. Retrieved 2014-07-01. 
 36. \^ ^***a***^ ^***b***^ [“The Hypocrisy Of Sam Yagan & OkCupid”]. *uncrunched.com blog*. uncrunched.com. 6 April 2014. Retrieved 2014-07-01. 
-37. **\^** Bellware, Kim (31 March 2014). ["OKCupid Publicly Rips Mozilla: ’We Wish Them Nothing But Failure’"]. *Kim Bellware article on huffingtonpost.com*. huffingtonpost.com. Retrieved 2014-07-01. 
+37. **\^** Bellware, Kim (31 March 2014). [“OKCupid Publicly Rips Mozilla: ‘We Wish Them Nothing But Failure’”]. *Kim Bellware article on huffingtonpost.com*. huffingtonpost.com. Retrieved 2014-07-01. 
 38. **\^** [“Mozilla’s Appointment Of Brendan Eich As CEO Sparks Controversy After Prop 8 Donation News Re-Emerges”]. *huffingtonpost.com article*. huffingtonpost.com. 27 March 2014. Retrieved 2014-07-01. 
 39. **\^** Eidelson, Josh (4 April 2014). [“OkCupid’s gay rights stunt has its limits: Taking a deeper look at the savvy ploy”]. *Josh Eidelson article on salon.com*. salon.com. Retrieved 2014-07-01. 
 40. \^ ^***a***^ ^***b***^ [“Mozilla Manifesto”]. Mozilla.org. Retrieved 2012-03-21. 
@@ -288,12 +289,12 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 
 ## External links
 
-|           |                                                         |
-|-----------|---------------------------------------------------------|
++-----------+---------------------------------------------------------+
 | [![][14]] | Wikimedia Commons has media related to ***[Mozilla]***. |
++-----------+---------------------------------------------------------+
 
 -   [Official website], including [the Mozilla Manifesto]
--   [Mozilla Wiki]([Major time line of community development])
+-   [Mozilla Wiki][]([Major time line of community development])
 -   [Mozilla Mercurial Repository]
 
   [free-software]: file:///wiki/Free_software "Free software"
@@ -325,7 +326,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [OkCupid]: file:///wiki/OkCupid "OkCupid"
   [CREDO Mobile]: file:///wiki/CREDO_Mobile "CREDO Mobile"
   [Mitchell Baker]: file:///wiki/Mitchell_Baker "Mitchell Baker"
-  [citation needed]: file:///wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed"
+  [citation needed]: file:///wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed"
   [Sam Yagan]: file:///wiki/Sam_Yagan "Sam Yagan"
   [Chris Cannon]: file:///wiki/Chris_Cannon "Chris Cannon"
   [JavaScript]: file:///wiki/Brendan_Eich#Netscape_and_JavaScript "Brendan Eich"
@@ -482,7 +483,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“OkCupid’s CEO Donated to an Anti-Gay Campaign Once, Too”]: http://www.motherjones.com/mojo/2014/04/okcupid-ceo-donate-anti-gay-firefox
   [“OKCupid CEO once donated to anti-gay politician”]: http://blog.sfgate.com/techchron/2014/04/08/okcupid-ceo-once-donated-to-anti-gay-politician/
   [“The Hypocrisy Of Sam Yagan & OkCupid”]: http://uncrunched.com/2014/04/06/the-hypocrisy-of-sam-yagan-okcupid/
-  ["OKCupid Publicly Rips Mozilla: ’We Wish Them Nothing But Failure’"]: http://www.huffingtonpost.com/2014/03/31/okcupid-mozilla_n_5065743.html
+  [“OKCupid Publicly Rips Mozilla: ‘We Wish Them Nothing But Failure’”]: http://www.huffingtonpost.com/2014/03/31/okcupid-mozilla_n_5065743.html
   [“Mozilla’s Appointment Of Brendan Eich As CEO Sparks Controversy After Prop 8 Donation News Re-Emerges”]: http://www.huffingtonpost.com/2014/03/27/mozilla-ceo-prop-8-_n_5042660.html
   [“OkCupid’s gay rights stunt has its limits: Taking a deeper look at the savvy ploy”]: http://www.salon.com/2014/04/04/okcupids_gay_rights_stunt_has_its_limits_taking_a_deeper_look_at_the_savvy_ploy/
   [“Mozilla Manifesto”]: http://www.mozilla.org/about/manifesto/

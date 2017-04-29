@@ -18,7 +18,7 @@ Misusing antibiotics (such as taking them when you don’t need them or not fini
 
 “What the public should know is that the more antibiotics you’ve taken, the higher your superbug risk,” says Eric Biondi, MD, who runs a program to decrease unnecessary antibiotic use. “The more encounters you have with the hospital setting, the higher your superbug risk.”
 
-“Superbugs should be a concern to everyone,” Coombes says. "Antibiotics are the foundation on which all modern medicine rests. Cancer [chemotherapy], [organ transplants], surgeries, and [childbirth] all rely on antibiotics to prevent infections. If you can’t treat those, then we lose the medical advances we have made in the last 50 years."
+“Superbugs should be a concern to everyone,” Coombes says. “Antibiotics are the foundation on which all modern medicine rests. Cancer [chemotherapy], [organ transplants], surgeries, and [childbirth] all rely on antibiotics to prevent infections. If you can’t treat those, then we lose the medical advances we have made in the last 50 years.”
 
 Here are some of the growing superbug threats identified in the 2015 White House report.
 

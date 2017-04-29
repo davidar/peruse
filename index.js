@@ -41,10 +41,6 @@ jsdom.env(process.argv[2], [], function(err, window) {
       table.outerHTML = table.rows[0].cells[0].innerHTML;
   }
 
-  var items = document.getElementsByTagName("li");
-  for(var i = items.length - 1; i >= 0; i--)
-    items[i].removeAttribute("id");
-
   var waybackToolbar = document.getElementById("wm-ipp");
   if(waybackToolbar) waybackToolbar.parentNode.removeChild(waybackToolbar);
 
@@ -80,18 +76,32 @@ jsdom.env(process.argv[2], [], function(err, window) {
     "-multiline_tables",
     "-native_divs",
     "-native_spans",
+    "-pipe_tables",
     "-raw_html",
     "-simple_tables",
+    "-smart"
   ].join("");
 
-  spawn("pandoc", [
+  var convert = spawn("pandoc", [
     "-f", "html",
     "-t", markdown,
     "--atx-headers",
     "--reference-links",
-    "--smart",
+    "--wrap=none"
+  ], {
+    stdio: ["pipe", "pipe", process.stderr]
+  });
+
+  var normalise = spawn("pandoc", [
+    "-f", "markdown-citations",
+    "-t", markdown,
+    "--atx-headers",
+    "--reference-links",
     "--wrap=none"
   ], {
     stdio: ["pipe", process.stdout, process.stderr]
-  }).stdin.end(content);
+  });
+
+  convert.stdin.end(content);
+  convert.stdout.pipe(normalise.stdin);
 });

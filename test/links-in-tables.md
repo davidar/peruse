@@ -28,29 +28,37 @@ Fortunately, after analysis of the apps on the Play Store, we’ve discovered th
 
 Knowing this, we can detect and reproduce the original deflate settings. This makes it possible to uncompress the data, apply a patch, and then recompress the data back to *exactly the same bytes* as originally uploaded.
 
-However, there is one trade off; extra processing power is needed on the device. On modern devices (e.g. from 2015), recompression can take a little over a second per megabyte and on older or less powerful devices it can be longer. Analysis so far shows that, on average, if the patch size is halved then the time spent applying the patch (which for File-by-File includes recompression) is doubled.
+However, there is one trade off; extra processing power is needed on the device. On modern devices (e.g. from 2015), recompression can take a little over a second per megabyte and on older or less powerful devices it can be longer. Analysis so far shows that, on average, if the patch size is halved then the time spent applying the patch (which for File-by-File includes recompression) is doubled.
 
-For now, we are limiting the use of this new patching technology to auto-updates only, i.e. the updates that take place in the background, usually at night when your phone is plugged into power and you’re not likely to be using it. This ensures that users won’t have to wait any longer than usual for an update to finish when manually updating an app.
+For now, we are limiting the use of this new patching technology to auto-updates only, i.e. the updates that take place in the background, usually at night when your phone is plugged into power and you’re not likely to be using it. This ensures that users won’t have to wait any longer than usual for an update to finish when manually updating an app.
 
 **How effective is File-by-File Patching?**
 
 Here are examples of app updates already using File-by-File Patching:
 
-|                          |               |                              |                                         |
-|--------------------------|---------------|------------------------------|-----------------------------------------|
-| Application              | Original Size | Previous (BSDiff) Patch Size 
-                                 
-   (% vs original)               | File-by-File Patch Size (% vs original) |
-| [Farm Heroes Super Saga] | 71.1 MB       | 13.4 MB (-81%)               | 8.0 MB (-89%)                           |
-| [Google Maps]            | 32.7 MB       | 17.5 MB (-46%)               | 9.6 MB (-71%)                           |
-| [Gmail]                  | 17.8 MB       | 7.6 MB (-57%)                | 7.3 MB (-59%)                           |
-| [Google TTS]             | 18.9 MB       | 17.2 MB (-9%)                | 13.1 MB (-31%)                          |
-| [Kindle]                 | 52.4 MB       | 19.1 MB (-64%)               | 8.4 MB (-84%)                           |
-| [Netflix]                | 16.2 MB       | 7.7 MB (-52%)                | 1.2 MB (-92%)                           |
-
-  
++-----------------+-----------------+-----------------+-----------------+
+| Application     | Original Size   | Previous        | File-by-File    |
+|                 |                 | (BSDiff) Patch  | Patch Size (%   |
+|                 |                 | Size            | vs original)    |
+|                 |                 |                 |                 |
+|                 |                 | (% vs original) |                 |
++-----------------+-----------------+-----------------+-----------------+
+| [Farm Heroes    | 71.1 MB         | 13.4 MB (-81%)  | 8.0 MB (-89%)   |
+| Super Saga]     |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| [Google Maps]   | 32.7 MB         | 17.5 MB (-46%)  | 9.6 MB (-71%)   |
++-----------------+-----------------+-----------------+-----------------+
+| [Gmail]         | 17.8 MB         | 7.6 MB (-57%)   | 7.3 MB (-59%)   |
++-----------------+-----------------+-----------------+-----------------+
+| [Google TTS]    | 18.9 MB         | 17.2 MB (-9%)   | 13.1 MB (-31%)  |
++-----------------+-----------------+-----------------+-----------------+
+| [Kindle]        | 52.4 MB         | 19.1 MB (-64%)  | 8.4 MB (-84%)   |
++-----------------+-----------------+-----------------+-----------------+
+| [Netflix]       | 16.2 MB         | 7.7 MB (-52%)   | 1.2 MB (-92%)   |
++-----------------+-----------------+-----------------+-----------------+
 
 *Disclaimer: if you see different patch sizes when you press “update” manually, that is because we are not currently using File-by-file for interactive updates, only those done in the background.*
+
 **Saving data and making our users (& developers!) happy**
 
 These changes are designed to ensure our community of over a billion Android users use as little data as possible for regular app updates. The best thing is that as a developer you don’t need to do anything. You get these reductions to your update size for free!

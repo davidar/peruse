@@ -51,6 +51,7 @@ The United States, which gives hundreds of millions of dollars of economic aid t
 “That could be an issue forced onto the agenda about the same time as a potential nuclear deal.”
 
 [![]]
+
 Steven Mufson covers the White House. Since joining The Post, he has covered economics, China, foreign policy and energy.
 
   [Benjamin Netanyahu’s triumph]: http://www.washingtonpost.com/world/netanyahu-sweeps-to-victory-in-israeli-election/2015/03/18/af4e50ca-ccf2-11e4-8730-4f473416e759_story.html "www.washingtonpost.com"

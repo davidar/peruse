@@ -1,6 +1,7 @@
 # Just-released Minecraft exploit makes it easy to crash game servers
 
 ![]
+
 A flaw in the wildly popular online game *Minecraft* makes it easy for just about anyone to crash the server hosting the game, according to a computer programmer who has released proof-of-concept code that exploits the vulnerability.
 
 “I thought a lot before writing this post,” Pakistan-based developer Ammar Askar wrote in a [blog post published Thursday], 21 months, he said, after privately reporting the bug to *Minecraft* developer Mojang. “On the one hand I don’t want to expose thousands of servers to a major vulnerability, yet on the other hand Mojang has failed to act on it.”

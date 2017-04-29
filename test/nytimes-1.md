@@ -1,9 +1,11 @@
 # United States to Lift Sudan Sanctions
 
 Photo
+
 ![]
 
 United Nations peacekeepers at a refugee camp in Sudan on Monday. In exchange for the lifting of United States trade sanctions, Sudan has said it will improve access for aid groups, stop supporting rebels in neighboring South Sudan and cooperate with American intelligence agents. Credit Ashraf Shazly/Agence France-Presse — Getty Images
+
 LONDON — After nearly 20 years of hostile relations, the American government plans to reverse its position on [Sudan] and lift trade sanctions, Obama administration officials said late Thursday.
 
 Sudan is one of the poorest, most isolated and most violent countries in Africa, and for years the United States has imposed punitive measures against it in a largely unsuccessful attempt to get the Sudanese government to stop killing its own people.
@@ -18,11 +20,11 @@ Analysts said good relations with Sudan could strengthen moderate voices within 
 
 In 1997, President Bill Clinton imposed a [comprehensive trade embargo against Sudan and blocked the assets of the Sudanese government], which was suspected of sponsoring international terrorism. In the mid-1990s, Osama bin Laden lived in Khartoum, the capital, as a guest of Sudan’s government.
 
-In 1998, Bin Laden’s agents blew up the United States Embassies in Kenya and Tanzania, killing more than 200 people. In retaliation, Mr. Clinton ordered a cruise missile strike against a pharmaceutical factory in Khartoum.
+In 1998, Bin Laden’s agents blew up the United States Embassies in Kenya and Tanzania, killing more than 200 people. In retaliation, Mr. Clinton ordered a cruise missile strike against a pharmaceutical factory in Khartoum.
 
 Since then, American-Sudanese relations have steadily soured. The conflict in Darfur, a vast desert region of western Sudan, was a low point. After rebels in Darfur staged an uprising in 2003, Sudanese security services and their militia allies slaughtered tens of thousands of civilians, leading to condemnation around the world, genocide charges at the International Criminal Court against Sudan’s president, Omar Hassan al-Bashir, and a new round of American sanctions.
 
-American officials said Thursday that the American demand that Mr. Bashir be held accountable had not changed. Neither has Sudan’s status as one of the few countries, along with Iran and Syria, that remain on the [American government’s list of state sponsors of terrorism].
+American officials said Thursday that the American demand that Mr. Bashir be held accountable had not changed. Neither has Sudan’s status as one of the few countries, along with Iran and Syria, that remain on the [American government’s list of state sponsors of terrorism].
 
 Sales of military equipment will still be prohibited, and some Sudanese militia and rebel leaders will still face sanctions.
 
@@ -36,13 +38,13 @@ In addition to continuing violence in Darfur, several other serious conflicts ar
 
 He said that Sudan’s military-dominated government continued to commit grave human rights abuses and atrocities, and he noted that just last week Sudanese security services [killed][][more than 10 civilians in Darfur][killed].
 
-“There is no reason to believe the guys in charge have changed their stripes,” said Mr. Reeves, a senior fellow at the François-Xavier Bagnoud Center for Health and Human Rights at Harvard University. “These guys are the worst of the worst.”
+“There is no reason to believe the guys in charge have changed their stripes,” said Mr. Reeves, a senior fellow at the François-Xavier Bagnoud Center for Health and Human Rights at Harvard University. “These guys are the worst of the worst.”
 
-Obama administration officials said that they had briefed President-elect Donald J. Trump’s transition team, but that they did not know if Mr. Trump would stick with a policy of warmer relations with Sudan.
+Obama administration officials said that they had briefed President-elect Donald J. Trump’s transition team, but that they did not know if Mr. Trump would stick with a policy of warmer relations with Sudan.
 
 They said that Sudan had a long way to go in terms of respecting human rights, but that better relations could help increase American leverage.
 
-Mr. Reeves said he thought that the American government was being manipulated and that the Obama administration had made a “deal with the devil.”
+Mr. Reeves said he thought that the American government was being manipulated and that the Obama administration had made a “deal with the devil.”
 
 Continue reading the main story
 

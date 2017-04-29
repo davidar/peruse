@@ -3,7 +3,7 @@
 How to get shanked doing what people say they want
 
 > don’t preach to me  
-> Mr. integrity
+> Mr. integrity
 
 (EDIT: removed the link to Samantha’s post, because the arments and the grubers and the rest of The Deck Clique got what they wanted: a non-proper person driven off the internet lightly capped with a dusting of transphobia along the way, all totally okay because the ends justify the means, and it’s okay when “good” people do it.)
 
@@ -257,7 +257,7 @@ But now, the door has been cracked, and the cheap shots come out:
 
 Or this…conversation:
 
-Good job guys. Good job. Defend the tribe. Attack the other. Frederico attempts to recover from his stunning display of demeaning douchery: [‏@viticci]: [@s\_bielefeld] I don’t know if it’s an Italian thing, but counting other people’s money is especially weird for me. IMO, bad move in the post.
+Good job guys. Good job. Defend the tribe. Attack the other. Frederico attempts to recover from his stunning display of demeaning douchery: [‏@viticci][]: [@s\_bielefeld] I don’t know if it’s an Italian thing, but counting other people’s money is especially weird for me. IMO, bad move in the post.
 
 Samantha is clearly sick of his crap: [‏@s\_bielefeld][@s\_bielefeld]: [@viticci][‏@viticci] That’s what I’m referring to, the mistake of ever having mentioned it. So, now, Marco can ignore the bigger issue and go on living.
 
@@ -289,7 +289,7 @@ You piss that crew off, and given how petty rather a few of them have demonstrat
 
 Of course, the idea this could happen is just craycray:
 
-> [@KevinColeman][][.@Angry\_Drunk][] [@s\_bielefeld][1] [@marcoarment] Wow, you guys are veering right into crazy conspiracy theory territory. [\#JetFuelCantMeltSteelBeams]
+> [@KevinColeman][][.@Angry\_Drunk][] [@s\_bielefeld][] [@marcoarment] Wow, you guys are veering right into crazy conspiracy theory territory. [\#JetFuelCantMeltSteelBeams]
 
 Yeah. Because a mature person like Marco would never do anything like that.
 
@@ -305,7 +305,7 @@ Some people aren’t even pretending. They’re just in full strawman mode:
 
 > [@timkeller:]Unfair to begrudge a person for leveraging past success, especially when that success is earned. No ‘luck’ involved.
 
-> [@s\_bielefeld:][1][@timkeller][@timkeller:] I plainly stated that I don’t hold his doing this against him. Way to twist words.
+> [@s\_bielefeld:][@s\_bielefeld][@timkeller][@timkeller:] I plainly stated that I don’t hold his doing this against him. Way to twist words.
 
 I think she’s earned her anger at this point.
 
@@ -315,7 +315,7 @@ I have a saying that applies in this case: don’t place your head so far up you
 
 There are some bright spots. My favorite is when Building Twenty points out the *real* elephant in the room:
 
-> [@BuildingTwenty]: Both [@s\_bielefeld][1] & I wrote similar critiques of [@marcoarment]’s pricing model yet the Internet pilloried only the woman. Who’d have guessed?
+> [@BuildingTwenty][]: Both [@s\_bielefeld] & I wrote similar critiques of [@marcoarment]’s pricing model yet the Internet pilloried only the woman. Who’d have guessed?
 
 Yup.
 
@@ -383,7 +383,6 @@ So I hope she stays, but if she goes, I understand. For what it’s worth, I don
   [@s\_bielefeld]: https://twitter.com/s_bielefeld
   [@KevinColeman]: https://twitter.com/KevinColeman
   [.@Angry\_Drunk]: https://twitter.com/Angry_Drunk
-  [1]: https://twitter.com/s_bielefeld
   [\#JetFuelCantMeltSteelBeams]: https://twitter.com/hashtag/JetFuelCantMeltSteelBeams?src=hash
   [@timkeller:]: https://twitter.com/timkeller
   [@BuildingTwenty]: https://twitter.com/BuildingTwenty

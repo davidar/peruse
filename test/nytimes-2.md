@@ -1,9 +1,11 @@
 # Yahoo’s Sale to Verizon Leaves Shareholders With Little Say
 
 Photo
+
 ![]
 
- Credit Harry Campbell
+Credit Harry Campbell
+
 [Yahoo]’s \$4.8 billion sale to [Verizon] is a complicated beast, showing how different acquisition structures can affect how shareholders are treated.
 
 First, let’s say what the Yahoo sale is not. It is not a sale of the publicly traded company. Instead, it is a sale of the Yahoo subsidiary and some related assets to Verizon.

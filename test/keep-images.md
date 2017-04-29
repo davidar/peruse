@@ -104,9 +104,9 @@ ScreamMyName, a deep web user who has been active since the original Silk Road, 
 
 In the case of Levamisole, those prescribing it are often not doctors but veterinarians, as Levamisole is commonly used on animals, primarily for the treatment of worms. If ingested by humans it can lead to cases of extreme eruptions of the skin, as [documented in a study] from researchers at the University of California, San Francisco. But Lladanosa has found Levamisole in cocaine samples; dealers use it to increase the product weight, allowing them to stretch their batch further for greater profit — and also, she says, because Levamisole has a strong stimulant effect.
 
-“It got me sick as fuck,” Dr. Feel, an Evolution user, wrote on the site’s forums after consuming cocaine that had been cut with 23 percent Levamisole, and later tested by Energy Control. “I was laid up in bed for several days because of that shit. The first night I did it, I thought I was going to die. I nearly drove myself to the ER.”
+“It got me sick as fuck,” Dr. Feel, an Evolution user, wrote on the site’s forums after consuming cocaine that had been cut with 23 percent Levamisole, and later tested by Energy Control. “I was laid up in bed for several days because of that shit. The first night I did it, I thought I was going to die. I nearly drove myself to the ER.”
 
-“More people die because of tainted drugs than the drugs themselves,” Dr. Feel added. “It’s the cuts and adulterants that are making people sick and killing them.”
+“More people die because of tainted drugs than the drugs themselves,” Dr. Feel added. “It’s the cuts and adulterants that are making people sick and killing them.”
 
 ![][10]
 

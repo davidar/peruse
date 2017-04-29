@@ -3,6 +3,7 @@
 ![]
 
 Words need defenders.
+
 ### On Behalf of “Literally”
 
 You either are a “literally” abuser or know of one. If you’re anything like me, hearing the word “literally” used incorrectly causes a little piece of your soul to whither and die. Of course I do not mean that literally, I mean that figuratively. An abuser would have said: “Every time a person uses that word, a piece of my soul literally withers and dies.” Which is terribly, horribly wrong.

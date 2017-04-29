@@ -1,6 +1,13 @@
 language: node_js
 node_js:
 - node
+cache:
+  directories:
+  - $HOME/.stack
+addons:
+  apt:
+    packages:
+    - libgmp-dev
 deploy:
   provider: npm
   email: d@vidr.cc
@@ -10,5 +17,7 @@ deploy:
     tags: true
     repo: davidar/peruse
 before_install:
-  - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
-  - sudo dpkg -i pandoc-*.deb
+- mkdir -p ~/.local/bin
+- export PATH=$HOME/.local/bin:$PATH
+- travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
+- cd pandoc && stack setup && stack install --test && cd ..

@@ -34,7 +34,7 @@ Une des dispositions les plus contestées de ce projet de loi prévoit de pouvoi
 
 En pratique, les services de renseignement pourraient installer chez les FAI une « boîte noire » surveillant le trafic. Le contenu des communications – qui resterait « anonyme » – ne serait pas surveillé, mais uniquement les métadonnées : origine ou destinataire d’un message, adresse IP d’un site visité, durée de la conversation ou de la connexion… Ces données ne seraient pas conservées.
 
-La Commission nationale informatique et libertés **** (CNIL), qui critique fortement cette disposition. La CNIL soulève notamment que l’anonymat de ces données est très relatif, puisqu’il peut être levé.
+La Commission nationale informatique et libertés \*\*\*\* (CNIL), qui critique fortement cette disposition. La CNIL soulève notamment que l’anonymat de ces données est très relatif, puisqu’il peut être levé.
 
 Lire aussi : [Les critiques de la CNIL contre le projet de loi sur le renseignement]
 
