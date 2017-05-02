@@ -9,7 +9,11 @@ for file in test/*.md; do
     else
         echo FAIL
         diff $file test.out
-        exit 1
+        if [ "$1" = "update" ]; then
+            mv -f test.out $file
+        else
+            exit 1
+        fi
     fi
     rm -f test.out
 done
