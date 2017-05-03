@@ -47,6 +47,7 @@ March 25, 2015
 
 The new release is version 2.8, which was unveiled on March 2. An official [change log] is available on the QGIS site, while the release itself was announced primarily through blog posts (such as [this post] by Anita Graser of the project’s steering committee). Downloads are [available] for a variety of platforms, including packages for Ubuntu, Debian, Fedora, openSUSE, and several other distributions.
 
+[![\[QGIS main interface\]]]
 As the name might suggest, QGIS is a Qt application; the latest release will, in fact, build on both Qt4 and Qt5, although the binaries released by the project come only in Qt4 form at present. 2.8 has been labeled a long-term release (LTR)—which, in this case, means that the project has committed to providing backported bug fixes for one full calendar year, and that the 2.8.x series is in permanent feature freeze. The goal, according to the change log, is to provide a stable version suitable for businesses and deployments in other large organizations. The change log itself points out that the development of quite a few new features was underwritten by various GIS companies or university groups, which suggests that taking care of these organizations’ needs is reaping dividends for the project.
 
 For those new to QGIS (or GIS in general), there is a detailed new-user [tutorial] that provides a thorough walk-through of the data-manipulation, mapping, and analysis functions. Being a new user, I went through the tutorial; although there are a handful of minor differences between QGIS 2.8 and the version used in the text (primarily whether specific features were accessed through a toolbar or right-click menu), on the whole it is well worth the time.
@@ -59,6 +60,7 @@ But well-made maps are often the easiest way to illuminate facts about populatio
 
 The significant changes in QGIS 2.8 fall into several categories. There are updates to how QGIS handles the mathematical expressions and queries users can use to filter information out of a data set, improvements to the tools used to explore the on-screen map canvas, and enhancements to the “map composer” used to produce visual output. This is on top of plenty of other under-the-hood improvements, naturally.
 
+[![\[QGIS query builder\]]]
 In the first category are several updates to the filtering tools used to mine a data set. Generally speaking, each independent data set is added to a QGIS project as its own layer, then transformed with filters to focus in on a specific portion of the original data. For instance, the land-usage statistics for a region might be one layer, while roads and buildings for the same region from OpenStreetMap might be two additional layers. Such filters can be created in several ways: there is a “query builder” that lets the user construct and test expressions on a data layer, then save the results, an SQL console for performing similar queries on a database, and spreadsheet-like editing tools for working directly on data tables.
 
 All three have been improved in this release. New are support for `if(condition, true, false)` conditional statements, a set of operations for geometry primitives (e.g., to test whether regions overlap or lines intersect), and an “integer divide” operation. Users can also add comments to their queries to annotate their code, and there is a new [custom function editor] for writing Python functions that can be called in mathematical expressions within the query builder.
@@ -69,12 +71,14 @@ There have also been several improvements to the Python and Processing plugins. 
 
 #### Maps in, maps out
 
+[![\[QGIS simplify tool\]]]
 The process of working with on-screen map data picked up some improvements in the new release as well. Perhaps the most fundamental is that each map layer added to the canvas is now handled in its own thread, so fewer hangs in the user interface are experienced when re-rendering a layer (as happens whenever the user changes the look of points or shapes in a layer). Since remote databases can also be layers, this multi-threaded approach is more resilient against connectivity problems, too. The interface also now supports temporary “scratch” layers that can be used to merge, filter, or simply experiment with a data set, but are not saved when the current project is saved.
 
 For working on the canvas itself, polygonal regions can now use raster images (tiled, if necessary) as fill colors, the map itself can be rotated arbitrarily, and objects can be “snapped” to align with items on any layer (not just the current layer). For working with raster image layers (e.g., aerial photographs) or simply creating new geometric shapes by hand, there is a new digitizing tool that can offer assistance by locking lines to specific angles, automatically keeping borders parallel, and other niceties.
 
 There is a completely overhauled “simplify” tool that is used to reduce the number of extraneous vertices of a vector layer (thus reducing its size). The old simplify tool provided only a relative “tolerance” setting that did not correspond directly to any units. With the new tool, users can set a simplification threshold in terms of the underlying map units, layer-specific units, pixels, and more—and, in addition, the tool reports how much the simplify operation has reduced the size of the data.
 
+[![\[QGIS style editing\]]]
 There has also been an effort to present a uniform interface to one of the most important features of the map canvas: the ability to change the symbology used for an item based on some data attribute. The simplest example might be to change the line color of a road based on whether its road-type attribute is “highway,” “service road,” “residential,” or so on. But the same feature is used to automatically highlight layer information based on the filtering and querying functionality discussed above. The new release allows many more map attributes to be controlled by these “data definition” settings, and provides a hard-to-miss button next to each attribute, through which a custom data definition can be set.
 
 QGIS’s composer module is the tool used to take project data and generate a map that can be used outside of the application (in print, as a static image, or as a layer for [MapServer] or some other software tool, for example). Consequently, it is not a simple select-and-click-export tool; composing the output can involve a lot of choices about which data to make visible, how (and where) to label it, and how to make it generally accessible.
@@ -420,9 +424,17 @@ Anything can happen in the free-software development world; it is entirely possi
   [change log]: http://qgis.org/en/site/forusers/visualchangelog28/index.html
   [this post]: http://anitagraser.com/2015/03/02/qgis-2-8-ltr-has-landed/
   [available]: http://qgis.org/en/site/forusers/download.html
+  [\[QGIS main interface\]]: file:///images/2015/03-qgis-map-sm.png
+  [![\[QGIS main interface\]]]: file:///Articles/637747/
   [tutorial]: http://docs.qgis.org/testing/en/docs/training_manual/
+  [\[QGIS query builder\]]: file:///images/2015/03-qgis-query-sm.png
+  [![\[QGIS query builder\]]]: file:///Articles/637748/
   [custom function editor]: http://nathanw.net/2015/01/19/function-editor-for-qgis-expressions/
   [hypsometric curves]: http://en.wikipedia.org/wiki/Hypsometric_curve
+  [\[QGIS simplify tool\]]: file:///images/2015/03-qgis-simplify-sm.png
+  [![\[QGIS simplify tool\]]]: file:///Articles/637749/
+  [\[QGIS style editing\]]: file:///images/2015/03-qgis-style-sm.png
+  [![\[QGIS style editing\]]]: file:///Articles/637751/
   [MapServer]: http://mapserver.org/
   [Comments (3 posted)]: file:///Articles/637533/#Comments
   [Development activity in LibreOffice and OpenOffice]: file:///Articles/637735/

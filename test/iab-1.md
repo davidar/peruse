@@ -18,7 +18,7 @@ The rise of ad blocking poses a threat to the internet and could potentially dri
 
 We need to bring that back into alignment, starting right now.
 
-Today, the IAB Tech Lab is launching the L.E.A.N. Ads program. Supported by the Executive Committee of the IAB Tech Lab Board, IABs around the world, and hundreds of member companies, L.E.A.N. stands for Light, Encrypted, Ad choice supported, Non-invasive ads. These are principles that will help guide the next phases of advertising technical standards for the global digital advertising supply chain.
+[![Getting LEAN with Digital Ad UX]]Today, the IAB Tech Lab is launching the L.E.A.N. Ads program. Supported by the Executive Committee of the IAB Tech Lab Board, IABs around the world, and hundreds of member companies, L.E.A.N. stands for Light, Encrypted, Ad choice supported, Non-invasive ads. These are principles that will help guide the next phases of advertising technical standards for the global digital advertising supply chain.
 
 As with any other industry, standards should be created by non-profit standards-setting bodies, with many diverse voices providing input. We will invite all parties for public comment, and make sure consumer interest groups have the opportunity to provide input.
 
@@ -44,5 +44,7 @@ Read [more about ad blocking here].
 
 Senior Vice President of Technology and Ad Operations at IAB, and General Manager of the IAB Tech Lab
 
+  [Getting LEAN with Digital Ad UX]: http://www.iab.com/wp-content/uploads/2015/10/getting-lean-with-digital-ad-ux-300x250.jpg
+  [![Getting LEAN with Digital Ad UX]]: http://www.iab.com/wp-content/uploads/2015/10/getting-lean-with-digital-ad-ux.jpg
   [more about ad blocking here]: http://www.iab.com/insights/ad-blocking/
   [Auto Draft 14]: http://www.iab.com/wp-content/uploads/2015/05/auto-draft-16-150x150.jpg

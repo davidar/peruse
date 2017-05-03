@@ -1,5 +1,10 @@
 # How to Throw a Graduation Party on a Budget (with Pictures)
 
+[![]]
+
+[![]][1]
+Follow
+
 Last updated September 14, 2016
 
 Graduation parties are a great way to commemorate the years of hard work teens and college co-eds devote to education. They’re also costly for mom and dad.
@@ -59,6 +64,9 @@ jethuynh/iStock/Getty Images
 
 Promoted By Zergnet
 
+  []: file://img-aws.ehowcdn.com/60x60/cme/cme_public_images/www_demandstudios_com/sitelife.studiod.com/ver1.0/Content/images/store/9/2/d9dd6f61-b183-4893-927f-5b540e45be91.Small.jpg
+  [![]]: file:///contributor/gina_robertsgrey/
+  [1]: file:///contributor/gina_robertsgrey/
   [Graduation]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/2F/86/5547EF62-EAF5-4256-945D-0496F61C862F/5547EF62-EAF5-4256-945D-0496F61C862F.jpg "Graduation"
   [Save money hosting the party at home.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/FE/CB/121569D2-6984-4B2F-83C4-9D2D9A27CBFE/121569D2-6984-4B2F-83C4-9D2D9A27CBFE.jpg
   [Online radio can take the place of a hired DJ.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/DF/FC/A05B0252-BD73-4BC7-A09A-96F0A504FCDF/A05B0252-BD73-4BC7-A09A-96F0A504FCDF.jpg

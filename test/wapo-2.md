@@ -50,8 +50,11 @@ The United States, which gives hundreds of millions of dollars of economic aid t
 
 “That could be an issue forced onto the agenda about the same time as a potential nuclear deal.”
 
+[![]]
 Steven Mufson covers the White House. Since joining The Post, he has covered economics, China, foreign policy and energy.
 
   [Benjamin Netanyahu’s triumph]: http://www.washingtonpost.com/world/netanyahu-sweeps-to-victory-in-israeli-election/2015/03/18/af4e50ca-ccf2-11e4-8730-4f473416e759_story.html "www.washingtonpost.com"
   [no independent Palestinian state]: http://www.washingtonpost.com/world/middle_east/on-final-day-of-campaign-netanyahu-says-no-palestinian-state-if-he-wins/2015/03/16/4f4468e8-cbdc-11e4-8730-4f473416e759_story.html "www.washingtonpost.com"
   [the signals could not differ more]: http://www.washingtonpost.com/blogs/worldviews/wp/2015/03/18/what-netanyahus-election-victory-means-for-the-palestinians/ "www.washingtonpost.com"
+  []: http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/blogs/wonkblog/files/2014/07/mufson_steve.jpg&h=180&w=180
+  [![]]: http://www.washingtonpost.com/people/steven-mufson

@@ -13,10 +13,18 @@ jsdom.env(process.argv[2], [], function(err, window) {
   for(var i = links.length - 1; i >= 0; i--) {
     var link = links[i];
     var href = link.getAttribute("href");
-    if(link.textContent.trim() === "")
-      link.parentNode.removeChild(link);
     if(href && href[0] === "#")
       link.removeAttribute("href");
+
+    var hasImage = false;
+    for(var j = link.children.length - 1; j >= 0; j--) {
+      var child = link.children[j];
+      if(child && child.nodeName.toLowerCase() === "img")
+        hasImage = true;
+    }
+
+    if(link.textContent.trim() === "" && !hasImage)
+      link.parentNode.removeChild(link);
   }
 
   var images = document.getElementsByTagName("img");
@@ -62,24 +70,28 @@ jsdom.env(process.argv[2], [], function(err, window) {
       /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, "$1");
   }
 
+  var markdown = [
+    "markdown",
+    "-bracketed_spans",
+    "-escaped_line_breaks",
+    "-fenced_code_attributes",
+    "-header_attributes",
+    "-link_attributes",
+    "-multiline_tables",
+    "-native_divs",
+    "-native_spans",
+    "-raw_html",
+    "-simple_tables",
+  ].join("");
+
   spawn("pandoc", [
     "-f", "html",
-    "-t", [
-      "markdown",
-      "-bracketed_spans",
-      "-escaped_line_breaks",
-      "-fenced_code_attributes",
-      "-header_attributes",
-      "-link_attributes",
-      "-native_divs",
-      "-native_spans",
-      "-raw_html"
-    ].join(""),
+    "-t", markdown,
     "--atx-headers",
     "--reference-links",
     "--smart",
     "--wrap=none"
   ], {
-    stdio: ["pipe", process.stdout]
+    stdio: ["pipe", process.stdout, process.stderr]
   }).stdin.end(content);
 });

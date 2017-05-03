@@ -2,7 +2,7 @@
 
 Daring Fireball is written and produced by John Gruber.
 
-  
+[![Photograph of the author.]]  
 *Portrait by [George Del Barrio]*
 
 ## Mac Apps
@@ -35,6 +35,8 @@ Web standards are important, and Daring Fireball adheres to them. Specifically, 
 
 If Daring Fireball looks goofy in your browser, you’re likely using a shitty browser that doesn’t support web standards. Internet Explorer, I’m looking in your direction. If you complain about this, I will laugh at you, because I do not care. If, however, you are using a modern, standards-compliant browser and have trouble viewing or reading Daring Fireball, please do let me know.
 
+  [Photograph of the author.]: file:///graphics/author/addison-bw-425.jpg
+  [![Photograph of the author.]]: file:///graphics/author/addison-bw.jpg
   [George Del Barrio]: http://superbiate.com/inquiries/
   [BBEdit]: http://www.barebones.com/products/bbedit/
   [Acorn]: http://www.flyingmeat.com/acorn/

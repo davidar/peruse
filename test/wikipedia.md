@@ -48,6 +48,8 @@ According to the Mozilla Foundation:^\[41\]^
 
 ## Software
 
+[![]]
+
 ### Firefox
 
 [Firefox] is a [web browser], and is Mozilla’s [flagship] software product. It is available in both desktop and mobile versions. Firefox uses the [Gecko][] [layout engine] to render web pages, which implements current and anticipated [web standards].^\[42\]^ As of late 2015^[\[update\]]^, Firefox has approximately 10-11% of worldwide [usage share of web browsers], making it the 4th most-used web browser.^\[43\]\[44\]\[45\]^
@@ -78,13 +80,17 @@ On July 16, 2012, Mitchell Baker announced that Mozilla’s leadership had come 
 
 ### SeaMonkey
 
+[![][3]]
+
 [SeaMonkey] (formerly the Mozilla Application Suite) is a free and open source cross platform suite of Internet software components including a web browser component, a client for sending and receiving email and [USENET] newsgroup messages, an HTML editor ([Mozilla Composer]) and the [ChatZilla] IRC client.
 
-On March 10, 2005, [the Mozilla Foundation] announced that it would not release any official versions of Mozilla Application Suite beyond 1.7.x, since it had now focused on the standalone applications [Firefox][3] and [Thunderbird].^\[57\]^ SeaMonkey is now maintained by the SeaMonkey Council, which has [trademarked] the SeaMonkey name with help from the Mozilla Foundation.^\[58\]^ The Mozilla Foundation provides project hosting for the SeaMonkey developers.
+On March 10, 2005, [the Mozilla Foundation] announced that it would not release any official versions of Mozilla Application Suite beyond 1.7.x, since it had now focused on the standalone applications [Firefox][4] and [Thunderbird].^\[57\]^ SeaMonkey is now maintained by the SeaMonkey Council, which has [trademarked] the SeaMonkey name with help from the Mozilla Foundation.^\[58\]^ The Mozilla Foundation provides project hosting for the SeaMonkey developers.
 
 ### Bugzilla
 
-[Bugzilla] is a [web]-based general-purpose [bug tracking system], which was released as [open source software] by [Netscape Communications] in 1998 along with the rest of the Mozilla codebase, and is currently stewarded by Mozilla. It has been adopted by a variety of organizations for use as a [bug tracking system] for both [free and open source software] and [proprietary][4] projects and products, including the [Mozilla Foundation][the Mozilla Foundation], the [Linux kernel], [GNOME], [KDE], [Red Hat], [Novell], [Eclipse] and [LibreOffice].^\[59\]^
+[![][5]]
+
+[Bugzilla] is a [web]-based general-purpose [bug tracking system], which was released as [open source software] by [Netscape Communications] in 1998 along with the rest of the Mozilla codebase, and is currently stewarded by Mozilla. It has been adopted by a variety of organizations for use as a [bug tracking system] for both [free and open source software] and [proprietary][6] projects and products, including the [Mozilla Foundation][the Mozilla Foundation], the [Linux kernel], [GNOME], [KDE], [Red Hat], [Novell], [Eclipse] and [LibreOffice].^\[59\]^
 
 ### Components
 
@@ -106,7 +112,7 @@ Rhino is an [open source][] [JavaScript engine] managed by the [Mozilla Foundati
 
 #### Gecko
 
-[Gecko][1] is a [layout engine][5] that supports web pages written using [HTML], [SVG], and [MathML]. Gecko is written in [C++] and uses [NSPR] for [platform independence]. Its source code is licensed under the [Mozilla Public License].
+[Gecko][1] is a [layout engine][7] that supports web pages written using [HTML], [SVG], and [MathML]. Gecko is written in [C++] and uses [NSPR] for [platform independence]. Its source code is licensed under the [Mozilla Public License].
 
 Firefox uses Gecko both for rendering web pages and for rendering its [user interface]. Gecko is also used by Thunderbird, SeaMonkey, and many non-Mozilla applications.
 
@@ -148,7 +154,7 @@ Mozilla Webmaker is Mozilla’s educational initiative, Webmaker’s goal is to 
 
 ### Mozilla Developer Network
 
-Mozilla maintains a comprehensive developer documentation website called the [Mozilla Developer Network] which contains information about web technologies including [HTML], [CSS], [SVG][6], [JavaScript][2], as well Mozilla-specific information. In addition, Mozilla publishes a large number of videos about web technologies and the development of Mozilla projects on the Air Mozilla website.^\[71\]\[72\]^
+Mozilla maintains a comprehensive developer documentation website called the [Mozilla Developer Network] which contains information about web technologies including [HTML], [CSS], [SVG][8], [JavaScript][2], as well Mozilla-specific information. In addition, Mozilla publishes a large number of videos about web technologies and the development of Mozilla projects on the Air Mozilla website.^\[71\]\[72\]^
 
 ## 
 
@@ -156,9 +162,13 @@ The Mozilla Community consists of over 40,000 active contributors from across th
 
 ### Local communities
 
+[![][9]]
+
 There are a number of sub-communities that exist based on their geographical locations, where contributors near each other work together on particular activities, such as localization, marketing, PR and user support.
 
 ### Mozilla Reps
+
+[![][10]]
 
 The Mozilla Reps program aims to empower and support volunteer Mozillians who want to become official representatives of Mozilla in their region/locale.
 
@@ -177,6 +187,7 @@ When joining the program, a Mozilla Rep agrees to take on the following responsi
 
 #### Mozilla Festival
 
+[![][11]]
 Speakers from the [Knight Foundation] discuss the future of news at the 2011 Mozilla Festival in London.
 
 The Mozilla Festival is an annual event where hundreds of passionate people explore the Web, learn together and make things that can change the world. With the emphasis on *making*—the mantra of the Festival is “less yack, more hack.” Journalists, coders, filmmakers, designers, educators, gamers, makers, youth and anyone else, from all over the world, are encouraged to attend, with attendees from more than 40 countries, working together at the intersection between freedom, the Web, and that years theme.
@@ -245,8 +256,8 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 43. **\^** [“Web Browser Market Share Trends”]. *W3Counter*. Awio Web Services LLC. Retrieved 2012-05-10. 
 44. **\^** [“Top 5 Browsers”]. *StatCounter Global Stats*. StatCounter. Retrieved 2012-05-10. 
 45. **\^** [“Web browsers (Global marketshare)”]. *Clicky*. Roxr Software Ltd. Retrieved 2012-05-10. 
-46. **\^** [Goodger, Ben] (February 6, 2006). [“Where Did Firefox Come From?”]. Inside Firefox. Archived from [the original][7] on 2011-06-23. Retrieved 2012-01-07. 
-47. **\^** [“Mozilla browser becomes Firebird”]. IBPhoenix. Archived from [the original][8] on 2007-09-14. Retrieved 2013-06-10. “We at IBPhoenix think that having a browser and a database with the same name in the same space will confuse the market, especially as browsers and databases are often used in the same applications” 
+46. **\^** [Goodger, Ben] (February 6, 2006). [“Where Did Firefox Come From?”]. Inside Firefox. Archived from [the original][12] on 2011-06-23. Retrieved 2012-01-07. 
+47. **\^** [“Mozilla browser becomes Firebird”]. IBPhoenix. Archived from [the original][13] on 2007-09-14. Retrieved 2013-06-10. “We at IBPhoenix think that having a browser and a database with the same name in the same space will confuse the market, especially as browsers and databases are often used in the same applications” 
 48. **\^** Festa, Paul (May 6, 2003). [“Mozilla’s Firebird gets wings clipped”]. [CNET]. Retrieved 2007-01-30. 
 49. **\^** Festa, Paul (February 9, 2004). [“Mozilla holds ‘fire’ in naming fight”]. CNET News. Retrieved 2007-01-24. 
 50. **\^** [“Mobile features”]. Mozilla. Retrieved 2012-06-26. 
@@ -277,9 +288,9 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 
 ## External links
 
-  -- ---------------------------------------------------------
-     Wikimedia Commons has media related to ***[Mozilla]***.
-  -- ---------------------------------------------------------
+|           |                                                         |
+|-----------|---------------------------------------------------------|
+| [![][14]] | Wikimedia Commons has media related to ***[Mozilla]***. |
 
 -   [Official website], including [the Mozilla Manifesto]
 -   [Mozilla Wiki]([Major time line of community development])
@@ -319,6 +330,8 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [Chris Cannon]: file:///wiki/Chris_Cannon "Chris Cannon"
   [JavaScript]: file:///wiki/Brendan_Eich#Netscape_and_JavaScript "Brendan Eich"
   [publicity stunt]: file:///wiki/Publicity_stunt "Publicity stunt"
+  []: file://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mozilla_Firefox_logo_2013.svg/220px-Mozilla_Firefox_logo_2013.svg.png
+  [![]]: file:///wiki/File:Mozilla_Firefox_logo_2013.svg
   [web browser]: file:///wiki/Web_browser "Web browser"
   [flagship]: file:///wiki/Flagship_product "Flagship product"
   [Gecko]: file:///wiki/Gecko_(software) "Gecko (software)"
@@ -351,19 +364,23 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [open Web]: file:///wiki/Open_Web "Open Web"
   [APIs]: file:///wiki/Application_programming_interface "Application programming interface"
   [2]: file:///wiki/JavaScript "JavaScript"
+  [3]: file://upload.wikimedia.org/wikipedia/commons/0/0d/SeaMonkey.png
+  [![][3]]: file:///wiki/File:SeaMonkey.png
   [SeaMonkey]: file:///wiki/SeaMonkey "SeaMonkey"
   [USENET]: file:///wiki/USENET "USENET"
   [Mozilla Composer]: file:///wiki/Mozilla_Composer "Mozilla Composer"
   [ChatZilla]: file:///wiki/ChatZilla "ChatZilla"
   [the Mozilla Foundation]: file:///wiki/The_Mozilla_Foundation "The Mozilla Foundation"
-  [3]: file:///wiki/Mozilla_Firefox "Mozilla Firefox"
+  [4]: file:///wiki/Mozilla_Firefox "Mozilla Firefox"
   [trademarked]: file:///wiki/Trademark "Trademark"
+  [5]: file://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Buggie.svg/220px-Buggie.svg.png
+  [![][5]]: file:///wiki/File:Buggie.svg
   [web]: file:///wiki/World_Wide_Web "World Wide Web"
   [bug tracking system]: file:///wiki/Bug_tracking_system "Bug tracking system"
   [open source software]: file:///wiki/Open_source_software "Open source software"
   [Netscape Communications]: file:///wiki/Netscape_Communications "Netscape Communications"
   [free and open source software]: file:///wiki/Free_and_open_source_software "Free and open source software"
-  [4]: file:///wiki/Proprietary_software "Proprietary software"
+  [6]: file:///wiki/Proprietary_software "Proprietary software"
   [Linux kernel]: file:///wiki/Linux_kernel "Linux kernel"
   [GNOME]: file:///wiki/GNOME "GNOME"
   [KDE]: file:///wiki/KDE "KDE"
@@ -397,7 +414,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [Java]: file:///wiki/Java_(programming_language) "Java (programming language)"
   [classes]: file:///wiki/Class_(computer_programming) "Class (computer programming)"
   [compiled]: file:///wiki/Compiler "Compiler"
-  [5]: file:///wiki/Web_browser_engine "Web browser engine"
+  [7]: file:///wiki/Web_browser_engine "Web browser engine"
   [HTML]: file:///wiki/HTML "HTML"
   [SVG]: file:///wiki/Scalable_Vector_Graphics "Scalable Vector Graphics"
   [MathML]: file:///wiki/MathML "MathML"
@@ -416,7 +433,13 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [authentication]: file:///wiki/Authentication "Authentication"
   [Mozilla Developer Network]: file:///wiki/Mozilla_Developer_Network "Mozilla Developer Network"
   [CSS]: file:///wiki/CSS "CSS"
-  [6]: file:///wiki/SVG "SVG"
+  [8]: file:///wiki/SVG "SVG"
+  [9]: file://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/London_Mozilla_Workspace.jpg/220px-London_Mozilla_Workspace.jpg
+  [![][9]]: file:///wiki/File:London_Mozilla_Workspace.jpg
+  [10]: file://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mozilla_Reps.png/220px-Mozilla_Reps.png
+  [![][10]]: file:///wiki/File:Mozilla_Reps.png
+  [11]: file://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg/220px-Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
+  [![][11]]: file:///wiki/File:Fireside_Chat,_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
   [Knight Foundation]: file:///wiki/Knight_Foundation "Knight Foundation"
   [-zilla (suffix)]: file:///wiki/-zilla_(suffix) "-zilla (suffix)"
   [Mozilla (mascot)]: file:///wiki/Mozilla_(mascot) "Mozilla (mascot)"
@@ -471,9 +494,9 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“Web browsers (Global marketshare)”]: http://www.getclicky.com/marketshare/global/web-browsers/
   [Goodger, Ben]: file:///wiki/Ben_Goodger "Ben Goodger"
   [“Where Did Firefox Come From?”]: https://web.archive.org/web/20110623034401/http://weblogs.mozillazine.org/ben/archives/009698.html
-  [7]: http://weblogs.mozillazine.org/ben/archives/009698.html
+  [12]: http://weblogs.mozillazine.org/ben/archives/009698.html
   [“Mozilla browser becomes Firebird”]: https://web.archive.org/web/20070914035447/http://www.ibphoenix.com/main.nfs?a=ibphoenix&page=ibp_Mozilla0
-  [8]: http://www.ibphoenix.com/main.nfs?a=ibphoenix&page=ibp_Mozilla0
+  [13]: http://www.ibphoenix.com/main.nfs?a=ibphoenix&page=ibp_Mozilla0
   [“Mozilla’s Firebird gets wings clipped”]: http://news.cnet.com/2100-1032_3-1000146.html
   [CNET]: file:///wiki/CNET_Networks "CNET Networks"
   [“Mozilla holds ‘fire’ in naming fight”]: http://news.cnet.com/2100-7344-5156101.html
@@ -501,6 +524,8 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“Air Mozilla”]: https://wiki.mozilla.org/Air_Mozilla
   [“Air Mozilla Reboot, Phase I”]: https://blog.mozilla.org/mrz/2012/04/17/air-mozilla-reboot-phase-i/
   [Constant downloads failure in firefox]: http://www.techsive.com/2014/09/how-to-resume-failed-downloads-in.html
+  [14]: file://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png
+  [![][14]]: file:///wiki/File:Commons-logo.svg
   [Mozilla]: https://commons.wikimedia.org/wiki/Category:Mozilla "commons:Category:Mozilla"
   [Official website]: http://mozilla.org/
   [the Mozilla Manifesto]: https://www.mozilla.org/en-US/about/manifesto/

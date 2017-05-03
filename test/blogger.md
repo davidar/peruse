@@ -11,9 +11,10 @@ It’s actually an interesting architecture - FPGAs (including some devices mark
 
 Without further ado, here’s a block diagram showing all the cool stuff you get in the SLG46620V:
 
-  -------------------------------------------------
-  SLG46620V block diagram (from device datasheet)
-  -------------------------------------------------
+|                                                 |
+|-------------------------------------------------|
+| [![]]                                           |
+| SLG46620V block diagram (from device datasheet) |
 
 They’re also tiny (the SLG46620V is a 20-pin 0.4mm pitch STQFN measuring 2x3 mm, and the lower gate count SLG46140V is a mere 1.6x2 mm) and probably the cheapest programmable logic device on the market - \$0.50 in low volume and less than \$0.40 in larger quantities.
 The Vdd range of GreenPak4 is huge, more like what you’d expect from an MCU than an FPGA! It can run on anything from 1.8 to 5V, although performance is only specified at 1.8, 3.3, and 5V nominal voltages. There’s also a dual-rail version that trades one of the GPIO pins for a second power supply pin, allowing you to interface to logic at two different voltage levels.
@@ -24,8 +25,12 @@ The best part is that the development software (GreenPak Designer) is free of ch
 
 While schematics may be fine for quick tinkering on really simple designs, they quickly get unwieldy. The nightmare of a circuit shown below is just a bunch of counters hooked up to LEDs that blink at various rates.
 
-As if this wasn’t enough of a problem, the largest GreenPak4 device (the SLG46620V) is split into two halves with limited routing between them, and the GUI doesn’t help the user manage this complexity at all - you have to draw your schematic in two halves and add “cross connections” between them.
+|                      |
+|----------------------|
+| [![][1]]             |
+| Schematic from hell! |
 
+As if this wasn’t enough of a problem, the largest GreenPak4 device (the SLG46620V) is split into two halves with limited routing between them, and the GUI doesn’t help the user manage this complexity at all - you have to draw your schematic in two halves and add “cross connections” between them.
 The icing on the cake is that schematics are a pain to diff and collaborate on. Although GreenPak schematics are XML based, which is a touch better than binary, who wants to read a giant XML diff and try to figure out what’s going on in the circuit?
 
 This isn’t going to be a post on the quirks of Silego’s software, though - that would be boring. As it turns out, there’s one more exciting feature of these chips that I didn’t mention earlier: the configuration bitstream is 100% documented in the device datasheet! This is unheard of in the programmable logic world. As Nick of Arachnid Labs [says], the chip is “just dying for someone to write a VHDL or Verilog compiler for it”. As you can probably guess by from the title of this post, I’ve been busy doing exactly that.
@@ -39,9 +44,10 @@ Once the design has been synthesized, my tool (named, surprisingly, gp4par) is t
 
 After the graphs are generated, each node in the netlist graph is assigned a numeric label identifying the type of cell and each node in the device graph is assigned a list of legal labels: for example, an I/O buffer site is legal for an input buffer, output buffer, or bidirectional buffer.
 
-  ----------------------------------------------------------------
-  Example labeling for a subset of the netlist and device graphs
-  ----------------------------------------------------------------
+|                                                                |
+|----------------------------------------------------------------|
+| [![][2]]                                                       |
+| Example labeling for a subset of the netlist and device graphs |
 
 The labeled nodes now need to be placed. The initial placement uses a simple greedy algorithm to create a valid (although not necessarily optimal or even routable) placement:
   
@@ -119,8 +125,14 @@ My thanks go out to Clifford Wolf, whitequark, the IRC users in \#\#openfpga, an
   [5th generation parts]: http://www.silego.com/products/greenpak5.html
   [4th generation]: http://www.silego.com/products/greenpak4.html
   [PSoCs]: http://www.cypress.com/products/32-bit-arm-cortex-m-psoc
+  []: https://1.bp.blogspot.com/-YIPC5jkXkDE/Vy7YPSqFKWI/AAAAAAAAAxI/a7D6Ji2GxoUvcrwUkI4RLZcr2LFQEJCTACLcB/s640/block-diagram.png
+  [![]]: https://1.bp.blogspot.com/-YIPC5jkXkDE/Vy7YPSqFKWI/AAAAAAAAAxI/a7D6Ji2GxoUvcrwUkI4RLZcr2LFQEJCTACLcB/s1600/block-diagram.png
+  [1]: https://1.bp.blogspot.com/-k3naUT3uXao/Vy7WFac246I/AAAAAAAAAw8/mePy_ostO8QJra5ZJrbP2WGhTlJ0B_r8gCLcB/s640/schematic-from-hell.png
+  [![][1]]: https://1.bp.blogspot.com/-k3naUT3uXao/Vy7WFac246I/AAAAAAAAAw8/mePy_ostO8QJra5ZJrbP2WGhTlJ0B_r8gCLcB/s1600/schematic-from-hell.png
   [says]: http://www.arachnidlabs.com/blog/2015/03/30/greenpak/
   [Yosys]: http://www.clifford.at/yosys/
+  [2]: https://2.bp.blogspot.com/-kIekczO693g/Vy7dBqYifXI/AAAAAAAAAxc/hMNJBs5bedIQOrBzzkhq4gbmhR-n58EQwCLcB/s400/graph-labels.png
+  [![][2]]: https://2.bp.blogspot.com/-kIekczO693g/Vy7dBqYifXI/AAAAAAAAAxc/hMNJBs5bedIQOrBzzkhq4gbmhR-n58EQwCLcB/s1600/graph-labels.png
   [GreenPak4 development kit]: http://www.silego.com/buy/index.php?main_page=product_info&products_id=388
   [GreenPak Designer]: http://www.silego.com/softdoc/software.html
   [my fork on Github]: https://github.com/azonenberg/yosys/
