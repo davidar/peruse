@@ -41,12 +41,25 @@ jsdom.env(process.argv[2], [], function(err, window) {
       table.outerHTML = table.rows[0].cells[0].innerHTML;
   }
 
+  var items = document.getElementsByTagName("li");
+  for(var i = items.length - 1; i >= 0; i--)
+    items[i].removeAttribute("id");
+
+  var breaks = document.querySelectorAll(
+    "h1 br, h2 br, h3 br, h4 br, h5 br, h6 br");
+  for(var i = breaks.length - 1; i >= 0; i--)
+    breaks[i].outerHTML = " ";
+
   var waybackToolbar = document.getElementById("wm-ipp");
   if(waybackToolbar) waybackToolbar.parentNode.removeChild(waybackToolbar);
 
   var mwEdits = document.getElementsByClassName("mw-editsection");
   for(var i = mwEdits.length - 1; i >= 0; i--)
     mwEdits[i].parentNode.removeChild(mwEdits[i]);
+
+  var span;
+  while((span = document.querySelector("span")))
+    span.outerHTML = span.innerHTML;
 
   var content = document.documentElement.outerHTML;
 
@@ -69,6 +82,7 @@ jsdom.env(process.argv[2], [], function(err, window) {
   var markdown = [
     "markdown",
     "-bracketed_spans",
+    "-citations",
     "-escaped_line_breaks",
     "-fenced_code_attributes",
     "-header_attributes",
@@ -79,26 +93,21 @@ jsdom.env(process.argv[2], [], function(err, window) {
     "-pipe_tables",
     "-raw_html",
     "-simple_tables",
-    "-smart"
   ].join("");
 
   var convert = spawn("pandoc", [
     "-f", "html",
-    "-t", markdown,
-    "--atx-headers",
+    "-t", markdown + "-smart",
     "--reference-links",
-    "--wrap=none"
   ], {
     stdio: ["pipe", "pipe", process.stderr]
   });
 
   var normalise = spawn("pandoc", [
-    "-f", "markdown-citations",
-    "-t", markdown,
-    "--atx-headers",
+    "-f", markdown,
+    "-t", markdown + "-smart",
     "--reference-links",
-    "--wrap=none"
-  ], {
+  ].concat(process.argv.slice(3)), {
     stdio: ["pipe", process.stdout, process.stderr]
   });
 

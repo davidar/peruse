@@ -5,9 +5,7 @@ No other browser gives you so much choice and flexibility.
 
 ![]
 
-## Designed to
-
-be redesigned
+## Designed to be redesigned
 
 Get fast and easy access to the features you use most in the new menu. Open the “Customize” panel to add, move or remove any button you want. Keep your favorite features — add-ons, private browsing, Sync and more — one quick click away.
 
