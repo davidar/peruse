@@ -8,7 +8,7 @@ Raspberry Pi Foundation is charity organization that pushes for a digital revolu
 
 Raspberry Pi in educations - Image: Raspberry Pi Foundation
 
-In celebration of their 4th year anniversary, the foundation has released **Raspberry Pi 3** with the same price tag of** **\$35 USD.  The 3rd revision features a **1.2GHz 64-bit quad-core** ARM CPU with integrated Bluetooth 4.1 and 802.11n wireless LAN chipsets.  The ARM Cortex-A53 CPU along with other architectural enhancements making it the fastest Raspberry Pi to-date.  The 3rd revision is reportedly about 50-60% times faster than its predecessor Raspberry Pi 2 and about 10 times faster then the original Raspberry PI.
+In celebration of their 4th year anniversary, the foundation has released **Raspberry Pi 3** with the same price tag of \$35 USD.  The 3rd revision features a **1.2GHz 64-bit quad-core** ARM CPU with integrated Bluetooth 4.1 and 802.11n wireless LAN chipsets.  The ARM Cortex-A53 CPU along with other architectural enhancements making it the fastest Raspberry Pi to-date.  The 3rd revision is reportedly about 50-60% times faster than its predecessor Raspberry Pi 2 and about 10 times faster then the original Raspberry PI.
 
 Raspberry Pi - Various Usage
 

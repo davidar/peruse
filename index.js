@@ -5,6 +5,14 @@ var jsdom = require("jsdom").jsdom;
 var Readability = require("readability/index").Readability;
 var spawn = require("child_process").spawn;
 
+function removeNode(node) {
+  node.parentNode.removeChild(node);
+}
+
+function nonempty(node) {
+  return node.textContent.trim() || node.querySelector("img");
+}
+
 jsdom.env(process.argv[2], [], function(err, window) {
   if(err) return console.error(err);
   var document = window.document;
@@ -15,16 +23,6 @@ jsdom.env(process.argv[2], [], function(err, window) {
     var href = link.getAttribute("href");
     if(href && href[0] === "#")
       link.removeAttribute("href");
-
-    var hasImage = false;
-    for(var j = link.children.length - 1; j >= 0; j--) {
-      var child = link.children[j];
-      if(child && child.nodeName.toLowerCase() === "img")
-        hasImage = true;
-    }
-
-    if(link.textContent.trim() === "" && !hasImage)
-      link.parentNode.removeChild(link);
   }
 
   var links = document.querySelectorAll("pre a");
@@ -33,11 +31,18 @@ jsdom.env(process.argv[2], [], function(err, window) {
     link.outerHTML = link.innerHTML;
   }
 
+  var nodes = document.querySelectorAll("a, em, strong, b, i");
+  for(var i = nodes.length - 1; i >= 0; i--) {
+    var node = nodes[i];
+    if(!nonempty(node))
+      node.outerHTML = node.innerHTML;
+  }
+
   var images = document.getElementsByTagName("img");
   for(var i = images.length - 1; i >= 0; i--) {
     var image = images[i];
     if(image.getAttribute("src") === "")
-      image.parentNode.removeChild(image);
+      removeNode(image);
   }
 
   var tables = document.getElementsByTagName("table");
@@ -57,11 +62,11 @@ jsdom.env(process.argv[2], [], function(err, window) {
     breaks[i].outerHTML = " ";
 
   var waybackToolbar = document.getElementById("wm-ipp");
-  if(waybackToolbar) waybackToolbar.parentNode.removeChild(waybackToolbar);
+  if(waybackToolbar) removeNode(waybackToolbar);
 
   var mwEdits = document.getElementsByClassName("mw-editsection");
   for(var i = mwEdits.length - 1; i >= 0; i--)
-    mwEdits[i].parentNode.removeChild(mwEdits[i]);
+    removeNode(mwEdits[i]);
 
   var span;
   while((span = document.querySelector("span")))
