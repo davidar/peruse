@@ -27,6 +27,12 @@ jsdom.env(process.argv[2], [], function(err, window) {
       link.parentNode.removeChild(link);
   }
 
+  var links = document.querySelectorAll("pre a");
+  for(var i = links.length - 1; i >= 0; i--) {
+    var link = links[i];
+    link.outerHTML = link.innerHTML;
+  }
+
   var images = document.getElementsByTagName("img");
   for(var i = images.length - 1; i >= 0; i--) {
     var image = images[i];
@@ -86,6 +92,7 @@ jsdom.env(process.argv[2], [], function(err, window) {
     "-escaped_line_breaks",
     "-fenced_code_attributes",
     "-header_attributes",
+    "-inline_code_attributes",
     "-link_attributes",
     "-multiline_tables",
     "-native_divs",
