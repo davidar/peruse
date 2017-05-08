@@ -56,6 +56,13 @@ jsdom.env(process.argv[2], [], function(err, window) {
   for(var i = items.length - 1; i >= 0; i--)
     items[i].removeAttribute("id");
 
+  var codes = document.getElementsByTagName("code");
+  for(var i = codes.length - 1; i >= 0; i--) {
+    var code = codes[i];
+    if(code.textContent.split("\n").length > 2)
+      code.outerHTML = "<pre>" + code.outerHTML + "</pre>";
+  }
+
   var breaks = document.querySelectorAll(
     "h1 br, h2 br, h3 br, h4 br, h5 br, h6 br");
   for(var i = breaks.length - 1; i >= 0; i--)
