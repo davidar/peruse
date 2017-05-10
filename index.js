@@ -63,6 +63,14 @@ jsdom.env(process.argv[2], [], function(err, window) {
       code.outerHTML = "<pre>" + code.outerHTML + "</pre>";
   }
 
+  var svgs = document.getElementsByTagName("svg");
+  for(var i = svgs.length - 1; i >= 0; i--) {
+    var svg = svgs[i];
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    var dataURI = "data:image/svg+xml," + encodeURIComponent(svg.outerHTML);
+    svg.outerHTML = "<img src=\"" + dataURI + "\" />";
+  }
+
   var breaks = document.querySelectorAll(
     "h1 br, h2 br, h3 br, h4 br, h5 br, h6 br");
   for(var i = breaks.length - 1; i >= 0; i--)
