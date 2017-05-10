@@ -8,6 +8,9 @@ L’appareil, mis à disposition par Airbus, était arrivé à Katmandou mercred
 
 Le séisme a fait près de 5 500 morts et touche huit des 28 millions d’habitants du Népal. Des dizaines de milliers de personnes sont sans abri.
 
+![]
+
   [a déclaré jeudi le ministre des Affaires étrangères]: http://www.liberation.fr/video/2015/04/30/laurent-fabius-plus-de-200-francais-n-ont-pas-ete-retrouves_1278687
   [L’Airbus A350 affrété par les autorités françaises s’est posé peu avant 5h45]: http://www.liberation.fr/video/2015/04/30/seisme-au-nepal-soulages-mais-inquiets-206-survivants-de-retour-en-france_1278758
   [dont le petit aéroport est engorgé]: http://www.liberation.fr/monde/2015/04/29/embouteillages-et-retards-a-l-aeroport-de-katmandou_1276612
+  []: http://www.dailymotion.com/embed/video/x2oikl3

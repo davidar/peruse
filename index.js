@@ -102,6 +102,7 @@ jsdom.env(process.argv[2], [], function(err, window) {
   if(article) {
     content = "<h1>" + escapeHTML(article.title) + "</h1>";
     content += article.content.replace(
+      /<(embed|iframe|video|audio) /g, "<img ").replace(
       /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, "$1");
   }
 
