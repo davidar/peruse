@@ -95,15 +95,20 @@ jsdom.env(process.argv[2], [], function(err, window) {
     host: loc.host,
     prePath: loc.protocol + "//" + loc.host,
     scheme: loc.protocol.substr(0, loc.protocol.indexOf(":")),
-    pathBase: loc.protocol + "//" + loc.host + loc.pathname.substr(0, loc.pathname.lastIndexOf("/") + 1)
+    pathBase: loc.protocol + "//" + loc.host + loc.pathname.substr(0, loc.pathname.lastIndexOf("/") + 1),
+    path: loc.pathname
   };
-  var article = new Readability(uri, document).parse();
+  var readability = new Readability(uri, document);
+  var nextPageLink = readability._findNextPageLink(document.body);
+  var article = readability.parse();
 
   if(article) {
     content = "<h1>" + escapeHTML(article.title) + "</h1>";
     content += article.content.replace(
       /<(embed|iframe|video|audio) /g, "<img ").replace(
       /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, "$1");
+    if(nextPageLink)
+      content += "<p><a href=\"" + nextPageLink + "\">Next Page</a></p>";
   }
 
   var markdown = [
