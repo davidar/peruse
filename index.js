@@ -96,9 +96,11 @@ jsdom.env(process.argv[2], [], function(err, window) {
     prePath: loc.protocol + "//" + loc.host,
     scheme: loc.protocol.substr(0, loc.protocol.indexOf(":")),
     pathBase: loc.protocol + "//" + loc.host + loc.pathname.substr(0, loc.pathname.lastIndexOf("/") + 1),
-    path: loc.pathname
   };
   var readability = new Readability(uri, document);
+  readability.REGEXPS.extraneous =
+    /print|comment|discuss|e[\-]?mail|share|reply|all|login|sign|single|utility/i;
+  readability._findBaseUrl = function() { return "" };
   var nextPageLink = readability._findNextPageLink(document.body);
   var article = readability.parse();
 
