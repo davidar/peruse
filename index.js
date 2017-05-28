@@ -102,6 +102,15 @@ jsdom.env(process.argv[2], [], function(err, window) {
     /print|comment|discuss|e[\-]?mail|share|reply|all|login|sign|single|utility/i;
   readability._findBaseUrl = function() { return "" };
   var nextPageLink = readability._findNextPageLink(document.body);
+  if(nextPageLink) {
+    var links = document.getElementsByTagName("a");
+    for(var i = links.length - 1; i >= 0; i--) {
+      if(links[i].href === nextPageLink + "/") {
+        nextPageLink = nextPageLink + "/";
+        break;
+      }
+    }
+  }
   var article = readability.parse();
 
   if(article) {
