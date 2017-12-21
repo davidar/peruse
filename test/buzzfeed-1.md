@@ -14,11 +14,11 @@ Eloise Parry, 21, was taken to Royal Shrewsbury hospital on 12 April after takin
 
 She added: “They never stood a chance of saving her. She burned and crashed.”
 
-![]
+![][1]
 
 Facebook
 
-![][1]
+![][2]
 
 Facebook
 
@@ -37,6 +37,6 @@ The Food Standards Agency warned people to stay away from slimming products that
 “DNP is not a miracle slimming pill. It is a deadly toxin.”
 
   [said in a statement]: https://www.westmercia.police.uk/article/9501/A-tribute-to-Eloise-Aimee-Parry-written-by-her-mother-Fiona-Parry
-  []: http://ak-hdl.buzzfed.com/static/2015-04/21/5/enhanced/webdr12/grid-cell-2501-1429608056-15.jpg
-  [1]: http://ak-hdl.buzzfed.com/static/2015-04/21/5/enhanced/webdr12/grid-cell-2501-1429608057-18.jpg
+  [1]: http://ak-hdl.buzzfed.com/static/2015-04/21/5/enhanced/webdr12/grid-cell-2501-1429608056-15.jpg
+  [2]: http://ak-hdl.buzzfed.com/static/2015-04/21/5/enhanced/webdr12/grid-cell-2501-1429608057-18.jpg
   [said the tablets were believed to contain dinitrophenol]: https://www.westmercia.police.uk/article/9500/Warning-Issued-As-Shrewsbury-Woman-Dies-After-Taking-Suspected-Diet-Pills

@@ -18,7 +18,7 @@ In 2015, [*Attack of the Clones*] and [*Revenge of the Sith*] received limited 3
 
 ## Why the Original Film Cuts Matter
 
-[![]]
+[![][1]]
 
 Admittedly, the differences between the original trilogy’s unaltered cuts and the Special Editions appeal to more hardcore fans. Casual fans are less likely to care about whether [Greedo] or [Han Solo] shot first. Still, given Star Wars’ indelible impact on pop culture, there’s certainly a market for the original trilogy’s unaltered cuts. They might not be for every Star Wars fan, but many of us care about them.
 
@@ -45,8 +45,8 @@ ILM supervisor [John Knoll], who first pitched the [story idea] for [*Rogue One*
   [*Revenge of the Sith*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_III_Revenge_of_the_Sith
   [Celebration Anaheim]: http://starwars.wikia.com/wiki/Celebration_Anaheim
   [*The Force Awakens*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_VII_The_Force_Awakens
-  []: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9/scale-to-width-down/627
-  [![]]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9
+  [1]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9/scale-to-width-down/627
+  [![][1]]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9
   [Greedo]: http://starwars.wikia.com/wiki/Greedo
   [Han Solo]: http://starwars.wikia.com/wiki/Han_Solo
   [John Knoll]: http://starwars.wikia.com/wiki/John_Knoll

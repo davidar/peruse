@@ -38,7 +38,7 @@ IAB Tech Lab Members can join the IAB Tech Lab Ad Blocking Working Group, please
 
 Read [more about ad blocking here].
 
-![Auto Draft 14]
+![][1]
 
 #### About the author
 
@@ -49,4 +49,4 @@ Senior Vice President of Technology and Ad Operations at IAB, and General Manage
   [Getting LEAN with Digital Ad UX]: http://www.iab.com/wp-content/uploads/2015/10/getting-lean-with-digital-ad-ux-300x250.jpg
   [![Getting LEAN with Digital Ad UX]]: http://www.iab.com/wp-content/uploads/2015/10/getting-lean-with-digital-ad-ux.jpg
   [more about ad blocking here]: http://www.iab.com/insights/ad-blocking/
-  [Auto Draft 14]: http://www.iab.com/wp-content/uploads/2015/05/auto-draft-16-150x150.jpg
+  [1]: http://www.iab.com/wp-content/uploads/2015/05/auto-draft-16-150x150.jpg

@@ -14,9 +14,7 @@ In late 2011 I sat in the design room of our university’s student newsroom wit
 
 Photography was my lucky way of experiencing the many types of people my generation seemed to avoid, as well as many the public spends too much time discussing. One of my habits as a photographer was scouring sites like Flickr to see how others could frame the world in ways I hadn’t previously considered.
 
-![]
-
-topleftpixel.com
+![topleftpixel.com]
 
 I started discovering beautiful things the [web could do with images][]: things not possible with print. Just as every generation revolts against walking in the previous generations shoes, I found myself questioning the expectations that I came up against as a photo editor. In our newsroom the expectations were built from an outdated information world. We were expected to fill old shoes.
 
@@ -49,9 +47,7 @@ Our questioning of other student journalists in 15 student newsrooms brought up 
 -   Lack of diverse skills within the newsroom. Writers made up 95% of the personnel. Students with other skills were not sought because journalism was seen as “a career with words.” The other 5% were designers, designing words on computers, for print.
 -   Not enough discussion between the business side and web efforts
 
-![][2]
-
-From our 2011 research
+![From our 2011 research]
 
 ### Common problems in student newsrooms (2013)
 
@@ -80,9 +76,7 @@ We need to rethink how long the new shoe design will be valid. It’s more impor
 
 In our 2013 research we found that almost 50% of student newsrooms had created roles specifically for the web. **This sounds great, but is still problematic in its current state.**
 
-![][3]
-
-**We designed many of these slides to help explain to ourselves what we were doing**
+![**We designed many of these slides to help explain to ourselves what we were doing**]
 
 When a newsroom decides to create a position for the web, it’s often with the intent of having content flow steadily from writers onto the web. This is a big improvement from just uploading stories to the web whenever there is a print issue. *However…*
 
@@ -99,9 +93,7 @@ When everyone in the newsroom approaches their website with the intention of usi
 
 We’re OK with this problem, if we see newsrooms continue to take small steps towards having all their editors involved in the stories for the web.
 
-![][4]
-
-The current Open Journalism site was a few years in the making. This was an original launch page we use in 2012
+![The current Open Journalism site was a few years in the making. This was an original launch page we use in 2012]
 
 ### What we know
 
@@ -132,9 +124,7 @@ Student newsrooms don’t have investors to please. Student newsrooms can change
 
 We’re also asking professional newsrooms to be more open about their process of developing stories for the web. You play a big part in this. This means writing about it, and sharing code. We need to start building a bridge between student journalism and professional newsrooms.
 
-![][5]
-
-2012
+![2012]
 
 ### This is a start
 
@@ -144,7 +134,7 @@ We expect to have more original tutorials as well as the beginnings of what a cu
 
 We’re trying out some new shoes. And while they’re not self-lacing, and smell a bit different, we feel lacing up a new pair of kicks can change a lot.
 
-![][6]
+![][2]
 
 **Let’s talk. Let’s listen.**
 
@@ -158,16 +148,16 @@ We’re trying out some new shoes. And while they’re not self-lacing, and smel
   [mapping]: http://pippinlee.github.io/open-journalism-project/Mapping/
   [security]: http://pippinlee.github.io/open-journalism-project/Security/
   [open source]: http://pippinlee.github.io/open-journalism-project/Open-source/
-  []: https://d262ilb51hltx0.cloudfront.net/max/800/1*AzYWbe4cZkMMEUbfRjysLQ.png
+  [topleftpixel.com]: https://d262ilb51hltx0.cloudfront.net/max/800/1*AzYWbe4cZkMMEUbfRjysLQ.png
   [web could do with images]: http://wvs.topleftpixel.com/13/02/06/timelapse-strips-homewood.htm
   [1]: https://d262ilb51hltx0.cloudfront.net/max/800/1*d0Hp6KlzyIcGHcL6to1sYQ.png
-  [2]: https://d262ilb51hltx0.cloudfront.net/max/800/1*_9KYIFrk_PqWFgptsMDeww.png
+  [From our 2011 research]: https://d262ilb51hltx0.cloudfront.net/max/800/1*_9KYIFrk_PqWFgptsMDeww.png
   [Hey, what has the New York Times R&D lab been up to this week?]: http://nytlabs.com/
-  [3]: https://d262ilb51hltx0.cloudfront.net/max/800/1*Vh2MpQjqjPkzYJaaWExoVg.png
-  [4]: https://d262ilb51hltx0.cloudfront.net/max/800/1*2Ln_DmC95Xpz6LzgywkcFQ.png
+  [**We designed many of these slides to help explain to ourselves what we were doing**]: https://d262ilb51hltx0.cloudfront.net/max/800/1*Vh2MpQjqjPkzYJaaWExoVg.png
+  [The current Open Journalism site was a few years in the making. This was an original launch page we use in 2012]: https://d262ilb51hltx0.cloudfront.net/max/800/1*2Ln_DmC95Xpz6LzgywkcFQ.png
   [Google’s fellowship program]: http://www.google.com/get/journalismfellowship/
-  [5]: https://d262ilb51hltx0.cloudfront.net/max/800/1*bXaR_NBJdoHpRc8lUWSsow.png
+  [2012]: https://d262ilb51hltx0.cloudfront.net/max/800/1*bXaR_NBJdoHpRc8lUWSsow.png
   [Queen’s Journal]: http://queensjournal.ca/
   [The Ubyssey]: http://ubyssey.ca/
-  [6]: https://d262ilb51hltx0.cloudfront.net/max/800/1*lulfisQxgSQ209vPHMAifg.png
+  [2]: https://d262ilb51hltx0.cloudfront.net/max/800/1*lulfisQxgSQ209vPHMAifg.png
   [**pippin@pippinlee.com**]: mailto:pippinblee@gmail.com

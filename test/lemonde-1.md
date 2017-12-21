@@ -2,7 +2,7 @@
 
 Le Monde | 04.05.2015 à 13h36 • Mis à jour le 05.05.2015 à 20h13 | Par [Martin Untersinger] (avec Damien Leloup et Morgane Tual)
 
-![]
+![][1]
 
 Les députés ont, sans surprise, adopté à une large majorité (438 contre 86 et 42 abstentions) le projet de loi sur le renseignement défendu par le gouvernement lors d’un vote solennel, mardi 5 mai. Il sera désormais examiné par le Sénat, puis le Conseil constitutionnel, prochainement saisi par 75 députés. Dans un souci d’apaisement, François Hollande avait annoncé par avance qu’il saisirait les Sages.
 
@@ -77,7 +77,7 @@ La durée de conservation des données collectées – et l’adaptation de cet
 La loi prévoit également une forme de protection pour les agents qui seraient témoins de surveillance illégale. Ces lanceurs d’alerte pourraient solliciter la CNCTR, voire le premier ministre, et leur fournir toutes les pièces utiles. La CNCTR pourra ensuite aviser le procureur de la République et solliciter la Commission consultative du secret de la défense nationale afin que cette dernière *« donne au premier ministre son avis sur la possibilité de déclassifier tout ou partie de ces éléments »*. Aucune mesure de rétorsion ne pourra viser l’agent qui aurait dénoncé des actes potentiellement illégaux.
 
   [Martin Untersinger]: file:///journaliste/martin-untersinger/
-  []: //www.dailymotion.com/embed/video/x2p552m?syndication=131181
+  [1]: //www.dailymotion.com/embed/video/x2p552m?syndication=131181
   [le direct du vote à l’Assemblée avec vos questions.]: file:///pixels/live/2015/05/05/suivez-le-vote-de-la-loi-renseignement-en-direct_4628012_4408996.html
   [Le détail est disponible sur le site de l’Assemblée nationale.]: http://www2.assemblee-nationale.fr/scrutins/detail/%28legislature%29/14/%28num%29/1109
   [Les critiques de la CNIL contre le projet de loi sur le renseignement]: file:///pixels/article/2015/03/18/les-critiques-de-la-cnil-contre-le-projet-de-loi-sur-le-renseignement_4595839_4408996.html

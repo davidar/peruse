@@ -128,6 +128,7 @@ jsdom.env(process.argv[2], [], function(err, window) {
     "-citations",
     "-escaped_line_breaks",
     "-fenced_code_attributes",
+    "-fenced_divs",
     "-header_attributes",
     "-inline_code_attributes",
     "-link_attributes",

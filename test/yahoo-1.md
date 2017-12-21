@@ -1,8 +1,6 @@
 # These are the 8 coolest PlayStation VR games
 
-![The PlayStation VR]
-
-Sony’s PlayStation VR.
+![][1]
 
 Virtual reality has officially reached the consoles. And it’s pretty good! [Sony’s PlayStation VR] is extremely comfortable and reasonably priced, and while it’s lacking killer apps, it’s loaded with lots of interesting ones.
 
@@ -10,49 +8,49 @@ But which ones should you buy? I’ve played just about every launch game, and w
 
 ### [“Rez Infinite” (\$30)]
 
-![]
+![][2]
 
 Beloved cult hit “Rez” gets the VR treatment to help launch the PSVR, and the results are terrific. It includes a fully remastered take on the original “Rez” – you zoom through a Matrix-like computer system, shooting down enemies to the steady beat of thumping electronica – but the VR setting makes it incredibly immersive. It gets better the more you play it, too; unlock the amazing Area X mode and you’ll find yourself flying, shooting and bobbing your head to some of the trippiest visuals yet seen in VR.
 
 ### [“Thumper” (\$20)]
 
-![][1]
+![][3]
 
 What would happen if Tron, the board game Simon, a Clown beetle, Cthulhu and a noise band met in VR? Chaos, for sure, and also “Thumper.” Called a “violent rhythm game” by its creators, “Thumper” is, well, a violent rhythm game that’s also a gorgeous, unsettling and totally captivating assault on the senses. With simple controls and a straightforward premise – click the X button and the analog stick in time with the music as you barrel down a neon highway — it’s one of the rare games that works equally well both in and out of VR. But since you have PSVR, play it there. It’s marvelous.
 
 ### [“Until Dawn: Rush of Blood” (\$20)]
 
-![][2]
+![][4]
 
 Cheeky horror game “Until Dawn” was a breakout hit for the PS4 last year, channeling the classic “dumb teens in the woods” horror trope into an effective interactive drama. Well, forget all that if you fire up “Rush of Blood,” because this one sticks you front and center on a rollercoaster ride from Hell. Literally. You ride through a dimly-lit carnival of terror, dual-wielding pistols as you take down targets, hideous pig monsters and, naturally, maniac clowns. Be warned: If the bad guys don’t get you, the jump scares will.
 
 ### [“Headmaster” (\$20)]
 
-![][3]
+![][5]
 
 Soccer meets “Portal” in the weird (and weirdly fun) “Headmaster,” a game about heading soccer balls into nets, targets and a variety of other things while stuck in some diabolical training facility. While at first it seems a little basic, increasingly challenging shots and a consistently entertaining narrative keep it from running off the pitch. Funny, ridiculous and as easy as literally moving your head back and forth, it’s a pleasant PSVR surprise.
 
 ### [“RIGS: Mechanized Combat League” (\$50)]
 
-![][4]
+![][6]
 
 Giant mechs + sports? That’s the gist of this robotic blast-a-thon, which pits two teams of three against one another in gorgeous, explosive and downright fun VR combat. At its best, “RIGS” marries the thrill of fast-paced competitive shooters with the insanity of piloting a giant mech in VR. It can, however, be one of the barfier PSVR games. So pack your Dramamine, you’re going to have to ease yourself into this one.
 
 ### [“Batman Arkham VR” (\$20)]
 
-![][5]
+![][7]
 
 “I’m Batman,” you will say. And you’ll actually be right this time, because you are Batman in this detective yarn, and you know this because you actually grab the famous cowl and mask, stick it on your head, and stare into the mirrored reflection of Rocksteady Games’ impressive Dark Knight character model. It lacks the action of its fellow “Arkham” games and runs disappointingly short, but it’s a high-quality experience that really shows off how powerfully immersive VR can be.
 
 ### [“Job Simulator” (\$30)]
 
-![][6]
+![][8]
 
 There are a number of good VR ports in the PSVR launch lineup, but the HTC Vive launch game “Job Simulator” might be the best. Your task? Lots of tasks, actually, from cooking food to fixing cars to working in an office, all for robots, because did I mention you were in the future? Infinitely charming and surprisingly challenging, it’s a great showpiece for VR.
 
 ### [“Eve Valkyrie” (\$60)]
 
-![][7]
+![][9]
 
 Already a hit on the Oculus Rift, this space dogfighting game was one of the first to really show off how VR can turn a traditional game experience into something special. It’s pricey and not quite as hi-res as the Rift version, but “Eve Valkyrie” does an admirable job filling the void left since “Battlestar Galactica” ended. Too bad there aren’t any Cylons in it (or are there?)
 
@@ -66,24 +64,24 @@ Already a hit on the Oculus Rift, this space dogfighting game was one of the fir
 
 *Ben Silverman is on Twitter at* [*ben\_silverman*]*.*
 
-  [The PlayStation VR]: http://l1.yimg.com/ny/api/res/1.2/589noY9BZNdmsUUQf6L1AQ--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NzQ0O2g9NjY5/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/4406ef57dcb40376c513903b03bef048
+  [1]: http://l1.yimg.com/ny/api/res/1.2/589noY9BZNdmsUUQf6L1AQ--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NzQ0O2g9NjY5/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/4406ef57dcb40376c513903b03bef048
   [Sony’s PlayStation VR]: http://finance.yahoo.com/news/review-playstation-vr-is-comfortable-and-affordable-but-lacks-must-have-games-165053851.html
   [“Rez Infinite” (\$30)]: https://www.playstation.com/en-us/games/rez-infinite-ps4/
-  []: https://www.youtube.com/embed/YlDxEOwj5j8
+  [2]: https://www.youtube.com/embed/YlDxEOwj5j8
   [“Thumper” (\$20)]: https://www.playstation.com/en-us/games/thumper-ps4/
-  [1]: https://www.youtube.com/embed/gtPGX8i1Eaw
+  [3]: https://www.youtube.com/embed/gtPGX8i1Eaw
   [“Until Dawn: Rush of Blood” (\$20)]: https://www.playstation.com/en-us/games/until-dawn-rush-of-blood-ps4/
-  [2]: https://www.youtube.com/embed/EL3svUfC8Ds
+  [4]: https://www.youtube.com/embed/EL3svUfC8Ds
   [“Headmaster” (\$20)]: https://www.playstation.com/en-us/games/headmaster-ps4/
-  [3]: https://www.youtube.com/embed/a7CSMKw1E7g
+  [5]: https://www.youtube.com/embed/a7CSMKw1E7g
   [“RIGS: Mechanized Combat League” (\$50)]: https://www.playstation.com/en-us/games/rigs-mechanized-combat-league-ps4/
-  [4]: https://www.youtube.com/embed/Rnqlf9EQ2zA
+  [6]: https://www.youtube.com/embed/Rnqlf9EQ2zA
   [“Batman Arkham VR” (\$20)]: https://www.playstation.com/en-us/games/batman-arkham-vr-ps4/
-  [5]: https://www.youtube.com/embed/eS4g0py16N8
+  [7]: https://www.youtube.com/embed/eS4g0py16N8
   [“Job Simulator” (\$30)]: https://www.playstation.com/en-us/games/job-simulator-the-2050-archives-ps4/
-  [6]: https://www.youtube.com/embed/3-iMlQIGH8Y
+  [8]: https://www.youtube.com/embed/3-iMlQIGH8Y
   [“Eve Valkyrie” (\$60)]: https://www.playstation.com/en-us/games/eve-valkyrie-ps4/
-  [7]: https://www.youtube.com/embed/0KFHw12CTbo
+  [9]: https://www.youtube.com/embed/0KFHw12CTbo
   [‘Skylanders Imaginators’ will let you create and 3D print your own action figures]: https://www.yahoo.com/tech/skylanders-imaginators-will-let-you-create-and-3d-print-your-own-action-figure-143838550.html
   [Review: High-flying ‘NBA 2K17’ has a career year]: https://www.yahoo.com/tech/review-high-flying-nba-2k17-has-a-career-year-184135248.html
   [Review: Race at your own speed in big, beautiful ‘Forza Horizon 3’]: https://www.yahoo.com/tech/review-race-at-your-own-speed-in-big-beautiful-forza-horizon-3-195337170.html

@@ -1,8 +1,6 @@
 # On Behalf of “Literally” — Medium
 
-![]
-
-Words need defenders.
+![Words need defenders.]
 
 ### On Behalf of “Literally”
 
@@ -48,7 +46,7 @@ Do you misuse the word “literally” just to annoy your know-it-all or grammar
 
 Matthew Inman of “The Oatmeal” wrote a comic about literally. Abusers and defenders alike [should check it out]. It’s clear this whole craze about literally is driving a lot of us nuts. You literally abusers are killing off pieces of our souls. You must be stopped, or the world will be lost to meaninglessness forever. Figuratively speaking.
 
-  []: https://d262ilb51hltx0.cloudfront.net/max/1600/1*eR_J8DurqygbhrwDg-WPnQ.png
+  [Words need defenders.]: https://d262ilb51hltx0.cloudfront.net/max/1600/1*eR_J8DurqygbhrwDg-WPnQ.png
   [Comic Sans]: http://bancomicsans.com/main/?page_id=2
   [Papyrus]: https://www.facebook.com/group.php?gid=14448723154
   [should check it out]: http://theoatmeal.com/comics/literally

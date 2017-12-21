@@ -28,7 +28,7 @@ DeepMind希望DNC可以推动计算行业实现更多突破。DeepMind已将其�
 
 转播到腾讯微博
 
-![]
+![][1]
 
 **【美国The Next Web作品的中文相关权益归腾讯公司独家所有。未经授权，不得转载、摘编等。】**
 
@@ -36,4 +36,4 @@ DeepMind希望DNC可以推动计算行业实现更多突破。DeepMind已将其�
   [谷歌]: http://stockhtm.finance.qq.com/astock/ggcx/GOOG.OQ.htm
   [微博]: http://t.qq.com/googlechina#pref=qqcom.keyword
   [科学]: http://tech.qq.com/science.htm
-  []: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJAQMAAAAB5D5xAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURQAAAKd6PdoAAAABdFJOUwBA5thmAAAAC0lEQVQI12NgwAkAABsAAVJE5KkAAAAASUVORK5CYIIvKiAgfHhHdjAwfDUwZDc5YmEzMGM3MDcxY2I5OTIyMTk4MzYyZGRlZmNlICov
+  [1]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJAQMAAAAB5D5xAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURQAAAKd6PdoAAAABdFJOUwBA5thmAAAAC0lEQVQI12NgwAkAABsAAVJE5KkAAAAASUVORK5CYIIvKiAgfHhHdjAwfDUwZDc5YmEzMGM3MDcxY2I5OTIyMTk4MzYyZGRlZmNlICov

@@ -13,7 +13,7 @@ It’s actually an interesting architecture - FPGAs (including some devices mark
 Without further ado, here’s a block diagram showing all the cool stuff you get in the SLG46620V:
 
 +-------------------------------------------------+
-| [![]]                                           |
+| [![][1]]                                        |
 +-------------------------------------------------+
 | SLG46620V block diagram (from device datasheet) |
 +-------------------------------------------------+
@@ -29,7 +29,7 @@ The best part is that the development software (GreenPak Designer) is free of ch
 While schematics may be fine for quick tinkering on really simple designs, they quickly get unwieldy. The nightmare of a circuit shown below is just a bunch of counters hooked up to LEDs that blink at various rates.
 
 +----------------------+
-| [![][1]]             |
+| [![][2]]             |
 +----------------------+
 | Schematic from hell! |
 +----------------------+
@@ -51,7 +51,7 @@ Once the design has been synthesized, my tool (named, surprisingly, gp4par) is t
 After the graphs are generated, each node in the netlist graph is assigned a numeric label identifying the type of cell and each node in the device graph is assigned a list of legal labels: for example, an I/O buffer site is legal for an input buffer, output buffer, or bidirectional buffer.
 
 +----------------------------------------------------------------+
-| [![][2]]                                                       |
+| [![][3]]                                                       |
 +----------------------------------------------------------------+
 | Example labeling for a subset of the netlist and device graphs |
 +----------------------------------------------------------------+
@@ -147,14 +147,14 @@ My thanks go out to Clifford Wolf, whitequark, the IRC users in \#\#openfpga, an
   [5th generation parts]: http://www.silego.com/products/greenpak5.html
   [4th generation]: http://www.silego.com/products/greenpak4.html
   [PSoCs]: http://www.cypress.com/products/32-bit-arm-cortex-m-psoc
-  []: https://1.bp.blogspot.com/-YIPC5jkXkDE/Vy7YPSqFKWI/AAAAAAAAAxI/a7D6Ji2GxoUvcrwUkI4RLZcr2LFQEJCTACLcB/s640/block-diagram.png
-  [![]]: https://1.bp.blogspot.com/-YIPC5jkXkDE/Vy7YPSqFKWI/AAAAAAAAAxI/a7D6Ji2GxoUvcrwUkI4RLZcr2LFQEJCTACLcB/s1600/block-diagram.png
-  [1]: https://1.bp.blogspot.com/-k3naUT3uXao/Vy7WFac246I/AAAAAAAAAw8/mePy_ostO8QJra5ZJrbP2WGhTlJ0B_r8gCLcB/s640/schematic-from-hell.png
-  [![][1]]: https://1.bp.blogspot.com/-k3naUT3uXao/Vy7WFac246I/AAAAAAAAAw8/mePy_ostO8QJra5ZJrbP2WGhTlJ0B_r8gCLcB/s1600/schematic-from-hell.png
+  [1]: https://1.bp.blogspot.com/-YIPC5jkXkDE/Vy7YPSqFKWI/AAAAAAAAAxI/a7D6Ji2GxoUvcrwUkI4RLZcr2LFQEJCTACLcB/s640/block-diagram.png
+  [![][1]]: https://1.bp.blogspot.com/-YIPC5jkXkDE/Vy7YPSqFKWI/AAAAAAAAAxI/a7D6Ji2GxoUvcrwUkI4RLZcr2LFQEJCTACLcB/s1600/block-diagram.png
+  [2]: https://1.bp.blogspot.com/-k3naUT3uXao/Vy7WFac246I/AAAAAAAAAw8/mePy_ostO8QJra5ZJrbP2WGhTlJ0B_r8gCLcB/s640/schematic-from-hell.png
+  [![][2]]: https://1.bp.blogspot.com/-k3naUT3uXao/Vy7WFac246I/AAAAAAAAAw8/mePy_ostO8QJra5ZJrbP2WGhTlJ0B_r8gCLcB/s1600/schematic-from-hell.png
   [says]: http://www.arachnidlabs.com/blog/2015/03/30/greenpak/
   [Yosys]: http://www.clifford.at/yosys/
-  [2]: https://2.bp.blogspot.com/-kIekczO693g/Vy7dBqYifXI/AAAAAAAAAxc/hMNJBs5bedIQOrBzzkhq4gbmhR-n58EQwCLcB/s400/graph-labels.png
-  [![][2]]: https://2.bp.blogspot.com/-kIekczO693g/Vy7dBqYifXI/AAAAAAAAAxc/hMNJBs5bedIQOrBzzkhq4gbmhR-n58EQwCLcB/s1600/graph-labels.png
+  [3]: https://2.bp.blogspot.com/-kIekczO693g/Vy7dBqYifXI/AAAAAAAAAxc/hMNJBs5bedIQOrBzzkhq4gbmhR-n58EQwCLcB/s400/graph-labels.png
+  [![][3]]: https://2.bp.blogspot.com/-kIekczO693g/Vy7dBqYifXI/AAAAAAAAAxc/hMNJBs5bedIQOrBzzkhq4gbmhR-n58EQwCLcB/s1600/graph-labels.png
   [GreenPak4 development kit]: http://www.silego.com/buy/index.php?main_page=product_info&products_id=388
   [GreenPak Designer]: http://www.silego.com/softdoc/software.html
   [my fork on Github]: https://github.com/azonenberg/yosys/

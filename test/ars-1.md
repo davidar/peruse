@@ -1,6 +1,6 @@
 # Just-released Minecraft exploit makes it easy to crash game servers
 
-![]
+![][1]
 
 A flaw in the wildly popular online game *Minecraft* makes it easy for just about anyone to crash the server hosting the game, according to a computer programmer who has released proof-of-concept code that exploits the vulnerability.
 
@@ -55,7 +55,7 @@ The bug resides in the [networking internals of the *Minecraft* protocol]. It al
 
 Ars is asking Mojang for comment and will update this post if company officials respond.
 
-  []: http://cdn.arstechnica.net/wp-content/uploads/2015/04/server-crash-640x426.jpg
+  [1]: http://cdn.arstechnica.net/wp-content/uploads/2015/04/server-crash-640x426.jpg
   [blog post published Thursday]: http://blog.ammaraskar.com/minecraft-vulnerability-advisory
   [networking internals of the *Minecraft* protocol]: https://github.com/ammaraskar/pyCraft
   [Named Binary Tag (NBT)]: http://wiki.vg/NBT

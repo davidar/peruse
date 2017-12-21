@@ -1,6 +1,6 @@
 # Nintendo’s first iPhone game will launch in December for \$10
 
-![&lt;span style=“font-size:13px;”&gt;Nintendo/Apple&lt;/span&gt;] © Provided by Business Insider Inc Nintendo/Apple Nintendo and Apple shocked the world earlier this year by announcing “Super Mario Run,” the legendary gaming company’s first foray into mobile gaming. It’s a Mario game you can play on your phone with just one hand, so what’s not to love?
+![\<span style=“font-size:13px;”\>Nintendo/Apple\</span\>] © Provided by Business Insider Inc Nintendo/Apple Nintendo and Apple shocked the world earlier this year by announcing “Super Mario Run,” the legendary gaming company’s first foray into mobile gaming. It’s a Mario game you can play on your phone with just one hand, so what’s not to love?
 
 Thankfully, now we know when you can get it and for how much: “Super Mario Run” will launch on iPhone and iPad on December 15, for a flat fee of \$9.99. You can play a sample of the game modes for free, but unlike most other mobile games that let you download for free but require money to keep playing, or access parts of the game, you can pay \$10 to get everything right away.
 
@@ -12,7 +12,7 @@ The name and basic idea might sound like one of those endless score attack games
 
 To see “Super Mario Run” in action, check out the footage below:
 
-![]
+![][1]
 
-  [&lt;span style=“font-size:13px;”&gt;Nintendo/Apple&lt;/span&gt;]: http://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAkk5fh.img?h=820&w=1456&m=6&q=60&o=f&l=f&x=1162&y=540
-  []: https://www.youtube.com/embed/E39ychZKnDI
+  [\<span style=“font-size:13px;”\>Nintendo/Apple\</span\>]: http://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAkk5fh.img?h=820&w=1456&m=6&q=60&o=f&l=f&x=1162&y=540
+  [1]: https://www.youtube.com/embed/E39ychZKnDI

@@ -1,6 +1,6 @@
 # Babies Who Eat Peanuts Early May Avoid Allergy
 
-Feb. 23, 2015 – Life-threatening peanut allergies have mysteriously been on the rise in the past decade, with little hope for a cure.
+Feb. 23, 2015 – Life-threatening peanut allergies have mysteriously been on the rise in the past decade, with little hope for a cure.
 
 But a groundbreaking new study may offer a way to stem that rise, while another may offer some hope for those who are already allergic.
 

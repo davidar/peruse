@@ -1,10 +1,6 @@
 # Zuckerberg offers peek at Facebook’s acquisition strategies
 
-![]
-
-Facebook CEO Mark Zuckerberg, the man with the acquisition plan.
-
-Photo by James Martin/CNET
+![][1]
 
 Anyone who has ever been involved in closing a billion-dollar acquisition deal will tell you that you don’t go in without a clear, well thought out plan.
 
@@ -32,9 +28,9 @@ It wasn’t clear why these strategies didn’t work on Snapchat CEO Evan Spiege
 
 ***Tech Enabled:** CNET chronicles tech’s role in providing new kinds of accessibility. Check it out [here].*
 
-***Technically Literate:** Original works of short fiction with unique perspectives on tech, exclusively on CNET. [Here][1].*
+***Technically Literate:** Original works of short fiction with unique perspectives on tech, exclusively on CNET. [Here][2].*
 
-  []: https://cnet1.cbsistatic.com/img/nAMdBzIE1ogVw5bOBZBaiJCt3Ro=/570x0/2014/03/21/863df5d9-e8b8-4b38-851b-5e3f77f2cf0e/mark-zuckerberg-facebook-home-10671610x407.jpg
+  [1]: https://cnet1.cbsistatic.com/img/nAMdBzIE1ogVw5bOBZBaiJCt3Ro=/570x0/2014/03/21/863df5d9-e8b8-4b38-851b-5e3f77f2cf0e/mark-zuckerberg-facebook-home-10671610x407.jpg
   [\$19 billion acquisition]: https://www.cnet.com/news/facebook-closes-19-billion-deal-for-whatsapp/
   [personally brokered]: https://www.cnet.com/news/zuckerberg-did-1-billion-instagram-deal-on-his-own/
   [Instagram]: https://www.cnet.com/news/why-facebook-plunked-down-1-billion-to-buy-instagram/
@@ -44,4 +40,4 @@ It wasn’t clear why these strategies didn’t work on Snapchat CEO Evan Spiege
   [Business Insider]: http://www.businessinsider.com/mark-zuckerberg-explains-facebooks-acquisition-strategy-2017-1
   [famously rebuffed]: https://www.cnet.com/news/snapchat-said-to-rebuff-3-billion-offer-from-facebook/
   [here]: https://www.cnet.com/tech-enabled/
-  [1]: https://www.cnet.com/technically-literate/
+  [2]: https://www.cnet.com/technically-literate/

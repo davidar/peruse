@@ -1,10 +1,6 @@
 # Yahoo’s Sale to Verizon Leaves Shareholders With Little Say
 
-Photo
-
-![]
-
-Credit Harry Campbell
+![Credit Harry Campbell]
 
 [Yahoo]’s \$4.8 billion sale to [Verizon] is a complicated beast, showing how different acquisition structures can affect how shareholders are treated.
 
@@ -16,13 +12,13 @@ It is hard to overestimate how complex an asset sale like this is. Some of the a
 
 Continue reading the main story
 
-In the second step, at the closing, [Yahoo will sell the stock][first step] in the single subsidiary to Verizon. At that point, Yahoo will change its name to something without “Yahoo” in it. My favorite is simply Remain Co., the name Yahoo executives are using. Remain Co. will become a holding company for the Alibaba and Yahoo Japan stock. Included will also be \$10 billion in cash, plus the Excalibur patent portfolio and a number of minority investments including Snapchat. Ahh, if only Yahoo had bought Snapchat instead of Tumblr (indeed, if only Yahoo had bought Google or Facebook when it had the chance).
+In the second step, at the closing, [Yahoo will sell the stock][first step] in the single subsidiary to Verizon. At that point, Yahoo will change its name to something without “Yahoo” in it. My favorite is simply Remain Co., the name Yahoo executives are using. Remain Co. will become a holding company for the Alibaba and Yahoo Japan stock. Included will also be \$10 billion in cash, plus the Excalibur patent portfolio and a number of minority investments including Snapchat. Ahh, if only Yahoo had bought Snapchat instead of Tumblr (indeed, if only Yahoo had bought Google or Facebook when it had the chance).
 
 Because it is a sale of a subsidiary, the \$4.8 billion will be paid to Yahoo. Its shareholders will not receive any money unless Yahoo pays it out in a dividend (after paying taxes). Instead, Yahoo shareholders will be left holding shares in the renamed company.
 
 Verizon’s Yahoo will then be run [under the same umbrella as AOL]. It is unclear whether there will be a further merger of the two businesses after the acquisition. Plans for Yahoo are still a bit in flux in part because of the abnormal sale process.
 
-As for Remain Co., it will become a so-called investment company. This is a special designation for a company that holds securities for investment but does not operate a working business. Investment companies are subject to special regulation under the Investment Company Act of 1940. Remain Co. will probably just sit there, returning cash to shareholders and waiting for Alibaba to buy it in a tax-free transaction. (Alibaba says it has no plans to do this, but most people do not believe this).
+As for Remain Co., it will become a so-called investment company. This is a special designation for a company that holds securities for investment but does not operate a working business. Investment companies are subject to special regulation under the Investment Company Act of 1940. Remain Co. will probably just sit there, returning cash to shareholders and waiting for Alibaba to buy it in a tax-free transaction. (Alibaba says it has no plans to do this, but most people do not believe this).
 
 The rights of Yahoo shareholders in this sale will be different from those in an ordinary sale, when an entire company is bought.
 
@@ -32,7 +28,7 @@ In either case, shareholders get a say. They either vote on the merger or decide
 
 In both cases, there would be appraisal rights if the buyer pays cash. This means that shareholders can object to the deal by not voting for it or not tendering into the offer and instead asking a court to value their shares – this is what happened [in Dell’s buyout in 2013].
 
-The Yahoo deal, however, is not a sale of the public company. It is an asset sale, in which there is only a shareholder vote if there is a sale of “all” or “substantially all” of the assets of the company. Yahoo is not all of the assets or even “substantially all” – the Alibaba shares being left behind in Remain Co. are worth about \$28 billion, or six times the value of the cash Verizon is paying for the Yahoo assets it is buying.
+The Yahoo deal, however, is not a sale of the public company. It is an asset sale, in which there is only a shareholder vote if there is a sale of “all” or “substantially all” of the assets of the company. Yahoo is not all of the assets or even “substantially all” – the Alibaba shares being left behind in Remain Co. are worth about \$28 billion, or six times the value of the cash Verizon is paying for the Yahoo assets it is buying.
 
 The courts have held that the definition of “substantially all” includes a change of business in a company because of an asset sale where the assets are [“qualitatively vital.”] And that certainly applies here. So there will be a vote – indeed, Yahoo has no problem with a vote – and shareholders are desperate to sell at this point.
 
@@ -50,7 +46,7 @@ All in all, this was as hairy a deal as they come. There was the procedural and 
 
 Continue reading the main story
 
-  []: https://static01.nyt.com/images/2016/07/30/business/db-dealprof/db-dealprof-master315.jpg
+  [Credit Harry Campbell]: https://static01.nyt.com/images/2016/07/30/business/db-dealprof/db-dealprof-master315.jpg
   [Yahoo]: http://www.nytimes.com/topic/company/yahoo-inc?inline=nyt-org "More information about Yahoo! Inc."
   [Verizon]: http://www.nytimes.com/topic/company/verizon-communications-inc?inline=nyt-org "More information about Verizon Communications Inc."
   [first step]: https://www.sec.gov/Archives/edgar/data/1011006/000119312516656036/d178500dex22.htm

@@ -1,10 +1,10 @@
 # Inside the Deep Web Drug Lab — Backchannel — Medium
 
-![]
+![][1]
 
 #### Welcome to DoctorX’s Barcelona lab, where the drugs you bought online are tested for safety and purity. No questions asked.
 
-![][1]
+![][2]
 
 Standing at a table in a chemistry lab in Barcelona, Cristina Gil Lladanosa tears open a silver, smell-proof protective envelope. She slides out a transparent bag full of crystals. Around her, machines whir and hum, and other researchers mill around in long, white coats.
 
@@ -12,9 +12,7 @@ She is holding the lab’s latest delivery of a drug bought from the “deep web
 
 “Here we have speed, MDMA, cocaine, pills,” Lladanosa says, pointing to vials full of red, green, blue and clear solutions sitting in labeled boxes.
 
-![][2]
-
-Cristina Gil Lladanosa, at the Barcelona testing lab | photo by Joan Bardeletti
+![Cristina Gil Lladanosa, at the Barcelona testing lab | photo by Joan Bardeletti]
 
 Since 2011, with the launch of [Silk Road], anybody has been able to safely buy illegal drugs from the deep web and have them delivered to their door. Though the FBI shut down that black market in October 2013, other outlets have emerged to fill its role. For the last 10 months the lab at which Lladanosa and Espinosa work has offered a paid testing service of those drugs. By sending in samples for analysis, users can know exactly what it is they are buying, and make a more informed decision about whether to ingest the substance. The group, called [Energy Control], which has being running “harm reduction” programs since 1999, is the first to run a testing service explicitly geared towards verifying those purchases from the deep web.
 
@@ -22,17 +20,13 @@ Before joining Energy Control, Lladanosa briefly worked at a pharmacy, whereas E
 
 After weighing out the crystals, aggressively mixing it with methanol until dissolved, and delicately pouring the liquid into a tiny brown bottle, Lladanosa, a petite woman who is nearly engulfed by her lab coat, is now ready to test the sample. She loads a series of three trays on top of a large white appliance sitting on a table, called a gas chromatograph (GC). A jungle of thick pipes hang from the lab’s ceiling behind it.
 
-![][3]
-
-Photo by Joan Bardeletti
+![Photo by Joan Bardeletti]
 
 “Chromatography separates all the substances,” Lladanosa says as she loads the machine with an array of drugs sent from the deep web and local Spanish users. It can tell whether a sample is pure or contaminated, and if the latter, with what.
 
 Rushes of hot air blow across the desk as the gas chromatograph blasts the sample at 280 degrees Celsius. Thirty minutes later the machine’s robotic arm automatically moves over to grip another bottle. The machine will continue cranking through the 150 samples in the trays for most of the work week.
 
-![][4]
-
-Photo by Joan Bardeletti
+![Photo by Joan Bardeletti][3]
 
 To get the drugs to Barcelona, a user mails at least 10 milligrams of a substance to the offices of the Asociación Bienestar y Desarrollo, the non-government organization that oversees Energy Control. The sample then gets delivered to the testing service’s laboratory, at the Barcelona Biomedical Research Park, a futuristic, seven story building sitting metres away from the beach. Energy Control borrows its lab space from a biomedical research group for free.
 
@@ -42,13 +36,11 @@ About a week after testing, those results are sent in a PDF to an email address 
 
 “The process is quite boring, because you are in a routine,” Lladanosa says. But one part of the process is consistently surprising: that moment when the results pop up on the screen. “Every time it’s something different.” For instance, one cocaine sample she had tested also contained phenacetin, a painkiller added to increase the product’s weight; lidocaine, an anesthetic that numbs the gums, giving the impression that the user is taking higher quality cocaine; and common caffeine.
 
-![][5]
+![][4]
 
 The deep web drug lab is the brainchild of Fernando Caudevilla, a Spanish physician who is better known as “DoctorX” on the deep web, a nickname given to him by his Energy Control co-workers because of his earlier writing about the history, risks and recreational culture of MDMA. In the physical world, Caudevilla has worked for over a decade with Energy Control on various harm reduction focused projects, most of which have involved giving Spanish illegal drug users medical guidance, and often writing leaflets about the harms of certain substances.
 
-![][6]
-
-Fernando Caudevilla, AKA DoctorX. Photo: Joseph Cox
+![Fernando Caudevilla, AKA DoctorX. Photo: Joseph Cox]
 
 Caudevilla first ventured into Silk Road forums in April 2013. “I would like to contribute to this forum offering professional advice in topics related to drug use and health,” he wrote in an [introductory post], using his DoctorX alias. Caudevilla offered to provide answers to questions that a typical doctor is not prepared, or willing, to respond to, at least not without a lecture or a judgment. “This advice cannot replace a complete face-to-face medical evaluation,” he wrote, “but I know how difficult it can be to talk frankly about these things.”
 
@@ -60,11 +52,9 @@ Caudevilla’s transition from dispensing advice to starting up a no-questions-a
 
 “I thought, we are doing this in Spain, why don’t we do an international drug testing service?” Caudevilla told me when I visited the other Energy Control lab, in Madrid. Caudevilla, a stocky character with ear piercings and short, shaved hair, has eyes that light up whenever he discusses the world of the deep web. Later, via email, he elaborated that it was not a hard sell. “It was not too hard to convince them,” he wrote me. Clearly, Energy Control believed that the reputation he had earned as an unbiased medical professional on the deep web might carry over to the drug analysis service, where one needs to establish “credibility, trustworthiness, \[and\] transparency,” Caudevilla said. “We could not make mistakes,” he added.
 
-![][7]
+![Photo: Joseph Cox]
 
-Photo: Joseph Cox
-
-![][5]
+![][4]
 
 While the Energy Control lab in Madrid lab only tests Spanish drugs from various sources, it is the Barcelona location which vets the substances bought in the shadowy recesses of of the deep web. Caudevilla no longer runs it, having handed it over to his colleague Ana Muñoz. She maintains a presence on the deep web forums, answers questions from potential users, and sends back reports when they are ready.
 
@@ -74,9 +64,7 @@ The testing program exists in a legal grey area. The people who own the Barcelon
 
 By the time of my visit in February, Energy Control had received over 150 samples from the deep web and have been receiving more at a rate of between 4 and 8 a week. Traditional drugs, such as cocaine and MDMA, make up about 70 percent of the samples tested, but the Barcelona lab has also received samples of the prescription pill codeine, research chemicals and synthetic cannabinoids, and even pills of Viagra.
 
-![][8]
-
-Photo by Joan Bardeletti
+![Photo by Joan Bardeletti][5]
 
 So it’s fair to make a tentative judgement on what people are paying for on the deep web. The verdict thus far? Overall, drugs on the deep web appear to be of much higher quality than those found on the street.
 
@@ -90,11 +78,9 @@ Vendors on deep web markets advertise their product just like any other outlet d
 
 “You won’t be getting anything CLOSE to what you paid for,” one user complained about the cocaine from ‘Mirkov’, a vendor on Evolution. “He sells 65% not 95%.”
 
-![][9]
+![Photo by Joan Bardeletti][6]
 
-Photo by Joan Bardeletti
-
-![][5]
+![][4]
 
 Despite the prevalence of people using the service to gauge the quality of what goes up their nose, many users send samples to Energy Control in the spirit of its original mission: keeping themselves alive and healthy. The worst case scenario from drugs purchased on the deep web is, well the worst case. That was the outcome when [Patrick McMullen,] a 17-year-old Scottish student, ingested half a gram of MDMA and three tabs of LSD, reportedly purchased from the Silk Road. While talking to his friends on Skype, his words became slurred and he passed out. Paramedics could not revive him. The coroner for that case, Sherrif Payne, who deemed the cause of death ecstasy toxicity, told *The Independent* “You never know the purity of what you are taking and you can easily come unstuck.”
 
@@ -108,9 +94,7 @@ In the case of Levamisole, those prescribing it are often not doctors but veteri
 
 “More people die because of tainted drugs than the drugs themselves,” Dr. Feel added. “It’s the cuts and adulterants that are making people sick and killing them.”
 
-![][10]
-
-Photo by Joan Bardeletti
+![Photo by Joan Bardeletti][7]
 
 The particular case of cocaine cut with Levamisole is one of the reasons that ScreamMyName has been pushing for more drug testing on the deep web markets. “I recognize that drug use isn’t exactly healthy, but why exacerbate the problem?” he told me when I contacted him after his post. “\[Energy Control\] provides a way for users to test the drugs they’ll use and for these very users to know what it is they’re putting in their bodies. Such services are in very short supply.”
 
@@ -118,9 +102,7 @@ After sending a number of Energy Control tests himself, ScreamMyName started a d
 
 In posts to the Evolution community, ScreamMyName pitched this project as something that will benefit users and keep drug dealer honest. “When the funds build up to a point where we can purchase an \[Energy Control\] test fee, we’ll do a US thread poll for a few days and try to cohesively decide on what vendor to test,” he continued.
 
-![][11]
-
-Photo by Joan Bardeletti
+![Photo by Joan Bardeletti][8]
 
 Other members of the community have been helping out, too. PlutoPete, a vendor from the original Silk Road who sold cannabis seeds and other legal items, has provided ScreamMyName with packaging to safely send the samples to Barcelona. “A box of baggies, and a load of different moisture barrier bags,” PlutoPete told me over the phone. “That’s what all the vendors use.”
 
@@ -138,42 +120,40 @@ But perhaps it is best that the users, those who are actually consuming the drug
 
 “That’s always been the case with the deep web,” PlutoPete told me. Indeed, ever since Silk Road, a stable of the drug markets has been the review system, where buyers can leave a rating and feedback for vendors, letting others know about the reliability of the seller. But DoctorX’s lab, rigorously testing the products with scientific instruments, takes it a step further.
 
-![][12]
-
-Photo by Joan Bardeletti
+![Photo by Joan Bardeletti][9]
 
 “In the white market, they have quality control. In the dark market, it should be the same,” Cristina Gil Lladanosa says to me before I leave the Barcelona lab.
 
 A week after I visit the lab, the results of the MDMA arrive in my inbox: it is 85 percent pure, with no indications of other active ingredients. Whoever ordered that sample from the digital shelves of the deep web, and had it shipped to their doorstep in Canada, got hold of some seriously good, and relatively safe drugs. And now they know it.
 
-![][13]
+![][10]
 
 *Top photo by Joan Bardeletti*
 
 Follow Backchannel: [*Twitter*] *|*[*Facebook*]
 
-  []: https://d262ilb51hltx0.cloudfront.net/max/2000/1*sLDnS1UWEFIS33uLMxq3cw.jpeg
-  [1]: https://d262ilb51hltx0.cloudfront.net/max/800/1*3vIhkoHIzcxvUdijoCVx6w.png
+  [1]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*sLDnS1UWEFIS33uLMxq3cw.jpeg
+  [2]: https://d262ilb51hltx0.cloudfront.net/max/800/1*3vIhkoHIzcxvUdijoCVx6w.png
   [MDMA]: http://en.wikipedia.org/wiki/MDMA
-  [2]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*4gN1-fzOwCniw-DbqQjDeQ.jpeg
+  [Cristina Gil Lladanosa, at the Barcelona testing lab | photo by Joan Bardeletti]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*4gN1-fzOwCniw-DbqQjDeQ.jpeg
   [Silk Road]: http://en.wikipedia.org/wiki/Silk_Road_%28marketplace%29
   [Energy Control]: http://energycontrol.org/
-  [3]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*2KPmZkIBUrhps-2uwDvYFQ.jpeg
-  [4]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*PU40bbbox2Ompc5I3RE99A.jpeg
-  [5]: https://d262ilb51hltx0.cloudfront.net/max/800/1*ohyycinH18fz98TCyUzVgQ.png
-  [6]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*mKvUNOAVQxl6atCbxbCZsg.jpeg
+  [Photo by Joan Bardeletti]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*2KPmZkIBUrhps-2uwDvYFQ.jpeg
+  [3]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*PU40bbbox2Ompc5I3RE99A.jpeg
+  [4]: https://d262ilb51hltx0.cloudfront.net/max/800/1*ohyycinH18fz98TCyUzVgQ.png
+  [Fernando Caudevilla, AKA DoctorX. Photo: Joseph Cox]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*mKvUNOAVQxl6atCbxbCZsg.jpeg
   [introductory post]: http://web.archive.org/web/20131015051405/https://dkn255hz262ypmii.onion.to/index.php?topic=147607.0
   [pulled a scam]: http://motherboard.vice.com/read/one-of-the-darknets-biggest-markets-may-have-just-stole-all-its-users-bitcoin
-  [7]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*knT10_FNVUmqQIBLnutmzQ.jpeg
-  [8]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*Vr61dyCTRwk6CemmVF8YAQ.jpeg
+  [Photo: Joseph Cox]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*knT10_FNVUmqQIBLnutmzQ.jpeg
+  [5]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*Vr61dyCTRwk6CemmVF8YAQ.jpeg
   [United Nations Office on Drugs and Crime World Drug Report 2014]: http://www.unodc.org/documents/wdr2014/Cocaine_2014_web.pdf
-  [9]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*a-1_13xE6_ErQ-QSlz6myw.jpeg
+  [6]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*a-1_13xE6_ErQ-QSlz6myw.jpeg
   [Patrick McMullen,]: http://www.independent.co.uk/news/uk/crime/teenager-patrick-mcmullen-who-died-while-on-skype-had-bought-drugs-from-silk-road-8942329.html
   [documented in a study]: http://www.ncbi.nlm.nih.gov/pubmed/22127712
-  [10]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*IWXhtSsVv0gNnCwnDEXk-Q.jpeg
+  [7]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*IWXhtSsVv0gNnCwnDEXk-Q.jpeg
   [He set up a Bitcoin wallet]: https://blockchain.info/address/1Mi6VjMFqjcD48FPV7cnPB24MAtQQenRy3
-  [11]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*NGcrjfkV0l37iQH2uyYjEw.jpeg
-  [12]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*WRlKt3q3mt7utmwxcbl3sQ.jpeg
-  [13]: https://d262ilb51hltx0.cloudfront.net/max/800/1*320_4I0lxbn5x3bx4XPI5Q.png
+  [8]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*NGcrjfkV0l37iQH2uyYjEw.jpeg
+  [9]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*WRlKt3q3mt7utmwxcbl3sQ.jpeg
+  [10]: https://d262ilb51hltx0.cloudfront.net/max/800/1*320_4I0lxbn5x3bx4XPI5Q.png
   [*Twitter*]: https://twitter.com/backchnnl
   [*Facebook*]: https://www.facebook.com/pages/Backchannel/1488568504730671

@@ -25,7 +25,7 @@ Samantha’s points (I assume you read it, for you are smart people who know the
 
 None of this is incorrect. None of this is an ad hominem attack in any way. It is just pointing out that a developer of Arment’s stature and status lives in a very different world than someone in East Frog Balls, Arkansas trying to make a living off of App sales. Our dev in EFB doesn’t have the main sites on the Apple web falling all over themselves to review their app the way that Arment does. They’re not friends with the people being The Loop, Daring Fireball, SixColors, iMore, The Mac Observer, etc., yadda.
 
-So, our hero, in a fit of well-meaning ignorance writes this piece (posted this morning, 14 Oct. 15) and of course, the response and any criticisms are just as reasonable and thoughtful.
+So, our hero, in a fit of well-meaning ignorance writes this piece (posted this morning, 14 Oct. 15) and of course, the response and any criticisms are just as reasonable and thoughtful.
 
 If you really believe that, you are the most preciously ignorant person in the world, and can I have your seriously charmed life.
 
@@ -55,7 +55,7 @@ But still, you get the people telling her something she already acknowledge:
 
 Thank you for restating something in the article. To the person who wrote it.
 
-In the original article, Samantha talked about the money Marco makes from his podcast. She based that on the numbers [provided by ATP in terms of sponsorship rates] and the number of current sponsors the podcast has. Is this going to yield perfect numbers? No. But the numbers you get from it will at least be reasonable, or should be unless the published sponsorship rates are just fantasy, and you’re stupid for taking them seriously.
+In the original article, Samantha talked about the money Marco makes from his podcast. She based that on the numbers [provided by ATP in terms of sponsorship rates] and the number of current sponsors the podcast has. Is this going to yield perfect numbers? No. But the numbers you get from it will at least be reasonable, or should be unless the published sponsorship rates are just fantasy, and you’re stupid for taking them seriously.
 
 At first, she went with a simple formula:
 

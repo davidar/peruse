@@ -1,10 +1,6 @@
 # United States to Lift Sudan Sanctions
 
-Photo
-
-![]
-
-United Nations peacekeepers at a refugee camp in Sudan on Monday. In exchange for the lifting of United States trade sanctions, Sudan has said it will improve access for aid groups, stop supporting rebels in neighboring South Sudan and cooperate with American intelligence agents. Credit Ashraf Shazly/Agence France-Presse — Getty Images
+![United Nations peacekeepers at a refugee camp in Sudan on Monday. In exchange for the lifting of United States trade sanctions, Sudan has said it will improve access for aid groups, stop supporting rebels in neighboring South Sudan and cooperate with American intelligence agents. Credit Ashraf Shazly/Agence France-Presse — Getty Images]
 
 LONDON — After nearly 20 years of hostile relations, the American government plans to reverse its position on [Sudan] and lift trade sanctions, Obama administration officials said late Thursday.
 
@@ -48,7 +44,7 @@ Mr. Reeves said he thought that the American government was being manipulated a
 
 Continue reading the main story
 
-  []: https://static01.nyt.com/images/2017/01/14/world/13SUDAN-1/13SUDAN-1-master768.jpg
+  [United Nations peacekeepers at a refugee camp in Sudan on Monday. In exchange for the lifting of United States trade sanctions, Sudan has said it will improve access for aid groups, stop supporting rebels in neighboring South Sudan and cooperate with American intelligence agents. Credit Ashraf Shazly/Agence France-Presse — Getty Images]: https://static01.nyt.com/images/2017/01/14/world/13SUDAN-1/13SUDAN-1-master768.jpg
   [Sudan]: http://topics.nytimes.com/top/news/international/countriesandterritories/sudan/index.html?inline=nyt-geo "More news and information about Sudan."
   [South Sudan]: http://topics.nytimes.com/top/news/international/countriesandterritories/south-sudan/index.html?inline=nyt-geo "More articles about South Sudan."
   [comprehensive trade embargo against Sudan and blocked the assets of the Sudanese government]: https://www.treasury.gov/resource-center/sanctions/Programs/Documents/sudan.pdf

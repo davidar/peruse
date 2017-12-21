@@ -115,202 +115,202 @@ It seems clear that LibreOffice has maintained a rather more frenetic release ca
 In the one-year period since late March 2014, there have been 381 changesets committed to the OpenOffice Subversion repository. The most active committers are:
 
 > Most active OpenOffice developers
->
-> By changesets
->
-> Herbert Dürr
->
-> 63
->
-> 16.6%
->
-> Jürgen Schmidt             
->
-> 56
->
-> 14.7%
->
-> Armin Le Grand
->
-> 56
->
-> 14.7%
->
-> Oliver-Rainer Wittmann
->
-> 46
->
-> 12.1%
->
-> Tsutomu Uchino
->
-> 33
->
-> 8.7%
->
-> Kay Schenk
->
-> 27
->
-> 7.1%
->
-> Pedro Giffuni
->
-> 23
->
-> 6.1%
->
-> Ariel Constenla-Haile
->
-> 22
->
-> 5.8%
->
-> Andrea Pescetti
->
-> 14
->
-> 3.7%
->
-> Steve Yin
->
-> 11
->
-> 2.9%
->
-> Andre Fischer
->
-> 10
->
-> 2.6%
->
-> Yuri Dario
->
-> 7
->
-> 1.8%
->
-> Regina Henschel
->
-> 6
->
-> 1.6%
->
-> Juan C. Sanz
->
-> 2
->
-> 0.5%
->
-> Clarence Guo
->
-> 2
->
-> 0.5%
->
-> Tal Daniel
->
-> 2
->
-> 0.5%
->
-> By changed lines
->
-> Jürgen Schmidt             
->
-> 455499
->
-> 88.1%
->
-> Andre Fischer
->
-> 26148
->
-> 3.8%
->
-> Pedro Giffuni
->
-> 23183
->
-> 3.4%
->
-> Armin Le Grand
->
-> 11018
->
-> 1.6%
->
-> Juan C. Sanz
->
-> 4582
->
-> 0.7%
->
-> Oliver-Rainer Wittmann
->
-> 4309
->
-> 0.6%
->
-> Andrea Pescetti
->
-> 3908
->
-> 0.6%
->
-> Herbert Dürr
->
-> 2811
->
-> 0.4%
->
-> Tsutomu Uchino
->
-> 1991
->
-> 0.3%
->
-> Ariel Constenla-Haile
->
-> 1258
->
-> 0.2%
->
-> Steve Yin
->
-> 1010
->
-> 0.1%
->
-> Kay Schenk
->
-> 616
->
-> 0.1%
->
-> Regina Henschel
->
-> 417
->
-> 0.1%
->
-> Yuri Dario
->
-> 268
->
-> 0.0%
->
-> tal
->
-> 16
->
-> 0.0%
->
-> Clarence Guo
->
-> 11
->
-> 0.0%
+
+By changesets
+
+Herbert Dürr
+
+63
+
+16.6%
+
+Jürgen Schmidt             
+
+56
+
+14.7%
+
+Armin Le Grand
+
+56
+
+14.7%
+
+Oliver-Rainer Wittmann
+
+46
+
+12.1%
+
+Tsutomu Uchino
+
+33
+
+8.7%
+
+Kay Schenk
+
+27
+
+7.1%
+
+Pedro Giffuni
+
+23
+
+6.1%
+
+Ariel Constenla-Haile
+
+22
+
+5.8%
+
+Andrea Pescetti
+
+14
+
+3.7%
+
+Steve Yin
+
+11
+
+2.9%
+
+Andre Fischer
+
+10
+
+2.6%
+
+Yuri Dario
+
+7
+
+1.8%
+
+Regina Henschel
+
+6
+
+1.6%
+
+Juan C. Sanz
+
+2
+
+0.5%
+
+Clarence Guo
+
+2
+
+0.5%
+
+Tal Daniel
+
+2
+
+0.5%
+
+By changed lines
+
+Jürgen Schmidt             
+
+455499
+
+88.1%
+
+Andre Fischer
+
+26148
+
+3.8%
+
+Pedro Giffuni
+
+23183
+
+3.4%
+
+Armin Le Grand
+
+11018
+
+1.6%
+
+Juan C. Sanz
+
+4582
+
+0.7%
+
+Oliver-Rainer Wittmann
+
+4309
+
+0.6%
+
+Andrea Pescetti
+
+3908
+
+0.6%
+
+Herbert Dürr
+
+2811
+
+0.4%
+
+Tsutomu Uchino
+
+1991
+
+0.3%
+
+Ariel Constenla-Haile
+
+1258
+
+0.2%
+
+Steve Yin
+
+1010
+
+0.1%
+
+Kay Schenk
+
+616
+
+0.1%
+
+Regina Henschel
+
+417
+
+0.1%
+
+Yuri Dario
+
+268
+
+0.0%
+
+tal
+
+16
+
+0.0%
+
+Clarence Guo
+
+11
+
+0.0%
 
 In truth, the above list is not just the most active OpenOffice developers — it is all of them; a total of 16 developers have committed changes to OpenOffice in the last year. Those developers changed 528,000 lines of code, but, as can be seen above, Jürgen Schmidt accounted for the bulk of those changes, which were mostly updates to translation files.
 
@@ -319,316 +319,316 @@ The top four developers in the “by changesets” column all work for IBM, so I
 The picture for LibreOffice is just a little bit different; in the same one-year period, the project has committed 22,134 changesets from 268 developers. The most active of these developers were:
 
 > Most active LibreOffice developers
->
-> By changesets
->
-> Caolán McNamara
->
-> 4307
->
-> 19.5%
->
-> Stephan Bergmann
->
-> 2351
->
-> 10.6%
->
-> Miklos Vajna
->
-> 1449
->
-> 6.5%
->
-> Tor Lillqvist
->
-> 1159
->
-> 5.2%
->
-> Noel Grandin
->
-> 1064
->
-> 4.8%
->
-> Markus Mohrhard
->
-> 935
->
-> 4.2%
->
-> Michael Stahl
->
-> 915
->
-> 4.1%
->
-> Kohei Yoshida
->
-> 755
->
-> 3.4%
->
-> Tomaž Vajngerl
->
-> 658
->
-> 3.0%
->
-> Thomas Arnhold
->
-> 619
->
-> 2.8%
->
-> Jan Holesovsky
->
-> 466
->
-> 2.1%
->
-> Eike Rathke
->
-> 457
->
-> 2.1%
->
-> Matteo Casalin
->
-> 442
->
-> 2.0%
->
-> Bjoern Michaelsen
->
-> 421
->
-> 1.9%
->
-> Chris Sherlock
->
-> 396
->
-> 1.8%
->
-> David Tardon
->
-> 386
->
-> 1.7%
->
-> Julien Nabet
->
-> 362
->
-> 1.6%
->
-> Zolnai Tamás
->
-> 338
->
-> 1.5%
->
-> Matúš Kukan
->
-> 256
->
-> 1.2%
->
-> Robert Antoni Buj Gelonch
->
-> 231
->
-> 1.0%
->
-> By changed lines
->
-> Lionel Elie Mamane
->
-> 244062
->
-> 12.5%
->
-> Noel Grandin
->
-> 238711
->
-> 12.2%
->
-> Stephan Bergmann
->
-> 161220
->
-> 8.3%
->
-> Miklos Vajna
->
-> 129325
->
-> 6.6%
->
-> Caolán McNamara
->
-> 97544
->
-> 5.0%
->
-> Tomaž Vajngerl
->
-> 69404
->
-> 3.6%
->
-> Tor Lillqvist
->
-> 59498
->
-> 3.1%
->
-> Laurent Balland-Poirier
->
-> 52802
->
-> 2.7%
->
-> Markus Mohrhard
->
-> 50509
->
-> 2.6%
->
-> Kohei Yoshida
->
-> 45514
->
-> 2.3%
->
-> Chris Sherlock
->
-> 36788
->
-> 1.9%
->
-> Peter Foley
->
-> 34305
->
-> 1.8%
->
-> Christian Lohmaier
->
-> 33787
->
-> 1.7%
->
-> Thomas Arnhold
->
-> 32722
->
-> 1.7%
->
-> David Tardon
->
-> 21681
->
-> 1.1%
->
-> David Ostrovsky
->
-> 21620
->
-> 1.1%
->
-> Jan Holesovsky
->
-> 20792
->
-> 1.1%
->
-> Valentin Kettner
->
-> 20526
->
-> 1.1%
->
-> Robert Antoni Buj Gelonch
->
-> 20447
->
-> 1.0%
->
-> Michael Stahl
->
-> 18216
->
-> 0.9%
+
+By changesets
+
+Caolán McNamara
+
+4307
+
+19.5%
+
+Stephan Bergmann
+
+2351
+
+10.6%
+
+Miklos Vajna
+
+1449
+
+6.5%
+
+Tor Lillqvist
+
+1159
+
+5.2%
+
+Noel Grandin
+
+1064
+
+4.8%
+
+Markus Mohrhard
+
+935
+
+4.2%
+
+Michael Stahl
+
+915
+
+4.1%
+
+Kohei Yoshida
+
+755
+
+3.4%
+
+Tomaž Vajngerl
+
+658
+
+3.0%
+
+Thomas Arnhold
+
+619
+
+2.8%
+
+Jan Holesovsky
+
+466
+
+2.1%
+
+Eike Rathke
+
+457
+
+2.1%
+
+Matteo Casalin
+
+442
+
+2.0%
+
+Bjoern Michaelsen
+
+421
+
+1.9%
+
+Chris Sherlock
+
+396
+
+1.8%
+
+David Tardon
+
+386
+
+1.7%
+
+Julien Nabet
+
+362
+
+1.6%
+
+Zolnai Tamás
+
+338
+
+1.5%
+
+Matúš Kukan
+
+256
+
+1.2%
+
+Robert Antoni Buj Gelonch
+
+231
+
+1.0%
+
+By changed lines
+
+Lionel Elie Mamane
+
+244062
+
+12.5%
+
+Noel Grandin
+
+238711
+
+12.2%
+
+Stephan Bergmann
+
+161220
+
+8.3%
+
+Miklos Vajna
+
+129325
+
+6.6%
+
+Caolán McNamara
+
+97544
+
+5.0%
+
+Tomaž Vajngerl
+
+69404
+
+3.6%
+
+Tor Lillqvist
+
+59498
+
+3.1%
+
+Laurent Balland-Poirier
+
+52802
+
+2.7%
+
+Markus Mohrhard
+
+50509
+
+2.6%
+
+Kohei Yoshida
+
+45514
+
+2.3%
+
+Chris Sherlock
+
+36788
+
+1.9%
+
+Peter Foley
+
+34305
+
+1.8%
+
+Christian Lohmaier
+
+33787
+
+1.7%
+
+Thomas Arnhold
+
+32722
+
+1.7%
+
+David Tardon
+
+21681
+
+1.1%
+
+David Ostrovsky
+
+21620
+
+1.1%
+
+Jan Holesovsky
+
+20792
+
+1.1%
+
+Valentin Kettner
+
+20526
+
+1.1%
+
+Robert Antoni Buj Gelonch
+
+20447
+
+1.0%
+
+Michael Stahl
+
+18216
+
+0.9%
 
 To a first approximation, the top ten companies supporting LibreOffice in the last year are:
 
 > Companies supporting LibreOffice development
->
-> (by changesets)
->
-> Red Hat
->
-> 8417
->
-> 38.0%
->
-> Collabora ~~Multimedia~~
->
-> 6531
->
-> 29.5%
->
-> (Unknown)
->
-> 5126
->
-> 23.2%
->
-> (None)
->
-> 1490
->
-> 6.7%
->
-> Canonical
->
-> 422
->
-> 1.9%
->
-> Igalia S.L.
->
-> 80
->
-> 0.4%
->
-> Ericsson
->
-> 21
->
-> 0.1%
->
-> Yandex
->
-> 18
->
-> 0.1%
->
-> FastMail.FM
->
-> 17
->
-> 0.1%
->
-> SUSE
->
-> 7
->
-> 0.0%
+
+(by changesets)
+
+Red Hat
+
+8417
+
+38.0%
+
+Collabora ~~Multimedia~~
+
+6531
+
+29.5%
+
+(Unknown)
+
+5126
+
+23.2%
+
+(None)
+
+1490
+
+6.7%
+
+Canonical
+
+422
+
+1.9%
+
+Igalia S.L.
+
+80
+
+0.4%
+
+Ericsson
+
+21
+
+0.1%
+
+Yandex
+
+18
+
+0.1%
+
+FastMail.FM
+
+17
+
+0.1%
+
+SUSE
+
+7
+
+0.0%
 
 Development work on LibreOffice is thus concentrated in a small number of companies, though it is rather more spread out than OpenOffice development. It is worth noting that the LibreOffice developers with unknown affiliation, who contributed 23% of the changes, make up 82% of the developer base, so there would appear to be a substantial community of developers contributing from outside the above-listed companies.
 
@@ -654,7 +654,7 @@ Anything can happen in the free-software development world; it is entirely possi
 -   [Development][]: A look at GlusterFS; LibreOffice Online; Open sourcing existing code; Secure Boot in Windows 10; …
 -   [Announcements][]: A Turing award for Michael Stonebraker, Sébastien Jodogne, ReGlue are Free Software Award winners, Kat Walsh joins FSF board of directors, Cyanogen, …
 
-**Next page**: [Security&gt;&gt;][Security]
+**Next page**: [Security\>\>][Security]
 
   [A trademark battle in the Arduino community]: file:///Articles/637755/
   [Arduino]: https://en.wikipedia.org/wiki/Arduino

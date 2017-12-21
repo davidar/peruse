@@ -56,7 +56,7 @@ Security officials are particularly concerned by the collapse of Libya, where va
 
 In January, Libyan militants loyal to the Islamic State [beheaded 21 Christians] — 20 of them Egyptian Copts — along the country’s coast. They later seized the Libyan city of Sirte.
 
-![]
+![][1]
 
 Officials are worried about the number of Tunisian militants who may have joined the jihadists in Libya — with the goal of returning home to fight the Tunis government.
 
@@ -88,5 +88,5 @@ Heba Habib contributed to this report.
   [of two leftist politicians]: http://www.bbc.com/news/world-africa-23452979
   [current coalition government]: http://www.washingtonpost.com/blogs/monkey-cage/wp/2015/02/03/tunisia-opts-for-an-inclusive-new-government/
   [beheaded 21 Christians]: http://www.washingtonpost.com/world/middle_east/video-shows-purported-beheading-of-egyptian-christians-in-libya/2015/02/15/b8d0f092-b548-11e4-bc30-a4e75503948a_story.html
-  []: https://img.washingtonpost.com/rf/image_480w/2010-2019/WashingtonPost/2015/03/18/Foreign/Graphics/tunisia600.jpg?uuid=1_yuLs2LEeSHME9HNBbnWQ
+  [1]: https://img.washingtonpost.com/rf/image_480w/2010-2019/WashingtonPost/2015/03/18/Foreign/Graphics/tunisia600.jpg?uuid=1_yuLs2LEeSHME9HNBbnWQ
   [Tunisia’s Islamists get a sobering lesson in governing]: http://www.washingtonpost.com/world/middle_east/tunisias-islamists-get-sobering-lesson-in-governing/2014/11/20/b6fc8988-65ad-11e4-ab86-46000e1d0035_story.html "www.washingtonpost.com"

@@ -27,9 +27,7 @@ But with just 18 months left in power, he said gun control was the area where he
 
 “If you look at the number of Americans killed since 9/11 by terrorism, it’s less than 100. If you look at the number that have been killed by gun violence, it’s in the tens of thousands,” Mr Obama said.
 
-![Gun control campaigners protest in McPhearson Square in Washington DC - 25 April 2013]
-
-The president said he would continue fighting for greater gun control laws
+![The president said he would continue fighting for greater gun control laws]
 
 “For us not to be able to resolve that issue has been something that is distressing,” he added.
 
@@ -37,11 +35,11 @@ Mr Obama has pushed for stricter gun control throughout his presidency but has b
 
 After nine African-American churchgoers were killed in South Carolina in June, he admitted “politics in this town” meant there were few options available.
 
-![line]
+![][1]
 
 ## Analysis: Jon Sopel, BBC News, Washington
 
-![President Barack Obama participates in an interview with Jon Sopel of BBC in the Roosevelt Room of the White House - 23 July 2015]
+![][2]
 
 Nine months ago, the president seemed like a spent force, after taking a beating in the midterm elections, during which members of his own party were reluctant to campaign on his record.
 
@@ -57,7 +55,7 @@ But notably, he did not give a direct answer to that question, which leaves me w
 
 [The presidential body swerve]
 
-![line]
+![][1]
 
 On race relations, Mr Obama said recent concerns around policing and mass incarcerations were “legitimate and deserve intense attention” but insisted progress had been made.
 
@@ -69,9 +67,7 @@ Talking about how he was feeling after his recent successes, he said “every pr
 
 “One of my strengths is I have a pretty even temperament. I don’t get too high when it’s high and I don’t get too low when it’s low,” he said.
 
-![Customer looks at Obama shirts at a stall in Nairobi’s Kibera slums, 23 July 2015]
-
-Kenya is getting ready to welcome the US president
+![Kenya is getting ready to welcome the US president]
 
 ## Kenya trip
 
@@ -92,10 +88,10 @@ Mr Obama will become the first US president to address the African Union when he
   [The UK must stay in the EU]: http://www.bbc.co.uk/news/uk-politics-33647154
   [and human rights violations in Kenya]: http://www.bbc.co.uk/news/world-us-canada-33646563
   [Read the full transcript of his interview]: http://www.bbc.co.uk/news/world-us-canada-33646542
-  [Gun control campaigners protest in McPhearson Square in Washington DC - 25 April 2013]: http://ichef.bbci.co.uk/news/555/cpsprodpb/462D/production/_84456971_gettyimages-167501087.jpg
-  [line]: http://ichef.bbci.co.uk/news/555/media/images/76020000/jpg/_76020974_line976.jpg
-  [President Barack Obama participates in an interview with Jon Sopel of BBC in the Roosevelt Room of the White House - 23 July 2015]: http://ichef-1.bbci.co.uk/news/555/cpsprodpb/6D3D/production/_84456972_p072315al-0500.jpg
+  [The president said he would continue fighting for greater gun control laws]: http://ichef.bbci.co.uk/news/555/cpsprodpb/462D/production/_84456971_gettyimages-167501087.jpg
+  [1]: http://ichef.bbci.co.uk/news/555/media/images/76020000/jpg/_76020974_line976.jpg
+  [2]: http://ichef-1.bbci.co.uk/news/555/cpsprodpb/6D3D/production/_84456972_p072315al-0500.jpg
   [how many minds he had changed on the Iran nuclear deal]: http://www.bbc.co.uk/news/world-us-canada-33643168
   [Five things we learned from Obama interview]: http://www.bbc.co.uk/news/world-us-canada-33646875
   [The presidential body swerve]: http://www.bbc.co.uk/news/world-us-canada-33646545
-  [Customer looks at Obama shirts at a stall in Nairobi’s Kibera slums, 23 July 2015]: http://ichef-1.bbci.co.uk/news/555/cpsprodpb/142FD/production/_84458628_shirtreuters.jpg
+  [Kenya is getting ready to welcome the US president]: http://ichef-1.bbci.co.uk/news/555/cpsprodpb/142FD/production/_84458628_shirtreuters.jpg
