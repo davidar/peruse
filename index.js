@@ -98,19 +98,6 @@ jsdom.env(process.argv[2], [], function(err, window) {
     pathBase: loc.protocol + "//" + loc.host + loc.pathname.substr(0, loc.pathname.lastIndexOf("/") + 1),
   };
   var readability = new Readability(uri, document);
-  readability.REGEXPS.extraneous =
-    /print|comment|discuss|e[\-]?mail|share|reply|all|login|sign|single|utility/i;
-  readability._findBaseUrl = function() { return "" };
-  var nextPageLink = readability._findNextPageLink(document.body);
-  if(nextPageLink) {
-    var links = document.getElementsByTagName("a");
-    for(var i = links.length - 1; i >= 0; i--) {
-      if(links[i].href === nextPageLink + "/") {
-        nextPageLink = nextPageLink + "/";
-        break;
-      }
-    }
-  }
   var article = readability.parse();
 
   if(article) {
@@ -118,8 +105,6 @@ jsdom.env(process.argv[2], [], function(err, window) {
     content += article.content.replace(
       /<(embed|iframe|video|audio) /g, "<img ").replace(
       /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, "$1");
-    if(nextPageLink)
-      content += "<p><a href=\"" + nextPageLink + "\">Next Page</a></p>";
   }
 
   var markdown = [
