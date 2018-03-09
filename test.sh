@@ -4,7 +4,9 @@ for file in test/*.md; do
     base=`basename $file .md`
     echo -n "$base... "
     ./index.js readability/test/test-pages/$base/source.html \
-        --atx-headers --wrap=none > test.out
+        --atx-headers --wrap=none \
+        | sed "s|$PWD|...|g" \
+        > test.out
     if diff -q $file test.out >/dev/null; then
         echo PASS
     else

@@ -54,4 +54,4 @@ ILM supervisor [John Knoll], who first pitched the [story idea] for [*Rogue One*
   [*Rogue One*]: http://starwars.wikia.com/wiki/Rogue_One:_A_Star_Wars_Story
   [last year]: http://lwlies.com/interviews/gareth-edwards-rogue-one-a-star-wars-story/
   [Join our Fan Contributor Program]: http://fandom.wikia.com/fan-contributor
-  [Fandom.com]: http://fandom.wikia.com
+  [Fandom.com]: http://fandom.wikia.com/

@@ -492,7 +492,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“Gecko Layout Engine”]: https://web.archive.org/web/20101128150117/http://download-firefox.org/spread-firefox/gecko-layout-engine-and-mozilla-firefox/
   [the original]: http://download-firefox.org/spread-firefox/gecko-layout-engine-and-mozilla-firefox/
   [“Web Browser Market Share Trends”]: http://www.w3counter.com/trends
-  [“Top 5 Browsers”]: http://gs.statcounter.com
+  [“Top 5 Browsers”]: http://gs.statcounter.com/
   [“Web browsers (Global marketshare)”]: http://www.getclicky.com/marketshare/global/web-browsers/
   [Goodger, Ben]: file:///wiki/Ben_Goodger "Ben Goodger"
   [“Where Did Firefox Come From?”]: https://web.archive.org/web/20110623034401/http://weblogs.mozillazine.org/ben/archives/009698.html
@@ -518,7 +518,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“Rhino History”]: http://www.mozilla.org/rhino/history.html
   [“Roadmap”]: https://github.com/servo/servo/wiki/Roadmap
   [“Servo Continues Making Progress For Shipping Components In Gecko, Browser.html”]: https://www.phoronix.com/scan.php?page=news_item&px=Servo-9-May-2016
-  [“Mozilla VR”]: https://mozvr.com
+  [“Mozilla VR”]: https://mozvr.com/
   [*Persona*]: https://login.persona.org/
   [“Persona”]: https://developer.mozilla.org/en-US/Persona
   [*About Mozilla Webmaker*]: https://webmaker.org/en-US/about/
