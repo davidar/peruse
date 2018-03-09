@@ -35,11 +35,11 @@ Mr Obama has pushed for stricter gun control throughout his presidency but has b
 
 After nine African-American churchgoers were killed in South Carolina in June, he admitted “politics in this town” meant there were few options available.
 
-![][1]
+![line]
 
 ## Analysis: Jon Sopel, BBC News, Washington
 
-![][2]
+![President Barack Obama participates in an interview with Jon Sopel of BBC in the Roosevelt Room of the White House - 23 July 2015]
 
 Nine months ago, the president seemed like a spent force, after taking a beating in the midterm elections, during which members of his own party were reluctant to campaign on his record.
 
@@ -55,7 +55,7 @@ But notably, he did not give a direct answer to that question, which leaves me w
 
 [The presidential body swerve]
 
-![][1]
+![line]
 
 On race relations, Mr Obama said recent concerns around policing and mass incarcerations were “legitimate and deserve intense attention” but insisted progress had been made.
 
@@ -89,8 +89,8 @@ Mr Obama will become the first US president to address the African Union when he
   [and human rights violations in Kenya]: http://www.bbc.co.uk/news/world-us-canada-33646563
   [Read the full transcript of his interview]: http://www.bbc.co.uk/news/world-us-canada-33646542
   [The president said he would continue fighting for greater gun control laws]: http://ichef.bbci.co.uk/news/555/cpsprodpb/462D/production/_84456971_gettyimages-167501087.jpg
-  [1]: http://ichef.bbci.co.uk/news/555/media/images/76020000/jpg/_76020974_line976.jpg
-  [2]: http://ichef-1.bbci.co.uk/news/555/cpsprodpb/6D3D/production/_84456972_p072315al-0500.jpg
+  [line]: http://ichef.bbci.co.uk/news/555/media/images/76020000/jpg/_76020974_line976.jpg
+  [President Barack Obama participates in an interview with Jon Sopel of BBC in the Roosevelt Room of the White House - 23 July 2015]: http://ichef-1.bbci.co.uk/news/555/cpsprodpb/6D3D/production/_84456972_p072315al-0500.jpg
   [how many minds he had changed on the Iran nuclear deal]: http://www.bbc.co.uk/news/world-us-canada-33643168
   [Five things we learned from Obama interview]: http://www.bbc.co.uk/news/world-us-canada-33646875
   [The presidential body swerve]: http://www.bbc.co.uk/news/world-us-canada-33646545

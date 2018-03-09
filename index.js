@@ -71,6 +71,13 @@ jsdom.env(process.argv[2], [], function(err, window) {
     svg.outerHTML = "<img src=\"" + dataURI + "\" />";
   }
 
+  var figs = document.getElementsByTagName("figure");
+  for(var i = figs.length - 1; i >= 0; i--) {
+    var fig = figs[i];
+    if(fig.getElementsByTagName("figcaption").length === 0)
+      fig.outerHTML = "<div>" + fig.innerHTML + "</div>";
+  }
+
   var breaks = document.querySelectorAll(
     "h1 br, h2 br, h3 br, h4 br, h5 br, h6 br");
   for(var i = breaks.length - 1; i >= 0; i--)
