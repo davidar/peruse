@@ -5,7 +5,8 @@
   "dependencies": {
     "escape-html": "^1.0",
     "jsdom": "^7.0",
-    "readability": "file:readability"
+    "readability": "file:readability",
+    "tmp": "0.0.33"
   },
   "bin": {
     "peruse": "index.js"

@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-let escapeHTML = require('escape-html')
-let jsdom = require('jsdom').jsdom
-let Readability = require('readability/index').Readability
-let spawn = require('child_process').spawn
+const escapeHTML = require('escape-html')
+const {jsdom} = require('jsdom')
+const {Readability} = require('readability/index')
+const {spawn, spawnSync} = require('child_process')
+const tmp = require('tmp')
 
 function removeNode (node) {
   node.parentNode.removeChild(node)
@@ -13,8 +14,9 @@ function nonempty (node) {
   return node.textContent.trim() || node.querySelector('img')
 }
 
-jsdom.env(process.argv[2], [], function (err, window) {
-  if (err) return console.error(err)
+let ignoreTitles = false
+
+function peruse (window) {
   let document = window.document
 
   let links = document.getElementsByTagName('a')
@@ -83,6 +85,11 @@ jsdom.env(process.argv[2], [], function (err, window) {
     if (fig.getElementsByTagName('figcaption').length === 0) {
       fig.outerHTML = '<div>' + fig.innerHTML + '</div>'
     }
+  }
+
+  if (ignoreTitles) {
+    let titles = document.getElementsByTagName('title')
+    for (let i = titles.length - 1; i >= 0; i--) removeNode(titles[i])
   }
 
   let breaks = document.querySelectorAll(
@@ -160,4 +167,17 @@ jsdom.env(process.argv[2], [], function (err, window) {
 
   convert.stdin.end(content)
   convert.stdout.pipe(normalise.stdin)
-})
+}
+
+(function () {
+  let url = process.argv[2]
+  if (url.endsWith('.pdf')) {
+    let tmpdir = tmp.dirSync().name
+    spawnSync('pdftohtml', ['-c', '-s', '-i', url, tmpdir + '/out'], {stdio: 'ignore'})
+    url = tmpdir + '/out-html.html'
+    ignoreTitles = true
+  }
+  jsdom.env(url, [], function (err, window) {
+    if (err) { console.error(err) } else { peruse(window) }
+  })
+})()
