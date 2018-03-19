@@ -16,7 +16,7 @@ var readability = {
     regexps: {
         positive:              /article|body|content|entry|hentry|main|page|pagination|post|text|blog|story/i,
         negative:              /combx|comment|com-|contact|foot|footer|footnote|masthead|media|meta|outbrain|promo|related|scroll|shoutbox|sidebar|sponsor|shopping|tags|tool|widget/i,
-        extraneous:            /print|archive|comment|discuss|e[\-]?mail|share|reply|all|login|sign|single/i,
+        extraneous:            /print|comment|discuss|e[\-]?mail|share|reply|all|login|sign|single/i,
         trim:                  /^\s+|\s+$/g,
         normalize:             /\s{2,}/g,
         nextLink:              /(next|weiter|continue|>([^\|]|$)|»([^\|]|$))/i, // Match: next, continue, >, >>, » but not >|, »| as those usually mean last.
@@ -51,7 +51,7 @@ var readability = {
             var segment = urlSlashes[i];
 
             // Split off and save anything that looks like a file type.
-            if (segment.indexOf(".") !== -1) {
+            if (i === 0 && segment.indexOf(".") !== -1) {
                 possibleType = segment.split(".")[1];
 
                 /* If the type isn't alpha-only, it's probably not actually a file extension. */
