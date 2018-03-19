@@ -252,7 +252,7 @@ var readability = {
         var topPage = null;
         for(var page in possiblePages) {
             if(possiblePages.hasOwnProperty(page)) {
-                if(possiblePages[page].score >= 50 && (!topPage || topPage.score < possiblePages[page].score)) {
+                if(possiblePages[page].score > 50 && (!topPage || topPage.score < possiblePages[page].score)) {
                     topPage = possiblePages[page];
                 }
             }
