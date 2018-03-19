@@ -14,19 +14,11 @@ var readability = {
      * Defined up here so we don't instantiate them repeatedly in loops.
      **/
     regexps: {
-        unlikelyCandidates:    /combx|comment|community|disqus|extra|foot|header|menu|remark|rss|shoutbox|sidebar|sponsor|ad-break|agegate|pagination|pager|popup|tweet|twitter/i,
-        okMaybeItsACandidate:  /and|article|body|column|main|shadow/i,
         positive:              /article|body|content|entry|hentry|main|page|pagination|post|text|blog|story/i,
         negative:              /combx|comment|com-|contact|foot|footer|footnote|masthead|media|meta|outbrain|promo|related|scroll|shoutbox|sidebar|sponsor|shopping|tags|tool|widget/i,
         extraneous:            /print|archive|comment|discuss|e[\-]?mail|share|reply|all|login|sign|single/i,
-        divToPElements:        /<(a|blockquote|dl|div|img|ol|p|pre|table|ul)/i,
-        replaceBrs:            /(<br[^>]*>[ \n\r\t]*){2,}/gi,
-        replaceFonts:          /<(\/?)font[^>]*>/gi,
         trim:                  /^\s+|\s+$/g,
         normalize:             /\s{2,}/g,
-        killBreaks:            /(<br\s*\/?>(\s|&nbsp;?)*){1,}/g,
-        videos:                /http:\/\/(www\.)?(youtube|vimeo)\.com/i,
-        skipFootnoteLink:      /^\s*(\[?[a-z0-9]{1,2}\]?|^|edit|citation needed)\s*$/i,
         nextLink:              /(next|weiter|continue|>([^\|]|$)|»([^\|]|$))/i, // Match: next, continue, >, >>, » but not >|, »| as those usually mean last.
         prevLink:              /(prev|earl|old|new|<|«)/i
     },
@@ -38,24 +30,9 @@ var readability = {
      * @param Element
      * @return string
     **/
-    getInnerText: function (e, normalizeSpaces) {
-        var textContent    = "";
-
-        if(typeof(e.textContent) === "undefined" && typeof(e.innerText) === "undefined") {
-            return "";
-        }
-
-        normalizeSpaces = (typeof normalizeSpaces === 'undefined') ? true : normalizeSpaces;
-
-        if (navigator.appName === "Microsoft Internet Explorer") {
-            textContent = e.innerText.replace( readability.regexps.trim, "" ); }
-        else {
-            textContent = e.textContent.replace( readability.regexps.trim, "" ); }
-
-        if(normalizeSpaces) {
-            return textContent.replace( readability.regexps.normalize, " "); }
-        else {
-            return textContent; }
+    getInnerText: function (e) {
+        var textContent = e.textContent.replace( readability.regexps.trim, "" );
+        return textContent.replace( readability.regexps.normalize, " ");
     },
 
     /**
@@ -64,7 +41,7 @@ var readability = {
      * @author Dan Lacy
      * @return string the base url
     **/
-    findBaseUrl: function () {
+    findBaseUrl: function (window) {
         var noUrlParams     = window.location.pathname.split("?")[0],
             urlSlashes      = noUrlParams.split("/").reverse(),
             cleanedSegments = [],
@@ -130,10 +107,10 @@ var readability = {
      * @param body
      * @return object (array)
     **/
-    findNextPageLink: function (elem) {
+    findNextPageLink: function (window, elem) {
         var possiblePages = {},
             allLinks = elem.getElementsByTagName('a'),
-            articleBaseUrl = readability.findBaseUrl();
+            articleBaseUrl = readability.findBaseUrl(window);
 
         /**
          * Loop through all links, looking for hints that they may be next-page links.
@@ -149,7 +126,7 @@ var readability = {
                 linkHref = allLinks[i].href.replace(/#.*$/, '').replace(/\/$/, '');
 
             /* If we've already seen this page, ignore it */
-            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === window.location.href || linkHref in readability.parsedPages) {
+            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === window.location.href) {
                 continue;
             }
             
@@ -284,8 +261,6 @@ var readability = {
         if(topPage) {
             var nextHref = topPage.href.replace(/\/$/,'');
 
-            dbg('NEXT PAGE IS ' + nextHref);
-            readability.parsedPages[nextHref] = true;
             return nextHref;            
         }
         else {
@@ -294,3 +269,5 @@ var readability = {
     }
     
 };
+
+module.exports = readability;

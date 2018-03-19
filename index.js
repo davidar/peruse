@@ -5,6 +5,7 @@ const {jsdom} = require('jsdom')
 const {Readability} = require('readability/index')
 const {spawn, spawnSync} = require('child_process')
 const tmp = require('tmp')
+const {findNextPageLink} = require('./readability.js')
 
 function removeNode (node) {
   node.parentNode.removeChild(node)
@@ -113,6 +114,17 @@ function peruse (window) {
 
   let content = document.documentElement.outerHTML
 
+  let nextPageLink = findNextPageLink(window, document.body)
+  if (nextPageLink) {
+    links = document.getElementsByTagName('a')
+    for (let i = links.length - 1; i >= 0; i--) {
+      if (links[i].href === nextPageLink + '/') {
+        nextPageLink = nextPageLink + '/'
+        break
+      }
+    }
+  }
+
   let loc = document.location
   let uri = {
     spec: loc.href,
@@ -129,6 +141,7 @@ function peruse (window) {
     content += article.content.replace(
       /<(embed|iframe|video|audio) /g, '<img ').replace(
       /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
+    if (nextPageLink) content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
   }
 
   let markdown = [
