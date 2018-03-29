@@ -5,6 +5,7 @@
   "dependencies": {
     "escape-html": "^1.0",
     "jsdom": "^7.0",
+    "r2": "^2.0.0",
     "readability": "file:readability",
     "tmp": "0.0.33"
   },

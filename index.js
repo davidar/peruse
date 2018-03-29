@@ -5,6 +5,7 @@ const {jsdom} = require('jsdom')
 const {Readability} = require('readability/index')
 const {spawn, spawnSync} = require('child_process')
 const tmp = require('tmp')
+const r2 = require('r2')
 const {findNextPageLink} = require('./readability.js')
 
 function removeNode (node) {
@@ -16,6 +17,7 @@ function nonempty (node) {
 }
 
 let ignoreTitles = false
+let postscript = ''
 
 function peruse (window) {
   let document = window.document
@@ -142,6 +144,7 @@ function peruse (window) {
       /<(embed|iframe|video|audio) /g, '<img ').replace(
       /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
     if (nextPageLink) content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
+    content += postscript
   }
 
   let markdown = [
@@ -182,7 +185,12 @@ function peruse (window) {
   convert.stdout.pipe(normalise.stdin)
 }
 
-(function () {
+const HN_URL = 'https://news.ycombinator.com/item?id='
+async function hn (id) {
+  return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
+}
+
+async function main () {
   let url = process.argv[2]
   if (url.endsWith('.pdf')) {
     let tmpdir = tmp.dirSync().name
@@ -190,7 +198,20 @@ function peruse (window) {
     url = tmpdir + '/out-html.html'
     ignoreTitles = true
   }
+
+  if (url.startsWith(HN_URL)) {
+    let item = await hn(url.replace(HN_URL, ''))
+    if (item.kids.length > 0) postscript += '<h2>Comments</h2>'
+    for (let i = 0; i < 3 && i < item.kids.length; i++) {
+      let comment = await hn(item.kids[i])
+      postscript += '<blockquote>' + comment.text + '<p>&mdash; ' + comment.by + '</blockquote>'
+    }
+    url = item.url
+  }
+
   jsdom.env(url, [], function (err, window) {
     if (err) { console.error(err) } else { peruse(window) }
   })
-})()
+}
+
+main()
