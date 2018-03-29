@@ -74,14 +74,6 @@ function peruse (window) {
     }
   }
 
-  let svgs = document.getElementsByTagName('svg')
-  for (let i = svgs.length - 1; i >= 0; i--) {
-    let svg = svgs[i]
-    svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg')
-    let dataURI = 'data:image/svg+xml,' + encodeURIComponent(svg.outerHTML)
-    svg.outerHTML = '<img src="' + dataURI + '" />'
-  }
-
   let figs = document.getElementsByTagName('figure')
   for (let i = figs.length - 1; i >= 0; i--) {
     let fig = figs[i]
