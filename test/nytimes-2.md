@@ -1,6 +1,6 @@
 # Yahoo’s Sale to Verizon Leaves Shareholders With Little Say
 
-![Credit Harry Campbell]
+![Harry Campbell]
 
 [Yahoo]’s \$4.8 billion sale to [Verizon] is a complicated beast, showing how different acquisition structures can affect how shareholders are treated.
 
@@ -9,8 +9,6 @@ First, let’s say what the Yahoo sale is not. It is not a sale of the publicly 
 The sale is being done in two steps. The [first step] will be the transfer of any assets related to Yahoo business to a singular subsidiary. This includes the stock in the business subsidiaries that make up Yahoo that are not already in the single subsidiary, as well as the odd assets like benefit plan rights. This is what is being sold to Verizon. A license of Yahoo’s oldest patents is being held back in the so-called Excalibur portfolio. This will stay with Yahoo, as will Yahoo’s stakes in Alibaba Group and Yahoo Japan.
 
 It is hard to overestimate how complex an asset sale like this is. Some of the assets are self-contained, but they must be gathered up and transferred. Employees need to be shuffled around and compensation arrangements redone. Many contracts, like the now-infamous one struck with the search engine Mozilla, which [may result in a payment of up to a \$1 billion], will contain change-of-control provisions that will be set off and have to be addressed. Tax issues always loom large.
-
-Continue reading the main story
 
 In the second step, at the closing, [Yahoo will sell the stock][first step] in the single subsidiary to Verizon. At that point, Yahoo will change its name to something without “Yahoo” in it. My favorite is simply Remain Co., the name Yahoo executives are using. Remain Co. will become a holding company for the Alibaba and Yahoo Japan stock. Included will also be \$10 billion in cash, plus the Excalibur patent portfolio and a number of minority investments including Snapchat. Ahh, if only Yahoo had bought Snapchat instead of Tumblr (indeed, if only Yahoo had bought Google or Facebook when it had the chance).
 
@@ -44,9 +42,7 @@ Finally, if another bidder still wants to acquire Yahoo, it has time. The agreem
 
 All in all, this was as hairy a deal as they come. There was the procedural and logistical complications of selling a company when the chief executive wanted to stay. Then there was the fact that this was an asset sale, including all of the challenges that go with it. Throw in all of the tax issues and the fact that this is a public company, and it is likely that the lawyers involved will have nightmares for years to come.
 
-Continue reading the main story
-
-  [Credit Harry Campbell]: https://static01.nyt.com/images/2016/07/30/business/db-dealprof/db-dealprof-master315.jpg
+  [Harry Campbell]: https://static01.nyt.com/images/2016/07/30/business/db-dealprof/db-dealprof-master315.jpg
   [Yahoo]: http://www.nytimes.com/topic/company/yahoo-inc?inline=nyt-org "More information about Yahoo! Inc."
   [Verizon]: http://www.nytimes.com/topic/company/verizon-communications-inc?inline=nyt-org "More information about Verizon Communications Inc."
   [first step]: https://www.sec.gov/Archives/edgar/data/1011006/000119312516656036/d178500dex22.htm

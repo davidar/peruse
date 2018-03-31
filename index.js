@@ -12,6 +12,10 @@ function removeNode (node) {
   node.parentNode.removeChild(node)
 }
 
+function removeNodes (nodes) {
+  for (let i = nodes.length - 1; i >= 0; i--) removeNode(nodes[i])
+}
+
 function nonempty (node) {
   return node.textContent.trim() || node.querySelector('img')
 }
@@ -21,6 +25,8 @@ let postscript = ''
 
 function peruse (window) {
   let document = window.document
+
+  removeNodes(document.body.querySelectorAll('[class*="hidden"]'))
 
   let links = document.getElementsByTagName('a')
   for (let i = links.length - 1; i >= 0; i--) {
@@ -82,10 +88,7 @@ function peruse (window) {
     }
   }
 
-  if (ignoreTitles) {
-    let titles = document.getElementsByTagName('title')
-    for (let i = titles.length - 1; i >= 0; i--) removeNode(titles[i])
-  }
+  if (ignoreTitles) removeNodes(document.getElementsByTagName('title'))
 
   let breaks = document.querySelectorAll(
     'h1 br, h2 br, h3 br, h4 br, h5 br, h6 br')
@@ -96,10 +99,7 @@ function peruse (window) {
   let waybackToolbar = document.getElementById('wm-ipp')
   if (waybackToolbar) removeNode(waybackToolbar)
 
-  let mwEdits = document.getElementsByClassName('mw-editsection')
-  for (let i = mwEdits.length - 1; i >= 0; i--) {
-    removeNode(mwEdits[i])
-  }
+  removeNodes(document.getElementsByClassName('mw-editsection'))
 
   let span
   while ((span = document.querySelector('span'))) {
