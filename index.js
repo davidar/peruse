@@ -150,7 +150,7 @@ async function peruse (window, loc) {
   } else if (allowPrerender) {
     allowPrerender = false
     console.error('Prerendering...')
-    process.env.DISABLE_LOGGING = true
+    require('prerender/lib/util').log = console.error
     const server = prerender()
     await server.startPrerender()
     let url = 'http://localhost:3000/' + loc.href
