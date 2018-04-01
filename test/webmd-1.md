@@ -18,7 +18,7 @@ Meanwhile, for children and adults who are already [allergic to peanuts], anothe
 
 A new skin patch called Viaskin allowed people with peanut allergies to eat tiny amounts of peanuts after they wore it for a year.
 
-### A Change in Guidelines?
+## A Change in Guidelines?
 
 Allergies to peanuts and other foods are on the rise. In the U.S., more than 2% of people react to peanuts, a 400% increase since 1997. And reactions to peanuts and other tree nuts can be especially severe. Nuts are the main reason people get a life-threatening problem called [anaphylaxis].
 

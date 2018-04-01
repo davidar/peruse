@@ -131,13 +131,19 @@ function peruse (window) {
   let article = readability.parse()
 
   if (article) {
-    content = '<h1>' + escapeHTML(article.title) + '</h1>'
-    content += article.content.replace(
-      /<(embed|iframe|video|audio) /g, '<img ').replace(
-      /<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
-    if (nextPageLink) content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
-    content += postscript
+    content = '<h1>' + escapeHTML(article.title) + '</h1>' + article.content
+      .replace(/<(embed|iframe|video|audio) /g, '<img ')
+      .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
   }
+  if (nextPageLink) content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
+  if (!content.includes('<h2')) {
+    content = content
+      .replace(/<h3>(.*?)<\/h3>/g, '<h2>$1</h2>')
+      .replace(/<h4>(.*?)<\/h4>/g, '<h3>$1</h3>')
+      .replace(/<h5>(.*?)<\/h5>/g, '<h4>$1</h4>')
+      .replace(/<h6>(.*?)<\/h6>/g, '<h5>$1</h5>')
+  }
+  content += postscript
 
   let markdown = [
     'markdown',
