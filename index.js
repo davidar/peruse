@@ -2,10 +2,13 @@
 
 const escapeHTML = require('escape-html')
 const {jsdom} = require('jsdom')
+const prerender = require('prerender')
+const r2 = require('r2')
 const {Readability} = require('readability/index')
 const {spawn, spawnSync} = require('child_process')
 const tmp = require('tmp')
-const r2 = require('r2')
+const url = require('url')
+
 const {findNextPageLink} = require('./readability.js')
 
 function removeNode (node) {
@@ -22,9 +25,20 @@ function nonempty (node) {
 
 let ignoreTitles = false
 let postscript = ''
+let allowPrerender = true
 
-function peruse (window) {
+async function peruse (window, loc) {
+  if (loc === undefined) loc = window.location
   let document = window.document
+
+  let base = document.getElementsByTagName('base')[0]
+  if (base) {
+    base.href = url.resolve(loc.href, base.href)
+  } else {
+    base = document.createElement('base')
+    base.href = loc.href
+    base = document.head.appendChild(base)
+  }
 
   removeNodes(document.body.querySelectorAll('[class*="hidden"]'))
 
@@ -108,7 +122,7 @@ function peruse (window) {
 
   let content = document.documentElement.outerHTML
 
-  let nextPageLink = findNextPageLink(window, document.body)
+  let nextPageLink = findNextPageLink(loc, document.body)
   if (nextPageLink) {
     links = document.getElementsByTagName('a')
     for (let i = links.length - 1; i >= 0; i--) {
@@ -119,7 +133,6 @@ function peruse (window) {
     }
   }
 
-  let loc = document.location
   let uri = {
     spec: loc.href,
     host: loc.host,
@@ -134,7 +147,23 @@ function peruse (window) {
     content = '<h1>' + escapeHTML(article.title) + '</h1>' + article.content
       .replace(/<(embed|iframe|video|audio) /g, '<img ')
       .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
+  } else if (allowPrerender) {
+    allowPrerender = false
+    console.error('Prerendering...')
+    process.env.DISABLE_LOGGING = true
+    const server = prerender()
+    await server.startPrerender()
+    let url = 'http://localhost:3000/' + loc.href
+    jsdom.env(url, [], async function (err, window) {
+      if (err) { console.error(err) } else {
+        await peruse(window, loc)
+        server.killBrowser()
+        setTimeout(process.exit, 500)
+      }
+    })
+    return
   }
+
   if (nextPageLink) content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
   if (!content.includes('<h2')) {
     content = content
@@ -188,8 +217,7 @@ async function hn (id) {
   return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
 }
 
-async function main () {
-  let url = process.argv[2]
+async function main (url) {
   if (url.endsWith('.pdf')) {
     let tmpdir = tmp.dirSync().name
     spawnSync('pdftohtml', ['-c', '-s', '-i', url, tmpdir + '/out'], {stdio: 'ignore'})
@@ -212,4 +240,4 @@ async function main () {
   })
 }
 
-main()
+main.apply(null, process.argv.slice(2))

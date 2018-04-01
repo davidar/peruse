@@ -41,8 +41,8 @@ var readability = {
      * @author Dan Lacy
      * @return string the base url
     **/
-    findBaseUrl: function (window) {
-        var noUrlParams     = window.location.pathname.split("?")[0],
+    findBaseUrl: function (location) {
+        var noUrlParams     = location.pathname.split("?")[0],
             urlSlashes      = noUrlParams.split("/").reverse(),
             cleanedSegments = [],
             possibleType    = "";
@@ -98,7 +98,7 @@ var readability = {
         }
 
         // This is our final, cleaned, base article URL.
-        return window.location.protocol + "//" + window.location.host + cleanedSegments.reverse().join("/");
+        return location.protocol + "//" + location.host + cleanedSegments.reverse().join("/");
     },
 
     /**
@@ -107,10 +107,10 @@ var readability = {
      * @param body
      * @return object (array)
     **/
-    findNextPageLink: function (window, elem) {
+    findNextPageLink: function (location, elem) {
         var possiblePages = {},
             allLinks = elem.getElementsByTagName('a'),
-            articleBaseUrl = readability.findBaseUrl(window);
+            articleBaseUrl = readability.findBaseUrl(location);
 
         /**
          * Loop through all links, looking for hints that they may be next-page links.
@@ -126,12 +126,12 @@ var readability = {
                 linkHref = allLinks[i].href.replace(/#.*$/, '').replace(/\/$/, '');
 
             /* If we've already seen this page, ignore it */
-            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === window.location.href) {
+            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === location.href) {
                 continue;
             }
             
             /* If it's on a different domain, skip it. */
-            if(window.location.host !== linkHref.split(/\/+/g)[1]) {
+            if(location.host !== linkHref.split(/\/+/g)[1]) {
                 continue;
             }
             
@@ -217,15 +217,6 @@ var readability = {
             if (linkHref.match(readability.regexps.extraneous)) {
                 linkObj.score -= 15;
             }
-
-            /**
-             * Minor punishment to anything that doesn't match our current URL.
-             * NOTE: I'm finding this to cause more harm than good where something is exactly 50 points.
-             *       Dan, can you show me a counterexample where this is necessary?
-             * if (linkHref.indexOf(window.location.href) !== 0) {
-             *    linkObj.score -= 1;
-             * }
-            **/
 
             /**
              * If the link text can be parsed as a number, give it a minor bonus, with a slight
