@@ -3,7 +3,12 @@
 for file in test/*.md; do
     base=`basename $file .md`
     echo -n "$base... "
-    ./index.js readability/test/test-pages/$base/source.html \
+    if [ -e test/$base.href ]; then
+        href=`cat test/$base.href`
+    else
+        href=readability/test/test-pages/$base/source.html
+    fi
+    ./index.js $href \
         --atx-headers --wrap=none \
         | sed "s|$PWD|...|g" \
         > test.out
