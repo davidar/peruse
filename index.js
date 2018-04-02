@@ -143,7 +143,7 @@ async function peruse (window, loc) {
   let readability = new Readability(uri, document)
   let article = readability.parse()
 
-  if (article) {
+  if (article && article.content.replace(/<.*?>/g, '').length > 100) {
     content = '<h1>' + escapeHTML(article.title) + '</h1>' + article.content
       .replace(/<(embed|iframe|video|audio) /g, '<img ')
       .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
