@@ -1,4 +1,5 @@
 #!/bin/sh
+export TZ=UTC
 
 for file in test/*.md; do
     base=`basename $file .md`

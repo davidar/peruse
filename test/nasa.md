@@ -40,7 +40,7 @@ The Voyager spacecraft were built by JPL, which continues to operate both. JPL i
 <https://www.nasa.gov/voyager>  
 [https://voyager.jpl.nasa.gov]
 
-Last Updated: Dec. 2, 2017
+Last Updated: Dec. 1, 2017
 
 Editor: Tony Greicius
 
