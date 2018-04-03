@@ -23,6 +23,21 @@ function nonempty (node) {
   return node.textContent.trim() || node.querySelector('img')
 }
 
+async function eof (stream) {
+  return new Promise(function (resolve, reject) {
+    stream.on('end', resolve)
+    stream.on('error', reject)
+  })
+}
+
+async function readStream (stream) {
+  let chunks = []
+  stream.setEncoding('utf8')
+  stream.on('data', [].push.bind(chunks))
+  await eof(stream)
+  return chunks.join('')
+}
+
 let ignoreTitles = false
 let postscript = ''
 let allowPrerender = true
@@ -205,11 +220,23 @@ async function peruse (window, loc) {
     '-t', markdown + '-smart',
     '--reference-links'
   ].concat(process.argv.slice(3)), {
-    stdio: ['pipe', process.stdout, process.stderr]
+    stdio: ['pipe', 'pipe', process.stderr]
   })
 
   convert.stdin.end(content)
   convert.stdout.pipe(normalise.stdin)
+  if (process.stdout.isTTY) {
+    let output = await readStream(normalise.stdout)
+    if (output.split(/\n/).length >= process.stdout.rows) {
+      spawn('less', [], {
+        stdio: ['pipe', process.stdout, process.stderr]
+      }).stdin.end(output)
+    } else {
+      process.stdout.write(output)
+    }
+  } else {
+    normalise.stdout.pipe(process.stdout)
+  }
 }
 
 const HN_URL = 'https://news.ycombinator.com/item?id='
