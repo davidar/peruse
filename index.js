@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 const escapeHTML = require('escape-html')
+const fs = require('fs')
 const {jsdom} = require('jsdom')
 const prerender = require('prerender')
 const r2 = require('r2')
 const {Readability} = require('readability/index')
 const {spawn, spawnSync} = require('child_process')
 const tmp = require('tmp')
-const url = require('url')
+const URL = require('url')
 
 const {findNextPageLink} = require('./readability.js')
 
@@ -21,6 +22,18 @@ function removeNodes (nodes) {
 
 function nonempty (node) {
   return node.textContent.trim() || node.querySelector('img')
+}
+
+async function waitProcess (proc) {
+  return new Promise(function (resolve, reject) {
+    proc.on('close', function (code) {
+      if (code === 0) {
+        resolve()
+      } else {
+        reject(new Error(`child process exited with code ${code}`))
+      }
+    })
+  })
 }
 
 async function eof (stream) {
@@ -48,7 +61,7 @@ async function peruse (window, loc) {
 
   let base = document.getElementsByTagName('base')[0]
   if (base) {
-    base.href = url.resolve(loc.href, base.href)
+    base.href = URL.resolve(loc.href, base.href)
   } else {
     base = document.createElement('base')
     base.href = loc.href
@@ -228,14 +241,17 @@ async function peruse (window, loc) {
   if (process.stdout.isTTY) {
     let output = await readStream(normalise.stdout)
     if (output.split(/\n/).length >= process.stdout.rows) {
-      spawn('less', [], {
+      let less = spawn('less', [], {
         stdio: ['pipe', process.stdout, process.stderr]
-      }).stdin.end(output)
+      })
+      less.stdin.end(output)
+      await waitProcess(less)
     } else {
       process.stdout.write(output)
     }
   } else {
     normalise.stdout.pipe(process.stdout)
+    await eof(normalise.stdout)
   }
 }
 
@@ -262,9 +278,15 @@ async function main (url) {
     url = item.url
   }
 
-  jsdom.env(url, [], function (err, window) {
-    if (err) { console.error(err) } else { peruse(window) }
-  })
+  let parsed = URL.parse(url)
+  if ((parsed.protocol && parsed.hostname) || (url.endsWith('.html') && fs.existsSync(url))) {
+    jsdom.env(url, [], function (err, window) {
+      if (err) { console.error(err) } else { peruse(window) }
+    })
+  } else {
+    console.error(url + ': unrecognised input')
+    process.exit(1)
+  }
 }
 
 main.apply(null, process.argv.slice(2))
