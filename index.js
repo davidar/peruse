@@ -2,7 +2,7 @@
 
 const escapeHTML = require('escape-html')
 const fs = require('fs')
-const {jsdom} = require('jsdom')
+const jsdom = require('jsdom/lib/old-api')
 const prerender = require('prerender')
 const r2 = require('r2')
 const {Readability} = require('readability/index')
@@ -49,6 +49,10 @@ async function readStream (stream) {
   stream.on('data', [].push.bind(chunks))
   await eof(stream)
   return chunks.join('')
+}
+
+const jsdomConfig = {
+  defaultEncoding: 'UTF-8'
 }
 
 let ignoreTitles = false
@@ -182,7 +186,7 @@ async function peruse (window, loc) {
     const server = prerender()
     await server.startPrerender()
     let url = 'http://localhost:3000/' + loc.href
-    jsdom.env(url, [], async function (err, window) {
+    jsdom.env(url, jsdomConfig, async function (err, window) {
       if (err) { console.error(err) } else {
         await peruse(window, loc)
         server.killBrowser()
@@ -280,7 +284,7 @@ async function main (url) {
 
   let parsed = URL.parse(url)
   if ((parsed.protocol && parsed.hostname) || (url.endsWith('.html') && fs.existsSync(url))) {
-    jsdom.env(url, [], function (err, window) {
+    jsdom.env(url, jsdomConfig, function (err, window) {
       if (err) { console.error(err) } else { peruse(window) }
     })
   } else {

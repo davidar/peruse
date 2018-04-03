@@ -6,6 +6,8 @@ for file in test/*.md; do
     echo -n "$base... "
     if [ -e test/$base.href ]; then
         href=`cat test/$base.href`
+    elif [ -e test/$base.html ]; then
+        href=test/$base.html
     else
         href=readability/test/test-pages/$base/source.html
     fi
