@@ -12,6 +12,8 @@ const URL = require('url')
 
 const {findNextPageLink} = require('./readability.js')
 
+require('prerender/lib/util').log = console.error
+
 function removeNode (node) {
   node.parentNode.removeChild(node)
 }
@@ -58,8 +60,14 @@ const options = {virtualConsole}
 let ignoreTitles = false
 let postscript = ''
 let allowPrerender = true
+let pages = 1
 
 async function peruse (window, loc) {
+  let content = await preprocess(window, loc)
+  await postprocess(content)
+}
+
+async function preprocess (window, loc) {
   if (loc === undefined) loc = window.location
   let document = window.document
 
@@ -176,23 +184,33 @@ async function peruse (window, loc) {
   let article = readability.parse()
 
   if (article && article.content.replace(/<.*?>/g, '').length > 100) {
-    content = '<h1>' + escapeHTML(article.title) + '</h1>' + article.content
+    content = ''
+    if (pages === 1) content += '<h1>' + escapeHTML(article.title) + '</h1>'
+    content += article.content
       .replace(/<(embed|iframe|video|audio) /g, '<img ')
       .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
   } else if (allowPrerender) {
     allowPrerender = false
-    console.error('Prerendering...')
-    require('prerender/lib/util').log = console.error
     const server = prerender()
     await server.startPrerender()
     let dom = await JSDOM.fromURL('http://localhost:3000/' + loc.href, options)
-    await peruse(dom.window, loc)
+    content = await preprocess(dom.window, loc)
     server.killBrowser()
-    setTimeout(process.exit, 500)
-    return
   }
 
-  if (nextPageLink) content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
+  if (nextPageLink && pages < 10) {
+    pages += 1
+    console.error(`Fetching page ${pages} from ${nextPageLink}`)
+    let dom = await JSDOM.fromURL(nextPageLink, options)
+    content += await preprocess(dom.window)
+  } else if (nextPageLink) {
+    content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
+  }
+
+  return content
+}
+
+async function postprocess (content) {
   if (!content.includes('<h2')) {
     content = content
       .replace(/<h3>(.*?)<\/h3>/g, '<h2>$1</h2>')
@@ -288,8 +306,11 @@ async function main (url) {
     await peruse(dom.window)
   } else {
     console.error(url + ': unrecognised input')
-    process.exit(1)
+    return 1
   }
+
+  setTimeout(process.exit, 100)
+  return 0
 }
 
-main.apply(null, process.argv.slice(2))
+main.apply(null, process.argv.slice(2)).then(function (code) { process.exitCode = code })

@@ -9,6 +9,8 @@
  * Readability is licensed under the Apache License, Version 2.0.
 **/
 var readability = {
+    parsedPages: {}, /* The list of pages we've parsed in this call of readability, for autopaging. As a key store for easier searching. */
+
     /**
      * All of the regular expressions in use within readability.
      * Defined up here so we don't instantiate them repeatedly in loops.
@@ -126,7 +128,7 @@ var readability = {
                 linkHref = allLinks[i].href.replace(/#.*$/, '').replace(/\/$/, '');
 
             /* If we've already seen this page, ignore it */
-            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === location.href) {
+            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === location.href || linkHref in readability.parsedPages) {
                 continue;
             }
             
@@ -252,6 +254,7 @@ var readability = {
         if(topPage) {
             var nextHref = topPage.href.replace(/\/$/,'');
 
+            readability.parsedPages[nextHref] = true;
             return nextHref;            
         }
         else {

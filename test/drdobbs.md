@@ -91,11 +91,90 @@ Further, the hash set providing the canonicalization can be trivially garbage co
 
 The canonicalization is implemented by the `CanonicalTreeNode` class, where I provide the necessary infrastructure for hashing and override the factory methods responsible for creating every node instance.
 
-[Next Page]
+Having solved the space problem, I make a simple change to the `nextGeneration` function to solve the time problem: I “memoize” the function (that is, I save the computed answer for later reuse, instead of recomputing it). Memoization is nothing more than caching the results of a function in case it is called again with the same arguments. Consider the classic example of memoization, the Fibonacci function. The usual recursive formulation is as in Example 1(a). This function grows exponentially in n, as do the number of calls required to compute it. But adding a simple array as a cache, as in Example 1(b), makes it run in linear time in `n`. While there are even more efficient ways to calculate Fibonacci numbers, the technique itself is widely useful.
+
+**(a)**
+
+    int fib(int n) {
+       if (n < 3)
+          return 1 ;
+       return fib(n-1) + fib(n-2) ;
+    }
+
+**(b)**
+
+    int cache[] ;
+    int fib(int n) {
+       if (n < 3)
+          return 1 ;
+       if (cache[n])
+          return cache[n] ;
+       return cache[n] = fib(n-1) + fib(n-2) ;
+    }
+
+**Example 1: Recursive formulation.**
+
+To memoize `nextGeneration`, I add a single pointer to the node data structure that stores the result of the `nextGeneration` function on that node; if this pointer is not null, it contains the result node. The speedup attained through the memoization that was enabled by keeping `nextGeneration` purely functional more than offsets the inefficiency introduced by returning a node a level down from its argument. The class that implements this extension is `MemoizedTreeNode`.
+
+At this point, the Life algorithm is not quite HashLife yet. On some large universes with regular patterns, it is faster than conventional algorithms, even highly optimized ones. For instance, on the classic breeder (refer back to Figure 4), the time per generation is constant, even though the population rises with the square of the number of generations. All the infrastructure we have constructed so far lets you make one final huge step towards creating the final HashLife algorithm—compression of time.
+
+Earlier I mentioned I would run some nontrivial patterns for trillions of generations. Even just counting to a trillion takes a fair amount of time for a modern CPU; yet HashLife can run the breeder to one trillion generations, and print its resulting population of 1,302,083,334,180,208,337,404 in less than a second. This requires only a relatively small change to the program I have described so far. (You may want to stop reading here and see if you can figure out what this change is.)
+
+The final adjustment is to change the number of generations that the recursive call computes. Currently, it computes only a single generation at every level. This can provide a speedup, but the runtime will always be at least linear in the number of generations, even for an empty universe. Instead, we rewrite the `nextGeneration` function to compute a number of generations that increases for each level. That is, at level two, and a 4×4 node, it will compute one generation forward, as it stands; at level three, representing an 8×8 node, it computes two generations; at level eight, with a 256×256 node, it computes 64 generations in the future.
+
+It turns out this change simplifies the recursive function somewhat, because the computation of the next generation will take care of some of the node shifting that necessitated so many additional functions earlier. Listing Three shows what the code becomes. The full implementation is in the class `HashLifeTreeNode` (see attached zip). The code provided there always takes steps according to the current level of the root; this can be modified by using the original `nextGeneration` function we gave for `TreeNode` for levels higher than a fixed value, and the new function for those below that level. If a larger step size is desired, the level of the root node can be easily increased by calls to the `expandUniverse` method.
+
+**Listing Three**
+
+    Node horizontalForward(Node w, Node e) {
+       return node(w.ne, e.nw, w.se, e.sw).nextGeneration();
+    }
+    Node verticalForward(Node n, Node s) {
+       return node(n.sw, n.se, s.nw, s.ne).nextGeneration();
+    }
+    Node centeredForward() {
+       return node(nw.se, ne.sw, sw.ne, se.nw).nextGeneration() ;
+    }
+    Node nextGeneration() {
+       if (level == 2) {
+          ... do base case through normal simulation ...
+       } else {
+          Node n00 = nw.nextGeneration(),
+               n01 = horizontalForward(nw, ne),
+               n02 = ne.nextGeneration(),
+               n10 = verticalForward(nw, sw),
+               n11 = centeredForward(),
+               n12 = verticalForward(ne, se),
+               n20 = sw.nextGeneration(),
+               n21 = horizontalForward(sw, se),
+               n22 = se.nextGeneration() ;
+          return new Node(
+             new Node(n00, n01, n10, n11).nextGeneration(),
+             new Node(n01, n02, n11, n12).nextGeneration(),
+             new Node(n10, n11, n20, n21).nextGeneration(),
+             new Node(n11, n12, n21,  n22).nextGeneration());
+       }
+    }
+
+This is HashLife. As presented, this code obtains amazing speedups on most common patterns; for most patterns, after an initial warmup period during which it runs slower than a conventional algorithm due to all the hashing, it then “runs away,” computing exponentially increasing numbers of generations per unit time.
+
+Let me return to the beginning. In December 2000, on a private mailing list, Nick Gotts posted a new and wonderful 52-cell pattern called “metacatacryst.” He was confident it exhibited quadratic growth, but was not absolutely certain. He asked if anyone could run a HashLife against it. Having just finished a fast conventional Life program, and having seen enough hints and rumors about how such a program might work, and since Bill Gosper’s original implementation only worked on Lisp machines of which there were few, I thought it was time to try to write one. With my embryonic incorporation of the ideas I have presented so far, I was able to run metacatacryst to many trillions of generations and show that it exhibited quadratic growth throughout that range. This pattern is amazingly beautiful with fractal properties that cannot be appreciated without running it for billions of generations and having the ability to display the resulting universe in some sufficiently scaled, zoomable form.
+
+I have also used HashLife to find another Methuselah, which is a small initial life form that lasts a long time before setting down, with 12 cells in an initial population that lasts over 12,000 generations. Other people are using it for investigations of large constructed patterns that simulate Turing machines, register machines, and spaceships of previously unattained speeds.
+
+The real joy is the algorithm, and that is entirely due to Bill Gosper, to whom I accord all credit and honor. For those who want to experiment, the open-source program Golly is available at http://sf.net/projects/golly/.
+
+HashLife is a unique algorithm consisting of memoization of the Life next-generation function applied to a quadtree representation of the universe. The same technique can be applied to other domains as well.
+
+[Download the sourcecode that accompanies this article.]
+
+------------------------------------------------------------------------
+
+*Tomas is Director of Technology at Instantis. He can be reached at rokicki@gmail.com.*
 
   [1]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf1.gif
   [2]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf2.gif
   [3]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf3.gif
   [4]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf4.gif
   [5]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf5.gif
-  [Next Page]: https://web.archive.org/web/20170430120322/http://www.drdobbs.com/jvm/an-algorithm-for-compressing-space-and-t/184406478?pgno=2
+  [Download the sourcecode that accompanies this article.]: https://web.archive.org/web/20170703055515/http://twimgs.com/ddj/images/article/2013/0213/compress.zip
