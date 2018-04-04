@@ -11,10 +11,7 @@ for file in test/*.md; do
     else
         href=readability/test/test-pages/$base/source.html
     fi
-    ./index.js $href \
-        --atx-headers --wrap=none \
-        | sed "s|$PWD|...|g" \
-        > test.out
+    ./index.js $href --atx-headers --wrap=none > test.out
     if diff -q $file test.out >/dev/null; then
         echo PASS
     else

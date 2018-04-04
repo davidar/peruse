@@ -99,7 +99,7 @@ Ultimately, the Xbox One X offers some major performance upgrades that gamers wi
 ## From around the web
 
   [1]: https://o.aolcdn.com/images/dims?thumbnail=45%2C45&quality=80&image_uri=http%3A%2F%2Fwww.blogcdn.com%2Fwww.engadget.com%2Fmedia%2F2016%2F03%2Fdevindra-engadget-headshot-small.jpg&client=cbc79c14efcebee57402&signature=e6ffba7468c380581b6589a70ce5d7c1ec40cd1d
-  [![][1]]: file:///about/editors/devindra-hardawar/
+  [![][1]]: /about/editors/devindra-hardawar/
   [Xbox One X]: https://www.engadget.com/2017/06/13/the-xbox-one-x-is-aspirational-in-the-purest-sense-of-the-word/
   [Sony’s PlayStation 4 Pro]: https://www.engadget.com/2016/11/07/sony-playstation-4-pro-review/
   [Xbox One S]: https://www.engadget.com/2016/08/02/xbox-one-s-review/

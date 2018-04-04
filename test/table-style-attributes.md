@@ -91,8 +91,8 @@ An idiocy that all of these programs have in common is that, in addition to open
   [2]: http://rpmfind.net/linux/redhat/7.3/en/os/i386/RedHat/RPMS/
   [Ogle]: http://www.dtek.chalmers.se/groups/dvd/
   [Makali]: http://www.lazycat.org/
-  [getting a Mac]: file://.../readability/test/test-pages/gruntle/bittybox.html
+  [getting a Mac]: ../gruntle/bittybox.html
   [Emacs situation]: http://www.xemacs.org/
-  [it is]: file://.../readability/test/test-pages/table-style-attributes/linux.html
-  [\[ up \]]: file://.../readability/test/test-pages/compass1.gif
-  [![\[ up \]]]: file://.../readability/test/test-pages/
+  [it is]: linux.html
+  [\[ up \]]: ../compass1.gif
+  [![\[ up \]]]: ../

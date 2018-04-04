@@ -656,7 +656,7 @@ Anything can happen in the free-software development world; it is entirely possi
 
 **Next page**: [Security\>\>][Security]
 
-  [A trademark battle in the Arduino community]: file:///Articles/637755/
+  [A trademark battle in the Arduino community]: /Articles/637755/
   [Arduino]: https://en.wikipedia.org/wiki/Arduino
   [Processing]: https://en.wikipedia.org/wiki/Processing_(programming_language)
   [Wiring]: https://en.wikipedia.org/wiki/Wiring_%28development_platform%29
@@ -674,37 +674,37 @@ Anything can happen in the free-software development world; it is entirely possi
   [story]: http://makezine.com/2015/03/19/massimo-banzi-fighting-for-arduino
   [Arduino Zero]: http://arduino.org/products/arduino-zero-pro
   [listing it]: http://arduino.cc/en/Main/Products
-  [Comments (5 posted)]: file:///Articles/637755/#Comments
-  [Mapping and data mining with QGIS 2.8]: file:///Articles/637533/
+  [Comments (5 posted)]: /Articles/637755/#Comments
+  [Mapping and data mining with QGIS 2.8]: /Articles/637533/
   [QGIS]: http://qgis.org/
   [change log]: http://qgis.org/en/site/forusers/visualchangelog28/index.html
   [this post]: http://anitagraser.com/2015/03/02/qgis-2-8-ltr-has-landed/
   [available]: http://qgis.org/en/site/forusers/download.html
-  [\[QGIS main interface\]]: file:///images/2015/03-qgis-map-sm.png
-  [![\[QGIS main interface\]]]: file:///Articles/637747/
+  [\[QGIS main interface\]]: /images/2015/03-qgis-map-sm.png
+  [![\[QGIS main interface\]]]: /Articles/637747/
   [tutorial]: http://docs.qgis.org/testing/en/docs/training_manual/
-  [\[QGIS query builder\]]: file:///images/2015/03-qgis-query-sm.png
-  [![\[QGIS query builder\]]]: file:///Articles/637748/
+  [\[QGIS query builder\]]: /images/2015/03-qgis-query-sm.png
+  [![\[QGIS query builder\]]]: /Articles/637748/
   [custom function editor]: http://nathanw.net/2015/01/19/function-editor-for-qgis-expressions/
   [hypsometric curves]: http://en.wikipedia.org/wiki/Hypsometric_curve
-  [\[QGIS simplify tool\]]: file:///images/2015/03-qgis-simplify-sm.png
-  [![\[QGIS simplify tool\]]]: file:///Articles/637749/
-  [\[QGIS style editing\]]: file:///images/2015/03-qgis-style-sm.png
-  [![\[QGIS style editing\]]]: file:///Articles/637751/
+  [\[QGIS simplify tool\]]: /images/2015/03-qgis-simplify-sm.png
+  [![\[QGIS simplify tool\]]]: /Articles/637749/
+  [\[QGIS style editing\]]: /images/2015/03-qgis-style-sm.png
+  [![\[QGIS style editing\]]]: /Articles/637751/
   [MapServer]: http://mapserver.org/
-  [Comments (3 posted)]: file:///Articles/637533/#Comments
-  [Development activity in LibreOffice and OpenOffice]: file:///Articles/637735/
-  [announced]: file:///Articles/407383/
-  [was cut loose from Oracle]: file:///Articles/446093/
+  [Comments (3 posted)]: /Articles/637533/#Comments
+  [Development activity in LibreOffice and OpenOffice]: /Articles/637735/
+  [announced]: /Articles/407383/
+  [was cut loose from Oracle]: /Articles/446093/
   [4.1]: https://blogs.apache.org/OOo/entry/the_apache_openoffice_project_announce
   [4.1.1]: https://blogs.apache.org/OOo/entry/announcing_apache_openoffice_4_1
-  [concerns]: file:///Articles/637742/
-  [shrugged them off]: file:///Articles/637743/
+  [concerns]: /Articles/637742/
+  [shrugged them off]: /Articles/637743/
   [OpenOffice blog]: https://blogs.apache.org/OOo/
-  [said]: file:///Articles/637750/
-  [Comments (74 posted)]: file:///Articles/637735/#Comments
-  [Security]: file:///Articles/637395/
-  [Kernel]: file:///Articles/637396/
-  [Distributions]: file:///Articles/637397/
-  [Development]: file:///Articles/637398/
-  [Announcements]: file:///Articles/637399/
+  [said]: /Articles/637750/
+  [Comments (74 posted)]: /Articles/637735/#Comments
+  [Security]: /Articles/637395/
+  [Kernel]: /Articles/637396/
+  [Distributions]: /Articles/637397/
+  [Development]: /Articles/637398/
+  [Announcements]: /Articles/637399/

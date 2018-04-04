@@ -2,7 +2,7 @@
 
 const escapeHTML = require('escape-html')
 const fs = require('fs')
-const jsdom = require('jsdom/lib/old-api')
+const {JSDOM, VirtualConsole} = require('jsdom')
 const prerender = require('prerender')
 const r2 = require('r2')
 const {Readability} = require('readability/index')
@@ -51,9 +51,9 @@ async function readStream (stream) {
   return chunks.join('')
 }
 
-const jsdomConfig = {
-  defaultEncoding: 'UTF-8'
-}
+const virtualConsole = new VirtualConsole()
+virtualConsole.sendTo(console, {omitJSDOMErrors: true})
+const options = {virtualConsole}
 
 let ignoreTitles = false
 let postscript = ''
@@ -185,14 +185,10 @@ async function peruse (window, loc) {
     require('prerender/lib/util').log = console.error
     const server = prerender()
     await server.startPrerender()
-    let url = 'http://localhost:3000/' + loc.href
-    jsdom.env(url, jsdomConfig, async function (err, window) {
-      if (err) { console.error(err) } else {
-        await peruse(window, loc)
-        server.killBrowser()
-        setTimeout(process.exit, 500)
-      }
-    })
+    let dom = await JSDOM.fromURL('http://localhost:3000/' + loc.href, options)
+    await peruse(dom.window, loc)
+    server.killBrowser()
+    setTimeout(process.exit, 500)
     return
   }
 
@@ -283,10 +279,13 @@ async function main (url) {
   }
 
   let parsed = URL.parse(url)
-  if ((parsed.protocol && parsed.hostname) || (url.endsWith('.html') && fs.existsSync(url))) {
-    jsdom.env(url, jsdomConfig, function (err, window) {
-      if (err) { console.error(err) } else { peruse(window) }
-    })
+  if (parsed.protocol && parsed.hostname) {
+    let dom = await JSDOM.fromURL(url, options)
+    await peruse(dom.window)
+  } else if (url.endsWith('.html') && fs.existsSync(url)) {
+    let html = fs.readFileSync(url, 'utf8')
+    let dom = new JSDOM(html, options)
+    await peruse(dom.window)
   } else {
     console.error(url + ': unrecognised input')
     process.exit(1)

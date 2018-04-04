@@ -22,7 +22,7 @@ Reproduciendo: Mira esto: Google Assistant mejora, hay más cambios en Twitter y
 
   [Twitter Lite estará disponible en Google Play Store en 11 países de América Latina. ¶ Twitter]: https://cdn2.cnet.com/img/LI8y19stcvIQUdzbYdH4-DAigtc=/fit-in/570x0/2017/12/01/b36ce794-e0b8-495c-a198-184923a8f4e9/twitter-lite.jpg
   [comunicado]: https://blog.twitter.com/official/en_us/topics/product/2017/twitter-lite-in-the-google-play-store-in-24-more-countries.html#
-  [Twitter Lite]: file:///es/noticias/twitter-estrena-twitter-lite/
-  [eliminación de los abusos en la red social]: file:///es/noticias/twitter-hemos-progresado-en-nuestra-batalla-contra-el-abuso/
-  [verificación de cuentas.]: file:///es/noticias/twitter-elimina-verificacion-a-cuentas-ofensivas/
+  [Twitter Lite]: /es/noticias/twitter-estrena-twitter-lite/
+  [eliminación de los abusos en la red social]: /es/noticias/twitter-hemos-progresado-en-nuestra-batalla-contra-el-abuso/
+  [verificación de cuentas.]: /es/noticias/twitter-elimina-verificacion-a-cuentas-ofensivas/
   [1]: https://cdn1.cnet.com/img/mWcZaiA8Ngv61OQcpdoh6Ra9nY0=/170x96/2017/11/13/70540d7a-cbc5-4563-ab86-b5549ef68168/oneplus-5t-product-21.jpg

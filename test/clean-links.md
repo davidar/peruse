@@ -506,7 +506,7 @@ There would seem little need for proceeding further in this history. Imagination
 
 Ah Bartleby! Ah humanity!
 
-  [To the story text without notes]: file://.../readability/test/test-pages/clean-links/hmhome.gif
+  [To the story text without notes]: hmhome.gif%20
   [![To the story text without notes]]: http://www.vcu.edu/engweb/webtexts/bartleby.html
   [Ann Woodlief,]: http://www.vcu.edu/engweb
   [Washington]: http://raven.cc.ukans.edu/%7Ezeke/bartleby/parker.html

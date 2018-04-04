@@ -72,28 +72,28 @@ Developer Edition comes with a new profile so you can run it alongside other ver
 
     [Learn more about Style Editor]
 
-  [Screenshot]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-webide.16763db341cb.jpg
+  [Screenshot]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-webide.16763db341cb.jpg
   [![Screenshot]]: https://www.youtube.com/watch?v=1R9_WdXwUsE
   [Learn more about WebIDE]: https://developer.mozilla.org/docs/Tools/WebIDE
-  [1]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-valence.251f9def4d8d.jpg
+  [1]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-valence.251f9def4d8d.jpg
   [![Screenshot][1]]: https://www.youtube.com/watch?v=eH0R10Ga4Hs
   [Learn more about Valence]: https://developer.mozilla.org/docs/Tools/Firefox_Tools_Adapter
   [Learn more]: https://support.mozilla.org/kb/recover-lost-bookmarks-firefox-developer-edition
-  [2]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-inspector.c791bf1f1a59.jpg
+  [2]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-inspector.c791bf1f1a59.jpg
   [![Screenshot][2]]: https://www.youtube.com/watch?v=eQqNfkqIJdw
   [Learn more about Page Inspector]: https://developer.mozilla.org/docs/Tools/Page_Inspector
-  [3]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-console.42666aaf6d03.jpg
+  [3]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-console.42666aaf6d03.jpg
   [![Screenshot][3]]: https://www.youtube.com/watch?v=iEDk8o9ehlw
   [Learn more about Web Console]: https://developer.mozilla.org/docs/Tools/Web_Console
-  [4]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-debugger.02ed86fb0c9f.jpg
+  [4]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-debugger.02ed86fb0c9f.jpg
   [![Screenshot][4]]: https://www.youtube.com/watch?v=OS4AxYFLCIE
   [Learn more about JavaScript Debugger]: https://developer.mozilla.org/docs/Tools/Debugger
-  [5]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-network.740d6082b3f6.jpg
+  [5]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-network.740d6082b3f6.jpg
   [![Screenshot][5]]: https://www.youtube.com/watch?v=w4zSG53Qlbk
   [Learn more about Network Monitor]: https://developer.mozilla.org/docs/Tools/Network_Monitor
-  [6]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-webaudio.a10ebc48d017.jpg
+  [6]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-webaudio.a10ebc48d017.jpg
   [![Screenshot][6]]: https://www.youtube.com/watch?v=R_qDaLQ8ghg
   [Learn more about Web Audio Editor]: https://developer.mozilla.org/docs/Tools/Web_Audio_Editor
-  [7]: file://mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-style-editor.87c5d2017506.jpg
+  [7]: //mozorg.cdn.mozilla.net/media/img/firefox/firstrun/dev/feature-style-editor.87c5d2017506.jpg
   [![Screenshot][7]]: https://www.youtube.com/watch?v=3kdBvvIZIqU
   [Learn more about Style Editor]: https://developer.mozilla.org/docs/Tools/Style_Editor

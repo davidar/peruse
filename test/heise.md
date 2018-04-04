@@ -12,9 +12,9 @@ Update 5.3 des Passwortmanagers liefert auch noch weitere Verbesserungen. So gib
 
 1Password kostet aktuell knapp 50 Euro im Mac App Store und setzt in seiner aktuellen Version mindestens OS X 10.10 voraus. ([bsc])
 
-  [1Password scannt auch QR-Codes. ¶ (Bild: Hersteller)]: file://3.f.ix.de/scale/geometry/600/q75/imgs/18/1/4/6/2/3/5/1/Barcode-Scanner-With-Border-fc08c913da5cea5d.jpeg
+  [1Password scannt auch QR-Codes. ¶ (Bild: Hersteller)]: //3.f.ix.de/scale/geometry/600/q75/imgs/18/1/4/6/2/3/5/1/Barcode-Scanner-With-Border-fc08c913da5cea5d.jpeg
   [AgileBits hat Version 5.3 seines bekannten Passwortmanagers 1Password für OS X freigegeben.]: https://itunes.apple.com/de/app/1password-password-manager/id443987910
-  [die iOS-Version der Anwendung bereits seit längerem beherrscht]: file:///mac-and-i/meldung/Passwortmanager-1Password-mit-groesseren-Updates-fuer-OS-X-und-iOS-2529204.html
+  [die iOS-Version der Anwendung bereits seit längerem beherrscht]: /mac-and-i/meldung/Passwortmanager-1Password-mit-groesseren-Updates-fuer-OS-X-und-iOS-2529204.html
   [TOTP-Standard]: https://blog.agilebits.com/2015/01/26/totp-for-1password-users/
   [ein kurzes Video]: http://1pw.ca/TOTPvideoMac
   [bsc]: mailto:bsc@heise.de "Ben Schwan"

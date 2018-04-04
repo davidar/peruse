@@ -74,15 +74,15 @@ jethuynh/iStock/Getty Images
 
 Promoted By Zergnet
 
-  [1]: file://img-aws.ehowcdn.com/60x60/cme/cme_public_images/www_demandstudios_com/sitelife.studiod.com/ver1.0/Content/images/store/9/2/d9dd6f61-b183-4893-927f-5b540e45be91.Small.jpg
-  [![][1]]: file:///contributor/gina_robertsgrey/
-  [Graduation]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/2F/86/5547EF62-EAF5-4256-945D-0496F61C862F/5547EF62-EAF5-4256-945D-0496F61C862F.jpg "Graduation"
-  [Save money hosting the party at home.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/FE/CB/121569D2-6984-4B2F-83C4-9D2D9A27CBFE/121569D2-6984-4B2F-83C4-9D2D9A27CBFE.jpg
-  [Online radio can take the place of a hired DJ.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/DF/FC/A05B0252-BD73-4BC7-A09A-96F0A504FCDF/A05B0252-BD73-4BC7-A09A-96F0A504FCDF.jpg
-  [Serve drinks in pitchers, not in cans.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/EB/DB/8A04CCA7-3255-4225-B59A-C41441F8DBEB/8A04CCA7-3255-4225-B59A-C41441F8DBEB.jpg
-  [Limit guests to those close to the graduate.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/94/10/08035476-0167-4A03-AADC-13A7E7AA1094/08035476-0167-4A03-AADC-13A7E7AA1094.jpg
-  [Throw a joint bash for big savings.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/06/49/4AD62696-FC95-4DA2-8351-42740C7B4906/4AD62696-FC95-4DA2-8351-42740C7B4906.jpg
-  [Cost effective appetizers are just as satisfying as pre-made deli platters.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/D0/51/B6AED06C-5E19-4A26-9AAD-0E175F6251D0/B6AED06C-5E19-4A26-9AAD-0E175F6251D0.jpg
-  [A brunch gathering will cost less than a dinner party.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/35/B4/DD5FD05A-B631-4AFE-BC8F-FDACAD1EB435/DD5FD05A-B631-4AFE-BC8F-FDACAD1EB435.jpg
-  [Theme the party by color without graduation-specific decor.]: file://img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/A1/FA/2C368B34-8F6A-45F6-9DFC-0B0C4E33FAA1/2C368B34-8F6A-45F6-9DFC-0B0C4E33FAA1.jpg
+  [1]: //img-aws.ehowcdn.com/60x60/cme/cme_public_images/www_demandstudios_com/sitelife.studiod.com/ver1.0/Content/images/store/9/2/d9dd6f61-b183-4893-927f-5b540e45be91.Small.jpg
+  [![][1]]: /contributor/gina_robertsgrey/
+  [Graduation]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/2F/86/5547EF62-EAF5-4256-945D-0496F61C862F/5547EF62-EAF5-4256-945D-0496F61C862F.jpg "Graduation"
+  [Save money hosting the party at home.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/FE/CB/121569D2-6984-4B2F-83C4-9D2D9A27CBFE/121569D2-6984-4B2F-83C4-9D2D9A27CBFE.jpg
+  [Online radio can take the place of a hired DJ.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/DF/FC/A05B0252-BD73-4BC7-A09A-96F0A504FCDF/A05B0252-BD73-4BC7-A09A-96F0A504FCDF.jpg
+  [Serve drinks in pitchers, not in cans.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/EB/DB/8A04CCA7-3255-4225-B59A-C41441F8DBEB/8A04CCA7-3255-4225-B59A-C41441F8DBEB.jpg
+  [Limit guests to those close to the graduate.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/94/10/08035476-0167-4A03-AADC-13A7E7AA1094/08035476-0167-4A03-AADC-13A7E7AA1094.jpg
+  [Throw a joint bash for big savings.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/06/49/4AD62696-FC95-4DA2-8351-42740C7B4906/4AD62696-FC95-4DA2-8351-42740C7B4906.jpg
+  [Cost effective appetizers are just as satisfying as pre-made deli platters.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/D0/51/B6AED06C-5E19-4A26-9AAD-0E175F6251D0/B6AED06C-5E19-4A26-9AAD-0E175F6251D0.jpg
+  [A brunch gathering will cost less than a dinner party.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/35/B4/DD5FD05A-B631-4AFE-BC8F-FDACAD1EB435/DD5FD05A-B631-4AFE-BC8F-FDACAD1EB435.jpg
+  [Theme the party by color without graduation-specific decor.]: //img-aws.ehowcdn.com/640/cme/cme_public_images/www_ehow_com/cdn-write.demandstudios.com/upload/image/A1/FA/2C368B34-8F6A-45F6-9DFC-0B0C4E33FAA1/2C368B34-8F6A-45F6-9DFC-0B0C4E33FAA1.jpg
   [Related Searches]: https://www.google.com/adsense/support/bin/request.py?contact=abg_afc&url=http://ehow.com/&hl=en&client=ehow&gl=US

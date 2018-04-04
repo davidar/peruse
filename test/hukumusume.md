@@ -32,19 +32,19 @@
 
 おしまい
 
-  [福娘童話集]: file://.../readability/index.html
-  [きょうのイソップ童話]: file://.../readability/test/test-pages/index.html
-  [１月のイソップ童話]: file://.../readability/test/test-pages/itiran/01gatu.htm
-  [よくばりなイヌ]: file://.../readability/gazou/pc_gazou/aesop/aesop052.jpg
+  [福娘童話集]: ../../../index.html
+  [きょうのイソップ童話]: ../index.html
+  [１月のイソップ童話]: ../itiran/01gatu.htm
+  [よくばりなイヌ]: ../../../gazou/pc_gazou/aesop/aesop052.jpg
   [ひらがな]: http://hukumusume.com/douwa/English/aesop/01/01_j.html
   [日本語・英語]: http://hukumusume.com/douwa/English/aesop/01/01_j&E.html
   [English]: http://hukumusume.com/douwa/English/aesop/01/01_E.html
-  [1]: file://.../366/logo_bana/corner_1.gif
+  [1]: ../../../../366/logo_bana/corner_1.gif
   [おりがみくらぶ]: http://www.origami-club.com/index.html
-  [2]: file://.../366/logo_bana/corner_2.gif
-  [犬の顔の折り紙]: file://.../readability/gazou/origami_gazou/kantan/dogface.gif
+  [2]: ../../../../366/logo_bana/corner_2.gif
+  [犬の顔の折り紙]: ../../../gazou/origami_gazou/kantan/dogface.gif
   [![犬の顔の折り紙]いぬのかお]: http://www.origami-club.com/easy/dogfase/index.html
-  [犬の顔の紙]: file://.../readability/gazou/origami_gazou/kantan/dog.gif
+  [犬の顔の紙]: ../../../gazou/origami_gazou/kantan/dog.gif
   [![犬の顔の紙]いぬ]: http://www.origami-club.com/easy/dog/index.html
   [3]: http://ohanashi2.up.seesaa.net/mp3/ae_0101.mp3
   [亜姫の朗読☆　イソップ童話より]: http://www.voiceblog.jp/onokuboaki/
