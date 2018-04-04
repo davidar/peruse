@@ -57,6 +57,15 @@ const virtualConsole = new VirtualConsole()
 virtualConsole.sendTo(console, {omitJSDOMErrors: true})
 const options = {virtualConsole}
 
+async function fromURL (url) {
+  try {
+    return await JSDOM.fromURL(url, options)
+  } catch (e) {
+    console.error('Retrying ' + url)
+    return JSDOM.fromURL(url, options)
+  }
+}
+
 let ignoreTitles = false
 let postscript = ''
 let allowPrerender = true
@@ -193,7 +202,7 @@ async function preprocess (window, loc) {
     allowPrerender = false
     const server = prerender()
     await server.startPrerender()
-    let dom = await JSDOM.fromURL('http://localhost:3000/' + loc.href, options)
+    let dom = await fromURL('http://localhost:3000/' + loc.href)
     content = await preprocess(dom.window, loc)
     server.killBrowser()
   }
@@ -201,7 +210,7 @@ async function preprocess (window, loc) {
   if (nextPageLink && pages < 10) {
     pages += 1
     console.error(`Fetching page ${pages} from ${nextPageLink}`)
-    let dom = await JSDOM.fromURL(nextPageLink, options)
+    let dom = await fromURL(nextPageLink)
     content += await preprocess(dom.window)
   } else if (nextPageLink) {
     content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
@@ -298,7 +307,7 @@ async function main (url) {
 
   let parsed = URL.parse(url)
   if (parsed.protocol && parsed.hostname) {
-    let dom = await JSDOM.fromURL(url, options)
+    let dom = await fromURL(url)
     await peruse(dom.window)
   } else if (url.endsWith('.html') && fs.existsSync(url)) {
     let html = fs.readFileSync(url, 'utf8')
