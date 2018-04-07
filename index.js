@@ -4,6 +4,7 @@ const escapeHTML = require('escape-html')
 const fs = require('fs')
 const {JSDOM, VirtualConsole} = require('jsdom')
 const prerender = require('prerender')
+const querystring = require('querystring')
 const r2 = require('r2')
 const {Readability} = require('readability/index')
 const {spawn, spawnSync} = require('child_process')
@@ -188,7 +189,7 @@ async function preprocess (window, loc) {
   let readability = new Readability(null, document)
   let article = readability.parse()
 
-  if (article && article.content.replace(/<.*?>/g, '').length > 100) {
+  if (article && article.content.replace(/<.*?>/g, '').length > 200) {
     content = ''
     if (pages === 1) content += '<h1>' + escapeHTML(article.title) + '</h1>'
     content += article.content
@@ -198,7 +199,12 @@ async function preprocess (window, loc) {
     allowPrerender = false
     const server = prerender()
     await server.startPrerender()
-    let dom = await fromURL('http://localhost:3000/' + loc.href)
+    let dom = await fromURL('http://localhost:3000/render?' + querystring.stringify({
+      url: loc.href,
+      renderType: 'html',
+      followRedirects: true,
+      javascript: ''
+    }))
     content = await preprocess(dom.window, loc)
     server.killBrowser()
   }
@@ -300,6 +306,8 @@ async function main (url) {
     }
     url = item.url
   }
+
+  url = url.replace('#!', '?_escaped_fragment_=')
 
   let parsed = URL.parse(url)
   if (parsed.protocol && parsed.hostname) {
