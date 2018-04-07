@@ -47,13 +47,13 @@ The Awesome Bar learns as you browse to make your version of Firefox unique. Fin
 
 ![Firefox Awesome Bar]
 
-  [1]: //mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-top-fallback.c960365ba781.png
-  [2]: //mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-bottom-fallback.cafd48a3d0a4.png
+  [1]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-top-fallback.c960365ba781.png
+  [2]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-bottom-fallback.cafd48a3d0a4.png
   [Try it now]: https://addons.mozilla.org/firefox/themes/
   [Learn more]: https://support.mozilla.org/kb/use-themes-change-look-of-firefox
-  [Preview of the currently selected theme]: //mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/theme-red.61611c5734ab.png
+  [Preview of the currently selected theme]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/theme-red.61611c5734ab.png
   [Here are a few of our favorites]: https://addons.mozilla.org/firefox/extensions/?sort=featured
   [3]: https://support.mozilla.org/kb/find-and-install-add-ons-add-features-to-firefox
-  [4]: //mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/add-ons.63a4b761f822.png
+  [4]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/add-ons.63a4b761f822.png
   [See what it can do for you]: https://support.mozilla.org/kb/awesome-bar-find-your-bookmarks-history-and-tabs
-  [Firefox Awesome Bar]: //mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/awesome-bar.437df162126c.png
+  [Firefox Awesome Bar]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/awesome-bar.437df162126c.png

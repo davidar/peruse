@@ -80,6 +80,9 @@ async function preprocess (window, loc) {
   if (loc === undefined) loc = window.location
   let document = window.document
 
+  let canonical = document.querySelector('link[rel="canonical"]')
+  if (loc.href === 'about:blank' && canonical) loc = URL.parse(canonical.href)
+
   let base = document.getElementsByTagName('base')[0]
   if (base) {
     base.href = URL.resolve(loc.href, base.href)
@@ -182,14 +185,7 @@ async function preprocess (window, loc) {
     }
   }
 
-  let uri = {
-    spec: loc.href,
-    host: loc.host,
-    prePath: loc.protocol + '//' + loc.host,
-    scheme: loc.protocol.substr(0, loc.protocol.indexOf(':')),
-    pathBase: loc.protocol + '//' + loc.host + loc.pathname.substr(0, loc.pathname.lastIndexOf('/') + 1)
-  }
-  let readability = new Readability(uri, document)
+  let readability = new Readability(null, document)
   let article = readability.parse()
 
   if (article && article.content.replace(/<.*?>/g, '').length > 100) {
