@@ -8,6 +8,7 @@ const querystring = require('querystring')
 const r2 = require('r2')
 const {Readability} = require('readability/index')
 const {spawn, spawnSync} = require('child_process')
+const tldjs = require('tldjs')
 const tmp = require('tmp')
 const URL = require('url')
 
@@ -54,6 +55,61 @@ async function readStream (stream) {
   return chunks.join('')
 }
 
+function applyFilterList (fname, body, domain) {
+  let classes = new Set()
+  let ids = new Set()
+  let selectors = []
+  let domainSelectors = {}
+
+  let lines = fs.readFileSync(fname, 'ascii').split('\n')
+  for (const line of lines) {
+    let rule = line.split('##') // cosmetic filters
+    if (rule.length !== 2) continue
+    let [domains, selector] = rule
+
+    // skip rules that trigger syntax errors
+    if (selector.includes('onclick^') || selector.includes('[body]')) continue
+
+    if (domains === '') { // generic filter
+      if (selector.startsWith('.')) {
+        classes.add(selector.slice(1))
+      } else if (selector.startsWith('#')) {
+        ids.add(selector.slice(1))
+      } else {
+        selectors.push(selector)
+      }
+      continue
+    }
+
+    for (const domain of domains.split(',')) {
+      if (!domainSelectors[domain]) domainSelectors[domain] = []
+      domainSelectors[domain].push(selector)
+    }
+  }
+
+  let nodes = body.querySelectorAll('[class]')
+  for (let i = nodes.length - 1; i >= 0; i--) {
+    const node = nodes[i]
+    for (let i = 0; i < node.classList.length; i++) {
+      if (classes.has(node.classList[i])) {
+        removeNode(node)
+        break
+      }
+    }
+  }
+
+  nodes = body.querySelectorAll('[id]')
+  for (let i = nodes.length - 1; i >= 0; i--) {
+    if (ids.has(nodes[i].id)) removeNode(nodes[i])
+  }
+
+  removeNodes(body.querySelectorAll(selectors.join()))
+
+  if (domainSelectors[domain]) {
+    removeNodes(body.querySelectorAll(domainSelectors[domain].join()))
+  }
+}
+
 const virtualConsole = new VirtualConsole()
 virtualConsole.sendTo(console, {omitJSDOMErrors: true})
 const options = {virtualConsole}
@@ -95,6 +151,9 @@ async function preprocess (window, loc) {
     base = document.head.appendChild(base)
   }
 
+  let domain = tldjs.getDomain(loc.href)
+  applyFilterList('easylist/fanboy-annoyance.txt', document.body, domain)
+
   removeNodes(document.body.querySelectorAll('[class*="hidden"]'))
 
   let links = document.getElementsByTagName('a')
@@ -123,7 +182,7 @@ async function preprocess (window, loc) {
   let images = document.getElementsByTagName('img')
   for (let i = images.length - 1; i >= 0; i--) {
     let image = images[i]
-    if (image.getAttribute('src') === '') {
+    if (image.getAttribute('src') === '' || image.width === 1) {
       removeNode(image)
     }
   }

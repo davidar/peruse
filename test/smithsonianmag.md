@@ -44,10 +44,6 @@ According to magician Teller, “Neuroscientists are novices at deception. Magic
 
 When I cut the cards, I let you glimpse a few different faces. You conclude the deck contains 52 different cards (No. 1—Pattern recognition). You think you’ve made a choice, just as when you choose between two candidates preselected by entrenched political parties ( No. 7—Choice is not freedom).
 
-[Brain][1] [Performing Arts][2]
-
-#### We Recommend
-
 According to magician Teller, “Neuroscientists are novices at deception. Magicians have done controlled testing in human perception for thousands of years.” (Jared McMillen / Aurora Select)
 
 ## The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
@@ -56,13 +52,11 @@ Now I wiggle the card to my shoe (No. 3—If you’re laughing…). When I lift
 
 Magic is an art, as capable of beauty as music, painting or poetry. But the core of every trick is a cold, cognitive experiment in perception: Does the trick fool the audience? A magician’s data sample spans centuries, and his experiments have been replicated often enough to constitute near-certainty. Neuroscientists—well intentioned as they are—are gathering soil samples from the foot of a mountain that magicians have mapped and mined for centuries. MRI machines are awesome, but if you want to learn the psychology of magic, you’re better off with Cub Scouts and hard candy.
 
-[Brain][3] [Performing Arts][4]
+[Brain][1] [Performing Arts][2]
 
 #### We Recommend
 
   [Brain]: http://wayback.archive-it.org/all/20140519004537/http://www.smithsonianmag.com/tag/brain/
   [Performing Arts]: http://wayback.archive-it.org/all/20140519004537/http://www.smithsonianmag.com/tag/performing-arts/
-  [1]: http://wayback.archive-it.org/all/20140520114832/http://www.smithsonianmag.com/tag/brain/
-  [2]: http://wayback.archive-it.org/all/20140520114832/http://www.smithsonianmag.com/tag/performing-arts/
-  [3]: http://wayback.archive-it.org/all/20140520114836/http://www.smithsonianmag.com/tag/brain/
-  [4]: http://wayback.archive-it.org/all/20140520114836/http://www.smithsonianmag.com/tag/performing-arts/
+  [1]: http://wayback.archive-it.org/all/20140520114836/http://www.smithsonianmag.com/tag/brain/
+  [2]: http://wayback.archive-it.org/all/20140520114836/http://www.smithsonianmag.com/tag/performing-arts/

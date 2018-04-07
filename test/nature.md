@@ -1,5 +1,7 @@
 # Time to talk about why so many postgrads have poor mental health
 
+An outpouring on Twitter highlights the acute pressures on young scientists.
+
 ![Don’t feel alone: share your stories of mental-health issues and help *Nature* to tackle the problem.Credit: Getty]
 
 Poor mental health is an issue for many of our readers. That fact is underscored by the response to a [tweet sent by @NatureNews earlier this week], which highlighted that rates of depression and anxiety reported by postgraduate students are [six times higher than in the general population (T. M. Evans *et al. Nature Biotechnol.* **36,** 282–284; 2018)], and asked what should be done to help. The figures are a shock, but it was the reaction that blew us away: more than 1,200 retweets and around 170 replies.
@@ -22,11 +24,9 @@ We are committed to covering the unique pressures that face young scientists, an
 
 We thank those who have already told theirs. “I hold down three jobs to fund my PhD, living in hopes of funding, it’s a constant strain. So many others out there like me, and sometimes I wonder if it’s even worth it. The research community will lose so many great minds to issues like this. It needs to be changed.”
 
-**Sign up for the daily Nature Briefing email newsletter**
+Nature **556**, 5 (2018)
 
-Stay up to date with what matters in science and why, handpicked from Nature and other publications worldwide.
-
-[Sign Up]
+doi: 10.1038/d41586-018-04023-5
 
   [Don’t feel alone: share your stories of mental-health issues and help *Nature* to tackle the problem.Credit: Getty]: http://media.nature.com/w800/magazine-assets/d41586-018-04023-5/d41586-018-04023-5_15577648.jpg
   [tweet sent by @NatureNews earlier this week]: https://twitter.com/NatureNews/status/978212558938296321
@@ -34,4 +34,3 @@ Stay up to date with what matters in science and why, handpicked from Nature and
   [here]: http://go.nature.com/2gtjxq
   [including our own]: https://www.nature.com/nature/journal/v550/n7677/full/nj7677-549a.html
   [share your stories in confidence here]: http://go.nature.com/stress-stories
-  [Sign Up]: https://www.nature.com/briefing/signup/
