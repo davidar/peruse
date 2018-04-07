@@ -83,6 +83,8 @@ async function preprocess (window, loc) {
 
   let canonical = document.querySelector('link[rel="canonical"]')
   if (loc.href === 'about:blank' && canonical) loc = URL.parse(canonical.href)
+  canonical = document.querySelector('meta[property="og:url"]')
+  if (loc.href === 'about:blank' && canonical) loc = URL.parse(canonical.content)
 
   let base = document.getElementsByTagName('base')[0]
   if (base) {
