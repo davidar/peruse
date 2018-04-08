@@ -1,5 +1,7 @@
 # Angry media won’t buckle over new surveillance laws
 
+![A new Bill would require telecommunications service providers to store so-called ‘metadat]
+
 A new Bill would require telecommunications service providers to store so-called ‘metadata’ for two years. *Source:* Supplied
 
 **A HIGH-powered federal government team has been doing the rounds of media organisations in the past few days in an attempt to allay concerns about the impact of new surveillance legislation on press freedom. It failed.**
@@ -39,3 +41,5 @@ Those CEOs should make it clear they are just as angry about this as they were a
 Memories of the grief Conroy brought down on his head would undoubtedly make Abbott sit up and take notice.
 
 **LAURIE OAKES IS THE NINE NETWORK POLITICAL EDITOR**
+
+  [A new Bill would require telecommunications service providers to store so-called ‘metadat]: http://api.news.com.au/content/1.0/heraldsun/images/1227261885862?format=jpg&group=iphone&size=medium

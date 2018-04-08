@@ -11,6 +11,8 @@ Get fast and easy access to the features you use most in the new menu. Open the 
 
 ![][2]
 
+![][3]
+
 ### Themes
 
 Make Firefox match your style. Choose from thousands of themes and dress up your browser with a single click.
@@ -33,9 +35,9 @@ Add-ons are like apps that you install to add features to Firefox. They let you 
 -   Watch videos & view photos
 
 [Here are a few of our favorites][]  
-[Learn more][3]
+[Learn more][4]
 
-![][4]
+![][5]
 
 ### Awesome Bar
 
@@ -48,12 +50,13 @@ The Awesome Bar learns as you browse to make your version of Firefox unique. Fin
 ![Firefox Awesome Bar]
 
   [1]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-top-fallback.c960365ba781.png
-  [2]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-bottom-fallback.cafd48a3d0a4.png
+  [2]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/designed-redesigned.fbd3ee9402e6.png
+  [3]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-bottom-fallback.cafd48a3d0a4.png
   [Try it now]: https://addons.mozilla.org/firefox/themes/
   [Learn more]: https://support.mozilla.org/kb/use-themes-change-look-of-firefox
   [Preview of the currently selected theme]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/theme-red.61611c5734ab.png
   [Here are a few of our favorites]: https://addons.mozilla.org/firefox/extensions/?sort=featured
-  [3]: https://support.mozilla.org/kb/find-and-install-add-ons-add-features-to-firefox
-  [4]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/add-ons.63a4b761f822.png
+  [4]: https://support.mozilla.org/kb/find-and-install-add-ons-add-features-to-firefox
+  [5]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/add-ons.63a4b761f822.png
   [See what it can do for you]: https://support.mozilla.org/kb/awesome-bar-find-your-bookmarks-history-and-tabs
   [Firefox Awesome Bar]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/awesome-bar.437df162126c.png

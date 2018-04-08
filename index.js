@@ -183,7 +183,11 @@ async function preprocess (window, loc) {
   let images = document.getElementsByTagName('img')
   for (let i = images.length - 1; i >= 0; i--) {
     let image = images[i]
-    if (image.getAttribute('src') === '' || image.width === 1) {
+    if (image.hasAttribute('data-src')) {
+      let src = image.getAttribute('data-src')
+      if (src && !src.startsWith('{')) image.src = src
+    }
+    if (image.src === '' || image.width === 1) {
       removeNode(image)
     }
   }
