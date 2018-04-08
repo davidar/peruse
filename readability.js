@@ -255,7 +255,7 @@ var readability = {
             var nextHref = topPage.href.replace(/\/$/,'');
 
             readability.parsedPages[nextHref] = true;
-            return nextHref;            
+            return topPage;
         }
         else {
             return null;

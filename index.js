@@ -8,7 +8,7 @@ const prerender = require('prerender')
 const querystring = require('querystring')
 const r2 = require('r2')
 const {Readability} = require('readability/index')
-const {spawn, spawnSync} = require('child_process')
+const {spawn} = require('child_process')
 const tldjs = require('tldjs')
 const tmp = require('tmp')
 const URL = require('url')
@@ -54,6 +54,18 @@ async function readStream (stream) {
   stream.on('data', [].push.bind(chunks))
   await eof(stream)
   return chunks.join('')
+}
+
+async function less (output) {
+  if (process.stdout.isTTY && output.split(/\n/).length >= process.stdout.rows) {
+    let less = spawn('less', [], {
+      stdio: ['pipe', process.stdout, process.stderr]
+    })
+    less.stdin.end(output)
+    await waitProcess(less)
+  } else {
+    process.stdout.write(output)
+  }
 }
 
 function srcsetMax (srcset) {
@@ -139,18 +151,8 @@ async function fromURL (url) {
   }
 }
 
-let ignoreTitles = false
-let postscript = ''
-let allowPrerender = true
-let pages = 1
-
-async function peruse (window, loc) {
-  let content = await preprocess(window, loc)
-  await postprocess(content)
-}
-
-async function preprocess (window, loc) {
-  if (loc === undefined) loc = window.location
+async function preprocess (window,
+  {loc = window.location, allowPrerender = true, pages = 1, lastPageScore = 0} = {}) {
   let document = window.document
 
   let canonical = document.querySelector('link[rel="canonical"]')
@@ -249,8 +251,6 @@ async function preprocess (window, loc) {
     }
   }
 
-  if (ignoreTitles) removeNodes(document.getElementsByTagName('title'))
-
   let breaks = document.querySelectorAll(
     'h1 br, h2 br, h3 br, h4 br, h5 br, h6 br')
   for (let i = breaks.length - 1; i >= 0; i--) {
@@ -269,7 +269,8 @@ async function preprocess (window, loc) {
 
   let content = document.documentElement.outerHTML
 
-  let nextPageLink = findNextPageLink(loc, document.body)
+  let {href: nextPageLink, score: nextPageScore} = findNextPageLink(loc, document.body) || {}
+  if (nextPageScore < lastPageScore - 50) nextPageLink = null
   if (nextPageLink) {
     links = document.getElementsByTagName('a')
     for (let i = links.length - 1; i >= 0; i--) {
@@ -290,7 +291,6 @@ async function preprocess (window, loc) {
       .replace(/<(embed|iframe|video|audio) /g, '<img ')
       .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
   } else if (allowPrerender) {
-    allowPrerender = false
     const server = prerender()
     await server.startPrerender()
     let dom = await fromURL('http://localhost:3000/render?' + querystring.stringify({
@@ -299,23 +299,10 @@ async function preprocess (window, loc) {
       followRedirects: true,
       javascript: ''
     }))
-    content = await preprocess(dom.window, loc)
+    content = await preprocess(dom.window, {loc, allowPrerender: false, pages})
     server.killBrowser()
   }
 
-  if (nextPageLink && pages < 10) {
-    pages += 1
-    console.error(`Fetching page ${pages} from ${nextPageLink}`)
-    let dom = await fromURL(nextPageLink)
-    content += await preprocess(dom.window)
-  } else if (nextPageLink) {
-    content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
-  }
-
-  return content
-}
-
-async function postprocess (content) {
   if (!content.includes('<h2')) {
     content = content
       .replace(/<h3>(.*?)<\/h3>/g, '<h2>$1</h2>')
@@ -323,8 +310,19 @@ async function postprocess (content) {
       .replace(/<h5>(.*?)<\/h5>/g, '<h4>$1</h4>')
       .replace(/<h6>(.*?)<\/h6>/g, '<h5>$1</h5>')
   }
-  content += postscript
 
+  if (nextPageLink && pages < 10) {
+    console.error(`Fetching page ${pages + 1} from ${nextPageLink}`)
+    let dom = await fromURL(nextPageLink)
+    content += await preprocess(dom.window, {pages: pages + 1, lastPageScore: nextPageScore})
+  } else if (nextPageLink) {
+    content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
+  }
+
+  return content
+}
+
+async function postprocess (content, opts) {
   let markdown = [
     'markdown',
     '-bracketed_spans',
@@ -355,27 +353,13 @@ async function postprocess (content) {
     '-f', markdown,
     '-t', markdown + '-smart',
     '--reference-links'
-  ].concat(process.argv.slice(3)), {
+  ].concat(opts), {
     stdio: ['pipe', 'pipe', process.stderr]
   })
 
   convert.stdin.end(content)
   convert.stdout.pipe(normalise.stdin)
-  if (process.stdout.isTTY) {
-    let output = await readStream(normalise.stdout)
-    if (output.split(/\n/).length >= process.stdout.rows) {
-      let less = spawn('less', [], {
-        stdio: ['pipe', process.stdout, process.stderr]
-      })
-      less.stdin.end(output)
-      await waitProcess(less)
-    } else {
-      process.stdout.write(output)
-    }
-  } else {
-    normalise.stdout.pipe(process.stdout)
-    await eof(normalise.stdout)
-  }
+  return readStream(normalise.stdout)
 }
 
 const HN_URL = 'https://news.ycombinator.com/item?id='
@@ -383,14 +367,28 @@ async function hn (id) {
   return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
 }
 
-async function main (url) {
-  if (url.endsWith('.pdf')) {
+async function main (url, url2) {
+  if (url2) {
+    let opts = ['--atx-headers', '--wrap=none']
+    let text1 = await postprocess(await preprocess((await fromURL(url)).window), opts)
+    let text2 = await postprocess(await preprocess((await fromURL(url2)).window), opts)
     let tmpdir = tmp.dirSync().name
-    spawnSync('pdftohtml', ['-c', '-s', '-i', url, tmpdir + '/out'], {stdio: 'ignore'})
-    url = tmpdir + '/out-html.html'
-    ignoreTitles = true
+    fs.writeFileSync(path.join(tmpdir, 'a.md'), text1)
+    fs.writeFileSync(path.join(tmpdir, 'b.md'), text2)
+    let dwdiff = spawn('dwdiff', [
+      '--aggregate-changes',
+      '--algorithm=best',
+      '--context=1',
+      '--punctuation',
+      '--repeat-markers',
+      path.join(tmpdir, 'a.md'),
+      path.join(tmpdir, 'b.md')])
+    let output = await readStream(dwdiff.stdout)
+    await less(output)
+    return 0
   }
 
+  let postscript = ''
   if (url.startsWith(HN_URL)) {
     let item = await hn(url.replace(HN_URL, ''))
     if (item.kids.length > 0) postscript += '<h2>Comments</h2>'
@@ -403,21 +401,30 @@ async function main (url) {
 
   url = url.replace('#!', '?_escaped_fragment_=')
 
+  let dom = null
   let parsed = URL.parse(url)
   if (parsed.protocol && parsed.hostname) {
-    let dom = await fromURL(url)
-    await peruse(dom.window)
+    dom = await fromURL(url)
   } else if (url.endsWith('.html') && fs.existsSync(url)) {
     let html = fs.readFileSync(url, 'utf8')
-    let dom = new JSDOM(html, options)
-    await peruse(dom.window)
-  } else {
+    dom = new JSDOM(html, options)
+  }
+
+  if (dom === null) {
     console.error(url + ': unrecognised input')
     return 1
   }
+
+  let content = await preprocess(dom.window)
+  content += postscript
+
+  let opts = process.argv.filter(arg => arg.startsWith('-'))
+  let output = await postprocess(content, opts)
+  await less(output)
 
   setTimeout(process.exit, 100)
   return 0
 }
 
-main.apply(null, process.argv.slice(2)).then(function (code) { process.exitCode = code })
+main.apply(null, process.argv.slice(2).filter(arg => !arg.startsWith('-')))
+  .then(function (code) { process.exitCode = code })
