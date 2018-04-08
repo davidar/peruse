@@ -30,7 +30,7 @@ ILM supervisor [John Knoll], who first pitched the [story idea] for [*Rogue One*
 
   [Celebration Orlando]: http://starwars.wikia.com/wiki/Celebration_Orlando
   [MakingStarWars.net]: http://makingstarwars.net/2017/02/rumor-unaltered-original-star-wars-trilogy-re-released-year/
-  [star wars han solo]: https://vignette.wikia.nocookie.net/e80dae8a-b955-43f6-8ada-f023385e622b/scale-to-width-down/627
+  [star wars han solo]: https://vignette.wikia.nocookie.net/e80dae8a-b955-43f6-8ada-f023385e622b/scale-to-width-down/1200
   [![star wars han solo]]: https://vignette.wikia.nocookie.net/e80dae8a-b955-43f6-8ada-f023385e622b
   [George Lucas]: http://starwars.wikia.com/wiki/George_Lucas
   [Special Editions]: http://starwars.wikia.com/wiki/The_Star_Wars_Trilogy_Special_Edition
@@ -38,14 +38,14 @@ ILM supervisor [John Knoll], who first pitched the [story idea] for [*Rogue One*
   [*The Empire Strikes Back*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_V_The_Empire_Strikes_Back
   [*Return of the Jedi*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_VI_Return_of_the_Jedi
   [Han shot first]: http://starwars.wikia.com/wiki/Han_shot_first
-  [star wars]: https://vignette.wikia.nocookie.net/375e0e5a-170d-4560-8f20-240c9f0624e9/scale-to-width-down/627
+  [star wars]: https://vignette.wikia.nocookie.net/375e0e5a-170d-4560-8f20-240c9f0624e9/scale-to-width-down/1200
   [![star wars]]: https://vignette.wikia.nocookie.net/375e0e5a-170d-4560-8f20-240c9f0624e9
   [*The Phantom Menace*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_I_The_Phantom_Menace
   [*Attack of the Clones*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_II_Attack_of_the_Clones
   [*Revenge of the Sith*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_III_Revenge_of_the_Sith
   [Celebration Anaheim]: http://starwars.wikia.com/wiki/Celebration_Anaheim
   [*The Force Awakens*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_VII_The_Force_Awakens
-  [1]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9/scale-to-width-down/627
+  [1]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9/scale-to-width-down/1200
   [![][1]]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9
   [Greedo]: http://starwars.wikia.com/wiki/Greedo
   [Han Solo]: http://starwars.wikia.com/wiki/Han_Solo

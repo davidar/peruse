@@ -24,13 +24,13 @@ It would be interesting to know what is meant by tagging “WordPress” as a sk
 
 Regardless of how much credibility you give Stack Overflow’s analysis of hiring trends, the report’s recommendation for those working in technologies oversaturated with developers is a good one: “Consider brushing up on some technologies that offer higher employer demand and less competition.” WordPress’ code base is currently [59% PHP and 27% JavaScript]. The percentage of PHP has grown over time, but newer features and improvements to core are also being built in JavaScript. These are both highly portable skills that are in demand on the web.
 
-  [1]: https://i0.wp.com/wptavern.com/wp-content/uploads/2016/07/stack-overflow.png?resize=1025%2C401&ssl=1
+  [1]: https://i0.wp.com/wptavern.com/wp-content/uploads/2016/07/stack-overflow.png?w=1650&ssl=1
   [![][1]]: https://i0.wp.com/wptavern.com/wp-content/uploads/2016/07/stack-overflow.png?ssl=1
   [2017 hiring trends]: https://stackoverflow.blog/2017/03/09/developer-hiring-trends-2017/
   [Stack Overflow Jobs]: http://stackoverflow.com/jobs
-  [2]: https://i2.wp.com/wptavern.com/wp-content/uploads/2017/03/ChangesinDemand.png?resize=975%2C1115&ssl=1
+  [2]: https://i2.wp.com/wptavern.com/wp-content/uploads/2017/03/ChangesinDemand.png?w=975&ssl=1
   [![][2]]: https://i2.wp.com/wptavern.com/wp-content/uploads/2017/03/ChangesinDemand.png?ssl=1
-  [3]: https://i1.wp.com/wptavern.com/wp-content/uploads/2017/03/HighDemand.png?resize=975%2C854&ssl=1
+  [3]: https://i1.wp.com/wptavern.com/wp-content/uploads/2017/03/HighDemand.png?w=975&ssl=1
   [![][3]]: https://i1.wp.com/wptavern.com/wp-content/uploads/2017/03/HighDemand.png?ssl=1
   [ranked WordPress among the most dreaded technologies]: https://wptavern.com/stack-overflow-survey-results-show-wordpress-is-trending-up-despite-being-ranked-among-most-dreaded-technologies
   [noted]: https://stackoverflow.blog/2017/03/09/developer-hiring-trends-2017/#comment-3194770754

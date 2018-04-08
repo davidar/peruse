@@ -56,6 +56,21 @@ async function readStream (stream) {
   return chunks.join('')
 }
 
+function srcsetMax (srcset) {
+  let urlBest = ''
+  let valBest = 0
+  for (let alt of srcset.split(', ')) {
+    alt = alt.trim().split(/\s+/)
+    let url = alt[0]
+    let val = alt.length > 1 ? parseFloat(alt[1]) : 1
+    if (val > valBest) {
+      urlBest = url
+      valBest = val
+    }
+  }
+  return urlBest
+}
+
 function applyFilterList (fname, body, domain) {
   let classes = new Set()
   let ids = new Set()
@@ -187,8 +202,21 @@ async function preprocess (window, loc) {
       let src = image.getAttribute('data-src')
       if (src && !src.startsWith('{')) image.src = src
     }
-    if (image.src === '' || image.width === 1) {
-      removeNode(image)
+    if (image.srcset) image.src = srcsetMax(image.srcset)
+    if (image.src === '' || image.width === 1) removeNode(image)
+  }
+
+  let pictures = document.getElementsByTagName('picture')
+  for (let i = pictures.length - 1; i >= 0; i--) {
+    let picture = pictures[i]
+    let sources = picture.getElementsByTagName('source')
+    for (let j = sources.length - 1; j >= 0; j--) {
+      let source = sources[j]
+      if (source.media.includes('max-width')) continue
+      let srcset = source.srcset || source.getAttribute('data-srcset')
+      if (srcset.includes(' ')) srcset = srcsetMax(srcset)
+      picture.outerHTML = '<img src="' + srcset + '">'
+      break
     }
   }
 
