@@ -3,6 +3,7 @@
 const escapeHTML = require('escape-html')
 const fs = require('fs')
 const {JSDOM, VirtualConsole} = require('jsdom')
+const path = require('path')
 const prerender = require('prerender')
 const querystring = require('querystring')
 const r2 = require('r2')
@@ -61,7 +62,7 @@ function applyFilterList (fname, body, domain) {
   let selectors = []
   let domainSelectors = {}
 
-  let lines = fs.readFileSync(fname, 'ascii').split('\n')
+  let lines = fs.readFileSync(path.resolve(__dirname, fname), 'ascii').split('\n')
   for (const line of lines) {
     let rule = line.split('##') // cosmetic filters
     if (rule.length !== 2) continue
