@@ -1,7 +1,7 @@
 
-[-Richard Perry/-] {+Karsten Moran for+} The New York Times
+[-Richard Perry/The-] {+Karsten Moran for The+} New York Times
 
-[-People listened to a memorial service through the windows at St. Rose of Lima Church-] {+Grace Christian Fellowship in Newtown conducted a candlelight vigil+}. [More Photos »]
+[-People listened to a memorial service through the windows at St. Rose of Lima Church.-] {+Grace Christian Fellowship in Newtown conducted a candlelight vigil.+} [More Photos »]
 
 --
 
@@ -25,10 +25,9 @@ Law enforcement officials offered no hint of what {+had+} motivated Mr. Lanza. 
 
 --
 
-In the cold light of Friday morning, faces told the story outside the stricken school. There were the frightened faces of children who were crying as they were led out in a line. There were the grim faces of [-three women who emerged with their arms around one another, as if they were protecting the one in the middle-] {+women+}. There were the relieved-looking faces of a couple and [-a little girl in a light blue jacket, riding high on her father’s shoulders-] {+their little girl+}.
+In the cold light of Friday morning, faces told the story outside the stricken school. There were the frightened faces of children who were crying as they were led out in a line. There were the grim faces of [-three women who emerged with their arms around one another, as if they were protecting the one in the middle.-] {+women.+} There were the relieved-looking faces of a couple and [-a little girl in a light blue jacket, riding high on her father’s shoulders.-] {+their little girl.+}
 
 --
 
-  [1]: https://web.archive.org/web/[-20121215032153im-]{+20121215055204im+}_/http://graphics8.nytimes.com/images/2012/12/15/nyregion/[-15shooting5-]{+15shooting6+}_span/[-15shooting5-]{+15shooting6+}_span-articleLarge.jpg
-  [More Photos »]: https://web.archive.org/web/[-20121215032153-]{+20121215055204+}/http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html
-  [Virginia Tech massacre]: https://web.archive.org/web/[-20121215032153-]{+20121215055204+}/http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
+  [1]: [-http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg-] {+http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg+}
+  [More Photos »]: http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html

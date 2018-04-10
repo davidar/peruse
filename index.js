@@ -138,11 +138,32 @@ function applyFilterList (fname, body, domain) {
   }
 }
 
+async function waybackTimestamps (url) {
+  let resp = await r2('https://web.archive.org/cdx/search/cdx?' + querystring.stringify({
+    fl: 'timestamp',
+    filter: 'statuscode:200',
+    collapse: 'digest',
+    url
+  })).text
+  return resp.trim().split('\n')
+}
+
 const virtualConsole = new VirtualConsole()
 virtualConsole.sendTo(console, {omitJSDOMErrors: true})
 const options = {virtualConsole}
 
 async function fromURL (url) {
+  let match = url.match(/^https:\/\/web.archive.org\/web\/([0-9]+)\/(.*)/)
+  if (match) {
+    url = match[2]
+    let timestamp = match[1]
+    let timestamps = await waybackTimestamps(url)
+    let i = timestamps.findIndex(t => t > timestamp)
+    if (i > 0) i--; else if (i < 0) i = timestamps.length - 1
+    url = `https://web.archive.org/web/${timestamps[i]}/${url}`
+    if (timestamp !== timestamps[i]) console.error('Rewriting to', url)
+  }
+
   try {
     return await JSDOM.fromURL(url, options)
   } catch (e) {
@@ -270,7 +291,6 @@ async function preprocess (window,
   let content = document.documentElement.outerHTML
 
   let {href: nextPageLink, score: nextPageScore} = findNextPageLink(loc, document.body) || {}
-  if (nextPageScore < lastPageScore - 50) nextPageLink = null
   if (nextPageLink) {
     links = document.getElementsByTagName('a')
     for (let i = links.length - 1; i >= 0; i--) {
@@ -278,6 +298,11 @@ async function preprocess (window,
         nextPageLink = nextPageLink + '/'
         break
       }
+    }
+    if ((pages === 1 && !nextPageLink.startsWith(loc.href)) ||
+        nextPageScore < lastPageScore - 50) {
+      console.error('Skipping inconsistent next page link', nextPageLink)
+      nextPageLink = null
     }
   }
 
@@ -372,6 +397,8 @@ async function main (url, url2) {
     let opts = ['--atx-headers', '--wrap=none']
     let text1 = await postprocess(await preprocess((await fromURL(url)).window), opts)
     let text2 = await postprocess(await preprocess((await fromURL(url2)).window), opts)
+    text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
+    text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
     let tmpdir = tmp.dirSync().name
     fs.writeFileSync(path.join(tmpdir, 'a.md'), text1)
     fs.writeFileSync(path.join(tmpdir, 'b.md'), text2)
@@ -379,12 +406,13 @@ async function main (url, url2) {
       '--aggregate-changes',
       '--algorithm=best',
       '--context=1',
-      '--punctuation',
+      '--delimiters=‘’“”',
       '--repeat-markers',
       path.join(tmpdir, 'a.md'),
       path.join(tmpdir, 'b.md')])
     let output = await readStream(dwdiff.stdout)
-    await less(output)
+    output = output.replace(/\[--\]/g, '').replace(/\{\+\+\}/g, '')
+    if (output.trim()) await less(output); else console.error('No changes')
     return 0
   }
 

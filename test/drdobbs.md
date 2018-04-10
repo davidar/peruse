@@ -177,4 +177,4 @@ HashLife is a unique algorithm consisting of memoization of the Life next-genera
   [3]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf3.gif
   [4]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf4.gif
   [5]: https://web.archive.org/web/20170430120322im_/http://twimgs.com/ddj/ddj/images/ddj0604b/0604bf5.gif
-  [Download the sourcecode that accompanies this article.]: https://web.archive.org/web/20170703055515/http://twimgs.com/ddj/images/article/2013/0213/compress.zip
+  [Download the sourcecode that accompanies this article.]: https://web.archive.org/web/20170207014010/http://twimgs.com/ddj/images/article/2013/0213/compress.zip

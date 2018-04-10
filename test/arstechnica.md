@@ -429,24 +429,24 @@ It’s really *not* that hard to roll your own, personally hosted VPN service to
 
 Page: [1][15] [2][16] [3][17] [4][18] 5
 
-  [Aurich / Thinkstock]: https://web.archive.org/web/20170528060457im_/https://cdn.arstechnica.net/wp-content/uploads/2017/05/vpn-privacy-800x450.jpg
-  [Senate ruling]: https://web.archive.org/web/20170528060457/https://arstechnica.com/information-technology/2017/03/how-isps-can-sell-your-web-history-and-how-to-stop-them/
-  [move along, citizen, nothing to see here]: https://web.archive.org/web/20170528060457/https://cei.org/blog/six-reasons-fcc-rules-aren%E2%80%99t-needed-protect-privacy
-  [*edits*]: https://web.archive.org/web/20170528060457/https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/
-  [inserting *more* ads]: https://web.archive.org/web/20170528060457/https://arstechnica.com/tech-policy/2014/09/meet-the-tech-company-performing-ad-injections-for-big-cable/
-  [Lenovo did to unsuspecting users of its consumer laptops]: https://web.archive.org/web/20170528060457/https://arstechnica.com/security/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/
-  [Server Name Indication]: https://web.archive.org/web/20170528060457/https://en.wikipedia.org/wiki/Server_Name_Indication
-  [MITM]: https://web.archive.org/web/20170528060457/https://en.wikipedia.org/wiki/Man-in-the-middle_attack
-  [has the use of a Certificate Authority to generate their own (valid!) certificates]: https://web.archive.org/web/20170528060457/https://arstechnica.com/security/2016/09/firefox-ready-to-block-certificate-authority-that-threatened-web-security/
-  [punycode domain names]: https://web.archive.org/web/20170528060457/https://arstechnica.com/security/2017/04/chrome-firefox-and-opera-users-beware-this-isnt-the-apple-com-you-want/
-  [Enlarge]: https://web.archive.org/web/20170528060457/https://cdn.arstechnica.net/wp-content/uploads/2015/06/freewifi.jpg
-  [[Enlarge] / If you think this will be secure, please read on.]: https://web.archive.org/web/20170528060457im_/https://cdn.arstechnica.net/wp-content/uploads/2015/06/freewifi-1280x850.jpg
-  [when you start looking at VPN providers]: https://web.archive.org/web/20170528060457/https://arstechnica.com/security/2016/06/aiming-for-anonymity-ars-assesses-the-state-of-vpns-in-2016/
-  [PDF]: https://web.archive.org/web/20170528060457/https://www.scribd.com/doc/303226103/Fake-bomb-threat-arrest
-  [have made good on its no logging claims]: https://web.archive.org/web/20170528060457/https://torrentfreak.com/vpn-providers-no-logging-claims-tested-in-fbi-case-160312/
-  [criminal complaint]: https://web.archive.org/web/20170528060457/https://www.unitedstatescourts.org/federal/flsd/480077/1-0.html
-  [APT]: https://web.archive.org/web/20170528060457/https://en.wikipedia.org/wiki/Advanced_persistent_threat
-  [something else entirely]: https://web.archive.org/web/20170528060457/https://xkcd.com/538/
+  [Aurich / Thinkstock]: https://web.archive.org/web/20170528052026im_/https://cdn.arstechnica.net/wp-content/uploads/2017/05/vpn-privacy-800x450.jpg
+  [Senate ruling]: https://web.archive.org/web/20170528052026/https://arstechnica.com/information-technology/2017/03/how-isps-can-sell-your-web-history-and-how-to-stop-them/
+  [move along, citizen, nothing to see here]: https://web.archive.org/web/20170528052026/https://cei.org/blog/six-reasons-fcc-rules-aren%E2%80%99t-needed-protect-privacy
+  [*edits*]: https://web.archive.org/web/20170528052026/https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/
+  [inserting *more* ads]: https://web.archive.org/web/20170528052026/https://arstechnica.com/tech-policy/2014/09/meet-the-tech-company-performing-ad-injections-for-big-cable/
+  [Lenovo did to unsuspecting users of its consumer laptops]: https://web.archive.org/web/20170528052026/https://arstechnica.com/security/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/
+  [Server Name Indication]: https://web.archive.org/web/20170528052026/https://en.wikipedia.org/wiki/Server_Name_Indication
+  [MITM]: https://web.archive.org/web/20170528052026/https://en.wikipedia.org/wiki/Man-in-the-middle_attack
+  [has the use of a Certificate Authority to generate their own (valid!) certificates]: https://web.archive.org/web/20170528052026/https://arstechnica.com/security/2016/09/firefox-ready-to-block-certificate-authority-that-threatened-web-security/
+  [punycode domain names]: https://web.archive.org/web/20170528052026/https://arstechnica.com/security/2017/04/chrome-firefox-and-opera-users-beware-this-isnt-the-apple-com-you-want/
+  [Enlarge]: https://web.archive.org/web/20170528052026/https://cdn.arstechnica.net/wp-content/uploads/2015/06/freewifi.jpg
+  [[Enlarge] / If you think this will be secure, please read on.]: https://web.archive.org/web/20170528052026im_/https://cdn.arstechnica.net/wp-content/uploads/2015/06/freewifi-1280x850.jpg
+  [when you start looking at VPN providers]: https://web.archive.org/web/20170528052026/https://arstechnica.com/security/2016/06/aiming-for-anonymity-ars-assesses-the-state-of-vpns-in-2016/
+  [PDF]: https://web.archive.org/web/20170528052026/https://www.scribd.com/doc/303226103/Fake-bomb-threat-arrest
+  [have made good on its no logging claims]: https://web.archive.org/web/20170528052026/https://torrentfreak.com/vpn-providers-no-logging-claims-tested-in-fbi-case-160312/
+  [criminal complaint]: https://web.archive.org/web/20170528052026/https://www.unitedstatescourts.org/federal/flsd/480077/1-0.html
+  [APT]: https://web.archive.org/web/20170528052026/https://en.wikipedia.org/wiki/Advanced_persistent_threat
+  [something else entirely]: https://web.archive.org/web/20170528052026/https://xkcd.com/538/
   [2]: https://web.archive.org/web/20170528062905/https://arstechnica.com/gadgets/2017/05/how-to-build-your-own-vpn-if-youre-rightfully-wary-of-commercial-options/3/
   [3]: https://web.archive.org/web/20170528062905/https://arstechnica.com/gadgets/2017/05/how-to-build-your-own-vpn-if-youre-rightfully-wary-of-commercial-options/4/
   [4]: https://web.archive.org/web/20170528062905/https://arstechnica.com/gadgets/2017/05/how-to-build-your-own-vpn-if-youre-rightfully-wary-of-commercial-options/5/
