@@ -29,6 +29,10 @@ function nonempty (node) {
   return node.textContent.trim() || node.querySelector('img')
 }
 
+function forEachR (a, f) {
+  for (let i = a.length - 1; i >= 0; i--) f(a[i])
+}
+
 async function waitProcess (proc) {
   return new Promise(function (resolve, reject) {
     proc.on('close', function (code) {
@@ -54,6 +58,12 @@ async function readStream (stream) {
   stream.on('data', [].push.bind(chunks))
   await eof(stream)
   return chunks.join('')
+}
+
+async function pipe (name, input, ...args) {
+  let proc = spawn(name, args, {stdio: ['pipe', 'pipe', process.stderr]})
+  proc.stdin.end(input)
+  return readStream(proc.stdout)
 }
 
 async function less (output) {
@@ -115,21 +125,18 @@ function applyFilterList (fname, body, domain) {
     }
   }
 
-  let nodes = body.querySelectorAll('[class]')
-  for (let i = nodes.length - 1; i >= 0; i--) {
-    const node = nodes[i]
+  forEachR(body.querySelectorAll('[class]'), node => {
     for (let i = 0; i < node.classList.length; i++) {
       if (classes.has(node.classList[i])) {
         removeNode(node)
         break
       }
     }
-  }
+  })
 
-  nodes = body.querySelectorAll('[id]')
-  for (let i = nodes.length - 1; i >= 0; i--) {
-    if (ids.has(nodes[i].id)) removeNode(nodes[i])
-  }
+  forEachR(body.querySelectorAll('[id]'), node => {
+    if (ids.has(node.id)) removeNode(node)
+  })
 
   removeNodes(body.querySelectorAll(selectors.join()))
 
@@ -138,19 +145,28 @@ function applyFilterList (fname, body, domain) {
   }
 }
 
+let waybackTimestampsCache = {}
 async function waybackTimestamps (url) {
-  let resp = await r2('https://web.archive.org/cdx/search/cdx?' + querystring.stringify({
+  if (waybackTimestampsCache[url]) return waybackTimestampsCache[url]
+  let cdx = 'https://web.archive.org/cdx/search/cdx?' + querystring.stringify({
     fl: 'timestamp',
     filter: 'statuscode:200',
     collapse: 'digest',
     url
-  })).text
-  return resp.trim().split('\n')
+  })
+  let resp
+  try {
+    resp = await r2(cdx).text
+  } catch (e) {
+    resp = await r2(cdx).text
+  }
+  waybackTimestampsCache[url] = resp.trim().split('\n')
+  return waybackTimestampsCache[url]
 }
 
 const virtualConsole = new VirtualConsole()
 virtualConsole.sendTo(console, {omitJSDOMErrors: true})
-const options = {virtualConsole}
+const optionsJSDOM = {virtualConsole}
 
 async function fromURL (url) {
   let match = url.match(/^https:\/\/web.archive.org\/web\/([0-9]+)\/(.*)/)
@@ -165,11 +181,21 @@ async function fromURL (url) {
   }
 
   try {
-    return await JSDOM.fromURL(url, options)
+    return await JSDOM.fromURL(url, optionsJSDOM)
   } catch (e) {
     console.error('Retrying ' + url)
-    return JSDOM.fromURL(url, options)
+    return JSDOM.fromURL(url, optionsJSDOM)
   }
+}
+
+async function jsdom (url) {
+  let parsed = URL.parse(url)
+  if (parsed.protocol && parsed.hostname) return fromURL(url)
+  if (url.endsWith('.html') && fs.existsSync(url)) {
+    let html = fs.readFileSync(url, 'utf8')
+    return new JSDOM(html, optionsJSDOM)
+  }
+  return null
 }
 
 async function preprocess (window,
@@ -195,88 +221,65 @@ async function preprocess (window,
 
   removeNodes(document.body.querySelectorAll('[class*="hidden"]'))
 
-  let links = document.getElementsByTagName('a')
-  for (let i = links.length - 1; i >= 0; i--) {
-    let link = links[i]
-    let href = link.getAttribute('href')
-    if (href && href[0] === '#') {
+  forEachR(document.getElementsByTagName('a'), link => {
+    if (link.href && link.getAttribute('href').startsWith('#')) {
       link.removeAttribute('href')
     }
-  }
+  })
 
-  links = document.querySelectorAll('pre a')
-  for (let i = links.length - 1; i >= 0; i--) {
-    let link = links[i]
+  forEachR(document.querySelectorAll('pre a'), link => {
     link.outerHTML = link.innerHTML
-  }
+  })
 
-  let nodes = document.querySelectorAll('a, em, strong, b, i')
-  for (let i = nodes.length - 1; i >= 0; i--) {
-    let node = nodes[i]
-    if (!nonempty(node)) {
-      node.outerHTML = node.innerHTML
-    }
-  }
+  forEachR(document.querySelectorAll('a, em, strong, b, i'), node => {
+    if (!nonempty(node)) node.outerHTML = node.innerHTML
+  })
 
-  let images = document.getElementsByTagName('img')
-  for (let i = images.length - 1; i >= 0; i--) {
-    let image = images[i]
+  forEachR(document.getElementsByTagName('img'), image => {
     if (image.hasAttribute('data-src')) {
       let src = image.getAttribute('data-src')
       if (src && !src.startsWith('{')) image.src = src
     }
     if (image.srcset) image.src = srcsetMax(image.srcset)
     if (image.src === '' || image.width === 1) removeNode(image)
-  }
+  })
 
-  let pictures = document.getElementsByTagName('picture')
-  for (let i = pictures.length - 1; i >= 0; i--) {
-    let picture = pictures[i]
-    let sources = picture.getElementsByTagName('source')
-    for (let j = sources.length - 1; j >= 0; j--) {
-      let source = sources[j]
-      if (source.media.includes('max-width')) continue
-      let srcset = source.srcset || source.getAttribute('data-srcset')
-      if (srcset.includes(' ')) srcset = srcsetMax(srcset)
-      picture.outerHTML = '<img src="' + srcset + '">'
-      break
-    }
-  }
+  forEachR(document.getElementsByTagName('picture'), picture => {
+    forEachR(picture.getElementsByTagName('source'), source => {
+      if (!source.media.includes('max-width')) {
+        let srcset = source.srcset || source.getAttribute('data-srcset')
+        if (srcset.includes(' ')) srcset = srcsetMax(srcset)
+        picture.outerHTML = '<img src="' + srcset + '">'
+      }
+    })
+  })
 
-  let tables = document.getElementsByTagName('table')
-  for (let i = tables.length - 1; i >= 0; i--) {
-    let table = tables[i]
+  forEachR(document.getElementsByTagName('table'), table => {
     if (table.rows.length === 1 && table.rows[0].cells.length === 1) {
       table.outerHTML = table.rows[0].cells[0].innerHTML
     }
-  }
+  })
 
-  let items = document.getElementsByTagName('li')
-  for (let i = items.length - 1; i >= 0; i--) {
-    items[i].removeAttribute('id')
-  }
+  forEachR(document.getElementsByTagName('li'), item => {
+    item.removeAttribute('id')
+  })
 
-  let codes = document.getElementsByTagName('code')
-  for (let i = codes.length - 1; i >= 0; i--) {
-    let code = codes[i]
+  forEachR(document.getElementsByTagName('code'), code => {
     if (code.textContent.split('\n').length > 2) {
       code.outerHTML = '<pre>' + code.outerHTML + '</pre>'
     }
-  }
+  })
 
-  let figs = document.getElementsByTagName('figure')
-  for (let i = figs.length - 1; i >= 0; i--) {
-    let fig = figs[i]
+  forEachR(document.getElementsByTagName('figure'), fig => {
     if (fig.getElementsByTagName('figcaption').length === 0) {
       fig.outerHTML = '<div>' + fig.innerHTML + '</div>'
     }
-  }
+  })
 
-  let breaks = document.querySelectorAll(
-    'h1 br, h2 br, h3 br, h4 br, h5 br, h6 br')
-  for (let i = breaks.length - 1; i >= 0; i--) {
-    breaks[i].outerHTML = ' '
-  }
+  forEachR(document.querySelectorAll(
+    'h1 br, h2 br, h3 br, h4 br, h5 br, h6 br'), br => {
+    br.outerHTML = ' '
+  })
 
   let waybackToolbar = document.getElementById('wm-ipp')
   if (waybackToolbar) removeNode(waybackToolbar)
@@ -292,13 +295,9 @@ async function preprocess (window,
 
   let {href: nextPageLink, score: nextPageScore} = findNextPageLink(loc, document.body) || {}
   if (nextPageLink) {
-    links = document.getElementsByTagName('a')
-    for (let i = links.length - 1; i >= 0; i--) {
-      if (links[i].href === nextPageLink + '/') {
-        nextPageLink = nextPageLink + '/'
-        break
-      }
-    }
+    forEachR(document.getElementsByTagName('a'), link => {
+      if (link.href === nextPageLink + '/') nextPageLink = link.href
+    })
     if ((pages === 1 && !nextPageLink.startsWith(loc.href)) ||
         nextPageScore < lastPageScore - 50) {
       console.error('Skipping inconsistent next page link', nextPageLink)
@@ -365,26 +364,10 @@ async function postprocess (content, opts) {
     '-raw_html',
     '-simple_tables'
   ].join('')
-
-  let convert = spawn('pandoc', [
-    '-f', 'html',
-    '-t', markdown + '-smart',
-    '--reference-links'
-  ], {
-    stdio: ['pipe', 'pipe', process.stderr]
-  })
-
-  let normalise = spawn('pandoc', [
-    '-f', markdown,
-    '-t', markdown + '-smart',
-    '--reference-links'
-  ].concat(opts), {
-    stdio: ['pipe', 'pipe', process.stderr]
-  })
-
-  convert.stdin.end(content)
-  convert.stdout.pipe(normalise.stdin)
-  return readStream(normalise.stdout)
+  let output = await pipe('pandoc', content, '--from=html',
+    '--to=' + markdown + '-smart', '--reference-links')
+  return pipe('pandoc', output, '--from=' + markdown,
+    '--to=' + markdown + '-smart', '--reference-links', ...opts)
 }
 
 const HN_URL = 'https://news.ycombinator.com/item?id='
@@ -395,8 +378,8 @@ async function hn (id) {
 async function main (url, url2) {
   if (url2) {
     let opts = ['--atx-headers', '--wrap=none']
-    let text1 = await postprocess(await preprocess((await fromURL(url)).window), opts)
-    let text2 = await postprocess(await preprocess((await fromURL(url2)).window), opts)
+    let text1 = await postprocess(await preprocess((await jsdom(url)).window), opts)
+    let text2 = await postprocess(await preprocess((await jsdom(url2)).window), opts)
     text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
     text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
     let tmpdir = tmp.dirSync().name
@@ -429,15 +412,7 @@ async function main (url, url2) {
 
   url = url.replace('#!', '?_escaped_fragment_=')
 
-  let dom = null
-  let parsed = URL.parse(url)
-  if (parsed.protocol && parsed.hostname) {
-    dom = await fromURL(url)
-  } else if (url.endsWith('.html') && fs.existsSync(url)) {
-    let html = fs.readFileSync(url, 'utf8')
-    dom = new JSDOM(html, options)
-  }
-
+  let dom = await jsdom(url)
   if (dom === null) {
     console.error(url + ': unrecognised input')
     return 1
