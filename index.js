@@ -2,6 +2,7 @@
 
 const escapeHTML = require('escape-html')
 const fs = require('fs')
+const htmldiff = require('node-htmldiff')
 const {JSDOM, VirtualConsole} = require('jsdom')
 const path = require('path')
 const prerender = require('prerender')
@@ -10,7 +11,6 @@ const r2 = require('r2')
 const {Readability} = require('readability/index')
 const {spawn} = require('child_process')
 const tldjs = require('tldjs')
-const tmp = require('tmp')
 const URL = require('url')
 
 const {findNextPageLink} = require('./readability.js')
@@ -370,6 +370,66 @@ async function postprocess (content, opts) {
     '--to=' + markdown + '-smart', '--reference-links', ...opts)
 }
 
+function postprocessDiff (html) {
+  let dom = new JSDOM(html, optionsJSDOM)
+  let document = dom.window.document
+  forEachR(document.getElementsByTagName('del'), del => {
+    del.outerHTML = '<span class="del">' + del.innerHTML + '</span>'
+  })
+  forEachR(document.getElementsByTagName('ins'), ins => {
+    ins.outerHTML = '<span class="ins">' + ins.innerHTML + '</span>'
+  })
+  forEachR(document.getElementsByTagName('span'), span => {
+    let content = span.innerHTML
+    let par = span.parentNode
+    if (par && par.childNodes.length === 1 &&
+        ['a', 'em', 'strong'].includes(par.tagName.toLowerCase())) {
+      par.innerHTML = content
+      par.outerHTML = '<span class="' + span.className + '">' + par.outerHTML + '</span>'
+    }
+  })
+  forEachR(document.getElementsByTagName('span'), span => {
+    let next = span.nextSibling
+    if (next && span.className === next.className) {
+      span.innerHTML += next.innerHTML
+      removeNode(next)
+    }
+  })
+  forEachR(document.getElementsByTagName('p'), para => {
+    let ch = para.childNodes
+    if (ch.length === 2 && ch[0].className === 'del' && ch[1].className === 'ins') {
+      para.outerHTML = '<p>' + ch[0].outerHTML + '</p><p>' + ch[1].outerHTML + '</p>'
+    }
+  })
+  forEachR(document.getElementsByTagName('span'), span => {
+    let next = span.nextSibling
+    if (next && span.className === 'del' && next.className === 'ins') {
+      span.outerHTML = '<span class="sub">' + span.outerHTML + next.outerHTML + '</span>'
+      removeNode(next)
+    }
+  })
+  return document.documentElement.outerHTML
+}
+
+async function diff (text1, text2) {
+  let html = htmldiff(await pipe('pandoc', text1), await pipe('pandoc', text2))
+  let unmodified = html.replace(/<del.*?del>/g, '').replace(/<ins.*?ins>/g, '')
+  let similarity = unmodified.length / html.length
+  if (similarity < 0.5) {
+    console.error(Math.round(100 - 100 * similarity) + '% of the content has changed')
+    return null
+  }
+  html = postprocessDiff(html)
+  let output = await pipe('pandoc', html, '--from=html',
+    '--to=markdown-bracketed_spans-header_attributes-smart',
+    '--reference-links', '--atx-headers', '--wrap=none')
+  output = output
+    .replace(/<span class="sub"><span class="del">(.*?)<\/span><span class="ins">(.*?)<\/span><\/span>/g, '{~~$1~>$2~~}')
+    .replace(/<span class="del">(.*?)<\/span>/g, '{--$1--}')
+    .replace(/<span class="ins">(.*?)<\/span>/g, '{++$1++}')
+  return output
+}
+
 const HN_URL = 'https://news.ycombinator.com/item?id='
 async function hn (id) {
   return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
@@ -382,21 +442,15 @@ async function main (url, url2) {
     let text2 = await postprocess(await preprocess((await jsdom(url2)).window), opts)
     text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
     text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
-    let tmpdir = tmp.dirSync().name
-    fs.writeFileSync(path.join(tmpdir, 'a.md'), text1)
-    fs.writeFileSync(path.join(tmpdir, 'b.md'), text2)
-    let dwdiff = spawn('dwdiff', [
-      '--aggregate-changes',
-      '--algorithm=best',
-      '--context=1',
-      '--delimiters=‘’“”',
-      '--repeat-markers',
-      path.join(tmpdir, 'a.md'),
-      path.join(tmpdir, 'b.md')])
-    let output = await readStream(dwdiff.stdout)
-    output = output.replace(/\[--\]/g, '').replace(/\{\+\+\}/g, '')
-    if (output.trim()) await less(output); else console.error('No changes')
-    return 0
+    if (text1 === text2) {
+      console.error('No changes')
+      return 0
+    }
+
+    let output = await diff(text1, text2)
+    if (!output) output = text1 + '\n\n--\n\n' + text2
+    await less(output)
+    return 1
   }
 
   let postscript = ''
