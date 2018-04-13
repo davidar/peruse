@@ -9,8 +9,6 @@
  * Readability is licensed under the Apache License, Version 2.0.
 **/
 var readability = {
-    parsedPages: {}, /* The list of pages we've parsed in this call of readability, for autopaging. As a key store for easier searching. */
-
     /**
      * All of the regular expressions in use within readability.
      * Defined up here so we don't instantiate them repeatedly in loops.
@@ -107,9 +105,10 @@ var readability = {
      * Look for any paging links that may occur within the document.
      * 
      * @param body
+     * @param parsedPages The set of pages we've parsed in this call of readability, for autopaging.
      * @return object (array)
     **/
-    findNextPageLink: function (location, elem) {
+    findNextPageLink: function (location, elem, parsedPages) {
         var possiblePages = {},
             allLinks = elem.getElementsByTagName('a'),
             articleBaseUrl = readability.findBaseUrl(location);
@@ -128,7 +127,7 @@ var readability = {
                 linkHref = allLinks[i].href.replace(/#.*$/, '').replace(/\/$/, '');
 
             /* If we've already seen this page, ignore it */
-            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === location.href || linkHref in readability.parsedPages) {
+            if(linkHref === "" || linkHref === articleBaseUrl || linkHref === location.href || parsedPages.has(linkHref)) {
                 continue;
             }
             
@@ -254,7 +253,7 @@ var readability = {
         if(topPage) {
             var nextHref = topPage.href.replace(/\/$/,'');
 
-            readability.parsedPages[nextHref] = true;
+            parsedPages.add(nextHref);
             return topPage;
         }
         else {

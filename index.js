@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const {memoize} = require('lodash')
 const escapeHTML = require('escape-html')
 const fs = require('fs')
 const htmldiff = require('node-htmldiff')
@@ -145,9 +146,7 @@ function applyFilterList (fname, body, domain) {
   }
 }
 
-let waybackTimestampsCache = {}
-async function waybackTimestamps (url) {
-  if (waybackTimestampsCache[url]) return waybackTimestampsCache[url]
+const waybackTimestamps = memoize(async (url) => {
   let cdx = 'https://web.archive.org/cdx/search/cdx?' + querystring.stringify({
     fl: 'timestamp',
     filter: 'statuscode:200',
@@ -160,9 +159,8 @@ async function waybackTimestamps (url) {
   } catch (e) {
     resp = await r2(cdx).text
   }
-  waybackTimestampsCache[url] = resp.trim().split('\n')
-  return waybackTimestampsCache[url]
-}
+  return resp.trim().split('\n')
+})
 
 const virtualConsole = new VirtualConsole()
 virtualConsole.sendTo(console, {omitJSDOMErrors: true})
@@ -199,7 +197,7 @@ async function jsdom (url) {
 }
 
 async function preprocess (window,
-  {loc = window.location, allowPrerender = true, pages = 1, lastPageScore = 0} = {}) {
+  {loc = window.location, allowPrerender = true, pages = new Set(), lastPageScore = 0} = {}) {
   let document = window.document
 
   let canonical = document.querySelector('link[rel="canonical"]')
@@ -293,12 +291,12 @@ async function preprocess (window,
 
   let content = document.documentElement.outerHTML
 
-  let {href: nextPageLink, score: nextPageScore} = findNextPageLink(loc, document.body) || {}
+  let {href: nextPageLink, score: nextPageScore} = findNextPageLink(loc, document.body, pages) || {}
   if (nextPageLink) {
     forEachR(document.getElementsByTagName('a'), link => {
       if (link.href === nextPageLink + '/') nextPageLink = link.href
     })
-    if ((pages === 1 && !nextPageLink.startsWith(loc.href)) ||
+    if ((pages.size === 1 && !nextPageLink.startsWith(loc.href)) ||
         nextPageScore < lastPageScore - 50) {
       console.error('Skipping inconsistent next page link', nextPageLink)
       nextPageLink = null
@@ -310,7 +308,7 @@ async function preprocess (window,
 
   if (article && article.content.replace(/<.*?>/g, '').length > 200) {
     content = ''
-    if (pages === 1) content += '<h1>' + escapeHTML(article.title) + '</h1>'
+    if (pages.size <= 1) content += '<h1>' + escapeHTML(article.title) + '</h1>'
     content += article.content
       .replace(/<(embed|iframe|video|audio) /g, '<img ')
       .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
@@ -335,10 +333,10 @@ async function preprocess (window,
       .replace(/<h6>(.*?)<\/h6>/g, '<h5>$1</h5>')
   }
 
-  if (nextPageLink && pages < 10) {
-    console.error(`Fetching page ${pages + 1} from ${nextPageLink}`)
+  if (nextPageLink && pages.size < 10) {
+    console.error(`Fetching page ${pages.size + 1} from ${nextPageLink}`)
     let dom = await fromURL(nextPageLink)
-    content += await preprocess(dom.window, {pages: pages + 1, lastPageScore: nextPageScore})
+    content += await preprocess(dom.window, {pages, lastPageScore: nextPageScore})
   } else if (nextPageLink) {
     content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
   }
