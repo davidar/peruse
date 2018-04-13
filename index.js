@@ -435,24 +435,7 @@ async function hn (id) {
   return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
 }
 
-async function main (url, url2) {
-  if (url2) {
-    let opts = ['--atx-headers', '--wrap=none']
-    let text1 = await postprocess(await preprocess((await jsdom(url)).window), opts)
-    let text2 = await postprocess(await preprocess((await jsdom(url2)).window), opts)
-    text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
-    text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
-    if (text1 === text2) {
-      console.error('No changes')
-      return 0
-    }
-
-    let output = await diff(text1, text2)
-    if (!output) output = text1 + '\n\n--\n\n' + text2
-    await less(output)
-    return 1
-  }
-
+async function mainURL (url) {
   let postscript = ''
   if (url.startsWith(HN_URL)) {
     let item = await hn(url.replace(HN_URL, ''))
@@ -481,6 +464,64 @@ async function main (url, url2) {
 
   setTimeout(process.exit, 100)
   return 0
+}
+
+async function mainDiff (url1, url2) {
+  let opts = ['--atx-headers', '--wrap=none']
+  let text1 = await postprocess(await preprocess((await jsdom(url1)).window), opts)
+  let text2 = await postprocess(await preprocess((await jsdom(url2)).window), opts)
+  text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
+  text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
+  if (text1 === text2) {
+    console.error('No changes')
+    return 0
+  }
+
+  let output = await diff(text1, text2)
+  if (!output) output = text1 + '\n\n--\n\n' + text2
+  await less(output)
+  return 1
+}
+
+async function mainHistory (url, until) {
+  let opts = ['--atx-headers', '--wrap=none']
+  let timestamps = await waybackTimestamps(url)
+
+  let url1 = `https://web.archive.org/web/${timestamps[0]}/${url}`
+  let text1 = await postprocess(await preprocess((await fromURL(url1)).window), opts)
+  text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
+
+  console.log('# Original', timestamps[0])
+  console.log(text1)
+
+  for (let i = 1; i < timestamps.length; i++) {
+    const timestamp = timestamps[i]
+    if (until && until < timestamp) break
+    let url2 = `https://web.archive.org/web/${timestamp}/${url}`
+    let text2 = await postprocess(await preprocess((await fromURL(url2)).window), opts)
+    text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
+    if (text1 === text2) {
+      console.error('No changes', timestamp)
+      continue
+    }
+
+    let output = await diff(text1, text2)
+    if (output) {
+      console.log('# Update', timestamp)
+      console.log(output)
+    } else {
+      console.log('# Rewrite', timestamp)
+      console.log(text2)
+    }
+    text1 = text2
+  }
+  return 0
+}
+
+async function main (cmd, ...args) {
+  if (args.length === 0) return mainURL(cmd)
+  if (cmd === 'diff') return mainDiff(...args)
+  if (cmd === 'history') return mainHistory(...args)
 }
 
 main.apply(null, process.argv.slice(2).filter(arg => !arg.startsWith('-')))
