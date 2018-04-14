@@ -196,6 +196,13 @@ async function jsdom (url) {
   return null
 }
 
+const prerenderServer = memoize(async () => {
+  let server = prerender()
+  await server.startPrerender()
+  process.on('exit', () => server.killBrowser())
+  return 'http://localhost:3000/render?'
+})
+
 async function preprocess (window,
   {loc = window.location, allowPrerender = true, pages = new Set(), lastPageScore = 0} = {}) {
   let document = window.document
@@ -313,16 +320,14 @@ async function preprocess (window,
       .replace(/<(embed|iframe|video|audio) /g, '<img ')
       .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
   } else if (allowPrerender) {
-    const server = prerender()
-    await server.startPrerender()
-    let dom = await fromURL('http://localhost:3000/render?' + querystring.stringify({
+    let server = await prerenderServer()
+    let dom = await fromURL(server + querystring.stringify({
       url: loc.href,
       renderType: 'html',
       followRedirects: true,
       javascript: ''
     }))
     content = await preprocess(dom.window, {loc, allowPrerender: false, pages})
-    server.killBrowser()
   }
 
   if (!content.includes('<h2')) {
@@ -459,8 +464,6 @@ async function mainURL (url) {
   let opts = process.argv.filter(arg => arg.startsWith('-'))
   let output = await postprocess(content, opts)
   await less(output)
-
-  setTimeout(process.exit, 100)
   return 0
 }
 
@@ -522,5 +525,7 @@ async function main (cmd, ...args) {
   if (cmd === 'history') return mainHistory(...args)
 }
 
-main.apply(null, process.argv.slice(2).filter(arg => !arg.startsWith('-')))
-  .then(function (code) { process.exitCode = code })
+main.apply(null, process.argv.slice(2).filter(arg => !arg.startsWith('-'))).then(code => {
+  process.exitCode = code
+  setTimeout(process.exit, 100)
+})
