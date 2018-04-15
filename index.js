@@ -2,6 +2,7 @@
 
 const bytes = require('utf8-length')
 const chrono = require('chrono-node')
+const express = require('express')
 const franc = require('franc')
 const fs = require('fs')
 const htmldiff = require('node-htmldiff')
@@ -44,8 +45,8 @@ function forEachR (a, f) {
 }
 
 async function waitProcess (proc) {
-  return new Promise(function (resolve, reject) {
-    proc.on('close', function (code) {
+  return new Promise((resolve, reject) => {
+    proc.on('close', code => {
       if (code === 0) {
         resolve()
       } else {
@@ -56,9 +57,15 @@ async function waitProcess (proc) {
 }
 
 async function eof (stream) {
-  return new Promise(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     stream.on('end', resolve)
     stream.on('error', reject)
+  })
+}
+
+async function sigint () {
+  return new Promise((resolve, reject) => {
+    process.on('SIGINT', resolve)
   })
 }
 
@@ -195,10 +202,10 @@ async function fromURL (url) {
   }
 }
 
-async function jsdom (url) {
+async function jsdom (url, allowLocal) {
   let parsed = URL.parse(url)
   if (parsed.protocol && parsed.hostname) return fromURL(url)
-  if (url.endsWith('.html') && fs.existsSync(url)) {
+  if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
     let html = fs.readFileSync(url, 'utf8')
     return new JSDOM(html, optionsJSDOM)
   }
@@ -467,7 +474,7 @@ async function hn (id) {
   return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
 }
 
-async function peruse (url, opts = []) {
+async function peruse (url, opts = [], allowLocal = true) {
   let postscript = ''
   if (url.startsWith(HN_URL)) {
     let item = await hn(url.replace(HN_URL, ''))
@@ -481,7 +488,7 @@ async function peruse (url, opts = []) {
 
   url = url.replace('#!', '?_escaped_fragment_=')
 
-  let dom = await jsdom(url)
+  let dom = await jsdom(url, allowLocal)
   if (dom === null) return null
 
   let {title, author, date, content} = await preprocess(dom.window)
@@ -563,11 +570,37 @@ async function mainHistory (url, until) {
   return 0
 }
 
-async function main (cmd, ...args) {
-  if (args.length === 0) return mainURL(cmd)
-  if (cmd === 'diff') return mainDiff(...args)
-  if (cmd === 'history') return mainHistory(...args)
+async function mainServer (port = 4343) {
+  let app = express()
+  app.use('/static', express.static(path.join(__dirname, 'static')))
+  app.get('/html/:url(*)', async (req, res, next) => {
+    try {
+      let url = req.params.url
+      let qstr = URL.parse(req.url).search
+      if (qstr) url += qstr
+      let output = await peruse(url, [], false)
+      if (output) {
+        let html = await pipe('pandoc', output, '--standalone', '--css=/static/peruse.css')
+        res.send(html)
+      } else {
+        res.sendStatus(404)
+      }
+    } catch (e) {
+      next(e)
+    }
+  })
+  app.listen(port, () => console.log(`Server running: http://localhost:${port}/`))
+  await sigint()
+  console.log('Stopping server')
 }
+
+const commands = {
+  diff: mainDiff,
+  history: mainHistory,
+  server: mainServer
+}
+
+const main = (cmd, ...args) => (cmd in commands) ? commands[cmd](...args) : mainURL(cmd)
 
 main.apply(null, process.argv.slice(2).filter(arg => !arg.startsWith('-'))).then(code => {
   process.exitCode = code

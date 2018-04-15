@@ -1,0 +1,47 @@
+@import "normalize.css";
+@import "normalize-opentype.css";
+@import "markdown.css";
+
+body {
+  hyphens: auto;
+  text-align: justify;
+  font-size: 100%;
+  padding: 3rem 1rem;
+  line-height: 1.5rem;
+}
+
+body * {
+  margin: 1.5rem 0;
+}
+
+header {
+  text-align: center;
+}
+
+/* major third (4:5) modular scale */
+h1 {
+    font-size: 1.953rem;
+    line-height: 3rem;
+}
+h2, header .subtitle {
+    font-size: 1.563rem;
+    line-height: 3rem;
+}
+h3, header .author {
+    font-size: 1.25rem;
+}
+
+a {
+  color: #bd1c2b;
+}
+a:hover {
+  color: #84141e;
+}
+
+/* responsiveness for phones */
+@media screen and (max-width:768px) {
+  body {
+    font-size: 94%;
+    padding-top: 0;
+  }
+}

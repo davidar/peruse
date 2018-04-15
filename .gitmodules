@@ -1,3 +1,6 @@
 [submodule "readability"]
 	path = readability
 	url = https://github.com/mozilla/readability.git
+[submodule "Markdown-CSS"]
+	path = Markdown-CSS
+	url = ../Markdown-CSS.git
