@@ -36,7 +36,7 @@ In addition to continuing violence in Darfur, several other serious conflicts ar
 
 [Eric Reeves], one of the leading American academic voices on Sudan, said he was “appalled” that the American government was lifting sanctions.
 
-He said that Sudan’s military-dominated government continued to commit grave human rights abuses and atrocities, and he noted that just last week Sudanese security services [killed][][more than 10 civilians in Darfur][killed].
+He said that Sudan’s military-dominated government continued to commit grave human rights abuses and atrocities, and he noted that just last week Sudanese security services [killed][] [more than 10 civilians in Darfur][killed].
 
 “There is no reason to believe the guys in charge have changed their stripes,” said Mr. Reeves, a senior fellow at the François-Xavier Bagnoud Center for Health and Human Rights at Harvard University. “These guys are the worst of the worst.”
 

@@ -14,7 +14,7 @@ In case you missed the story, the facts are these: Someone named Man Haron Monis
 
 In the midst of the fear, Uber stepped in and tweeted this announcement:  “We are all concerned with events in CBD. Fares have increased to encourage more drivers to come online & pick up passengers in the area.”
 
-As [Mashable]reports, the company announced that it would charge a minimum of \$100 Australian to take passengers from the area immediately surrounding the ongoing crisis, and prices increased by as much as four times the standard amount. A firestorm of criticism quickly erupted – “[@Uber\_Sydney] stop being assholes,” one Twitter response began – and Uber soon found itself offering free rides out of the troubled area instead.
+As [Mashable] reports, the company announced that it would charge a minimum of \$100 Australian to take passengers from the area immediately surrounding the ongoing crisis, and prices increased by as much as four times the standard amount. A firestorm of criticism quickly erupted – “[@Uber\_Sydney] stop being assholes,” one Twitter response began – and Uber soon found itself offering free rides out of the troubled area instead.
 
 That opener suggests that Uber, as part of a community under siege, is preparing to respond in a civic manner.
 
@@ -62,7 +62,7 @@ In fact, [prosecutors in San Francisco and Los Angeles] say Uber has been lying 
 
 Many reports suggest that beleaguered drivers don’t feel much better about the company than victimized passengers do. They tell [horror stories] about the company’s hiring and management practices. Uber [unilaterally slashes drivers’ rates], while claiming they don’t need to unionize. (The [Teamsters] disagree.)
 
-The company also pushes[sketchy, substandard loans] onto its drivers – but hey, what could go wrong?
+The company also pushes [sketchy, substandard loans] onto its drivers – but hey, what could go wrong?
 
 Uber has many libertarian defenders. And yet, it [deceives the press] and [threatens to spy on journalists], [lies to its own employees], keeps its practices a secret and routinely invades the privacy of civilians – sometimes merely for entertainment. (It has a tool, with the Orwellian name the “[God View],” that it can use for monitoring customers’ personal movements.)
 

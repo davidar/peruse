@@ -48,7 +48,7 @@ Nine months ago, the president seemed like a spent force, after taking a beating
 
 But the man sat before me today was relaxed and confident, buoyed by a string of “wins” on healthcare, Cuba and Iran, after bitter and ongoing battles with his many critics.
 
-The only body swerve the president performed was when I asked him [how many minds he had changed on the Iran nuclear deal]after an intense sell aimed at Gulf allies and members of US Congress who remain implacably opposed.
+The only body swerve the president performed was when I asked him [how many minds he had changed on the Iran nuclear deal] after an intense sell aimed at Gulf allies and members of US Congress who remain implacably opposed.
 
 There was a momentary flicker across the president’s face as if to say “You think you got me?” before his smile returned and he proceeded to talk about how Congress would come round.
 

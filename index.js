@@ -246,7 +246,14 @@ async function preprocess (window,
   })
 
   forEachR(document.querySelectorAll('a, em, strong, b, i'), node => {
-    if (!nonempty(node)) node.outerHTML = node.innerHTML
+    if (nonempty(node)) {
+      let prep = /^\s/.test(node.innerHTML) ? ' ' : ''
+      let post = /\s$/.test(node.innerHTML) ? ' ' : ''
+      node.innerHTML = node.innerHTML.trim()
+      node.outerHTML = prep + node.outerHTML + post
+    } else {
+      node.outerHTML = node.innerHTML
+    }
   })
 
   forEachR(document.getElementsByTagName('img'), image => {

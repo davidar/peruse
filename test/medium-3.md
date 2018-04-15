@@ -293,7 +293,7 @@ You piss that crew off, and given how petty rather a few of them have demonstrat
 
 Of course, the idea this could happen is just craycray:
 
-> [@KevinColeman][][.@Angry\_Drunk][] [@s\_bielefeld][] [@marcoarment] Wow, you guys are veering right into crazy conspiracy theory territory. [\#JetFuelCantMeltSteelBeams]
+> [@KevinColeman][] [.@Angry\_Drunk][] [@s\_bielefeld][] [@marcoarment] Wow, you guys are veering right into crazy conspiracy theory territory. [\#JetFuelCantMeltSteelBeams]
 
 Yeah. Because a mature person like Marco would never do anything like that.
 
@@ -307,9 +307,9 @@ See, they’ve done their job. Mess with the bull, you get the horns. Maybe you 
 
 Some people aren’t even pretending. They’re just in full strawman mode:
 
-> [@timkeller:]Unfair to begrudge a person for leveraging past success, especially when that success is earned. No ‘luck’ involved.
+> [@timkeller:] Unfair to begrudge a person for leveraging past success, especially when that success is earned. No ‘luck’ involved.
 
-> [@s\_bielefeld:][@s\_bielefeld][@timkeller][@timkeller:] I plainly stated that I don’t hold his doing this against him. Way to twist words.
+> [@s\_bielefeld:][@s\_bielefeld] [@timkeller][@timkeller:] I plainly stated that I don’t hold his doing this against him. Way to twist words.
 
 I think she’s earned her anger at this point.
 

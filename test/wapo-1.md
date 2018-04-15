@@ -23,7 +23,7 @@ Despite this, the country has been hailed as a model of democratic transition as
 
 Many Tunisians accuse the country’s political Islamists, who held power from 2011 to 2013, of having been slow to respond to the growing danger of terrorism. Islamist politicians have acknowledged that they did not realize the threat that would develop when radical Muslims, who had been repressed under authoritarian regimes, won the freedom to preach freely in mosques.
 
-In Washington, White House press secretary Josh Earnest [condemned the attack]and said the U.S. government was willing to assist Tunisian authorities in the investigation.
+In Washington, White House press secretary Josh Earnest [condemned the attack] and said the U.S. government was willing to assist Tunisian authorities in the investigation.
 
 Gunmen in military uniforms stormed Tunisia’s national museum, killing at least 19 people, most of them foreign tourists. (Reuters)
 
@@ -47,7 +47,7 @@ Last fall, Tunisians elected a secular-minded president and parliament dominated
 
 Map: Flow of foreign fighters to Syria
 
-After the collapse of the authoritarian system in 2011, hard-line Muslims known as Salafists attacked bars and art galleries. Then, in 2012, hundreds of Islamists [assaulted the U.S. Embassy]in Tunis, shattering windows and hurling gasoline bombs, after the release of a crude online video about the prophet Muhammad. The government outlawed the group behind the attack — Ansar al-Sharia, an al-Qaeda-linked organization — and began a crackdown. But the killing [of two leftist politicians] in 2013 prompted a fresh political crisis, and Ennahda stepped down, replaced by a technocratic government.
+After the collapse of the authoritarian system in 2011, hard-line Muslims known as Salafists attacked bars and art galleries. Then, in 2012, hundreds of Islamists [assaulted the U.S. Embassy] in Tunis, shattering windows and hurling gasoline bombs, after the release of a crude online video about the prophet Muhammad. The government outlawed the group behind the attack — Ansar al-Sharia, an al-Qaeda-linked organization — and began a crackdown. But the killing [of two leftist politicians] in 2013 prompted a fresh political crisis, and Ennahda stepped down, replaced by a technocratic government.
 
 Tunisia’s [current coalition government] includes an Ennahda minister in the cabinet. Still, many leftist figures openly oppose collaboration with the movement’s leaders.
 

@@ -23,7 +23,7 @@ Watch how much the compressed text on the right side changes from a one-letter c
 
 [![][1]]
 
-File-by-File therefore is based on detecting changes in the uncompressed data. To generate a patch, we first decompress both old and new files before computing the delta (we still use bsdiff here). Then to apply the patch, we decompress the old file, apply the delta to the uncompressed content and then recompress the new file. In doing so, we need to make sure that the APK on your device is a perfect match, byte for byte, to the one on the Play Store (see [APK Signature Schema v2]for why).
+File-by-File therefore is based on detecting changes in the uncompressed data. To generate a patch, we first decompress both old and new files before computing the delta (we still use bsdiff here). Then to apply the patch, we decompress the old file, apply the delta to the uncompressed content and then recompress the new file. In doing so, we need to make sure that the APK on your device is a perfect match, byte for byte, to the one on the Play Store (see [APK Signature Schema v2] for why).
 
 When recompressing the new file, we hit two complications. First, Deflate has a number of settings that affect output; and we don’t know which settings were used in the first place. Second, many versions of deflate exist and we need to know whether the version on your device is suitable.
 
