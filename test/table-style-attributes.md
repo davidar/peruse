@@ -1,4 +1,7 @@
-# linux video
+---
+title: linux video
+lang: en
+---
 
 **linux usability  
 …or, why do I bother.**  

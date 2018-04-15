@@ -1,4 +1,8 @@
-# Inside the Deep Web Drug Lab — Backchannel — Medium
+---
+title: Inside the Deep Web Drug Lab — Backchannel — Medium
+author: Joseph Cox
+lang: en
+---
 
 ![][1]
 

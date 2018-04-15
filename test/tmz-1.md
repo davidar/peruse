@@ -1,4 +1,6 @@
-# Lupita Nyong’o’s \$150K Pearl Oscar Dress – STOLEN!!!
+---
+title: Lupita Nyong'o's $150K Pearl Oscar Dress -- STOLEN!!!
+---
 
 ## Lupita Nyong’o
 

@@ -1,4 +1,7 @@
-# draft-dejong-remotestorage-04 - remoteStorage
+---
+title: draft-dejong-remotestorage-04 - remoteStorage
+lang: en
+---
 
 \[[Docs]\] \[[txt]|[pdf]\] \[[Tracker]\] \[[Email]\] \[[Diff1]\] \[[Diff2]\] \[[Nits]\]
 

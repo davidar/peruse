@@ -1,4 +1,8 @@
-# Babies Who Eat Peanuts Early May Avoid Allergy
+---
+title: Babies Who Eat Peanuts Early May Avoid Allergy
+author: 'Brenda Goodman, MA WebMD Health News'
+lang: en
+---
 
 Feb. 23, 2015 – Life-threatening peanut allergies have mysteriously been on the rise in the past decade, with little hope for a cure.
 

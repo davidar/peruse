@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 
-const {memoize} = require('lodash')
-const escapeHTML = require('escape-html')
+const bytes = require('utf8-length')
+const chrono = require('chrono-node')
+const franc = require('franc')
 const fs = require('fs')
 const htmldiff = require('node-htmldiff')
+const iso639 = require('iso-639-3')
 const {JSDOM, VirtualConsole} = require('jsdom')
+const {memoize} = require('lodash')
 const path = require('path')
 const prerender = require('prerender')
 const querystring = require('querystring')
@@ -13,10 +16,16 @@ const {Readability} = require('readability/index')
 const {spawn} = require('child_process')
 const tldjs = require('tldjs')
 const URL = require('url')
+const yaml = require('js-yaml')
 
 const {findNextPageLink} = require('./readability.js')
 
 require('prerender/lib/util').log = console.error
+
+const shortLang = {}
+for (const {iso6391, iso6393} of iso639) shortLang[iso6393] = iso6391
+
+const trailingPunctuation = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-./:;<=>?@[\]^_`{|}~]$/
 
 function removeNode (node) {
   node.parentNode.removeChild(node)
@@ -296,7 +305,10 @@ async function preprocess (window,
     span.outerHTML = span.innerHTML
   }
 
-  let content = document.documentElement.outerHTML
+  let article = {
+    title: document.title,
+    content: document.documentElement.outerHTML
+  }
 
   let {href: nextPageLink, score: nextPageScore} = findNextPageLink(loc, document.body, pages) || {}
   if (nextPageLink) {
@@ -310,15 +322,9 @@ async function preprocess (window,
     }
   }
 
-  let readability = new Readability(null, document)
-  let article = readability.parse()
-
-  if (article && article.content.replace(/<.*?>/g, '').length > 200) {
-    content = ''
-    if (pages.size <= 1) content += '<h1>' + escapeHTML(article.title) + '</h1>'
-    content += article.content
-      .replace(/<(embed|iframe|video|audio) /g, '<img ')
-      .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
+  let parsed = new Readability(null, document).parse()
+  if (parsed && parsed.content.replace(/<.*?>/g, '').length > 200) {
+    article = parsed
   } else if (allowPrerender) {
     let server = await prerenderServer()
     let dom = await fromURL(server + querystring.stringify({
@@ -327,11 +333,26 @@ async function preprocess (window,
       followRedirects: true,
       javascript: ''
     }))
-    content = await preprocess(dom.window, {loc, allowPrerender: false, pages})
+    article = await preprocess(dom.window, {loc, allowPrerender: false, pages})
   }
 
-  if (!content.includes('<h2')) {
-    content = content
+  article.title = article.title.replace(/\s+/g, ' ')
+  if (article.byline) {
+    article.author = article.byline.replace(/\s+/g, ' ').replace(/^by /i, '')
+    let dates = chrono.parse(article.author)
+    if (dates.length > 0) {
+      article.date = dates[0].text
+      article.author = article.author.replace(article.date, '')
+        .trim().replace(trailingPunctuation, '').trim()
+    }
+  }
+
+  article.content = article.content
+    .replace(/<(embed|iframe|video|audio) /g, '<img ')
+    .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
+
+  if (!article.content.includes('<h2')) {
+    article.content = article.content
       .replace(/<h3>(.*?)<\/h3>/g, '<h2>$1</h2>')
       .replace(/<h4>(.*?)<\/h4>/g, '<h3>$1</h3>')
       .replace(/<h5>(.*?)<\/h5>/g, '<h4>$1</h4>')
@@ -341,12 +362,13 @@ async function preprocess (window,
   if (nextPageLink && pages.size < 10) {
     console.error(`Fetching page ${pages.size + 1} from ${nextPageLink}`)
     let dom = await fromURL(nextPageLink)
-    content += await preprocess(dom.window, {pages, lastPageScore: nextPageScore})
+    let rest = await preprocess(dom.window, {pages, lastPageScore: nextPageScore})
+    article.content += rest.content
   } else if (nextPageLink) {
-    content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
+    article.content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
   }
 
-  return content
+  return article
 }
 
 async function postprocess (content, opts) {
@@ -438,7 +460,7 @@ async function hn (id) {
   return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
 }
 
-async function mainURL (url) {
+async function peruse (url, opts = []) {
   let postscript = ''
   if (url.startsWith(HN_URL)) {
     let item = await hn(url.replace(HN_URL, ''))
@@ -453,24 +475,39 @@ async function mainURL (url) {
   url = url.replace('#!', '?_escaped_fragment_=')
 
   let dom = await jsdom(url)
-  if (dom === null) {
+  if (dom === null) return null
+
+  let {title, author, date, content} = await preprocess(dom.window)
+  let md = await postprocess(content + postscript, opts)
+
+  let output = '---\n' + yaml.dump({title}, {lineWidth: 150})
+  if (author) output += yaml.dump({author})
+  if (date) output += yaml.dump({date})
+  if (bytes(md) > 1500) {
+    let lang = franc(md)
+    if (shortLang[lang]) lang = shortLang[lang]
+    output += yaml.dump({lang})
+  }
+  output += '---\n\n' + md
+  return output
+}
+
+async function mainURL (url) {
+  let opts = process.argv.filter(arg => arg.startsWith('-'))
+  let output = await peruse(url, opts)
+  if (output) {
+    await less(output)
+    return 0
+  } else {
     console.error(url + ': unrecognised input')
     return 1
   }
-
-  let content = await preprocess(dom.window)
-  content += postscript
-
-  let opts = process.argv.filter(arg => arg.startsWith('-'))
-  let output = await postprocess(content, opts)
-  await less(output)
-  return 0
 }
 
 async function mainDiff (url1, url2) {
   let opts = ['--atx-headers', '--wrap=none']
-  let text1 = await postprocess(await preprocess((await jsdom(url1)).window), opts)
-  let text2 = await postprocess(await preprocess((await jsdom(url2)).window), opts)
+  let text1 = await peruse(url1, opts)
+  let text2 = await peruse(url2, opts)
   text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
   text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
   if (text1 === text2) {
@@ -489,7 +526,7 @@ async function mainHistory (url, until) {
   let timestamps = await waybackTimestamps(url)
 
   let url1 = `https://web.archive.org/web/${timestamps[0]}/${url}`
-  let text1 = await postprocess(await preprocess((await fromURL(url1)).window), opts)
+  let text1 = await peruse(url1, opts)
   text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
 
   console.log('# Original', timestamps[0])
@@ -499,7 +536,7 @@ async function mainHistory (url, until) {
     const timestamp = timestamps[i]
     if (until && until < timestamp) break
     let url2 = `https://web.archive.org/web/${timestamp}/${url}`
-    let text2 = await postprocess(await preprocess((await fromURL(url2)).window), opts)
+    let text2 = await peruse(url2, opts)
     text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
     if (text1 === text2) {
       console.error('No changes', timestamp)

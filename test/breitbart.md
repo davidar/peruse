@@ -1,4 +1,8 @@
-# ‘Neutral’ Snopes Fact-Checker David Emery: ‘Are There Any Un-Angry Trump Supporters?’
+---
+title: '''Neutral'' Snopes Fact-Checker David Emery: ''Are There Any Un-Angry Trump Supporters?'''
+author: Lucas Nolan22 Dec 2016651
+lang: en
+---
 
 ![Supporters of Republican presidential nominee Donald Trump cheer during election night at the New York Hilton Midtown in New York on November 9, 2016. / AFP / JIM WATSON (Photo credit should read JIM WATSON/AFP/Getty Images)]
 

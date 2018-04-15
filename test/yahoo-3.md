@@ -1,4 +1,9 @@
-# Veteran Wraps Baby in American Flag, Photo Sparks Controversy
+---
+title: 'Veteran Wraps Baby in American Flag, Photo Sparks Controversy'
+author: GILLIAN MOHNEY
+date: 'March 11, 2015 3:46 PM'
+lang: en
+---
 
 ‘GMA’ Cookie Search:
 

@@ -1,4 +1,7 @@
-# Bartleby the Scrivener Web Study Text
+---
+title: Bartleby the Scrivener Web Study Text
+lang: en
+---
 
 ### Study Webtext
 

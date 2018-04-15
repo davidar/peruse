@@ -1,4 +1,7 @@
-# 1Password für Mac generiert Einmal-Passwörter
+---
+title: 1Password für Mac generiert Einmal-Passwörter
+lang: de
+---
 
 ![1Password scannt auch QR-Codes. ¶ (Bild: Hersteller)]
 

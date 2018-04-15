@@ -1,4 +1,7 @@
-# Raspberry Pi 3 - The credit card sized PC that cost only \$35 - All-time bestselling computer in UK
+---
+title: Raspberry Pi 3 - The credit card sized PC that cost only $35 - All-time bestselling computer in UK
+lang: en
+---
 
 The Raspberry Pi Foundation started by a handful of volunteers in 2012 when they released the original Raspberry Pi 256MB Model B without knowing what to expect.  In a short four-year period they have grown to over sixty full-time employees and have shipped over **eight million** units to-date.  Raspberry Pi has achieved new heights by being shipped to the International Space Station for research and by being an affordable computing platforms used by teachers throughout the world.  “It has become the all-time best-selling computer in the UK”.
 

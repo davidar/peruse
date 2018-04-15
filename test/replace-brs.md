@@ -1,4 +1,6 @@
-# Replace brs test
+---
+title: Replace brs test
+---
 
 Lorem ipsumdolor sit
 

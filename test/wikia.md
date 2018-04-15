@@ -1,4 +1,8 @@
-# ‘Star Wars’ Original Cuts Might Get Released for 40th Anniversary
+---
+title: '''Star Wars'' Original Cuts Might Get Released for 40th Anniversary'
+author: James Akinaka
+lang: en
+---
 
 Although Lucasfilm is already planning a birthday bash for the Star Wars Saga at [Celebration Orlando] this April, fans might get another present for the saga’s 40th anniversary. According to fan site [MakingStarWars.net], rumors abound that Lucasfilm might re-release the unaltered cuts of the saga’s original trilogy.
 

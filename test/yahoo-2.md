@@ -1,4 +1,8 @@
-# Russia: Space ship malfunctions, breaks up over Siberia
+---
+title: 'Russia: Space ship malfunctions, breaks up over Siberia'
+author: NATALIYA VASILYEVA
+lang: en
+---
 
 1 / 5
 

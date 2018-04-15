@@ -1,4 +1,7 @@
-# Daring Fireball: Colophon
+---
+title: 'Daring Fireball: Colophon'
+lang: en
+---
 
 Daring Fireball is written and produced by John Gruber.
 

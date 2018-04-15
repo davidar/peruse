@@ -1,4 +1,9 @@
-# LWN.net Weekly Edition for March 26, 2015 \[LWN.net\]
+---
+title: 'LWN.net Weekly Edition for March 26, 2015 [LWN.net]'
+author: Nathan Willis
+date: 'March 25, 2015'
+lang: en
+---
 
 ## [A trademark battle in the Arduino community]
 

@@ -1,4 +1,7 @@
-# Teller Reveals His Secrets | Arts & Culture
+---
+title: Teller Reveals His Secrets | Arts & Culture
+lang: en
+---
 
 According to magician Teller, “Neuroscientists are novices at deception. Magicians have done controlled testing in human perception for thousands of years.” (Jared McMillen / Aurora Select)
 

@@ -1,5 +1,3 @@
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 {--![][1]--}
 
 {++![][2]++}

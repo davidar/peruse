@@ -1,4 +1,8 @@
-# Better Student Journalism — Medium
+---
+title: Better Student Journalism — Medium
+author: Pippin Lee
+lang: en
+---
 
 ## Open Journalism Project:
 

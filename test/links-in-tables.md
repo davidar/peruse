@@ -1,4 +1,7 @@
-# Saving Data: Reducing the size of App Updates by 65%
+---
+title: 'Saving Data: Reducing the size of App Updates by 65%'
+lang: en
+---
 
 *Posted by Andrew Hayden, Software Engineer on Google Play*
 

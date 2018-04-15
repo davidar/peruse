@@ -1,4 +1,6 @@
-# Test script parsing
+---
+title: Test script parsing
+---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 

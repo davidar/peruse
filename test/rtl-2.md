@@ -1,4 +1,6 @@
-# RTL Test
+---
+title: RTL Test
+---
 
 Lorem ipsum dolor sit amet.
 

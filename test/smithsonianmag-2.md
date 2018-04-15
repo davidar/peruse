@@ -1,4 +1,8 @@
-# Giraffes Silently Slip Onto the Endangered Species List | Smart News
+---
+title: Giraffes Silently Slip Onto the Endangered Species List | Smart News
+author: Jason Daley
+lang: en
+---
 
 ### [SmartNews Keeping you current]
 

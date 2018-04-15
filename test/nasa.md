@@ -1,4 +1,7 @@
-# Voyager 1 Fires Up Thrusters After 37 Years
+---
+title: Voyager 1 Fires Up Thrusters After 37 Years
+lang: en
+---
 
 [![Artist’s concept of Voyager]]
 

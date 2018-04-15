@@ -1,4 +1,7 @@
-# Welcome to Firefox Developer Edition
+---
+title: Welcome to Firefox Developer Edition
+lang: en
+---
 
 Get to know the features that make it the most complete browser for building the Web.
 

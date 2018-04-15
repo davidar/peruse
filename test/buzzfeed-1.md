@@ -1,4 +1,8 @@
-# Student Dies After Diet Pills She Bought Online “Burned Her Up From Within”
+---
+title: Student Dies After Diet Pills She Bought Online "Burned Her Up From Within"
+author: Mark Di Stefano
+lang: en
+---
 
 ## The mother of a woman who took suspected diet pills bought online has described how her daughter was “literally burning up from within” moments before her death.
 

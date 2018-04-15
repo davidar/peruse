@@ -1,4 +1,7 @@
-# Una solución no violenta para la cuestión mapuche - 07.12.2017
+---
+title: Una solución no violenta para la cuestión mapuche - 07.12.2017
+lang: es
+---
 
 Los pueblos indígenas reclaman por derechos que permanecen incumplidos, por eso es más eficiente canalizar la protesta que reprimirla
 

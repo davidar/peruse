@@ -1,4 +1,8 @@
-# Superbugs: What They Are and How You Get Them
+---
+title: 'Superbugs: What They Are and How You Get Them'
+author: Kelli Miller WebMD Health News
+lang: en
+---
 
 April 17, 2015 – Imagine being sick in the hospital with a [bacterial infection] and doctors can’t stop it from spreading. This so-called “superbug” scenario is not science fiction. It’s an urgent, worldwide worry that is prompting swift action.
 

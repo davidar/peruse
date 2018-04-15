@@ -1,5 +1,9 @@
 # Original 20121214173049
-# Shooting Reported at Connecticut Elementary School
+---
+title: Shooting Reported at Connecticut Elementary School
+author: THE NEW YORK TIMES
+lang: en
+---
 
 ![][1]
 
@@ -28,7 +32,11 @@ According to a local newspaper, [The Newtown Bee], shortly after 9:30 a.m. on Fr
   [The Newtown Bee]: http://www.nytimes.com/2012/12/15/nyregion/%20http:/newtownbee.com/%20%20
 
 # Rewrite 20121214181358
-# Shooting Reported at Connecticut Elementary School
+---
+title: Shooting Reported at Connecticut Elementary School
+author: THE NEW YORK TIMES
+lang: en
+---
 
 ![][1]
 
@@ -62,7 +70,11 @@ According to a local newspaper, [The Newtown Bee], shortly after 9:30 a.m. on Fr
   [The Newtown Bee]: http://www.newtownbee.com/
 
 # Rewrite 20121215032153
-# Gunman Kills 20 Schoolchildren in Connecticut
+---
+title: Gunman Kills 20 Schoolchildren in Connecticut
+author: JAMES BARRON
+lang: en
+---
 
 ![][1]
 
@@ -143,8 +155,6 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121215042128
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 ![][1]
 
 Richard Perry/The New York Times
@@ -234,8 +244,6 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121215055204
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 {--![][1]--}
 
 {++![][2]++}
@@ -330,8 +338,6 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121215093952
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 ![][1]
 
 Karsten Moran for The New York Times
@@ -415,8 +421,6 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121215143005
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 {--![][1]--}
 
 {++![][2]++}
@@ -513,8 +517,6 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121216182457
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 ![][1]
 
 Don Emmert/Agence France-Presse — Getty Images
@@ -633,8 +635,6 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121217184325
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 ![][1]
 
 Don Emmert/Agence France-Presse — Getty Images
@@ -765,8 +765,6 @@ An earlier version of this article, based on news reports at the time, indicated
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121219133531
-# Gunman Kills 20 Schoolchildren in Connecticut
-
 ![][1]
 
 Don Emmert/Agence France-Presse — Getty Images

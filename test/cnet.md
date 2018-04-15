@@ -1,4 +1,8 @@
-# Zuckerberg offers peek at Facebook’s acquisition strategies
+---
+title: Zuckerberg offers peek at Facebook's acquisition strategies
+author: Steven Musil
+lang: en
+---
 
 ![Facebook CEO Mark Zuckerberg, the man with the acquisition plan. ¶ Photo by James Martin/CNET]
 

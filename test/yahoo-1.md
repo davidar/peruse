@@ -1,4 +1,8 @@
-# These are the 8 coolest PlayStation VR games
+---
+title: These are the 8 coolest PlayStation VR games
+author: Ben Silverman
+lang: en
+---
 
 ![Sony’s PlayStation VR.]
 

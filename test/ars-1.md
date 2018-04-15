@@ -1,4 +1,9 @@
-# Just-released Minecraft exploit makes it easy to crash game servers
+---
+title: Just-released Minecraft exploit makes it easy to crash game servers
+author: Dan Goodin
+date: 'Apr 16, 2015 8:02 pm UTC'
+lang: en
+---
 
 ![][1]
 

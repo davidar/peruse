@@ -1,4 +1,7 @@
-# Stack Overflow Jobs Data Shows ReactJS Skills in High Demand, WordPress Market Oversaturated with Developers – WordPress Tavern
+---
+title: 'Stack Overflow Jobs Data Shows ReactJS Skills in High Demand, WordPress Market Oversaturated with Developers – WordPress Tavern'
+lang: en
+---
 
 [![][1]]
 

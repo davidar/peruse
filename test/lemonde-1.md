@@ -1,4 +1,7 @@
-# Le projet de loi sur le renseignement massivement approuvé à l’Assemblée
+---
+title: Le projet de loi sur le renseignement massivement approuvé à l'Assemblée
+lang: fr
+---
 
 Le Monde | 04.05.2015 à 13h36 • Mis à jour le 05.05.2015 à 20h13 | Par [Martin Untersinger] (avec Damien Leloup et Morgane Tual)
 
