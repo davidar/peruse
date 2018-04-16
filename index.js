@@ -16,6 +16,7 @@ const r2 = require('r2')
 const {Readability} = require('readability/index')
 const {spawn} = require('child_process')
 const tldjs = require('tldjs')
+const tmp = require('tmp')
 const URL = require('url')
 const yaml = require('js-yaml')
 
@@ -69,9 +70,9 @@ async function sigint () {
   })
 }
 
-async function readStream (stream) {
+async function readStream (stream, encoding = 'utf8') {
   let chunks = []
-  stream.setEncoding('utf8')
+  if (encoding) stream.setEncoding(encoding)
   stream.on('data', [].push.bind(chunks))
   await eof(stream)
   return chunks.join('')
@@ -573,15 +574,27 @@ async function mainHistory (url, until) {
 async function mainServer (port = 4343) {
   let app = express()
   app.use('/static', express.static(path.join(__dirname, 'static')))
-  app.get('/html/:url(*)', async (req, res, next) => {
+  app.get('/:format/:url(*)', async (req, res, next) => {
     try {
-      let url = req.params.url
+      let {format, url} = req.params
       let qstr = URL.parse(req.url).search
       if (qstr) url += qstr
       let output = await peruse(url, [], false)
-      if (output) {
+      if (!output) return res.sendStatus(404)
+
+      if (['text', 'markdown', 'md'].includes(format)) {
+        res.type(format).send(output)
+      } else if (format === 'html') {
         let html = await pipe('pandoc', output, '--standalone', '--css=/static/peruse.css')
         res.send(html)
+      } else if (format === 'pdf') {
+        let tmpDir = tmp.dirSync({unsafeCleanup: true})
+        let tmpFile = path.join(tmpDir.name, 'out.pdf')
+        await pipe('pandoc', output, '-o', tmpFile)
+        res.sendFile(tmpFile, err => {
+          tmpDir.removeCallback()
+          if (err) next(err)
+        })
       } else {
         res.sendStatus(404)
       }
