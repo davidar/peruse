@@ -571,9 +571,32 @@ async function mainHistory (url, until) {
   return 0
 }
 
+function rewriteLinks (html, format) {
+  let dom = new JSDOM(html, optionsJSDOM)
+  let body = dom.window.document.body
+  forEachR(body.getElementsByTagName('a'), link => {
+    link.href = `/${format}/${link.href}`
+  })
+  forEachR(body.getElementsByTagName('img'), image => {
+    image.src = '/image/1x/' + image.src
+  })
+  forEachR(body.querySelectorAll('p>img'), image => {
+    let par = image.parentNode
+    if (!par.textContent.trim()) par.outerHTML = '<figure>' + image.outerHTML + '</figure>'
+  })
+  return dom.serialize()
+}
+
 async function mainServer (port = 4343) {
+  const pandocFormats = (await pipe('pandoc', '', '--list-output-formats')).trim().split('\n')
   let app = express()
   app.use('/static', express.static(path.join(__dirname, 'static')))
+  app.get('/image/:opt/:url(*)', (req, res) => {
+    let {opt, url} = req.params
+    let qstr = URL.parse(req.url).search
+    if (qstr) url += qstr
+    if (opt === '1x') res.redirect(url)
+  })
   app.get('/:format/:url(*)', async (req, res, next) => {
     try {
       let {format, url} = req.params
@@ -586,6 +609,7 @@ async function mainServer (port = 4343) {
         res.type(format).send(output)
       } else if (format === 'html') {
         let html = await pipe('pandoc', output, '--standalone', '--css=/static/peruse.css')
+        html = rewriteLinks(html, format)
         res.send(html)
       } else if (format === 'pdf') {
         let tmpDir = tmp.dirSync({unsafeCleanup: true})
@@ -595,6 +619,9 @@ async function mainServer (port = 4343) {
           tmpDir.removeCallback()
           if (err) next(err)
         })
+      } else if (pandocFormats.includes(format)) {
+        output = await pipe('pandoc', output, '-t', format, '--reference-links', '--standalone')
+        res.type('text').send(output)
       } else {
         res.sendStatus(404)
       }

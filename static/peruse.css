@@ -31,10 +31,10 @@ h3, header .author {
     font-size: 1.25rem;
 }
 
-a {
+a, a:visited {
   color: #bd1c2b;
 }
-a:hover {
+a:hover, a:active {
   color: #84141e;
 }
 
