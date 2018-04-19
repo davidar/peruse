@@ -5,14 +5,14 @@ for file in test/*.md; do
     base=`basename $file .md`
     echo -n "$base... "
 
-    if [ -e test/$base.href ]; then
+    href=""
+    if [ -e test/$base.href ] && [ "$1" != "fast" ]; then
         href=`cat test/$base.href`
     elif [ -e test/$base.html ]; then
         href=test/$base.html
-    elif [ -x test/$base.sh ]; then
-        href=""
+    elif [ -x test/$base.sh ] && [ "$1" != "fast" ]; then
         test/$base.sh > test.out
-    else
+    elif [ -e readability/test/test-pages/$base/source.html ]; then
         href=readability/test/test-pages/$base/source.html
     fi
 
@@ -20,7 +20,9 @@ for file in test/*.md; do
         ./index.js $href --atx-headers --wrap=none > test.out
     fi
 
-    if diff -q $file test.out >/dev/null; then
+    if [ -z "$href" ] && [ "$1" = "fast" ]; then
+        echo SKIP
+    elif diff -q $file test.out >/dev/null; then
         echo PASS
     else
         echo FAIL
