@@ -2,6 +2,7 @@
 
 const bytes = require('utf8-length')
 const chrono = require('chrono-node')
+const eventToPromise = require('event-to-promise')
 const express = require('express')
 const franc = require('franc')
 const fs = require('fs')
@@ -9,6 +10,7 @@ const htmldiff = require('node-htmldiff')
 const iso639 = require('iso-639-3')
 const {JSDOM, VirtualConsole} = require('jsdom')
 const {memoize} = require('lodash')
+const {pandoc} = require('nodejs-sh')
 const path = require('path')
 const prerender = require('prerender')
 const querystring = require('querystring')
@@ -29,60 +31,10 @@ for (const {iso6391, iso6393} of iso639) shortLang[iso6393] = iso6391
 
 const trailingPunctuation = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-./:;<=>?@[\]^_`{|}~]$/
 
-function removeNode (node) {
-  node.parentNode.removeChild(node)
-}
-
-function removeNodes (nodes) {
-  for (let i = nodes.length - 1; i >= 0; i--) removeNode(nodes[i])
-}
-
-function nonempty (node) {
-  return node.textContent.trim() || node.querySelector('img')
-}
-
-function forEachR (a, f) {
-  for (let i = a.length - 1; i >= 0; i--) f(a[i])
-}
-
-async function waitProcess (proc) {
-  return new Promise((resolve, reject) => {
-    proc.on('close', code => {
-      if (code === 0) {
-        resolve()
-      } else {
-        reject(new Error(`child process exited with code ${code}`))
-      }
-    })
-  })
-}
-
-async function eof (stream) {
-  return new Promise((resolve, reject) => {
-    stream.on('end', resolve)
-    stream.on('error', reject)
-  })
-}
-
-async function sigint () {
-  return new Promise((resolve, reject) => {
-    process.on('SIGINT', resolve)
-  })
-}
-
-async function readStream (stream, encoding = 'utf8') {
-  let chunks = []
-  if (encoding) stream.setEncoding(encoding)
-  stream.on('data', [].push.bind(chunks))
-  await eof(stream)
-  return chunks.join('')
-}
-
-async function pipe (name, input, ...args) {
-  let proc = spawn(name, args, {stdio: ['pipe', 'pipe', process.stderr]})
-  proc.stdin.end(input)
-  return readStream(proc.stdout)
-}
+const forEachR = (a, f) => { for (let i = a.length - 1; i >= 0; i--) f(a[i]) }
+const nonempty = node => node.textContent.trim() || node.querySelector('img')
+const removeNode = node => node.parentNode.removeChild(node)
+const removeNodes = nodes => forEachR(nodes, removeNode)
 
 async function less (output) {
   if (process.stdout.isTTY && output.split(/\n/).length >= process.stdout.rows) {
@@ -90,7 +42,7 @@ async function less (output) {
       stdio: ['pipe', process.stdout, process.stderr]
     })
     less.stdin.end(output)
-    await waitProcess(less)
+    await eventToPromise(less, 'close')
   } else {
     process.stdout.write(output)
   }
@@ -315,8 +267,7 @@ async function preprocess (window,
 
   removeNodes(document.getElementsByClassName('mw-editsection'))
 
-  let span
-  while ((span = document.querySelector('span'))) {
+  for (let span; (span = document.querySelector('span'));) {
     span.outerHTML = span.innerHTML
   }
 
@@ -404,10 +355,10 @@ async function postprocess (content, opts) {
     '-raw_html',
     '-simple_tables'
   ].join('')
-  let output = await pipe('pandoc', content, '--from=html',
-    '--to=' + markdown + '-smart', '--reference-links')
-  return pipe('pandoc', output, '--from=' + markdown,
-    '--to=' + markdown + '-smart', '--reference-links', ...opts)
+  let output = await pandoc('--from=html',
+    '--to=' + markdown + '-smart', '--reference-links').end(content).toString()
+  return pandoc('--from=' + markdown,
+    '--to=' + markdown + '-smart', '--reference-links', ...opts).end(output).toString()
 }
 
 function postprocessDiff (html) {
@@ -452,7 +403,7 @@ function postprocessDiff (html) {
 }
 
 async function diff (text1, text2) {
-  let html = htmldiff(await pipe('pandoc', text1), await pipe('pandoc', text2))
+  let html = htmldiff(await pandoc().end(text1).toString(), await pandoc().end(text2).toString())
   let unmodified = html.replace(/<del.*?del>/g, '').replace(/<ins.*?ins>/g, '')
   let similarity = unmodified.length / html.length
   if (similarity < 0.5) {
@@ -460,9 +411,9 @@ async function diff (text1, text2) {
     return null
   }
   html = postprocessDiff(html)
-  let output = await pipe('pandoc', html, '--from=html',
+  let output = await pandoc('--from=html',
     '--to=markdown-bracketed_spans-header_attributes-smart',
-    '--reference-links', '--atx-headers', '--wrap=none')
+    '--reference-links', '--atx-headers', '--wrap=none').end(html).toString()
   output = output
     .replace(/<span class="sub"><span class="del">(.*?)<\/span><span class="ins">(.*?)<\/span><\/span>/g, '{~~$1~>$2~~}')
     .replace(/<span class="del">(.*?)<\/span>/g, '{--$1--}')
@@ -588,7 +539,7 @@ function rewriteLinks (html, format) {
 }
 
 async function mainServer (port = 4343) {
-  const pandocFormats = (await pipe('pandoc', '', '--list-output-formats')).trim().split('\n')
+  const pandocFormats = (await pandoc('--list-output-formats').toString()).trim().split('\n')
   let app = express()
   app.use('/static', express.static(path.join(__dirname, 'static')))
   app.get('/image/:opt/:url(*)', (req, res) => {
@@ -608,19 +559,19 @@ async function mainServer (port = 4343) {
       if (['text', 'markdown', 'md'].includes(format)) {
         res.type(format).send(output)
       } else if (format === 'html') {
-        let html = await pipe('pandoc', output, '--standalone', '--css=/static/peruse.css')
+        let html = await pandoc('--standalone', '--css=/static/peruse.css').end(output).toString()
         html = rewriteLinks(html, format)
         res.send(html)
       } else if (format === 'pdf') {
         let tmpDir = tmp.dirSync({unsafeCleanup: true})
         let tmpFile = path.join(tmpDir.name, 'out.pdf')
-        await pipe('pandoc', output, '-o', tmpFile)
+        await pandoc('-o', tmpFile).end(output)
         res.sendFile(tmpFile, err => {
           tmpDir.removeCallback()
           if (err) next(err)
         })
       } else if (pandocFormats.includes(format)) {
-        output = await pipe('pandoc', output, '-t', format, '--reference-links', '--standalone')
+        output = await pandoc('-t', format, '--reference-links', '--standalone').end(output).toString()
         res.type('text').send(output)
       } else {
         res.sendStatus(404)
@@ -630,7 +581,7 @@ async function mainServer (port = 4343) {
     }
   })
   app.listen(port, () => console.log(`Server running: http://localhost:${port}/`))
-  await sigint()
+  await eventToPromise(process, 'SIGINT')
   console.log('Stopping server')
 }
 
