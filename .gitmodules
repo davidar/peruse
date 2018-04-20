@@ -4,3 +4,6 @@
 [submodule "Markdown-CSS"]
 	path = Markdown-CSS
 	url = ../Markdown-CSS.git
+[submodule "language-gfm"]
+	path = language-gfm
+	url = https://github.com/atom/language-gfm.git
