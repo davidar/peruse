@@ -10,10 +10,6 @@ But a new report released on Monday by [Stanford University’s Center on Povert
 
 The report assessed poverty levels, income and wealth inequality, economic mobility and unemployment levels among 10 wealthy countries with social welfare programs.
 
-Powered by SmartAsset.com
-
-![][1]
-
 Among its key findings: the class you’re born into matters much more in the U.S. than many of the other countries.
 
 As the [report states][]: “\[T\]he birth lottery matters more in the U.S. than in most well-off countries.”
@@ -47,7 +43,6 @@ The report concluded that the American safety net was ineffective because it pro
 CNNMoney (New York) First published February 1, 2016: 1:28 AM ET
 
   [Stanford University’s Center on Poverty and Inequality]: http://web.stanford.edu/group/scspi-dev/cgi-bin/
-  [1]: https://smrt.as/ck
   [report states]: http://web.stanford.edu/group/scspi-dev/cgi-bin/publications/state-union-report
   [Related: Rich are paying more in taxes but not as much as they used to]: http://money.cnn.com/2016/01/11/news/economy/rich-taxes/index.html?iid=EL
   [Related: Chicago is America’s most segregated city]: http://money.cnn.com/2016/01/05/news/economy/chicago-segregated/index.html?iid=EL

@@ -107,55 +107,62 @@ function srcsetMax (srcset) {
   return urlBest
 }
 
-function applyFilterList (fname, body, domain) {
-  let classes = new Set()
-  let ids = new Set()
-  let selectors = []
-  let domainSelectors = {}
+class FilterList {
+  constructor () {
+    this.classes = new Set()
+    this.ids = new Set()
+    this.selectors = []
+    this.domainSelectors = {}
+  }
 
-  let lines = fs.readFileSync(path.resolve(__dirname, fname), 'ascii').split('\n')
-  for (const line of lines) {
+  load (fname) {
+    let rules = fs.readFileSync(path.resolve(__dirname, fname), 'ascii')
+    for (const line of rules.split('\n')) this.addRule(line)
+  }
+
+  addRule (line) {
+    if (line.match(/#[@?]#/)) return // TODO: parse exception rules
     let rule = line.split('##') // cosmetic filters
-    if (rule.length !== 2) continue
+    if (rule.length !== 2) return
     let [domains, selector] = rule
-
-    // skip rules that trigger syntax errors
-    if (selector.includes('onclick^') || selector.includes('[body]')) continue
 
     if (domains === '') { // generic filter
       if (selector.startsWith('.')) {
-        classes.add(selector.slice(1))
+        this.classes.add(selector.slice(1))
       } else if (selector.startsWith('#')) {
-        ids.add(selector.slice(1))
+        this.ids.add(selector.slice(1))
       } else {
-        selectors.push(selector)
+        this.selectors.push(selector)
       }
-      continue
+      return
     }
 
     for (const domain of domains.split(',')) {
-      if (!domainSelectors[domain]) domainSelectors[domain] = []
-      domainSelectors[domain].push(selector)
+      if (!this.domainSelectors[domain]) this.domainSelectors[domain] = []
+      this.domainSelectors[domain].push(selector)
     }
   }
 
-  forEachR(body.querySelectorAll('[class]'), node => {
-    for (let i = 0; i < node.classList.length; i++) {
-      if (classes.has(node.classList[i])) {
-        removeNode(node)
-        break
+  filter (body, domain) {
+    forEachR(body.querySelectorAll('[class]'), node => {
+      if (Array.from(node.classList).some(c => this.classes.has(c))) removeNode(node)
+    })
+
+    forEachR(body.querySelectorAll('[id]'), node => {
+      if (this.ids.has(node.id)) removeNode(node)
+    })
+
+    for (const selector of this.selectors) {
+      try {
+        removeNodes(body.querySelectorAll(selector))
+      } catch (e) {
+        console.error('unable to parse selector:', selector)
       }
     }
-  })
 
-  forEachR(body.querySelectorAll('[id]'), node => {
-    if (ids.has(node.id)) removeNode(node)
-  })
-
-  removeNodes(body.querySelectorAll(selectors.join()))
-
-  if (domainSelectors[domain]) {
-    removeNodes(body.querySelectorAll(domainSelectors[domain].join()))
+    if (this.domainSelectors[domain]) {
+      removeNodes(body.querySelectorAll(this.domainSelectors[domain].join()))
+    }
   }
 }
 
@@ -235,7 +242,11 @@ async function preprocess (window,
   }
 
   let domain = tldjs.getDomain(loc.href)
-  applyFilterList('easylist/fanboy-annoyance.txt', document.body, domain)
+  let filterList = new FilterList()
+  filterList.load('easylist/easylist.txt')
+  filterList.load('easylist/fanboy-annoyance.txt')
+  filterList.addRule('independent.co.uk##.type-gallery')
+  filterList.filter(document.body, domain)
 
   removeNodes(document.body.querySelectorAll('[class*="hidden"]'))
 
