@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const {AdBlockClient, FilterOptions} = require('ad-block')
 const bytes = require('utf8-length')
 const chalk = require('chalk')
 const chrono = require('chrono-node')
@@ -113,11 +114,23 @@ class FilterList {
     this.ids = new Set()
     this.selectors = []
     this.domainSelectors = {}
+    this.client = new AdBlockClient()
   }
 
   load (fname) {
-    let rules = fs.readFileSync(path.resolve(__dirname, fname), 'ascii')
+    fname = path.resolve(__dirname, fname)
+    let rules = fs.readFileSync(fname, 'ascii')
     for (const line of rules.split('\n')) this.addRule(line)
+
+    fname = fname + '.dat'
+    if (fs.existsSync(fname)) {
+      this.client.deserialize(fs.readFileSync(fname))
+    } else {
+      console.error('parsing rules')
+      this.client.parse(rules)
+      console.error('serialising rules')
+      fs.writeFileSync(fname, this.client.serialize())
+    }
   }
 
   addRule (line) {
@@ -163,6 +176,10 @@ class FilterList {
     if (this.domainSelectors[domain]) {
       removeNodes(body.querySelectorAll(this.domainSelectors[domain].join()))
     }
+
+    forEachR(body.getElementsByTagName('img'), image => {
+      if (this.client.matches(image.src, FilterOptions.image, domain)) removeNode(image)
+    })
   }
 }
 
