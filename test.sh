@@ -1,6 +1,9 @@
 #!/bin/sh
 export TZ=UTC
 
+./index.js server --unsafe-local --atx-headers --wrap=none & sleep 3
+PID=$!
+
 for file in test/*.md; do
     base=`basename $file .md`
     echo -n "$base... "
@@ -17,7 +20,7 @@ for file in test/*.md; do
     fi
 
     if [ -n "$href" ]; then
-        ./index.js $href --atx-headers --wrap=none > test.out
+        curl -s http://localhost:4343/text/$href > test.out
     fi
 
     if [ -z "$href" ] && [ "$1" = "fast" ]; then
@@ -30,9 +33,12 @@ for file in test/*.md; do
         if [ "$1" = "update" ]; then
             mv -f test.out $file
         else
+            kill -INT $PID
             exit 1
         fi
     fi
 
     rm -f test.out
 done
+
+kill -INT $PID

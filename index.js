@@ -571,6 +571,7 @@ function rewriteLinks (html, format) {
 }
 
 async function mainServer (port = 4343) {
+  let opts = process.argv.filter(arg => arg.startsWith('-') && arg !== '--unsafe-local')
   const pandocFormats = (await pandoc('--list-output-formats').toString()).trim().split('\n')
   let app = express()
   app.use('/static', express.static(path.join(__dirname, 'static')))
@@ -585,7 +586,7 @@ async function mainServer (port = 4343) {
       let {format, url} = req.params
       let qstr = URL.parse(req.url).search
       if (qstr) url += qstr
-      let output = await peruse(url, [], false)
+      let output = await peruse(url, opts, process.argv.includes('--unsafe-local'))
       if (!output) return res.sendStatus(404)
 
       if (['text', 'markdown', 'md'].includes(format)) {
