@@ -205,6 +205,7 @@ const waybackTimestamps = memoize(async (url) => {
     url
   })
   let resp = await fetchText(cdx)
+  if (!resp.trim()) return null
   return resp.trim().split('\n')
 })
 
@@ -217,6 +218,10 @@ async function waybackRewrite (url) {
     url = match[2]
     let timestamp = match[1]
     let timestamps = await waybackTimestamps(url)
+    if (timestamps === null) {
+      console.error('Page not archived:', url)
+      return null
+    }
     let i = timestamps.findIndex(t => t > timestamp)
     if (i > 0) i--; else if (i < 0) i = timestamps.length - 1
     url = `https://web.archive.org/web/${timestamps[i]}/${url}`
@@ -229,6 +234,7 @@ async function jsdom (url, allowLocal = false) {
   let parsed = URL.parse(url)
   if (parsed.protocol && parsed.hostname) {
     url = await waybackRewrite(url)
+    if (url === null) return null
     let html = await fetchText(url)
     return new JSDOM(html, {virtualConsole, url})
   } else if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
@@ -367,7 +373,7 @@ async function preprocess (window,
     forEachR(document.getElementsByTagName('a'), link => {
       if (link.href === nextPageLink + '/') nextPageLink = link.href
     })
-    if ((pages.size === 1 && !nextPageLink.startsWith(loc.href)) ||
+    if ((pages.size === 1 && !nextPageLink.replace('www.', '').startsWith(loc.href.replace('www.', ''))) ||
         nextPageScore < lastPageScore - 50) {
       console.error('Skipping inconsistent next page link', nextPageLink)
       nextPageLink = null
@@ -414,8 +420,10 @@ async function preprocess (window,
   if (nextPageLink && pages.size < 10) {
     console.error(`Fetching page ${pages.size + 1} from ${nextPageLink}`)
     let dom = await jsdom(nextPageLink)
-    let rest = await preprocess(dom.window, {pages, lastPageScore: nextPageScore})
-    article.content += rest.content
+    if (dom) {
+      let rest = await preprocess(dom.window, {pages, lastPageScore: nextPageScore})
+      article.content += rest.content
+    }
   } else if (nextPageLink) {
     article.content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
   }
