@@ -334,7 +334,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [Chris Cannon]: https://en.wikipedia.org/wiki/Chris_Cannon "Chris Cannon"
   [JavaScript]: https://en.wikipedia.org/wiki/Brendan_Eich#Netscape_and_JavaScript "Brendan Eich"
   [publicity stunt]: https://en.wikipedia.org/wiki/Publicity_stunt "Publicity stunt"
-  [1]: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mozilla_Firefox_logo_2013.svg/440px-Mozilla_Firefox_logo_2013.svg.png
+  [1]: //upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mozilla_Firefox_logo_2013.svg/440px-Mozilla_Firefox_logo_2013.svg.png
   [![][1]]: https://en.wikipedia.org/wiki/File:Mozilla_Firefox_logo_2013.svg
   [web browser]: https://en.wikipedia.org/wiki/Web_browser "Web browser"
   [flagship]: https://en.wikipedia.org/wiki/Flagship_product "Flagship product"
@@ -377,7 +377,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [the Mozilla Foundation]: https://en.wikipedia.org/wiki/The_Mozilla_Foundation "The Mozilla Foundation"
   [5]: https://en.wikipedia.org/wiki/Mozilla_Firefox "Mozilla Firefox"
   [trademarked]: https://en.wikipedia.org/wiki/Trademark "Trademark"
-  [6]: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Buggie.svg/440px-Buggie.svg.png
+  [6]: //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Buggie.svg/440px-Buggie.svg.png
   [![][6]]: https://en.wikipedia.org/wiki/File:Buggie.svg
   [web]: https://en.wikipedia.org/wiki/World_Wide_Web "World Wide Web"
   [bug tracking system]: https://en.wikipedia.org/wiki/Bug_tracking_system "Bug tracking system"
@@ -438,11 +438,11 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [Mozilla Developer Network]: https://en.wikipedia.org/wiki/Mozilla_Developer_Network "Mozilla Developer Network"
   [CSS]: https://en.wikipedia.org/wiki/CSS "CSS"
   [9]: https://en.wikipedia.org/wiki/SVG "SVG"
-  [10]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/London_Mozilla_Workspace.jpg/440px-London_Mozilla_Workspace.jpg
+  [10]: //upload.wikimedia.org/wikipedia/commons/thumb/2/2a/London_Mozilla_Workspace.jpg/440px-London_Mozilla_Workspace.jpg
   [![][10]]: https://en.wikipedia.org/wiki/File:London_Mozilla_Workspace.jpg
-  [11]: https://upload.wikimedia.org/wikipedia/commons/0/0b/Mozilla_Reps.png
+  [11]: //upload.wikimedia.org/wikipedia/commons/0/0b/Mozilla_Reps.png
   [![][11]]: https://en.wikipedia.org/wiki/File:Mozilla_Reps.png
-  [12]: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg/440px-Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
+  [12]: //upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg/440px-Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
   [![][12]]: https://en.wikipedia.org/wiki/File:Fireside_Chat,_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
   [Knight Foundation]: https://en.wikipedia.org/wiki/Knight_Foundation "Knight Foundation"
   [-zilla (suffix)]: https://en.wikipedia.org/wiki/-zilla_(suffix) "-zilla (suffix)"
@@ -529,7 +529,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“Air Mozilla”]: https://wiki.mozilla.org/Air_Mozilla
   [“Air Mozilla Reboot, Phase I”]: https://blog.mozilla.org/mrz/2012/04/17/air-mozilla-reboot-phase-i/
   [Constant downloads failure in firefox]: http://www.techsive.com/2014/09/how-to-resume-failed-downloads-in.html
-  [15]: https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png
+  [15]: //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png
   [![][15]]: https://en.wikipedia.org/wiki/File:Commons-logo.svg
   [Mozilla]: https://commons.wikimedia.org/wiki/Category:Mozilla "commons:Category:Mozilla"
   [Official website]: http://mozilla.org/

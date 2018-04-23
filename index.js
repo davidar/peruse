@@ -19,7 +19,7 @@ const path = require('path')
 const prerender = require('prerender')
 const querystring = require('querystring')
 const r2 = require('r2')
-const {Readability} = require('readability/index')
+const Readability = require('readability')
 const {spawn} = require('child_process')
 const tldjs = require('tldjs')
 const tmp = require('tmp')
@@ -39,6 +39,7 @@ const forEachR = (a, f) => { for (let i = a.length - 1; i >= 0; i--) f(a[i]) }
 const nonempty = node => node.textContent.trim() || node.querySelector('img')
 const removeNode = node => node.parentNode.removeChild(node)
 const removeNodes = nodes => forEachR(nodes, removeNode)
+const stripTag = node => { node.outerHTML = node.innerHTML }
 
 const highlightFormat = {
   addition: chalk.green,
@@ -138,6 +139,8 @@ class FilterList {
     let rule = line.split('##') // cosmetic filters
     if (rule.length !== 2) return
     let [domains, selector] = rule
+
+    if (selector.includes("'")) return // jsdom#2204
 
     if (domains === '') { // generic filter
       if (selector.startsWith('.')) {
@@ -258,24 +261,27 @@ async function preprocess (window,
     base = document.head.appendChild(base)
   }
 
-  let domain = tldjs.getDomain(loc.href)
+  let domain = tldjs.getDomain(loc.href.replace(/^https:\/\/web.archive.org\/web\/[^/]+\//g, ''))
   let filterList = new FilterList()
   filterList.load('easylist/easylist.txt')
   filterList.load('easylist/fanboy-annoyance.txt')
   filterList.addRule('independent.co.uk##.type-gallery')
+  filterList.addRule('nytimes.com##.hidden')
+  filterList.addRule('nytimes.com##.visually-hidden')
   filterList.filter(document.body, domain)
 
-  removeNodes(document.body.querySelectorAll('[class*="hidden"]'))
-
   forEachR(document.getElementsByTagName('a'), link => {
-    if (link.href && link.getAttribute('href').startsWith('#')) {
+    let href = link.getAttribute('href')
+    if (!href) {
+      stripTag(link)
+    } else if (href.startsWith('#') || href.startsWith('javascript:')) {
       link.removeAttribute('href')
+    } else {
+      link.href = link.href // make absolute
     }
   })
 
-  forEachR(document.querySelectorAll('pre a'), link => {
-    link.outerHTML = link.innerHTML
-  })
+  forEachR(document.querySelectorAll('pre a'), stripTag)
 
   forEachR(document.querySelectorAll('a, em, strong, b, i'), node => {
     if (nonempty(node)) {
@@ -284,11 +290,12 @@ async function preprocess (window,
       node.innerHTML = node.innerHTML.trim()
       node.outerHTML = prep + node.outerHTML + post
     } else {
-      node.outerHTML = node.innerHTML
+      stripTag(node)
     }
   })
 
   forEachR(document.getElementsByTagName('img'), image => {
+    if (image.src) image.src = image.src // make absolute
     if (image.hasAttribute('data-src')) {
       let src = image.getAttribute('data-src')
       if (src && !src.startsWith('{')) image.src = src
@@ -339,9 +346,7 @@ async function preprocess (window,
 
   removeNodes(document.getElementsByClassName('mw-editsection'))
 
-  for (let span; (span = document.querySelector('span'));) {
-    span.outerHTML = span.innerHTML
-  }
+  for (let span; (span = document.querySelector('span'));) stripTag(span)
 
   let article = {
     title: document.title,

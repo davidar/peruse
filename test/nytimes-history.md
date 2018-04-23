@@ -48,6 +48,8 @@ State police led children from the Sandy Hook Elementary School in Newtown, Conn
 
 Multiple fatalities have been reported at a shooting at an elementary school in Newtown, Conn., about 65 miles northeast of New York City. One law enforcement offcial said preliminary reports suggested there could be as many as 20 fatalities.
 
+![][2]
+
 ##### Michelle Mcloughlin/Reuters
 
 Children waited outside Sandy Hook Elementary School after a shooting on Friday in Newtown, Conn.
@@ -67,6 +69,7 @@ The school, located among wooded hills and suburban tracts in Fairfield County, 
 According to a local newspaper, [The Newtown Bee], shortly after 9:30 a.m. on Friday, one child was carried from the school by a police officer, apparently seriously wounded, and other children were escorted from the school by the state police. A photograph published by The Bee showed children outside the school visibly upset.
 
   [1]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting/15shooting-articleLarge-v3.jpg
+  [2]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting2/15shooting2-articleInline.jpg
   [The Newtown Bee]: http://www.newtownbee.com/
 
 # Rewrite 20121215032153

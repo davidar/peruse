@@ -1,6 +1,6 @@
 ---
 title: 欲張りなイヌ ＜福娘童話集 きょうのイソップ童話＞
-lang: tiv
+lang: bem
 ---
 
 [福娘童話集] \> [きょうのイソップ童話] \> [１月のイソップ童話] \> 欲張りなイヌ
@@ -35,6 +35,8 @@ lang: tiv
 
 おしまい
 
+![前のページへ戻る]
+
   [福娘童話集]: ../../../index.html
   [きょうのイソップ童話]: ../index.html
   [１月のイソップ童話]: ../itiran/01gatu.htm
@@ -51,3 +53,4 @@ lang: tiv
   [![犬の顔の紙]いぬ]: http://www.origami-club.com/easy/dog/index.html
   [3]: http://ohanashi2.up.seesaa.net/mp3/ae_0101.mp3
   [亜姫の朗読☆　イソップ童話より]: http://www.voiceblog.jp/onokuboaki/
+  [前のページへ戻る]: ../../../gazou/pc_gazou/all/top_bana/back_logo_r.gif

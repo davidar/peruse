@@ -53,7 +53,7 @@ The Awesome Bar learns as you browse to make your version of Firefox unique. Fin
 ![Firefox Awesome Bar]
 
   [1]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-top-fallback.c960365ba781.png
-  [2]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/designed-redesigned.fbd3ee9402e6.png
+  [2]: //mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/designed-redesigned.fbd3ee9402e6.png
   [3]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-bottom-fallback.cafd48a3d0a4.png
   [Try it now]: https://addons.mozilla.org/firefox/themes/
   [Learn more]: https://support.mozilla.org/kb/use-themes-change-look-of-firefox
