@@ -6,6 +6,7 @@ const chalk = require('chalk')
 const chrono = require('chrono-node')
 const eventToPromise = require('event-to-promise')
 const express = require('express')
+const fetch = require('node-fetch')
 const franc = require('franc')
 const fs = require('fs')
 const Highlights = require('highlights')
@@ -18,8 +19,8 @@ const parse5 = require('parse5')
 const path = require('path')
 const prerender = require('prerender')
 const querystring = require('querystring')
-const r2 = require('r2')
 const Readability = require('readability')
+const retry = require('async-retry')
 const {spawn} = require('child_process')
 const tldjs = require('tldjs')
 const tmp = require('tmp')
@@ -186,6 +187,16 @@ class FilterList {
   }
 }
 
+const fetchText = url => retry(async bail => {
+  let response = await fetch(url, {headers: {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en'
+  }})
+  if (response.status === 403) bail(new Error(response.statusText))
+  else return response.text()
+}, {onRetry: console.error})
+
 const waybackTimestamps = memoize(async (url) => {
   let cdx = 'https://web.archive.org/cdx/search/cdx?' + querystring.stringify({
     fl: 'timestamp',
@@ -193,20 +204,14 @@ const waybackTimestamps = memoize(async (url) => {
     collapse: 'digest',
     url
   })
-  let resp
-  try {
-    resp = await r2(cdx).text
-  } catch (e) {
-    resp = await r2(cdx).text
-  }
+  let resp = await fetchText(cdx)
   return resp.trim().split('\n')
 })
 
 const virtualConsole = new VirtualConsole()
 virtualConsole.sendTo(console, {omitJSDOMErrors: true})
-const optionsJSDOM = {virtualConsole}
 
-async function fromURL (url) {
+async function waybackRewrite (url) {
   let match = url.match(/^https:\/\/web.archive.org\/web\/([0-9]+)\/(.*)/)
   if (match) {
     url = match[2]
@@ -217,24 +222,22 @@ async function fromURL (url) {
     url = `https://web.archive.org/web/${timestamps[i]}/${url}`
     if (timestamp !== timestamps[i]) console.error('Rewriting to', url)
   }
-
-  try {
-    return await JSDOM.fromURL(url, optionsJSDOM)
-  } catch (e) {
-    console.error('Retrying ' + url)
-    return JSDOM.fromURL(url, optionsJSDOM)
-  }
+  return url
 }
 
-async function jsdom (url, allowLocal) {
+async function jsdom (url, allowLocal = false) {
   let parsed = URL.parse(url)
-  if (parsed.protocol && parsed.hostname) return fromURL(url)
-  if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
+  if (parsed.protocol && parsed.hostname) {
+    url = await waybackRewrite(url)
+    let html = await fetchText(url)
+    return new JSDOM(html, {virtualConsole, url})
+  } else if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
     let html = fs.readFileSync(url, 'utf8')
     html = html.replace(/<style[\s\S]*?<\/style>/g, '')
-    return new JSDOM(html, optionsJSDOM)
+    return new JSDOM(html, {virtualConsole})
+  } else {
+    return null
   }
-  return null
 }
 
 const prerenderServer = memoize(async () => {
@@ -376,7 +379,7 @@ async function preprocess (window,
     article = parsed
   } else if (allowPrerender) {
     let server = await prerenderServer()
-    let dom = await fromURL(server + querystring.stringify({
+    let dom = await jsdom(server + querystring.stringify({
       url: loc.href,
       renderType: 'html',
       followRedirects: true,
@@ -410,7 +413,7 @@ async function preprocess (window,
 
   if (nextPageLink && pages.size < 10) {
     console.error(`Fetching page ${pages.size + 1} from ${nextPageLink}`)
-    let dom = await fromURL(nextPageLink)
+    let dom = await jsdom(nextPageLink)
     let rest = await preprocess(dom.window, {pages, lastPageScore: nextPageScore})
     article.content += rest.content
   } else if (nextPageLink) {
@@ -443,7 +446,8 @@ async function postprocess (content, opts) {
 
 const HN_URL = 'https://news.ycombinator.com/item?id='
 async function hn (id) {
-  return r2('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').json
+  let response = await fetch('https://hacker-news.firebaseio.com/v0/item/' + id + '.json')
+  return response.json()
 }
 
 async function peruse (url, opts = [], allowLocal = true) {
@@ -543,7 +547,7 @@ async function mainHistory (url, until) {
 }
 
 function rewriteLinks (html, format) {
-  let dom = new JSDOM(html, optionsJSDOM)
+  let dom = new JSDOM(html)
   let body = dom.window.document.body
   forEachR(body.getElementsByTagName('a'), link => {
     link.href = `/${format}/${link.href}`
