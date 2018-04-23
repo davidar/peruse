@@ -425,12 +425,9 @@ async function postprocess (content, opts) {
     '-header_attributes',
     '-inline_code_attributes',
     '-link_attributes',
-    '-multiline_tables',
     '-native_divs',
     '-native_spans',
-    '-pipe_tables',
-    '-raw_html',
-    '-simple_tables'
+    '-raw_html'
   ].join('')
   let output = await pandoc('--from=html',
     '--to=' + markdown + '-smart', '--reference-links').end(content).toString()

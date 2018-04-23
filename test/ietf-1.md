@@ -3,7 +3,7 @@ title: draft-dejong-remotestorage-04 - remoteStorage
 lang: en
 ---
 
-\[[Docs]\] \[[txt]|[pdf]\] \[[Tracker]\] \[[Email]\] \[[Diff1]\] \[[Diff2]\] \[[Nits]\]
+\[[Docs]\] \[[txt]\|[pdf]\] \[[Tracker]\] \[[Email]\] \[[Diff1]\] \[[Diff2]\] \[[Nits]\]
 
 Versions: [00][] [01][] [02][] [03][] [04]
 

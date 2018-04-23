@@ -238,7 +238,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 21. **\^** [“Comments on Cisco, Mozilla, and H.264”]. “By endorsing Cisco’s plan, there’s no getting around the fact that we’ve caved on our principles. That said, principles can’t replace being in a practical position to make a difference in the future.”  - Christopher Montgomery wrote in a personal capacity but works for Mozilla in their codecs team
 22. **\^** [“Game Creator Challenge -Contest Terms and Conditions”].  - submissions to the “amateur” category have to be released as free software, but not for the other two categories
 23. **\^** [“Los Angeles Times - Brendan Eich contribution to Proposition 8”]. latimes.com. Retrieved 2014-07-01. 
-24. **\^** [“Gay Firefox developers boycott Mozilla to protest CEO hire \[Updated\] | Ars Technica”]. arstechnica.com. Retrieved 2014-04-05. 
+24. **\^** [“Gay Firefox developers boycott Mozilla to protest CEO hire \[Updated\] \| Ars Technica”]. arstechnica.com. Retrieved 2014-04-05. 
 25. **\^** Kelly Faircloth (9 April 2012). [“Tech Celeb Makes Prop-8 Donation; Internet Goes Berserk”]. *BetaBeat*. BetaBeat. Retrieved 2014-04-28. 
 26. **\^** [“Screenshot of OkCupid’s statement towards Firefox users”]. huffingtonpost.com. Retrieved 2014-07-01. 
 27. **\^** [“FAQ on CEO Resignation”]. *The Mozilla Blog*. Retrieved 2015-04-20. 
@@ -270,7 +270,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 53. **\^** [“Mozilla rules out Firefox for iPhone and BlackBerry”]. 
 54. **\^** [“Boot to Gecko Project”]. Mozilla. March 2012. Retrieved 2012-03-30. 
 55. **\^** [“Firefox OS - Devices & Availability”]. *Mozilla*. Retrieved 2015-12-30. 
-56. **\^** [“Thunderbird: Stability and Community Innovation | Mitchell’s Blog”]. *blog.lizardwrangler.com*. Retrieved 2015-04-20. 
+56. **\^** [“Thunderbird: Stability and Community Innovation \| Mitchell’s Blog”]. *blog.lizardwrangler.com*. Retrieved 2015-04-20. 
 57. **\^** [“Two discontinued browsers”]. LWN.net. 21 December 2005. Retrieved 2012-08-19. 
 58. **\^** [“SeaMonkey trademarks registered!”]. kairo.at. 2007-05-22. Retrieved 2013-06-10. 
 59. **\^** [“Bugzilla Installation List”]. Retrieved 2014-09-18. 
@@ -292,9 +292,9 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 
 ## External links
 
-+-----------+---------------------------------------------------------+
-| [![][15]] | Wikimedia Commons has media related to ***[Mozilla]***. |
-+-----------+---------------------------------------------------------+
+  ----------- ---------------------------------------------------------
+  [![][15]]   Wikimedia Commons has media related to ***[Mozilla]***.
+  ----------- ---------------------------------------------------------
 
 -   [Official website], including [the Mozilla Manifesto]
 -   [Mozilla Wiki][]([Major time line of community development])
@@ -474,7 +474,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“Comments on Cisco, Mozilla, and H.264”]: http://xiphmont.livejournal.com/61927.html
   [“Game Creator Challenge -Contest Terms and Conditions”]: https://wiki.mozilla.org/Game_Creator_Challenge_-Contest_Terms_and_Conditions
   [“Los Angeles Times - Brendan Eich contribution to Proposition 8”]: http://projects.latimes.com/prop8/donation/8930/
-  [“Gay Firefox developers boycott Mozilla to protest CEO hire \[Updated\] | Ars Technica”]: http://arstechnica.com/business/2014/03/gay-firefox-developers-boycott-mozilla-to-protest-ceo-hire/
+  [“Gay Firefox developers boycott Mozilla to protest CEO hire \[Updated\] \| Ars Technica”]: http://arstechnica.com/business/2014/03/gay-firefox-developers-boycott-mozilla-to-protest-ceo-hire/
   [“Tech Celeb Makes Prop-8 Donation; Internet Goes Berserk”]: http://betabeat.com/2012/04/tech-celeb-makes-prop-8-donation-internet-goes-berserk/
   [“Screenshot of OkCupid’s statement towards Firefox users”]: http://i.huffpost.com/gen/1710681/thumbs/o-OKC-900.jpg
   [“FAQ on CEO Resignation”]: https://blog.mozilla.org/blog/2014/04/05/faq-on-ceo-resignation/
@@ -511,7 +511,7 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
   [“Mozilla rules out Firefox for iPhone and BlackBerry”]: http://www.mirror.co.uk/news/technology/2009/11/09/mozilla-rules-out-firefox-for-iphone-and-blackberry-115875-21809563/
   [“Boot to Gecko Project”]: http://www.mozilla.org/firefox/os/
   [“Firefox OS - Devices & Availability”]: https://www.mozilla.org/en-US/firefox/os/devices/
-  [“Thunderbird: Stability and Community Innovation | Mitchell’s Blog”]: https://blog.lizardwrangler.com/2012/07/06/thunderbird-stability-and-community-innovation/
+  [“Thunderbird: Stability and Community Innovation \| Mitchell’s Blog”]: https://blog.lizardwrangler.com/2012/07/06/thunderbird-stability-and-community-innovation/
   [“Two discontinued browsers”]: https://lwn.net/Articles/165080/
   [“SeaMonkey trademarks registered!”]: http://home.kairo.at/blog/2007-06/seamonkey_r_trademarks_registered
   [“Bugzilla Installation List”]: http://www.bugzilla.org/installation-list/

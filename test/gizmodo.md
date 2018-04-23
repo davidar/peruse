@@ -26,7 +26,7 @@ According to the [Buckminster Fuller Institute], Fuller worked on this map for d
 
 Tons more great info and resources at [genekeyes.com], [BFI][Buckminster Fuller Institute], and [this list of frequently asked questions about The Fuller Projection][distortions the more common Mercator and Peters projections struggle with, respectively]. And if you’re feeling interactive, check out [this Dymaxion Map puzzle] (be warned: if you’re into this sort of thing, this puzzle can turn into an epic time-suck).
 
-### *Top image: Buckminster Fuller and Chuck Byrne, Dymaxion Air-Ocean World Map, 1981; screen print; 50 in. x 72 in.; Collection SFMOMA, gift of Elizabeth and Carl Solway in memory of Robert Fillmore Lovett, Jr. | via [ArchDaily]*
+### *Top image: Buckminster Fuller and Chuck Byrne, Dymaxion Air-Ocean World Map, 1981; screen print; 50 in. x 72 in.; Collection SFMOMA, gift of Elizabeth and Carl Solway in memory of Robert Fillmore Lovett, Jr. \| via [ArchDaily]*
 
   [1]: https://i.kinja-img.com/gawker-media/image/upload/s--n7OuJPrh--/c_scale,fl_progressive,q_80,w_800/18iw2vvivjz7kjpg.jpg
   [once called Fuller]: http://www.brainpickings.org/index.php/2013/03/08/buckminster-fuller-synergetics/

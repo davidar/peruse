@@ -16,7 +16,7 @@ She is holding the lab’s latest delivery of a drug bought from the “deep web
 
 “Here we have speed, MDMA, cocaine, pills,” Lladanosa says, pointing to vials full of red, green, blue and clear solutions sitting in labeled boxes.
 
-![Cristina Gil Lladanosa, at the Barcelona testing lab | photo by Joan Bardeletti]
+![Cristina Gil Lladanosa, at the Barcelona testing lab \| photo by Joan Bardeletti]
 
 Since 2011, with the launch of [Silk Road], anybody has been able to safely buy illegal drugs from the deep web and have them delivered to their door. Though the FBI shut down that black market in October 2013, other outlets have emerged to fill its role. For the last 10 months the lab at which Lladanosa and Espinosa work has offered a paid testing service of those drugs. By sending in samples for analysis, users can know exactly what it is they are buying, and make a more informed decision about whether to ingest the substance. The group, called [Energy Control], which has being running “harm reduction” programs since 1999, is the first to run a testing service explicitly geared towards verifying those purchases from the deep web.
 
@@ -134,12 +134,12 @@ A week after I visit the lab, the results of the MDMA arrive in my inbox: it is 
 
 *Top photo by Joan Bardeletti*
 
-Follow Backchannel: [*Twitter*] *|*[*Facebook*]
+Follow Backchannel: [*Twitter*] *\|*[*Facebook*]
 
   [1]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*sLDnS1UWEFIS33uLMxq3cw.jpeg
   [2]: https://d262ilb51hltx0.cloudfront.net/max/800/1*3vIhkoHIzcxvUdijoCVx6w.png
   [MDMA]: http://en.wikipedia.org/wiki/MDMA
-  [Cristina Gil Lladanosa, at the Barcelona testing lab | photo by Joan Bardeletti]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*4gN1-fzOwCniw-DbqQjDeQ.jpeg
+  [Cristina Gil Lladanosa, at the Barcelona testing lab \| photo by Joan Bardeletti]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*4gN1-fzOwCniw-DbqQjDeQ.jpeg
   [Silk Road]: http://en.wikipedia.org/wiki/Silk_Road_%28marketplace%29
   [Energy Control]: http://energycontrol.org/
   [Photo by Joan Bardeletti]: https://d262ilb51hltx0.cloudfront.net/max/2000/1*2KPmZkIBUrhps-2uwDvYFQ.jpeg

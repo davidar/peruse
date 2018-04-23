@@ -15,11 +15,10 @@ It’s actually an interesting architecture - FPGAs (including some devices mark
 
 Without further ado, here’s a block diagram showing all the cool stuff you get in the SLG46620V:
 
-+-------------------------------------------------+
-| [![][1]]                                        |
-+-------------------------------------------------+
-| SLG46620V block diagram (from device datasheet) |
-+-------------------------------------------------+
+  -------------------------------------------------
+  [![][1]]
+  SLG46620V block diagram (from device datasheet)
+  -------------------------------------------------
 
 They’re also tiny (the SLG46620V is a 20-pin 0.4mm pitch STQFN measuring 2x3 mm, and the lower gate count SLG46140V is a mere 1.6x2 mm) and probably the cheapest programmable logic device on the market - \$0.50 in low volume and less than \$0.40 in larger quantities.
 
@@ -31,11 +30,10 @@ The best part is that the development software (GreenPak Designer) is free of ch
 
 While schematics may be fine for quick tinkering on really simple designs, they quickly get unwieldy. The nightmare of a circuit shown below is just a bunch of counters hooked up to LEDs that blink at various rates.
 
-+----------------------+
-| [![][2]]             |
-+----------------------+
-| Schematic from hell! |
-+----------------------+
+  ----------------------
+  [![][2]]
+  Schematic from hell!
+  ----------------------
 
 As if this wasn’t enough of a problem, the largest GreenPak4 device (the SLG46620V) is split into two halves with limited routing between them, and the GUI doesn’t help the user manage this complexity at all - you have to draw your schematic in two halves and add “cross connections” between them.
 
@@ -53,11 +51,10 @@ Once the design has been synthesized, my tool (named, surprisingly, gp4par) is t
 
 After the graphs are generated, each node in the netlist graph is assigned a numeric label identifying the type of cell and each node in the device graph is assigned a list of legal labels: for example, an I/O buffer site is legal for an input buffer, output buffer, or bidirectional buffer.
 
-+----------------------------------------------------------------+
-| [![][3]]                                                       |
-+----------------------------------------------------------------+
-| Example labeling for a subset of the netlist and device graphs |
-+----------------------------------------------------------------+
+  ----------------------------------------------------------------
+  [![][3]]
+  Example labeling for a subset of the netlist and device graphs
+  ----------------------------------------------------------------
 
 The labeled nodes now need to be placed. The initial placement uses a simple greedy algorithm to create a valid (although not necessarily optimal or even routable) placement:
 
