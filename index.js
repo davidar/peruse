@@ -231,6 +231,7 @@ async function jsdom (url, allowLocal) {
   if (parsed.protocol && parsed.hostname) return fromURL(url)
   if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
     let html = fs.readFileSync(url, 'utf8')
+    html = html.replace(/<style[\s\S]*?<\/style>/g, '')
     return new JSDOM(html, optionsJSDOM)
   }
   return null
@@ -300,18 +301,23 @@ async function preprocess (window,
       let src = image.getAttribute('data-src')
       if (src && !src.startsWith('{')) image.src = src
     }
-    if (image.srcset) image.src = srcsetMax(image.srcset)
+    if (image.hasAttribute('srcset')) image.src = srcsetMax(image.srcset)
     if (image.src === '' || image.width === 1) removeNode(image)
   })
 
   forEachR(document.getElementsByTagName('picture'), picture => {
+    let src = null
     forEachR(picture.getElementsByTagName('source'), source => {
-      if (!source.media.includes('max-width')) {
-        let srcset = source.srcset || source.getAttribute('data-srcset')
-        if (srcset.includes(' ')) srcset = srcsetMax(srcset)
-        picture.outerHTML = '<img src="' + srcset + '">'
+      if (source.media && source.media.includes('max-width')) {
+        // skip
+      } else if (source.hasAttribute('srcset')) {
+        src = source.srcset
+      } else if (source.hasAttribute('data-srcset')) {
+        src = source.getAttribute('data-srcset')
       }
     })
+    if (src.includes(' ')) src = srcsetMax(src)
+    picture.outerHTML = `<img src="${src}">`
   })
 
   forEachR(document.getElementsByTagName('table'), table => {
