@@ -34,6 +34,7 @@ for file in test/*.md; do
             mv -f test.out $file
         else
             kill -INT $PID
+            sleep 1
             exit 1
         fi
     fi
@@ -42,3 +43,4 @@ for file in test/*.md; do
 done
 
 kill -INT $PID
+sleep 1

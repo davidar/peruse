@@ -22,6 +22,7 @@ const querystring = require('querystring')
 const Readability = require('readability')
 const retry = require('async-retry')
 const {spawn} = require('child_process')
+const {timeout} = require('promise-timeout')
 const tldjs = require('tldjs')
 const tmp = require('tmp')
 const URL = require('url')
@@ -187,14 +188,16 @@ class FilterList {
   }
 }
 
-const fetchText = url => retry(async bail => {
-  let response = await fetch(url, {headers: {
+const fetchRobust = url => retry(async bail => {
+  let promise = fetch(url, {headers: {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'en'
   }})
+  promise = timeout(promise, 15000)
+  let response = await promise
   if (response.status === 403) bail(new Error(response.statusText))
-  else return response.text()
+  else return response
 }, {onRetry: console.error})
 
 const waybackTimestamps = memoize(async (url) => {
@@ -204,7 +207,8 @@ const waybackTimestamps = memoize(async (url) => {
     collapse: 'digest',
     url
   })
-  let resp = await fetchText(cdx)
+  let resp = await fetchRobust(cdx)
+  resp = await resp.text()
   if (!resp.trim()) return null
   return resp.trim().split('\n')
 })
@@ -235,7 +239,9 @@ async function jsdom (url, allowLocal = false) {
   if (parsed.protocol && parsed.hostname) {
     url = await waybackRewrite(url)
     if (url === null) return null
-    let html = await fetchText(url)
+    let response = await fetchRobust(url)
+    url = response.url
+    let html = await response.text()
     return new JSDOM(html, {virtualConsole, url})
   } else if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
     let html = fs.readFileSync(url, 'utf8')
@@ -454,7 +460,7 @@ async function postprocess (content, opts) {
 
 const HN_URL = 'https://news.ycombinator.com/item?id='
 async function hn (id) {
-  let response = await fetch('https://hacker-news.firebaseio.com/v0/item/' + id + '.json')
+  let response = await fetchRobust('https://hacker-news.firebaseio.com/v0/item/' + id + '.json')
   return response.json()
 }
 
