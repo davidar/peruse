@@ -69,12 +69,6 @@ Once you’ve browsed to DigitalOcean and logged in (creating a user account fir
 
 Next, choose a hostname for your droplet (something memorable and easy to identify, preferably) and click “Create.” About 15 seconds later, your VPN will be ready to log in, and its IP address will be visible on the main Droplets page. From Linux or a Mac, ssh root@your.new.ip.address. From Windows, enter and save root@your.new.ip.address as a destination, then connect to it, and you’re ready to go. Once you’ve entered in your challenge phrase (if you used one), you’ll be staring at something along the lines of **root@ars-vpn-test:\~\#**.
 
--   The main Droplets page. See the big green button at the upper right? PUSH THE BUTTON, FRANK.
-
--   Ubuntu 16.04 is already the default distribution, but make sure you change the Droplet size to \$5/mo. The default, \$20/mo, is more VM than you need for this job.
-
--   Don’t forget to select an appropriate data center, enable Monitoring if you like (it won’t cost you anything), and add and select your SSH key. Be sure to name the Droplet something helpful, too. You don’t want to be deciphering “ubuntu-512mb-nyc2-01” through “ubuntu-512mb-nyc2-99” at some point later, if you really catch the “roll your own servers” bug.
-
 ## Automatic security upgrades
 
 Given that the whole point of this exercise is to *increase* your security, not to screw it up. We want to make sure your new VM gets automatic security upgrades as they become available.
@@ -203,10 +197,6 @@ The settings **port 1194**, **proto udp**, and **dev tun** set us on the IANA re
 The next block of four settings should be pretty self-explanatory, pointing OpenVPN to the location of the credentials it needs to run. It gets more interesting with **cipher** and **auth.** These are the cipher used to encrypt your data and the digest used to handle authentication, respectively. The options I’ve chosen here are err on the paranoid side, which won’t hurt your performance any on your own computer or at the VM you’re running the server on (even my Celeron J1900 Homebrew can push \>200 Mbps with these settings), but it may be a bit much for a consumer router if you’re setting up a router-based network-wide VPN tunnel like we will be.
 
 If you’re interested in twiddling the performance-vs-security slider, I’ve got your back: my Netgear R8000 test router managed about 25 Mbps throughput configured with **AES-256-CBC/SHA512** as shown here. **AES-256-CBC/SHA1,** which is still reasonably secure, got a more respectable 37.24 Mbps. That’s about as far down as you can go and still call the result “a VPN” with a straight face, though. If you want better performance than that, you should probably consider either running the VPN client directly on your computer itself or on a more powerful router.
-
--   This is pretty representative of the Netgear R8000’s throughput on my most paranoid OpenVPN settings. Technically, this is \*double\* VPN’ed—the Nighthawk built its tunnel \*through\* the tunnel the Homebrew is already running upstream of it. However, the real constraint here (on the download side, at least) is the R8000’s own performance—it can’t hit anywhere near the nominal 100 Mbps provided by Spectrum or even whatever’s left of that after the Netflix streaming and whatever else my wife, kids, and my other computers were doing while the tests ran.
-
--   This is a speedtest.net run on the Homebrew, powered by a Celeron J1900, using the nice-and-paranoid combination of AES-256-CBC/SHA512. The results you’re seeing—80 Mbps down and 5-8 Mbps up—are the limits of my Internet connection and/or the stuff my wife, kids, and various computers were doing while I ran the test. When not constrained by the actual network connection, the Homebrew will push \> 200 Mbps of OpenVPN traffic.
 
 Moving on, **server 10.8.0.0 255.255.255.0** defines the IP address range used by the server and its clients. As configured, the server itself will occupy 10.8.0.1 (and several more addresses), and each client will have its own address. Actually, since we’re using the **tun** adapter, each client will use *four* IP addresses in its own [/30 subnet]—up to 10.8.0.255. This means we’ll be limited to about 60 total clients, so if you’re setting this VPN up for your friends and your friends’ friends and maybe some people you don’t even really like all that much, you may need to consider a bigger subnet.
 

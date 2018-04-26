@@ -261,6 +261,8 @@ But now, the door has been cracked, and the cheap shots come out:
 
 Or this…conversation:
 
+![][1]
+
 Good job guys. Good job. Defend the tribe. Attack the other. Frederico attempts to recover from his stunning display of demeaning douchery: [‏@viticci][]: [@s\_bielefeld] I don’t know if it’s an Italian thing, but counting other people’s money is especially weird for me. IMO, bad move in the post.
 
 Samantha is clearly sick of his crap: [‏@s\_bielefeld][@s\_bielefeld]: [@viticci][‏@viticci] That’s what I’m referring to, the mistake of ever having mentioned it. So, now, Marco can ignore the bigger issue and go on living.
@@ -315,6 +317,8 @@ I think she’s earned her anger at this point.
 
 Don’t worry, Marco knows what the real problem is: most devs just suck —
 
+![][2]
+
 I have a saying that applies in this case: don’t place your head so far up your nethers that you go full Klein Bottle. Marco has gone full Klein Bottle. (To be correct, he went FKB some years ago.)
 
 There are some bright spots. My favorite is when Building Twenty points out the *real* elephant in the room:
@@ -340,6 +344,8 @@ Gee, I can’t imagine why. Why with comments like this from Chris Breen that co
 No Chris, you don’t have this right. But hey, who has time to find out the real issue and read an article. I’m sure your friends told you everything you need to know.
 
 Noted Feminist Glenn Fleishman gets a piece of the action too:
+
+![][3]
 
 I’m not actually surprised here. I watched Fleishman berate a friend of mine who has been an engineer for…heck, waaaaay too long on major software products in the most condescending way because she tried to point out that as a *very* technical woman, “The Magazine” literally had nothing to say to her and maybe he should fix that. “Impertinent” was I believe what he called her, but I may have the specific word wrong. Not the attitude mind you. Great Feminists like Glenn do not like uppity women criticizing Great Feminists who are their Great Allies.
 
@@ -383,11 +389,14 @@ So I hope she stays, but if she goes, I understand. For what it’s worth, I don
   [provided by ATP in terms of sponsorship rates]: http://atp.fm/sponsor/
   [@marcoarment]: https://twitter.com/marcoarment
   [\#fairelephant]: https://twitter.com/hashtag/fairelephant?src=hash
+  [1]: https://cdn-images-1.medium.com/max/1600/1*kbPh7V97eyRodSOw2-ALDw.png
   [‏@viticci]: https://twitter.com/viticci
   [@s\_bielefeld]: https://twitter.com/s_bielefeld
   [@KevinColeman]: https://twitter.com/KevinColeman
   [.@Angry\_Drunk]: https://twitter.com/Angry_Drunk
   [\#JetFuelCantMeltSteelBeams]: https://twitter.com/hashtag/JetFuelCantMeltSteelBeams?src=hash
   [@timkeller:]: https://twitter.com/timkeller
+  [2]: https://cdn-images-1.medium.com/max/1600/1*Fpb2Bvdx7Q-688vdm-NdkQ.png
   [@BuildingTwenty]: https://twitter.com/BuildingTwenty
+  [3]: https://cdn-images-1.medium.com/max/1600/1*lvOySry5gHHJfGU_bQXrzA.png
   [http://samanthabielefeld.com/the-elephant-in-the-room …]: http://t.co/u79ZLsnhdM "http://samanthabielefeld.com/the-elephant-in-the-room"

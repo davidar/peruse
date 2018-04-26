@@ -282,6 +282,7 @@ async function preprocess (window,
   filterList.load('easylist/easylist.txt')
   filterList.load('easylist/fanboy-annoyance.txt')
   filterList.addRule('independent.co.uk##.type-gallery')
+  filterList.addRule('medium.com##.progressiveMedia-thumbnail')
   filterList.addRule('nytimes.com##.hidden')
   filterList.addRule('nytimes.com##.visually-hidden')
   filterList.filter(document.body, domain)
@@ -333,6 +334,17 @@ async function preprocess (window,
     })
     if (src.includes(' ')) src = srcsetMax(src)
     picture.outerHTML = `<img src="${src}">`
+  })
+
+  forEachR(document.getElementsByTagName('figure'), figure => {
+    let images = figure.getElementsByTagName('img')
+    let caption = figure.getElementsByTagName('figcaption')[0]
+    if (images.length > 0) {
+      figure.innerHTML = images[0].outerHTML
+      if (caption) figure.innerHTML += caption.outerHTML
+    } else {
+      removeNode(figure)
+    }
   })
 
   forEachR(document.getElementsByTagName('table'), table => {

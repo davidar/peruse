@@ -3,8 +3,6 @@ title: Teller Reveals His Secrets | Arts & Culture
 lang: en
 ---
 
-According to magician Teller, “Neuroscientists are novices at deception. Magicians have done controlled testing in human perception for thousands of years.” (Jared McMillen / Aurora Select)
-
 ## The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
 
 In the last half decade, magic—normally deemed entertainment fit only for children and tourists in Las Vegas—has become shockingly respectable in the scientific world. Even I—not exactly renowned as a public speaker—have been invited to address conferences on neuroscience and perception. I asked a scientist friend (whose identity I must protect) why the sudden interest. He replied that those who fund science research find magicians “sexier than lab rats.”
@@ -27,8 +25,6 @@ I think you’ll see what I mean if I teach you a few principles magicians emplo
 
 #### We Recommend
 
-According to magician Teller, “Neuroscientists are novices at deception. Magicians have done controlled testing in human perception for thousands of years.” (Jared McMillen / Aurora Select)
-
 ## The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
 
 **3. It’s hard to think critically if you’re laughing.** We often follow a secret move *immediately* with a joke. A viewer has only so much attention to give, and if he’s laughing, his mind is too busy with the joke to backtrack rationally.
@@ -50,8 +46,6 @@ When I cut the cards, I let you glimpse a few different faces. You conclude the 
 [Brain][1] [Performing Arts][2]
 
 #### We Recommend
-
-According to magician Teller, “Neuroscientists are novices at deception. Magicians have done controlled testing in human perception for thousands of years.” (Jared McMillen / Aurora Select)
 
 ## The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
 
