@@ -519,7 +519,8 @@ async function mainDiff (url1, url2) {
     return 0
   }
 
-  let output = await pandiff(text1, text2, {wrap: null})
+  let diffOpts = process.argv.includes('--wrap=none') ? {wrap: null} : {}
+  let output = await pandiff(text1, text2, diffOpts)
   if (!output) output = text1 + '\n\n--\n\n' + text2
   await less(output)
   return 1
@@ -547,7 +548,8 @@ async function mainHistory (url, until) {
       continue
     }
 
-    let output = await pandiff(text1, text2, {wrap: null})
+    let diffOpts = process.argv.includes('--wrap=none') ? {wrap: null} : {}
+    let output = await pandiff(text1, text2, diffOpts)
     if (output) {
       console.log('# Update', timestamp)
       console.log(output)
