@@ -192,7 +192,7 @@ const fetchRobust = url => retry(async bail => {
   let promise = fetch(url, {headers: {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': 'en'
+    'Accept-Language': 'en-US,en;q=0.5'
   }})
   promise = timeout(promise, 15000)
   let response = await promise
@@ -235,21 +235,21 @@ async function waybackRewrite (url) {
 }
 
 async function jsdom (url, allowLocal = false) {
+  let html
   let parsed = URL.parse(url)
   if (parsed.protocol && parsed.hostname) {
     url = await waybackRewrite(url)
     if (url === null) return null
     let response = await fetchRobust(url)
     url = response.url
-    let html = await response.text()
-    return new JSDOM(html, {virtualConsole, url})
+    html = await response.text()
   } else if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
-    let html = fs.readFileSync(url, 'utf8')
-    html = html.replace(/<style[\s\S]*?<\/style>/g, '')
-    return new JSDOM(html, {virtualConsole})
+    html = fs.readFileSync(url, 'utf8')
+    url = undefined
   } else {
     return null
   }
+  return new JSDOM(html.replace(/<style[\s\S]*?<\/style>/g, ''), {virtualConsole, url})
 }
 
 const prerenderServer = memoize(async () => {
@@ -398,7 +398,7 @@ async function preprocess (window,
     }
   }
 
-  let parsed = new Readability(null, document).parse()
+  let parsed = new Readability(document).parse()
   if (parsed && parsed.content.replace(/<.*?>/g, '').length > 200) {
     article = parsed
   } else if (allowPrerender) {
