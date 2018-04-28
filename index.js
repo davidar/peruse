@@ -281,6 +281,7 @@ async function preprocess (window,
   let filterList = new FilterList()
   filterList.load('easylist/easylist.txt')
   filterList.load('easylist/fanboy-annoyance.txt')
+  filterList.addRule('bloomberg.com##.touts')
   filterList.addRule('independent.co.uk##.type-gallery')
   filterList.addRule('medium.com##.progressiveMedia-thumbnail')
   filterList.addRule('nytimes.com##.hidden')
@@ -317,6 +318,7 @@ async function preprocess (window,
       let src = image.getAttribute('data-src')
       if (src && !src.startsWith('{')) image.src = src
     }
+    if (image.hasAttribute('data-native-src')) image.src = image.getAttribute('data-native-src')
     if (image.hasAttribute('srcset')) image.src = srcsetMax(image.srcset)
     if (image.src === '' || image.width === 1) removeNode(image)
   })
