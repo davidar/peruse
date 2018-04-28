@@ -4,6 +4,7 @@ const {AdBlockClient, FilterOptions} = require('ad-block')
 const bytes = require('utf8-length')
 const chalk = require('chalk')
 const chrono = require('chrono-node')
+const escapeHTML = require('escape-html')
 const eventToPromise = require('event-to-promise')
 const express = require('express')
 const fetch = require('node-fetch')
@@ -22,6 +23,7 @@ const prerender = require('prerender')
 const querystring = require('querystring')
 const Readability = require('readability')
 const retry = require('async-retry')
+const RSS = require('rss-parser')
 const {spawn} = require('child_process')
 const {timeout} = require('promise-timeout')
 const tldjs = require('tldjs')
@@ -235,6 +237,16 @@ async function waybackRewrite (url) {
   return url
 }
 
+async function rss2html (rss) {
+  let feed = await new RSS().parseString(rss)
+  let html = `<html><head><title>${escapeHTML(feed.title)}</title></head><body><ul>`
+  feed.items.forEach(item => {
+    html += `<li><a href="${escapeHTML(item.link)}">${escapeHTML(item.title)}</a></li>`
+  })
+  html += '</ul></body></html>'
+  return html
+}
+
 async function jsdom (url, allowLocal = false) {
   let html
   let parsed = URL.parse(url)
@@ -244,6 +256,9 @@ async function jsdom (url, allowLocal = false) {
     let response = await fetchRobust(url)
     url = response.url
     html = await response.text()
+    if (response.headers.get('Content-Type').match(/^application\/(atom\+|rss\+|)xml/)) {
+      html = await rss2html(html)
+    }
   } else if (allowLocal && url.endsWith('.html') && fs.existsSync(url)) {
     html = fs.readFileSync(url, 'utf8')
     url = undefined
