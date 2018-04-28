@@ -13,6 +13,9 @@ body {
 body * {
   margin: 1.5rem 0;
 }
+a.sourceLine {
+  margin: 0;
+}
 
 header {
   text-align: center;
@@ -31,10 +34,10 @@ h3, header .author {
     font-size: 1.25rem;
 }
 
-a, a:visited {
+a[href], a[href]:visited {
   color: #bd1c2b;
 }
-a:hover, a:active {
+a[href]:hover, a[href]:active {
   color: #84141e;
 }
 

@@ -9,6 +9,7 @@ const express = require('express')
 const fetch = require('node-fetch')
 const franc = require('franc')
 const fs = require('fs')
+const hljs = require('highlight.js')
 const Highlights = require('highlights')
 const iso639 = require('iso-639-3')
 const {JSDOM, VirtualConsole} = require('jsdom')
@@ -365,6 +366,19 @@ async function preprocess (window,
     }
   })
 
+  if (document.body.innerHTML.replace(/<pre[\s\S]*?<\/pre>/g, '').length >
+      document.body.innerHTML.length / 10) {
+    let langs = (await pandoc('--list-highlight-languages').toString()).trim().split('\n')
+    forEachR(document.getElementsByTagName('pre'), pre => {
+      if (hljs.listLanguages().includes(pre.className)) return
+      let {language, relevance} = hljs.highlightAuto(pre.textContent, langs)
+      if (relevance > 25) pre.className = language
+      else pre.removeAttribute('class')
+    })
+  } else { // plain text pretending to be HTML
+    forEachR(document.getElementsByTagName('pre'), pre => pre.removeAttribute('class'))
+  }
+
   forEachR(document.getElementsByTagName('figure'), fig => {
     if (fig.getElementsByTagName('figcaption').length === 0) {
       fig.outerHTML = '<div>' + fig.innerHTML + '</div>'
@@ -400,7 +414,9 @@ async function preprocess (window,
     }
   }
 
-  let parsed = new Readability(document).parse()
+  let readability = new Readability(document)
+  readability._postProcessContent = () => {}
+  let parsed = readability.parse()
   if (parsed && parsed.content.replace(/<.*?>/g, '').length > 200) {
     article = parsed
   } else if (allowPrerender) {
@@ -584,7 +600,7 @@ function rewriteLinks (html, format) {
   let dom = new JSDOM(html)
   let body = dom.window.document.body
   forEachR(body.getElementsByTagName('a'), link => {
-    link.href = `/${format}/${link.href}`
+    if (link.hasAttribute('href')) link.href = `/${format}/${link.href}`
   })
   forEachR(body.getElementsByTagName('img'), image => {
     image.src = '/image/1x/' + image.src

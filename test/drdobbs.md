@@ -48,40 +48,42 @@ I do make a few minor concessions to practicality in Listing Two. Any tree that 
 
 **Listing Two**
 
-    Node centeredSubnode() {
-       return new Node(nw.se, ne.sw, sw.ne, se.nw) ;
-    }
-    Node centeredHorizontal(Node w, Node e) {
-       return new Node(w.ne.se, e.nw.sw, w.se.ne, e.sw.nw) 
-    ;
-    }
-    Node centeredVertical(Node n, Node s) {
-       return new Node(n.sw.se, n.se.sw, s.nw.ne, s.ne.nw);
-    }
-    Node centeredSubSubnode() {
-       return new Node(nw.se.se, ne.sw.sw, sw.ne.ne, 
-    se.nw.nw) ;
-    }
-    Node nextGeneration() {
-       if (level == 2) {
-          ... do base case through normal simulation ...
-       } else {
-          Node n00 = nw.centeredSubnode(),
-               n01 = centeredHorizontal(nw, ne),
-               n02 = ne.centeredSubnode(),
-               n10 = centeredVertical(nw, sw),
-               n11 = centeredSubSubnode(),
-               n12 = centeredVertical(ne, se),
-               n20 = sw.centeredSubnode(),
-               n21 = centeredHorizontal(sw, se),
-               n22 = se.centeredSubnode() ;
-          return new Node(
-             new Node(n00, n01, n10, n11).nextGeneration(),
-             new Node(n01, n02, n11, n12).nextGeneration(),
-             new Node(n10, n11, n20, n21).nextGeneration(),
-             new Node(n11, n12, n21, n22).nextGeneration());
-       }
-    }
+``` haxe
+Node centeredSubnode() {
+   return new Node(nw.se, ne.sw, sw.ne, se.nw) ;
+}
+Node centeredHorizontal(Node w, Node e) {
+   return new Node(w.ne.se, e.nw.sw, w.se.ne, e.sw.nw) 
+;
+}
+Node centeredVertical(Node n, Node s) {
+   return new Node(n.sw.se, n.se.sw, s.nw.ne, s.ne.nw);
+}
+Node centeredSubSubnode() {
+   return new Node(nw.se.se, ne.sw.sw, sw.ne.ne, 
+se.nw.nw) ;
+}
+Node nextGeneration() {
+   if (level == 2) {
+      ... do base case through normal simulation ...
+   } else {
+      Node n00 = nw.centeredSubnode(),
+           n01 = centeredHorizontal(nw, ne),
+           n02 = ne.centeredSubnode(),
+           n10 = centeredVertical(nw, sw),
+           n11 = centeredSubSubnode(),
+           n12 = centeredVertical(ne, se),
+           n20 = sw.centeredSubnode(),
+           n21 = centeredHorizontal(sw, se),
+           n22 = se.centeredSubnode() ;
+      return new Node(
+         new Node(n00, n01, n10, n11).nextGeneration(),
+         new Node(n01, n02, n11, n12).nextGeneration(),
+         new Node(n10, n11, n20, n21).nextGeneration(),
+         new Node(n11, n12, n21, n22).nextGeneration());
+   }
+}
+```
 
 So far, my algorithm is not any better. It takes more memory and is slower. It generates a lot of new nodes that need to be managed or garbage collected. It has a somewhat complicated recursion. I fix all of these issues in two steps—canonicalization of the nodes, and “memoization.”
 

@@ -245,9 +245,11 @@ For each client you want to connect, you need three credential files: the Certif
 
 If you’re on Linux or Mac, you can use the **scp** tool to grab these files:
 
-     you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/ca.crt ./
-     you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/clientname.crt ./
-     you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/clientname.key ./
+``` elixir
+ you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/ca.crt ./
+ you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/clientname.crt ./
+ you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/clientname.key ./
+```
 
 If you’re a Windows user, it’s usually easiest to just **cat /etc/openvpn/keys/ca.crt** inside your PuTTY window, then highlight the text with your mouse. It’s automatically copied into the clipboard just from highlighting it; you don’t need to Ctrl-C or anything. From there, you can open up a Notepad instance, paste into there, then Save As ca.crt (be sure to change the file type to “All Files” first so Windows doesn’t “helpfully” stick a .txt on the end of it). Do the same for the other two files as well.
 
@@ -325,35 +327,37 @@ As such, the next task for my Homebrew router was *policy-based routing.* I need
 
 Once **/etc/dhcp/dhcpd.conf** was reconfigured to add the host leases, **systemctl restart isc-dhcp-server** got them applied. At the Rokus themselves, at the same Settings -\> Network Settings screen I’d gotten their MAC addresses from, a simple “Update network settings” released and renewed their DHCP leases and then I was ready to turn them into special, non-VPN’ed snowflakes. All this required was adding three quick lines to the WAN interface settings in **/etc/network/interfaces**:
 
-     # This file describes the network interfaces available on your system
-     # and how to activate them. For more information, see interfaces(5).
-     
-     source /etc/network/interfaces.d/*
-     
-     # The loopback network interface
-     auto lo
-     iface lo inet loopback
-     
-     # the LAN interface
-     auto enp2s0
-     iface enp2s0 inet static
-     address 192.168.0.1
-     netmask 255.255.255.0
-     dns-nameservers 8.8.8.8 8.8.4.4
-     
-     # The WAN interface
-     auto enp1s0
-     iface enp1s0 inet dhcp 
-     # Rokus on .50 and .51 need their traffic to bypass
-     # the outbound VPN, so that Netflix won't block it.
-     #
-     # we accomplish that by adding its traffic to a 
-     # route table that we're implicitly creating here
-     # by referencing it with a number.
-     #
-     post-up ip rule add from 192.168.0.50 lookup 100
-     post-up ip rule add from 192.168.0.51 lookup 100
-     post-up ip route add default dev enp1s0 table 100
+``` dockerfile
+ # This file describes the network interfaces available on your system
+ # and how to activate them. For more information, see interfaces(5).
+ 
+ source /etc/network/interfaces.d/*
+ 
+ # The loopback network interface
+ auto lo
+ iface lo inet loopback
+ 
+ # the LAN interface
+ auto enp2s0
+ iface enp2s0 inet static
+ address 192.168.0.1
+ netmask 255.255.255.0
+ dns-nameservers 8.8.8.8 8.8.4.4
+ 
+ # The WAN interface
+ auto enp1s0
+ iface enp1s0 inet dhcp 
+ # Rokus on .50 and .51 need their traffic to bypass
+ # the outbound VPN, so that Netflix won't block it.
+ #
+ # we accomplish that by adding its traffic to a 
+ # route table that we're implicitly creating here
+ # by referencing it with a number.
+ #
+ post-up ip rule add from 192.168.0.50 lookup 100
+ post-up ip rule add from 192.168.0.51 lookup 100
+ post-up ip route add default dev enp1s0 table 100
+```
 
 Those last three lines—the post-up ip rule and post-up ip route directives—are the only things that actually changed from the original config I was using. The settings in **/etc/network/interfaces** don’t actually take effect until after a reboot, so I jumped the gun a bit by running them directly at the command line (just as they’re shown in the config file, only without the “post-up” bit at the start). Presto, the Rokus work again; Netflix no longer accuses me of using “an unblocker,” which means no more plaintive daughter calling downstairs.
 
