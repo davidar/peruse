@@ -6,7 +6,7 @@ lang: en
 I’ve written a couple of posts in the past few months but they were all for [the blog at work] so I figured I’m long overdue for one on Silicon Exposed.
 
 So what’s a GreenPak?
----------------------
+=====================
 
 Silego Technology is a fabless semiconductor company located in the SF Bay area, which makes (among other things) a line of programmable logic devices known as GreenPak. Their [5th generation parts] were just announced, but I started this project before that happened so I’m still targeting the [4th generation].
 
@@ -43,7 +43,7 @@ The icing on the cake is that schematics are a pain to diff and collaborate on. 
 This isn’t going to be a post on the quirks of Silego’s software, though - that would be boring. As it turns out, there’s one more exciting feature of these chips that I didn’t mention earlier: the configuration bitstream is 100% documented in the device datasheet! This is unheard of in the programmable logic world. As Nick of Arachnid Labs [says], the chip is “just dying for someone to write a VHDL or Verilog compiler for it”. As you can probably guess by from the title of this post, I’ve been busy doing exactly that.
 
 Great! How does it work?
-------------------------
+========================
 
 Rather than wasting time writing a synthesizer, I decided to write a GreenPak technology library for Clifford Wolf’s excellent open source synthesis tool, [Yosys], and then make a place-and-route tool to turn that into a final netlist. The post-PAR netlist can then be loaded into GreenPak Designer in order to program the device.
 
@@ -108,7 +108,7 @@ If DRC passes with no errors, configure all of the individual cells in the netli
 Finally, generate the bitstream from all of the per-cell configuration and write it to a file.
 
 Great, let’s get started!
--------------------------
+=========================
 
 If you don’t already have one, you’ll need to buy a [GreenPak4 development kit]. The kit includes samples of the SLG46620V (among other devices) and a programmer/emulation board. While you’re waiting for it to arrive, install [GreenPak Designer].
 
@@ -123,12 +123,12 @@ If you’d like to see the Verilog that produced the nightmare of a schematic I 
 Be advised that this project is still very much a work in progress and there are still a number of SLG46620V features I don’t support (see the manual for exact details).
 
 I love it / it segfaulted / there’s a problem in the manual!
-------------------------------------------------------------
+============================================================
 
 Hop in our IRC channel (\#\#openfpga on Freenode) and let me know. Feedback is great, pull requests are even better,
 
 You’re competing with Silego’s IDE. Have they found out and sued you yet?
--------------------------------------------------------------------------
+=========================================================================
 
 Nope. They’re fully aware of what I’m doing and are rolling out the red carpet for me. They love the idea of a HDL flow as an alternative to schematic entry and are pretty amazed at how fast it’s coming together.
 
@@ -137,7 +137,7 @@ After I reported a few bugs in their datasheets they decided to skip the middlem
 They’ve even [offered me free hardware] to help me add support for their latest product family, although I plan to get GreenPak4 support to a more stable state before taking them up on the offer.
 
 So what’s next?
----------------
+===============
 
 Better testing, for starters. I have to verify functionality by hand with a DMM and oscilloscope, which is time consuming.
 

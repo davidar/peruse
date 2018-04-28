@@ -4,18 +4,18 @@ lang: en
 ---
 
 Study Webtext
-=============
+-------------
 
 “Bartleby the Scrivener: A Story of Wall-Street” (1853)  Herman Melville
-------------------------------------------------------------------------
+========================================================================
 
 [![To the story text without notes]]
-------------------------------------
+====================================
 
-### Prepared by [Ann Woodlief,] Virginia Commonwealth University
+Prepared by [Ann Woodlief,] Virginia Commonwealth University
+------------------------------------------------------------
 
-Click on text in red for hypertext notes and questions
-------------------------------------------------------
+### Click on text in red for hypertext notes and questions
 
 I am a rather elderly man. The nature of my avocations for the last thirty years has brought me into more than ordinary contact with what would seem an interesting and somewhat singular set of men of whom as yet nothing that I know of has ever been written:– I mean the law-copyists or scriveners. I have known very many of them, professionally and privately, and if I pleased, could relate divers histories, at which good-natured gentlemen might smile, and sentimental souls might weep. But I waive the biographies of all other scriveners for a few passages in the life of Bartleby, who was a scrivener the strangest I ever saw or heard of. While of other law-copyists I might write the complete life, of Bartleby nothing of that sort can be done. I believe that no materials exist for a full and satisfactory biography of this man. It is an irreparable loss to literature. Bartleby was one of those beings of whom nothing is ascertainable, except from the original sources, and in his case those are very small. What my own astonished eyes saw of Bartleby, that is all I know of him, except, indeed, one vague report which will appear in the sequel.
 

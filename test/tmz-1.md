@@ -8,7 +8,7 @@ Lupita Nyong’o
 \$150K Pearl Oscar Dress … STOLEN!!!!
 -------------------------------------
 
-##### 2/26/2015 7:11 AM PST BY TMZ STAFF
+### 2/26/2015 7:11 AM PST BY TMZ STAFF
 
 EXCLUSIVE
 

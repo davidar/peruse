@@ -22,16 +22,21 @@ header {
 }
 
 /* major third (4:5) modular scale */
-h1 {
-    font-size: 1.953rem;
-    line-height: 3rem;
+header h1 {
+  font-size: 1.953rem;
+  line-height: 3rem;
 }
-h2, header .subtitle {
-    font-size: 1.563rem;
-    line-height: 3rem;
+h1, header .subtitle {
+  font-size: 1.563rem;
+  line-height: 3rem;
 }
-h3, header .author {
-    font-size: 1.25rem;
+h2, header .author {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+h3, h4, h5, h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 a[href], a[href]:visited {

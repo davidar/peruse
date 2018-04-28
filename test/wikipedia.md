@@ -8,7 +8,7 @@ lang: en
 [Mozilla produces many products] such as the [Firefox] web browser, [Thunderbird] e-mail client, [Firefox Mobile] web browser, [Firefox OS] mobile operating system, [Bugzilla] bug tracking system and other projects.
 
 History
--------
+=======
 
 On January 23, 1998, Netscape made two announcements: first, that [Netscape Communicator] will be free; second, that the source code will also be free.^\[3\]^ One day later, [Jamie Zawinski] from Netscape registered mozilla.org.^\[4\]^ The project was named Mozilla after the original code name of the [Netscape Navigator] browser which is a blending of “[Mosaic] and [Godzilla]”^\[5\]^ and used to co-ordinate the development of the [Mozilla Application Suite], the [open source] version of Netscape’s internet software, [Netscape Communicator].^\[6\]\[7\]^ Jamie Zawinski says he came up with the name “Mozilla” at a Netscape staff meeting.^\[8\]\[9\]^ A small group of Netscape employees were tasked with coordination of the new community.
 
@@ -22,7 +22,8 @@ At the end of 2013, Mozilla announced a deal with [Cisco Systems] whereby Firefo
 
 In December 2013, Mozilla announced funding for the development of non-[free][free-software] games^\[22\]^ through its Game Creator Challenge. However, even those games that may be released under a non-free software or open source license must be made with open web technologies and Javascript as per the work criteria outlined in the announcement.
 
-### Eich CEO promotion controversy
+Eich CEO promotion controversy
+------------------------------
 
 On March 24, 2014, Mozilla promoted [Brendan Eich] to the role of CEO. This led to boycotts and protests from the LGBT community and its supporters, as Eich previously donated US\$1,000^\[23\]^ in 2008 in support of [California’s Proposition 8], a California ballot proposition and state constitutional amendment in opposition to same-sex marriage.^\[24\]^ Eich’s donation first became public knowledge in 2012, while he was Mozilla’s chief technical officer, leading to angry responses on Twitter—including the use of the hashtag “\#wontworkwithbigots”.^\[25\]^
 
@@ -35,11 +36,12 @@ OkCupid co-founder and CEO [Sam Yagan] had also donated \$500^\[29\]^ to Republi
 Reader comments on articles that were published close to the events were divided between support for OkCupid’s actions and opposition to them. Supporters claimed the boycott was justified and saw OkCupid’s actions as a firm statement of opposition to intolerance towards the gay community. Opponents saw OkCupid’s actions as hypocritical, since Eich is also the inventor of [JavaScript], which is still required to browse OkCupid’s website, and felt that users should not be punished for the actions of Mozilla and suspected that OkCupid’s actions were a [publicity stunt].^\[36\]\[39\]^
 
 Values
-------
+======
 
 According to Mozilla’s manifesto,^\[40\]^ which outlines goals, principles, and a pledge, “The Mozilla project uses a community-based approach to create world-class open source software and to develop new types of collaborative activities”. Mozilla’s manifesto mentions only its beliefs in regards to the Internet and Internet privacy, and has no mention of any political or social viewpoints.
 
-### Pledge
+Pledge
+------
 
 According to the Mozilla Foundation:^\[41\]^
 
@@ -52,11 +54,12 @@ According to the Mozilla Foundation:^\[41\]^
 > -   Promote the Mozilla Manifesto principles in public discourse and within the Internet industry.
 
 Software
---------
+========
 
 [![][1]]
 
-### Firefox
+Firefox
+-------
 
 [Firefox] is a [web browser], and is Mozilla’s [flagship] software product. It is available in both desktop and mobile versions. Firefox uses the [Gecko][] [layout engine] to render web pages, which implements current and anticipated [web standards].^\[42\]^ As of late 2015^[\[update\]]^, Firefox has approximately 10-11% of worldwide [usage share of web browsers], making it the 4th most-used web browser.^\[43\]\[44\]\[45\]^
 
@@ -64,7 +67,8 @@ Firefox began as an experimental branch of the [Mozilla codebase] by [Dave Hyatt
 
 Firefox was originally named *Phoenix* but the name was changed so as to avoid trademark conflicts with [Phoenix Technologies]. The initially-announced replacement, *Firebird*, provoked objections from the [Firebird] project community.^\[47\]\[48\]^ The current name, Firefox, was chosen on February 9, 2004.^\[49\]^
 
-### Firefox Mobile
+Firefox Mobile
+--------------
 
 Firefox Mobile (codenamed *Fennec*) is the build of the [Mozilla Firefox][Firefox] [web browser] for devices such as [smartphones] and [tablet computers].
 
@@ -72,19 +76,22 @@ Firefox Mobile uses the same [Gecko][2] [layout engine] as [Mozilla Firefox][Fir
 
 Firefox Mobile is currently available for [Android] 2.2 and above devices with an [ARMv7] or [ARMv6][ARMv7] CPU.^\[51\]^ The x86 architecture is not officially supported.^\[52\]^ [Tristan Nitot], president of [Mozilla Europe], has said that it’s unlikely that an [iPhone] or a [BlackBerry] version will be released, citing [Apple’s] iTunes Store application approval policies (which forbid applications competing with Apple’s own, and forbid engines which run downloaded code) and BlackBerry’s limited operating system as the reasons.^\[53\]^
 
-### Firefox OS
+Firefox OS
+----------
 
 Firefox OS (project name: *Boot to Gecko* also known as *B2G*) is an [open source][] [operating system] in development by Mozilla that aims to support [HTML5] apps written using “[open Web]” technologies rather than platform-specific native [APIs]. The concept behind Firefox OS is that all user-accessible software will be HTML5 applications, that use Open Web APIs to access the phone’s hardware directly via [JavaScript][3].^\[54\]^
 
 Some devices using this OS include^\[55\]^ Alcatel One Touch Fire, ZTE Open, LG Fireweb.
 
-### Thunderbird
+Thunderbird
+-----------
 
 [Thunderbird] is a free, open source, cross-platform email and news client developed by the volunteers of the Mozilla Community.
 
 On July 16, 2012, Mitchell Baker announced that Mozilla’s leadership had come to the conclusion that on-going stability was the most important thing for Thunderbird and that innovation in Thunderbird was no longer a priority for Mozilla. In that update Baker also suggested that Mozilla had provided a pathway for community to innovate around Thunderbird if the community chooses.^\[56\]^
 
-### SeaMonkey
+SeaMonkey
+---------
 
 [![][4]]
 
@@ -92,89 +99,98 @@ On July 16, 2012, Mitchell Baker announced that Mozilla’s leadership had come 
 
 On March 10, 2005, [the Mozilla Foundation] announced that it would not release any official versions of Mozilla Application Suite beyond 1.7.x, since it had now focused on the standalone applications [Firefox][5] and [Thunderbird].^\[57\]^ SeaMonkey is now maintained by the SeaMonkey Council, which has [trademarked] the SeaMonkey name with help from the Mozilla Foundation.^\[58\]^ The Mozilla Foundation provides project hosting for the SeaMonkey developers.
 
-### Bugzilla
+Bugzilla
+--------
 
 [![][6]]
 
 [Bugzilla] is a [web]-based general-purpose [bug tracking system], which was released as [open source software] by [Netscape Communications] in 1998 along with the rest of the Mozilla codebase, and is currently stewarded by Mozilla. It has been adopted by a variety of organizations for use as a [bug tracking system] for both [free and open source software] and [proprietary][7] projects and products, including the [Mozilla Foundation][the Mozilla Foundation], the [Linux kernel], [GNOME], [KDE], [Red Hat], [Novell], [Eclipse] and [LibreOffice].^\[59\]^
 
-### Components
+Components
+----------
 
-#### NSS
+### NSS
 
 [Network Security Services] (NSS) comprises a set of [libraries] designed to support [cross-platform] development of security-enabled client and server applications. NSS provides a complete open-source implementation of crypto libraries supporting [SSL] and [S/MIME]. NSS was previously [tri-licensed] under the [Mozilla Public License] 1.1, the [GNU General Public License], and the [GNU Lesser General Public License], but upgraded to GPL-compatible MPL 2.0.
 
 [AOL], [Red Hat], [Sun Microsystems]/[Oracle Corporation], [Google] and other companies and individual contributors have co-developed NSS and it is used in a wide range of non-Mozilla products including [Evolution], [Pidgin], and [Apache OpenOffice].
 
-#### SpiderMonkey
+### SpiderMonkey
 
 [SpiderMonkey] is the original [JavaScript engine] developed by [Brendan Eich] when he invented [JavaScript][3] in 1995 as a developer at [Netscape]. It became part of the Mozilla product family when Mozilla inherited Netscape’s code-base in 1998. In 2011, Eich transferred the nominal ownership of the SpiderMonkey code and project to Dave Mandelin.^\[60\]^
 
 SpiderMonkey is a [cross-platform] engine written in [C++] which implements [ECMAScript], a standard developed from JavaScript.^\[60\]\[61\]^ It comprises an [interpreter], several [just-in-time compilers], a [decompiler] and a [garbage collector]. Products which embed SpiderMonkey include [Firefox], [Thunderbird], [SeaMonkey], and many non-Mozilla applications.^\[62\]^
 
-#### Rhino
+### Rhino
 
 Rhino is an [open source][] [JavaScript engine] managed by the [Mozilla Foundation]. It is developed entirely in [Java]. Rhino converts JavaScript scripts into Java [classes]. Rhino works in both [compiled] and [interpreted][interpreter] mode.^\[63\]^
 
-#### Gecko
+### Gecko
 
 [Gecko][2] is a [layout engine][8] that supports web pages written using [HTML], [SVG], and [MathML]. Gecko is written in [C++] and uses [NSPR] for [platform independence]. Its source code is licensed under the [Mozilla Public License].
 
 Firefox uses Gecko both for rendering web pages and for rendering its [user interface]. Gecko is also used by Thunderbird, SeaMonkey, and many non-Mozilla applications.
 
-#### Rust
+### Rust
 
 [Rust] is a compiled [programming language] being developed by Mozilla Research. It is designed for safety, concurrency, and performance. Rust is intended for creating large and complex software which needs to be both safe against exploits and fast.
 
 Rust is being used in an experimental layout engine, [Servo], which is developed by Mozilla and Samsung. Servo is not used in any consumer-oriented browsers yet. However, the Servo project developers plan for parts of the Servo source code to be merged into Gecko, and Firefox, incrementally.^\[64\]\[65\]^
 
-#### XULRunner
+### XULRunner
 
 [XULRunner] is a software platform and technology experiment by Mozilla, that allows applications built with the same technologies used by Firefox extensions (XPCOM, Javascript, HTML, CSS, XUL) to be run natively as desktop applications, without requiring Firefox to be installed on the user’s machine. XULRunner binaries are available for the Windows, GNU/Linux and OS X operating systems, allowing such applications to be effectively cross platform.
 
-#### pdf.js
+### pdf.js
 
 [Pdf.js] is a library developed by Mozilla that allows in-browser rendering of pdf documents using the HTML5 Canvas and Javascript. It is included by default in recent versions of Firefox, allowing the browser to render pdf documents without requiring an external plugin; and it is available separately as an extension named “PDF Viewer” for Firefox for Android, SeaMonkey, and the Firefox versions which don’t include it built-in. It can also be included as part of a website’s scripts, to allow pdf rendering for any browser that implements the required HTML5 features and can run Javascript.
 
-#### Shumway
+### Shumway
 
 [Shumway] is an open source replacement for the Adobe Flash Player, developed by Mozilla since 2012, using open web technologies as a replacement for Flash technologies. It uses Javascript and HTML5 Canvas elements to render Flash and execute Actionscript. It is included by default in Firefox Nightly and can be installed as an extension for any recent version of Firefox. The current implementation is limited in its capabilities to render Flash content outside simple projects.
 
 Other activities
-----------------
+================
 
-### Mozilla VR
+Mozilla VR
+----------
 
 Mozilla VR is a team focused on bringing [Virtual reality] tools, specifications, and standards to the open Web.^\[66\]^ Mozilla VR maintains [A-Frame (VR)], a web framework for building VR experiences, and works on advancing [WebVR] support within web browsers.
 
-### Mozilla Persona
+Mozilla Persona
+---------------
 
 [Mozilla Persona] is a secure, cross-browser website [authentication] mechanism which allows a user to use a single username and password (or other authentication method) to log in to multiple sites.^\[67\]^ Mozilla Persona will be shutting down on November 30, 2016.^\[68\]^
 
-### Mozilla Location Service
+Mozilla Location Service
+------------------------
 
 This open source crowdsourced geolocation service was started by Mozilla in 2013 and offers a free [API][APIs].
 
-### Webmaker
+Webmaker
+--------
 
 Mozilla Webmaker is Mozilla’s educational initiative, Webmaker’s goal is to “help millions of people move from using the web to making the web.” As part of Mozilla’s non-profit mission, Webmaker aims “to help the world increase their understanding of the web, take greater control of their online lives, and create a more web literate planet.”^\[69\]\[70\]\[70\]^
 
-### Mozilla Developer Network
+Mozilla Developer Network
+-------------------------
 
 Mozilla maintains a comprehensive developer documentation website called the [Mozilla Developer Network] which contains information about web technologies including [HTML], [CSS], [SVG][9], [JavaScript][3], as well Mozilla-specific information. In addition, Mozilla publishes a large number of videos about web technologies and the development of Mozilla projects on the Air Mozilla website.^\[71\]\[72\]^
 
 Community
----------
+=========
 
 The Mozilla Community consists of over 40,000 active contributors from across the globe^\[*[citation needed]*\]^. It includes both paid employees and volunteers who work towards the goals set forth^\[40\]^ in the Mozilla Manifesto. Many of the sub-communities in Mozilla have formed around localization efforts for Mozilla Firefox, and the Mozilla web properties.
 
-### Local communities
+Local communities
+-----------------
 
 [![][10]]
 
 There are a number of sub-communities that exist based on their geographical locations, where contributors near each other work together on particular activities, such as localization, marketing, PR and user support.
 
-### Mozilla Reps
+Mozilla Reps
+------------
 
 [![][11]]
 
@@ -191,9 +207,10 @@ When joining the program, a Mozilla Rep agrees to take on the following responsi
 -   Support and mentor future Mozilla Reps
 -   Document clearly all their activities
 
-### Conferences and events
+Conferences and events
+----------------------
 
-#### Mozilla Festival
+### Mozilla Festival
 
 [![][12]]
 
@@ -203,16 +220,16 @@ The Mozilla Festival is an annual event where hundreds of passionate people expl
 
 The event revolves around design challenges which address key issues based on the chosen theme for that years festival. In previous years the Mozilla Festival has focused on Learning, and Media, with the 2012 festival being based around making. The titles of the festival revolve around the main theme, freedom (as in freedom of speech not free beer), and the Web.
 
-#### MozCamps
+### MozCamps
 
 MozCamps are the critical part of the Grow Mozilla initiative which aims to grow the Mozilla Community. These camps aim to bring core contributors from around the world together. They are intensive multi-day summits that include keynote speeches by Mozilla leadership, workshops and breakout sessions (led by paid and unpaid staff), and fun social outings. All of these activities combine to reward contributors for their hard work, engage them with new products and initiatives, and align all attendees on Mozilla’s mission.
 
-#### Mozilla Summit
+### Mozilla Summit
 
 Mozilla Summit are the global event with active contributors and Mozilla employees to develop a shared understanding of Mozilla’s mission together. Over 2,000 people representing 90 countries and 114 languages gathered in Santa Clara, Toronto and Brussels in 2013. Mozilla has since its last summit in 2013 replaced summits with all-hands where both employees and volunteers come together to collaborate the event is a scaled down version of Mozilla Summit.
 
 See also
---------
+========
 
 -   [-zilla (suffix)]
 -   [Mozilla (mascot)]
@@ -220,7 +237,7 @@ See also
 -   [Timeline of web browsers]
 
 References
-----------
+==========
 
 1.  **\^** For exceptions, see “Values” section below
 2.  **\^** [“About the Mozilla Corporation”]. Mozilla Foundation. 
@@ -298,7 +315,7 @@ References
 [Constant downloads failure in firefox]
 
 External links
---------------
+==============
 
   ----------- ---------------------------------------------------------
   [![][15]]   Wikimedia Commons has media related to ***[Mozilla]***.

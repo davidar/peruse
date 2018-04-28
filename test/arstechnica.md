@@ -5,7 +5,8 @@ date: 'May 26, 2017 12:00 pm UTC'
 lang: en
 ---
 
-#### Gear & Gadgets —
+Gear & Gadgets —
+----------------
 
 While not perfect, either, cloud hosting providers have a better customer data record.
 ======================================================================================
@@ -48,7 +49,8 @@ There are no absolute guarantees with this avenue, either, But while you probabl
 
 Page: 1 [2][] [3][] [4][] [5][] [Next →][2]
 
-#### Gear & Gadgets —
+Gear & Gadgets —
+----------------
 
 While not perfect, either, cloud hosting providers have a better customer data record.
 ======================================================================================
@@ -88,7 +90,8 @@ What we did here, in order, was to update ourselves with a fresh list of what’
 
 Page: [1] 2 [3][2] [4][3] [5][4] [Next →][2]
 
-#### Gear & Gadgets —
+Gear & Gadgets —
+----------------
 
 While not perfect, either, cloud hosting providers have a better customer data record.
 ======================================================================================
@@ -233,7 +236,8 @@ If you get no output at all from this command, you might try starting the openvp
 
 Page: [1][] [2] 3 [4][3] [5][4] [Next →][3]
 
-#### Gear & Gadgets —
+Gear & Gadgets —
+----------------
 
 While not perfect, either, cloud hosting providers have a better customer data record.
 ======================================================================================
@@ -365,7 +369,7 @@ At this point, the entire house is getting its traffic routed safely out from un
 
 Page: [1][5] [2][6] [3][7] 4 [5][8] [Next →][8]
 
-#### Gear & Gadgets —
+### Gear & Gadgets —
 
 While not perfect, either, cloud hosting providers have a better customer data record.
 ======================================================================================

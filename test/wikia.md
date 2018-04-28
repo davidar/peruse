@@ -9,7 +9,7 @@ Although Lucasfilm is already planning a birthday bash for the Star Wars Saga at
 If the rumors are true, this is big news for Star Wars fans. Aside from limited VHS releases, the unaltered cuts of the original trilogy films haven’t been available since they premiered in theaters in the 1970s and ’80s. If Lucasfilm indeed re-releases the films’ original cuts, then this will be the first time in decades that fans can see the films in their original forms. Here’s what makes the unaltered cuts of the original trilogy so special.
 
 The Star Wars Special Editions Caused Controversy [![star wars han solo]]
--------------------------------------------------------------------------
+=========================================================================
 
 Thanks to the commercial success of Star Wars, [George Lucas] has revisited and further edited his films for re-releases. The most notable — and controversial — release were the [Special Editions] of the original trilogy. In 1997, to celebrate the saga’s 20th anniversary, Lucasfilm spent a total of \$15 million to remaster [*A New Hope*], [*The Empire Strikes Back*], and [*Return of the Jedi*]. The Special Editions had stints in theaters before moving to home media.
 

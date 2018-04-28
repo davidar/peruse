@@ -4,7 +4,7 @@ lang: en
 ---
 
 But only hardcore gamers will appreciate it.
---------------------------------------------
+============================================
 
 [![][1]]
 
@@ -12,7 +12,7 @@ But only hardcore gamers will appreciate it.
 
 The [Xbox One X] is the ultimate video game system. It sports more horsepower than any system ever. And it plays more titles in native 4K than [Sony’s PlayStation 4 Pro]. It’s just about everything you could want without investing in a gaming PC. The only problem? It’s now been a year since the PS4 Pro launched, and the One X costs \$500, while Sony’s console launched at \$400. That high price limits the Xbox One X to diehard Microsoft fans who don’t mind paying a bit more to play the console’s exclusive titles in 4K. Everyone else might be better off waiting, or opting for the \$279 [Xbox One S].
 
-#### Gallery: Xbox One X \| 14 Photos
+### Gallery: Xbox One X \| 14 Photos
 
 ![][2]
 
@@ -62,7 +62,8 @@ You can also play in Performance mode, which bumps the frame rate up to 60FPS an
 
 I’ve been playing *Gears of War 4* on my gaming PC (which is connected to my home theater) over the past year, and I was impressed that the Xbox One X is able to deliver a similar experience. It didn’t quite match my rig though, which is powered by Intel Core i7 4790k CPU running at 4GHz, 16GB DDR3 RAM and an NVIDIA GTX 1080 GPU. Typically, I play at 1,440p (2,560 by 1,440 pixels) with HDR and all of the graphical settings set to their highest level, and I can easily maintain a 60FPS frame rate. The One X felt just as solid at 1080p, but there were clearly plenty of graphics settings it couldn’t take advantage of, in particular higher levels of bloom lighting and shadow detail.
 
-### Gallery: Xbox One X screenshots \| 9 Photos
+Gallery: Xbox One X screenshots \| 9 Photos
+-------------------------------------------
 
 ![][7]
 
