@@ -103,7 +103,8 @@ Displayed alone or in a group, these pretty arrangements allow you to add a litt
 
 Cloche terrarium (Lucy Akins)
 
-## Featured
+Featured
+========
 
   [Glass cloche terrariums]: http://img-aws.ehowcdn.com/640/cme/photography.prod.demandstudios.com/16149374-814f-40bc-baf3-ca20f149f0ba.jpg "Glass cloche terrariums"
   [Dig a hole in the oasis.]: http://img-aws.ehowcdn.com/default/cme/photography.prod.demandstudios.com/fc249ef6-4d27-41b4-8c21-15f7a8512b50.jpg

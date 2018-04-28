@@ -7,7 +7,8 @@ Get to know the features that make it the most complete browser for building the
 
 -   [![Screenshot]]
 
-    ## WebIDE
+    WebIDE
+    ======
 
     Develop, deploy and debug Firefox OS apps directly in your browser, or on a Firefox OS device, with this tool that replaces App Manager.
 
@@ -15,21 +16,25 @@ Get to know the features that make it the most complete browser for building the
 
 -   [![Screenshot][1]]
 
-    ## Valence
+    Valence
+    =======
 
     Develop and debug your apps across multiple browsers and devices with this powerful extension that comes pre-installed with Firefox Developer Edition.
 
     [Learn more about Valence]
 
-#### Important: Sync your new profile
+Important: Sync your new profile
+--------------------------------
 
 Developer Edition comes with a new profile so you can run it alongside other versions of Firefox. To access your bookmarks, browsing history and more, you need to sync the profile with your existing Firefox Account, or create a new one. [Learn more]
 
-## Features and tools
+Features and tools
+==================
 
 -   [![Screenshot][2]]
 
-    ## Page Inspector
+    Page Inspector
+    ==============
 
     Examine the HTML and CSS of any Web page and easily modify the structure and layout of a page.
 
@@ -37,7 +42,8 @@ Developer Edition comes with a new profile so you can run it alongside other ver
 
 -   [![Screenshot][3]]
 
-    ## Web Console
+    Web Console
+    ===========
 
     See logged information associated with a Web page and use Web Console to interact with Web pages using JavaScript.
 
@@ -45,7 +51,8 @@ Developer Edition comes with a new profile so you can run it alongside other ver
 
 -   [![Screenshot][4]]
 
-    ## JavaScript Debugger
+    JavaScript Debugger
+    ===================
 
     Step through JavaScript code and examine or modify its state to help track down bugs.
 
@@ -53,7 +60,8 @@ Developer Edition comes with a new profile so you can run it alongside other ver
 
 -   [![Screenshot][5]]
 
-    ## Network Monitor
+    Network Monitor
+    ===============
 
     See all the network requests your browser makes, how long each request takes and details of each request.
 
@@ -61,7 +69,8 @@ Developer Edition comes with a new profile so you can run it alongside other ver
 
 -   [![Screenshot][6]]
 
-    ## Web Audio Editor
+    Web Audio Editor
+    ================
 
     Inspect and interact with Web Audio API in real time to ensure that all audio nodes are connected in the way you expect.
 
@@ -69,7 +78,8 @@ Developer Edition comes with a new profile so you can run it alongside other ver
 
 -   [![Screenshot][7]]
 
-    ## Style Editor
+    Style Editor
+    ============
 
     View and edit CSS styles associated with a Web page, create new ones and apply existing CSS stylesheets to any page.
 

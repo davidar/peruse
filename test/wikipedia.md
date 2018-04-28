@@ -7,7 +7,8 @@ lang: en
 
 [Mozilla produces many products] such as the [Firefox] web browser, [Thunderbird] e-mail client, [Firefox Mobile] web browser, [Firefox OS] mobile operating system, [Bugzilla] bug tracking system and other projects.
 
-## History
+History
+-------
 
 On January 23, 1998, Netscape made two announcements: first, that [Netscape Communicator] will be free; second, that the source code will also be free.^\[3\]^ One day later, [Jamie Zawinski] from Netscape registered mozilla.org.^\[4\]^ The project was named Mozilla after the original code name of the [Netscape Navigator] browser which is a blending of “[Mosaic] and [Godzilla]”^\[5\]^ and used to co-ordinate the development of the [Mozilla Application Suite], the [open source] version of Netscape’s internet software, [Netscape Communicator].^\[6\]\[7\]^ Jamie Zawinski says he came up with the name “Mozilla” at a Netscape staff meeting.^\[8\]\[9\]^ A small group of Netscape employees were tasked with coordination of the new community.
 
@@ -33,7 +34,8 @@ OkCupid co-founder and CEO [Sam Yagan] had also donated \$500^\[29\]^ to Republi
 
 Reader comments on articles that were published close to the events were divided between support for OkCupid’s actions and opposition to them. Supporters claimed the boycott was justified and saw OkCupid’s actions as a firm statement of opposition to intolerance towards the gay community. Opponents saw OkCupid’s actions as hypocritical, since Eich is also the inventor of [JavaScript], which is still required to browse OkCupid’s website, and felt that users should not be punished for the actions of Mozilla and suspected that OkCupid’s actions were a [publicity stunt].^\[36\]\[39\]^
 
-## Values
+Values
+------
 
 According to Mozilla’s manifesto,^\[40\]^ which outlines goals, principles, and a pledge, “The Mozilla project uses a community-based approach to create world-class open source software and to develop new types of collaborative activities”. Mozilla’s manifesto mentions only its beliefs in regards to the Internet and Internet privacy, and has no mention of any political or social viewpoints.
 
@@ -49,7 +51,8 @@ According to the Mozilla Foundation:^\[41\]^
 > -   Promote models for creating economic value for the public benefit; and
 > -   Promote the Mozilla Manifesto principles in public discourse and within the Internet industry.
 
-## Software
+Software
+--------
 
 [![][1]]
 
@@ -137,7 +140,8 @@ Rust is being used in an experimental layout engine, [Servo], which is developed
 
 [Shumway] is an open source replacement for the Adobe Flash Player, developed by Mozilla since 2012, using open web technologies as a replacement for Flash technologies. It uses Javascript and HTML5 Canvas elements to render Flash and execute Actionscript. It is included by default in Firefox Nightly and can be installed as an extension for any recent version of Firefox. The current implementation is limited in its capabilities to render Flash content outside simple projects.
 
-## Other activities
+Other activities
+----------------
 
 ### Mozilla VR
 
@@ -159,7 +163,8 @@ Mozilla Webmaker is Mozilla’s educational initiative, Webmaker’s goal is to 
 
 Mozilla maintains a comprehensive developer documentation website called the [Mozilla Developer Network] which contains information about web technologies including [HTML], [CSS], [SVG][9], [JavaScript][3], as well Mozilla-specific information. In addition, Mozilla publishes a large number of videos about web technologies and the development of Mozilla projects on the Air Mozilla website.^\[71\]\[72\]^
 
-## Community
+Community
+---------
 
 The Mozilla Community consists of over 40,000 active contributors from across the globe^\[*[citation needed]*\]^. It includes both paid employees and volunteers who work towards the goals set forth^\[40\]^ in the Mozilla Manifesto. Many of the sub-communities in Mozilla have formed around localization efforts for Mozilla Firefox, and the Mozilla web properties.
 
@@ -206,14 +211,16 @@ MozCamps are the critical part of the Grow Mozilla initiative which aims to grow
 
 Mozilla Summit are the global event with active contributors and Mozilla employees to develop a shared understanding of Mozilla’s mission together. Over 2,000 people representing 90 countries and 114 languages gathered in Santa Clara, Toronto and Brussels in 2013. Mozilla has since its last summit in 2013 replaced summits with all-hands where both employees and volunteers come together to collaborate the event is a scaled down version of Mozilla Summit.
 
-## See also
+See also
+--------
 
 -   [-zilla (suffix)]
 -   [Mozilla (mascot)]
 -   *[The Book of Mozilla]*
 -   [Timeline of web browsers]
 
-## References
+References
+----------
 
 1.  **\^** For exceptions, see “Values” section below
 2.  **\^** [“About the Mozilla Corporation”]. Mozilla Foundation. 
@@ -290,7 +297,8 @@ Mozilla Summit are the global event with active contributors and Mozilla employe
 
 [Constant downloads failure in firefox]
 
-## External links
+External links
+--------------
 
   ----------- ---------------------------------------------------------
   [![][15]]   Wikimedia Commons has media related to ***[Mozilla]***.

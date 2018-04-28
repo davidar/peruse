@@ -11,7 +11,7 @@ Shannon Hicks/The Newtown Bee
 
 State police led children from the Sandy Hook Elementary School in Newtown, Conn., after a shooting was reported there.
 
-##### Published: December 14, 2012
+# Published: December 14, 2012
 
 A shooting was reported on Friday morning at an elementary school in Newtown, Conn., about 65 miles northeast of New York City.
 
@@ -44,13 +44,13 @@ Shannon Hicks/The Newtown Bee
 
 State police led children from the Sandy Hook Elementary School in Newtown, Conn., after a shooting was reported there.
 
-##### Published: December 14, 2012
+# Published: December 14, 2012
 
 Multiple fatalities have been reported at a shooting at an elementary school in Newtown, Conn., about 65 miles northeast of New York City. One law enforcement offcial said preliminary reports suggested there could be as many as 20 fatalities.
 
 ![][2]
 
-##### Michelle Mcloughlin/Reuters
+# Michelle Mcloughlin/Reuters
 
 Children waited outside Sandy Hook Elementary School after a shooting on Friday in Newtown, Conn.
 

@@ -44,7 +44,8 @@ Read [more about ad blocking here].
 
 ![Auto Draft 14]
 
-### About the author
+About the author
+================
 
 **Scott Cunningham**
 

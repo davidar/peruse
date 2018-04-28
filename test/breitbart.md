@@ -4,7 +4,8 @@ author: Lucas Nolan22 Dec 2016651
 lang: en
 ---
 
-## Snopes fact checker and staff writer David Emery posted to Twitter asking if there were “any un-angry Trump supporters?”
+Snopes fact checker and staff writer David Emery posted to Twitter asking if there were “any un-angry Trump supporters?”
+========================================================================================================================
 
 Emery, a writer for partisan “fact-checking” website Snopes.com which soon will be in charge of labelling [“fake news”] alongside ABC News and Politifact, retweeted an article by Vulture magazine relating to the [protests] of the *Hamilton* musical following the decision by the cast of the show to make a [public announcement] to Vice-president elect Mike Pence while he watched the performance with his family.
 

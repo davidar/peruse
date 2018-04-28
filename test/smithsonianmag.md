@@ -3,7 +3,8 @@ title: Teller Reveals His Secrets | Arts & Culture
 lang: en
 ---
 
-## The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
+The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
+================================================================================================================
 
 In the last half decade, magic—normally deemed entertainment fit only for children and tourists in Las Vegas—has become shockingly respectable in the scientific world. Even I—not exactly renowned as a public speaker—have been invited to address conferences on neuroscience and perception. I asked a scientist friend (whose identity I must protect) why the sudden interest. He replied that those who fund science research find magicians “sexier than lab rats.”
 
@@ -23,9 +24,11 @@ I think you’ll see what I mean if I teach you a few principles magicians emplo
 
 [Brain][] [Performing Arts]
 
-#### We Recommend
+We Recommend
+------------
 
-## The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
+The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
+================================================================================================================
 
 **3. It’s hard to think critically if you’re laughing.** We often follow a secret move *immediately* with a joke. A viewer has only so much attention to give, and if he’s laughing, his mind is too busy with the joke to backtrack rationally.
 
@@ -45,9 +48,11 @@ When I cut the cards, I let you glimpse a few different faces. You conclude the 
 
 [Brain][1] [Performing Arts][2]
 
-#### We Recommend
+We Recommend
+------------
 
-## The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
+The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind
+================================================================================================================
 
 Now I wiggle the card to my shoe (No. 3—If you’re laughing…). When I lift whichever foot has your card, or invite you to take my wallet from my back pocket, I turn away (No. 4—Outside the frame) and swap the deck for a normal one from which I’d removed all three possible selections (No. 5—Combine two tricks). Then I set the deck down to tempt you to examine it later and notice your card missing (No. 6—The lie you tell yourself).
 
@@ -55,7 +60,8 @@ Magic is an art, as capable of beauty as music, painting or poetry. But the core
 
 [Brain][3] [Performing Arts][4]
 
-#### We Recommend
+We Recommend
+------------
 
   [Brain]: http://wayback.archive-it.org/all/20140519004537/http://www.smithsonianmag.com/tag/brain/
   [Performing Arts]: http://wayback.archive-it.org/all/20140519004537/http://www.smithsonianmag.com/tag/performing-arts/

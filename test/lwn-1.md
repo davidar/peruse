@@ -5,7 +5,8 @@ date: 'March 25, 2015'
 lang: en
 ---
 
-## [A trademark battle in the Arduino community]
+[A trademark battle in the Arduino community]
+=============================================
 
 The [Arduino] has been one of the biggest success stories of the open-hardware movement, but that success does not protect it from internal conflict. In recent months, two of the project’s founders have come into conflict about the direction of future efforts—and that conflict has turned into a legal dispute about who owns the rights to the Arduino trademark.
 
@@ -43,7 +44,8 @@ But, perhaps, once a project becomes profitable, there is simply no way to predi
 
 [Comments (5 posted)]
 
-## [Mapping and data mining with QGIS 2.8]
+[Mapping and data mining with QGIS 2.8]
+=======================================
 
 By **Nathan Willis**  
 March 25, 2015
@@ -62,7 +64,8 @@ QGIS is designed to make short work of importing spatially oriented data sets, m
 
 But well-made maps are often the easiest way to illuminate facts about populations, political regions, geography, and many other topics when human comprehension is the goal. QGIS makes importing data from databases, web-mapping services (WMS), and even unwieldy flat-file data dumps a painless experience. It handles converting between a variety of map-referencing systems more or less automatically, and allows the user to focus on finding the useful attributes of the data sets and rendering them on screen.
 
-#### Here be data
+Here be data
+------------
 
 The significant changes in QGIS 2.8 fall into several categories. There are updates to how QGIS handles the mathematical expressions and queries users can use to filter information out of a data set, improvements to the tools used to explore the on-screen map canvas, and enhancements to the “map composer” used to produce visual output. This is on top of plenty of other under-the-hood improvements, naturally.
 
@@ -76,7 +79,8 @@ It is also now possible to select only some rows in a table, then perform calcul
 
 There have also been several improvements to the Python and Processing plugins. Users can now drag-and-drop Python scripts onto QGIS and they will be run automatically. Several new analysis algorithms are now available through the Processing interface that were previously Python-only; they include algorithms for generating grids of points or vectors within a region, splitting layers and lines, generating [hypsometric curves], refactoring data sets, and more.
 
-#### Maps in, maps out
+Maps in, maps out
+-----------------
 
 [![\[QGIS simplify tool\]]]
 
@@ -100,14 +104,16 @@ QGIS is one of those rare free-software applications that is both powerful enoug
 
 [Comments (3 posted)]
 
-## [Development activity in LibreOffice and OpenOffice]
+[Development activity in LibreOffice and OpenOffice]
+====================================================
 
 By **Jonathan Corbet**  
 March 25, 2015
 
 The LibreOffice project was [announced] with great fanfare in September 2010. Nearly one year later, the OpenOffice.org project (from which LibreOffice was forked) [was cut loose from Oracle] and found a new home as an Apache project. It is fair to say that the rivalry between the two projects in the time since then has been strong. Predictions that one project or the other would fail have not been borne out, but that does not mean that the two projects are equally successful. A look at the two projects’ development communities reveals some interesting differences.
 
-#### Release histories
+Release histories
+-----------------
 
 Apache OpenOffice has made two releases in the past year: [4.1] in April 2014 and [4.1.1] (described as “a micro update” in the release announcement) in August. The main feature added during that time would appear to be significantly improved accessibility support.
 
@@ -115,7 +121,8 @@ The release history for LibreOffice tells a slightly different story:
 
 It seems clear that LibreOffice has maintained a rather more frenetic release cadence, generally putting out at least one release per month. The project typically keeps at least two major versions alive at any one time. Most of the releases are of the minor, bug-fix variety, but there have been two major releases in the last year as well.
 
-#### Development statistics
+Development statistics
+----------------------
 
 In the one-year period since late March 2014, there have been 381 changesets committed to the OpenOffice Subversion repository. The most active committers are:
 
@@ -637,7 +644,8 @@ SUSE
 
 Development work on LibreOffice is thus concentrated in a small number of companies, though it is rather more spread out than OpenOffice development. It is worth noting that the LibreOffice developers with unknown affiliation, who contributed 23% of the changes, make up 82% of the developer base, so there would appear to be a substantial community of developers contributing from outside the above-listed companies.
 
-#### Some conclusions
+Some conclusions
+----------------
 
 Last October, some [concerns] were raised on the OpenOffice list about the health of that project’s community. At the time, Rob Weir [shrugged them off] as the result of a marketing effort by the LibreOffice crowd. There can be no doubt that the war of words between these two projects has gotten tiresome at times, but, looking at the above numbers, it is hard not to conclude that there is an issue that goes beyond marketing hype here.
 
@@ -651,7 +659,8 @@ Anything can happen in the free-software development world; it is entirely possi
 
 **Page editor**: Jonathan Corbet
 
-## Inside this week’s LWN.net Weekly Edition
+Inside this week’s LWN.net Weekly Edition
+=========================================
 
 -   [Security][]: Toward secure package downloads; New vulnerabilities in drupal, mozilla, openssl, python-django …
 -   [Kernel][]: LSFMM coverage: NFS, defragmentation, epoll(), copy offload, and more.

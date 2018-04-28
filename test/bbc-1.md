@@ -40,7 +40,8 @@ After nine African-American churchgoers were killed in South Carolina in June, h
 
 ![line]
 
-## Analysis: Jon Sopel, BBC News, Washington
+Analysis: Jon Sopel, BBC News, Washington
+=========================================
 
 ![President Barack Obama participates in an interview with Jon Sopel of BBC in the Roosevelt Room of the White House - 23 July 2015]
 
@@ -72,7 +73,8 @@ Talking about how he was feeling after his recent successes, he said “every pr
 
 ![Kenya is getting ready to welcome the US president]
 
-## Kenya trip
+Kenya trip
+==========
 
 Mr Obama was speaking to the BBC at the White House before departing for Kenya.
 

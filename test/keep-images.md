@@ -6,7 +6,8 @@ lang: en
 
 ![][1]
 
-#### Welcome to DoctorX’s Barcelona lab, where the drugs you bought online are tested for safety and purity. No questions asked.
+Welcome to DoctorX’s Barcelona lab, where the drugs you bought online are tested for safety and purity. No questions asked.
+===========================================================================================================================
 
 ![][2]
 

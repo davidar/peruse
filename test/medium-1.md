@@ -4,15 +4,17 @@ author: Pippin Lee
 lang: en
 ---
 
-## Open Journalism Project:
+Open Journalism Project:
+========================
 
-#### *Better Student Journalism*
+### *Better Student Journalism*
 
 We pushed out the first version of the [Open Journalism site] in January. Our goal is for the site to be a place to teach students what they should know about journalism on the web. It should be fun too.
 
 Topics like [mapping], [security], command line tools, and [open source] are all concepts that should be made more accessible, and should be easily understood at a basic level by all journalists. We’re focusing on students because we know student journalism well, and we believe that teaching maturing journalists about the web will provide them with an important lens to view the world with. This is how we got to where we are now.
 
-### Circa 2011
+Circa 2011
+----------
 
 In late 2011 I sat in the design room of our university’s student newsroom with some of the other editors: Kate Hudson, Brent Rose, and Nicholas Maronese. I was working as the photo editor then—something I loved doing. I was very happy travelling and photographing people while listening to their stories.
 
@@ -28,7 +30,8 @@ Information had changed form, but the student newsroom hadn’t, and it was beco
 
 ![][1]
 
-### We don’t know what we don’t know
+We don’t know what we don’t know
+--------------------------------
 
 We spent much of the rest of the school year asking “what should we be doing in the newsroom?”, which mainly led us to ask “how do we use the web to tell stories?” It was a straightforward question that led to many more questions about the web: something we knew little about. Out in the real world, traditional journalists were struggling to keep their jobs in a dying print world. They wore the same design of shoes that we were supposed to fill. Being pushed to repeat old, failing strategies and blocked from trying something new scared us.
 
@@ -40,7 +43,8 @@ We asked these questions to many students at other papers to get a consensus of 
 
 In other words, we knew that we should be building a newer pair of shoes, but we didn’t know what the function of the shoes should be.
 
-### Common problems in student newsrooms (2011)
+Common problems in student newsrooms (2011)
+-------------------------------------------
 
 Our questioning of other student journalists in 15 student newsrooms brought up a few repeating issues.
 
@@ -53,7 +57,8 @@ Our questioning of other student journalists in 15 student newsrooms brought up 
 
 ![From our 2011 research]
 
-### Common problems in student newsrooms (2013)
+Common problems in student newsrooms (2013)
+-------------------------------------------
 
 Two years later, we went back and looked at what had changed. We talked to a dozen more newsrooms and weren’t surprised by our findings.
 
@@ -76,7 +81,8 @@ We need to rethink how long the new shoe design will be valid. It’s more impor
 
 **We are building a shoe machine, not a shoe.**
 
-### A train or light at the end of the tunnel: are student newsrooms changing for the better?
+A train or light at the end of the tunnel: are student newsrooms changing for the better?
+-----------------------------------------------------------------------------------------
 
 In our 2013 research we found that almost 50% of student newsrooms had created roles specifically for the web. **This sounds great, but is still problematic in its current state.**
 
@@ -99,7 +105,8 @@ We’re OK with this problem, if we see newsrooms continue to take small steps t
 
 ![The current Open Journalism site was a few years in the making. This was an original launch page we use in 2012]
 
-### What we know
+What we know
+------------
 
 -   **New process**  
     Our rough research has told us newsrooms need to be reorganized. This includes every part of the newsroom’s workflow: from where a story and its information comes from, to thinking of every word, pixel, and interaction the reader will have with your stories. If I was a photo editor that wanted to re-think my process with digital tools in mind, I’d start by asking “how are photo assignments processed and sent out?”, “how do we receive images?”, “what formats do images need to be exported in?”, “what type of screens will the images be viewed on?”, and “how are the designers getting these images?” Making a student newsroom digital isn’t about producing “digital manifestos”, it’s about being curious enough that you’ll want to to continue experimenting with your process until you’ve found one that fits your newsroom’s needs.
@@ -108,7 +115,8 @@ We’re OK with this problem, if we see newsrooms continue to take small steps t
 -   **Changing a newsroom culture**  
     Skill diversity needs to change. We encourage every student newsroom we talk to, to start building a partnership with their school’s Computer Science department. It will take some work, but you’ll find there are many CS undergrads that love playing with web technologies, and using data to tell stories. Changing who is in the newsroom should be one of the first steps newsrooms take to changing how they tell stories. The same goes with getting designers who understand the wonderful interactive elements of the web and students who love statistics and exploring data. Getting students who are amazing at design, data, code, words, and images into one room is one of the coolest experience I’ve had. Everyone benefits from a more diverse newsroom.
 
-### What we don’t know
+What we don’t know
+------------------
 
 -   **Sharing curiosity for the web**  
     We don’t know how to best teach students about the web. It’s not efficient for us to teach coding classes. We do go into newsrooms and get them running their first code exercises, but if someone wants to learn to program, we can only provide the initial push and curiosity. We will be trying out “labs” with a few schools next school year to hopefully get a better idea of how to teach students about the web.
@@ -117,20 +125,23 @@ We’re OK with this problem, if we see newsrooms continue to take small steps t
 -   **The future**  
     We don’t know what journalism or the web will be like in 10 years, but we can start encouraging students to keep an open mind about the skills they’ll need. We’re less interested in preparing students for the current newsroom climate, than we are in teaching students to have the ability to learn new tools quickly as they come and go.
 
-### What we’re trying to share with others
+What we’re trying to share with others
+--------------------------------------
 
 -   **A concise guide to building stories for the web**  
     There are too many options to get started. We hope to provide an opinionated guide that follows both our experiences, research, and observations from trying to teach our peers.
 
 Student newsrooms don’t have investors to please. Student newsrooms can change their website every week if they want to try a new design or interaction. As long as students start treating the web as a different medium, and start building stories around that idea, then we’ll know we’re moving forward.
 
-### A note to professional news orgs
+A note to professional news orgs
+--------------------------------
 
 We’re also asking professional newsrooms to be more open about their process of developing stories for the web. You play a big part in this. This means writing about it, and sharing code. We need to start building a bridge between student journalism and professional newsrooms.
 
 ![2012]
 
-### This is a start
+This is a start
+---------------
 
 We going to continue slowly growing the content on [Open Journalism][Open Journalism site]. We still consider this the beta version, but expect to polish it, and beef up the content for a real launch at the beginning of the summer.
 

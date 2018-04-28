@@ -74,7 +74,8 @@ Decorate your party in the graduate’s current school colors or the colors of t
 
 jethuynh/iStock/Getty Images
 
-## [Related Searches]
+[Related Searches]
+------------------
 
 Promoted By Zergnet
 

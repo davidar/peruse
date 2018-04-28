@@ -6,7 +6,8 @@ lang: en
 
 ### [SmartNews Keeping you current]
 
-## Years of habitat destruction and poaching have reduced giraffe numbers by 30 percent, placing them in the vulnerable category for the first time
+Years of habitat destruction and poaching have reduced giraffe numbers by 30 percent, placing them in the vulnerable category for the first time
+================================================================================================================================================
 
 smithsonian.com  
 December 9, 2016

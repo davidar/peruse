@@ -10,7 +10,8 @@ Every year, about 2 million people get sick from a superbug, according to the CD
 
 The White House recently released a [comprehensive plan] outlining steps to combat drug-resistant bacteria. The plan identifies three “urgent” and several “serious” threats. We asked infectious disease experts to explain what some of them are and when to worry.
 
-## But First: What’s a Superbug?
+But First: What’s a Superbug?
+=============================
 
 It’s a term coined by the media to describe bacteria that cannot be killed using multiple [antibiotics]. “It resonates because it’s scary,” says Stephen Calderwood, MD, president of the Infectious Diseases Society of America. “But in fairness, there is no real definition.”
 

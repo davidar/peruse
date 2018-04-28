@@ -429,13 +429,17 @@ async function preprocess (window,
     .replace(/<(embed|iframe|video|audio) /g, '<img ')
     .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
 
-  if (!article.content.includes('<h2')) {
-    article.content = article.content
-      .replace(/<h3>(.*?)<\/h3>/g, '<h2>$1</h2>')
-      .replace(/<h4>(.*?)<\/h4>/g, '<h3>$1</h3>')
-      .replace(/<h5>(.*?)<\/h5>/g, '<h4>$1</h4>')
-      .replace(/<h6>(.*?)<\/h6>/g, '<h5>$1</h5>')
-  }
+  let headingRE = /<h([1-6]).*?<\/h.>/g
+  let headings = new Set()
+  for (let match; (match = headingRE.exec(article.content));) headings.add(match[1])
+  headings = Array.from(headings.values()).sort()
+  let heading = i => headings.indexOf(i.toString()) + 1
+  article.content = article.content
+    .replace(/<h2(.*?)<\/h.>/g, `<h${heading(2)}$1</h${heading(2)}>`)
+    .replace(/<h3(.*?)<\/h.>/g, `<h${heading(3)}$1</h${heading(3)}>`)
+    .replace(/<h4(.*?)<\/h.>/g, `<h${heading(4)}$1</h${heading(4)}>`)
+    .replace(/<h5(.*?)<\/h.>/g, `<h${heading(5)}$1</h${heading(5)}>`)
+    .replace(/<h6(.*?)<\/h.>/g, `<h${heading(6)}$1</h${heading(6)}>`)
 
   if (nextPageLink && pages.size < 10) {
     console.error(`Fetching page ${pages.size + 1} from ${nextPageLink}`)

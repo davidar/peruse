@@ -21,11 +21,13 @@ Ce texte, fortement décrié par la société civile pour son manque de contre-p
 
 Retour sur ses principales dispositions, après son passage en commission des lois et après le débat en séance publique.
 
-## Définition des objectifs des services
+Définition des objectifs des services
+=====================================
 
 Le projet de loi énonce les domaines que peuvent invoquer les services pour justifier leur surveillance. Il s’agit notamment, de manière attendue, de *« l’indépendance nationale, de l’intégrité du territoire et de la défense nationale »* et de *« la prévention du terrorisme »,* mais également des *« intérêts majeurs de la politique étrangère »,* ainsi que de la *« prévention des atteintes à la forme républicaine des institutions »* et de *« la criminalité et de la délinquance organisées »*. Des formulations parfois larges qui inquiètent les opposants au texte qui craignent qu’elles puissent permettre de surveiller des activistes ou des manifestants.
 
-## La Commission de contrôle
+La Commission de contrôle
+=========================
 
 Le contrôle de cette surveillance sera confié à une nouvelle autorité administrative indépendante, la Commission nationale de contrôle des techniques de renseignement (CNCTR), composée de six magistrats du Conseil d’Etat et de la Cour de cassation, de trois députés et trois sénateurs de la majorité et de l’opposition, et d’un expert technique. Elle remplacera l’actuelle Commission nationale de contrôle des interceptions de sécurité (CNCIS).
 
@@ -33,7 +35,8 @@ Elle délivrera son avis, sauf cas d’urgence, avant toute opération de survei
 
 L’avis de la CNCTR ne sera pas contraignant, mais cette commission pourra saisir le Conseil d’Etat si elle estime que la loi n’est pas respectée et elle disposera de pouvoirs d’enquête. Ce recours juridictionnel est une nouveauté dans le monde du renseignement.
 
-## Les « boîtes noires »
+Les « boîtes noires »
+=====================
 
 Une des dispositions les plus contestées de ce projet de loi prévoit de pouvoir contraindre les fournisseurs d’accès à Internet (FAI) à « *détecter une menace terroriste sur la base d’un traitement automatisé ».* Ce dispositif – autorisé par le premier ministre par tranche de quatre mois – permettrait de détecter, en temps réel ou quasi réel, les personnes ayant une activité en ligne typique de « schémas » utilisés par les terroristes pour transmettre des informations.
 
@@ -45,13 +48,15 @@ Lire aussi : [Les critiques de la CNIL contre le projet de loi sur le renseigne
 
 Le dispositif introduit une forme de « pêche au chalut » – un brassage très large des données des Français à la recherche de quelques individus. Le gouvernement se défend de toute similarité avec les dispositifs mis en place par la NSA américaine, arguant notamment que les données ne seront pas conservées et que cette activité sera contrôlée par une toute nouvelle commission aux moyens largement renforcés. Il s’agit cependant d’un dispositif très large, puisqu’il concernera tous les fournisseurs d’accès à Internet, et donc tous les internautes français.
 
-## L’élargissement de la surveillance électronique pour détecter les « futurs » terroristes
+L’élargissement de la surveillance électronique pour détecter les « futurs » terroristes
+========================================================================================
 
 La surveillance des métadonnées sera aussi utilisée pour tenter de détecter de nouveaux profils de terroristes potentiels, prévoit le projet de loi. Le gouvernement considère qu’il s’agit d’une manière efficace de détecter les profils qui passent aujourd’hui *« entre les mailles du filet »*, par exemple des personnes parties en Syrie ou en Irak sans qu’aucune activité suspecte n’ait été décelée avant leur départ.
 
 Pour repérer ces personnes, la loi permettra d’étendre la surveillance électronique à toutes les personnes en contact avec des personnes déjà suspectées. En analysant leurs contacts, la fréquence de ces derniers et les modes de communication, les services de renseignement espèrent pouvoir détecter ces nouveaux profils en amont.
 
-## De nouveaux outils et méthodes de collecte
+De nouveaux outils et méthodes de collecte
+==========================================
 
 Les services pourront également procéder, après un avis de la CNCTR, à la pose de micros dans une pièce ou de mouchards sur un objet (voiture par exemple), ou à l’intérieur d’un ordinateur. L’utilisation des IMSI-catchers (fausses antennes qui permettent d’intercepter des conversations téléphoniques) est également légalisée, pour les services de renseignement, dans certains cas. Le nombre maximal de ces appareils sera fixé par arrêté du premier ministre après l’avis de la CNCTR.
 
@@ -59,23 +64,27 @@ Les services pourront également procéder, après un avis de la CNCTR, à la po
 
 La loi introduit également des mesures de surveillance internationale : concrètement, les procédures de contrôle seront allégées lorsqu’un des « bouts » de la communication sera situé à l’étranger (concrètement, un Français qui parle avec un individu situé à l’étranger). Cependant, comme l’a souligné l’Arcep (l’Autorité de régulation des communications électroniques et des postes), sollicitée pour le versant technique de cette mesure, il est parfois difficile de s’assurer qu’une communication, même passant par l’étranger, ne concerne pas deux Français.
 
-## Un nouveau fichier
+Un nouveau fichier
+==================
 
 La loi crée un fichier judiciaire national automatisé des auteurs d’infractions terroristes (Fijait), dont les données pourront être conservées pendant vingt ans.
 
 Ce fichier concerne les personnes ayant été condamnées, même si une procédure d’appel est en cours. Les mineurs pourront aussi être inscrits dans ce fichier et leurs données conservées jusqu’à dix ans. L’inscription ne sera pas automatique et se fera sur décision judiciaire. Certaines mises en examen pourront aussi apparaître sur ce fichier. En cas de non-lieu, relaxe, acquittement, amnistie ou réhabilitation, ces informations seront effacées.
 
-## Renseignement pénitentiaire
+Renseignement pénitentiaire
+===========================
 
 Le renseignement pénitentiaire pourra, dans des conditions qui seront fixées par décret, profiter des techniques que légalise le projet de loi pour les services de renseignement. La ministre de la justice, Christiane Taubira, était défavorable à cette disposition, soutenue par le rapporteur du texte, la droite et une partie des députés de gauche. Pour la ministre, cette innovation va dénaturer le renseignement pénitentiaire et le transformer en véritable service de renseignement.
 
-## Conservation des données
+Conservation des données
+========================
 
 La CNIL [a fait part à plusieurs reprises de sa volonté] d’exercer sa mission de contrôle sur les fichiers liés au renseignement, qui seront alimentés par ces collectes. Ces fichiers sont aujourd’hui exclus du périmètre d’action de la CNIL.
 
 La durée de conservation des données collectées – et l’adaptation de cette durée à la technique employée – a par ailleurs été inscrite dans la loi, contrairement au projet initial du gouvernement qui entendait fixer ces limites par décret. Elle pourra aller jusqu’à cinq ans dans le cas des données de connexion.
 
-## Un dispositif pour les lanceurs d’alerte
+Un dispositif pour les lanceurs d’alerte
+========================================
 
 La loi prévoit également une forme de protection pour les agents qui seraient témoins de surveillance illégale. Ces lanceurs d’alerte pourraient solliciter la CNCTR, voire le premier ministre, et leur fournir toutes les pièces utiles. La CNCTR pourra ensuite aviser le procureur de la République et solliciter la Commission consultative du secret de la défense nationale afin que cette dernière *« donne au premier ministre son avis sur la possibilité de déclassifier tout ou partie de ces éléments »*. Aucune mesure de rétorsion ne pourra viser l’agent qui aurait dénoncé des actes potentiellement illégaux.
 

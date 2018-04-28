@@ -3,7 +3,8 @@ title: A console that keeps up with gaming PCs
 lang: en
 ---
 
-## But only hardcore gamers will appreciate it.
+But only hardcore gamers will appreciate it.
+--------------------------------------------
 
 [![][1]]
 
@@ -27,7 +28,8 @@ The [Xbox One X] is the ultimate video game system. It sports more horsepower th
 
 As promised, the Xbox One X is the most powerful game console ever. In practice, though, it really just puts Microsoft on equal footing with Sony’s PlayStation 4 Pro. 4K/HDR enhanced games look great, but it’s lack of VR is disappointing in 2017.
 
-### Hardware
+Hardware
+--------
 
 ![][3]
 
@@ -43,7 +45,8 @@ Along the front, there’s the slot-loading 4K Blu-ray drive, a physical power b
 
 The console’s controller hasn’t changed since its last mini-upgrade with the Xbox One S. That revision rounded out its seams, improved bumper performance and added a 3.5mm headphone jack. It’s still a great controller, though I’m annoyed Microsoft is sticking with AA batteries as their default power source. Sure, you could just pick up some renewable batteries, or the Play and Charge kit, but that’s an extra expense. And manually swapping batteries feels like a bad user experience when every other console has rechargeable controllers.
 
-### In use
+In use
+------
 
 ![Devindra Hardawar/AOL][5]
 
@@ -83,7 +86,8 @@ And speaking of Dolby technology, Microsoft is also highlighting Atmos support o
 
 One thing you won’t find in the new Xbox is VR support. Microsoft has mentioned that the console will offer some sort of mixed reality, but it hasn’t offered up any details yet. It’s technically powerful enough to work with any of the Windows Mixed Reality headsets launching this fall. It’s a shame that Microsoft is being so wishy-washy because Sony has had a very successful head start with the PlayStation VR.
 
-### Pricing and the competition
+Pricing and the competition
+---------------------------
 
 ![Devindra Hardawar/AOL][10]
 
@@ -93,13 +97,15 @@ If you’re looking to upgrade from an original Xbox One, and you have a new TV,
 
 If price isn’t a huge concern for you, it’s worth considering investing in a gaming PC. A decent one costs between \$600 and \$800, plus the price of a monitor, but it’ll easily be more powerful than the One X. And you have the added benefit of upgrading components down the line. Now that Microsoft and game publishers are offering most major titles on PC, you won’t be missing out on much by ditching consoles.
 
-### Wrap-up
+Wrap-up
+-------
 
 ![][11]
 
 Ultimately, the Xbox One X offers some major performance upgrades that gamers will notice – especially if you’re coming from an original Xbox One. But it’s also a bit disappointing since it’s coming a year after the PS4 Pro, and it doesn’t offer VR yet. For Microsoft fans, though, none of that will matter. It’s exactly what the company promised: the fastest game console ever made.
 
-## From around the web
+From around the web
+===================
 
   [1]: https://o.aolcdn.com/images/dims?thumbnail=45%2C45&quality=80&image_uri=http%3A%2F%2Fwww.blogcdn.com%2Fwww.engadget.com%2Fmedia%2F2016%2F03%2Fdevindra-engadget-headshot-small.jpg&client=cbc79c14efcebee57402&signature=e6ffba7468c380581b6589a70ce5d7c1ec40cd1d
   [![][1]]: https://www.engadget.com/about/editors/devindra-hardawar/

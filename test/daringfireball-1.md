@@ -8,7 +8,8 @@ Daring Fireball is written and produced by John Gruber.
 [![Photograph of the author.]]  
 *Portrait by [George Del Barrio]*
 
-## Mac Apps
+Mac Apps
+========
 
 -   [BBEdit]
 -   [Acorn]
@@ -20,11 +21,13 @@ Daring Fireball is written and produced by John Gruber.
 -   [Snapz Pro X]
 -   [WebKit]
 
-## iPhone Apps
+iPhone Apps
+===========
 
 -   [Vesper]
 
-## Server Software
+Server Software
+===============
 
 The Daring Fireball website is hosted by [Joyent].
 
@@ -32,7 +35,8 @@ Articles and links are published through [Movable Type]. In addition to my own S
 
 Stats are tracked using [Mint]. Additional web nerdery, including the membership system, is fueled by [Perl], [PHP], and [MySQL].
 
-## Web Standards
+Web Standards
+=============
 
 Web standards are important, and Daring Fireball adheres to them. Specifically, Daring Fireball’s HTML markup should validate as either [HTML 5] or XHTML 4.01 Transitional, its layout is constructed using [valid CSS], and its syndicated feed is [valid Atom].
 

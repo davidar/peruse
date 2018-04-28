@@ -8,7 +8,8 @@ No other browser gives you so much choice and flexibility.
 
 ![][1]
 
-## Designed to be redesigned
+Designed to be redesigned
+=========================
 
 Get fast and easy access to the features you use most in the new menu. Open the “Customize” panel to add, move or remove any button you want. Keep your favorite features — add-ons, private browsing, Sync and more — one quick click away.
 
@@ -16,7 +17,8 @@ Get fast and easy access to the features you use most in the new menu. Open the 
 
 ![][3]
 
-### Themes
+Themes
+------
 
 Make Firefox match your style. Choose from thousands of themes and dress up your browser with a single click.
 
@@ -27,7 +29,8 @@ Next
 
 ![Preview of the currently selected theme]
 
-### Add-ons
+Add-ons
+-------
 
 Next
 
@@ -42,7 +45,8 @@ Add-ons are like apps that you install to add features to Firefox. They let you 
 
 ![][5]
 
-### Awesome Bar
+Awesome Bar
+-----------
 
 Next
 

@@ -7,7 +7,8 @@ lang: en
 
 #### Gear & Gadgets —
 
-## While not perfect, either, cloud hosting providers have a better customer data record.
+While not perfect, either, cloud hosting providers have a better customer data record.
+======================================================================================
 
 ![Aurich / Thinkstock]
 
@@ -15,7 +16,8 @@ In the wake of this spring’s [Senate ruling] nixing FCC privacy regulations im
 
 With a Congress that has demonstrated its lack of interest in protecting you from your ISP, and ISPs that have repeatedly demonstrated a “whatever-we-can-get-away-with” attitude toward customers’ data privacy and integrity, it may be time to look into how to get your data out from under your ISP’s prying eyes and grubby fingers intact. To do that, you’ll need a VPN.
 
-## The scope of the problem (and of the solution)
+The scope of the problem (and of the solution)
+==============================================
 
 Before you can fix this problem, you need to understand it. That means knowing what your ISP can (and cannot) detect (and modify) in your traffic. HTTPS traffic is already relatively secure—or, at least, its *content* is. Your ISP can’t actually read the encrypted traffic that goes between you and an HTTPS website (at least, they can’t unless they convince you to install a MITM certificate, like [Lenovo did to unsuspecting users of its consumer laptops] in 2015). However, ISPs *do* know that you visited that website, when you visited it, how long you stayed there, and how much data went back and forth.
 
@@ -29,7 +31,8 @@ You can’t protect yourself from *all* potential attackers. Unfortunately, an a
 
 ![[Enlarge] / If you think this will be secure, please read on.]
 
-## A problem of trust
+A problem of trust
+==================
 
 We’ve already established—actually, your *ISP* has already established—that your ISP cannot be trusted. The obvious solution, then, is a VPN, a Virtual Private Network, that tunnels all of your vulnerable, unencrypted data outside the ISP’s reach. The problem is, that data will be just as vulnerable when it exits the endpoint. Essentially, you’ve traded one set of vulnerabilities for another, hopefully less-troublesome set.
 
@@ -47,11 +50,13 @@ Page: 1 [2][] [3][] [4][] [5][] [Next →][2]
 
 #### Gear & Gadgets —
 
-## While not perfect, either, cloud hosting providers have a better customer data record.
+While not perfect, either, cloud hosting providers have a better customer data record.
+======================================================================================
 
 ![[Enlarge][1] / Actual slide from the Snowden leaks: dramatization of what nation-states do when they come across users not even trying.]
 
-## Grab an SSH key and get started
+Grab an SSH key and get started
+===============================
 
 When it comes to hosting, there are plenty of great providers out there, and in particular I’ve used both Digital Ocean and Linode extensively. Both offer instances starting at \$5/mo with multiple data centers and great management features. For this project, I chose Digital Ocean, but either (or any of several others) will do.
 
@@ -61,7 +66,8 @@ On Windows, it’s a bit more complicated. [Download PuTTY] if you don’t alrea
 
 Now that you’ve got a key, back it up and put the challenge phrase in your password manager. Once you’ve done that, we’re finally ready to spin up a VM.
 
-## Spinning up a VM
+Spinning up a VM
+================
 
 We’ll briefly walk through the exact steps to set up a VM on DigitalOcean, because this part really isn’t hard. And if you decided to use Linode or some other provider instead, you shouldn’t have much of a challenge figuring it out.
 
@@ -69,7 +75,8 @@ Once you’ve browsed to DigitalOcean and logged in (creating a user account fir
 
 Next, choose a hostname for your droplet (something memorable and easy to identify, preferably) and click “Create.” About 15 seconds later, your VPN will be ready to log in, and its IP address will be visible on the main Droplets page. From Linux or a Mac, ssh root@your.new.ip.address. From Windows, enter and save root@your.new.ip.address as a destination, then connect to it, and you’re ready to go. Once you’ve entered in your challenge phrase (if you used one), you’ll be staring at something along the lines of **root@ars-vpn-test:\~\#**.
 
-## Automatic security upgrades
+Automatic security upgrades
+===========================
 
 Given that the whole point of this exercise is to *increase* your security, not to screw it up. We want to make sure your new VM gets automatic security upgrades as they become available.
 
@@ -83,11 +90,13 @@ Page: [1] 2 [3][2] [4][3] [5][4] [Next →][2]
 
 #### Gear & Gadgets —
 
-## While not perfect, either, cloud hosting providers have a better customer data record.
+While not perfect, either, cloud hosting providers have a better customer data record.
+======================================================================================
 
 ![[Enlarge][5] / The first step to improved security is making sure it *stays* improved.]
 
-## Installing and configuring OpenVPN server
+Installing and configuring OpenVPN server
+=========================================
 
 OK, now it’s time for the chewy part. The packages you’ll need are **openvpn** and **easy-rsa**.
 
@@ -226,9 +235,11 @@ Page: [1][] [2] 3 [4][3] [5][4] [Next →][3]
 
 #### Gear & Gadgets —
 
-## While not perfect, either, cloud hosting providers have a better customer data record.
+While not perfect, either, cloud hosting providers have a better customer data record.
+======================================================================================
 
-## Client credentials and configs
+Client credentials and configs
+==============================
 
 For each client you want to connect, you need three credential files: the Certificate Authority cert (this is the same for all clients) at **/etc/openvpn/keys/ca.crt**, the client cert at **/etc/openvpn/keys/clientname.crt**, and the client’s private key at **/etc/openvpn/keys/clientname.key**. (If you want to be sure that even an attacker who gets root on your server can’t connect to the server later using your own VPN infrastructure, you can delete the **clientname.key** from the server once you have it safely available on the client.)
 
@@ -277,13 +288,15 @@ Once you’ve got this file in place and ready to go, you can fire up your VPN m
 
 Once you’re satisfied that your VPN is up and working properly, if you’d like to make it an everyday thing, enable it as a service. On Ubuntu, **systemctl enable openvpn ; systemctl start openvpn** will do the trick. On Windows, go into the Services applet from the Control Panel, set the OpenVPN Service to “automatic”, then start it. On a Mac using Homebrew, [set up a LaunchDaemon], or if using TunnelBlick, [set it to connect automatically].
 
-## Um… now Netflix won’t work.
+Um… now Netflix won’t work.
+===========================
 
 Yeah, that’s a problem you’re going to have. Netflix is under some pretty odious obligations to region-lock a lot of their content, since they’re only licensed to show some UK content to UK users, US content to US users, and so forth. The content providers *do* complain if they perceive that their region locks aren’t being honored (as do Netflix’s *competitors* in other regions, such as SKY). As a result, Netflix tends to block known data centers, proxy servers, and vpn providers as much as possible.
 
 If you’re running your OpenVPN client directly on your computer, you’ll likely have to drop the VPN connection whenever you want to use Netflix (or other media service that blocks your data center). Luckily, if you want to run your OpenVPN directly on the router that your whole network goes through, you’ve got a better option: policy-based routing.
 
-## OpenVPN on a Homebrew router
+OpenVPN on a Homebrew router
+============================
 
 If you’re running [a Homebrew router] like mine, getting the whole network behind your new VPN is almost embarrassingly easy. Following the Ubuntu instructions above, you just **apt update ; apt install openvpn**, put the ***clientname*.conf** in **/etc/openvpn** and the **ca.crt**, ***clientname*.key** and ***clientname*.crt** in **/etc/openvpn/keys**, **systemctl enable openvpn ; systemctl start openvpn** and poof, you’re connected. The only thing left to do after that is to allow forwarding with masquerade across the VPN tunnel as well as across the WAN, in **/etc/network/if-pre-up.d/firewall**.
 
@@ -350,11 +363,13 @@ Page: [1][5] [2][6] [3][7] 4 [5][8] [Next →][8]
 
 #### Gear & Gadgets —
 
-## While not perfect, either, cloud hosting providers have a better customer data record.
+While not perfect, either, cloud hosting providers have a better customer data record.
+======================================================================================
 
 ![[Enlarge][9] / This is a speedtest.net run on the Homebrew, powered by a Celeron J1900, using the nice-and-paranoid combination of AES-256-CBC/SHA512. The results you’re seeing—80 Mbps down and 5-8 Mbps up—are the limits of my Internet connection and/or the stuff my wife, kids, and various computers were doing while I ran the test. When not constrained by the actual network connection, the Homebrew will push \> 200 Mbps of OpenVPN traffic.]
 
-## OpenVPN on a (Netgear) consumer router
+OpenVPN on a (Netgear) consumer router
+======================================
 
 You can also run OpenVPN on all sorts of consumer routers, running either OpenWRT or DD-WRT. I’m going to just talk very specifically about getting it running on a Netgear Nighthawk here for good reason: Netgear directly runs [myopenrouter.com], where they actually *collaborate* with open source developers who are adapting builds of open source firmware for installation on Netgear routers. This is extremely cool, not least because it means that you can install firmware from myopenrouter directly onto a supported Netgear router *using the router’s own Web-based interface*.
 
@@ -388,7 +403,8 @@ Finally, you may need to set some static leases for your media center devices. M
 
 Most of the steps above will be the same (or at least very similar) for *any* consumer router you’ve managed to shoehorn DD-WRT (or a DD-WRT variant, like Tomato) onto.
 
-## On consumer routers, price, and performance
+On consumer routers, price, and performance
+===========================================
 
 If you’re considering buying a consumer router specifically for running a VPN out of your network, the R8000 might or might not be the best fit for you. I’m going to stick to recommending Netgear Nighthawks no matter what for two reasons: Netgear actually *supports* the process of you replacing their OEM firmware with DD-WRT builds, and Netgear uses relatively high-powered ARM A9 multi-core CPUs in their Nighthawk series, where many consumer routers are using much, much weaker MIPS CPUs. This makes a *huge* impact on VPN throughput.
 
@@ -400,25 +416,30 @@ The R6700 and the R8000 share the same CPU and will perform equivalently for VPN
 
 Finally, if the sky’s the limit, Netgear also offers a Nighthawk X10 (R9000) with a whopping 1.7 GHz *quad*-core ARM A9 CPU. I have not tested one yet, but if I had to hazard a guess, I’d expect nearly double the OpenVPN throughput that the R8000’s 1 GHz dual-core ARM A9 managed (figure an estimated 45+ Mbps throughput on AES-256-CBC/SHA512, or 65+ Mbps on AES-256-CBC/SHA1). You’ll also get MU-MIMO, quad-stream 2.4 GHz and 5 GHz radios, and where the R8000 had a second 5 GHz radio, the R9000 has an 802.11ad 60 GHz “wigig” radio instead. (You almost certainly don’t have a wigig *client* device to connect to it with, but hey, you’ll have the radio on your router.) All of this comes at a pretty whopping price tag, though: Amazon is currently listing the R9000 at \$450.
 
-## On (in)security and performance
+On (in)security and performance
+===============================
 
 A final option, which I will go ahead and discuss but flat-out tell you **we do not recommend** is to sacrifice security for performance almost entirely. Weakening the encryption protocol and dropping the authentication protocol entirely—AES-128-CBC/None—resulted in 51.25 Mbps throughput on my R8000. Finally, dropping both authentication *and* encryption (at which point, yes, you’ve *tunneled* your data but somebody who actually cared could still pick it apart) to None/None will go wire speed on just about any Internet connection you throw it at.
 
 File this under “I’d rather talk with you kids about it than have you learn it on the playground.” Yes, these options are faster. And if all you’re concerned about—we truly mean *all* you’re concerned about—is throwing a monkey wrench into your ISP’s very casual predatory snooping, they’ll *probably* do the trick. An actual attacker will absolutely be able to unravel these “fast” tunnels and view or modify the data running down them, though, so really… *don’t* do it. Or, at the very least, don’t claim nobody told you it was a bad idea.
 
-## Conclusions
+Conclusions
+===========
 
 It’s really *not* that hard to roll your own, personally hosted VPN service to get your data away from prying eyes at your ISP (or at the coffee shop; we didn’t cover the minutiae of installation here, but you can use OpenVPN credentials on Android and iOS phones and tablets, too). *Extremely* heavy data users might have problems with bandwidth overage costs from their VPS provider, but the 1TB/month allotment from DigitalOcean will easily cover my household usage. Whether you want to set the whole thing up on a router to blanket-cover your whole network, on individual devices, or both at once, you can get it done.
 
-### The Good:
+The Good:
+---------
 
 -   OpenVPN can be configured extremely securely, is free as in speech and as in beer, and can be run on just about any device you can think of: Windows, Macs, Linux or BSD machines, phones, tablets, and even (some) consumer routers.
 
-### The Bad:
+The Bad:
+--------
 
 -   At the end of the day, your insecure traffic is still *insecure—*you’ve just moved your point of vulnerability, not eliminated it. You (understandably) didn’t trust your ISP, so you moved it out of their reach. You (understandably) didn’t trust VPN providers, so you didn’t use them. But you’re still trusting your hosting provider… *and* everybody *they’re* downstream of.
 
-### The Ugly:
+The Ugly:
+---------
 
 -   You now have one more machine to maintain. Your Ubuntu 16.04 LTS VM will automatically apply security upgrades, and it’s supported through April 2021 (after which it will need an upgrade to a newer LTS version, which can generally be done relatively painlessly and in place for simple systems like this), but that’s not forever. There’s no guarantee that some new crypto breakthrough won’t force you to reevaluate your cipher/digest choices before then, either.
 

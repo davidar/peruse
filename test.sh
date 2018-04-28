@@ -1,7 +1,7 @@
 #!/bin/sh
 export TZ=UTC
 
-./index.js server --unsafe-local --atx-headers --wrap=none & sleep 3
+./index.js server --unsafe-local --wrap=none & sleep 3
 PID=$!
 
 for file in test/*.md; do

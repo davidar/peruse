@@ -3,7 +3,8 @@ title: Minecraft 1.8 - The Bountiful Update - Minecraft 1.8 - The Bountiful Upda
 lang: en
 ---
 
-## [Minecraft 1.8 - The Bountiful Update]
+[Minecraft 1.8 - The Bountiful Update]
+======================================
 
 \+ Added Granite, Andesite, and Diorite stone blocks, with smooth versions  
 + Added Slime Block  

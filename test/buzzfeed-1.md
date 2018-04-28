@@ -4,7 +4,8 @@ author: Mark Di Stefano
 lang: en
 ---
 
-## The mother of a woman who took suspected diet pills bought online has described how her daughter was “literally burning up from within” moments before her death.
+The mother of a woman who took suspected diet pills bought online has described how her daughter was “literally burning up from within” moments before her death.
+=================================================================================================================================================================
 
 West Merica Police
 
@@ -34,7 +35,8 @@ The Food Standards Agency warned people to stay away from slimming products that
 
 “We advise the public not to take any tablets or powders containing DNP, as it is an industrial chemical and not fit for human consumption,” it said in a statement.
 
-## Fiona Parry issued a plea for people to stay away from pills containing the chemical.
+Fiona Parry issued a plea for people to stay away from pills containing the chemical.
+=====================================================================================
 
 “\[Eloise\] just never really understood how dangerous the tablets that she took were,” she said. “Most of us don’t believe that a slimming tablet could possibly kill us.
 

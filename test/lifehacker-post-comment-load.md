@@ -8,7 +8,8 @@ lang: en
 
 We all buy things from time to time that we don’t really need. It’s okay to appeal to your wants every once in a while, as long as you’re in control. If you struggle with clutter, impulse buys, and buyer’s remorse, here’s how to put your mind in the right place before you even set foot in a store.
 
-### **Understand How Your Own Brain Works Against You**
+**Understand How Your Own Brain Works Against You**
+===================================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][1]
 
@@ -23,7 +24,8 @@ And sure, we can blame the stores all we want, but you won’t change how they o
 
 For example, confirmation bias makes you only believe the information that conforms to your prior beliefs, while you discount everything else. Advertisers appeal to this bias directly by convincing you one item is better than another with imagery and other tricks, regardless of what hard facts might say. Keep your mind open, do your own research, and accept when you’re wrong about a product. The Decoy effect is also a commonly used tactic. You think one product is a deal because it’s next to a similar product that’s priced way higher. Even if it’s a product you need, it’s probably not as good of a deal as it looks right then and there. Again, always research beforehand and be on the lookout for this common trick to avoid impulse buys.
 
-### **Make a List of** ***Everything*** **You Own and Do Some Decluttering**
+**Make a List of** ***Everything*** **You Own and Do Some Decluttering**
+========================================================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][2]
 
@@ -46,7 +48,8 @@ Remember to be honest and adjust your lists accordingly. There’s nothing wrong
 
 Once you have everything organized, it’s time to do some serious decluttering. This listing exercise should get you started, but there are [a lot of other great ideas] when it comes to ditching the junk you don’t need. Regardless, everything on your “crap” list needs to go. You can donate it, sell it at a yard sale, give it away to people know, whatever you like. Before you get rid of everything, though, take a picture of all your stuff together. Print out or save the picture somewhere. Some of it was probably gifts, but in general, this is all the crap you bought that you don’t need. Take a good look and remember it.
 
-### **See How Much Money and Time You Spent on the Stuff You Threw Out**
+**See How Much Money and Time You Spent on the Stuff You Threw Out**
+====================================================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][3]
 
@@ -54,7 +57,8 @@ Now take a look at your “crap” list again and start calculating how much you
 
 With the money cost figured out, you should take a look at the other costs too. Time is a resource just like any other, and it’s a finite one. What kind of time did you pour into these things? Consider the time you spent acquiring and using these items, then write it all down. These can be rough estimations, but go ahead and add it all up when you think you’ve got it. Now attach the total time to same picture as before and think of the other ways you could have spent all that time. This isn’t to make you feel bad about yourself, just to deliver information to your brain in an easy-to-understand form. When you look at it all like this, it can open your eyes a little more, and help you think about purchases in the future. You’ll look at an item and ask yourself, “Will this just end up in the picture?”
 
-### **List Every Non-Material Thing In Your Life that Makes You Happy**
+**List Every Non-Material Thing In Your Life that Makes You Happy**
+===================================================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][4]
 
@@ -62,7 +66,8 @@ Now it’s time to make a different list. While material items may bring plenty 
 
 These are probably the things that actually make you want to get out of bed in the morning and keep on keepin’ on. Once you have it all down, put it in your purse or wallet. The next time you feel the urge to buy something, whip this list out first and remind yourself why you probably don’t need it.
 
-### **Spend Some Time Away from Material Things to Gain Perspective**
+**Spend Some Time Away from Material Things to Gain Perspective**
+=================================================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][5]
 
@@ -70,7 +75,8 @@ If you’re having a really hard time with your spending, it can help to get awa
 
 Essentially, you want to show yourself that you don’t need your “things” to have a good time. When you realize how much fun you can have without all the trinkets and trivets, you’ll start to shut down your desire to buy them. If you can’t get really get away right now, just go for a walk without your purse or wallet (but carry your ID). If you can’t buy anything, you’ll be forced to experience things a different way.
 
-### **Develop a Personal “Should I Buy This?” Test**
+**Develop a Personal “Should I Buy This?” Test**
+================================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][6]
 
@@ -84,7 +90,8 @@ If you don’t have a personal “should I buy this?” test, now’s the perfec
 
 Custom build your test to hit all of your weaknesses. If you make a lot of impulse buys, include questions that address that. If you experience a lot of buyer’s remorse, include a lot of questions that make you think about the use of item after you buy it. If buying the latest and greatest technology is your weakness, Joshua Becker at Becoming Minimalist suggests you ask yourself [what problem the piece of tech solves]. If you can’t think of anything it solves or if you already have something that solves it, you don’t need it. Be thorough and build a test that you can run through your mind every time you consider buying something.
 
-### **Learn to Delay Gratification and Destroy the Urge to Impulse Buy**
+**Learn to Delay Gratification and Destroy the Urge to Impulse Buy**
+====================================================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][7]
 
@@ -100,7 +107,8 @@ The last thing you should consider when it comes to impulse buys is “artificia
 
 You probably have things in your life that provide plenty of gratification, so don’t get caught substituting it with impulse buys. Always make sure you keep yourself happy with plenty of time doing the things you like to do and you won’t be subconsciously trying to fill that void with useless crap.
 
-### **Turn the Money You Save Into More Money**
+**Turn the Money You Save Into More Money**
+===========================================
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need][8]
 

@@ -4,7 +4,8 @@ author: Ahiza Garcia
 lang: en
 ---
 
-## The U.S. has long been heralded as a land of opportunity – a place where anyone can succeed regardless of the economic class they were born into.
+The U.S. has long been heralded as a land of opportunity – a place where anyone can succeed regardless of the economic class they were born into.
+=================================================================================================================================================
 
 But a new report released on Monday by [Stanford University’s Center on Poverty and Inequality] calls that into question.
 
