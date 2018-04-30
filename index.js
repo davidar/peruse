@@ -359,7 +359,11 @@ async function preprocess (window,
     let caption = figure.getElementsByTagName('figcaption')[0]
     if (images.length > 0) {
       figure.innerHTML = images[0].outerHTML
-      if (caption) figure.innerHTML += caption.outerHTML
+      if (caption) {
+        figure.innerHTML += caption.outerHTML
+      } else {
+        figure.outerHTML = '<div>' + figure.innerHTML + '</div>'
+      }
     } else {
       removeNode(figure)
     }
@@ -393,12 +397,6 @@ async function preprocess (window,
   } else { // plain text pretending to be HTML
     forEachR(document.getElementsByTagName('pre'), pre => pre.removeAttribute('class'))
   }
-
-  forEachR(document.getElementsByTagName('figure'), fig => {
-    if (fig.getElementsByTagName('figcaption').length === 0) {
-      fig.outerHTML = '<div>' + fig.innerHTML + '</div>'
-    }
-  })
 
   forEachR(document.querySelectorAll(
     'h1 br, h2 br, h3 br, h4 br, h5 br, h6 br'), br => {
@@ -635,7 +633,7 @@ async function mainServer (port = 4343) {
   app.get('/image/:opt/:url(*)', (req, res) => {
     let {opt, url} = req.params
     let qstr = URL.parse(req.url).search
-    if (qstr) url += qstr
+    if (qstr && !url.includes('imgix.net')) url += qstr
     if (opt === '1x') res.redirect(url)
   })
   app.get('/:format/:url(*)', async (req, res, next) => {
