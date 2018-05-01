@@ -15,6 +15,7 @@ const Highlights = require('highlights')
 const iso639 = require('iso-639-3')
 const {JSDOM, VirtualConsole} = require('jsdom')
 const {memoize} = require('lodash')
+const PageZipper = require('pagezipper')
 const pandiff = require('pandiff')
 const {pandoc} = require('nodejs-sh')
 const parse5 = require('parse5')
@@ -30,8 +31,6 @@ const tldjs = require('tldjs')
 const tmp = require('tmp')
 const URL = require('url')
 const yaml = require('js-yaml')
-
-const {findNextPageLink} = require('./readability.js')
 
 require('prerender/lib/util').log = console.error
 
@@ -276,7 +275,7 @@ const prerenderServer = memoize(async () => {
 })
 
 async function preprocess (window,
-  {loc = window.location, allowPrerender = true, pages = new Set(), lastPageScore = 0} = {}) {
+  {loc = window.location, allowPrerender = true, pgzp = null} = {}) {
   let document = window.document
 
   let canonical = document.querySelector('link[rel="canonical"]')
@@ -415,15 +414,18 @@ async function preprocess (window,
     content: document.documentElement.outerHTML
   }
 
-  let {href: nextPageLink, score: nextPageScore} = findNextPageLink(loc, document.body, pages) || {}
-  if (nextPageLink) {
-    forEachR(document.getElementsByTagName('a'), link => {
-      if (link.href === nextPageLink + '/') nextPageLink = link.href
-    })
-    if ((pages.size === 1 && !nextPageLink.replace('www.', '').startsWith(loc.href.replace('www.', ''))) ||
-        nextPageScore < lastPageScore - 50) {
-      console.error('Skipping inconsistent next page link', nextPageLink)
-      nextPageLink = null
+  if (!pgzp) pgzp = new PageZipper(loc.href)
+  let nextPage = pgzp.getNextLink(document.body) || {}
+  if (nextPage.url) {
+    let lastPage = pgzp.pages[pgzp.pages.length - 1]
+    if ((pgzp.pages.length === 1 && !nextPage.url.replace('www.', '').startsWith(loc.href.replace('www.', ''))) ||
+        nextPage.finalScore < 0.8 * lastPage.finalScore || nextPage.finalScore < 15e3) {
+      console.error('Skipping inconsistent next page link', nextPage.url)
+      nextPage.url = null
+    } else {
+      lastPage.nextLinkObj = nextPage
+      pgzp.pages.push(nextPage)
+      pgzp.url_list.push(nextPage.url)
     }
   }
 
@@ -440,7 +442,7 @@ async function preprocess (window,
       followRedirects: true,
       javascript: ''
     }))
-    article = await preprocess(dom.window, {loc, allowPrerender: false, pages})
+    article = await preprocess(dom.window, {loc, allowPrerender: false, pgzp})
   }
 
   article.title = article.title.replace(/\s+/g, ' ')
@@ -470,15 +472,16 @@ async function preprocess (window,
     .replace(/<h5([\s\S]*?)<\/h.>/g, `<h${heading(5)}$1</h${heading(5)}>`)
     .replace(/<h6([\s\S]*?)<\/h.>/g, `<h${heading(6)}$1</h${heading(6)}>`)
 
-  if (nextPageLink && pages.size < 10) {
-    console.error(`Fetching page ${pages.size + 1} from ${nextPageLink}`)
-    let dom = await jsdom(nextPageLink)
+  if (nextPage.url && pgzp.pages.length < 10) {
+    console.error(`Fetching page ${pgzp.pages.length} from ${nextPage.url}`)
+    let dom = await jsdom(nextPage.url)
     if (dom) {
-      let rest = await preprocess(dom.window, {pages, lastPageScore: nextPageScore})
+      let rest = await preprocess(dom.window, {pgzp})
+      // TODO: remove repeated content
       article.content += rest.content
     }
-  } else if (nextPageLink) {
-    article.content += '<p><a href="' + nextPageLink + '">Next Page</a></p>'
+  } else if (nextPage.url) {
+    article.content += '<p><a href="' + nextPage.url + '">Next Page</a></p>'
   }
 
   return article
