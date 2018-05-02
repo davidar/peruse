@@ -1,10 +1,10 @@
-{--![][1]--}
+{--![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg)--}
 
-{++![][2]++}
+{++![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg)++}
 
 {~~Richard Perry/~>Karsten Moran for ~~}The New York Times
 
-{~~People listened to~>Grace Christian Fellowship in Newtown conducted~~} a {~~memorial service through the windows at St. Rose of Lima Church.~>candlelight vigil.~~} [More Photos »]
+{~~People listened to~>Grace Christian Fellowship in Newtown conducted~~} a {~~memorial service through the windows at St. Rose of Lima Church.~>candlelight vigil.~~} [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)
 
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
@@ -14,7 +14,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 The{-- school--} principal had buzzed Mr. Lanza in because she recognized him as the son of a colleague. Moments later, she was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way {++not ++}to{-- not--} attract attention when he was younger.
 
@@ -24,7 +24,7 @@ Some who were there said the shooting occurred during morning announcements, and
 
 {++The New York City medical examiner’s office sent a “portable morgue” to Newtown to help with the aftermath of the shootings, a spokeswoman, Ellen Borakove, confirmed late Friday.++}
 
-Law enforcement officials offered no hint of what{++ had++} motivated Mr. Lanza. It was also unclear, one investigator said, why Mr. Lanza — after shooting his mother to death inside her home — drove her car to the school and slaughtered the children. “I don’t think anyone knows the answers to those questions at this point,” the official said. As for a possible motive, he added, {~~“We~>“we~~} don’t know much for sure.”
+Law enforcement officials offered no hint of what{++ had++} motivated Mr. Lanza. It was also unclear, one investigator said, why Mr. Lanza — after shooting his mother to death inside her home — drove her car to the school and slaughtered the children. “I don’t think anyone knows the answers to those questions at this point,” the official said. As for a possible motive, he added, “{~~We~>we~~} don’t know much for sure.”
 
 F.B.I. agents interviewed his brother, Ryan Lanza, in Hoboken, N.J. His father, Peter Lanza, who was divorced from Nancy Lanza, was also questioned, one official said.
 
@@ -75,8 +75,3 @@ One law enforcement official said the guns had not been traced because they had 
 The first 911 call was recorded about 9:30 and said someone had been shot at the school, an almost unthinkable turn of events on what had begun as just another chilly day in quiet Newtown. Soon, frantic parents were racing to the school, hoping their children were all right. By 10:30, the shooting had stopped. By then, the police had arrived with dogs.
 
 “There is going to be a black cloud over this area forever,” said Craig Ansman, who led his 4-year-old daughter from the preschool down the street from the elementary school. “It will never go away.”
-
-  [1]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg
-  [2]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg
-  [More Photos »]: http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."

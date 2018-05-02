@@ -158,11 +158,11 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
 # Update 20121215042128
-![][1]
+![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg)
 
 Richard Perry/The New York Times
 
-People listened to a memorial service through the windows at St. Rose of Lima Church. [More Photos »]
+People listened to a memorial service through the windows at St. Rose of Lima Church. [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)
 
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
@@ -172,7 +172,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 The{-- school--} principal had buzzed Mr. Lanza in because she recognized him as the son of a colleague. Moments later, she was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way {++not ++}to{-- not--} attract attention when he was younger.
 
@@ -180,7 +180,7 @@ The gunman was chillingly accurate. A spokesman for the State Police said {~~tha
 
 Some who were there said the shooting occurred during morning announcements, and the initial shots could be heard over the school’s public address system. The bodies of those killed were still in the school as of 10 p.m. Friday.
 
-Law enforcement officials offered no hint of what {++had ++}motivated Mr. Lanza. It was also unclear, one investigator said, why Mr. Lanza — after shooting his mother to death inside her home — drove her car to the school and slaughtered the children. “I don’t think anyone knows the answers to those questions at this point,” the official said. As for a possible motive, he added, {~~“We~>“we~~} don’t know much for sure.”
+Law enforcement officials offered no hint of what {++had ++}motivated Mr. Lanza. It was also unclear, one investigator said, why Mr. Lanza — after shooting his mother to death inside her home — drove her car to the school and slaughtered the children. “I don’t think anyone knows the answers to those questions at this point,” the official said. As for a possible motive, he added, “{~~We~>we~~} don’t know much for sure.”
 
 F.B.I. agents interviewed his brother, Ryan Lanza, in Hoboken, N.J. His father, Peter Lanza, who was divorced from Nancy Lanza, was also questioned, one official said.
 
@@ -198,7 +198,7 @@ In the cold light of Friday morning, faces told the story outside the stricken s
 
 {++“I know there is not a parent in America who does not feel the same overwhelming grief that I do,” he said.++}
 
-{++He called the victims “beautiful ++}little {~~girl in a light blue jacket, riding high on her father’s shoulders.~>kids.”~~}
+{++He called the victims ++}“{++beautiful ++}little {~~girl in a light blue jacket, riding high on her father’s shoulders.~>kids.~~}”
 
 {++“They had their entire lives ahead of them: birthdays, graduations, weddings, kids of their own,” he said. Then the president reached up to the corner of one eye.++}
 
@@ -242,18 +242,14 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 
 “There is going to be a black cloud over this area forever,” said Craig Ansman, who led his 4-year-old daughter from the preschool down the street from the elementary school. “It will never go away.”
 
-  [1]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg
-  [More Photos »]: http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
-
 # Update 20121215055204
-{--![][1]--}
+{--![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg)--}
 
-{++![][2]++}
+{++![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg)++}
 
 {~~Richard Perry/~>Karsten Moran for ~~}The New York Times
 
-{~~People listened to~>Grace Christian Fellowship in Newtown conducted~~} a {~~memorial service through the windows at St. Rose of Lima Church.~>candlelight vigil.~~} [More Photos »]
+{~~People listened to~>Grace Christian Fellowship in Newtown conducted~~} a {~~memorial service through the windows at St. Rose of Lima Church.~>candlelight vigil.~~} [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)
 
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
@@ -263,7 +259,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 The principal had buzzed Mr. Lanza in because she recognized him as the son of a colleague. Moments later, she was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way not to attract attention when he was younger.
 
@@ -335,17 +331,12 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 
 “There is going to be a black cloud over this area forever,” said Craig Ansman, who led his 4-year-old daughter from the preschool down the street from the elementary school. “It will never go away.”
 
-  [1]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg
-  [2]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg
-  [More Photos »]: http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
-
 # Update 20121215093952
-![][1]
+![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg)
 
 Karsten Moran for The New York Times
 
-Grace Christian Fellowship in Newtown conducted a candlelight vigil. [More Photos »]
+Grace Christian Fellowship in Newtown conducted a candlelight vigil. [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)
 
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
@@ -355,7 +346,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 The principal had buzzed Mr. Lanza in because she recognized him as the son of a colleague. Moments later, she was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way not to attract attention when he was younger.
 
@@ -419,20 +410,16 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 
 “There is going to be a black cloud over this area forever,” said Craig Ansman, who led his 4-year-old daughter from the preschool down the street from the elementary school. “It will never go away.”
 
-  [1]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg
-  [More Photos »]: http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
-
 # Update 20121215143005
-{--![][1]--}
+{--![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg)--}
 
-{++![][2]++}
+{++![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)++}
 
 {--Karsten Moran for The New York Times--}
 
 {++Don Emmert/Agence France-Presse — Getty Images++}
 
-{--Grace Christian Fellowship in Newtown conducted a candlelight vigil. [More Photos »]--}
+{--Grace Christian Fellowship in Newtown conducted a candlelight vigil. [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)--}
 
 {++Connecticut State Police stood guard outside Sandy Hook Elementary School on Saturday morning.++}
 
@@ -444,7 +431,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 The principal had buzzed Mr. Lanza in because she recognized him as the son of a colleague. Moments later, she was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way not to attract attention when he was younger.
 
@@ -514,13 +501,8 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 
 “There is going to be a black cloud over this area forever,” said Craig Ansman, who led his 4-year-old daughter from the preschool down the street from the elementary school. “It will never go away.”
 
-  [1]: http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg
-  [2]: http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg
-  [More Photos »]: http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
-
 # Update 20121216182457
-![][1]
+![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)
 
 Don Emmert/Agence France-Presse — Getty Images
 
@@ -534,7 +516,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 The principal had buzzed Mr. Lanza in because she recognized him as the son of a colleague. Moments later, she was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way not to attract attention when he was younger.
 
@@ -634,11 +616,8 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 
 {++An earlier version of this article, based on news reports at the time, indicated that Nancy Lanza had worked at Sandy Hook Elementary School in Newtown, Conn., where Friday’s shooting occurred. On Saturday, the school superintendent said that there was no evidence Ms. Lanza had ever worked at the school.++}
 
-  [1]: http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
-
 # Update 20121217184325
-![][1]
+![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)
 
 Don Emmert/Agence France-Presse — Getty Images
 
@@ -652,7 +631,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 {~~The~>Although reports at the time indicated that the~~} principal {~~had buzzed~>of the school let~~} Mr. Lanza in because she recognized him as the son of a {~~colleague.~>colleague, he shot his way in, defeating a security system requiring visitors to be buzzed in.~~} Moments later, {~~she~>the principal~~} was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way not to attract attention when he was younger.
 
@@ -764,11 +743,8 @@ This article has been revised to reflect the following correction:
 
 An earlier version of this article, based on news reports at the time, indicated that Nancy Lanza had worked at Sandy Hook Elementary School in Newtown, Conn., where Friday’s shooting occurred. On Saturday, the school superintendent said that there was no evidence Ms. Lanza had ever worked at the school.
 
-  [1]: http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
-
 # Update 20121219133531
-![][1]
+![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)
 
 Don Emmert/Agence France-Presse — Getty Images
 
@@ -782,7 +758,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 Although reports at the time indicated that the principal of the school let Mr. Lanza in because she recognized {~~him as~>him, his mother did not work at~~} the {~~son of a colleague,~>school, and~~} he shot his way in, defeating a security system requiring visitors to be buzzed in. Moments later, the principal was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre], in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way not to attract attention when he was younger.
 
@@ -887,7 +863,4 @@ This article has been revised to reflect the following correction:
 **Correction: December {~~16,~>18,~~} 2012**
 
 An {~~earlier version of this article, based~>article~~} on {~~news reports at~>Saturday about~~} the {~~time, indicated~>school shooting in Newtown, Conn.,~~} that {~~Nancy Lanza had worked at~>left 20 children and 8 adults dead, using information from the authorities, misstated the way in which the gunman managed to enter the~~} Sandy Hook Elementary {~~School~>School. The gunman, Adam Lanza, shot his way in, defeating the security system that required visitors to be buzzed in; the school’s principal did not allow him to go through the security system after recognizing him. The article also referred incorrectly to the gunman’s mother, Nancy, whom he killed~~} in {--Newtown, Conn., where Friday’s shooting occurred. On Saturday, --}the {~~school superintendent said that there~>house they shared not far from the school. She~~} was {~~no evidence Ms. Lanza had ever worked~>never a teacher~~} at the school.
-
-  [1]: http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg
-  [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."
 
