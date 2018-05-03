@@ -1,0 +1,7 @@
+###wm-ipp
+bloomberg.com##.touts
+independent.co.uk##.type-gallery
+medium.com##.progressiveMedia-thumbnail
+nytimes.com##.hidden
+nytimes.com##.visually-hidden
+wikipedia.org##.mw-editsection

@@ -2,3 +2,4 @@ node_modules/
 *.swp
 test.out
 scrap/
+filterlist.txt.dat

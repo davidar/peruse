@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-const {AdBlockClient, FilterOptions} = require('ad-block')
+'use strict'
 const bytes = require('utf8-length')
 const chalk = require('chalk')
 const chrono = require('chrono-node')
@@ -8,6 +7,7 @@ const escapeHTML = require('escape-html')
 const eventToPromise = require('event-to-promise')
 const express = require('express')
 const fetch = require('node-fetch')
+const {FilterList} = require('cosmetic-filter')
 const franc = require('franc')
 const fs = require('fs')
 const hljs = require('highlight.js')
@@ -27,7 +27,6 @@ const retry = require('async-retry')
 const RSS = require('rss-parser')
 const {spawn} = require('child_process')
 const {timeout} = require('promise-timeout')
-const tldjs = require('tldjs')
 const tmp = require('tmp')
 const URL = require('url')
 const yaml = require('js-yaml')
@@ -42,7 +41,6 @@ const trailingPunctuation = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-./:;<=>?
 const forEachR = (a, f) => { for (let i = a.length - 1; i >= 0; i--) f(a[i]) }
 const nonempty = node => node.textContent.trim() || node.querySelector('img')
 const removeNode = node => node.parentNode.removeChild(node)
-const removeNodes = nodes => forEachR(nodes, removeNode)
 const stripTag = node => { node.outerHTML = node.innerHTML }
 
 const highlightFormat = {
@@ -111,83 +109,6 @@ function srcsetMax (srcset) {
     }
   }
   return urlBest
-}
-
-class FilterList {
-  constructor () {
-    this.classes = new Set()
-    this.ids = new Set()
-    this.selectors = []
-    this.domainSelectors = {}
-    this.client = new AdBlockClient()
-  }
-
-  load (fname) {
-    fname = path.resolve(__dirname, fname)
-    let rules = fs.readFileSync(fname, 'ascii')
-    for (const line of rules.split('\n')) this.addRule(line)
-
-    fname = fname + '.dat'
-    if (fs.existsSync(fname)) {
-      this.client.deserialize(fs.readFileSync(fname))
-    } else {
-      console.error('parsing rules')
-      this.client.parse(rules)
-      console.error('serialising rules')
-      fs.writeFileSync(fname, this.client.serialize())
-    }
-  }
-
-  addRule (line) {
-    if (line.match(/#[@?]#/)) return // TODO: parse exception rules
-    let rule = line.split('##') // cosmetic filters
-    if (rule.length !== 2) return
-    let [domains, selector] = rule
-
-    if (selector.includes("'")) return // jsdom#2204
-
-    if (domains === '') { // generic filter
-      if (selector.startsWith('.')) {
-        this.classes.add(selector.slice(1))
-      } else if (selector.startsWith('#')) {
-        this.ids.add(selector.slice(1))
-      } else {
-        this.selectors.push(selector)
-      }
-      return
-    }
-
-    for (const domain of domains.split(',')) {
-      if (!this.domainSelectors[domain]) this.domainSelectors[domain] = []
-      this.domainSelectors[domain].push(selector)
-    }
-  }
-
-  filter (body, domain) {
-    forEachR(body.querySelectorAll('[class]'), node => {
-      if (Array.from(node.classList).some(c => this.classes.has(c))) removeNode(node)
-    })
-
-    forEachR(body.querySelectorAll('[id]'), node => {
-      if (this.ids.has(node.id)) removeNode(node)
-    })
-
-    for (const selector of this.selectors) {
-      try {
-        removeNodes(body.querySelectorAll(selector))
-      } catch (e) {
-        console.error('unable to parse selector:', selector)
-      }
-    }
-
-    if (this.domainSelectors[domain]) {
-      removeNodes(body.querySelectorAll(this.domainSelectors[domain].join()))
-    }
-
-    forEachR(body.getElementsByTagName('img'), image => {
-      if (this.client.matches(image.src, FilterOptions.image, domain)) removeNode(image)
-    })
-  }
 }
 
 const fetchRobust = url => retry(async bail => {
@@ -292,16 +213,11 @@ async function preprocess (window,
     base = document.head.appendChild(base)
   }
 
-  let domain = tldjs.getDomain(loc.href.replace(/^https:\/\/web.archive.org\/web\/[^/]+\//g, ''))
   let filterList = new FilterList()
-  filterList.load('easylist/easylist.txt')
-  filterList.load('easylist/fanboy-annoyance.txt')
-  filterList.addRule('bloomberg.com##.touts')
-  filterList.addRule('independent.co.uk##.type-gallery')
-  filterList.addRule('medium.com##.progressiveMedia-thumbnail')
-  filterList.addRule('nytimes.com##.hidden')
-  filterList.addRule('nytimes.com##.visually-hidden')
-  filterList.filter(document.body, domain)
+  filterList.loadEasyList(rule => rule.includes("'") ? null : rule) // jsdom#2204
+  filterList.load(path.join(__dirname, 'filterlist.txt'))
+  filterList.filter(document.body,
+    loc.href.replace(/^https:\/\/web.archive.org\/web\/[^/]+\//g, ''))
 
   forEachR(document.getElementsByTagName('a'), link => {
     let href = link.getAttribute('href')
@@ -401,11 +317,6 @@ async function preprocess (window,
     'h1 br, h2 br, h3 br, h4 br, h5 br, h6 br'), br => {
     br.outerHTML = ' '
   })
-
-  let waybackToolbar = document.getElementById('wm-ipp')
-  if (waybackToolbar) removeNode(waybackToolbar)
-
-  removeNodes(document.getElementsByClassName('mw-editsection'))
 
   for (let span; (span = document.querySelector('span'));) stripTag(span)
 
