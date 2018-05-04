@@ -334,9 +334,7 @@ async function preprocess (window,
       console.error('Skipping inconsistent next page link', nextPage.url)
       nextPage.url = null
     } else {
-      lastPage.nextLinkObj = nextPage
-      pgzp.pages.push(nextPage)
-      pgzp.url_list.push(nextPage.url)
+      pgzp.addNextLink(nextPage)
     }
   }
 
