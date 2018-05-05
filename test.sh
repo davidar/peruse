@@ -1,5 +1,6 @@
 #!/bin/sh
 export TZ=UTC
+export PATH="$PWD/node_modules/.bin:$PATH"
 
 ./index.js server --unsafe-local --wrap=none & sleep 3
 PID=$!

@@ -1,7 +1,7 @@
 ---
-title: Samantha and The Great Big Lie – John C. Welch – Medium
-author: John C. Welch
+author: 'John C. Welch'
 lang: en
+title: 'Samantha and The Great Big Lie – John C. Welch – Medium'
 ---
 
 How to get shanked doing what people say they want

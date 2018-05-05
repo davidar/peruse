@@ -1,6 +1,6 @@
 ---
-title: Minecraft 1.8 - The Bountiful Update - Minecraft 1.8 - The Bountiful Update
 lang: en
+title: 'Minecraft 1.8 - The Bountiful Update - Minecraft 1.8 - The Bountiful Update'
 ---
 
 [Minecraft 1.8 - The Bountiful Update]

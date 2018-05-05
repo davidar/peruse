@@ -1,7 +1,7 @@
 ---
-title: United States to Lift Sudan Sanctions
 author: Jeffrey Gettleman
 lang: en
+title: United States to Lift Sudan Sanctions
 ---
 
 ![United Nations peacekeepers at a refugee camp in Sudan on Monday. In exchange for the lifting of United States trade sanctions, Sudan has said it will improve access for aid groups, stop supporting rebels in neighboring South Sudan and cooperate with American intelligence agents. Ashraf Shazly/Agence France-Presse — Getty Images]

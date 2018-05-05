@@ -1,8 +1,8 @@
 ---
-title: Nintendo's first iPhone game will launch in December for $10
 author: Alex Perry
 date: 1 day ago
 lang: en
+title: 'Nintendo’s first iPhone game will launch in December for \$10'
 ---
 
 ![\<span style=“font-size:13px;”\>Nintendo/Apple\</span\>] © Provided by Business Insider Inc Nintendo/Apple Nintendo and Apple shocked the world earlier this year by announcing “Super Mario Run,” the legendary gaming company’s first foray into mobile gaming. It’s a Mario game you can play on your phone with just one hand, so what’s not to love?

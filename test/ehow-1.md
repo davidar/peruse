@@ -1,7 +1,7 @@
 ---
-title: How to Build a Terrarium (with Pictures)
 author: Lucy Akins
 lang: en
+title: 'How to Build a Terrarium (with Pictures)'
 ---
 
 Glass cloche terrariums are not only appealing to the eye, but they also preserve a bit of nature in your home and serve as a simple, yet beautiful, piece of art. Closed terrariums are easy to care for, as they retain much of their own moisture and provide a warm environment with a consistent level of humidity. You won’t have to water the terrariums unless you see that the walls are not misting up. Small growing plants that don’t require a lot of light work best such as succulents, ferns, moss, even orchids.

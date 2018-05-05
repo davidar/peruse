@@ -1,7 +1,7 @@
 ---
-title: Inside the Deep Web Drug Lab — Backchannel — Medium
 author: Joseph Cox
 lang: en
+title: 'Inside the Deep Web Drug Lab — Backchannel — Medium'
 ---
 
 ![][1]

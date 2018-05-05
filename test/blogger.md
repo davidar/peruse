@@ -1,6 +1,6 @@
 ---
-title: Open Verilog flow for Silego GreenPak4 programmable logic devices
 lang: en
+title: Open Verilog flow for Silego GreenPak4 programmable logic devices
 ---
 
 I’ve written a couple of posts in the past few months but they were all for [the blog at work] so I figured I’m long overdue for one on Silicon Exposed.

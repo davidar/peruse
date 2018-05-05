@@ -1,6 +1,6 @@
 ---
-title: Firefox — Customize and make it your own — The most flexible browser on the Web — Mozilla
 lang: en
+title: 'Firefox — Customize and make it your own — The most flexible browser on the Web — Mozilla'
 ---
 
 It’s easier than ever to personalize Firefox and make it work the way you do.  

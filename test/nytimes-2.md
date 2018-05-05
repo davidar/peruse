@@ -1,7 +1,7 @@
 ---
-title: Yahoo’s Sale to Verizon Leaves Shareholders With Little Say
 author: Steven Davidoff Solomon
 lang: en
+title: 'Yahoo’s Sale to Verizon Leaves Shareholders With Little Say'
 ---
 
 ![Harry Campbell]

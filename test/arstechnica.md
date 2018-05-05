@@ -1,8 +1,8 @@
 ---
-title: How to build your own VPN if you’re (rightfully) wary of commercial options
 author: Jim Salter
 date: 'May 26, 2017 12:00 pm UTC'
 lang: en
+title: 'How to build your own VPN if you’re (rightfully) wary of commercial options'
 ---
 
 Gear & Gadgets —

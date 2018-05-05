@@ -1,6 +1,6 @@
 ---
-title: Obama admits US gun laws are his 'biggest frustration'
 lang: en
+title: 'Obama admits US gun laws are his ‘biggest frustration’'
 ---
 
 President Barack Obama has admitted that his failure to pass “common sense gun safety laws” in the US is the greatest frustration of his presidency.

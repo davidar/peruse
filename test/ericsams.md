@@ -1,7 +1,7 @@
 ---
-title: Musical Cryptography (Crypt. 1979)
 author: Super User
 lang: en
+title: 'Musical Cryptography (Crypt. 1979)'
 ---
 
 Page 1 of 3

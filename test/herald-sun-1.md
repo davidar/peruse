@@ -1,7 +1,7 @@
 ---
-title: Angry media won’t buckle over new surveillance laws
 author: JOE HILDEBRAND
 lang: en
+title: 'Angry media won’t buckle over new surveillance laws'
 ---
 
 ![A new Bill would require telecommunications service providers to store so-called ‘metadat]

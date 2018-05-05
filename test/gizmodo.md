@@ -1,7 +1,7 @@
 ---
-title: Buckminster Fuller's Dymaxion map reveals the near-contiguity of Earth's continents
 author: Robbie Gonzalez
 lang: en
+title: 'Buckminster Fuller’s Dymaxion map reveals the near-contiguity of Earth’s continents'
 ---
 
 ![][1]

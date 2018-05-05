@@ -1,7 +1,7 @@
 ---
-title: '''Neutral'' Snopes Fact-Checker David Emery: ''Are There Any Un-Angry Trump Supporters?'''
 author: Lucas Nolan22 Dec 2016651
 lang: en
+title: '‘Neutral’ Snopes Fact-Checker David Emery: ‘Are There Any Un-Angry Trump Supporters?’'
 ---
 
 Snopes fact checker and staff writer David Emery posted to Twitter asking if there were “any un-angry Trump supporters?”

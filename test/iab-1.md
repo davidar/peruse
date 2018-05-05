@@ -1,7 +1,7 @@
 ---
-title: Getting LEAN with Digital Ad UX
 author: Scott Cunningham
 lang: en
+title: Getting LEAN with Digital Ad UX
 ---
 
 We messed up. As technologists, tasked with delivering content and services to users, we lost track of the user experience.

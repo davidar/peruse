@@ -1,8 +1,8 @@
 # Original 20121214173049
 ---
-title: Shooting Reported at Connecticut Elementary School
 author: THE NEW YORK TIMES
 lang: en
+title: Shooting Reported at Connecticut Elementary School
 ---
 
 ![][1]
@@ -33,9 +33,9 @@ According to a local newspaper, [The Newtown Bee], shortly after 9:30 a.m. on Fr
 
 # Rewrite 20121214181358
 ---
-title: Shooting Reported at Connecticut Elementary School
 author: THE NEW YORK TIMES
 lang: en
+title: Shooting Reported at Connecticut Elementary School
 ---
 
 ![][1]
@@ -74,9 +74,9 @@ According to a local newspaper, [The Newtown Bee], shortly after 9:30 a.m. on Fr
 
 # Rewrite 20121215032153
 ---
-title: Gunman Kills 20 Schoolchildren in Connecticut
 author: JAMES BARRON
 lang: en
+title: Gunman Kills 20 Schoolchildren in Connecticut
 ---
 
 ![][1]

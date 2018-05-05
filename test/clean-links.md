@@ -1,6 +1,6 @@
 ---
-title: Bartleby the Scrivener Web Study Text
 lang: en
+title: Bartleby the Scrivener Web Study Text
 ---
 
 Study Webtext

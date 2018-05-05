@@ -1,6 +1,6 @@
 ---
-title: Teller Reveals His Secrets | Arts & Culture
 lang: en
+title: 'Teller Reveals His Secrets \| Arts & Culture'
 ---
 
 The smaller, quieter half of the magician duo Penn & Teller writes about how magicians manipulate the human mind

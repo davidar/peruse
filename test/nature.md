@@ -1,6 +1,6 @@
 ---
-title: Time to talk about why so many postgrads have poor mental health
 lang: en
+title: Time to talk about why so many postgrads have poor mental health
 ---
 
 An outpouring on Twitter highlights the acute pressures on young scientists.

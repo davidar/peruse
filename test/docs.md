@@ -1,6 +1,6 @@
 ---
-title: 'Guide: installing Windows 95 on DOSBox 0.74'
 lang: en
+title: 'Guide: installing Windows 95 on DOSBox 0.74'
 ---
 
 Guide: installing Windows 95 on DOSBox 

@@ -8,11 +8,9 @@ const eventToPromise = require('event-to-promise')
 const express = require('express')
 const fetch = require('node-fetch')
 const {FilterList} = require('cosmetic-filter')
-const franc = require('franc')
 const fs = require('fs')
 const hljs = require('highlight.js')
 const Highlights = require('highlights')
-const iso639 = require('iso-639-3')
 const {JSDOM, VirtualConsole} = require('jsdom')
 const {memoize} = require('lodash')
 const PageZipper = require('pagezipper')
@@ -29,12 +27,8 @@ const {spawn} = require('child_process')
 const {timeout} = require('promise-timeout')
 const tmp = require('tmp')
 const URL = require('url')
-const yaml = require('js-yaml')
 
 require('prerender/lib/util').log = console.error
-
-const shortLang = {}
-for (const {iso6391, iso6393} of iso639) shortLang[iso6393] = iso6391
 
 const trailingPunctuation = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-./:;<=>?@[\]^_`{|}~]$/
 
@@ -322,7 +316,7 @@ async function preprocess (window,
 
   let article = {
     title: document.title,
-    content: document.documentElement.outerHTML
+    content: document.body.innerHTML
   }
 
   if (!pgzp) pgzp = new PageZipper(loc.href)
@@ -411,9 +405,10 @@ async function postprocess (content, opts) {
     '-native_spans',
     '-raw_html'
   ].join('')
-  let output = await pandoc('--from=html',
+  let output = await pandoc('--standalone', '--from=html',
     '--to=' + markdown + '-smart', '--reference-links').end(content).toString()
-  return pandoc('--from=' + markdown,
+  if (bytes(output) > 1500) opts = opts.concat(['--filter', 'pandoc-lang'])
+  return pandoc('--standalone', '--from=' + markdown,
     '--to=' + markdown + '-smart', '--reference-links', ...opts).end(output).toString()
 }
 
@@ -441,18 +436,11 @@ async function peruse (url, opts = [], allowLocal = true) {
   if (dom === null) return null
 
   let {title, author, date, content} = await preprocess(dom.window)
-  let md = await postprocess(content + postscript, opts)
-
-  let output = '---\n' + yaml.dump({title}, {lineWidth: 150})
-  if (author) output += yaml.dump({author})
-  if (date) output += yaml.dump({date})
-  if (bytes(md) > 1500) {
-    let lang = franc(md)
-    if (shortLang[lang]) lang = shortLang[lang]
-    output += yaml.dump({lang})
-  }
-  output += '---\n\n' + md
-  return output
+  let html = `<!DOCTYPE html><html><head><title>${escapeHTML(title)}</title>`
+  if (author) html += `<meta name="author" content="${escapeHTML(author)}">`
+  if (date) html += `<meta name="date" content="${escapeHTML(date)}">`
+  html += `</head><body>${content}${postscript}</body></html>`
+  return postprocess(html, opts)
 }
 
 async function mainURL (url) {

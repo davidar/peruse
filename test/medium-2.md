@@ -1,7 +1,7 @@
 ---
-title: On Behalf of “Literally” — Medium
 author: Courtney Kirchoff
 lang: en
+title: 'On Behalf of “Literally” — Medium'
 ---
 
 ![Words need defenders.]

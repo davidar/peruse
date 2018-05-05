@@ -1,6 +1,6 @@
 ---
-title: A console that keeps up with gaming PCs
 lang: en
+title: A console that keeps up with gaming PCs
 ---
 
 But only hardcore gamers will appreciate it.

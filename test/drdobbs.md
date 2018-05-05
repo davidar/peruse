@@ -1,8 +1,8 @@
 ---
-title: An Algorithm for Compressing Space and Time
-author: Tomas G. Rokicki
+author: 'Tomas G. Rokicki'
 date: 'April 01, 2006'
 lang: en
+title: An Algorithm for Compressing Space and Time
 ---
 
 Making a slow program fast can lead to both joy and frustration. Frequently, the best you can do is a low-level trick to double or maybe quadruple the speed of a program; for instance, many readers may have implemented John Conway’s “Game of Life” using bit-level operations for a significant speedup. But sometimes a whole new approach, combining just a few ideas, yields amazing improvements. A simple algorithm called “HashLife,” invented by William Gosper (“Exploiting Regularities in Large Cellular Spaces,” *Physica 10D*, 1984), combines quadtrees and memoization to yield astronomical speedup to the Game of Life. In this article, I evolve the simplest Life implementation into this algorithm, explain how it works, and run some universes for trillions of generations as they grow to billions of cells.

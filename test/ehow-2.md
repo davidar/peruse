@@ -1,7 +1,7 @@
 ---
-title: How to Throw a Graduation Party on a Budget (with Pictures)
-author: Gina Roberts-Grey
+author: 'Gina Roberts-Grey'
 lang: en
+title: 'How to Throw a Graduation Party on a Budget (with Pictures)'
 ---
 
 [![][1]]

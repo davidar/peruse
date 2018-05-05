@@ -1,6 +1,6 @@
 ---
-title: Where do strained U.S.-Israeli relations go after Netanyahu’s victory?
 lang: en
+title: 'Where do strained U.S.-Israeli relations go after Netanyahu’s victory?'
 ---
 
 ![][1] Israeli Prime Minister Benjamin Netanyahu reacts as he visits the Western Wall in Jerusalem on March 18 following his party’s victory in Israel’s general election. (Thomas Coex/AFP/Getty Images)

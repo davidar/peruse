@@ -1,7 +1,7 @@
 ---
-title: 'Put the fun back into computing. Use Linux, BSD.'
 author: DistroWatch
 lang: en
+title: 'Put the fun back into computing. Use Linux, BSD.'
 ---
 
 VoIP / WebRTC HowTos by 3CX

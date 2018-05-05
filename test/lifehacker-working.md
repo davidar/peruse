@@ -1,7 +1,7 @@
 ---
-title: How to Program Your Mind to Stop Buying Crap You Don’t Need
 author: Patrick Allan
 lang: en
+title: 'How to Program Your Mind to Stop Buying Crap You Don’t Need'
 ---
 
 ![How to Program Your Mind to Stop Buying Crap You Don’t Need]

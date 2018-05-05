@@ -1,6 +1,6 @@
 ---
-title: 'Daring Fireball: Colophon'
 lang: en
+title: 'Daring Fireball: Colophon'
 ---
 
 Daring Fireball is written and produced by John Gruber.

@@ -1,6 +1,6 @@
 ---
-title: 'Twitter Lite se estrena en México, Venezuela y otros nueve países'
 lang: es
+title: 'Twitter Lite se estrena en México, Venezuela y otros nueve países'
 ---
 
 ![Twitter Lite estará disponible en Google Play Store en 11 países de América Latina. ¶ Twitter]

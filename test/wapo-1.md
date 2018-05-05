@@ -1,6 +1,6 @@
 ---
-title: Attack stokes instability fears in North Africa
 lang: en
+title: Attack stokes instability fears in North Africa
 ---
 
 CAIRO — Gunmen opened fire on visitors at Tunisia’s most renowned museum on Wednesday, killing at least 19 people, including 17 foreigners, in an assault that threatened to upset the fragile stability of a country seen as the lone success of the Arab Spring.
