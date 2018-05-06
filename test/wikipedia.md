@@ -177,9 +177,6 @@ Mozilla Developer Network
 
 Mozilla maintains a comprehensive developer documentation website called the [Mozilla Developer Network] which contains information about web technologies including [HTML], [CSS], [SVG][9], [JavaScript][3], as well Mozilla-specific information. In addition, Mozilla publishes a large number of videos about web technologies and the development of Mozilla projects on the Air Mozilla website.^\[71\]\[72\]^
 
-Community
-=========
-
 The Mozilla Community consists of over 40,000 active contributors from across the globe^\[*[citation needed]*\]^. It includes both paid employees and volunteers who work towards the goals set forth^\[40\]^ in the Mozilla Manifesto. Many of the sub-communities in Mozilla have formed around localization efforts for Mozilla Firefox, and the Mozilla web properties.
 
 Local communities
@@ -244,8 +241,9 @@ References
 3.  **\^** [“Freeing the Source: The Story of Mozilla”]. *Open Sources: Voices from the Open Source Revolution*. Retrieved 2016-05-01. 
 4.  **\^** [“Mozilla.org WHOIS, DNS, & Domain Info”]. *DomainTools*. Retrieved 1 May 2016. 
 5.  **\^** Payment, S. (2007). [*Marc Andreessen and Jim Clark: The Founders of Netscape*]. Rosen Publishing Group. [ISBN] [9781404207196]. 
-6.  **\^** [“Netscape Announces mozilla.org, a Dedicated Team and Web Site Supporting Development of Free Client Source Code”]. Netscape. Archived from the original on October 4, 2002. Retrieved 2012-08-21.  CS1 maint: Unfit url ([link])
-7.  **\^** [“Mac vendors ponder Netscape gambit.”]. *Macworld*. 1 May 1998. Retrieved 2012-08-19. 
+6.  **\^** [“Netscape Announces mozilla.org, a Dedicated Team and Web Site Supporting Development of Free Client Source Code”]. Netscape. Archived from the original on October 4, 2002. Retrieved 2012-08-21. 
+7.  **\^** [“Mac vendors ponder Netscape gambit.”]. *Macworld*. 1 May
+    1998. Retrieved 2012-08-19. 
 8.  **\^** Zawinski, Jamie (1996). [“nscp dorm”]. Retrieved 2007-10-12. 
 9.  **\^** Dave Titus with assistance from Andrew Wong. [“How was Mozilla born”]. 
 10. **\^** [“Introduction to Mozilla Source Code”]. Mozilla. Retrieved 2012-08-18. “However, mozilla.org wants to emphasize that these milestones are being produced for testing purposes only.” 
@@ -481,7 +479,6 @@ External links
   [ISBN]: https://en.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number"
   [9781404207196]: https://en.wikipedia.org/wiki/Special:BookSources/9781404207196 "Special:BookSources/9781404207196"
   [“Netscape Announces mozilla.org, a Dedicated Team and Web Site Supporting Development of Free Client Source Code”]: https://web.archive.org/web/20021004080737/wp.netscape.com/newsref/pr/newsrelease577.html
-  [link]: https://en.wikipedia.org/wiki/Category:CS1_maint:_Unfit_url "Category:CS1 maint: Unfit url"
   [“Mac vendors ponder Netscape gambit.”]: http://www.highbeam.com/doc/1G1-20453744.html
   [“nscp dorm”]: http://www.jwz.org/gruntle/nscpdorm.html
   [“How was Mozilla born”]: http://www.davetitus.com/mozilla/

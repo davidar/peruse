@@ -1,5 +1,5 @@
 ---
-author: 'Richard (R.J.) Eskow'
+author: Joanna Rothkopf
 lang: en
 title: 'The sharing economy is a lie: Uber, Ayn Rand and the truth about tech and libertarians'
 ---

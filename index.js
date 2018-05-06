@@ -9,7 +9,6 @@ const express = require('express')
 const fetch = require('node-fetch')
 const {FilterList} = require('cosmetic-filter')
 const fs = require('fs')
-const hljs = require('highlight.js')
 const Highlights = require('highlights')
 const {JSDOM, VirtualConsole} = require('jsdom')
 const {memoize} = require('lodash')
@@ -189,54 +188,7 @@ const prerenderServer = memoize(async () => {
   return 'http://localhost:3000/render?'
 })
 
-async function preprocess (window,
-  {loc = window.location, allowPrerender = true, pgzp = null} = {}) {
-  let document = window.document
-
-  let canonical = document.querySelector('link[rel="canonical"]')
-  if (loc.href === 'about:blank' && canonical) loc = URL.parse(canonical.href)
-  canonical = document.querySelector('meta[property="og:url"]')
-  if (loc.href === 'about:blank' && canonical) loc = URL.parse(canonical.content)
-
-  let base = document.getElementsByTagName('base')[0]
-  if (base) {
-    base.href = URL.resolve(loc.href, base.href)
-  } else {
-    base = document.createElement('base')
-    base.href = loc.href
-    base = document.head.appendChild(base)
-  }
-
-  let filterList = new FilterList()
-  filterList.loadEasyList(rule => rule.includes("'") ? null : rule) // jsdom#2204
-  filterList.load(path.join(__dirname, 'filterlist.txt'))
-  filterList.filter(document.body,
-    loc.href.replace(/^https:\/\/web.archive.org\/web\/[^/]+\//g, ''))
-
-  forEachR(document.getElementsByTagName('a'), link => {
-    let href = link.getAttribute('href')
-    if (!href) {
-      stripTag(link)
-    } else if (href.startsWith('#') || href.startsWith('javascript:')) {
-      link.removeAttribute('href')
-    } else {
-      link.href = link.href // make absolute
-    }
-  })
-
-  forEachR(document.querySelectorAll('pre a'), stripTag)
-
-  forEachR(document.querySelectorAll('a, em, strong, b, i'), node => {
-    if (nonempty(node)) {
-      let prep = /^\s/.test(node.innerHTML) ? ' ' : ''
-      let post = /\s$/.test(node.innerHTML) ? ' ' : ''
-      node.innerHTML = node.innerHTML.trim()
-      node.outerHTML = prep + node.outerHTML + post
-    } else {
-      stripTag(node)
-    }
-  })
-
+function preprocessImages (document) {
   forEachR(document.getElementsByTagName('img'), image => {
     if (image.src) image.src = image.src // make absolute
     if (image.hasAttribute('data-src')) {
@@ -277,42 +229,73 @@ async function preprocess (window,
       removeNode(figure)
     }
   })
+}
 
+async function preprocess (window,
+  {loc = window.location, allowPrerender = true, pgzp = null} = {}) {
+  let document = window.document
+
+  if (loc.href === 'about:blank') { // try to find location in document metadata
+    let canonical = document.querySelector('link[rel="canonical"]')
+    if (canonical) {
+      loc = URL.parse(canonical.href)
+    } else {
+      let ogURL = document.querySelector('meta[property="og:url"]')
+      if (ogURL) loc = URL.parse(ogURL.content)
+    }
+  }
+
+  if (document.getElementsByTagName('base').length > 0) {
+    let base = document.getElementsByTagName('base')[0]
+    base.href = URL.resolve(loc.href, base.href)
+  } else {
+    let base = document.createElement('base')
+    base.href = loc.href
+    document.head.appendChild(base)
+  }
+
+  let filterList = new FilterList()
+  filterList.loadEasyList(rule => rule.includes("'") ? null : rule) // jsdom#2204
+  filterList.load(path.join(__dirname, 'filterlist.txt'))
+  filterList.filter(document.body,
+    loc.href.replace(/^https:\/\/web.archive.org\/web\/[^/]+\//g, ''))
+
+  preprocessImages(document)
+
+  forEachR(document.getElementsByTagName('a'), link => {
+    let href = link.getAttribute('href')
+    if (href && href.match(/^(#|javascript:)/)) {
+      link.removeAttribute('href') // keep <a> tag for readability heuristics
+    } else if (href) {
+      link.href = link.href // make absolute
+    }
+  })
+
+  // trim whitespace from formatting
+  forEachR(document.querySelectorAll('a, b, em, i, strong'), node => {
+    if (nonempty(node)) {
+      let prep = /^\s/.test(node.innerHTML) ? ' ' : ''
+      let post = /\s$/.test(node.innerHTML) ? ' ' : ''
+      node.innerHTML = node.innerHTML.trim()
+      node.outerHTML = prep + node.outerHTML + post
+    } else {
+      stripTag(node)
+    }
+  })
+
+  // retain linebreaks in code
+  forEachR(document.getElementsByTagName('code'), code => {
+    if (code.textContent.trim().split('\n').length > 1) {
+      code.outerHTML = `<pre>${code.outerHTML}</pre>`
+    }
+  })
+
+  // remove single cell tables
   forEachR(document.getElementsByTagName('table'), table => {
     if (table.rows.length === 1 && table.rows[0].cells.length === 1) {
       table.outerHTML = table.rows[0].cells[0].innerHTML
     }
   })
-
-  forEachR(document.getElementsByTagName('li'), item => {
-    item.removeAttribute('id')
-  })
-
-  forEachR(document.getElementsByTagName('code'), code => {
-    if (code.textContent.split('\n').length > 2) {
-      code.outerHTML = '<pre>' + code.outerHTML + '</pre>'
-    }
-  })
-
-  if (document.body.innerHTML.replace(/<pre[\s\S]*?<\/pre>/g, '').length >
-      document.body.innerHTML.length / 10) {
-    let langs = (await pandoc('--list-highlight-languages').toString()).trim().split('\n')
-    forEachR(document.getElementsByTagName('pre'), pre => {
-      if (hljs.listLanguages().includes(pre.className)) return
-      let {language, relevance} = hljs.highlightAuto(pre.textContent, langs)
-      if (relevance > 25) pre.className = language
-      else pre.removeAttribute('class')
-    })
-  } else { // plain text pretending to be HTML
-    forEachR(document.getElementsByTagName('pre'), pre => pre.removeAttribute('class'))
-  }
-
-  forEachR(document.querySelectorAll(
-    'h1 br, h2 br, h3 br, h4 br, h5 br, h6 br'), br => {
-    br.outerHTML = ' '
-  })
-
-  for (let span; (span = document.querySelector('span'));) stripTag(span)
 
   let article = {
     title: document.title,
@@ -332,8 +315,8 @@ async function preprocess (window,
     }
   }
 
-  let readability = new Readability(document)
-  readability._postProcessContent = () => {}
+  let langs = (await pandoc('--list-highlight-languages').toString()).trim().split('\n')
+  let readability = new Readability(document, {classesToPreserve: langs})
   let parsed = readability.parse()
   if (parsed && parsed.content.replace(/<.*?>/g, '').length > 200) {
     article = parsed
@@ -355,13 +338,17 @@ async function preprocess (window,
     if (dates.length > 0) {
       article.date = dates[0].text
       article.author = article.author.replace(article.date, '')
-        .trim().replace(trailingPunctuation, '').trim()
     }
+    article.author = article.author.trim().replace(trailingPunctuation, '').trim()
   }
 
   article.content = article.content
     .replace(/<(embed|iframe|video|audio) /g, '<img ')
     .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
+
+  if (article.content.replace(/<pre[\s\S]*?<\/pre>/g, '').length > article.content.length / 10) {
+    article.content = article.content.replace(/<pre>/g, '<pre class="highlight">')
+  }
 
   let headingRE = /<h([1-6])[\s\S]*?<\/h.>/g
   let headings = new Set()

@@ -15,7 +15,7 @@ In order to get the new version of the app, Google Play sends your device a patc
 
 Imagine you are an author of a book about to be published, and wish to change a single sentence - it’s much easier to tell the editor which sentence to change and what to change, rather than send an entirely new book. In the same way, patches are much smaller and much faster to download than the entire APK.
 
-**Techniques used in File-by-File patching**
+**Techniques used in File-by-File patching **
 
 Android apps are packaged as APKs, which are ZIP files with special conventions. Most of the content within the ZIP files (and APKs) is compressed using a technology called [Deflate]. Deflate is really good at compressing data but it has a drawback: it makes identifying changes in the original (uncompressed) content really hard. Even a tiny change to the original content (like changing one word in a book) can make the compressed output of deflate look *completely different*. Describing the differences between the *original* content is easy, but describing the differences between the *compressed* content is so hard that it leads to inefficient patches.
 

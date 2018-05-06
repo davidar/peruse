@@ -19,7 +19,7 @@ Emery also retweeted an article by *New York* magazine that claimed President-el
 
 Facebook believe that Emery, along with other Snopes writers, ABC News, and [Politifact] are impartial enough to label and silence what they believe to be “fake news” on social media.
 
-*Lucas Nolan is a reporter for Breitbart Tech covering issues of free speech and online censorship. Follow him on Twitter* [*@LucasNolan\_*] *or email him at* [*lnolan@breitbart.com*]
+*Lucas Nolan is a reporter for Breitbart Tech covering issues of free speech and online censorship. Follow him on Twitter *[*@LucasNolan\_*]* or email him at *[*lnolan@breitbart.com*]
 
   [“fake news”]: http://www.breitbart.com/tech/2016/12/15/facebook-introduce-warning-labels-stories-deemed-fake-news/
   [protests]: http://www.breitbart.com/big-hollywood/2016/11/19/boycotthamilton-trends-hamilton-cast-members-harass-mike-pence/

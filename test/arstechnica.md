@@ -249,7 +249,7 @@ For each client you want to connect, you need three credential files: the Certif
 
 If you’re on Linux or Mac, you can use the **scp** tool to grab these files:
 
-``` elixir
+``` ruby
  you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/ca.crt ./
  you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/clientname.crt ./
  you@linuxormac:~$ scp root@yourserver:/etc/openvpn/keys/clientname.key ./
@@ -331,7 +331,7 @@ As such, the next task for my Homebrew router was *policy-based routing.* I need
 
 Once **/etc/dhcp/dhcpd.conf** was reconfigured to add the host leases, **systemctl restart isc-dhcp-server** got them applied. At the Rokus themselves, at the same Settings -\> Network Settings screen I’d gotten their MAC addresses from, a simple “Update network settings” released and renewed their DHCP leases and then I was ready to turn them into special, non-VPN’ed snowflakes. All this required was adding three quick lines to the WAN interface settings in **/etc/network/interfaces**:
 
-``` dockerfile
+``` coffee
  # This file describes the network interfaces available on your system
  # and how to activate them. For more information, see interfaces(5).
  

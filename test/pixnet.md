@@ -1,5 +1,5 @@
 ---
-author: '史蒂文的家\_藍天 (stevenhgm)'
+author: '史蒂文的家\_藍天 (stevenhgm'
 lang: cmn
 title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客邦 PIXNET ::'
 ---

@@ -1,4 +1,5 @@
 ---
+author: Erin Cunningham
 lang: en
 title: Attack stokes instability fears in North Africa
 ---

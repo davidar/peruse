@@ -1,4 +1,5 @@
 ---
+author: AUTHORING
 lang: en
 title: 'draft-dejong-remotestorage-04 - remoteStorage'
 ---
@@ -1104,7 +1105,7 @@ Versions: [00][] [01][] [02][] [03][] [04]
             M. Jones, D. Hardt, "The OAuth 2.0 Authorization Framework:
             Bearer Token Usage", RFC6750, October 2012.
 
-        [AUTHORING]
+        []
             "Using remoteStorage for web authoring", reSite wiki, retrieved
             September 2014. https://github.com/michielbdejong/resite/wiki
             /Using-remoteStorage-for-web-authoring
