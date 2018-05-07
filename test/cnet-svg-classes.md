@@ -3,7 +3,7 @@ lang: es
 title: 'Twitter Lite se estrena en México, Venezuela y otros nueve países'
 ---
 
-![¶ Twitter Lite estará disponible en Google Play Store en 11 países de América Latina. ¶ Twitter]
+![Twitter Lite estará disponible en Google Play Store en 11 países de América Latina. ¶ Twitter]
 
 Twitter ha dado a conocer que Twitter Lite llegará a un total de 24 nuevos países a partir de hoy, 11 de ellos de América Latina.
 
@@ -23,7 +23,7 @@ Reproduciendo: Mira esto: Google Assistant mejora, hay más cambios en Twitter y
 
 8:09
 
-  [¶ Twitter Lite estará disponible en Google Play Store en 11 países de América Latina. ¶ Twitter]: https://cdn2.cnet.com/img/LI8y19stcvIQUdzbYdH4-DAigtc=/fit-in/570x0/2017/12/01/b36ce794-e0b8-495c-a198-184923a8f4e9/twitter-lite.jpg
+  [Twitter Lite estará disponible en Google Play Store en 11 países de América Latina. ¶ Twitter]: https://cdn2.cnet.com/img/LI8y19stcvIQUdzbYdH4-DAigtc=/fit-in/570x0/2017/12/01/b36ce794-e0b8-495c-a198-184923a8f4e9/twitter-lite.jpg
   [comunicado]: https://blog.twitter.com/official/en_us/topics/product/2017/twitter-lite-in-the-google-play-store-in-24-more-countries.html#
   [Twitter Lite]: https://www.cnet.com/es/noticias/twitter-estrena-twitter-lite/
   [eliminación de los abusos en la red social]: https://www.cnet.com/es/noticias/twitter-hemos-progresado-en-nuestra-batalla-contra-el-abuso/

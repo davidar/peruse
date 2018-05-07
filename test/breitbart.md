@@ -4,6 +4,10 @@ lang: en
 title: '‘Neutral’ Snopes Fact-Checker David Emery: ‘Are There Any Un-Angry Trump Supporters?’'
 ---
 
+![Supporters of Republican presidential nominee Donald Trump cheer during election night at the New York Hilton Midtown in New York on November 9, 2016. / AFP / JIM WATSON (Photo credit should read JIM WATSON/AFP/Getty Images)]
+
+22 Dec, 2016 22 Dec, 2016
+
 Snopes fact checker and staff writer David Emery posted to Twitter asking if there were “any un-angry Trump supporters?”
 ========================================================================================================================
 
@@ -19,8 +23,9 @@ Emery also retweeted an article by *New York* magazine that claimed President-el
 
 Facebook believe that Emery, along with other Snopes writers, ABC News, and [Politifact] are impartial enough to label and silence what they believe to be “fake news” on social media.
 
-*Lucas Nolan is a reporter for Breitbart Tech covering issues of free speech and online censorship. Follow him on Twitter *[*@LucasNolan\_*]* or email him at *[*lnolan@breitbart.com*]
+*Lucas Nolan is a reporter for Breitbart Tech covering issues of free speech and online censorship. Follow him on Twitter* [*@LucasNolan\_*] *or email him at* [*lnolan@breitbart.com*]
 
+  [Supporters of Republican presidential nominee Donald Trump cheer during election night at the New York Hilton Midtown in New York on November 9, 2016. / AFP / JIM WATSON (Photo credit should read JIM WATSON/AFP/Getty Images)]: http://media.breitbart.com/media/2016/11/GettyImages-621866810-640x480.jpg
   [“fake news”]: http://www.breitbart.com/tech/2016/12/15/facebook-introduce-warning-labels-stories-deemed-fake-news/
   [protests]: http://www.breitbart.com/big-hollywood/2016/11/19/boycotthamilton-trends-hamilton-cast-members-harass-mike-pence/
   [public announcement]: http://www.breitbart.com/big-hollywood/2016/11/19/tolerance-hamilton-cast-lectures-mike-pence-broadway-stage/

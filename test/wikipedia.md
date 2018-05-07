@@ -209,9 +209,7 @@ Conferences and events
 
 ### Mozilla Festival
 
-[![][12]]
-
-Speakers from the [Knight Foundation] discuss the future of news at the 2011 Mozilla Festival in London.
+[![][12]] Speakers from the [Knight Foundation] discuss the future of news at the 2011 Mozilla Festival in London.
 
 The Mozilla Festival is an annual event where hundreds of passionate people explore the Web, learn together and make things that can change the world. With the emphasis on *making*—the mantra of the Festival is “less yack, more hack.” Journalists, coders, filmmakers, designers, educators, gamers, makers, youth and anyone else, from all over the world, are encouraged to attend, with attendees from more than 40 countries, working together at the intersection between freedom, the Web, and that years theme.
 
@@ -242,8 +240,7 @@ References
 4.  **\^** [“Mozilla.org WHOIS, DNS, & Domain Info”]. *DomainTools*. Retrieved 1 May 2016. 
 5.  **\^** Payment, S. (2007). [*Marc Andreessen and Jim Clark: The Founders of Netscape*]. Rosen Publishing Group. [ISBN] [9781404207196]. 
 6.  **\^** [“Netscape Announces mozilla.org, a Dedicated Team and Web Site Supporting Development of Free Client Source Code”]. Netscape. Archived from the original on October 4, 2002. Retrieved 2012-08-21. 
-7.  **\^** [“Mac vendors ponder Netscape gambit.”]. *Macworld*. 1 May
-    1998. Retrieved 2012-08-19. 
+7.  **\^** [“Mac vendors ponder Netscape gambit.”]. *Macworld*. 1 May 1998. Retrieved 2012-08-19. 
 8.  **\^** Zawinski, Jamie (1996). [“nscp dorm”]. Retrieved 2007-10-12. 
 9.  **\^** Dave Titus with assistance from Andrew Wong. [“How was Mozilla born”]. 
 10. **\^** [“Introduction to Mozilla Source Code”]. Mozilla. Retrieved 2012-08-18. “However, mozilla.org wants to emphasize that these milestones are being produced for testing purposes only.” 
@@ -323,161 +320,161 @@ External links
 -   [Mozilla Wiki][]([Major time line of community development])
 -   [Mozilla Mercurial Repository]
 
-  [free-software]: https://en.wikipedia.org/wiki/Free_software "Free software"
-  [Netscape]: https://en.wikipedia.org/wiki/Netscape "Netscape"
-  [Mozilla Foundation]: https://en.wikipedia.org/wiki/Mozilla_Foundation "Mozilla Foundation"
-  [Mozilla Corporation]: https://en.wikipedia.org/wiki/Mozilla_Corporation "Mozilla Corporation"
-  [Mozilla produces many products]: https://en.wikipedia.org/wiki/List_of_Mozilla_products "List of Mozilla products"
-  [Firefox]: https://en.wikipedia.org/wiki/Firefox "Firefox"
-  [Thunderbird]: https://en.wikipedia.org/wiki/Mozilla_Thunderbird "Mozilla Thunderbird"
-  [Firefox Mobile]: https://en.wikipedia.org/wiki/Firefox_Mobile "Firefox Mobile"
-  [Firefox OS]: https://en.wikipedia.org/wiki/Firefox_OS "Firefox OS"
-  [Bugzilla]: https://en.wikipedia.org/wiki/Bugzilla "Bugzilla"
-  [Netscape Communicator]: https://en.wikipedia.org/wiki/Netscape_Communicator "Netscape Communicator"
-  [Jamie Zawinski]: https://en.wikipedia.org/wiki/Jamie_Zawinski "Jamie Zawinski"
-  [Netscape Navigator]: https://en.wikipedia.org/wiki/Netscape_Navigator "Netscape Navigator"
-  [Mosaic]: https://en.wikipedia.org/wiki/Mosaic_(web_browser) "Mosaic (web browser)"
-  [Godzilla]: https://en.wikipedia.org/wiki/Godzilla "Godzilla"
-  [Mozilla Application Suite]: https://en.wikipedia.org/wiki/Mozilla_Application_Suite "Mozilla Application Suite"
-  [open source]: https://en.wikipedia.org/wiki/Open_source "Open source"
-  [AOL]: https://en.wikipedia.org/wiki/AOL "AOL"
-  [Android]: https://en.wikipedia.org/wiki/Android_(operating_system) "Android (operating system)"
-  [Mozilla Persona]: https://en.wikipedia.org/wiki/Mozilla_Persona "Mozilla Persona"
-  [Cisco Systems]: https://en.wikipedia.org/wiki/Cisco_Systems "Cisco Systems"
-  [codec]: https://en.wikipedia.org/wiki/Codec "Codec"
-  [proprietary]: https://en.wikipedia.org/wiki/Proprietary_format "Proprietary format"
-  [H.264]: https://en.wikipedia.org/wiki/H.264 "H.264"
-  [Brendan Eich]: https://en.wikipedia.org/wiki/Brendan_Eich "Brendan Eich"
-  [California’s Proposition 8]: https://en.wikipedia.org/wiki/California_Proposition_8_(2008) "California Proposition 8 (2008)"
-  [OkCupid]: https://en.wikipedia.org/wiki/OkCupid "OkCupid"
-  [CREDO Mobile]: https://en.wikipedia.org/wiki/CREDO_Mobile "CREDO Mobile"
-  [Mitchell Baker]: https://en.wikipedia.org/wiki/Mitchell_Baker "Mitchell Baker"
-  [citation needed]: https://en.wikipedia.org/wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed"
-  [Sam Yagan]: https://en.wikipedia.org/wiki/Sam_Yagan "Sam Yagan"
-  [Chris Cannon]: https://en.wikipedia.org/wiki/Chris_Cannon "Chris Cannon"
-  [JavaScript]: https://en.wikipedia.org/wiki/Brendan_Eich#Netscape_and_JavaScript "Brendan Eich"
-  [publicity stunt]: https://en.wikipedia.org/wiki/Publicity_stunt "Publicity stunt"
+  [free-software]: https://en.wikipedia.org/wiki/Free_software
+  [Netscape]: https://en.wikipedia.org/wiki/Netscape
+  [Mozilla Foundation]: https://en.wikipedia.org/wiki/Mozilla_Foundation
+  [Mozilla Corporation]: https://en.wikipedia.org/wiki/Mozilla_Corporation
+  [Mozilla produces many products]: https://en.wikipedia.org/wiki/List_of_Mozilla_products
+  [Firefox]: https://en.wikipedia.org/wiki/Firefox
+  [Thunderbird]: https://en.wikipedia.org/wiki/Mozilla_Thunderbird
+  [Firefox Mobile]: https://en.wikipedia.org/wiki/Firefox_Mobile
+  [Firefox OS]: https://en.wikipedia.org/wiki/Firefox_OS
+  [Bugzilla]: https://en.wikipedia.org/wiki/Bugzilla
+  [Netscape Communicator]: https://en.wikipedia.org/wiki/Netscape_Communicator
+  [Jamie Zawinski]: https://en.wikipedia.org/wiki/Jamie_Zawinski
+  [Netscape Navigator]: https://en.wikipedia.org/wiki/Netscape_Navigator
+  [Mosaic]: https://en.wikipedia.org/wiki/Mosaic_(web_browser)
+  [Godzilla]: https://en.wikipedia.org/wiki/Godzilla
+  [Mozilla Application Suite]: https://en.wikipedia.org/wiki/Mozilla_Application_Suite
+  [open source]: https://en.wikipedia.org/wiki/Open_source
+  [AOL]: https://en.wikipedia.org/wiki/AOL
+  [Android]: https://en.wikipedia.org/wiki/Android_(operating_system)
+  [Mozilla Persona]: https://en.wikipedia.org/wiki/Mozilla_Persona
+  [Cisco Systems]: https://en.wikipedia.org/wiki/Cisco_Systems
+  [codec]: https://en.wikipedia.org/wiki/Codec
+  [proprietary]: https://en.wikipedia.org/wiki/Proprietary_format
+  [H.264]: https://en.wikipedia.org/wiki/H.264
+  [Brendan Eich]: https://en.wikipedia.org/wiki/Brendan_Eich
+  [California’s Proposition 8]: https://en.wikipedia.org/wiki/California_Proposition_8_(2008)
+  [OkCupid]: https://en.wikipedia.org/wiki/OkCupid
+  [CREDO Mobile]: https://en.wikipedia.org/wiki/CREDO_Mobile
+  [Mitchell Baker]: https://en.wikipedia.org/wiki/Mitchell_Baker
+  [citation needed]: https://en.wikipedia.org/wiki/Wikipedia:Citation_needed
+  [Sam Yagan]: https://en.wikipedia.org/wiki/Sam_Yagan
+  [Chris Cannon]: https://en.wikipedia.org/wiki/Chris_Cannon
+  [JavaScript]: https://en.wikipedia.org/wiki/Brendan_Eich#Netscape_and_JavaScript
+  [publicity stunt]: https://en.wikipedia.org/wiki/Publicity_stunt
   [1]: //upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mozilla_Firefox_logo_2013.svg/440px-Mozilla_Firefox_logo_2013.svg.png
   [![][1]]: https://en.wikipedia.org/wiki/File:Mozilla_Firefox_logo_2013.svg
-  [web browser]: https://en.wikipedia.org/wiki/Web_browser "Web browser"
-  [flagship]: https://en.wikipedia.org/wiki/Flagship_product "Flagship product"
-  [Gecko]: https://en.wikipedia.org/wiki/Gecko_(software) "Gecko (software)"
-  [layout engine]: https://en.wikipedia.org/wiki/Layout_engine "Layout engine"
-  [web standards]: https://en.wikipedia.org/wiki/Web_standards "Web standards"
+  [web browser]: https://en.wikipedia.org/wiki/Web_browser
+  [flagship]: https://en.wikipedia.org/wiki/Flagship_product
+  [Gecko]: https://en.wikipedia.org/wiki/Gecko_(software)
+  [layout engine]: https://en.wikipedia.org/wiki/Layout_engine
+  [web standards]: https://en.wikipedia.org/wiki/Web_standards
   [\[update\]]: https://en.wikipedia.org/w/index.php?title=Mozilla&action=edit
-  [usage share of web browsers]: https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary "Usage share of web browsers"
-  [Mozilla codebase]: https://en.wikipedia.org/wiki/Mozilla#Mozilla_Project "Mozilla"
-  [Dave Hyatt]: https://en.wikipedia.org/wiki/Dave_Hyatt "Dave Hyatt"
-  [Joe Hewitt]: https://en.wikipedia.org/wiki/Joe_Hewitt_(programmer) "Joe Hewitt (programmer)"
-  [Blake Ross]: https://en.wikipedia.org/wiki/Blake_Ross "Blake Ross"
-  [feature creep]: https://en.wikipedia.org/wiki/Feature_creep "Feature creep"
-  [software bloat]: https://en.wikipedia.org/wiki/Software_bloat "Software bloat"
-  [Phoenix Technologies]: https://en.wikipedia.org/wiki/Phoenix_Technologies "Phoenix Technologies"
-  [Firebird]: https://en.wikipedia.org/wiki/Firebird_(database_server) "Firebird (database server)"
-  [smartphones]: https://en.wikipedia.org/wiki/Smartphone "Smartphone"
-  [tablet computers]: https://en.wikipedia.org/wiki/Tablet_computer "Tablet computer"
-  [2]: https://en.wikipedia.org/wiki/Gecko_(layout_engine) "Gecko (layout engine)"
-  [HTML5]: https://en.wikipedia.org/wiki/HTML5 "HTML5"
-  [Firefox Sync]: https://en.wikipedia.org/wiki/Firefox_Sync "Firefox Sync"
-  [add-ons]: https://en.wikipedia.org/wiki/Add-on_(Mozilla) "Add-on (Mozilla)"
-  [tabbed browsing]: https://en.wikipedia.org/wiki/Tabbed_browsing "Tabbed browsing"
-  [ARMv7]: https://en.wikipedia.org/wiki/ARM_architecture "ARM architecture"
-  [Tristan Nitot]: https://en.wikipedia.org/wiki/Tristan_Nitot "Tristan Nitot"
-  [Mozilla Europe]: https://en.wikipedia.org/wiki/Mozilla_Europe "Mozilla Europe"
-  [iPhone]: https://en.wikipedia.org/wiki/IPhone "IPhone"
-  [BlackBerry]: https://en.wikipedia.org/wiki/BlackBerry "BlackBerry"
-  [Apple’s]: https://en.wikipedia.org/wiki/Apple_Inc "Apple Inc"
-  [operating system]: https://en.wikipedia.org/wiki/Operating_system "Operating system"
-  [open Web]: https://en.wikipedia.org/wiki/Open_Web "Open Web"
-  [APIs]: https://en.wikipedia.org/wiki/Application_programming_interface "Application programming interface"
-  [3]: https://en.wikipedia.org/wiki/JavaScript "JavaScript"
+  [usage share of web browsers]: https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary
+  [Mozilla codebase]: https://en.wikipedia.org/wiki/Mozilla#Mozilla_Project
+  [Dave Hyatt]: https://en.wikipedia.org/wiki/Dave_Hyatt
+  [Joe Hewitt]: https://en.wikipedia.org/wiki/Joe_Hewitt_(programmer)
+  [Blake Ross]: https://en.wikipedia.org/wiki/Blake_Ross
+  [feature creep]: https://en.wikipedia.org/wiki/Feature_creep
+  [software bloat]: https://en.wikipedia.org/wiki/Software_bloat
+  [Phoenix Technologies]: https://en.wikipedia.org/wiki/Phoenix_Technologies
+  [Firebird]: https://en.wikipedia.org/wiki/Firebird_(database_server)
+  [smartphones]: https://en.wikipedia.org/wiki/Smartphone
+  [tablet computers]: https://en.wikipedia.org/wiki/Tablet_computer
+  [2]: https://en.wikipedia.org/wiki/Gecko_(layout_engine)
+  [HTML5]: https://en.wikipedia.org/wiki/HTML5
+  [Firefox Sync]: https://en.wikipedia.org/wiki/Firefox_Sync
+  [add-ons]: https://en.wikipedia.org/wiki/Add-on_(Mozilla)
+  [tabbed browsing]: https://en.wikipedia.org/wiki/Tabbed_browsing
+  [ARMv7]: https://en.wikipedia.org/wiki/ARM_architecture
+  [Tristan Nitot]: https://en.wikipedia.org/wiki/Tristan_Nitot
+  [Mozilla Europe]: https://en.wikipedia.org/wiki/Mozilla_Europe
+  [iPhone]: https://en.wikipedia.org/wiki/IPhone
+  [BlackBerry]: https://en.wikipedia.org/wiki/BlackBerry
+  [Apple’s]: https://en.wikipedia.org/wiki/Apple_Inc
+  [operating system]: https://en.wikipedia.org/wiki/Operating_system
+  [open Web]: https://en.wikipedia.org/wiki/Open_Web
+  [APIs]: https://en.wikipedia.org/wiki/Application_programming_interface
+  [3]: https://en.wikipedia.org/wiki/JavaScript
   [4]: https://upload.wikimedia.org/wikipedia/commons/0/0d/SeaMonkey.png
   [![][4]]: https://en.wikipedia.org/wiki/File:SeaMonkey.png
-  [SeaMonkey]: https://en.wikipedia.org/wiki/SeaMonkey "SeaMonkey"
-  [USENET]: https://en.wikipedia.org/wiki/USENET "USENET"
-  [Mozilla Composer]: https://en.wikipedia.org/wiki/Mozilla_Composer "Mozilla Composer"
-  [ChatZilla]: https://en.wikipedia.org/wiki/ChatZilla "ChatZilla"
-  [the Mozilla Foundation]: https://en.wikipedia.org/wiki/The_Mozilla_Foundation "The Mozilla Foundation"
-  [5]: https://en.wikipedia.org/wiki/Mozilla_Firefox "Mozilla Firefox"
-  [trademarked]: https://en.wikipedia.org/wiki/Trademark "Trademark"
+  [SeaMonkey]: https://en.wikipedia.org/wiki/SeaMonkey
+  [USENET]: https://en.wikipedia.org/wiki/USENET
+  [Mozilla Composer]: https://en.wikipedia.org/wiki/Mozilla_Composer
+  [ChatZilla]: https://en.wikipedia.org/wiki/ChatZilla
+  [the Mozilla Foundation]: https://en.wikipedia.org/wiki/The_Mozilla_Foundation
+  [5]: https://en.wikipedia.org/wiki/Mozilla_Firefox
+  [trademarked]: https://en.wikipedia.org/wiki/Trademark
   [6]: //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Buggie.svg/440px-Buggie.svg.png
   [![][6]]: https://en.wikipedia.org/wiki/File:Buggie.svg
-  [web]: https://en.wikipedia.org/wiki/World_Wide_Web "World Wide Web"
-  [bug tracking system]: https://en.wikipedia.org/wiki/Bug_tracking_system "Bug tracking system"
-  [open source software]: https://en.wikipedia.org/wiki/Open_source_software "Open source software"
-  [Netscape Communications]: https://en.wikipedia.org/wiki/Netscape_Communications "Netscape Communications"
-  [free and open source software]: https://en.wikipedia.org/wiki/Free_and_open_source_software "Free and open source software"
-  [7]: https://en.wikipedia.org/wiki/Proprietary_software "Proprietary software"
-  [Linux kernel]: https://en.wikipedia.org/wiki/Linux_kernel "Linux kernel"
-  [GNOME]: https://en.wikipedia.org/wiki/GNOME "GNOME"
-  [KDE]: https://en.wikipedia.org/wiki/KDE "KDE"
-  [Red Hat]: https://en.wikipedia.org/wiki/Red_Hat "Red Hat"
-  [Novell]: https://en.wikipedia.org/wiki/Novell "Novell"
-  [Eclipse]: https://en.wikipedia.org/wiki/Eclipse_(software) "Eclipse (software)"
-  [LibreOffice]: https://en.wikipedia.org/wiki/LibreOffice "LibreOffice"
-  [Network Security Services]: https://en.wikipedia.org/wiki/Network_Security_Services "Network Security Services"
-  [libraries]: https://en.wikipedia.org/wiki/Library_(computing) "Library (computing)"
-  [cross-platform]: https://en.wikipedia.org/wiki/Cross-platform "Cross-platform"
-  [SSL]: https://en.wikipedia.org/wiki/Secure_Sockets_Layer "Secure Sockets Layer"
-  [S/MIME]: https://en.wikipedia.org/wiki/S/MIME "S/MIME"
-  [tri-licensed]: https://en.wikipedia.org/wiki/Multi-licensing "Multi-licensing"
-  [Mozilla Public License]: https://en.wikipedia.org/wiki/Mozilla_Public_License "Mozilla Public License"
-  [GNU General Public License]: https://en.wikipedia.org/wiki/GNU_General_Public_License "GNU General Public License"
-  [GNU Lesser General Public License]: https://en.wikipedia.org/wiki/LGPL "LGPL"
-  [Sun Microsystems]: https://en.wikipedia.org/wiki/Sun_Microsystems "Sun Microsystems"
-  [Oracle Corporation]: https://en.wikipedia.org/wiki/Oracle_Corporation "Oracle Corporation"
-  [Google]: https://en.wikipedia.org/wiki/Google "Google"
-  [Evolution]: https://en.wikipedia.org/wiki/Evolution_(software) "Evolution (software)"
-  [Pidgin]: https://en.wikipedia.org/wiki/Pidgin_(software) "Pidgin (software)"
-  [Apache OpenOffice]: https://en.wikipedia.org/wiki/Apache_OpenOffice "Apache OpenOffice"
-  [SpiderMonkey]: https://en.wikipedia.org/wiki/SpiderMonkey_(software) "SpiderMonkey (software)"
-  [JavaScript engine]: https://en.wikipedia.org/wiki/JavaScript_engine "JavaScript engine"
-  [C++]: https://en.wikipedia.org/wiki/C%2B%2B "C++"
-  [ECMAScript]: https://en.wikipedia.org/wiki/ECMAScript "ECMAScript"
-  [interpreter]: https://en.wikipedia.org/wiki/Interpreter_(computing) "Interpreter (computing)"
-  [just-in-time compilers]: https://en.wikipedia.org/wiki/Just-in-time_compilation "Just-in-time compilation"
-  [decompiler]: https://en.wikipedia.org/wiki/Decompiler "Decompiler"
-  [garbage collector]: https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)"
-  [Java]: https://en.wikipedia.org/wiki/Java_(programming_language) "Java (programming language)"
-  [classes]: https://en.wikipedia.org/wiki/Class_(computer_programming) "Class (computer programming)"
-  [compiled]: https://en.wikipedia.org/wiki/Compiler "Compiler"
-  [8]: https://en.wikipedia.org/wiki/Web_browser_engine "Web browser engine"
-  [HTML]: https://en.wikipedia.org/wiki/HTML "HTML"
-  [SVG]: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics "Scalable Vector Graphics"
-  [MathML]: https://en.wikipedia.org/wiki/MathML "MathML"
-  [NSPR]: https://en.wikipedia.org/wiki/NSPR "NSPR"
-  [platform independence]: https://en.wikipedia.org/wiki/Platform_independence "Platform independence"
-  [user interface]: https://en.wikipedia.org/wiki/User_interface "User interface"
-  [Rust]: https://en.wikipedia.org/wiki/Rust_(programming_language) "Rust (programming language)"
-  [programming language]: https://en.wikipedia.org/wiki/Programming_language "Programming language"
-  [Servo]: https://en.wikipedia.org/wiki/Servo_(layout_engine) "Servo (layout engine)"
-  [XULRunner]: https://en.wikipedia.org/wiki/XULRunner "XULRunner"
-  [Pdf.js]: https://en.wikipedia.org/wiki/Pdf.js "Pdf.js"
-  [Shumway]: https://en.wikipedia.org/wiki/Shumway_(software) "Shumway (software)"
-  [Virtual reality]: https://en.wikipedia.org/wiki/Virtual_reality "Virtual reality"
-  [A-Frame (VR)]: https://en.wikipedia.org/wiki/A-Frame_(VR) "A-Frame (VR)"
-  [WebVR]: https://en.wikipedia.org/wiki/WebVR "WebVR"
-  [authentication]: https://en.wikipedia.org/wiki/Authentication "Authentication"
-  [Mozilla Developer Network]: https://en.wikipedia.org/wiki/Mozilla_Developer_Network "Mozilla Developer Network"
-  [CSS]: https://en.wikipedia.org/wiki/CSS "CSS"
-  [9]: https://en.wikipedia.org/wiki/SVG "SVG"
+  [web]: https://en.wikipedia.org/wiki/World_Wide_Web
+  [bug tracking system]: https://en.wikipedia.org/wiki/Bug_tracking_system
+  [open source software]: https://en.wikipedia.org/wiki/Open_source_software
+  [Netscape Communications]: https://en.wikipedia.org/wiki/Netscape_Communications
+  [free and open source software]: https://en.wikipedia.org/wiki/Free_and_open_source_software
+  [7]: https://en.wikipedia.org/wiki/Proprietary_software
+  [Linux kernel]: https://en.wikipedia.org/wiki/Linux_kernel
+  [GNOME]: https://en.wikipedia.org/wiki/GNOME
+  [KDE]: https://en.wikipedia.org/wiki/KDE
+  [Red Hat]: https://en.wikipedia.org/wiki/Red_Hat
+  [Novell]: https://en.wikipedia.org/wiki/Novell
+  [Eclipse]: https://en.wikipedia.org/wiki/Eclipse_(software)
+  [LibreOffice]: https://en.wikipedia.org/wiki/LibreOffice
+  [Network Security Services]: https://en.wikipedia.org/wiki/Network_Security_Services
+  [libraries]: https://en.wikipedia.org/wiki/Library_(computing)
+  [cross-platform]: https://en.wikipedia.org/wiki/Cross-platform
+  [SSL]: https://en.wikipedia.org/wiki/Secure_Sockets_Layer
+  [S/MIME]: https://en.wikipedia.org/wiki/S/MIME
+  [tri-licensed]: https://en.wikipedia.org/wiki/Multi-licensing
+  [Mozilla Public License]: https://en.wikipedia.org/wiki/Mozilla_Public_License
+  [GNU General Public License]: https://en.wikipedia.org/wiki/GNU_General_Public_License
+  [GNU Lesser General Public License]: https://en.wikipedia.org/wiki/LGPL
+  [Sun Microsystems]: https://en.wikipedia.org/wiki/Sun_Microsystems
+  [Oracle Corporation]: https://en.wikipedia.org/wiki/Oracle_Corporation
+  [Google]: https://en.wikipedia.org/wiki/Google
+  [Evolution]: https://en.wikipedia.org/wiki/Evolution_(software)
+  [Pidgin]: https://en.wikipedia.org/wiki/Pidgin_(software)
+  [Apache OpenOffice]: https://en.wikipedia.org/wiki/Apache_OpenOffice
+  [SpiderMonkey]: https://en.wikipedia.org/wiki/SpiderMonkey_(software)
+  [JavaScript engine]: https://en.wikipedia.org/wiki/JavaScript_engine
+  [C++]: https://en.wikipedia.org/wiki/C%2B%2B
+  [ECMAScript]: https://en.wikipedia.org/wiki/ECMAScript
+  [interpreter]: https://en.wikipedia.org/wiki/Interpreter_(computing)
+  [just-in-time compilers]: https://en.wikipedia.org/wiki/Just-in-time_compilation
+  [decompiler]: https://en.wikipedia.org/wiki/Decompiler
+  [garbage collector]: https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+  [Java]: https://en.wikipedia.org/wiki/Java_(programming_language)
+  [classes]: https://en.wikipedia.org/wiki/Class_(computer_programming)
+  [compiled]: https://en.wikipedia.org/wiki/Compiler
+  [8]: https://en.wikipedia.org/wiki/Web_browser_engine
+  [HTML]: https://en.wikipedia.org/wiki/HTML
+  [SVG]: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
+  [MathML]: https://en.wikipedia.org/wiki/MathML
+  [NSPR]: https://en.wikipedia.org/wiki/NSPR
+  [platform independence]: https://en.wikipedia.org/wiki/Platform_independence
+  [user interface]: https://en.wikipedia.org/wiki/User_interface
+  [Rust]: https://en.wikipedia.org/wiki/Rust_(programming_language)
+  [programming language]: https://en.wikipedia.org/wiki/Programming_language
+  [Servo]: https://en.wikipedia.org/wiki/Servo_(layout_engine)
+  [XULRunner]: https://en.wikipedia.org/wiki/XULRunner
+  [Pdf.js]: https://en.wikipedia.org/wiki/Pdf.js
+  [Shumway]: https://en.wikipedia.org/wiki/Shumway_(software)
+  [Virtual reality]: https://en.wikipedia.org/wiki/Virtual_reality
+  [A-Frame (VR)]: https://en.wikipedia.org/wiki/A-Frame_(VR)
+  [WebVR]: https://en.wikipedia.org/wiki/WebVR
+  [authentication]: https://en.wikipedia.org/wiki/Authentication
+  [Mozilla Developer Network]: https://en.wikipedia.org/wiki/Mozilla_Developer_Network
+  [CSS]: https://en.wikipedia.org/wiki/CSS
+  [9]: https://en.wikipedia.org/wiki/SVG
   [10]: //upload.wikimedia.org/wikipedia/commons/thumb/2/2a/London_Mozilla_Workspace.jpg/440px-London_Mozilla_Workspace.jpg
   [![][10]]: https://en.wikipedia.org/wiki/File:London_Mozilla_Workspace.jpg
   [11]: //upload.wikimedia.org/wikipedia/commons/0/0b/Mozilla_Reps.png
   [![][11]]: https://en.wikipedia.org/wiki/File:Mozilla_Reps.png
   [12]: //upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg/440px-Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
   [![][12]]: https://en.wikipedia.org/wiki/File:Fireside_Chat,_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
-  [Knight Foundation]: https://en.wikipedia.org/wiki/Knight_Foundation "Knight Foundation"
-  [-zilla (suffix)]: https://en.wikipedia.org/wiki/-zilla_(suffix) "-zilla (suffix)"
-  [Mozilla (mascot)]: https://en.wikipedia.org/wiki/Mozilla_(mascot) "Mozilla (mascot)"
-  [The Book of Mozilla]: https://en.wikipedia.org/wiki/The_Book_of_Mozilla "The Book of Mozilla"
-  [Timeline of web browsers]: https://en.wikipedia.org/wiki/Timeline_of_web_browsers "Timeline of web browsers"
+  [Knight Foundation]: https://en.wikipedia.org/wiki/Knight_Foundation
+  [-zilla (suffix)]: https://en.wikipedia.org/wiki/-zilla_(suffix)
+  [Mozilla (mascot)]: https://en.wikipedia.org/wiki/Mozilla_(mascot)
+  [The Book of Mozilla]: https://en.wikipedia.org/wiki/The_Book_of_Mozilla
+  [Timeline of web browsers]: https://en.wikipedia.org/wiki/Timeline_of_web_browsers
   [“About the Mozilla Corporation”]: https://www.mozilla.org/foundation/moco/
   [“Freeing the Source: The Story of Mozilla”]: http://www.oreilly.com/openbook/opensources/book/netrev.html
   [“Mozilla.org WHOIS, DNS, & Domain Info”]: https://whois.domaintools.com/mozilla.org
   [*Marc Andreessen and Jim Clark: The Founders of Netscape*]: https://books.google.co.uk/books?id=zyIvOn7sKCsC
-  [ISBN]: https://en.wikipedia.org/wiki/International_Standard_Book_Number "International Standard Book Number"
-  [9781404207196]: https://en.wikipedia.org/wiki/Special:BookSources/9781404207196 "Special:BookSources/9781404207196"
+  [ISBN]: https://en.wikipedia.org/wiki/International_Standard_Book_Number
+  [9781404207196]: https://en.wikipedia.org/wiki/Special:BookSources/9781404207196
   [“Netscape Announces mozilla.org, a Dedicated Team and Web Site Supporting Development of Free Client Source Code”]: https://web.archive.org/web/20021004080737/wp.netscape.com/newsref/pr/newsrelease577.html
   [“Mac vendors ponder Netscape gambit.”]: http://www.highbeam.com/doc/1G1-20453744.html
   [“nscp dorm”]: http://www.jwz.org/gruntle/nscpdorm.html
@@ -519,13 +516,13 @@ External links
   [“Web Browser Market Share Trends”]: http://www.w3counter.com/trends
   [“Top 5 Browsers”]: http://gs.statcounter.com/
   [“Web browsers (Global marketshare)”]: http://www.getclicky.com/marketshare/global/web-browsers/
-  [Goodger, Ben]: https://en.wikipedia.org/wiki/Ben_Goodger "Ben Goodger"
+  [Goodger, Ben]: https://en.wikipedia.org/wiki/Ben_Goodger
   [“Where Did Firefox Come From?”]: https://web.archive.org/web/20110623034401/http://weblogs.mozillazine.org/ben/archives/009698.html
   [13]: http://weblogs.mozillazine.org/ben/archives/009698.html
   [“Mozilla browser becomes Firebird”]: https://web.archive.org/web/20070914035447/http://www.ibphoenix.com/main.nfs?a=ibphoenix&page=ibp_Mozilla0
   [14]: http://www.ibphoenix.com/main.nfs?a=ibphoenix&page=ibp_Mozilla0
   [“Mozilla’s Firebird gets wings clipped”]: http://news.cnet.com/2100-1032_3-1000146.html
-  [CNET]: https://en.wikipedia.org/wiki/CNET_Networks "CNET Networks"
+  [CNET]: https://en.wikipedia.org/wiki/CNET_Networks
   [“Mozilla holds ‘fire’ in naming fight”]: http://news.cnet.com/2100-7344-5156101.html
   [“Mobile features”]: http://www.mozilla.org/en-US/firefox/mobile/features/
   [“Mobile System Requirements”]: https://wiki.mozilla.org/Mobile/Platforms/Android#System_Requirements
@@ -553,9 +550,9 @@ External links
   [Constant downloads failure in firefox]: http://www.techsive.com/2014/09/how-to-resume-failed-downloads-in.html
   [15]: //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png
   [![][15]]: https://en.wikipedia.org/wiki/File:Commons-logo.svg
-  [Mozilla]: https://commons.wikimedia.org/wiki/Category:Mozilla "commons:Category:Mozilla"
+  [Mozilla]: https://commons.wikimedia.org/wiki/Category:Mozilla
   [Official website]: http://mozilla.org/
   [the Mozilla Manifesto]: https://www.mozilla.org/en-US/about/manifesto/
   [Mozilla Wiki]: https://wiki.mozilla.org/
-  [Major time line of community development]: https://wiki.mozilla.org/Timeline "mozillawiki:Timeline"
+  [Major time line of community development]: https://wiki.mozilla.org/Timeline
   [Mozilla Mercurial Repository]: https://hg.mozilla.org/

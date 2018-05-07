@@ -20,4 +20,4 @@ Update 5.3 des Passwortmanagers liefert auch noch weitere Verbesserungen. So gib
   [die iOS-Version der Anwendung bereits seit längerem beherrscht]: http://www.heise.de/mac-and-i/meldung/Passwortmanager-1Password-mit-groesseren-Updates-fuer-OS-X-und-iOS-2529204.html
   [TOTP-Standard]: https://blog.agilebits.com/2015/01/26/totp-for-1password-users/
   [ein kurzes Video]: http://1pw.ca/TOTPvideoMac
-  [bsc]: mailto:bsc@heise.de "Ben Schwan"
+  [bsc]: mailto:bsc@heise.de

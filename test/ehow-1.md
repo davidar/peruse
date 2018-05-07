@@ -106,7 +106,7 @@ Cloche terrarium (Lucy Akins)
 Featured
 ========
 
-  [Glass cloche terrariums]: http://img-aws.ehowcdn.com/640/cme/photography.prod.demandstudios.com/16149374-814f-40bc-baf3-ca20f149f0ba.jpg "Glass cloche terrariums"
+  [Glass cloche terrariums]: http://img-aws.ehowcdn.com/640/cme/photography.prod.demandstudios.com/16149374-814f-40bc-baf3-ca20f149f0ba.jpg
   [Dig a hole in the oasis.]: http://img-aws.ehowcdn.com/default/cme/photography.prod.demandstudios.com/fc249ef6-4d27-41b4-8c21-15f7a8512b50.jpg
   [Orchid in foam oasis]: http://img-aws.ehowcdn.com/default/cme/photography.prod.demandstudios.com/aae11d4d-a4aa-4251-a4d9-41023ebf6d84.jpg
   [Various foliage]: http://img-aws.ehowcdn.com/default/cme/photography.prod.demandstudios.com/7afdfa1e-da74-44b5-b89c-ca8123516272.jpg

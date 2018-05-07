@@ -47,8 +47,8 @@ Finally, if another bidder still wants to acquire Yahoo, it has time. The agreem
 All in all, this was as hairy a deal as they come. There was the procedural and logistical complications of selling a company when the chief executive wanted to stay. Then there was the fact that this was an asset sale, including all of the challenges that go with it. Throw in all of the tax issues and the fact that this is a public company, and it is likely that the lawyers involved will have nightmares for years to come.
 
   [Harry Campbell]: https://static01.nyt.com/images/2016/07/30/business/db-dealprof/db-dealprof-master315.jpg
-  [Yahoo]: http://www.nytimes.com/topic/company/yahoo-inc?inline=nyt-org "More information about Yahoo! Inc."
-  [Verizon]: http://www.nytimes.com/topic/company/verizon-communications-inc?inline=nyt-org "More information about Verizon Communications Inc."
+  [Yahoo]: http://www.nytimes.com/topic/company/yahoo-inc?inline=nyt-org
+  [Verizon]: http://www.nytimes.com/topic/company/verizon-communications-inc?inline=nyt-org
   [first step]: https://www.sec.gov/Archives/edgar/data/1011006/000119312516656036/d178500dex22.htm
   [may result in a payment of up to a \$1 billion]: http://www.recode.net/2016/7/7/12116296/marissa-mayer-deal-mozilla-yahoo-payment
   [under the same umbrella as AOL]: http://www.nytimes.com/2016/07/25/business/yahoo-sale.html?_r=0
@@ -56,4 +56,4 @@ All in all, this was as hairy a deal as they come. There was the procedural and 
   [in Dell’s buyout in 2013]: http://www.nytimes.com/2016/06/08/business/dealbook/ruling-on-dell-buyout-may-not-be-precedent-some-fear.html
   [“qualitatively vital.”]: http://caselaw.findlaw.com/de-court-of-chancery/1306648.html
   [Morris Trust structure]: http://dealbook.nytimes.com/2014/04/29/alliant-techsystems-break-up-and-the-return-of-the-morris-trust/
-  [Marissa Mayer]: http://topics.nytimes.com/top/reference/timestopics/people/m/marissa_mayer/index.html?inline=nyt-per "More articles about Marissa Mayer."
+  [Marissa Mayer]: http://topics.nytimes.com/top/reference/timestopics/people/m/marissa_mayer/index.html?inline=nyt-per

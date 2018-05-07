@@ -1135,14 +1135,14 @@ Versions: [00][] [01][] [02][] [03][] [04]
 
 Html markup produced by rfcmarkup 1.111, available from <https://tools.ietf.org/tools/rfcmarkup/>
 
-  [Docs]: ../html/ "Document search and retrieval page"
-  [txt]: https://tools.ietf.org/id/draft-dejong-remotestorage-04.txt "Plaintext version of this document"
-  [pdf]: /pdf/draft-dejong-remotestorage-04.txt "PDF version of this document"
-  [Tracker]: https://datatracker.ietf.org/doc/draft-dejong-remotestorage "IESG Datatracker information for this document"
-  [Email]: mailto:draft-dejong-remotestorage@tools.ietf.org?subject=draft-dejong-remotestorage%20 "Send email to the document authors"
-  [Diff1]: /rfcdiff?difftype=--hwdiff&url2=draft-dejong-remotestorage-04.txt "Inline diff (wdiff)"
-  [Diff2]: /rfcdiff?url2=draft-dejong-remotestorage-04.txt "Side-by-side diff"
-  [Nits]: /idnits?url=https://tools.ietf.org/id/draft-dejong-remotestorage-04.txt "Run an idnits check of this document"
+  [Docs]: ../html/
+  [txt]: https://tools.ietf.org/id/draft-dejong-remotestorage-04.txt
+  [pdf]: /pdf/draft-dejong-remotestorage-04.txt
+  [Tracker]: https://datatracker.ietf.org/doc/draft-dejong-remotestorage
+  [Email]: mailto:draft-dejong-remotestorage@tools.ietf.org?subject=draft-dejong-remotestorage%20
+  [Diff1]: /rfcdiff?difftype=--hwdiff&url2=draft-dejong-remotestorage-04.txt
+  [Diff2]: /rfcdiff?url2=draft-dejong-remotestorage-04.txt
+  [Nits]: /idnits?url=https://tools.ietf.org/id/draft-dejong-remotestorage-04.txt
   [00]: ./draft-dejong-remotestorage-00
   [01]: ./draft-dejong-remotestorage-01
   [02]: ./draft-dejong-remotestorage-02

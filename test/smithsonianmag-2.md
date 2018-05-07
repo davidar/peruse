@@ -31,7 +31,7 @@ The biggest problem for giraffes, though, may be the lack of attention over the 
 
 “There’s a strong tendency to think that familiar species (such as giraffes, chimps, etc.) must be OK because they are familiar and we see them in zoos,” Duke University conservation biologist Stuart Pimm, tells the [Associated Press]. In fact, giraffes have silently been going extinct across Africa over the last century. The animal is already gone from seven countries, Burkina Faso, Eritrea, Guinea, Malawi, Mauritania, Nigeria and Senegal.
 
-  [SmartNews Keeping you current]: https://www.smithsonianmag.com/smart-news/ "Smart News"
+  [SmartNews Keeping you current]: https://www.smithsonianmag.com/smart-news/
   [International Union for the Conservation of Nature]: https://www.iucn.org/news/new-bird-species-and-giraffe-under-threat-%E2%80%93-iucn-red-list
   [Red List of Threatened Species report]: http://www.iucnredlist.org/
   [Damian Carrington at *The Guardian*]: https://www.theguardian.com/environment/2016/dec/08/giraffe-red-list-vulnerable-species-extinction

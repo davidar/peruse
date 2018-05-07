@@ -399,4 +399,4 @@ So I hope she stays, but if she goes, I understand. For what it’s worth, I don
   [2]: https://cdn-images-1.medium.com/max/1600/1*Fpb2Bvdx7Q-688vdm-NdkQ.png
   [@BuildingTwenty]: https://twitter.com/BuildingTwenty
   [3]: https://cdn-images-1.medium.com/max/1600/1*lvOySry5gHHJfGU_bQXrzA.png
-  [http://samanthabielefeld.com/the-elephant-in-the-room …]: http://t.co/u79ZLsnhdM "http://samanthabielefeld.com/the-elephant-in-the-room"
+  [http://samanthabielefeld.com/the-elephant-in-the-room …]: http://t.co/u79ZLsnhdM

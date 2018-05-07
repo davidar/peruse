@@ -47,8 +47,8 @@ They said that Sudan had a long way to go in terms of respecting human rights, b
 Mr. Reeves said he thought that the American government was being manipulated and that the Obama administration had made a “deal with the devil.”
 
   [United Nations peacekeepers at a refugee camp in Sudan on Monday. In exchange for the lifting of United States trade sanctions, Sudan has said it will improve access for aid groups, stop supporting rebels in neighboring South Sudan and cooperate with American intelligence agents. Ashraf Shazly/Agence France-Presse — Getty Images]: https://static01.nyt.com/images/2017/01/14/world/13SUDAN-1/13SUDAN-1-master768.jpg
-  [Sudan]: http://topics.nytimes.com/top/news/international/countriesandterritories/sudan/index.html?inline=nyt-geo "More news and information about Sudan."
-  [South Sudan]: http://topics.nytimes.com/top/news/international/countriesandterritories/south-sudan/index.html?inline=nyt-geo "More articles about South Sudan."
+  [Sudan]: http://topics.nytimes.com/top/news/international/countriesandterritories/sudan/index.html?inline=nyt-geo
+  [South Sudan]: http://topics.nytimes.com/top/news/international/countriesandterritories/south-sudan/index.html?inline=nyt-geo
   [comprehensive trade embargo against Sudan and blocked the assets of the Sudanese government]: https://www.treasury.gov/resource-center/sanctions/Programs/Documents/sudan.pdf
   [American government’s list of state sponsors of terrorism]: https://www.state.gov/j/ct/list/c14151.htm
   [Eric Reeves]: http://sudanreeves.org/2016/07/04/eric-reeves-is-now-a-senior-fellow-at-harvard-universitys-francois-xavier-bagnoud-center-for-health-and-human-rights/

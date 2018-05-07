@@ -82,12 +82,12 @@ title: '宇航员在太空中喝酒会怎么样？后果很严重 \_探索者 \_
 
 **出品︱网易科学人栏目组 胖胖**
 
-**作者︱春春** [![][1]]
+**作者︱春春** [![返回光明网首页]]
 
 \[责任编辑:肖春芳\]
 
-  [(Credit: Nasa)]: http://imgtech.gmw.cn/attachement/jpg/site2/20170310/448a5bc1e2861a2c4e5929.jpg "宇航员在太空中喝酒会怎么样？后果很严重"
-  [(Credit: iStock)]: http://imgtech.gmw.cn/attachement/jpg/site2/20170310/448a5bc1e2861a2c4e592a.jpg "宇航员在太空中喝酒会怎么样？后果很严重"
-  [(Credit: David Frohman/Peachstate Historical Consulting Inc)]: http://imgtech.gmw.cn/attachement/jpg/site2/20170310/448a5bc1e2861a2c4e592d.jpg "宇航员在太空中喝酒会怎么样？后果很严重"
-  [1]: https://img.gmw.cn/pic/content_logo.png "返回光明网首页"
-  [![][1]]: http://www.gmw.cn/
+  [(Credit: Nasa)]: http://imgtech.gmw.cn/attachement/jpg/site2/20170310/448a5bc1e2861a2c4e5929.jpg
+  [(Credit: iStock)]: http://imgtech.gmw.cn/attachement/jpg/site2/20170310/448a5bc1e2861a2c4e592a.jpg
+  [(Credit: David Frohman/Peachstate Historical Consulting Inc)]: http://imgtech.gmw.cn/attachement/jpg/site2/20170310/448a5bc1e2861a2c4e592d.jpg
+  [返回光明网首页]: https://img.gmw.cn/pic/content_logo.png
+  [![返回光明网首页]]: http://www.gmw.cn/

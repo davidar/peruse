@@ -1,10 +1,10 @@
 ---
-author: Steven Musil
+author: Steven Musil mugshot
 lang: en
 title: 'Zuckerberg offers peek at Facebook’s acquisition strategies'
 ---
 
-![¶ Facebook CEO Mark Zuckerberg, the man with the acquisition plan. ¶ Photo by James Martin/CNET]
+![Facebook CEO Mark Zuckerberg, the man with the acquisition plan. ¶ Photo by James Martin/CNET]
 
 Anyone who has ever been involved in closing a billion-dollar acquisition deal will tell you that you don’t go in without a clear, well thought out plan.
 
@@ -34,7 +34,7 @@ It wasn’t clear why these strategies didn’t work on Snapchat CEO Evan Spiege
 
 ***Technically Literate:** Original works of short fiction with unique perspectives on tech, exclusively on CNET. [Here][1].*
 
-  [¶ Facebook CEO Mark Zuckerberg, the man with the acquisition plan. ¶ Photo by James Martin/CNET]: https://cnet1.cbsistatic.com/img/nAMdBzIE1ogVw5bOBZBaiJCt3Ro=/570x0/2014/03/21/863df5d9-e8b8-4b38-851b-5e3f77f2cf0e/mark-zuckerberg-facebook-home-10671610x407.jpg
+  [Facebook CEO Mark Zuckerberg, the man with the acquisition plan. ¶ Photo by James Martin/CNET]: https://cnet1.cbsistatic.com/img/nAMdBzIE1ogVw5bOBZBaiJCt3Ro=/570x0/2014/03/21/863df5d9-e8b8-4b38-851b-5e3f77f2cf0e/mark-zuckerberg-facebook-home-10671610x407.jpg
   [\$19 billion acquisition]: https://www.cnet.com/news/facebook-closes-19-billion-deal-for-whatsapp/
   [personally brokered]: https://www.cnet.com/news/zuckerberg-did-1-billion-instagram-deal-on-his-own/
   [Instagram]: https://www.cnet.com/news/why-facebook-plunked-down-1-billion-to-buy-instagram/

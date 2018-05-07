@@ -14,7 +14,7 @@ A 28th person, found dead in a house in the town, was also believed to have been
 
 The{-- school--} principal had buzzed Mr. Lanza in because she recognized him as the son of a colleague. Moments later, she was shot dead when she went to investigate the sound of gunshots. The school psychologist was also among those who died.
 
-The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm "Report by Virginia governor’s panel."), in which a gunman killed 32 people and then himself.
+The rampage, coming less than two weeks before Christmas, was the nation’s second-deadliest school shooting, exceeded only by the 2007 [Virginia Tech massacre](http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm), in which a gunman killed 32 people and then himself.
 
 Law enforcement officials said Mr. Lanza had grown up in Newtown, and he was remembered by high school classmates as smart, introverted and nervous. They said he had gone out of his way {++not ++}to{-- not--} attract attention when he was younger.
 

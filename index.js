@@ -22,6 +22,7 @@ const querystring = require('querystring')
 const Readability = require('readability')
 const retry = require('async-retry')
 const RSS = require('rss-parser')
+const sanitizeHTML = require('sanitize-html')
 const {spawn} = require('child_process')
 const {timeout} = require('promise-timeout')
 const tmp = require('tmp')
@@ -197,6 +198,7 @@ function preprocessImages (document) {
     }
     if (image.hasAttribute('data-native-src')) image.src = image.getAttribute('data-native-src')
     if (image.hasAttribute('srcset')) image.src = srcsetMax(image.srcset)
+    if (!image.hasAttribute('alt') && image.hasAttribute('title')) image.alt = image.title
     if (image.src === '' || image.width === 1) removeNode(image)
   })
 
@@ -219,11 +221,12 @@ function preprocessImages (document) {
     let images = figure.getElementsByTagName('img')
     let caption = figure.getElementsByTagName('figcaption')[0]
     if (images.length > 0) {
-      figure.innerHTML = images[0].outerHTML
+      let image = images[0]
+      figure.innerHTML = image.outerHTML
       if (caption) {
         figure.innerHTML += caption.outerHTML
-      } else {
-        figure.outerHTML = '<div>' + figure.innerHTML + '</div>'
+      } else if (image.hasAttribute('alt')) {
+        figure.innerHTML += `<figcaption>${escapeHTML(image.alt)}</figcaption>`
       }
     } else {
       removeNode(figure)
@@ -423,10 +426,63 @@ async function peruse (url, opts = [], allowLocal = true) {
   if (dom === null) return null
 
   let {title, author, date, content} = await preprocess(dom.window)
+
+  content = sanitizeHTML(content, {
+    allowedTags: [
+      'a',
+      'b',
+      'blockquote',
+      'br',
+      'code',
+      'em',
+      'figcaption',
+      'figure',
+      'h1',
+      'h2',
+      'h3',
+      'h4',
+      'h5',
+      'h6',
+      'hr',
+      'i',
+      'img',
+      'li',
+      'ol',
+      'p',
+      'pre',
+      'q',
+      'strike',
+      'strong',
+      'sub',
+      'sup',
+      'table',
+      'tbody',
+      'td',
+      'th',
+      'thead',
+      'tr',
+      'tt',
+      'ul'
+    ],
+    allowedAttributes: {
+      a: ['href'],
+      img: ['alt', 'src'],
+      pre: ['class'],
+      td: ['colspan', 'rowspan'],
+      th: ['colspan', 'rowspan']
+    },
+    selfClosing: ['br', 'hr', 'img'],
+    allowedSchemes: ['about', 'ftp', 'http', 'https', 'mailto'],
+    allowedSchemesByTag: {},
+    allowedSchemesAppliedToAttributes: ['href', 'src'],
+    allowProtocolRelative: true
+  })
+
   let html = `<!DOCTYPE html><html><head><title>${escapeHTML(title)}</title>`
   if (author) html += `<meta name="author" content="${escapeHTML(author)}">`
   if (date) html += `<meta name="date" content="${escapeHTML(date)}">`
   html += `</head><body>${content}${postscript}</body></html>`
+
   return postprocess(html, opts)
 }
 

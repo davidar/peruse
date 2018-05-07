@@ -76,7 +76,7 @@ Heba Habib contributed to this report.
 
 **Read more:**
 
-[Tunisia’s Islamists get a sobering lesson in governing]
+[Tunisia’s Islamists get a sobering lesson in governing][souring on Islamist-led rule]
 
 [Tunisia sends most foreign fighters to Islamic State in Syria][\[Read: Tunisia sends most foreign fighters to Islamic State in Syria\]]
 
@@ -154,7 +154,7 @@ Heba Habib contributed to this report.
 
 **Read more:**
 
-[Tunisia’s Islamists get a sobering lesson in governing]
+[Tunisia’s Islamists get a sobering lesson in governing][souring on Islamist-led rule]
 
 [Tunisia sends most foreign fighters to Islamic State in Syria][\[Read: Tunisia sends most foreign fighters to Islamic State in Syria\]]
 
@@ -171,5 +171,4 @@ Heba Habib contributed to this report.
   [current coalition government]: http://www.washingtonpost.com/blogs/monkey-cage/wp/2015/02/03/tunisia-opts-for-an-inclusive-new-government/
   [beheaded 21 Christians]: http://www.washingtonpost.com/world/middle_east/video-shows-purported-beheading-of-egyptian-christians-in-libya/2015/02/15/b8d0f092-b548-11e4-bc30-a4e75503948a_story.html
   [1]: https://img.washingtonpost.com/rf/image_480w/2010-2019/WashingtonPost/2015/03/18/Foreign/Graphics/tunisia600.jpg?uuid=1_yuLs2LEeSHME9HNBbnWQ
-  [Tunisia’s Islamists get a sobering lesson in governing]: http://www.washingtonpost.com/world/middle_east/tunisias-islamists-get-sobering-lesson-in-governing/2014/11/20/b6fc8988-65ad-11e4-ab86-46000e1d0035_story.html "www.washingtonpost.com"
   [2]: https://img.washingtonpost.com/rf/image_60w/2010-2019/WashingtonPost/2015/03/18/Foreign/Graphics/tunisia600.jpg?uuid=1_yuLs2LEeSHME9HNBbnWQ

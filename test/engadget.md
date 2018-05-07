@@ -22,6 +22,8 @@ The [Xbox One X] is the ultimate video game system. It sports more horsepower th
 -   Solid selection of enhanced titles
 -   4K Blu-ray drive is great for movie fans
 
+ 
+
 -   Expensive
 -   Not worth it if you don’t have a 4K TV
 -   Still no VR support

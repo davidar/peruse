@@ -128,7 +128,7 @@ E. Tabourot : *Les bigarrures du Seigneur des Accords *(Rouen, 1584/R)
 
 D. Schwenter: *Steganalogia et steganographia* (Nuremberg, *c*1620)
 
-F. Godwin : \*The Man in the Moone, or a Discourse of a Voyage\*\* Thither \*(London, 1638)
+F. Godwin : *The Man in the Moone, or a Discourse of a Voyage Thither *(London, 1638)
 
 J. Wilkins: *Mercury, or The Secret and Swift Messenger* (London, 1641)
 
@@ -162,7 +162,7 @@ J. Devos: *Les chiffres de Philippe II, 1555-1598* (Brussels, 1950)
 
 “Codes are Fragile”, *Spring 3100*, xxiii (New York, 1952), 10- 13
 
-B. Bischoff: “Übersicht über die nicht diplomatischen Geheimschriften des Mittelalters“,\*Mitteilungen des Instituts für \*\*österreichische Geschichtsforschung\*, lxii (1954), 1-27,  esp. 6, 18-19
+B. Bischoff: “Übersicht über die nicht diplomatischen Geheimschriften des Mittelalters“,*Mitteilungen des Instituts für österreichische Geschichtsforschung*, lxii (1954), 1-27,  esp. 6, 18-19
 
 N. Cazden: “Staff Notation as a Non-Musical Communication Code“, *JMT*, v(1961), 113-28; \[vedi anche idem: “Forum”, ibid., 287-96\]
 
@@ -217,7 +217,7 @@ E. Sams: “Brahms and his Musical Love-Letters”, ibid., 329-30 \[trad. it in
 
 H. Halbreich: “Ciphered Creed”, *Music and Musicians*, xx/12 (1971-2), 18,19
 
-D. Brown: “A Note on Désirée Artôt, ‘Fatum’, and the First Piano Concerto”, \*Tschaikovsky: a Biographical and Critical\*\* Study\*, i (London, 1978), 197-200
+D. Brown: “A Note on Désirée Artôt, ‘Fatum’, and the First Piano Concerto”, *Tschaikovsky: a Biographical and Critical Study*, i (London, 1978), 197-200
 
 *Code and Cipher: the Secret Language of Music*, Central Television Film (1989)
 

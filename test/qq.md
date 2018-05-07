@@ -9,7 +9,7 @@ title: 'DeepMind新电脑已可利用记忆自学 人工智能迈上新台阶\_�
 
 TNW中文站 10月14日报道
 
-[谷歌] 在2014年收购的人工智能公司DeepMind开发出一款能够用自己的记忆学习新知识并利用这些知识来回答问题的计算机。
+[谷歌][]([微博]) 在2014年收购的人工智能公司DeepMind开发出一款能够用自己的记忆学习新知识并利用这些知识来回答问题的计算机。
 
 这款产品具有极其重要的意义，因为这意味着未来的人工智能技术可能不需要人类来教它就能回答人类提出的问题。
 
@@ -31,11 +31,9 @@ DeepMind希望DNC可以推动计算行业实现更多突破。DeepMind已将其�
 
 转播到腾讯微博
 
-![][1]
-
 **【美国The Next Web作品的中文相关权益归腾讯公司独家所有。未经授权，不得转载、摘编等。】**
 
   [DeepMind新电脑已可利用记忆自学 人工智能迈上新台阶]: http://img1.gtimg.com/tech/pics/hv1/168/240/2140/139214868.jpg
-  [谷歌]: %5B微博%5D
+  [谷歌]: http://stockhtm.finance.qq.com/astock/ggcx/GOOG.OQ.htm
+  [微博]: http://t.qq.com/googlechina#pref=qqcom.keyword
   [科学]: http://tech.qq.com/science.htm
-  [1]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJAQMAAAAB5D5xAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURQAAAKd6PdoAAAABdFJOUwBA5thmAAAAC0lEQVQI12NgwAkAABsAAVJE5KkAAAAASUVORK5CYIIvKiAgfHhHdjAwfDUwZDc5YmEzMGM3MDcxY2I5OTIyMTk4MzYyZGRlZmNlICov
