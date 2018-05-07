@@ -345,9 +345,7 @@ async function preprocess (window,
     article.author = article.author.trim().replace(trailingPunctuation, '').trim()
   }
 
-  article.content = article.content
-    .replace(/<(embed|iframe|video|audio) /g, '<img ')
-    .replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
+  article.content = article.content.replace(/<p style="display: inline;" class="readability-styled">([^<]*)<\/p>/g, '$1')
 
   if (article.content.replace(/<pre[\s\S]*?<\/pre>/g, '').length > article.content.length / 10) {
     article.content = article.content.replace(/<pre>/g, '<pre class="highlight">')
@@ -430,6 +428,7 @@ async function peruse (url, opts = [], allowLocal = true) {
   content = sanitizeHTML(content, {
     allowedTags: [
       'a',
+      'audio',
       'b',
       'blockquote',
       'br',
@@ -445,6 +444,7 @@ async function peruse (url, opts = [], allowLocal = true) {
       'h6',
       'hr',
       'i',
+      'iframe',
       'img',
       'li',
       'ol',
@@ -462,21 +462,36 @@ async function peruse (url, opts = [], allowLocal = true) {
       'thead',
       'tr',
       'tt',
-      'ul'
+      'ul',
+      'video'
     ],
     allowedAttributes: {
       a: ['href'],
+      audio: ['src'],
+      iframe: ['src'],
       img: ['alt', 'src'],
       pre: ['class'],
       td: ['colspan', 'rowspan'],
-      th: ['colspan', 'rowspan']
+      th: ['colspan', 'rowspan'],
+      video: ['src']
     },
     selfClosing: ['br', 'hr', 'img'],
     allowedSchemes: ['about', 'ftp', 'http', 'https', 'mailto'],
     allowedSchemesByTag: {},
     allowedSchemesAppliedToAttributes: ['href', 'src'],
-    allowProtocolRelative: true
+    allowProtocolRelative: true,
+    allowedIframeHostnames: [
+      'www.youtube.com',
+      'www.youtube-nocookie.com',
+      'player.vimeo.com',
+      'www.dailymotion.com'
+    ]
   })
+
+  content = content
+    .replace(/<iframe src="(.*?)"><\/iframe>/g, '<figure><img src="$1" /></figure>')
+    .replace(/<audio src="(.*?)"><\/audio>/g, '<figure><img src="$1" /></figure>')
+    .replace(/<video src="(.*?)"><\/video>/g, '<figure><img src="$1" /></figure>')
 
   let html = `<!DOCTYPE html><html><head><title>${escapeHTML(title)}</title>`
   if (author) html += `<meta name="author" content="${escapeHTML(author)}">`
