@@ -26,6 +26,7 @@
     "readability": "file:readability",
     "rss-parser": "^3.1.2",
     "sanitize-html": "^1.18.2",
+    "srcset": "^1.0.0",
     "tmp": "0.0.33",
     "utf8-length": "0.0.1"
   },
