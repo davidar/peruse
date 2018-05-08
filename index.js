@@ -17,6 +17,8 @@ const {waybackTimestamps} = require('./lib/wayback')
 
 const forEachR = (a, f) => { for (let i = a.length - 1; i >= 0; i--) f(a[i]) }
 
+const highlightLanguages = pandoc('--list-highlight-languages').toString().then(s => s.trim().split('\n'))
+
 const markdown = [
   'markdown',
   '-bracketed_spans',
@@ -50,9 +52,9 @@ async function peruse (url, opts = [], allowLocal = true) {
     url = item.url
   }
 
-  let langs = await pandoc('--list-highlight-languages').toString()
-  let classesToPreserve = langs.trim().split('\n')
+  let classesToPreserve = await highlightLanguages
   let html = await fetchArticle(url, {allowLocal, classesToPreserve})
+  if (html === null) return null
 
   html = html.replace('</body></html>', '') + postscript + '</body></html>'
   html = html
@@ -71,13 +73,25 @@ async function peruse (url, opts = [], allowLocal = true) {
 async function mainURL (url) {
   let opts = process.argv.filter(arg => arg.startsWith('-'))
   let output = await peruse(url, opts)
+  return lessMaybe(output, url + ': unrecognised input')
+}
+
+async function lessMaybe (output, err, scopeName = 'source.gfm') {
   if (output) {
-    await less(output)
+    await less(output, scopeName)
     return 0
   } else {
-    console.error(url + ': unrecognised input')
+    console.error(err)
     return 1
   }
+}
+
+async function mainHTML (url) {
+  let output = await fetchArticle(url, {
+    allowLocal: true,
+    classesToPreserve: await highlightLanguages
+  })
+  return lessMaybe(output, url + ': unrecognised input', 'text.html.basic')
 }
 
 async function mainDiff (url1, url2) {
@@ -203,6 +217,7 @@ async function mainServer (port = 4343) {
 const commands = {
   diff: mainDiff,
   history: mainHistory,
+  html: mainHTML,
   server: mainServer
 }
 

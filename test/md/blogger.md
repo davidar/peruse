@@ -65,27 +65,18 @@ The labeled nodes now need to be placed. The initial placement uses a simple gre
 
 Once the design is placed, the placement optimizer then loops over the design and attempts to improve it. A simulated annealing algorithm is used, where changes to the design are accepted unconditionally if they make the placement better, and with a random, gradually decreasing probability if they make it worse. The optimizer terminates when the design receives a perfect score (indicating an optimal placement) or if it stops making progress for several iterations. Each iteration does the following:
 
-Compute a score for the current design based on the number of unroutable nets, the amount of routing congestion (number of nets crossing between halves of the device), and static timing analysis (not yet implemented, always zero).
-
-Make a list of nodes that contributed to this score in some way (having some attached nets unroutable, crossing to the other half of the device, or failing timing).
-
-Remove nodes from the list that are LOC’d to a specific location since we’re not allowed to move them.
-
-Remove nodes from the list that have only one legal placement in the device (for example, oscillator hard IP) since there’s nowhere else for them to go.
-
-Pick a node from the remainder of the list at random. Call this our pivot.
-
-Find a list of candidate placements for the pivot:
-
-1.  Consider all routable placements in the other half of the device.
-2.  If none were found, consider all routable placements anywhere in the device.
-3.  If none were found, consider all placements anywhere in the device even if they’re not routable.
-
-Pick one of the candidates at random and move the pivot to that location. If another cell in the netlist is already there, put it in the vacant site left by the pivot.
-
-Re-compute the score for the design. If it’s better, accept this change and start the next iteration.
-
-If the score is worse, accept it with a random probability which decreases as the iteration number goes up. If the change is not accepted, restore the previous placement.
+1.  Compute a score for the current design based on the number of unroutable nets, the amount of routing congestion (number of nets crossing between halves of the device), and static timing analysis (not yet implemented, always zero).
+2.  Make a list of nodes that contributed to this score in some way (having some attached nets unroutable, crossing to the other half of the device, or failing timing).
+3.  Remove nodes from the list that are LOC’d to a specific location since we’re not allowed to move them.
+4.  Remove nodes from the list that have only one legal placement in the device (for example, oscillator hard IP) since there’s nowhere else for them to go.
+5.  Pick a node from the remainder of the list at random. Call this our pivot.
+6.  Find a list of candidate placements for the pivot:
+    1.  Consider all routable placements in the other half of the device.
+    2.  If none were found, consider all routable placements anywhere in the device.
+    3.  If none were found, consider all placements anywhere in the device even if they’re not routable.
+7.  Pick one of the candidates at random and move the pivot to that location. If another cell in the netlist is already there, put it in the vacant site left by the pivot.
+8.  Re-compute the score for the design. If it’s better, accept this change and start the next iteration.
+9.  If the score is worse, accept it with a random probability which decreases as the iteration number goes up. If the change is not accepted, restore the previous placement.
 
 After optimization, the design is checked for routability. If any edges in the netlist graph don’t correspond to edges in the device graph, the user probably asked for something impossible (for example, trying to hook a flipflop’s output to a comparator’s reference voltage input) so fail with an error.
 
