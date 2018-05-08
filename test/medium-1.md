@@ -7,7 +7,8 @@ title: 'Better Student Journalism — Medium'
 Open Journalism Project:
 ========================
 
-### *Better Student Journalism*
+*Better Student Journalism*
+---------------------------
 
 We pushed out the first version of the [Open Journalism site] in January. Our goal is for the site to be a place to teach students what they should know about journalism on the web. It should be fun too.
 

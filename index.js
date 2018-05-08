@@ -351,18 +351,6 @@ async function preprocess (window,
     article.content = article.content.replace(/<pre>/g, '<pre class="highlight">')
   }
 
-  let headingRE = /<h([1-6])[\s\S]*?<\/h.>/g
-  let headings = new Set()
-  for (let match; (match = headingRE.exec(article.content));) headings.add(match[1])
-  headings = Array.from(headings.values()).sort()
-  let heading = i => headings.indexOf(i.toString()) + 1
-  article.content = article.content
-    .replace(/<h2([\s\S]*?)<\/h.>/g, `<h${heading(2)}$1</h${heading(2)}>`)
-    .replace(/<h3([\s\S]*?)<\/h.>/g, `<h${heading(3)}$1</h${heading(3)}>`)
-    .replace(/<h4([\s\S]*?)<\/h.>/g, `<h${heading(4)}$1</h${heading(4)}>`)
-    .replace(/<h5([\s\S]*?)<\/h.>/g, `<h${heading(5)}$1</h${heading(5)}>`)
-    .replace(/<h6([\s\S]*?)<\/h.>/g, `<h${heading(6)}$1</h${heading(6)}>`)
-
   if (nextPage.url && pgzp.pages.length < 10) {
     console.error(`Fetching page ${pgzp.pages.length} from ${nextPage.url}`)
     let dom = await jsdom(nextPage.url)
@@ -394,6 +382,7 @@ async function postprocess (content, opts) {
     '-raw_html'
   ].join('')
   let output = await pandoc('--standalone', '--from=html',
+    '--lua-filter', path.join(__dirname, 'pandoc-a11y.lua'),
     '--to=' + markdown + '-smart', '--reference-links').end(content).toString()
   if (bytes(output) > 1500) opts = opts.concat(['--filter', 'pandoc-lang'])
   return pandoc('--standalone', '--from=' + markdown,

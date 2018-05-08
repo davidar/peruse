@@ -4,7 +4,7 @@ title: Bartleby the Scrivener Web Study Text
 ---
 
 Study Webtext
--------------
+=============
 
 “Bartleby the Scrivener: A Story of Wall-Street” (1853)  Herman Melville
 ========================================================================

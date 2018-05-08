@@ -6,7 +6,7 @@ title: 'How to build your own VPN if you’re (rightfully) wary of commercial op
 ---
 
 Gear & Gadgets —
-----------------
+================
 
 While not perfect, either, cloud hosting providers have a better customer data record.
 ======================================================================================
@@ -369,7 +369,8 @@ At this point, the entire house is getting its traffic routed safely out from un
 
 Page: [1][5] [2][6] [3][7] 4 [5][8] [Next →][8]
 
-### Gear & Gadgets —
+Gear & Gadgets —
+----------------
 
 While not perfect, either, cloud hosting providers have a better customer data record.
 ======================================================================================
