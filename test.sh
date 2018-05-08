@@ -5,17 +5,17 @@ export PATH="$PWD/node_modules/.bin:$PATH"
 ./index.js server --unsafe-local --wrap=none & sleep 3
 PID=$!
 
-for file in test/*.md; do
+for file in test/md/*.md; do
     base=`basename $file .md`
     echo -n "$base... "
 
     href=""
-    if [ -e test/$base.href ] && [ "$1" != "fast" ]; then
-        href=`cat test/$base.href`
-    elif [ -e test/$base.html ]; then
-        href=test/$base.html
-    elif [ -x test/$base.sh ] && [ "$1" != "fast" ]; then
-        test/$base.sh > test.out
+    if [ -e test/input/$base.href ] && [ "$1" != "fast" ]; then
+        href=`cat test/input/$base.href`
+    elif [ -e test/input/$base.html ]; then
+        href=test/input/$base.html
+    elif [ -x test/input/$base.sh ] && [ "$1" != "fast" ]; then
+        test/input/$base.sh > test.out
     elif [ -e readability/test/test-pages/$base/source.html ]; then
         href=readability/test/test-pages/$base/source.html
     fi
