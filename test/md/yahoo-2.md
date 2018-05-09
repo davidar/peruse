@@ -1,5 +1,5 @@
 ---
-author: NATALIYA VASILYEVA
+author: Katie Couric New Yorkers post their feelings about Trump election in subway
 lang: en
 title: 'Russia: Space ship malfunctions, breaks up over Siberia'
 ---

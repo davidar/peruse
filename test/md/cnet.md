@@ -1,5 +1,6 @@
 ---
-author: Steven Musil mugshot
+author: 'Tech Industry Steven Musil mugshot by Steven Musil @stevenmusil'
+date: 'January 18, 2017 11:00 PM PST'
 lang: en
 title: 'Zuckerberg offers peek at Facebook’s acquisition strategies'
 ---

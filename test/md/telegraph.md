@@ -1,6 +1,8 @@
 ---
+author: 'Our Foreign Staff • 2:15pm'
+date: 16 November 2017
 lang: en
-title: 'Robert Mugabe and wife Grace ‘insisting he finishes his term’, as priest steps in to mediate'
+title: 'Zimbabwe coup: Robert Mugabe and wife Grace ‘insisting he finishes his term’, as priest steps in to mediate'
 ---
 
 Zimbabwe President [Robert Mugabe], his wife Grace and two key figures from her G40 political faction are under house arrest at Mugabe’s “Blue House” compound in Harare and are insisting the 93 year-old finishes his presidential term, a source said.

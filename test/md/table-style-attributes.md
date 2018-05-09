@@ -33,6 +33,8 @@ So please. Don’t bother sending me any more mail about this. It’s a near cer
 
 I understand that one can play videos on one’s computer. I understand these videos come in many different formats. Every now and then I try to figure out what the Done Thing is, as far as playing movies on one’s Linux machine.
 
+(Really my eventual goal is to be able to *create* video on Linux, but I figured I’d start small, and see if I could just get *playback* working before trying something that is undoubtedly ten thousand times harder.)
+
 I finally found [RPMs] of [mplayer] that would consent to install themselves on a Red Hat 7.2 machine, and actually got it to play some videos. Amazing. But it’s a total pain in the ass to use due to rampant “themeing.” *Why do people do this?* They map this stupid shaped window with no titlebar (oh, sorry, your choice of a dozen stupidly-shaped windows without titlebars) all of which use fonts that are way too small to read. But, here’s the best part, there’s no way to raise the window to the top. So if another window ever gets on top of it, well, sorry, you’re out of luck. And half of the themes always map the window at the very bottom of the screen – conveniently *under* my panel where I can’t reach it.
 
 Resizing the window changes the aspect ratio of the video! Yeah, I’m sure someone has *ever* wanted that.
@@ -59,9 +61,13 @@ An idiocy that all of these programs have in common is that, in addition to open
 
 > **[Makali] wrote:**
 >
+> *Whenever a programmer thinks, “Hey, skins, what a cool idea”, their computer’s speakers should create some sort of cock-shaped soundwave and plunge it repeatedly through their skulls.*
+>
 > I am fully in support of this proposed audio-cock technology.
 >
 > **Various people wrote:**
+>
+> *You shouldn’t even bother compiling the GUI into mplayer!*
 >
 > So I should solve the problem of \`\`crappy GUI’‘by replacing it with \`\`no GUI at all?’’ I should use the program only from the command line, or by memorizing magic keystrokes? Awesome idea.
 >
@@ -71,11 +77,15 @@ An idiocy that all of these programs have in common is that, in addition to open
 >
 > **Someone else wrote:**
 >
+> *Have you considered changing distributions?*
+>
 > Yes, every single time I try something like this, I very seriously consider [getting a Mac].
 >
 > Really the only thing that’s stopping me is that I fear the [Emacs situation].
 >
 > (By which I mean, \`\`Lack of a usable version thereof.’’ No, running RMSmacs inside a terminal window doesn’t qualify. Nor does running an X server on the Mac: if I were going to switch, why in the world would I continue inflicting the X Windows Disaster on myself? Wouldn’t getting away from that be the *whole point?*)
+>
+> (I understand there is an almost-functional Aqua version of [RMSmacs] now. I’ll probably check it out at some point, but the problem with *[me]* switching from XEmacs to RMSmacs is that it would probably result in another [Slashdork][posted] post, meaning I’d wake up to another 150+ poorly spelled flames in my inbox… I’m hoping for a Aquafied XEmacs, but I know that’s not likely to happen any time soon.)
 >
 > By the way, the suggestion to switch Linux distrubutions in order to get a single app to work might sound absurd at first. And that’s because [it is]. But I’ve been saturated with Unix-peanut-gallery effluvia for so long that it no longer even surprises me when every question – no matter how simple – results in someone suggesting that you either A) patch your kernel or B) change distros. It’s inevitable and inescapable, like Hitler.
 
@@ -96,6 +106,8 @@ An idiocy that all of these programs have in common is that, in addition to open
   [Makali]: http://www.lazycat.org/
   [getting a Mac]: ../gruntle/bittybox.html
   [Emacs situation]: http://www.xemacs.org/
+  [RMSmacs]: ../hacks/why-cooperation-with-rms-is-impossible.mp3
+  [me]: lemacs.html
   [it is]: linux.html
   [\[ up \]]: ../compass1.gif
   [![\[ up \]]]: ../

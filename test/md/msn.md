@@ -1,5 +1,5 @@
 ---
-author: Alex Perry
+author: Tech Insider Alex Perry
 date: 1 day ago
 lang: en
 title: 'Nintendo’s first iPhone game will launch in December for \$10'

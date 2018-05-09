@@ -1,6 +1,6 @@
 ---
 lang: en
-title: A console that keeps up with gaming PCs
+title: 'Xbox One X review: A console that keeps up with gaming PCs'
 ---
 
 But only hardcore gamers will appreciate it.
@@ -107,9 +107,6 @@ Wrap-up
 ![][11]
 
 Ultimately, the Xbox One X offers some major performance upgrades that gamers will notice – especially if you’re coming from an original Xbox One. But it’s also a bit disappointing since it’s coming a year after the PS4 Pro, and it doesn’t offer VR yet. For Microsoft fans, though, none of that will matter. It’s exactly what the company promised: the fastest game console ever made.
-
-From around the web
-===================
 
   [1]: https://o.aolcdn.com/images/dims?thumbnail=45%2C45&quality=80&image_uri=http%3A%2F%2Fwww.blogcdn.com%2Fwww.engadget.com%2Fmedia%2F2016%2F03%2Fdevindra-engadget-headshot-small.jpg&client=cbc79c14efcebee57402&signature=e6ffba7468c380581b6589a70ce5d7c1ec40cd1d
   [![][1]]: https://www.engadget.com/about/editors/devindra-hardawar/

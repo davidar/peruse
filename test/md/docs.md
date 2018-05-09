@@ -11,7 +11,7 @@ information that need to be known. It took me a bit of fiddling around, but it t
 
 This guide may not work if you’re using the last version of Windows 95 (OSR2.5) since that’s essentially an early Windows 98 with IE4 integration. 
 
-![][1] 
+![][1]  
 
 Note: Windows 95 on DOSBox is just a toy. It’s not recommended for any serious work. Those who need Windows 95 for some productive purpose, or even 
 

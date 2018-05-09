@@ -158,11 +158,11 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
   [Virginia Tech massacre]: http://www.governor.virginia.gov/tempcontent/techpanelreport.cfm
 
 # Update 20121215042128
-{--![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg)--}
+![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg)
 
-{--Richard Perry/The New York Times--}
+Richard Perry/The New York Times
 
-{--People listened to a memorial service through the windows at St. Rose of Lima Church. [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)--}
+People listened to a memorial service through the windows at St. Rose of Lima Church. [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)
 
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
@@ -243,11 +243,13 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 “There is going to be a black cloud over this area forever,” said Craig Ansman, who led his 4-year-old daughter from the preschool down the street from the elementary school. “It will never go away.”
 
 # Update 20121215055204
+{--![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting5_span/15shooting5_span-articleLarge.jpg)--}
+
 {++![](http://graphics8.nytimes.com/images/2012/12/15/nyregion/15shooting6_span/15shooting6_span-articleLarge.jpg)++}
 
-{++Karsten Moran for The New York Times++}
+{~~Richard Perry/~>Karsten Moran for ~~}The New York Times
 
-{++Grace Christian Fellowship in Newtown conducted a candlelight vigil. [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)++}
+{~~People listened to~>Grace Christian Fellowship in Newtown conducted~~} a {~~memorial service through the windows at St. Rose of Lima Church.~>candlelight vigil.~~} [More Photos »](http://www.nytimes.com/slideshow/2012/12/14/nyregion/20121215_SHOOTING_GOBIG.html)
 
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
@@ -494,11 +496,11 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 “There is going to be a black cloud over this area forever,” said Craig Ansman, who led his 4-year-old daughter from the preschool down the street from the elementary school. “It will never go away.”
 
 # Update 20121216182457
-![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)
+{--![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)--}
 
-Don Emmert/Agence France-Presse — Getty Images
+{--Don Emmert/Agence France-Presse — Getty Images--}
 
-Connecticut State Police stood guard outside Sandy Hook Elementary School on Saturday morning.
+{--Connecticut State Police stood guard outside Sandy Hook Elementary School on Saturday morning.--}
 
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
@@ -609,12 +611,6 @@ The first 911 call was recorded about 9:30 and said someone had been shot at the
 {++An earlier version of this article, based on news reports at the time, indicated that Nancy Lanza had worked at Sandy Hook Elementary School in Newtown, Conn., where Friday’s shooting occurred. On Saturday, the school superintendent said that there was no evidence Ms. Lanza had ever worked at the school.++}
 
 # Update 20121217184325
-![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)
-
-Don Emmert/Agence France-Presse — Getty Images
-
-Connecticut State Police stood guard outside Sandy Hook Elementary School on Saturday morning.
-
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
 Hundreds of terrified parents arrived as their sobbing children were led out of the Sandy Hook Elementary School in a wooded corner of Newtown, Conn. By then, all of the victims had been shot and most were dead, and the gunman, identified as Adam Lanza, had committed suicide. The children killed were said to be 5 to 10 years old.
@@ -736,12 +732,6 @@ This article has been revised to reflect the following correction:
 An earlier version of this article, based on news reports at the time, indicated that Nancy Lanza had worked at Sandy Hook Elementary School in Newtown, Conn., where Friday’s shooting occurred. On Saturday, the school superintendent said that there was no evidence Ms. Lanza had ever worked at the school.
 
 # Update 20121219133531
-![](http://graphics8.nytimes.com/images/2012/12/14/nyregion/20121215-SHOOTING-slide-CQ9F/20121215-SHOOTING-slide-CQ9F-articleLarge.jpg)
-
-Don Emmert/Agence France-Presse — Getty Images
-
-Connecticut State Police stood guard outside Sandy Hook Elementary School on Saturday morning.
-
 A 20-year-old man wearing combat gear and armed with semiautomatic pistols and a semiautomatic rifle killed 26 people — 20 of them children — in an attack in an elementary school in central Connecticut on Friday. Witnesses and officials described a horrific scene as the gunman, with brutal efficiency, chose his victims in two classrooms while other students dove under desks and hid in closets.
 
 Hundreds of terrified parents arrived as their sobbing children were led out of the Sandy Hook Elementary School in a wooded corner of Newtown, Conn. By then, all of the victims had been shot and most were dead, and the gunman, identified as Adam Lanza, had committed suicide. The children killed were said to be 5 to 10 years old.

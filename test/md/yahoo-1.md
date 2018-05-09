@@ -1,5 +1,5 @@
 ---
-author: Ben Silverman
+author: Ben Silverman Games Editor
 lang: en
 title: These are the 8 coolest PlayStation VR games
 ---

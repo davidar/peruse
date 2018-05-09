@@ -10,6 +10,8 @@ Every year, about 2 million people get sick from a superbug, according to the CD
 
 The White House recently released a [comprehensive plan] outlining steps to combat drug-resistant bacteria. The plan identifies three “urgent” and several “serious” threats. We asked infectious disease experts to explain what some of them are and when to worry.
 
+[A Closer Look at MRSA]
+
 But First: What’s a Superbug?
 =============================
 
@@ -29,6 +31,7 @@ Here are some of the growing superbug threats identified in the 2015 White House
 
   [bacterial infection]: http://www.webmd.com/a-to-z-guides/bacterial-and-viral-infections
   [comprehensive plan]: http://www.webmd.com/click?url=https://www.whitehouse.gov/sites/default/files/docs/national_action_plan_for_combating_antibotic-resistant_bacteria.pdf
+  [A Closer Look at MRSA]: http://www.webmd.com/skin-problems-and-treatments/ss/slideshow-closer-look-at-mrsa
   [antibiotics]: http://www.webmd.com/cold-and-flu/rm-quiz-antibiotics-myths-facts
   [chemotherapy]: http://www.webmd.com/cancer/chemotherapy-what-to-expect
   [organ transplants]: http://www.webmd.com/a-to-z-guides/organ-donation-facts
