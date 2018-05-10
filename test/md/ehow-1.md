@@ -8,8 +8,6 @@ Glass cloche terrariums are not only appealing to the eye, but they also preserv
 
 ![Glass cloche terrariums]
 
-Glass cloche terrariums (Lucy Akins)
-
 What You’ll Need:
 
 -   Cloche
@@ -29,15 +27,11 @@ Measure the circumference of your cloche and cut the foam oasis about 3/4 inch (
 
 ![Dig a hole in the oasis.]
 
-Dig a hole in the oasis. (Lucy Akins)
-
 Step 2
 
 Insert your plant into the hole.
 
 ![Orchid in foam oasis]
-
-Orchid in foam oasis (Lucy Akins)
 
 Step 3
 
@@ -45,15 +39,11 @@ You can add various plants if you wish.
 
 ![Various foliage]
 
-Various foliage (Lucy Akins)
-
 Step 4
 
 Using floral pins, attach enough moss around the oasis to cover it.
 
 ![Attach moss.]
-
-Attach moss. (Lucy Akins)
 
 Step 5
 
@@ -61,15 +51,11 @@ Gently place the cloche over the oasis. The glass may push some of the moss upwa
 
 ![Place cloche over oasis.]
 
-Place cloche over oasis. (Lucy Akins)
-
 Step 6
 
 Simply pull down the moss with tweezers or insert more moss to fill in the empty spaces.
 
 ![Rearrange moss.]
-
-Rearrange moss. (Lucy Akins)
 
 Step 7
 
@@ -77,15 +63,11 @@ You can use any platform you wish. In this case, a small saucer was used.
 
 ![Place cloche on a platform to sit on.]
 
-Place cloche on a platform to sit on. (Lucy Akins)
-
 Step 8
 
 This particular terrarium rests on a planter saucer and features a small white pumpkin.
 
 ![Cloche placed on a terracotta saucer]
-
-Cloche placed on a terracotta saucer (Lucy Akins)
 
 Step 9
 
@@ -93,15 +75,11 @@ This particular terrarium was placed on a wood slice and a little toy squirrel w
 
 ![Placed on a wooden slice]
 
-Placed on a wooden slice (Lucy Akins)
-
 Finished Terrarium
 
 Displayed alone or in a group, these pretty arrangements allow you to add a little nature to your decor or tablescape.
 
 ![Cloche terrarium]
-
-Cloche terrarium (Lucy Akins)
 
 Featured
 ========

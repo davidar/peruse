@@ -62,6 +62,10 @@ async function peruse (url, opts = [], allowLocal = true) {
     .replace(/<audio src="(.*?)"><\/audio>/g, '<figure><img src="$1" /></figure>')
     .replace(/<video src="(.*?)"><\/video>/g, '<figure><img src="$1" /></figure>')
 
+  if (html.replace(/<pre[\s\S]*?<\/pre>/g, '').length > html.length / 10) {
+    html = html.replace(/<pre>/g, '<pre class="highlight">')
+  }
+
   let output = await pandoc('--standalone', '--from=html',
     '--lua-filter', path.join(__dirname, 'pandoc-a11y.lua'),
     '--to=' + markdown + '-smart', '--reference-links').end(html).toString()
