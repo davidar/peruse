@@ -1,0 +1,1009 @@
+<html>
+<head>
+  <title>Typing the technical interview</title>
+  <link rel="stylesheet" type="text/css" href="/css" />
+  <script src="/js"></script>
+</head>
+<body>
+  <div id="adminbar">
+    <form id="login" action="/login" method="post">
+      <label for="admin_login">Login</label>
+      <input type="text" name="login" id="admin_login" />
+      
+      <label for="admin_password">Password</label>
+      <input type="password" name="password" id="admin_password" />
+      <input type="submit" name="action" value="Log in" />
+    </form>
+  <div class="clear"></div>
+</div>
+
+
+  <header>
+    <nav>
+      <h1><a href="/">Aphyr</a></h1>
+      <ul>
+        <li><a href="/posts">Blog</a></li>
+        <li><a href="/photos">Photography</a></li>
+        <li><a href="http://github.com/aphyr">Code</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    
+
+    
+<article class="primary post">
+  <div class="backdrop">
+    <div class="bar">
+      <h1>Typing the technical interview</h1>
+
+      <div class="meta">
+        <time datetime="2017-04-10T09:40:19-05:00" pubdate>2017/04/10</time>
+        
+        <ul class="tags"><li><a href="/tags/writing">Writing</a></li><li><a href="/tags/software">Software</a></li><li><a href="/tags/Interviews">Interviews</a></li><li><a href="/tags/Haskell">Haskell</a></li></ul>
+      </div>
+    </div>
+
+    <div class="body">
+      <p><em>Previously: <a href="https://aphyr.com/posts/341-hexing-the-technical-interview">Hexing the technical interview</a>.</em></p>
+
+<p>In the formless days, long before the rise of the Church, all spells were woven
+of pure causality, all actions were permitted, and death was common. Many
+witches were disfigured by their magicks, found crumpled at the center of a
+circle of twisted, glass-eaten trees, and stones which burned unceasing in the
+pooling water; some disappeared entirely, or wandered along the ridgetops: feet
+never touching earth, breath never warming air.</p>
+
+<p>As a child, you learned the story of Gullveig-then-Heiðr, reborn three times
+from the fires of her trial, who traveled the world performing <em>seidr</em>: the reading and re-weaving of the future. Her foretellings (and there were many) were famed&mdash;spoken of even by the völva-beyond-the-world&mdash;but it was her <em>survival</em> that changed history. Through the ecstatic trance of <em>seidr</em>, she foresaw her fate, and
+conquered death. Her spells would never crash, and she became a friend to
+outcast women: the predecessors of your kind. It is said that Odin himself learned immortality
+from her.</p>
+
+<p>To this day, all witches owe Heiðr a debt. Few delve into the ancient,
+unstructured magic nowadays. The very languages in which your spells are
+written are stabilized with <em>seidr</em> in their syntax, channeling the energies
+you summon through safe paths&mdash;more or less. There are still occasional
+explosions, of course. They&rsquo;re just&hellip; more of the eyebrow-singeing variety, than
+the type that result in new and interestingly-shaped fjørds.</p>
+
+<p>&ldquo;Is everything all right?&rdquo;</p>
+
+<p>The interviewer&mdash;Criss, his badge says&mdash;is young, as is customary in the
+Valley. Wearing a hoodie which, judging from the lack of branding, cost at
+least three hundred dollars.  He resembles no animal in particular, which gives
+you pause.  Usually you&rsquo;re better at that sort of thing.</p>
+
+<p>&ldquo;Do you mean in general? I don&rsquo;t think so.&rdquo; You look around at the conference
+room as if to confirm. The walls smell of Slack DMs and conflict avoidance.</p>
+
+<p>&ldquo;Ah, well, um. Yes, you&rsquo;re probably right.&rdquo; He sounds bashful. &ldquo;But I&rsquo;d like to
+do a little exercise with you nonetheless. Just a simple programming puzzle, so
+I can understand how you solve problems.&rdquo;</p>
+
+<p>Once, you solved a problem with a knife of shattered sky-glass. You wonder
+whether Criss would have the strength to do what you have done.</p>
+
+<p>&ldquo;Sooo&hellip; this problem is called N-Queens, and it&rsquo;s fairly simple. Given an NxN
+chessboard, you need to find a way to place N queens on that board safely.&rdquo;</p>
+
+<p>You draw an eight-by-eight grid on the whiteboard, and neatly arrange eight
+queens together in the center. They face each other in a tight circle, to
+converse as equals.</p>
+
+<p>&ldquo;Er, no&mdash;that&rsquo;s not right. See? This queen could kill any of these four, in
+one move.&rdquo;</p>
+
+<p>&ldquo;Are you really unable,&rdquo; you ask, voice as calm as stone, &ldquo;to imagine eight
+powerful women in the same room without them trying to kill each other?&rdquo;</p>
+
+<p>&ldquo;It&rsquo;s&hellip; it&rsquo;s just how the problem works.&rdquo;</p>
+
+<p>Perhaps they are the matriarchs of warring clans, then. Together to discuss a
+truce&mdash;but none trusting the other within a dagger&rsquo;s reach. This too has
+happened, in the history of your kind.</p>
+
+<p>&ldquo;Can I use any language?&rdquo;</p>
+
+<p>&ldquo;Sure.&rdquo;</p>
+
+<p>Move quickly, before he realizes his mistake.</p>
+<code class="block"><span class="cm">{-# OPTIONS_GHC -fno-warn-missing-methods #-}</span>
+<span class="cm">{-# LANGUAGE MultiParamTypeClasses #-}</span>
+<span class="cm">{-# LANGUAGE FunctionalDependencies #-}</span>
+<span class="cm">{-# LANGUAGE FlexibleInstances #-}</span>
+<span class="cm">{-# LANGUAGE UndecidableInstances #-}</span>
+</code>
+<p>&ldquo;Oh, this is Haskell! I studied this in college!&rdquo; He pauses, and frowns.
+&ldquo;Undecidable instances?&rdquo;</p>
+
+<p>&ldquo;We must use this,&rdquo; you inform him cheerfully, &ldquo;because Hask is not a
+category.&rdquo;</p>
+
+<p>&ldquo;Oh, right.&rdquo; He blusters a non-termination argument at nobody in particular.
+&ldquo;That&rsquo;s why we usually think in subsets of Haskell where types don&rsquo;t have
+bottom values.&rdquo;</p>
+
+<p>&ldquo;You could do that,&rdquo; you concur, but, so quietly he cannot hear you, continue
+to believe the exact opposite.</p>
+<code class="block"><span class="nf">nil</span> <span class="ow">=</span> <span class="n">undefined</span>
+</code>
+<p>An uncomfortable question is coming. Head it off by blurting out the first
+thing that comes to mind. &ldquo;To store our queen positions, we&rsquo;ll need some kind
+of a linked list, right?&rdquo;</p>
+
+<p>&ldquo;Sure, or a vector.&rdquo;</p>
+
+<p>&ldquo;Lists are simpler.&rdquo;</p>
+
+<p>&ldquo;OK, sure. Whatever floats your boat.&rdquo;</p>
+
+<p>Summon a linked list from the void. It floats to the surface of the screen: a
+timeless structure, expressed a thousand ways, but always beautiful. You sigh
+contentedly.</p>
+<code class="block"><span class="kr">data</span> <span class="kt">Nil</span>
+<span class="kr">data</span> <span class="kt">Cons</span> <span class="n">x</span> <span class="n">xs</span>
+</code>
+<p>&ldquo;Couldn&rsquo;t you use the built-in lists?&rdquo; Criss asks, his brow furrowing.</p>
+
+<p>&ldquo;What?&rdquo; You have no idea what he&rsquo;s talking about. &ldquo;Oh, no&mdash;not without pulling
+in a library. It&rsquo;s easier to just define it inline.&rdquo;</p>
+<code class="block"><span class="kr">class</span> <span class="kt">First</span> <span class="n">list</span> <span class="n">x</span> <span class="o">|</span> <span class="n">list</span> <span class="ow">-&gt;</span> <span class="n">x</span>
+<span class="kr">instance</span> <span class="kt">First</span> <span class="kt">Nil</span> <span class="kt">Nil</span>
+<span class="kr">instance</span> <span class="kt">First</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">x</span> <span class="n">more</span><span class="p">)</span> <span class="n">x</span>
+</code>
+<p>&ldquo;The &lsquo;class&rsquo; keyword defines a function signature,&rdquo; you remind Criss, who seems
+to have forgotten something. &ldquo;First takes a list and returns a value x from
+it. There are two instances of our function&mdash;Haskell uses pattern matching to
+choose which to call. First on a Nil list returns Nil, and First on a Cons cell
+returns that cell&rsquo;s value, x.&rdquo;</p>
+
+<p>You let that sink in, and move to concatenating two lists together.</p>
+<code class="block"><span class="kr">class</span> <span class="kt">ListConcat</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">|</span> <span class="n">a</span> <span class="n">b</span> <span class="ow">-&gt;</span> <span class="n">c</span>
+<span class="kr">instance</span> <span class="kt">ListConcat</span> <span class="kt">Nil</span> <span class="n">x</span> <span class="n">x</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">ListConcat</span> <span class="n">as</span> <span class="n">bs</span> <span class="n">cs</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">ListConcat</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">a</span> <span class="n">as</span><span class="p">)</span> <span class="n">bs</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">a</span> <span class="n">cs</span><span class="p">)</span>
+</code>
+<p>&ldquo;What&rsquo;s the arrow?&rdquo; Criss asks. Tell him it means implication. &ldquo;To obtain the
+ListConcat after the arrow, we <em>need</em> the ListConcat before the arrow.&rdquo;</p>
+
+<p>Realization dawns. &ldquo;Oh, right! This is recursion, because ListConcat appears in both positions. And the definition for Nil is the base case.&rdquo;</p>
+
+<p>&ldquo;Exactly.&rdquo; You&rsquo;re so proud of Criss. He&rsquo;s coming right along. &ldquo;And here&rsquo;s the
+generalized case, when we want to concatenate a list of lists.&rdquo;</p>
+<code class="block"><span class="c1">-- Concatenate all lists in a list</span>
+<span class="kr">class</span> <span class="kt">ListConcatAll</span> <span class="n">ls</span> <span class="n">l</span> <span class="o">|</span> <span class="n">ls</span> <span class="ow">-&gt;</span> <span class="n">l</span>
+<span class="kr">instance</span> <span class="kt">ListConcatAll</span> <span class="kt">Nil</span> <span class="kt">Nil</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">ListConcat</span> <span class="n">chunk</span> <span class="n">acc</span> <span class="n">result</span><span class="p">,</span>
+          <span class="kt">ListConcatAll</span> <span class="n">rest</span> <span class="n">acc</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">ListConcatAll</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">chunk</span> <span class="n">rest</span><span class="p">)</span> <span class="n">result</span>
+
+<span class="c1">-- Is any element of this list True?</span>
+<span class="kr">class</span> <span class="kt">AnyTrue</span> <span class="n">list</span> <span class="n">t</span> <span class="o">|</span> <span class="n">list</span> <span class="ow">-&gt;</span> <span class="n">t</span>
+<span class="kr">instance</span> <span class="kt">AnyTrue</span> <span class="kt">Nil</span>              <span class="kt">False</span>
+<span class="kr">instance</span> <span class="kt">AnyTrue</span> <span class="p">(</span><span class="kt">Cons</span> <span class="kt">True</span> <span class="n">more</span><span class="p">)</span> <span class="kt">True</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">AnyTrue</span> <span class="n">list</span> <span class="n">t</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">AnyTrue</span> <span class="p">(</span><span class="kt">Cons</span> <span class="kt">False</span> <span class="n">list</span><span class="p">)</span> <span class="n">t</span>
+</code>
+<p>This has required more concentration than you would have liked, so you back off
+to something easier. &ldquo;Let&rsquo;s do booleans,&rdquo; you suggest, as if inviting him to
+lunch.</p>
+
+<p>&ldquo;Why?&rdquo;</p>
+
+<p>&ldquo;Because we need them, of course.&rdquo;</p>
+
+<p>Seize two meaningless constants from the void, and imbue them with meaning.</p>
+<code class="block"><span class="kr">data</span> <span class="kt">True</span>
+<span class="kr">data</span> <span class="kt">False</span>
+
+<span class="kr">class</span> <span class="kt">Not</span> <span class="n">b1</span> <span class="n">b</span> <span class="o">|</span> <span class="n">b1</span> <span class="ow">-&gt;</span> <span class="n">b</span>
+<span class="kr">instance</span> <span class="kt">Not</span> <span class="kt">False</span> <span class="kt">True</span>
+<span class="kr">instance</span> <span class="kt">Not</span> <span class="kt">True</span>  <span class="kt">False</span>
+
+<span class="kr">class</span> <span class="kt">Or</span> <span class="n">b1</span> <span class="n">b2</span> <span class="n">b</span> <span class="o">|</span> <span class="n">b1</span> <span class="n">b2</span> <span class="ow">-&gt;</span> <span class="n">b</span>
+<span class="kr">instance</span> <span class="kt">Or</span> <span class="kt">True</span>  <span class="kt">True</span>  <span class="kt">True</span>
+<span class="kr">instance</span> <span class="kt">Or</span> <span class="kt">True</span>  <span class="kt">False</span> <span class="kt">True</span>
+<span class="kr">instance</span> <span class="kt">Or</span> <span class="kt">False</span> <span class="kt">True</span>  <span class="kt">True</span>
+<span class="kr">instance</span> <span class="kt">Or</span> <span class="kt">False</span> <span class="kt">False</span> <span class="kt">False</span>
+</code>
+<p>Freyja would be pleased. To birth an algebra into the world is a beautiful
+thing.</p>
+
+<p>&ldquo;And I suppose we&rsquo;ll need integral numbers to store the positions of our queens
+as well,&rdquo; you mutter. &ldquo;We&rsquo;ll work in positive coordinates only, so the usual
+Peano construction should suffice.&rdquo; Draw a thread of hair from your head, and
+tie a knot in it for zero.</p>
+<code class="block"><span class="kr">data</span> <span class="kt">Z</span>
+<span class="kr">data</span> <span class="kt">S</span> <span class="n">n</span>
+
+<span class="kr">type</span> <span class="kt">N0</span> <span class="ow">=</span> <span class="kt">Z</span>
+<span class="kr">type</span> <span class="kt">N1</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N0</span>
+<span class="kr">type</span> <span class="kt">N2</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N1</span>
+<span class="kr">type</span> <span class="kt">N3</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N2</span>
+<span class="kr">type</span> <span class="kt">N4</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N3</span>
+<span class="kr">type</span> <span class="kt">N5</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N4</span>
+<span class="kr">type</span> <span class="kt">N6</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N5</span>
+<span class="kr">type</span> <span class="kt">N7</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N6</span>
+<span class="kr">type</span> <span class="kt">N8</span> <span class="ow">=</span> <span class="kt">S</span> <span class="kt">N7</span>
+</code>
+<p>&ldquo;You&rsquo;re&hellip; defining the natural numbers by hand? Why?&rdquo;</p>
+
+<p>&ldquo;Haskell is for mathematicians,&rdquo; you explain. &ldquo;We always define our terms.&rdquo;</p>
+<code class="block"><span class="c1">-- Equality</span>
+<span class="kr">class</span> <span class="kt">PeanoEqual</span> <span class="n">a</span> <span class="n">b</span> <span class="n">t</span> <span class="o">|</span> <span class="n">a</span> <span class="n">b</span> <span class="ow">-&gt;</span> <span class="n">t</span>
+<span class="kr">instance</span> <span class="kt">PeanoEqual</span> <span class="kt">Z</span>     <span class="kt">Z</span>     <span class="kt">True</span>
+<span class="kr">instance</span> <span class="kt">PeanoEqual</span> <span class="p">(</span><span class="kt">S</span> <span class="n">a</span><span class="p">)</span> <span class="kt">Z</span>     <span class="kt">False</span>
+<span class="kr">instance</span> <span class="kt">PeanoEqual</span> <span class="kt">Z</span>     <span class="p">(</span><span class="kt">S</span> <span class="n">b</span><span class="p">)</span> <span class="kt">False</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">PeanoEqual</span> <span class="n">a</span> <span class="n">b</span> <span class="n">t</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">PeanoEqual</span> <span class="p">(</span><span class="kt">S</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">S</span> <span class="n">b</span><span class="p">)</span> <span class="n">t</span>
+
+<span class="c1">-- Comparison (&lt;)</span>
+<span class="kr">class</span> <span class="kt">PeanoLT</span> <span class="n">a</span> <span class="n">b</span> <span class="n">t</span> <span class="o">|</span> <span class="n">a</span> <span class="n">b</span> <span class="ow">-&gt;</span> <span class="n">t</span>
+<span class="kr">instance</span> <span class="kt">PeanoLT</span> <span class="kt">Z</span>      <span class="kt">Z</span>     <span class="kt">False</span>
+<span class="kr">instance</span> <span class="kt">PeanoLT</span> <span class="p">(</span><span class="kt">S</span> <span class="n">x</span><span class="p">)</span>  <span class="kt">Z</span>     <span class="kt">False</span>
+<span class="kr">instance</span> <span class="kt">PeanoLT</span> <span class="kt">Z</span>      <span class="p">(</span><span class="kt">S</span> <span class="n">x</span><span class="p">)</span> <span class="kt">True</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">PeanoLT</span> <span class="n">a</span> <span class="n">b</span> <span class="n">t</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">PeanoLT</span> <span class="p">(</span><span class="kt">S</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">S</span> <span class="n">b</span><span class="p">)</span> <span class="n">t</span>
+
+<span class="c1">-- Absolute difference</span>
+<span class="kr">class</span> <span class="kt">PeanoAbsDiff</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">|</span> <span class="n">a</span> <span class="n">b</span> <span class="ow">-&gt;</span> <span class="n">c</span>
+<span class="kr">instance</span> <span class="kt">PeanoAbsDiff</span> <span class="kt">Z</span> <span class="kt">Z</span> <span class="kt">Z</span>
+<span class="kr">instance</span> <span class="kt">PeanoAbsDiff</span> <span class="kt">Z</span> <span class="p">(</span><span class="kt">S</span> <span class="n">b</span><span class="p">)</span> <span class="p">(</span><span class="kt">S</span> <span class="n">b</span><span class="p">)</span>
+<span class="kr">instance</span> <span class="kt">PeanoAbsDiff</span> <span class="p">(</span><span class="kt">S</span> <span class="n">a</span><span class="p">)</span> <span class="kt">Z</span> <span class="p">(</span><span class="kt">S</span> <span class="n">a</span><span class="p">)</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">PeanoAbsDiff</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">PeanoAbsDiff</span> <span class="p">(</span><span class="kt">S</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">S</span> <span class="n">b</span><span class="p">)</span> <span class="n">c</span>
+
+<span class="c1">-- Integers from n to 0</span>
+<span class="kr">class</span> <span class="kt">Range</span> <span class="n">n</span> <span class="n">xs</span> <span class="o">|</span> <span class="n">n</span> <span class="ow">-&gt;</span> <span class="n">xs</span>
+<span class="kr">instance</span> <span class="kt">Range</span> <span class="kt">Z</span> <span class="kt">Nil</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Range</span> <span class="n">n</span> <span class="n">xs</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Range</span> <span class="p">(</span><span class="kt">S</span> <span class="n">n</span><span class="p">)</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">n</span> <span class="n">xs</span><span class="p">)</span>
+</code>
+<p>&ldquo;Wait, hang on,&rdquo; Criss interrupts. &ldquo;Shouldn&rsquo;t you&hellip; shouldn&rsquo;t there be type
+declarations here? At least on our functions?&rdquo;</p>
+
+<p>You smile kindly. &ldquo;Haskell is a dynamically-typed, interpreted language.&rdquo;</p>
+
+<p>Criss appears to have swallowed a frog.</p>
+
+<p>&ldquo;Here, I&rsquo;ll show you. Let&rsquo;s check if one equals one.&rdquo;</p>
+<code class="block"><span class="kr">class</span> <span class="kt">LegalCompare</span> <span class="n">t</span> <span class="o">|</span> <span class="ow">-&gt;</span> <span class="n">t</span>
+  <span class="kr">where</span> <span class="n">legalCompare</span> <span class="ow">::</span> <span class="n">t</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">PeanoEqual</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">)</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">)</span> <span class="n">t</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">LegalCompare</span> <span class="n">t</span>
+
+<span class="o">*</span><span class="kt">Main</span><span class="o">&gt;</span> <span class="kt">:</span><span class="kr">type</span> <span class="n">legalCompare</span>
+<span class="nf">legalCompare</span> <span class="ow">::</span> <span class="kt">True</span>
+</code>
+<p>&ldquo;See? <code>legalCompare</code> is equal to <code>True</code>. Now let&rsquo;s try writing an expression
+that performs an invalid comparison. Say, comparing True to a List?&rdquo;</p>
+<code class="block"><span class="kr">class</span> <span class="kt">IllegalCompare</span> <span class="n">t</span> <span class="o">|</span> <span class="ow">-&gt;</span> <span class="n">t</span>
+  <span class="kr">where</span> <span class="n">illegalCompare</span> <span class="ow">::</span> <span class="n">t</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">PeanoEqual</span> <span class="kt">True</span> <span class="p">(</span><span class="kt">Cons</span> <span class="kt">Z</span> <span class="kt">False</span><span class="p">)</span> <span class="n">t</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">IllegalCompare</span> <span class="n">t</span>
+</code>
+<p>&ldquo;See? It loads just fine. It only breaks when you try to <em>evaluate</em>
+it&mdash;remember, Haskell is lazy.&rdquo;</p>
+<code class="block"><span class="o">*</span><span class="kt">Main</span><span class="o">&gt;</span> <span class="kt">:</span><span class="kr">type</span> <span class="n">illegalCompare</span>
+<span class="nf">illegalCompare</span> <span class="ow">::</span> <span class="kt">PeanoEqual</span> <span class="kt">True</span> <span class="p">(</span><span class="kt">Cons</span> <span class="kt">Z</span> <span class="kt">False</span><span class="p">)</span> <span class="n">t</span> <span class="ow">=&gt;</span> <span class="n">t</span>
+</code>
+<p>&ldquo;There you have it! A runtime type error.&rdquo;</p>
+
+<p>&ldquo;It doesn&rsquo;t <em>say</em> error&hellip;&rdquo;</p>
+
+<p>&ldquo;Well, you know. Haskell&rsquo;s error messages are notoriously difficult to
+understand.&rdquo;</p>
+
+<p>Criss appears quite ill. Take the opportunity to move on to higher order
+functions.</p>
+
+<p>&ldquo;Unfortunately, Haskell has no currying, so we&rsquo;re forced to build our own tools
+for partial functions. Here&rsquo;s a signature for generalized single-arity function application.&rdquo;</p>
+<code class="block"><span class="kr">class</span> <span class="kt">Apply</span> <span class="n">f</span> <span class="n">a</span> <span class="n">r</span> <span class="o">|</span> <span class="n">f</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">r</span>
+</code>
+<p>&ldquo;Just a function f which takes input a and returns r.&rdquo; The variables have a
+lovely songlike melody. &ldquo;For partial application, we could define datatypes like Partial1, Partial2, etc, but since we only need a few of these, it&rsquo;s easier to define explicitly curried versions of the functions we need. Like so!&rdquo;</p>
+<code class="block"><span class="kr">data</span> <span class="kt">Conj1</span> <span class="n">list</span>
+<span class="kr">instance</span> <span class="kt">Apply</span> <span class="p">(</span><span class="kt">Conj1</span> <span class="n">list</span><span class="p">)</span> <span class="n">x</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">x</span> <span class="n">list</span><span class="p">)</span>
+</code>
+<p>Breathe deep, and allow your spirit to come unmoored from these concrete forms,
+ascending to the plane of higher order functions.</p>
+<code class="block"><span class="c1">-- Map f over a list</span>
+<span class="kr">class</span> <span class="kt">Map</span> <span class="n">f</span> <span class="n">xs</span> <span class="n">ys</span> <span class="o">|</span> <span class="n">f</span> <span class="n">xs</span> <span class="ow">-&gt;</span> <span class="n">ys</span>
+<span class="kr">instance</span> <span class="kt">Map</span> <span class="n">f</span> <span class="kt">Nil</span> <span class="kt">Nil</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Apply</span> <span class="n">f</span> <span class="n">x</span> <span class="n">y</span><span class="p">,</span> <span class="kt">Map</span> <span class="n">f</span> <span class="n">xs</span> <span class="n">ys</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Map</span> <span class="n">f</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">x</span> <span class="n">xs</span><span class="p">)</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">y</span> <span class="n">ys</span><span class="p">)</span>
+
+<span class="c1">-- Map f over list and concatenate results together</span>
+<span class="kr">class</span> <span class="kt">MapCat</span> <span class="n">f</span> <span class="n">xs</span> <span class="n">zs</span> <span class="o">|</span> <span class="n">f</span> <span class="n">xs</span> <span class="ow">-&gt;</span> <span class="n">zs</span>
+<span class="kr">instance</span> <span class="kt">MapCat</span> <span class="n">f</span> <span class="kt">Nil</span> <span class="kt">Nil</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Map</span> <span class="n">f</span> <span class="n">xs</span> <span class="n">chunks</span><span class="p">,</span> <span class="kt">ListConcatAll</span> <span class="n">chunks</span> <span class="n">ys</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">MapCat</span> <span class="n">f</span> <span class="n">xs</span> <span class="n">ys</span>
+
+<span class="c1">-- Filter a list with an Apply-able predicate function</span>
+<span class="kr">class</span> <span class="kt">AppendIf</span> <span class="n">pred</span> <span class="n">x</span> <span class="n">ys</span> <span class="n">zs</span> <span class="o">|</span> <span class="n">pred</span> <span class="n">x</span> <span class="n">ys</span> <span class="ow">-&gt;</span> <span class="n">zs</span>
+<span class="kr">instance</span> <span class="kt">AppendIf</span> <span class="kt">True</span> <span class="n">x</span> <span class="n">ys</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">x</span> <span class="n">ys</span><span class="p">)</span>
+<span class="kr">instance</span> <span class="kt">AppendIf</span> <span class="kt">False</span> <span class="n">x</span> <span class="n">ys</span> <span class="n">ys</span>
+
+<span class="kr">class</span> <span class="kt">Filter</span> <span class="n">f</span> <span class="n">xs</span> <span class="n">ys</span> <span class="o">|</span> <span class="n">f</span> <span class="n">xs</span> <span class="ow">-&gt;</span> <span class="n">ys</span>
+<span class="kr">instance</span> <span class="kt">Filter</span> <span class="n">f</span> <span class="kt">Nil</span> <span class="kt">Nil</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Apply</span> <span class="n">f</span> <span class="n">x</span> <span class="n">t</span><span class="p">,</span>
+          <span class="kt">Filter</span> <span class="n">f</span> <span class="n">xs</span> <span class="n">ys</span><span class="p">,</span>
+          <span class="kt">AppendIf</span> <span class="n">t</span> <span class="n">x</span> <span class="n">ys</span> <span class="n">zs</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Filter</span> <span class="n">f</span> <span class="p">(</span><span class="kt">Cons</span> <span class="n">x</span> <span class="n">xs</span><span class="p">)</span> <span class="n">zs</span>
+</code>
+<p>Check back in with the world of concrete values for a moment. Criss is still
+here, at least physically. Your laptop screen has turned a gorgeous mix of
+purples, owing to the extreme cold, but the code is still dimly visible within.
+It reminds you of a frozen lake at dusk. A liquid crystal.</p>
+
+<p>&ldquo;Criss. Criss.&rdquo; He blinks rapidly, as if coming out of darkness. Such beautiful
+eyes. You remember when your own still held color. &ldquo;We&rsquo;re ready.&rdquo;</p>
+
+<p>&ldquo;Yes. Right.&rdquo;</p>
+
+<p>&ldquo;A queen is defined by her two coordinates on the board: x and y. We&rsquo;ll also
+build a partially applied constructor for making queens with a given x
+coordinate.&rdquo;</p>
+<code class="block"><span class="kr">data</span> <span class="kt">Queen</span> <span class="n">x</span> <span class="n">y</span>
+<span class="kr">data</span> <span class="kt">Queen1</span> <span class="n">x</span>
+<span class="kr">instance</span> <span class="kt">Apply</span> <span class="p">(</span><span class="kt">Queen1</span> <span class="n">x</span><span class="p">)</span> <span class="n">y</span> <span class="p">(</span><span class="kt">Queen</span> <span class="n">x</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1">-- A list of queens in row x with y from 0 to n.</span>
+<span class="kr">class</span> <span class="kt">QueensInRow</span> <span class="n">n</span> <span class="n">x</span> <span class="n">queens</span> <span class="o">|</span> <span class="n">n</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">queens</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Range</span> <span class="n">n</span> <span class="n">ys</span><span class="p">,</span> <span class="kt">Map</span> <span class="p">(</span><span class="kt">Queen1</span> <span class="n">x</span><span class="p">)</span> <span class="n">ys</span> <span class="n">queens</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">QueensInRow</span> <span class="n">n</span> <span class="n">x</span> <span class="n">queens</span>
+</code>
+<p>&ldquo;Yes queens!&rdquo; You murmur. This is, sadly, not that kind of interview.</p>
+
+<p>These queens can stab in eight directions. You always assumed that was a
+metaphor.</p>
+<code class="block"><span class="c1">-- Does queen a threaten queen b?</span>
+<span class="kr">class</span> <span class="kt">Threatens</span> <span class="n">a</span> <span class="n">b</span> <span class="n">t</span> <span class="o">|</span> <span class="n">a</span> <span class="n">b</span> <span class="ow">-&gt;</span> <span class="n">t</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">PeanoEqual</span> <span class="n">ax</span> <span class="n">bx</span> <span class="n">xeq</span><span class="p">,</span>
+          <span class="kt">PeanoEqual</span> <span class="n">ay</span> <span class="n">by</span> <span class="n">yeq</span><span class="p">,</span>
+          <span class="kt">Or</span> <span class="n">xeq</span> <span class="n">yeq</span> <span class="n">xyeq</span><span class="p">,</span>
+          <span class="kt">PeanoAbsDiff</span> <span class="n">ax</span> <span class="n">bx</span> <span class="n">dx</span><span class="p">,</span>
+          <span class="kt">PeanoAbsDiff</span> <span class="n">ay</span> <span class="n">by</span> <span class="n">dy</span><span class="p">,</span>
+          <span class="kt">PeanoEqual</span> <span class="n">dx</span> <span class="n">dy</span> <span class="n">deq</span><span class="p">,</span>
+          <span class="kt">Or</span> <span class="n">xyeq</span> <span class="n">deq</span> <span class="n">res</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Threatens</span> <span class="p">(</span><span class="kt">Queen</span> <span class="n">ax</span> <span class="n">ay</span><span class="p">)</span> <span class="p">(</span><span class="kt">Queen</span> <span class="n">bx</span> <span class="n">by</span><span class="p">)</span> <span class="n">res</span>
+
+<span class="c1">-- Partial application of Threatens</span>
+<span class="kr">data</span> <span class="kt">Threatens1</span> <span class="n">a</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Threatens</span> <span class="n">a</span> <span class="n">b</span> <span class="n">t</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Apply</span> <span class="p">(</span><span class="kt">Threatens1</span> <span class="n">a</span><span class="p">)</span> <span class="n">b</span> <span class="n">t</span>
+</code>
+<p>A new queen enters the room, striding into position. She watches her
+adversaries warily, remaining just out of reach. Where can she stand? You
+envision a stack of universes&mdash;alternate worlds, each containing queens in
+various positions.</p>
+<code class="block"><span class="c1">-- Is queen b compatible with all queen as?</span>
+<span class="kr">class</span> <span class="kt">Safe</span> <span class="n">config</span> <span class="n">queen</span> <span class="n">t</span> <span class="o">|</span> <span class="n">config</span> <span class="n">queen</span> <span class="ow">-&gt;</span> <span class="n">t</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Map</span> <span class="p">(</span><span class="kt">Threatens1</span> <span class="n">queen</span><span class="p">)</span> <span class="n">config</span> <span class="n">m1</span><span class="p">,</span>
+          <span class="kt">AnyTrue</span> <span class="n">m1</span> <span class="n">t1</span><span class="p">,</span>
+          <span class="kt">Not</span>     <span class="n">t1</span> <span class="n">t2</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Safe</span> <span class="n">config</span> <span class="n">queen</span> <span class="n">t2</span>
+
+<span class="kr">data</span> <span class="kt">Safe1</span> <span class="n">config</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">Safe</span> <span class="n">config</span> <span class="n">queen</span> <span class="n">t</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Apply</span> <span class="p">(</span><span class="kt">Safe1</span> <span class="n">config</span><span class="p">)</span> <span class="n">queen</span> <span class="n">t</span>
+
+<span class="c1">-- Add a queen with the given x coordinate to a legal configuration, returning</span>
+<span class="c1">-- a set of legal configurations.</span>
+<span class="kr">class</span> <span class="kt">AddQueen</span> <span class="n">n</span> <span class="n">x</span> <span class="n">c</span> <span class="n">cs</span> <span class="o">|</span> <span class="n">n</span> <span class="n">x</span> <span class="n">c</span> <span class="ow">-&gt;</span> <span class="n">cs</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">QueensInRow</span> <span class="n">n</span> <span class="n">x</span> <span class="n">candidates</span><span class="p">,</span>
+          <span class="kt">Filter</span> <span class="p">(</span><span class="kt">Safe1</span> <span class="n">c</span><span class="p">)</span> <span class="n">candidates</span> <span class="n">filtered</span><span class="p">,</span>
+          <span class="kt">Map</span> <span class="p">(</span><span class="kt">Conj1</span> <span class="n">c</span><span class="p">)</span> <span class="n">filtered</span> <span class="n">cs</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">AddQueen</span> <span class="n">n</span> <span class="n">x</span> <span class="n">c</span> <span class="n">cs</span>
+
+<span class="kr">data</span> <span class="kt">AddQueen2</span> <span class="n">n</span> <span class="n">x</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">AddQueen</span> <span class="n">n</span> <span class="n">x</span> <span class="n">c</span> <span class="n">cs</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Apply</span> <span class="p">(</span><span class="kt">AddQueen2</span> <span class="n">n</span> <span class="n">x</span><span class="p">)</span> <span class="n">c</span> <span class="n">cs</span>
+
+<span class="c1">-- Add a queen at x to every configuration, returning a set of legal</span>
+<span class="c1">-- configurations.</span>
+<span class="kr">class</span> <span class="kt">AddQueenToAll</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs&#39;</span> <span class="o">|</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="ow">-&gt;</span> <span class="n">cs&#39;</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">MapCat</span> <span class="p">(</span><span class="kt">AddQueen2</span> <span class="n">n</span> <span class="n">x</span><span class="p">)</span> <span class="n">cs</span> <span class="n">cs&#39;</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">AddQueenToAll</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs&#39;</span>
+</code>
+<p>&ldquo;And now, we recur,&rdquo; you whisper, and loop the spell back on itself, sewn
+together with the thread of control. One queen per row, in every legal
+position, for every configuration. You imagine what their startup&rsquo;s about-us page
+would look like.</p>
+<code class="block"><span class="c1">-- Add queens recursively</span>
+<span class="kr">class</span> <span class="kt">AddQueensIf</span> <span class="n">pred</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs&#39;</span> <span class="o">|</span> <span class="n">pred</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="ow">-&gt;</span> <span class="n">cs&#39;</span>
+<span class="kr">instance</span> <span class="kt">AddQueensIf</span> <span class="kt">False</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">AddQueenToAll</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs2</span><span class="p">,</span>
+          <span class="kt">AddQueens</span> <span class="n">n</span> <span class="p">(</span><span class="kt">S</span> <span class="n">x</span><span class="p">)</span> <span class="n">cs2</span> <span class="n">cs&#39;</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">AddQueensIf</span> <span class="kt">True</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs&#39;</span>
+
+<span class="kr">class</span> <span class="kt">AddQueens</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs&#39;</span> <span class="o">|</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="ow">-&gt;</span> <span class="n">cs&#39;</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">PeanoLT</span> <span class="n">x</span> <span class="n">n</span> <span class="n">pred</span><span class="p">,</span>
+          <span class="kt">AddQueensIf</span> <span class="n">pred</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs&#39;</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">AddQueens</span> <span class="n">n</span> <span class="n">x</span> <span class="n">cs</span> <span class="n">cs&#39;</span>
+
+<span class="c1">-- Solve</span>
+<span class="kr">class</span> <span class="kt">Solution</span> <span class="n">n</span> <span class="n">c</span> <span class="o">|</span> <span class="n">n</span> <span class="ow">-&gt;</span> <span class="n">c</span> <span class="kr">where</span>
+  <span class="n">solution</span> <span class="ow">::</span> <span class="n">n</span> <span class="ow">-&gt;</span> <span class="n">c</span>
+<span class="kr">instance</span> <span class="p">(</span><span class="kt">AddQueens</span> <span class="n">n</span> <span class="kt">Z</span> <span class="p">(</span><span class="kt">Cons</span> <span class="kt">Nil</span> <span class="kt">Nil</span><span class="p">)</span> <span class="n">cs</span><span class="p">,</span>
+          <span class="kt">First</span> <span class="n">cs</span> <span class="n">c</span><span class="p">)</span>
+  <span class="ow">=&gt;</span> <span class="kt">Solution</span> <span class="n">n</span> <span class="n">c</span> <span class="kr">where</span> <span class="n">solution</span> <span class="ow">=</span> <span class="n">nil</span>
+</code>
+<p>Criss has adopted the far-gaze of a man who has learned of some great loss, or
+perhaps been witness to a nearby explosion. Take his shoulder gently.
+&ldquo;Psst!&rdquo; You whisper. &ldquo;All is prepared, and a solution is at hand.&rdquo;</p>
+<code class="block"><span class="o">*</span><span class="kt">Main</span><span class="o">&gt;</span> <span class="kt">:</span><span class="kr">type</span> <span class="n">solution</span> <span class="p">(</span><span class="n">nil</span> <span class="ow">::</span> <span class="kt">N6</span><span class="p">)</span>
+<span class="nf">solution</span> <span class="p">(</span><span class="n">nil</span> <span class="ow">::</span> <span class="kt">N6</span><span class="p">)</span>
+  <span class="ow">::</span> <span class="kt">Cons</span> <span class="p">(</span><span class="kt">Queen</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">)))))</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">))</span>
+       <span class="p">(</span><span class="kt">Cons</span> <span class="p">(</span><span class="kt">Queen</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">))))</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">))))</span>
+          <span class="p">(</span><span class="kt">Cons</span> <span class="p">(</span><span class="kt">Queen</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">)))</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">))))))</span>
+             <span class="p">(</span><span class="kt">Cons</span> <span class="p">(</span><span class="kt">Queen</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">))</span> <span class="kt">Z</span><span class="p">)</span>
+                <span class="p">(</span><span class="kt">Cons</span> <span class="p">(</span><span class="kt">Queen</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">)</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">)))</span>
+                   <span class="p">(</span><span class="kt">Cons</span> <span class="p">(</span><span class="kt">Queen</span> <span class="kt">Z</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="p">(</span><span class="kt">S</span> <span class="kt">Z</span><span class="p">)))))</span>
+                      <span class="kt">Nil</span><span class="p">)))))</span>
+</code>
+<p>Look: the pretty-printer has aligned things <em>just so</em>, creating a lovely line
+of zeroes along the vertical axis. &ldquo;So that&rsquo;s a queen at 5,1, at 4,3, at 3,5,
+at 2,0, 1,2, and 0,4. Does that work, Criss?&rdquo;</p>
+
+<p>Criss stares at you for a long, long moment. &ldquo;You never&hellip; you never wrote an actual <em>value</em>.
+You&hellip; do realize that the type system is meant to constrain <em>values</em>, right?&rdquo;</p>
+
+<p>&ldquo;No,&rdquo; you inform him, matter-of-factly. &ldquo;No, that doesn&rsquo;t sound right.&rdquo;</p>
+
+<p>He leans back in his chair, so far you think he may fall over, and rubs his
+forehead with both hands. You, who through <em>seidr</em>, have seen your rejection email
+already, know what he is about to say.</p>
+
+<p>&ldquo;We&rsquo;ll be in touch.&rdquo;</p>
+
+<p><em>With sincerest thanks to <a href="https://twitter.com/importantshock">Patrick Thomson</a>, and Conrad Parker&rsquo;s <a href="https://wiki.haskell.org/wikiupload/d/dd/TMR-Issue8.pdf">Type Level Instant Insanity</a>.</em></p>
+
+    </div>
+  </div>
+</article>
+
+<div class="comment-channel">
+  <a id="comments"></a>
+
+  <div id="comment-2830"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/630055e8dcf72e86ce2e4f29ca7bb906?r=pg&s=96&d=identicon" alt="Vasili" title="Vasili" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Vasili, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2830">
+         <time datetime="2017-04-10T17:51:36-05:00" pubdate>2017/04/10</time>
+        </a>
+
+      </div>
+
+      <p>If this was a book - I’d buy it.</p>
+
+<p>Absolutely delightful.</p>
+
+    </div>
+  </div>
+  <div id="comment-2831"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/294de3557d9d00b3d2d8a1e6aab028cf?r=pg&s=96&d=identicon" alt="Aaron" title="Aaron" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Aaron, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2831">
+         <time datetime="2017-04-10T23:40:13-05:00" pubdate>2017/04/10</time>
+        </a>
+
+      </div>
+
+      <blockquote>
+<p>“Yes queens!” You murmer. This is, sadly, not that kind of interview.</p>
+</blockquote>
+
+<p>Please let us read that kind of interview next.</p>
+
+    </div>
+  </div>
+  <div id="comment-2834"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/294de3557d9d00b3d2d8a1e6aab028cf?r=pg&s=96&d=identicon" alt="jachym" title="jachym" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        jachym, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2834">
+         <time datetime="2017-04-11T06:20:53-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>It cannot be ran in ghci unless you define booleans before <code>AnyTrue</code>.</p>
+
+    </div>
+  </div>
+  <div id="comment-2836"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/874cad5a251673a139fd9a97118b73b3?r=pg&s=96&d=identicon" alt="Ryan" title="Ryan" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Ryan, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2836">
+         <time datetime="2017-04-11T06:39:06-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>Wunderbar.</p>
+
+    </div>
+  </div>
+  <div id="comment-2838"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/294de3557d9d00b3d2d8a1e6aab028cf?r=pg&s=96&d=identicon" alt="anonymous" title="anonymous" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        anonymous, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2838">
+         <time datetime="2017-04-11T08:17:34-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>This is so good, but you have a typo. It’s spelled “murmur”. </p>
+
+    </div>
+  </div>
+  <div id="comment-2839"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/537d36c5cf0c95c7148002a49fe97308?r=pg&s=96&d=identicon" alt="JohannesD" title="JohannesD" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        JohannesD, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2839">
+         <time datetime="2017-04-11T08:57:23-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>Aaaand now I want to translate this into a C++ template metaprogram. </p>
+
+    </div>
+  </div>
+  <div id="comment-2843"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/294de3557d9d00b3d2d8a1e6aab028cf?r=pg&s=96&d=identicon" alt="Michal" title="Michal" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Michal, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2843">
+         <time datetime="2017-04-11T12:48:06-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>This is great! I’d love to read more.</p>
+
+    </div>
+  </div>
+  <div id="comment-2844"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/0915cb65a5f04d5c7f1c33629a366d03?r=pg&s=96&d=identicon" alt="Cassidy" title="Cassidy" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Cassidy, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2844">
+         <time datetime="2017-04-11T19:03:26-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>A genuine pleasure to read.  Well done!</p>
+
+    </div>
+  </div>
+  <div id="comment-2845"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/8b58306012069199582008d156767130?r=pg&s=96&d=identicon" alt="clrnd " title="clrnd " />
+    </div>
+    <div class="body">
+      <div class="meta">
+        clrnd , on
+        <a href="/posts/342-typing-the-technical-interview#comment-2845">
+         <time datetime="2017-04-11T20:03:08-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>I’d buy the book and then another one for the office and the ebook and the hardcover. Masterpiece 
+    </div>
+  </div>
+  <div id="comment-2846"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/294de3557d9d00b3d2d8a1e6aab028cf?r=pg&s=96&d=identicon" alt="eddie" title="eddie" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        eddie, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2846">
+         <time datetime="2017-04-11T22:51:20-05:00" pubdate>2017/04/11</time>
+        </a>
+
+      </div>
+
+      <p>This is beautiful in the most hideous way possible.</p>
+
+    </div>
+  </div>
+  <div id="comment-2847"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/920858447c30e3ad7025a0fa30328e65?r=pg&s=96&d=identicon" alt="HaQadosch" title="HaQadosch" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        HaQadosch, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2847">
+         <time datetime="2017-04-12T04:00:19-05:00" pubdate>2017/04/12</time>
+        </a>
+
+      </div>
+
+      <p>I’d buy the book too!</p>
+
+<p>Reminds me of why the lucky stiff.</p>
+
+    </div>
+  </div>
+  <div id="comment-2848"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/51fa9f8f1425e854916b9c49a8033788?r=pg&s=96&d=identicon" alt="Mike" title="Mike" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Mike, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2848">
+         <time datetime="2017-04-12T07:57:23-05:00" pubdate>2017/04/12</time>
+        </a>
+
+      </div>
+
+      <p>This is fantastic. Well done.</p>
+
+    </div>
+  </div>
+  <div id="comment-2849"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/6f2e03e62ed83cd2e23d4fe56b7b210c?r=pg&s=96&d=identicon" alt="Alexander" title="Alexander" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Alexander, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2849">
+         <time datetime="2017-04-13T02:02:34-05:00" pubdate>2017/04/13</time>
+        </a>
+
+      </div>
+
+      <p>This was absolutely amazing!</p>
+
+    </div>
+  </div>
+  <div id="comment-2850"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/7dcdd2416009a0a166438a2eb364bed3?r=pg&s=96&d=identicon" alt="The Count of Real Numbers" title="The Count of Real Numbers" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        The Count of Real Numbers, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2850">
+         <time datetime="2017-04-13T10:48:06-05:00" pubdate>2017/04/13</time>
+        </a>
+
+      </div>
+
+      <p>It is so beautiful, it brings a tear of ecstasy to the jaded eye of this humble mathematician.</p>
+
+    </div>
+  </div>
+  <div id="comment-2851"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/02ff512bf7e1dee49cf9dba0564811fe?r=pg&s=96&d=identicon" alt="Daniel Bilar" title="Daniel Bilar" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Daniel Bilar, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2851">
+         <time datetime="2017-04-13T11:51:40-05:00" pubdate>2017/04/13</time>
+        </a>
+
+      </div>
+
+      <p>I read this during the intermediate Passover days. I smiled at the end and thought of Proverbs 5:20</p>
+<code class="block">המַיִם עֲמֻקִּים עֵצָה בְלֶב אִישׁ וְאִישׁ תְּבוּנָה יִדְלֶנָּה:</code>
+<p>“Counsel in man’s heart is like deep water, but a man of understanding will draw it out.”</p>
+
+<p>Rav ABY taught me: ‘The way of the wise man is to conceal his counsel in the depths of his heart (deep beneath the surface of his words), making it hard for others to grasp it. His counsel is like waters that lie deep beneath the surface of the earth and are hard to draw out. But “a man of understanding will draw it out”: he starts by drawing out the upper waters – seeking to understand the surface meaning – and this will bring him to what lies below (Metzudas David).</p>
+
+<p>Superbly designed piece. May you go from strength to strength.</p>
+
+<p>Daniel</p>
+
+    </div>
+  </div>
+  <div id="comment-2853"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/36d28d428a717a9fd2f05ca9bebecc72?r=pg&s=96&d=identicon" alt="Chase Roycroft" title="Chase Roycroft" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Chase Roycroft, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2853">
+         <time datetime="2017-04-13T21:47:03-05:00" pubdate>2017/04/13</time>
+        </a>
+
+      </div>
+
+      <p>Beautiful :)</p>
+
+    </div>
+  </div>
+  <div id="comment-2854"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/5120fc4e345db0d1a964888272073819?r=pg&s=96&d=identicon" alt="Riking" title="Riking" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Riking, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2854">
+         <time datetime="2017-04-14T00:53:18-05:00" pubdate>2017/04/14</time>
+        </a>
+
+      </div>
+
+      <code class="block">*Main&gt; :type solution (nil :: N7)
+
+&lt;interactive&gt;:1:1:
+    Context reduction stack overflow; size = 101
+    Use -fcontext-stack=N to increase stack size to N
+      PeanoEqual Z (S N0) deq
+    In the expression: solution (nil :: N7)</code>
+<p>oh my god
+that’s why you used N6 isn’t it
+you knew that N7 exceeded the default stack</p>
+<code class="block">*Main&gt; :type solution (nil :: N7)
+solution (nil :: N7)
+  :: Cons
+       (Queen (S (S (S (S (S (S Z)))))) (S N0))
+       (Cons
+          (Queen (S (S (S (S (S Z))))) (S N2))
+          (Cons
+             (Queen (S (S (S (S Z)))) (S N4))
+             (Cons
+                (Queen (S (S (S Z))) Z)
+                (Cons
+                   (Queen (S (S Z)) (S N1))
+                   (Cons (Queen (S Z) (S N3)) (Cons (Queen Z (S N5)) Nil))))))</code>
+<p>Yup, that’s a solution all right.</p>
+
+    </div>
+  </div>
+  <div id="comment-2855"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/294de3557d9d00b3d2d8a1e6aab028cf?r=pg&s=96&d=identicon" alt="Seth Johnson" title="Seth Johnson" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Seth Johnson, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2855">
+         <time datetime="2017-04-14T01:18:40-05:00" pubdate>2017/04/14</time>
+        </a>
+
+      </div>
+
+      <p>A few more of these, and it’d make a great book.  I’d definitely buy it and put it on the shelf at home and at work.</p>
+
+    </div>
+  </div>
+  <div id="comment-2858"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/f601595a7f4ca60a4ae34a72ec51f3f5?r=pg&s=96&d=identicon" alt="Lingnan Dai" title="Lingnan Dai" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Lingnan Dai, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2858">
+         <time datetime="2017-04-16T03:57:41-05:00" pubdate>2017/04/16</time>
+        </a>
+
+      </div>
+
+      <p>Could you have made some of the code cleaner by using TypeFamily?</p>
+
+    </div>
+  </div>
+  <div id="comment-2873"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/8542929109f9b8a3d25dd7a9825af19e?r=pg&s=96&d=identicon" alt="JJ" title="JJ" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        JJ, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2873">
+         <time datetime="2017-05-25T07:51:49-05:00" pubdate>2017/05/25</time>
+        </a>
+
+      </div>
+
+      <p>Great blog</p>
+
+    </div>
+  </div>
+  <div id="comment-2879"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/0ddc44c0a64011deeb2b055482e6bf9e?r=pg&s=96&d=identicon" alt="Technical Interviewer" title="Technical Interviewer" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Technical Interviewer, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2879">
+         <time datetime="2017-06-22T00:59:02-05:00" pubdate>2017/06/22</time>
+        </a>
+
+      </div>
+
+      <p>Nice article, your just described it beautiful and easy way, thank you for sharing. </p>
+
+    </div>
+  </div>
+  <div id="comment-2886"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/a8dee94f1cb1e6a80fa71b8f640c42d8?r=pg&s=96&d=identicon" alt="John Reilly" title="John Reilly" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        John Reilly, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2886">
+         <time datetime="2017-08-02T02:10:14-05:00" pubdate>2017/08/02</time>
+        </a>
+
+      </div>
+
+      <p>This was art.  Very, very fine art. You sir have improved my life with your tale. Thank you!</p>
+
+    </div>
+  </div>
+  <div id="comment-2900"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/18a2b0d6bba99957e8906bea6c56d511?r=pg&s=96&d=identicon" alt="Martin" title="Martin" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        Martin, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2900">
+         <time datetime="2017-09-20T04:43:28-05:00" pubdate>2017/09/20</time>
+        </a>
+
+      </div>
+
+      <p>This is poetry. I enjoyed it very much even though I didn’t understand it all. </p>
+
+    </div>
+  </div>
+  <div id="comment-2939"
+       class="comment anonymous ">
+    <div class="avatar">
+      <img src="https://www.gravatar.com/avatar/294de3557d9d00b3d2d8a1e6aab028cf?r=pg&s=96&d=identicon" alt="anonymous" title="anonymous" />
+    </div>
+    <div class="body">
+      <div class="meta">
+        anonymous, on
+        <a href="/posts/342-typing-the-technical-interview#comment-2939">
+         <time datetime="2018-02-21T09:59:33-06:00" pubdate>2018/02/21</time>
+        </a>
+
+      </div>
+
+      <p>Please write a book. I will buy it.</p>
+
+    </div>
+  </div>
+
+  <form class="comment-form" action="/comments" method="post">
+  <h2>Post a Comment</h2>
+  <a id="post-comment"></a>
+
+
+    <p class="dont-read-me">
+      Please avoid writing anything here unless you are a computer:
+      <label for="captcha">Captcha</label>
+      <input type="text" name="captcha" id="captcha" />
+
+      This is also a trap:
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment"></textarea>
+    </p>
+
+      <p ><label for="name">Name</label><input name="name" id="name" type="text" value="" /></p>
+
+      <p ><label for="email">Email</label><input name="email" id="email" type="text" value="" /></p>
+
+      <p ><label for="http">Http</label><input name="http" id="http" type="text" value="" /></p>
+
+
+    <p ><label class="textarea" for="body">Body<br /></label><textarea name="body" id="body"></textarea></p>
+
+
+    <p class="meta">Supports github-flavored markdown for
+    [links](http://foo.com/), *emphasis*, _underline_, `code`, and &gt;
+    blockquotes. Use ```clj on its own line to start a Clojure code block,
+    and ``` to end the block.</p>
+
+    <p ><input name="comment_id" id="comment_id" type="hidden" value="" /></p>
+
+    <p ><input name="post_id" id="post_id" type="hidden" value="342" /></p>
+
+    <p ><input name="photograph_id" id="photograph_id" type="hidden" value="" /></p>
+
+    <p ><input name="page_id" id="page_id" type="hidden" value="" /></p>
+
+    <input type="submit" value="Post Comment" />
+  </form>
+</div>
+
+</div>
+
+  </div>
+
+  <div id="colophon">
+    Copyright &copy; 2018 Kyle Kingsbury.<br /> 
+    Non-commercial re-use with attribution encouraged; all other rights reserved.<br />
+    Comments are the property of respective posters.
+  </div>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9527251-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+  </script>
+</body>
+</html>
