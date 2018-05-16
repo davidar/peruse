@@ -4,7 +4,9 @@ lang: en
 title: 'How to Throw a Graduation Party on a Budget (with Pictures)'
 ---
 
-[![][1]][] [![][1]]
+[![][1]]
+
+[![][1]]
 
 Follow
 

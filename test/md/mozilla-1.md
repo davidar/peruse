@@ -13,7 +13,9 @@ Designed to be redesigned
 
 Get fast and easy access to the features you use most in the new menu. Open the “Customize” panel to add, move or remove any button you want. Keep your favorite features — add-ons, private browsing, Sync and more — one quick click away.
 
-![][2] ![][3]
+![][2]
+
+![][3]
 
 Themes
 ------
@@ -21,7 +23,11 @@ Themes
 Make Firefox match your style. Choose from thousands of themes and dress up your browser with a single click.
 
 [Try it now][]  
-[Learn more] Next ![Preview of the currently selected theme]
+[Learn more]
+
+Next
+
+![Preview of the currently selected theme]
 
 Add-ons
 -------
@@ -35,7 +41,9 @@ Add-ons are like apps that you install to add features to Firefox. They let you 
 -   Watch videos & view photos
 
 [Here are a few of our favorites][]  
-[Learn more][4] ![][5]
+[Learn more][4]
+
+![][5]
 
 Awesome Bar
 -----------
@@ -44,7 +52,9 @@ Next
 
 The Awesome Bar learns as you browse to make your version of Firefox unique. Find and return to your favorite sites without having to remember a URL.
 
-[See what it can do for you] ![Firefox Awesome Bar]
+[See what it can do for you]
+
+![Firefox Awesome Bar]
 
   [1]: https://mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/animations/flexible-top-fallback.c960365ba781.png
   [2]: //mozorg.cdn.mozilla.net/media/img/firefox/desktop/customize/designed-redesigned.fbd3ee9402e6.png

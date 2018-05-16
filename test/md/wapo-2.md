@@ -4,6 +4,9 @@ lang: en
 title: 'Where do strained U.S.-Israeli relations go after Netanyahu’s victory?'
 ---
 
+![][1]  
+Israeli Prime Minister Benjamin Netanyahu reacts as he visits the Western Wall in Jerusalem on March 18 following his party’s victory in Israel’s general election. (Thomas Coex/AFP/Getty Images)
+
 President Obama told the U.N. General Assembly 18 months ago that he would seek “real breakthroughs on these two issues — Iran’s nuclear program and ­Israeli-Palestinian peace.”
 
 But [Benjamin Netanyahu’s triumph] in Tuesday’s parliamentary elections keeps in place an Israeli prime minister who has declared his intention to resist Obama on both of these fronts, guaranteeing two more years of difficult diplomacy between leaders who barely conceal their personal distaste for each other.
@@ -54,12 +57,13 @@ The United States, which gives hundreds of millions of dollars of economic aid t
 
 “That could be an issue forced onto the agenda about the same time as a potential nuclear deal.”
 
-[![][1]]
+[![][2]]
 
 Steven Mufson covers the White House. Since joining The Post, he has covered economics, China, foreign policy and energy.
 
+  [1]: https://img.washingtonpost.com/rf/image_400w/2010-2019/WashingtonPost/2015/03/18/National-Economy/Images/Nic6429750-1140.jpg?uuid=zLIZQs2KEeSip5UXo6cFBg
   [Benjamin Netanyahu’s triumph]: http://www.washingtonpost.com/world/netanyahu-sweeps-to-victory-in-israeli-election/2015/03/18/af4e50ca-ccf2-11e4-8730-4f473416e759_story.html
   [no independent Palestinian state]: http://www.washingtonpost.com/world/middle_east/on-final-day-of-campaign-netanyahu-says-no-palestinian-state-if-he-wins/2015/03/16/4f4468e8-cbdc-11e4-8730-4f473416e759_story.html
   [the signals could not differ more]: http://www.washingtonpost.com/blogs/worldviews/wp/2015/03/18/what-netanyahus-election-victory-means-for-the-palestinians/
-  [1]: http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/blogs/wonkblog/files/2014/07/mufson_steve.jpg&h=180&w=180
-  [![][1]]: http://www.washingtonpost.com/people/steven-mufson
+  [2]: http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/blogs/wonkblog/files/2014/07/mufson_steve.jpg&h=180&w=180
+  [![][2]]: http://www.washingtonpost.com/people/steven-mufson

@@ -73,6 +73,8 @@ An idiocy that all of these programs have in common is that, in addition to open
 >
 > **Various other people wrote:**
 >
+> *You didn’t try [vlc]!*
+>
 > True, I hadn’t. Now I have. It has an overly-complicated UI, (the Preferences panel is a festival of overkill) but at least it uses standard menus and buttons, so it doesn’t make you want to claw your eyes out immediately. But, it can only play a miniscule number of video formats, so it’s mostly useless. *\*plonk\**
 >
 > **Someone else wrote:**
@@ -104,6 +106,7 @@ An idiocy that all of these programs have in common is that, in addition to open
   [2]: http://rpmfind.net/linux/redhat/7.3/en/os/i386/RedHat/RPMS/
   [Ogle]: http://www.dtek.chalmers.se/groups/dvd/
   [Makali]: http://www.lazycat.org/
+  [vlc]: http://www.videolan.org/vlc/
   [getting a Mac]: ../gruntle/bittybox.html
   [Emacs situation]: http://www.xemacs.org/
   [RMSmacs]: ../hacks/why-cooperation-with-rms-is-impossible.mp3

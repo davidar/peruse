@@ -17,8 +17,6 @@ Gallery: Xbox One X \| 14 Photos
 
 ![][2]
 
-14
-
 -   Most powerful hardware ever in a home console
 -   Solid selection of enhanced titles
 -   4K Blu-ray drive is great for movie fans
@@ -69,8 +67,6 @@ Gallery: Xbox One X screenshots \| 9 Photos
 -------------------------------------------
 
 ![][7]
-
-9
 
 *Killer Instinct* and *Super Lucky’s Tale* run in 4K at a smooth 60FPS. They both looked and played better than their standard versions, though I was surprised they didn’t take advantage of HDR. As usual, I noticed the improvement in frame rates more than the higher resolution. Unless you’re sitting very close to a TV above 50-inches, you’d likely have a hard time telling between 4K and 1080p.
 
