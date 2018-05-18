@@ -13,7 +13,7 @@ const URL = require('url')
 const fetch = require('./lib/fetch')
 const fetchArticle = require('./lib/fetch-article')
 const less = require('./lib/less')
-const {waybackTimestamps} = require('./lib/wayback')
+const wayback = require('./lib/wayback')
 
 const forEachR = (a, f) => { for (let i = a.length - 1; i >= 0; i--) f(a[i]) }
 
@@ -119,7 +119,7 @@ async function mainDiff (url1, url2) {
 
 async function mainHistory (url, until) {
   let opts = ['--atx-headers', '--wrap=none']
-  let timestamps = await waybackTimestamps(url)
+  let timestamps = await wayback.timestamps(url)
 
   let url1 = `https://web.archive.org/web/${timestamps[0]}/${url}`
   let text1 = await peruse(url1, opts)
