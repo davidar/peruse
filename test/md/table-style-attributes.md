@@ -93,7 +93,7 @@ An idiocy that all of these programs have in common is that, in addition to open
 
 ------------------------------------------------------------------------
 
-[![\[ up \]]]
+![\[ up \]]
 
   [Jamie Zawinski]: mailto:/dev/null@jwz.org?subject=Please%20delete%20this%20message%20without%20reading%20it.
   [posted]: http://slashdot.org/article.pl?sid=03/01/24/1440207
@@ -113,4 +113,3 @@ An idiocy that all of these programs have in common is that, in addition to open
   [me]: lemacs.html
   [it is]: linux.html
   [\[ up \]]: ../compass1.gif
-  [![\[ up \]]]: ../

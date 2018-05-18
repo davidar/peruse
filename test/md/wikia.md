@@ -16,7 +16,7 @@ Thanks to the commercial success of Star Wars, [George Lucas] has revisited and 
 
 Although most of the Special Editions’ changes were cosmetic, others significantly affected the plot of the films. The most notable example is the “[Han shot first]” scene in *A New Hope*. As a result, the Special Editions generated significant controversy among Star Wars fans. Many fans remain skeptical about George Lucas’s decision to finish each original trilogy film “the way it was meant to be.”
 
-[![star wars]]
+![star wars]
 
 While the Special Editions represent the most significant edits to the original trilogy, the saga has undergone other changes. Following up on the saga’s first Blu-ray release in 2011, Industrial Light & Magic (ILM) began remastering the entire saga in 3D, starting with the prequel trilogy. [*The Phantom Menace*] saw a theatrical 3D re-release in 2012, but Disney’s 2012 acquisition of Lucasfilm indefinitely postponed further 3D releases.
 
@@ -25,7 +25,7 @@ In 2015, [*Attack of the Clones*] and [*Revenge of the Sith*] received limited 3
 Why the Original Film Cuts Matter
 =================================
 
-[![][1]]
+![][1]
 
 Admittedly, the differences between the original trilogy’s unaltered cuts and the Special Editions appeal to more hardcore fans. Casual fans are less likely to care about whether [Greedo] or [Han Solo] shot first. Still, given Star Wars’ indelible impact on pop culture, there’s certainly a market for the original trilogy’s unaltered cuts. They might not be for every Star Wars fan, but many of us care about them.
 
@@ -46,14 +46,12 @@ ILM supervisor [John Knoll], who first pitched the [story idea] for [*Rogue One*
   [*Return of the Jedi*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_VI_Return_of_the_Jedi
   [Han shot first]: http://starwars.wikia.com/wiki/Han_shot_first
   [star wars]: https://vignette.wikia.nocookie.net/375e0e5a-170d-4560-8f20-240c9f0624e9/scale-to-width-down/1200
-  [![star wars]]: https://vignette.wikia.nocookie.net/375e0e5a-170d-4560-8f20-240c9f0624e9
   [*The Phantom Menace*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_I_The_Phantom_Menace
   [*Attack of the Clones*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_II_Attack_of_the_Clones
   [*Revenge of the Sith*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_III_Revenge_of_the_Sith
   [Celebration Anaheim]: http://starwars.wikia.com/wiki/Celebration_Anaheim
   [*The Force Awakens*]: http://starwars.wikia.com/wiki/Star_Wars:_Episode_VII_The_Force_Awakens
   [1]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9/scale-to-width-down/1200
-  [![][1]]: https://vignette.wikia.nocookie.net/1fb5ee36-d9ae-4125-96d9-f52eb403f1c9
   [Greedo]: http://starwars.wikia.com/wiki/Greedo
   [Han Solo]: http://starwars.wikia.com/wiki/Han_Solo
   [John Knoll]: http://starwars.wikia.com/wiki/John_Knoll
