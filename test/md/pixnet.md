@@ -4,7 +4,7 @@ lang: cmn
 title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客邦 PIXNET ::'
 ---
 
-![12-IMG\_3886.jpg]
+![[12-IMG\_3886.jpg]][1]
 
 一波波接續性低溫寒流報到 已將新竹尖石鄉後山一帶層層山巒披上嫣紅的彩衣
 
@@ -34,11 +34,11 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
 
 露營的話則須待中午過後再進場搭帳的彈性做法個人也相當支持這樣的權宜之計
 
-![P1610088.jpg]
+![[P1610088.jpg][12-IMG\_3886.jpg]]
 
 來到現場已是落葉飄飄堆疊滿地　不時隨著風吹雨襲而葉落垂地
 
-![P1610069.jpg]
+![[P1610069.jpg][12-IMG\_3886.jpg]]
 
 不忍踩過剛剛掉落的樹葉 沿著前人足跡踏痕輕踩而行
 
@@ -58,7 +58,7 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
 
 [![05-P1610099.jpg]]
 
-[![P1610095.jpg]]
+[![P1610095.jpg]][12-IMG\_3886.jpg]
 
 [![13-IMG\_3891.jpg]]
 
@@ -108,7 +108,7 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
 
 美樹民宿有開設餐廳 室內簡單佈置提供伙食餐飲
 
-![P1610212.jpg]
+![[P1610212.jpg][12-IMG\_3886.jpg]]
 
 這兩間是民宿房間 跟著民宿主人“簍信”聊起來還提到日後將改變成兩層木屋
 
@@ -116,7 +116,7 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
 
 心中有了計畫想法才會有日後的夢想藍圖 相信將會改變得更好的民宿露營環境
 
-![P1610219.jpg]
+![[P1610219.jpg][12-IMG\_3886.jpg]]
 
 民宿前這一大區楓香林為土質營位 大致區分前、後兩個營區
 
@@ -186,7 +186,7 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
 
 哪怕是葉落飄零落滿地還是睡夢周公召見而去　起床的事\~差點都忘記了
 
-![IMG\_4205.jpg]
+![[IMG\_4205.jpg][12-IMG\_3886.jpg]]
 
 昨天細雨紛飛依然打落了不少落葉中間這株整個都快變成枯枝了
 
@@ -212,7 +212,7 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
 
 [![38-IMG\_4330.jpg]]
 
-![P1610279.jpg]
+![[P1610279.jpg][12-IMG\_3886.jpg]]
 
 難得有此無人美景在楓樹下的聖誕氛圍也一定要來一張才行
 
@@ -264,13 +264,14 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
 
 內文有不定期的更新旅遊、露營圖文訊息 謝謝!
 
-  [12-IMG\_3886.jpg]: http://pic.pimg.tw/stevenhgm/1387894842-1217674167.jpg
+  [12-IMG\_3886.jpg]: http://stevenhgm.pixnet.net/album/photo/470389413
+  [1]: http://pic.pimg.tw/stevenhgm/1387894842-1217674167.jpg
   [30-IMG\_4228.jpg]: http://pic.pimg.tw/stevenhgm/1387894971-1486345289.jpg
   [![30-IMG\_4228.jpg]]: http://stevenhgm.pixnet.net/album/photo/470396919
   [31-IMG\_4231.jpg]: http://pic.pimg.tw/stevenhgm/1387894979-1252095111.jpg
   [![31-IMG\_4231.jpg]]: http://stevenhgm.pixnet.net/album/photo/470396943
-  [P1610088.jpg]: http://pic.pimg.tw/stevenhgm/1387971416-4261675924.jpg
-  [P1610069.jpg]: http://pic.pimg.tw/stevenhgm/1387971406-2480195851.jpg
+  [[P1610088.jpg][12-IMG\_3886.jpg]]: http://pic.pimg.tw/stevenhgm/1387971416-4261675924.jpg
+  [[P1610069.jpg][12-IMG\_3886.jpg]]: http://pic.pimg.tw/stevenhgm/1387971406-2480195851.jpg
   [02-P1610080.jpg]: http://pic.pimg.tw/stevenhgm/1387894752-3567294980.jpg
   [![02-P1610080.jpg]]: http://stevenhgm.pixnet.net/album/photo/470383005
   [04-P1610087.jpg]: http://pic.pimg.tw/stevenhgm/1387894771-2897027724.jpg
@@ -278,7 +279,6 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
   [05-P1610099.jpg]: http://pic.pimg.tw/stevenhgm/1387894778-2035483089.jpg
   [![05-P1610099.jpg]]: http://stevenhgm.pixnet.net/album/photo/470384925
   [P1610095.jpg]: http://pic.pimg.tw/stevenhgm/1387897405-3236217457.jpg
-  [![P1610095.jpg]]: http://stevenhgm.pixnet.net/album/photo/470389413
   [13-IMG\_3891.jpg]: http://pic.pimg.tw/stevenhgm/1387894848-3695967443.jpg
   [![13-IMG\_3891.jpg]]: http://stevenhgm.pixnet.net/album/photo/470389803
   [15-IMG\_3906.jpg]: http://pic.pimg.tw/stevenhgm/1387894863-3269042540.jpg
@@ -301,8 +301,8 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
   [![14-P1610134.jpg]]: http://stevenhgm.pixnet.net/album/photo/470390364
   [44-P1610283.jpg]: http://pic.pimg.tw/stevenhgm/1387895099-4119123008.jpg
   [![44-P1610283.jpg]]: http://stevenhgm.pixnet.net/album/photo/470403381
-  [P1610212.jpg]: http://pic.pimg.tw/stevenhgm/1387971426-4277312474.jpg
-  [P1610219.jpg]: http://pic.pimg.tw/stevenhgm/1387971436-2828193592.jpg
+  [[P1610212.jpg][12-IMG\_3886.jpg]]: http://pic.pimg.tw/stevenhgm/1387971426-4277312474.jpg
+  [[P1610219.jpg][12-IMG\_3886.jpg]]: http://pic.pimg.tw/stevenhgm/1387971436-2828193592.jpg
   [10-P1610114.jpg]: http://pic.pimg.tw/stevenhgm/1387894823-4061326865.jpg
   [![10-P1610114.jpg]]: http://stevenhgm.pixnet.net/album/photo/470388054
   [22-P1610245.jpg]: http://pic.pimg.tw/stevenhgm/1387894911-3706194096.jpg
@@ -329,7 +329,7 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
   [![28-IMG\_4178.jpg]]: http://stevenhgm.pixnet.net/album/photo/470395614
   [29-IMG\_4188.jpg]: http://pic.pimg.tw/stevenhgm/1387894961-2201609427.jpg
   [![29-IMG\_4188.jpg]]: http://stevenhgm.pixnet.net/album/photo/470396325
-  [IMG\_4205.jpg]: http://pic.pimg.tw/stevenhgm/1387971396-2999285851.jpg
+  [[IMG\_4205.jpg][12-IMG\_3886.jpg]]: http://pic.pimg.tw/stevenhgm/1387971396-2999285851.jpg
   [33-IMG\_4255.jpg]: http://pic.pimg.tw/stevenhgm/1387894999-1588465034.jpg
   [![33-IMG\_4255.jpg]]: http://stevenhgm.pixnet.net/album/photo/470397765
   [34-P1610269.jpg]: http://pic.pimg.tw/stevenhgm/1387895007-4184988815.jpg
@@ -338,7 +338,7 @@ title: '新竹尖石\_美樹營地賞楓 (2) @ 史蒂文的家\_藍天 :: 痞客
   [![35-IMG\_4303.jpg]]: http://stevenhgm.pixnet.net/album/photo/470399232
   [38-IMG\_4330.jpg]: http://pic.pimg.tw/stevenhgm/1387895047-92554161.jpg
   [![38-IMG\_4330.jpg]]: http://stevenhgm.pixnet.net/album/photo/470400471
-  [P1610279.jpg]: http://pic.pimg.tw/stevenhgm/1387971446-966387512.jpg
+  [[P1610279.jpg][12-IMG\_3886.jpg]]: http://pic.pimg.tw/stevenhgm/1387971446-966387512.jpg
   [37-IMG\_4323.jpg]: http://pic.pimg.tw/stevenhgm/1387895036-848978834.jpg
   [![37-IMG\_4323.jpg]]: http://stevenhgm.pixnet.net/album/photo/470399946
   [40-IMG\_4342.jpg]: http://pic.pimg.tw/stevenhgm/1387895067-717977929.jpg
