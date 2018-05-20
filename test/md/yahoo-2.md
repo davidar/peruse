@@ -4,12 +4,6 @@ lang: en
 title: 'Russia: Space ship malfunctions, breaks up over Siberia'
 ---
 
--   ![In this photo dated Tuesday, Nov, 29, 2016 the Soyuz-FG rocket booster with the Progress MS-04 cargo ship is installed on a launch pad in Baikonur, Kazakhstan. The unmanned Russian cargo space ship Progress MS-04 broke up in the atmosphere over Siberia on Thursday Dec. 1, 2016, just minutes after the launch en route to the International Space Station due to an unspecified malfunction, the Russian space agency said.(Oleg Urusov/ Roscosmos Space Agency Press Service photo via AP)]
-
--   ![In this photo dated Tuesday, Nov, 29, 2016 the Soyuz-FG rocket booster with the Progress MS-04 cargo ship is installed on a launch pad in Baikonur, Kazakhstan. The unmanned Russian cargo space ship Progress MS-04 broke up in the atmosphere over Siberia on Thursday Dec. 1, 2016, en route to the International Space Station due to an unspecified malfunction, the Russian space agency said. (Sergei Sergeev/ Roscosmos Space Agency Press Service photo via AP)]
-
--   ![LONDON, ENGLAND - JULY 04: Kim Sears (Wife of Andy Murray of Great Britain) watches on from Centre court on day seven of the Wimbledon Lawn Tennis Championships at the All England Lawn Tennis and Croquet Club on July 4, 2016 in London, England. (Photo by Shaun Botterill/Getty Images)]
-
 1 / 5
 
 In this photo dated Tuesday, Nov, 29, 2016 the Soyuz-FG rocket booster with the Progress MS-04 cargo ship is installed on a launch pad in Baikonur, Kazakhstan. The unmanned Russian cargo space ship Progress MS-04 broke up in the atmosphere over Siberia on Thursday Dec. 1, 2016, just minutes after the launch en route to the International Space Station due to an unspecified malfunction, the Russian space agency said.(Oleg Urusov/ Roscosmos Space Agency Press Service photo via AP)
@@ -39,7 +33,3 @@ This version corrects the spelling of the region to Tuva, not Tyva.
 \_\_
 
 Aerospace Writer Marcia Dunn in Cape Canaveral, Florida, and Vladimir Isachenkov in Moscow contributed to this report.
-
-  [In this photo dated Tuesday, Nov, 29, 2016 the Soyuz-FG rocket booster with the Progress MS-04 cargo ship is installed on a launch pad in Baikonur, Kazakhstan. The unmanned Russian cargo space ship Progress MS-04 broke up in the atmosphere over Siberia on Thursday Dec. 1, 2016, just minutes after the launch en route to the International Space Station due to an unspecified malfunction, the Russian space agency said.(Oleg Urusov/ Roscosmos Space Agency Press Service photo via AP)]: https://s.yimg.com/ny/api/res/1.2/lNHGeC84b29OU62FMISl7g--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2g9NjAwO2lsPXBsYW5l/http://media.zenfs.com/en_us/News/ap_webfeeds/c9375de6acbf4c168be78ffe4ec71ea9.jpg
-  [In this photo dated Tuesday, Nov, 29, 2016 the Soyuz-FG rocket booster with the Progress MS-04 cargo ship is installed on a launch pad in Baikonur, Kazakhstan. The unmanned Russian cargo space ship Progress MS-04 broke up in the atmosphere over Siberia on Thursday Dec. 1, 2016, en route to the International Space Station due to an unspecified malfunction, the Russian space agency said. (Sergei Sergeev/ Roscosmos Space Agency Press Service photo via AP)]: https://s.yimg.com/ny/api/res/1.2/lweVDC7ZjZpHtU0S8gpbNA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2g9NjAwO2lsPXBsYW5l/http://media.zenfs.com/en_us/News/ap_webfeeds/daa4cec687a64fff8c4060e11ee9e39d.jpg
-  [LONDON, ENGLAND - JULY 04: Kim Sears (Wife of Andy Murray of Great Britain) watches on from Centre court on day seven of the Wimbledon Lawn Tennis Championships at the All England Lawn Tennis and Croquet Club on July 4, 2016 in London, England. (Photo by Shaun Botterill/Getty Images)]: https://s.yimg.com/ny/api/res/1.2/AE_dA6RMl8RF7SQmMQl_pw--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2g9NjAwO2lsPXBsYW5l/http://media.zenfs.com/en_us/News/gettyimages.com/day-seven-championships-wimbledon-2016-20160704-162516-521.jpg

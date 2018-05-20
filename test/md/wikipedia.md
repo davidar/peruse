@@ -56,7 +56,7 @@ According to the Mozilla Foundation:^\[41\]^
 Software
 ========
 
-[![][1]]
+![][1]
 
 Firefox
 -------
@@ -93,7 +93,7 @@ On July 16, 2012, Mitchell Baker announced that Mozilla’s leadership had come 
 SeaMonkey
 ---------
 
-[![][4]]
+![][4]
 
 [SeaMonkey] (formerly the Mozilla Application Suite) is a free and open source cross platform suite of Internet software components including a web browser component, a client for sending and receiving email and [USENET] newsgroup messages, an HTML editor ([Mozilla Composer]) and the [ChatZilla] IRC client.
 
@@ -102,7 +102,7 @@ On March 10, 2005, [the Mozilla Foundation] announced that it would not release 
 Bugzilla
 --------
 
-[![][6]]
+![][6]
 
 [Bugzilla] is a [web]-based general-purpose [bug tracking system], which was released as [open source software] by [Netscape Communications] in 1998 along with the rest of the Mozilla codebase, and is currently stewarded by Mozilla. It has been adopted by a variety of organizations for use as a [bug tracking system] for both [free and open source software] and [proprietary][7] projects and products, including the [Mozilla Foundation][the Mozilla Foundation], the [Linux kernel], [GNOME], [KDE], [Red Hat], [Novell], [Eclipse] and [LibreOffice].^\[59\]^
 
@@ -182,14 +182,14 @@ The Mozilla Community consists of over 40,000 active contributors from across th
 Local communities
 -----------------
 
-[![][10]]
+![][10]
 
 There are a number of sub-communities that exist based on their geographical locations, where contributors near each other work together on particular activities, such as localization, marketing, PR and user support.
 
 Mozilla Reps
 ------------
 
-[![][11]]
+![][11]
 
 The Mozilla Reps program aims to empower and support volunteer Mozillians who want to become official representatives of Mozilla in their region/locale.
 
@@ -209,7 +209,7 @@ Conferences and events
 
 ### Mozilla Festival
 
-[![][12]]
+![][12]
 
 Speakers from the [Knight Foundation] discuss the future of news at the 2011 Mozilla Festival in London.
 
@@ -357,7 +357,6 @@ External links
   [JavaScript]: https://en.wikipedia.org/wiki/Brendan_Eich#Netscape_and_JavaScript
   [publicity stunt]: https://en.wikipedia.org/wiki/Publicity_stunt
   [1]: //upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mozilla_Firefox_logo_2013.svg/440px-Mozilla_Firefox_logo_2013.svg.png
-  [![][1]]: https://en.wikipedia.org/wiki/File:Mozilla_Firefox_logo_2013.svg
   [web browser]: https://en.wikipedia.org/wiki/Web_browser
   [flagship]: https://en.wikipedia.org/wiki/Flagship_product
   [Gecko]: https://en.wikipedia.org/wiki/Gecko_(software)
@@ -391,7 +390,6 @@ External links
   [APIs]: https://en.wikipedia.org/wiki/Application_programming_interface
   [3]: https://en.wikipedia.org/wiki/JavaScript
   [4]: https://upload.wikimedia.org/wikipedia/commons/0/0d/SeaMonkey.png
-  [![][4]]: https://en.wikipedia.org/wiki/File:SeaMonkey.png
   [SeaMonkey]: https://en.wikipedia.org/wiki/SeaMonkey
   [USENET]: https://en.wikipedia.org/wiki/USENET
   [Mozilla Composer]: https://en.wikipedia.org/wiki/Mozilla_Composer
@@ -400,7 +398,6 @@ External links
   [5]: https://en.wikipedia.org/wiki/Mozilla_Firefox
   [trademarked]: https://en.wikipedia.org/wiki/Trademark
   [6]: //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Buggie.svg/440px-Buggie.svg.png
-  [![][6]]: https://en.wikipedia.org/wiki/File:Buggie.svg
   [web]: https://en.wikipedia.org/wiki/World_Wide_Web
   [bug tracking system]: https://en.wikipedia.org/wiki/Bug_tracking_system
   [open source software]: https://en.wikipedia.org/wiki/Open_source_software
@@ -461,11 +458,8 @@ External links
   [CSS]: https://en.wikipedia.org/wiki/CSS
   [9]: https://en.wikipedia.org/wiki/SVG
   [10]: //upload.wikimedia.org/wikipedia/commons/thumb/2/2a/London_Mozilla_Workspace.jpg/440px-London_Mozilla_Workspace.jpg
-  [![][10]]: https://en.wikipedia.org/wiki/File:London_Mozilla_Workspace.jpg
   [11]: //upload.wikimedia.org/wikipedia/commons/0/0b/Mozilla_Reps.png
-  [![][11]]: https://en.wikipedia.org/wiki/File:Mozilla_Reps.png
   [12]: //upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg/440px-Fireside_Chat%2C_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
-  [![][12]]: https://en.wikipedia.org/wiki/File:Fireside_Chat,_Knight%27s_Michael_Maness_and_Dan_Sinker_-_Flickr_-_Knight_Foundation.jpg
   [Knight Foundation]: https://en.wikipedia.org/wiki/Knight_Foundation
   [-zilla (suffix)]: https://en.wikipedia.org/wiki/-zilla_(suffix)
   [Mozilla (mascot)]: https://en.wikipedia.org/wiki/Mozilla_(mascot)

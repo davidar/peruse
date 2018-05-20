@@ -21,7 +21,7 @@ Android apps are packaged as APKs, which are ZIP files with special conventions.
 
 Watch how much the compressed text on the right side changes from a one-letter change in the uncompressed text on the left:
 
-[![][1]]
+![][1]
 
 File-by-File therefore is based on detecting changes in the uncompressed data. To generate a patch, we first decompress both old and new files before computing the delta (we still use bsdiff here). Then to apply the patch, we decompress the old file, apply the delta to the uncompressed content and then recompress the new file. In doing so, we need to make sure that the APK on your device is a perfect match, byte for byte, to the one on the Play Store (see [APK Signature Schema v2] for why).
 
@@ -67,13 +67,12 @@ If you’d like to know more about File-by-File patching, including the technica
 
 As a developer if you’re interested in reducing your APK size still further, here are some [general tips on reducing APK size].
 
-[![][2]]
+![][2]
 
   [the bsdiff algorithm]: https://android-developers.blogspot.com/2016/07/improvements-for-smaller-app-downloads.html
   [File-by-File patching]: https://github.com/andrewhayden/archive-patcher/blob/master/README.md
   [Deflate]: https://en.wikipedia.org/w/index.php?title=DEFLATE&oldid=735386036
-  [1]: https://2.bp.blogspot.com/-chCZZinlUTg/WEcxvJo9gdI/AAAAAAAADnk/3ND_BspqN6Y2j5xxkLFW3RyS2Ig0NHZpQCLcB/s640/ipsum-opsum.gif
-  [![][1]]: https://2.bp.blogspot.com/-chCZZinlUTg/WEcxvJo9gdI/AAAAAAAADnk/3ND_BspqN6Y2j5xxkLFW3RyS2Ig0NHZpQCLcB/s1600/ipsum-opsum.gif
+  [1]: https://2.bp.blogspot.com/-chCZZinlUTg/WEcxvJo9gdI/AAAAAAAADnk/3ND_BspqN6Y2j5xxkLFW3RyS2Ig0NHZpQCLcB/s1600/ipsum-opsum.gif
   [APK Signature Schema v2]: https://source.android.com/security/apksigning/v2.html
   [Farm Heroes Super Saga]: https://play.google.com/store/apps/details?id=com.king.farmheroessupersaga&hl=en
   [Google Maps]: https://play.google.com/store/apps/details?id=com.google.android.apps.maps
@@ -83,5 +82,4 @@ As a developer if you’re interested in reducing your APK size still further, h
   [Netflix]: https://play.google.com/store/apps/details?id=com.netflix.mediaclient
   [Archive Patcher GitHub project]: https://github.com/andrewhayden/archive-patcher
   [general tips on reducing APK size]: https://developer.android.com/topic/performance/reduce-apk-size.html?utm_campaign=android_discussion_filebyfile_120616&utm_source=anddev&utm_medium=blog
-  [2]: https://2.bp.blogspot.com/-5aRh1dM6Unc/WEcNs55RGhI/AAAAAAAADnI/tzr_oOJjZwgWd9Vu25ydY0UwB3eXKupXwCLcB/s200/image01.png
-  [![][2]]: https://2.bp.blogspot.com/-5aRh1dM6Unc/WEcNs55RGhI/AAAAAAAADnI/tzr_oOJjZwgWd9Vu25ydY0UwB3eXKupXwCLcB/s1600/image01.png
+  [2]: https://2.bp.blogspot.com/-5aRh1dM6Unc/WEcNs55RGhI/AAAAAAAADnI/tzr_oOJjZwgWd9Vu25ydY0UwB3eXKupXwCLcB/s1600/image01.png

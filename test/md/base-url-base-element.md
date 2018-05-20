@@ -26,13 +26,13 @@ Images
 
 ![][5]
 
-![][5]
-
-![][5]
-
 ![][6]
 
 ![][7]
+
+![][8]
+
+![][9]
 
 Foo
 ===
@@ -44,6 +44,8 @@ Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui
   [2]: about:/foo/bar/baz.html#foo
   [3]: http://test/foo/bar/baz.html
   [4]: https://test/foo/bar/baz.html
-  [5]: about:/foo/bar/baz.png
-  [6]: http://test/foo/bar/baz.png
-  [7]: https://test/foo/bar/baz.png
+  [5]: foo/bar/baz.png
+  [6]: ./foo/bar/baz.png
+  [7]: /foo/bar/baz.png
+  [8]: http://test/foo/bar/baz.png
+  [9]: https://test/foo/bar/baz.png

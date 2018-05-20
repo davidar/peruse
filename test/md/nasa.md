@@ -3,7 +3,7 @@ lang: en
 title: Voyager 1 Fires Up Thrusters After 37 Years
 ---
 
-[![Artist’s concept of Voyager]]
+![Artist’s concept of Voyager]
 
 The twin Voyager spacecraft are celebrating 40 years of continual operation in August and September 2017.
 
@@ -47,6 +47,5 @@ Last Updated: Dec. 1, 2017
 
 Editor: Tony Greicius
 
-  [Artist’s concept of Voyager]: https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia21839-main.jpg?itok=O4LRoqgE
-  [![Artist’s concept of Voyager]]: https://www.nasa.gov/sites/default/files/thumbnails/image/pia21839-main.jpg
+  [Artist’s concept of Voyager]: https://www.nasa.gov/sites/default/files/thumbnails/image/pia21839-main.jpg
   [https://voyager.jpl.nasa.gov]: https://voyager.jpl.nasa.gov/

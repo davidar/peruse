@@ -4,7 +4,7 @@ lang: en
 title: These are the 8 coolest PlayStation VR games
 ---
 
-![Sony’s PlayStation VR.]
+![The PlayStation VR]
 
 Virtual reality has officially reached the consoles. And it’s pretty good! [Sony’s PlayStation VR] is extremely comfortable and reasonably priced, and while it’s lacking killer apps, it’s loaded with lots of interesting ones.
 
@@ -76,7 +76,7 @@ Already a hit on the Oculus Rift, this space dogfighting game was one of the fir
 
 *Ben Silverman is on Twitter at* [*ben\_silverman*]*.*
 
-  [Sony’s PlayStation VR.]: http://l1.yimg.com/ny/api/res/1.2/589noY9BZNdmsUUQf6L1AQ--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NzQ0O2g9NjY5/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/4406ef57dcb40376c513903b03bef048
+  [The PlayStation VR]: http://l1.yimg.com/ny/api/res/1.2/589noY9BZNdmsUUQf6L1AQ--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NzQ0O2g9NjY5/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/4406ef57dcb40376c513903b03bef048
   [Sony’s PlayStation VR]: http://finance.yahoo.com/news/review-playstation-vr-is-comfortable-and-affordable-but-lacks-must-have-games-165053851.html
   [“Rez Infinite” (\$30)]: https://www.playstation.com/en-us/games/rez-infinite-ps4/
   [1]: https://www.youtube.com/embed/YlDxEOwj5j8

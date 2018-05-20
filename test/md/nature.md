@@ -5,7 +5,7 @@ title: Time to talk about why so many postgrads have poor mental health
 
 An outpouring on Twitter highlights the acute pressures on young scientists.
 
-![Don’t feel alone: share your stories of mental-health issues and help *Nature* to tackle the problem.Credit: Getty]
+![Graduate sits alone in rows of white chairs]
 
 Poor mental health is an issue for many of our readers. That fact is underscored by the response to a [tweet sent by @NatureNews earlier this week], which highlighted that rates of depression and anxiety reported by postgraduate students are [six times higher than in the general population (T. M. Evans *et al. Nature Biotechnol.* **36,** 282–284; 2018)], and asked what should be done to help. The figures are a shock, but it was the reaction that blew us away: more than 1,200 retweets and around 170 replies.
 
@@ -31,7 +31,7 @@ Nature **556**, 5 (2018)
 
 doi: 10.1038/d41586-018-04023-5
 
-  [Don’t feel alone: share your stories of mental-health issues and help *Nature* to tackle the problem.Credit: Getty]: http://media.nature.com/w800/magazine-assets/d41586-018-04023-5/d41586-018-04023-5_15577648.jpg
+  [Graduate sits alone in rows of white chairs]: http://media.nature.com/w800/magazine-assets/d41586-018-04023-5/d41586-018-04023-5_15577648.jpg
   [tweet sent by @NatureNews earlier this week]: https://twitter.com/NatureNews/status/978212558938296321
   [six times higher than in the general population (T. M. Evans *et al. Nature Biotechnol.* **36,** 282–284; 2018)]: https://www.nature.com/articles/nbt.4089
   [here]: http://go.nature.com/2gtjxq
