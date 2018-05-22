@@ -25,7 +25,7 @@ The most obvious method, the assignment of letters to individual notes of music,
 
 As an illustration, the scribe has spelt out in his music-cipher the words “In nomine summe et individue trinitatis hoc opus incipio”. The earliest documented system thereafter seems to be the analogous cipher used about 1560 by Philip II of Spain. This begins as in ex.2
 
- ![][2]
+![][2]
 
 and continues similarly with different note values. By the end of the 16th century some very complex systems were in practical use. Thus the papal cryptographic service about 1596 used a music-cipher of nine different pitches each variable in eight ways, yielding a possible 72 symbols. Such prolifer­ation is over-elaborate, and the simpler 11 x 2 system published by Giovanni Porta (c1600, in later editions of his seminal work on cryptography) found more general favour (ex.3).
 

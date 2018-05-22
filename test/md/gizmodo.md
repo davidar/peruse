@@ -29,16 +29,16 @@ Tons more great info and resources at [genekeyes.com], [BFI][Buckminster Fuller 
 *Top image: Buckminster Fuller and Chuck Byrne, Dymaxion Air-Ocean World Map, 1981; screen print; 50 in. x 72 in.; Collection SFMOMA, gift of Elizabeth and Carl Solway in memory of Robert Fillmore Lovett, Jr. \| via [ArchDaily]*
 ====================================================================================================================================================================================================================================
 
-  [1]: https://i.kinja-img.com/gawker-media/image/upload/s--n7OuJPrh--/c_scale,fl_progressive,q_80,w_800/18iw2vvivjz7kjpg.jpg
+  [1]: https://i.kinja-img.com/gawker-media/image/upload/s--n7OuJPrh--/c_scale%2Cfl_progressive%2Cq_80%2Cw_800/18iw2vvivjz7kjpg.jpg
   [once called Fuller]: http://www.brainpickings.org/index.php/2013/03/08/buckminster-fuller-synergetics/
   [ideas]: http://en.wikipedia.org/wiki/Spaceship_Earth
   [his inventions]: https://www.google.com/search?tbo=p&tbm=pts&hl=en&q=%22inventor:+richard+buckminster+fuller%22
   [here]: http://web.archive.org/web/20160804020934/https://upload.wikimedia.org/wikipedia/commons/b/bb/Dymaxion_2003_animation_small1.gif
-  [This image was lost some time after publication, but you can still view it [here].]: https://i.kinja-img.com/gawker-media/image/upload/s--MaYrLkl---/c_fit,fl_progressive,q_80,w_636/Image_Not_Found_1x_qjofp8.png
+  [This image was lost some time after publication, but you can still view it [here].]: https://i.kinja-img.com/gawker-media/image/upload/s--MaYrLkl---/c_fit%2Cfl_progressive%2Cq_80%2Cw_636/Image_Not_Found_1x_qjofp8.png
   [compromise projection]: http://xkcd.com/977/
   [forfeits certain geographic parameters in favor of others]: http://en.wikipedia.org/wiki/Map_projection#Compromise_projections
   [distortions the more common Mercator and Peters projections struggle with, respectively]: http://www.geni.org/globalenergy/library/buckminster_fuller/dymaxion_map/fuller-faq.shtml
-  [2]: https://i.kinja-img.com/gawker-media/image/upload/s--uXjLQQPG--/c_fit,fl_progressive,q_80,w_636/18iw0t0arljw4png.png
+  [2]: https://i.kinja-img.com/gawker-media/image/upload/s--uXjLQQPG--/c_fit%2Cfl_progressive%2Cq_80%2Cw_636/18iw0t0arljw4png.png
   [Buckminster Fuller Institute]: http://www.bfi.org/about-bucky/buckys-big-ideas/dymaxion-world/dymaxion-map
   [Spaceship Earth]: http://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth
   [genekeyes.com]: http://www.genekeyes.com/FULLER/BF-1-intro.html

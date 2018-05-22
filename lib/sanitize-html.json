@@ -22,8 +22,10 @@
     "li",
     "ol",
     "p",
+    "picture",
     "pre",
     "q",
+    "source",
     "strike",
     "strong",
     "sub",
@@ -50,10 +52,16 @@
     ],
     "img": [
       "alt",
-      "src"
+      "src",
+      "srcset",
+      "title"
     ],
     "pre": [
       "class"
+    ],
+    "source": [
+      "media",
+      "srcset"
     ],
     "td": [
       "colspan",
@@ -90,5 +98,8 @@
     "www.youtube-nocookie.com",
     "player.vimeo.com",
     "www.dailymotion.com"
-  ]
+  ],
+  "transformTags": {
+    "tt": "code"
+  }
 }

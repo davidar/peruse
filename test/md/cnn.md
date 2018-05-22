@@ -4,8 +4,6 @@ lang: en
 title: 'The ‘birth lottery’ and economic mobility'
 ---
 
-![][1]
-
 The U.S. has long been heralded as a land of opportunity – a place where anyone can succeed regardless of the economic class they were born into.
 =================================================================================================================================================
 
@@ -45,7 +43,6 @@ The report concluded that the American safety net was ineffective because it pro
 
 CNNMoney (New York) First published February 1, 2016: 1:28 AM ET
 
-  [1]: http://ht3.cdn.turner.com/money/big/news/2015/11/30/homeboy-industries-priest.cnnmoney_1024x576.mp4
   [Stanford University’s Center on Poverty and Inequality]: http://web.stanford.edu/group/scspi-dev/cgi-bin/
   [report states]: http://web.stanford.edu/group/scspi-dev/cgi-bin/publications/state-union-report
   [Related: Rich are paying more in taxes but not as much as they used to]: http://money.cnn.com/2016/01/11/news/economy/rich-taxes/index.html?iid=EL

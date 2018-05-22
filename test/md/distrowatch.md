@@ -179,13 +179,13 @@ Advertisement
 
 Sponsored message If you’re looking for free, high quality [Excel tutorials], check out Excel Easy. They have a great collection of resources over an incredibly large variety of topics, including [formulas and functions], [charts], the [Analysis ToolPak] and 300 easy to follow examples.
 
-  [GParted Live]: https://distrowatch.com/images/yvzhuwbpy/gparted.png
+  [GParted Live]: https://distrowatch.com/images/yvzhuwbpy/gparted.png "GParted Live"
   [![GParted Live]]: https://distrowatch.com/gparted
   [1]: https://distrowatch.com/images/slinks/gparted.png
   [2]: https://distrowatch.com/images/other/xml.png
   [![][2]]: https://distrowatch.com/news/dw.xml
   [Distribution Release: Trisquel GNU/Linux 8.0]: https://distrowatch.com/10171
-  [Trisquel GNU/Linux]: https://distrowatch.com/images/yvzhuwbpy/trisquel.png
+  [Trisquel GNU/Linux]: https://distrowatch.com/images/yvzhuwbpy/trisquel.png "Trisquel GNU/Linux"
   [![Trisquel GNU/Linux]]: https://distrowatch.com/trisquel
   [3]: https://distrowatch.com/images/slinks/trisquel-small.png
   [![][3]]: https://distrowatch.com/images/slinks/trisquel.png
@@ -203,7 +203,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [6]: https://cdimage.trisquel.info/trisquel-images/trisquel-mini_8.0_amd64.iso.torrent
   [OSDisc]: https://distrowatch.com/osdisc?trisquel
   [Distribution Release: Oracle Linux 7.5]: https://distrowatch.com/10170
-  [Oracle Linux]: https://distrowatch.com/images/yvzhuwbpy/oracle.png
+  [Oracle Linux]: https://distrowatch.com/images/yvzhuwbpy/oracle.png "Oracle Linux"
   [![Oracle Linux]]: https://distrowatch.com/oracle
   [7]: https://distrowatch.com/images/slinks/oracle-small.png
   [![][7]]: https://distrowatch.com/images/slinks/oracle.png
@@ -215,7 +215,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [11]: https://distrowatch.com/table.php?distribution=oracle&pkglist=true&version=7.5#pkglist
   [12]: https://distrowatch.com/osdisc?oracle
   [DistroWatch Weekly, Issue 759]: https://distrowatch.com/weekly.php?issue=20180416
-  [DistroWatch Weekly]: https://distrowatch.com/images/yvzhuwbpy/skoi.png
+  [DistroWatch Weekly]: https://distrowatch.com/images/yvzhuwbpy/skoi.png "DistroWatch Weekly"
   [Review: Neptune 5.0]: https://distrowatch.com/weekly.php?issue=20180416#neptune
   [News: elementary’s new generation of apps, building containers on Red Hat, MX publishes new FAQ, antiX introduces Sid edition]: https://distrowatch.com/weekly.php?issue=20180416#news
   [Tips and tricks: Fix filenames, manage networks from the command line and more command line tips]: https://distrowatch.com/weekly.php?issue=20180416#tips
@@ -226,7 +226,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [New distributions: Easy OS]: https://distrowatch.com/weekly.php?issue=20180416#waiting
   [Reader comments]: https://distrowatch.com/weekly.php?issue=20180416#comments
   [OS Release: ReactOS 0.4.8]: https://distrowatch.com/10168
-  [ReactOS]: https://distrowatch.com/images/yvzhuwbpy/reactos.png
+  [ReactOS]: https://distrowatch.com/images/yvzhuwbpy/reactos.png "ReactOS"
   [![ReactOS]]: https://distrowatch.com/reactos
   [13]: https://distrowatch.com/images/slinks/reactos-small.png
   [![][13]]: https://distrowatch.com/images/slinks/reactos.png
@@ -238,7 +238,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [ReactOS-0.4.8-live.zip]: http://downloads.sourceforge.net/reactos/ReactOS-0.4.8-live.zip
   [18]: https://distrowatch.com/osdisc?reactos
   [Development Release: SparkyLinux 4.8 RC]: https://distrowatch.com/10167
-  [SparkyLinux]: https://distrowatch.com/images/yvzhuwbpy/sparky.png
+  [SparkyLinux]: https://distrowatch.com/images/yvzhuwbpy/sparky.png "SparkyLinux"
   [![SparkyLinux]]: https://distrowatch.com/sparky
   [19]: https://distrowatch.com/images/slinks/sparky-small.png
   [![][19]]: https://distrowatch.com/images/slinks/sparky.png
@@ -250,7 +250,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [24]: http://linuxtracker.org/torrents/f9390c1eb8541200bf749aac884b7788ede193ce
   [25]: https://distrowatch.com/table.php?distribution=sparky&pkglist=true&version=4.7#pkglist
   [Distribution Release: Clonezilla Live 2.5.5-38]: https://distrowatch.com/10166
-  [Clonezilla Live]: https://distrowatch.com/images/yvzhuwbpy/clonezilla.png
+  [Clonezilla Live]: https://distrowatch.com/images/yvzhuwbpy/clonezilla.png "Clonezilla Live"
   [![Clonezilla Live]]: https://distrowatch.com/clonezilla
   [26]: https://distrowatch.com/images/slinks/clonezilla-small.png
   [![][26]]: https://distrowatch.com/images/slinks/clonezilla.png
@@ -261,7 +261,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [31]: https://distrowatch.com/table.php?distribution=clonezilla&pkglist=true&version=2.5.5-38#pkglist
   [32]: https://distrowatch.com/osdisc?clonezilla
   [BSD Release: DragonFlyBSD 5.2.0]: https://distrowatch.com/10165
-  [DragonFly BSD]: https://distrowatch.com/images/yvzhuwbpy/dragonflybsd.png
+  [DragonFly BSD]: https://distrowatch.com/images/yvzhuwbpy/dragonflybsd.png "DragonFly BSD"
   [![DragonFly BSD]]: https://distrowatch.com/dragonflybsd
   [33]: https://distrowatch.com/images/slinks/dragonflybsd-small.png
   [![][33]]: https://distrowatch.com/images/slinks/dragonflybsd.png
@@ -272,7 +272,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [37]: http://avalon.dragonflybsd.org/iso-images/md5.txt
   [38]: https://distrowatch.com/table.php?distribution=dragonflybsd&pkglist=true&version=5.2.0#pkglist
   [Distribution Release: Red Hat Enterprise Linux 7.5]: https://distrowatch.com/10164
-  [Red Hat Enterprise Linux]: https://distrowatch.com/images/yvzhuwbpy/redhat.png
+  [Red Hat Enterprise Linux]: https://distrowatch.com/images/yvzhuwbpy/redhat.png "Red Hat Enterprise Linux"
   [![Red Hat Enterprise Linux]]: https://distrowatch.com/redhat
   [39]: https://distrowatch.com/images/slinks/redhat-small.png
   [![][39]]: https://distrowatch.com/images/slinks/redhat.png
@@ -291,7 +291,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [New distributions: SoNebuntu, SuperGamer Linux]: https://distrowatch.com/weekly.php?issue=20180409#waiting
   [42]: https://distrowatch.com/weekly.php?issue=20180409#comments
   [Development Release: Ubuntu 18.04 Beta 2]: https://distrowatch.com/10162
-  [Ubuntu]: https://distrowatch.com/images/yvzhuwbpy/ubuntu.png
+  [Ubuntu]: https://distrowatch.com/images/yvzhuwbpy/ubuntu.png "Ubuntu"
   [![Ubuntu]]: https://distrowatch.com/ubuntu
   [43]: https://distrowatch.com/images/slinks/ubuntu-small.png
   [![][43]]: https://distrowatch.com/images/slinks/ubuntu.png
@@ -337,7 +337,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [82]: http://wiki.xubuntu.org/releases/18.04/release-notes
   [83]: https://distrowatch.com/table.php?distribution=xubuntu&pkglist=true&version=18.04-beta2#pkglist
   [Distribution Release: NixOS 18.03]: https://distrowatch.com/10161
-  [NixOS]: https://distrowatch.com/images/yvzhuwbpy/nixos.png
+  [NixOS]: https://distrowatch.com/images/yvzhuwbpy/nixos.png "NixOS"
   [![NixOS]]: https://distrowatch.com/nixos
   [84]: https://distrowatch.com/images/slinks/nixos-small.png
   [![][84]]: https://distrowatch.com/images/slinks/nixos.png
@@ -350,7 +350,7 @@ Sponsored message If you’re looking for free, high quality [Excel tutorials], 
   [91]: https://d3g5gsiof5omrk.cloudfront.net/nixos/18.03/nixos-18.03.131768.a74969256b0/nixos-minimal-18.03.131768.a74969256b0-x86_64-linux.iso.sha256
   [92]: https://distrowatch.com/osdisc?nixos
   [Development Release: Fedora 28 Beta]: https://distrowatch.com/10160
-  [Fedora]: https://distrowatch.com/images/yvzhuwbpy/fedora.png
+  [Fedora]: https://distrowatch.com/images/yvzhuwbpy/fedora.png "Fedora"
   [![Fedora]]: https://distrowatch.com/fedora
   [93]: https://distrowatch.com/images/slinks/fedora-small.png
   [![][93]]: https://distrowatch.com/images/slinks/fedora.png

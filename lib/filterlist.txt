@@ -1,3 +1,4 @@
+##img[width="1"]
 ###wm-ipp
 bloomberg.com##.touts
 independent.co.uk##.type-gallery

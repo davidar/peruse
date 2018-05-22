@@ -49,5 +49,5 @@ After her story grabbed local headlines, Hicks has been inundated by requests fo
   [Pizza Man Making Special Delivery Pizza Delivery to Afghanistan During Super Bowl]: http://abcnews.go.com/WNT/video/pizza-patriots-making-special-super-bowl-delivery-troops-28633975
   [Redesigned Scopes Fail to Stop ’Superbug Outbreaks]: http://abcnews.go.com/Health/superbug-scope-maker-altered-design-make-cleaning-easier/story?id=29417816
   [Antarctica ‘Penguin Post Office’ Attracts Record Number of Applicants]: http://abcnews.go.com/Travel/video/antarctica-penguin-post-office-job-attracts-record-number-29247380
-  [Vanessa Hicks]: https://s3.yimg.com/bt/api/res/1.2/GNtA09EDJWzWfpBzGYJS0Q--/YXBwaWQ9eW5ld3NfbGVnbztxPTg1O3c9NjMw/http://media.zenfs.com/en_us/gma/us.abcnews.gma.com/HT_flag_baby_jtm_150311_16x9_992.jpg
+  [Vanessa Hicks]: https://s3.yimg.com/bt/api/res/1.2/GNtA09EDJWzWfpBzGYJS0Q--/YXBwaWQ9eW5ld3NfbGVnbztxPTg1O3c9NjMw/http://media.zenfs.com/en_us/gma/us.abcnews.gma.com/HT_flag_baby_jtm_150311_16x9_992.jpg "Vanessa Hicks"
   [Supreme Court]: http://abcnews.go.com/topics/news/us/supreme-court.htm
