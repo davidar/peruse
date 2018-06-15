@@ -11,8 +11,6 @@ information that need to be known. It took me a bit of fiddling around, but it t
 
 This guide may not work if you’re using the last version of Windows 95 (OSR2.5) since that’s essentially an early Windows 98 with IE4 integration. 
 
-![][1]
-
 Note: Windows 95 on DOSBox is just a toy. It’s not recommended for any serious work. Those who need Windows 95 for some productive purpose, or even 
 
 for running games, are most likely better off using something like Virtualbox or Qemu. 
@@ -51,5 +49,4 @@ imgmount 2 c.img -size 512,63,16,812 -t hdd -fs none 
 
 Note: you may need to replace ​c.img​ with the name you gave your image file, and replace ​812​ with the cylinder count you used when creating the file using 
 
-  [1]: https://ssl.gstatic.com/docs/common/warning.png
   [HAL9000’s Megabuild​]: http://home.arcor.de/h-a-l-9000/

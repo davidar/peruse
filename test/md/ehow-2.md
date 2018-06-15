@@ -6,10 +6,6 @@ title: 'How to Throw a Graduation Party on a Budget (with Pictures)'
 
 ![][1]
 
-![][1]
-
-Follow
-
 Last updated September 14, 2016
 
 Graduation parties are a great way to commemorate the years of hard work teens and college co-eds devote to education. They’re also costly for mom and dad.
