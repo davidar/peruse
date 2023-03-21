@@ -1,23 +1,22 @@
 #!/usr/bin/env node
-'use strict'
-const bytes = require('utf8-length')
-const eventToPromise = require('event-to-promise')
-const express = require('express')
-const {JSDOM} = require('jsdom')
-const pandiff = require('pandiff')
-const {pandoc} = require('nodejs-sh')
-const path = require('path')
-const tmp = require('tmp')
-const URL = require('url')
+import bytes from 'utf8-length'
+import eventToPromise from 'event-to-promise'
+import express from 'express'
+import { JSDOM } from 'jsdom'
+import pandiff from 'pandiff'
+import sh from 'nodejs-sh'
+import path from 'path'
+import tmp from 'tmp'
+import { URL } from 'url'
 
-const fetch = require('./lib/fetch')
-const fetchArticle = require('./lib/fetch-article')
-const less = require('./lib/less')
-const wayback = require('./lib/wayback')
+import fetch from './lib/fetch.js'
+import fetchArticle from './lib/fetch-article.js'
+import less from './lib/less.js'
+import * as wayback from './lib/wayback.js'
 
 const forEachR = (a, f) => { for (let i = a.length - 1; i >= 0; i--) f(a[i]) }
 
-const highlightLanguages = pandoc('--list-highlight-languages').toString().then(s => s.trim().split('\n'))
+const highlightLanguages = sh.pandoc('--list-highlight-languages').toString().then(s => s.trim().split('\n'))
 
 const markdown = [
   'markdown',
@@ -36,24 +35,24 @@ const markdown = [
 
 const HN_URL = 'https://news.ycombinator.com/item?id='
 async function hn (id) {
-  let response = await fetch('https://hacker-news.firebaseio.com/v0/item/' + id + '.json')
+  const response = await fetch('https://hacker-news.firebaseio.com/v0/item/' + id + '.json')
   return response.json()
 }
 
 async function peruse (url, opts = [], allowLocal = true) {
   let postscript = ''
   if (url.startsWith(HN_URL)) {
-    let item = await hn(url.replace(HN_URL, ''))
+    const item = await hn(url.replace(HN_URL, ''))
     if (item.kids.length > 0) postscript += '<h1>Comments</h1>'
     for (let i = 0; i < 3 && i < item.kids.length; i++) {
-      let comment = await hn(item.kids[i])
+      const comment = await hn(item.kids[i])
       postscript += '<blockquote>' + comment.text + '<p>&mdash; ' + comment.by + '</blockquote>'
     }
     url = item.url
   }
 
-  let classesToPreserve = await highlightLanguages
-  let html = await fetchArticle(url, {allowLocal, classesToPreserve})
+  const classesToPreserve = await highlightLanguages
+  let html = await fetchArticle(url, { allowLocal, classesToPreserve })
   if (html === null) return null
 
   html = html.replace('</body></html>', '') + postscript + '</body></html>'
@@ -66,23 +65,24 @@ async function peruse (url, opts = [], allowLocal = true) {
     html = html.replace(/<pre>/g, '<pre class="highlight">')
   }
 
-  let output = await pandoc('--standalone', '--from=html',
-    '--lua-filter', path.join(__dirname, 'pandoc-a11y.lua'),
+  const output = await sh.pandoc('--standalone', '--from=html',
+    // '--lua-filter', path.join(__dirname, 'pandoc-a11y.lua'),
     '--to=' + markdown + '-smart', '--reference-links').end(html).toString()
   if (bytes(output) > 1500) opts = opts.concat(['--filter', 'pandoc-lang'])
-  return pandoc('--standalone', '--from=' + markdown,
+  return sh.pandoc('--standalone', '--from=' + markdown,
     '--to=' + markdown + '-smart', '--reference-links', ...opts).end(output).toString()
 }
 
 async function mainURL (url) {
-  let opts = process.argv.filter(arg => arg.startsWith('-'))
-  let output = await peruse(url, opts)
+  const opts = process.argv.filter(arg => arg.startsWith('-'))
+  const output = await peruse(url, opts)
   return lessMaybe(output, url + ': unrecognised input')
 }
 
 async function lessMaybe (output, err, scopeName = 'source.gfm') {
   if (output) {
-    await less(output, scopeName)
+    // await less(output, scopeName)
+    console.log(output)
     return 0
   } else {
     console.error(err)
@@ -91,7 +91,7 @@ async function lessMaybe (output, err, scopeName = 'source.gfm') {
 }
 
 async function mainHTML (url) {
-  let output = await fetchArticle(url, {
+  const output = await fetchArticle(url, {
     allowLocal: true,
     classesToPreserve: await highlightLanguages
   })
@@ -99,7 +99,7 @@ async function mainHTML (url) {
 }
 
 async function mainDiff (url1, url2) {
-  let opts = ['--atx-headers', '--wrap=none']
+  const opts = ['--atx-headers', '--wrap=none']
   let text1 = await peruse(url1, opts)
   let text2 = await peruse(url2, opts)
   text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
@@ -109,7 +109,7 @@ async function mainDiff (url1, url2) {
     return 0
   }
 
-  let diffOpts = {threshold: 0.5}
+  const diffOpts = { threshold: 0.5 }
   if (process.argv.includes('--wrap=none')) diffOpts.wrap = null
   let output = await pandiff(text1, text2, diffOpts)
   if (!output) output = text1 + '\n\n--\n\n' + text2
@@ -118,10 +118,10 @@ async function mainDiff (url1, url2) {
 }
 
 async function mainHistory (url, until) {
-  let opts = ['--atx-headers', '--wrap=none']
-  let timestamps = await wayback.timestamps(url)
+  const opts = ['--atx-headers', '--wrap=none']
+  const timestamps = await wayback.timestamps(url)
 
-  let url1 = `https://web.archive.org/web/${timestamps[0]}/${url}`
+  const url1 = `https://web.archive.org/web/${timestamps[0]}/${url}`
   let text1 = await peruse(url1, opts)
   text1 = text1.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
 
@@ -131,7 +131,7 @@ async function mainHistory (url, until) {
   for (let i = 1; i < timestamps.length; i++) {
     const timestamp = timestamps[i]
     if (until && until < timestamp) break
-    let url2 = `https://web.archive.org/web/${timestamp}/${url}`
+    const url2 = `https://web.archive.org/web/${timestamp}/${url}`
     let text2 = await peruse(url2, opts)
     text2 = text2.replace(/https:\/\/web.archive.org\/web\/[^/]+\//g, '')
     if (text1 === text2) {
@@ -139,9 +139,9 @@ async function mainHistory (url, until) {
       continue
     }
 
-    let diffOpts = {threshold: 0.5}
+    const diffOpts = { threshold: 0.5 }
     if (process.argv.includes('--wrap=none')) diffOpts.wrap = null
-    let output = await pandiff(text1, text2, diffOpts)
+    const output = await pandiff(text1, text2, diffOpts)
     if (output) {
       console.log('# Update', timestamp)
       console.log(output)
@@ -155,8 +155,8 @@ async function mainHistory (url, until) {
 }
 
 function rewriteLinks (html, format) {
-  let dom = new JSDOM(html)
-  let body = dom.window.document.body
+  const dom = new JSDOM(html)
+  const body = dom.window.document.body
   forEachR(body.getElementsByTagName('a'), link => {
     if (link.hasAttribute('href')) link.href = `/${format}/${link.href}`
   })
@@ -164,27 +164,27 @@ function rewriteLinks (html, format) {
     image.src = '/image/1x/' + image.src
   })
   forEachR(body.querySelectorAll('p>img'), image => {
-    let par = image.parentNode
+    const par = image.parentNode
     if (!par.textContent.trim()) par.outerHTML = '<figure>' + image.outerHTML + '</figure>'
   })
   return dom.serialize()
 }
 
 async function mainServer (port = 4343) {
-  let opts = process.argv.filter(arg => arg.startsWith('-') && arg !== '--unsafe-local')
-  const pandocFormats = (await pandoc('--list-output-formats').toString()).trim().split('\n')
-  let app = express()
+  const opts = process.argv.filter(arg => arg.startsWith('-') && arg !== '--unsafe-local')
+  const pandocFormats = (await sh.pandoc('--list-output-formats').toString()).trim().split('\n')
+  const app = express()
   app.use('/static', express.static(path.join(__dirname, 'static')))
   app.get('/image/:opt/:url(*)', (req, res) => {
-    let {opt, url} = req.params
-    let qstr = URL.parse(req.url).search
+    let { opt, url } = req.params
+    const qstr = URL(req.url).search
     if (qstr && !url.includes('imgix.net')) url += qstr
     if (opt === '1x') res.redirect(url)
   })
   app.get('/:format/:url(*)', async (req, res, next) => {
     try {
-      let {format, url} = req.params
-      let qstr = URL.parse(req.url).search
+      let { format, url } = req.params
+      const qstr = URL(req.url).search
       if (qstr) url += qstr
       let output = await peruse(url, opts, process.argv.includes('--unsafe-local'))
       if (!output) return res.sendStatus(404)
@@ -192,19 +192,19 @@ async function mainServer (port = 4343) {
       if (['text', 'markdown', 'md'].includes(format)) {
         res.type(format).send(output)
       } else if (format === 'html') {
-        let html = await pandoc('--standalone', '--css=/static/peruse.css').end(output).toString()
+        let html = await sh.pandoc('--standalone', '--css=/static/peruse.css').end(output).toString()
         html = rewriteLinks(html, format)
         res.send(html)
       } else if (format === 'pdf') {
-        let tmpDir = tmp.dirSync({unsafeCleanup: true})
-        let tmpFile = path.join(tmpDir.name, 'out.pdf')
-        await pandoc('-o', tmpFile).end(output)
+        const tmpDir = tmp.dirSync({ unsafeCleanup: true })
+        const tmpFile = path.join(tmpDir.name, 'out.pdf')
+        await sh.pandoc('-o', tmpFile).end(output)
         res.sendFile(tmpFile, err => {
           tmpDir.removeCallback()
           if (err) next(err)
         })
       } else if (pandocFormats.includes(format)) {
-        output = await pandoc('-t', format, '--reference-links', '--standalone').end(output).toString()
+        output = await sh.pandoc('-t', format, '--reference-links', '--standalone').end(output).toString()
         res.type('text').send(output)
       } else {
         res.sendStatus(404)
