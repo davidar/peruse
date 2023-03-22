@@ -68,7 +68,7 @@ async function peruse (url, opts = [], allowLocal = true) {
   const output = await sh.pandoc('--standalone', '--from=html',
     // '--lua-filter', path.join(__dirname, 'pandoc-a11y.lua'),
     '--to=' + markdown + '-smart', '--reference-links').end(html).toString()
-  if (bytes(output) > 1500) opts = opts.concat(['--filter', 'pandoc-lang'])
+  // if (bytes(output) > 1500) opts = opts.concat(['--filter', 'pandoc-lang'])
   return sh.pandoc('--standalone', '--from=' + markdown,
     '--to=' + markdown + '-smart', '--reference-links', ...opts).end(output).toString()
 }
@@ -174,7 +174,7 @@ async function mainServer (port = 4343) {
   const opts = process.argv.filter(arg => arg.startsWith('-') && arg !== '--unsafe-local')
   const pandocFormats = (await sh.pandoc('--list-output-formats').toString()).trim().split('\n')
   const app = express()
-  app.use('/static', express.static(path.join(__dirname, 'static')))
+  // app.use('/static', express.static(path.join(__dirname, 'static')))
   app.get('/image/:opt/:url(*)', (req, res) => {
     let { opt, url } = req.params
     const qstr = URL(req.url).search
@@ -184,8 +184,8 @@ async function mainServer (port = 4343) {
   app.get('/:format/:url(*)', async (req, res, next) => {
     try {
       let { format, url } = req.params
-      const qstr = URL(req.url).search
-      if (qstr) url += qstr
+      // const qstr = new URL(req.url).search
+      // if (qstr) url += qstr
       let output = await peruse(url, opts, process.argv.includes('--unsafe-local'))
       if (!output) return res.sendStatus(404)
 
